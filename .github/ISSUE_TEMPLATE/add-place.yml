@@ -1,0 +1,114 @@
+name: Add a public place
+description: Suggest a student place for the map. A citation and a quality check are required.
+title: "[place] "
+labels: ["place"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to the map. Public places ship inside the repo, so the
+        bar is a real, reputable, student-useful place that someone can verify.
+        Only the place name, type, city, coordinates, maps link, and your handle
+        end up in the dataset. The proof fields below stay in this submission and
+        the review, they are not committed.
+  - type: input
+    id: name
+    attributes:
+      label: Place name
+      placeholder: City Library, Dadar branch
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - book_depot
+        - library
+        - exam_centre
+        - passport_office
+        - community_spot
+        - internet_cafe
+        - airport
+        - train_station
+    validations:
+      required: true
+  - type: dropdown
+    id: city
+    attributes:
+      label: City
+      options:
+        - mumbai
+        - thane
+        - navi_mumbai
+    validations:
+      required: true
+  - type: input
+    id: lat
+    attributes:
+      label: Latitude
+      placeholder: "19.0176"
+    validations:
+      required: true
+  - type: input
+    id: lng
+    attributes:
+      label: Longitude
+      placeholder: "72.8562"
+    validations:
+      required: true
+  - type: input
+    id: gmaps_link
+    attributes:
+      label: Google Maps link
+      placeholder: https://maps.app.goo.gl/...
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source or citation (proof, not committed)
+      description: A link or note showing this is a real, reputable place.
+    validations:
+      required: true
+  - type: input
+    id: rating
+    attributes:
+      label: Google Maps rating (proof, not committed)
+      description: Must be 4.0 or higher.
+      placeholder: "4.3"
+    validations:
+      required: true
+  - type: input
+    id: reviews
+    attributes:
+      label: Google Maps review count (proof, not committed)
+      description: Must be 50 or more.
+      placeholder: "180"
+    validations:
+      required: true
+  - type: input
+    id: verified_date
+    attributes:
+      label: Date you verified this (proof, not committed)
+      placeholder: "2026-06-07"
+    validations:
+      required: true
+  - type: input
+    id: added_by
+    attributes:
+      label: Your GitHub handle (added_by)
+      placeholder: your-handle
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Quality gate
+      options:
+        - label: The Google Maps rating is 4.0 or higher.
+          required: true
+        - label: The place has 50 or more Google Maps reviews.
+          required: true
+        - label: The coordinates point to the correct entrance, not a rough area.
+          required: true
