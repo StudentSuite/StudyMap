@@ -42,7 +42,7 @@ export function FilterPanel({
     personalCount !== undefined && onTogglePersonal !== undefined;
 
   return (
-    <div className="flex max-h-[70vh] w-64 flex-col gap-3 overflow-y-auto">
+    <div className="flex max-h-[70vh] w-full flex-col gap-3 overflow-y-auto">
       <div className="flex items-center justify-between">
         <p className="text-sm font-semibold">
           {resultCount} {resultCount === 1 ? "place" : "places"}

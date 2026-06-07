@@ -2,9 +2,18 @@
 
 import "leaflet/dist/leaflet.css";
 
-import { CircleMarker, MapContainer, Popup, TileLayer, Tooltip } from "react-leaflet";
+import { useEffect } from "react";
+import {
+  CircleMarker,
+  MapContainer,
+  Popup,
+  TileLayer,
+  Tooltip,
+  useMap,
+} from "react-leaflet";
 
 import type { PersonalPin, Place } from "@/lib/types";
+import type { LatLng } from "@/lib/geo";
 import { MMR_CENTER, MMR_DEFAULT_ZOOM } from "@/lib/places";
 import { PERSONAL_PIN_COLOR, PLACE_TYPE_COLORS, directionsUrl } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
@@ -12,9 +21,23 @@ import { PinPopup } from "@/components/pins/pin-popup";
 interface MapViewProps {
   places: Place[];
   personalPins?: PersonalPin[];
+  userLocation?: LatLng | null;
 }
 
-export default function MapView({ places, personalPins = [] }: MapViewProps) {
+/** Eases the map to the user's location once it is known. */
+function FlyToUser({ location }: { location: LatLng }) {
+  const map = useMap();
+  useEffect(() => {
+    map.flyTo([location.lat, location.lng], 14, { duration: 1 });
+  }, [map, location]);
+  return null;
+}
+
+export default function MapView({
+  places,
+  personalPins = [],
+  userLocation,
+}: MapViewProps) {
   return (
     <MapContainer
       center={MMR_CENTER}
@@ -26,6 +49,24 @@ export default function MapView({ places, personalPins = [] }: MapViewProps) {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
+
+      {userLocation && (
+        <>
+          <FlyToUser location={userLocation} />
+          <CircleMarker
+            center={[userLocation.lat, userLocation.lng]}
+            radius={7}
+            pathOptions={{
+              color: "#ffffff",
+              weight: 2,
+              fillColor: "#2563eb",
+              fillOpacity: 1,
+            }}
+          >
+            <Tooltip>You are here</Tooltip>
+          </CircleMarker>
+        </>
+      )}
 
       {places.map((place) => (
         <CircleMarker
