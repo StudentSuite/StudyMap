@@ -2,13 +2,15 @@
 
 import * as React from "react";
 import dynamic from "next/dynamic";
-import { SlidersHorizontal } from "lucide-react";
+import { Share2, SlidersHorizontal } from "lucide-react";
+import { toast } from "sonner";
 
 import type { Place } from "@/lib/types";
 import { filterPlaces } from "@/lib/places";
 import { placesByDistance, formatDistance, type LatLng } from "@/lib/geo";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl } from "@/lib/map";
+import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
 import { useAccount } from "@/components/account/use-account";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -35,14 +37,47 @@ export function PlacesMap({ places }: PlacesMapProps) {
     types: [],
     cities: [],
   });
+  const [focusId, setFocusId] = React.useState<string | null>(null);
   const [showPersonal, setShowPersonal] = React.useState(true);
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
+  const hydrated = React.useRef(false);
+
+  // Restore filters and the focused pin from the URL on first load.
+  React.useEffect(() => {
+    const state = parseMapState(window.location.search);
+    setFilters({ types: state.types, cities: state.cities });
+    setFocusId(state.placeId);
+    hydrated.current = true;
+  }, []);
+
+  // Mirror filter and focus state back into the URL so it stays shareable.
+  React.useEffect(() => {
+    if (!hydrated.current) return;
+    const search = mapStateToSearch({
+      types: filters.types,
+      cities: filters.cities,
+      placeId: focusId,
+    });
+    window.history.replaceState(null, "", `${window.location.pathname}${search}`);
+  }, [filters, focusId]);
 
   const visible = React.useMemo(
     () => filterPlaces(places, filters),
     [places, filters],
   );
+
+  function share() {
+    const url = buildShareUrl({
+      types: filters.types,
+      cities: filters.cities,
+      placeId: focusId,
+    });
+    navigator.clipboard
+      .writeText(url)
+      .then(() => toast.success("Link copied"))
+      .catch(() => toast.error("Could not copy link"));
+  }
 
   const nearest = React.useMemo(() => {
     if (!userLocation) return [];
@@ -58,6 +93,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
         places={visible}
         personalPins={personalLayer}
         userLocation={userLocation}
+        focusId={focusId}
       />
 
       <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex justify-end sm:hidden">
@@ -86,7 +122,18 @@ export function PlacesMap({ places }: PlacesMapProps) {
         />
 
         <Separator className="my-3" />
-        <NearMeButton onLocated={setUserLocation} />
+        <div className="flex gap-2">
+          <NearMeButton onLocated={setUserLocation} className="flex-1" />
+          <Button
+            size="sm"
+            variant="outline"
+            onClick={share}
+            aria-label="Copy a shareable link to this view"
+          >
+            <Share2 className="size-4" />
+            Share
+          </Button>
+        </div>
 
         {nearest.length > 0 && (
           <div className="mt-3 space-y-1.5">

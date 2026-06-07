@@ -2,7 +2,8 @@
 
 import "leaflet/dist/leaflet.css";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
+import type { CircleMarker as LeafletCircleMarker } from "leaflet";
 import {
   CircleMarker,
   MapContainer,
@@ -22,22 +23,55 @@ interface MapViewProps {
   places: Place[];
   personalPins?: PersonalPin[];
   userLocation?: LatLng | null;
+  focusId?: string | null;
 }
 
-/** Eases the map to the user's location once it is known. */
-function FlyToUser({ location }: { location: LatLng }) {
+/** Eases the map to a coordinate when it changes. */
+function FlyTo({ to, zoom }: { to: LatLng; zoom: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo([location.lat, location.lng], 14, { duration: 1 });
-  }, [map, location]);
+    map.flyTo([to.lat, to.lng], zoom, { duration: 1 });
+  }, [map, to, zoom]);
   return null;
+}
+
+/** A public place marker; opens its popup on load when it is the focused pin. */
+function PlaceMarker({ place, autoOpen }: { place: Place; autoOpen: boolean }) {
+  const ref = useRef<LeafletCircleMarker>(null);
+  useEffect(() => {
+    if (autoOpen) ref.current?.openPopup();
+  }, [autoOpen]);
+
+  return (
+    <CircleMarker
+      ref={ref}
+      center={[place.lat, place.lng]}
+      radius={8}
+      pathOptions={{
+        color: "#ffffff",
+        weight: 1.5,
+        fillColor: PLACE_TYPE_COLORS[place.type],
+        fillOpacity: 0.9,
+      }}
+    >
+      <Tooltip>{place.name}</Tooltip>
+      <Popup>
+        <PinPopup place={place} />
+      </Popup>
+    </CircleMarker>
+  );
 }
 
 export default function MapView({
   places,
   personalPins = [],
   userLocation,
+  focusId,
 }: MapViewProps) {
+  const focusPlace = focusId
+    ? places.find((place) => place.id === focusId)
+    : undefined;
+
   return (
     <MapContainer
       center={MMR_CENTER}
@@ -50,41 +84,33 @@ export default function MapView({
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
 
+      {userLocation ? (
+        <FlyTo to={userLocation} zoom={14} />
+      ) : focusPlace ? (
+        <FlyTo to={{ lat: focusPlace.lat, lng: focusPlace.lng }} zoom={15} />
+      ) : null}
+
       {userLocation && (
-        <>
-          <FlyToUser location={userLocation} />
-          <CircleMarker
-            center={[userLocation.lat, userLocation.lng]}
-            radius={7}
-            pathOptions={{
-              color: "#ffffff",
-              weight: 2,
-              fillColor: "#2563eb",
-              fillOpacity: 1,
-            }}
-          >
-            <Tooltip>You are here</Tooltip>
-          </CircleMarker>
-        </>
+        <CircleMarker
+          center={[userLocation.lat, userLocation.lng]}
+          radius={7}
+          pathOptions={{
+            color: "#ffffff",
+            weight: 2,
+            fillColor: "#2563eb",
+            fillOpacity: 1,
+          }}
+        >
+          <Tooltip>You are here</Tooltip>
+        </CircleMarker>
       )}
 
       {places.map((place) => (
-        <CircleMarker
+        <PlaceMarker
           key={place.id}
-          center={[place.lat, place.lng]}
-          radius={8}
-          pathOptions={{
-            color: "#ffffff",
-            weight: 1.5,
-            fillColor: PLACE_TYPE_COLORS[place.type],
-            fillOpacity: 0.9,
-          }}
-        >
-          <Tooltip>{place.name}</Tooltip>
-          <Popup>
-            <PinPopup place={place} />
-          </Popup>
-        </CircleMarker>
+          place={place}
+          autoOpen={place.id === focusId}
+        />
       ))}
 
       {personalPins.map((pin) => (
