@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudyMap
 
-## Getting Started
+A crowdsourced map of student-important places across the Mumbai Metropolitan Region (Mumbai, Thane, Navi Mumbai), with a past-paper catalogue and a student-benefits guide. Open source and self-hostable.
 
-First, run the development server:
+> This README is an early stub. A fuller version is on the way.
+
+## What it does
+
+- **Places map:** find exam centres, libraries, book depots, passport offices, internet cafes, community study spots, train stations, and airports across the MMR. Filter by type and city.
+- **Resources:** curated links to past papers and official portals by board (IB, IGCSE, NEET, JEE, UPSC, SAT). The site never hosts files; it links out.
+- **Local papers:** keep your own question papers and syllabi in a local `papers/` folder and browse them offline on localhost.
+- **Benefits:** guides on claiming student perks, getting software free or discounted, travelling solo, and applying for a passport.
+- **Personal pins (optional):** sign in with Google to save private places (home, school, coaching) visible only to you.
+
+## Quick start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000. The map, resources, papers, and benefits all work with no setup. Sign-in and personal pins are optional and only activate when Supabase environment variables are present (see `.env.example`).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js (App Router) + TypeScript + Tailwind + shadcn/ui + Leaflet (OpenStreetMap) + Supabase (auth and private pins only).
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+See `CONTRIBUTING.md`. Public places are submitted through GitHub with a citation and a quality check.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+See `LICENSE`.
