@@ -1,0 +1,18 @@
+[
+  {
+    "id": "upsc-web-01",
+    "board": "UPSC",
+    "kind": "website",
+    "title": "UPSC (official site)",
+    "url": "https://upsc.gov.in"
+  },
+  {
+    "id": "upsc-pp-01",
+    "board": "UPSC",
+    "subject": "Civil Services Prelims",
+    "year": 2023,
+    "kind": "past_paper",
+    "title": "UPSC previous question papers",
+    "url": "https://upsc.gov.in/examinations/previous-question-papers"
+  }
+]

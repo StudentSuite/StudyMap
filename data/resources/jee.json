@@ -1,0 +1,18 @@
+[
+  {
+    "id": "jee-portal-01",
+    "board": "JEE",
+    "kind": "portal",
+    "title": "JEE Main (NTA) official portal",
+    "url": "https://jeemain.nta.nic.in"
+  },
+  {
+    "id": "jee-pp-01",
+    "board": "JEE",
+    "subject": "Full paper",
+    "year": 2024,
+    "kind": "past_paper",
+    "title": "Sample JEE Main previous-year paper link (replace with cited source)",
+    "url": "https://jeemain.nta.nic.in"
+  }
+]

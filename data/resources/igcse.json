@@ -1,0 +1,18 @@
+[
+  {
+    "id": "igcse-web-01",
+    "board": "IGCSE",
+    "kind": "website",
+    "title": "Cambridge International (official site)",
+    "url": "https://www.cambridgeinternational.org"
+  },
+  {
+    "id": "igcse-pp-phy-01",
+    "board": "IGCSE",
+    "subject": "Physics",
+    "year": 2023,
+    "kind": "past_paper",
+    "title": "Sample IGCSE Physics past paper link (replace with cited source)",
+    "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse/"
+  }
+]

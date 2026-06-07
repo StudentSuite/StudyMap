@@ -1,0 +1,25 @@
+[
+  {
+    "id": "ib-web-01",
+    "board": "IB",
+    "kind": "website",
+    "title": "International Baccalaureate (official site)",
+    "url": "https://www.ibo.org"
+  },
+  {
+    "id": "ib-pp-math-01",
+    "board": "IB",
+    "subject": "Mathematics AA",
+    "year": 2023,
+    "kind": "past_paper",
+    "title": "Sample past paper link (replace with cited source)",
+    "url": "https://www.ibo.org"
+  },
+  {
+    "id": "ib-portal-01",
+    "board": "IB",
+    "kind": "portal",
+    "title": "IB candidate results portal",
+    "url": "https://candidates.ibo.org"
+  }
+]

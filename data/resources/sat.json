@@ -1,0 +1,26 @@
+[
+  {
+    "id": "sat-web-01",
+    "board": "SAT",
+    "kind": "website",
+    "title": "College Board SAT Suite (official site)",
+    "url": "https://satsuite.collegeboard.org"
+  },
+  {
+    "id": "sat-practice-01",
+    "board": "SAT",
+    "subject": "Practice",
+    "kind": "portal",
+    "title": "Official SAT practice and preparation",
+    "url": "https://satsuite.collegeboard.org/sat/practice-preparation"
+  },
+  {
+    "id": "sat-pp-01",
+    "board": "SAT",
+    "subject": "Full test",
+    "year": 2024,
+    "kind": "past_paper",
+    "title": "Sample SAT practice test link (replace with cited source)",
+    "url": "https://satsuite.collegeboard.org/sat/practice-preparation/practice-tests"
+  }
+]

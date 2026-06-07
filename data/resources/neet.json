@@ -1,0 +1,18 @@
+[
+  {
+    "id": "neet-portal-01",
+    "board": "NEET",
+    "kind": "portal",
+    "title": "NEET (NTA) official portal",
+    "url": "https://neet.nta.nic.in"
+  },
+  {
+    "id": "neet-pp-01",
+    "board": "NEET",
+    "subject": "Full paper",
+    "year": 2024,
+    "kind": "past_paper",
+    "title": "Sample NEET previous-year paper link (replace with cited source)",
+    "url": "https://neet.nta.nic.in"
+  }
+]
