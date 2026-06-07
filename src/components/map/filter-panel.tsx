@@ -2,7 +2,7 @@
 
 import { CITIES, CITY_LABELS, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import type { City, PlaceType } from "@/lib/types";
-import { PLACE_TYPE_COLORS } from "@/lib/map";
+import { PERSONAL_PIN_COLOR, PLACE_TYPE_COLORS } from "@/lib/map";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
@@ -17,6 +17,10 @@ interface FilterPanelProps {
   filters: PlaceFilters;
   onChange: (filters: PlaceFilters) => void;
   resultCount: number;
+  /** Number of private pins, or undefined to hide the My places toggle. */
+  personalCount?: number;
+  showPersonal?: boolean;
+  onTogglePersonal?: (show: boolean) => void;
 }
 
 function toggle<T>(list: T[], value: T): T[] {
@@ -25,8 +29,17 @@ function toggle<T>(list: T[], value: T): T[] {
     : [...list, value];
 }
 
-export function FilterPanel({ filters, onChange, resultCount }: FilterPanelProps) {
+export function FilterPanel({
+  filters,
+  onChange,
+  resultCount,
+  personalCount,
+  showPersonal = false,
+  onTogglePersonal,
+}: FilterPanelProps) {
   const allEmpty = filters.types.length === 0 && filters.cities.length === 0;
+  const showPersonalToggle =
+    personalCount !== undefined && onTogglePersonal !== undefined;
 
   return (
     <div className="flex max-h-[70vh] w-64 flex-col gap-3 overflow-y-auto">
@@ -82,6 +95,24 @@ export function FilterPanel({ filters, onChange, resultCount }: FilterPanelProps
           </label>
         ))}
       </div>
+
+      {showPersonalToggle && (
+        <>
+          <Separator />
+          <label className="flex items-center gap-2 text-sm">
+            <Checkbox
+              checked={showPersonal}
+              onCheckedChange={() => onTogglePersonal(!showPersonal)}
+            />
+            <span
+              aria-hidden
+              className="size-3 shrink-0 rounded-full"
+              style={{ backgroundColor: PERSONAL_PIN_COLOR }}
+            />
+            <span>My places ({personalCount})</span>
+          </label>
+        </>
+      )}
 
       <p className="text-xs text-muted-foreground">
         No filter selected means everything shows.

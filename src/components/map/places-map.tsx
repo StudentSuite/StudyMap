@@ -6,6 +6,7 @@ import { SlidersHorizontal } from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { filterPlaces } from "@/lib/places";
+import { useAccount } from "@/components/account/use-account";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { FilterPanel, type PlaceFilters } from "@/components/map/filter-panel";
@@ -24,10 +25,12 @@ interface PlacesMapProps {
 }
 
 export function PlacesMap({ places }: PlacesMapProps) {
+  const { pins, user } = useAccount();
   const [filters, setFilters] = React.useState<PlaceFilters>({
     types: [],
     cities: [],
   });
+  const [showPersonal, setShowPersonal] = React.useState(true);
   const [panelOpen, setPanelOpen] = React.useState(false);
 
   const visible = React.useMemo(
@@ -35,9 +38,12 @@ export function PlacesMap({ places }: PlacesMapProps) {
     [places, filters],
   );
 
+  const personalLayer = showPersonal ? pins : [];
+  const hasPersonal = Boolean(user) && pins.length > 0;
+
   return (
     <div className="relative size-full overflow-hidden">
-      <MapView places={visible} />
+      <MapView places={visible} personalPins={personalLayer} />
 
       <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex justify-end sm:hidden">
         <Button
@@ -59,6 +65,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
           filters={filters}
           onChange={setFilters}
           resultCount={visible.length}
+          personalCount={hasPersonal ? pins.length : undefined}
+          showPersonal={showPersonal}
+          onTogglePersonal={setShowPersonal}
         />
       </Card>
     </div>
