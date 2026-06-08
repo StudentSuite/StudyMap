@@ -1,12 +1,12 @@
 import type { City, Place, PlaceType } from "@/lib/types";
 
 import airport from "../../data/places/airport.json";
-import bookDepot from "../../data/places/book_depot.json";
-import communitySpot from "../../data/places/community_spot.json";
+import bookShop from "../../data/places/book_shop.json";
+import stationery from "../../data/places/stationery.json";
 import examCentre from "../../data/places/exam_centre.json";
 import internetCafe from "../../data/places/internet_cafe.json";
 import library from "../../data/places/library.json";
-import passportOffice from "../../data/places/passport_office.json";
+import impLocations from "../../data/places/imp_locations.json";
 import trainStation from "../../data/places/train_station.json";
 
 /** Approximate centre of the Mumbai Metropolitan Region, for the initial map view. */
@@ -15,12 +15,12 @@ export const MMR_DEFAULT_ZOOM = 11;
 
 const ALL: Place[] = [
   ...(airport as Place[]),
-  ...(bookDepot as Place[]),
-  ...(communitySpot as Place[]),
+  ...(bookShop as Place[]),
+  ...(stationery as Place[]),
   ...(examCentre as Place[]),
   ...(internetCafe as Place[]),
   ...(library as Place[]),
-  ...(passportOffice as Place[]),
+  ...(impLocations as Place[]),
   ...(trainStation as Place[]),
 ];
 

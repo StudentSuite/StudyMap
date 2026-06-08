@@ -1,8 +1,8 @@
 [
   {
-    "id": "mum-passport_office-01",
+    "id": "mum-imp_locations-01",
     "name": "Sample Passport Seva Kendra, Lower Parel",
-    "type": "passport_office",
+    "type": "imp_locations",
     "city": "mumbai",
     "lat": 18.9970,
     "lng": 72.8300,
@@ -11,9 +11,9 @@
     "added_by": "seed"
   },
   {
-    "id": "thn-passport_office-01",
+    "id": "thn-imp_locations-01",
     "name": "Sample Passport Seva Kendra, Thane",
-    "type": "passport_office",
+    "type": "imp_locations",
     "city": "thane",
     "lat": 19.1972,
     "lng": 72.9722,

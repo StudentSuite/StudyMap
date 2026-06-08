@@ -1,9 +1,9 @@
 export const PLACE_TYPES = [
-  "book_depot",
+  "book_shop",
   "library",
   "exam_centre",
-  "passport_office",
-  "community_spot",
+  "imp_locations",
+  "stationery",
   "internet_cafe",
   "airport",
   "train_station",
@@ -16,11 +16,11 @@ export const CITIES = ["mumbai", "thane", "navi_mumbai"] as const;
 export type City = (typeof CITIES)[number];
 
 export const PLACE_TYPE_LABELS: Record<PlaceType, string> = {
-  book_depot: "Book depot",
+  book_shop: "Book shop",
   library: "Library",
   exam_centre: "Exam centre",
-  passport_office: "Passport office",
-  community_spot: "Community spot",
+  imp_locations: "Important locations",
+  stationery: "Stationery",
   internet_cafe: "Internet cafe",
   airport: "Airport",
   train_station: "Train station",

@@ -47,8 +47,8 @@ adding a city never touches existing files). The committed record stops at
 }
 ```
 
-- `type` is one of: `book_depot`, `library`, `exam_centre`, `passport_office`,
-  `community_spot`, `internet_cafe`, `airport`, `train_station`.
+- `type` is one of: `book_shop`, `library`, `exam_centre`, `imp_locations`,
+  `stationery`, `internet_cafe`, `airport`, `train_station`.
 - `city` is one of: `mumbai`, `thane`, `navi_mumbai`.
 - `id` is `<city-prefix>-<type>-<number>` and must be unique within its file.
 - Do **not** add rating, review count, citation, or verified date to the JSON.

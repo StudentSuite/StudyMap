@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="StudyMap maskable">
+  
+  <rect width="512" height="512" fill="#F59E0B"></rect>
+  
+  <path d="M256 100C218.34 100 188 130.34 188 168C188 214 256 310 256 310C256 310 324 214 324 168C324 130.34 293.66 100 256 100Z" fill="#0A0A0A"></path>
+  
+  <path d="M214 152L251 158V186L214 180Z" fill="white" opacity="0.90"></path>
+  <path d="M261 158L298 152V180L261 186Z" fill="white" opacity="0.70"></path>
+  <line x1="256" y1="158" x2="256" y2="186" stroke="white" stroke-width="4.5" stroke-linecap="round" opacity="0.90"></line>
+</svg>

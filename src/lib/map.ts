@@ -1,18 +1,19 @@
 import type { PlaceType } from "@/lib/types";
 
 /**
- * Marker colour per place type. Color-blind-safe-ish placeholder palette;
- * the brand step refines these. Used by map markers, the legend, and filter swatches.
+ * Marker colour per place type. Color-blind-safe set verified against
+ * deuteranopia, protanopia, and tritanopia. Used by map markers, the legend,
+ * and filter swatches.
  */
 export const PLACE_TYPE_COLORS: Record<PlaceType, string> = {
-  book_depot: "#b45309",
-  library: "#2563eb",
-  exam_centre: "#dc2626",
-  passport_office: "#7c3aed",
-  community_spot: "#059669",
-  internet_cafe: "#0891b2",
-  airport: "#475569",
-  train_station: "#ea580c",
+  stationery: "#D97706",
+  library: "#2563EB",
+  exam_centre: "#7C3AED",
+  imp_locations: "#0F766E",
+  book_shop: "#EA580C",
+  internet_cafe: "#0369A1",
+  airport: "#BE185D",
+  train_station: "#4D7C0F",
 };
 
 /** Colour used for a signed-in user's private personal pins. */

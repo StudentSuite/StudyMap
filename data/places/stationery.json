@@ -1,8 +1,8 @@
 [
   {
-    "id": "mum-community_spot-01",
-    "name": "Sample Study Cafe, Powai",
-    "type": "community_spot",
+    "id": "mum-stationery-01",
+    "name": "Sample Stationery Shop, Powai",
+    "type": "stationery",
     "city": "mumbai",
     "lat": 19.1176,
     "lng": 72.9060,
@@ -11,9 +11,9 @@
     "added_by": "seed"
   },
   {
-    "id": "nvm-community_spot-01",
-    "name": "Sample Co-study Space, Nerul",
-    "type": "community_spot",
+    "id": "nvm-stationery-01",
+    "name": "Sample Stationery & Print, Nerul",
+    "type": "stationery",
     "city": "navi_mumbai",
     "lat": 19.0350,
     "lng": 73.0200,

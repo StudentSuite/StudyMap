@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import { inter, spaceGrotesk, jetbrainsMono } from "@/lib/fonts";
 import { site } from "@/lib/site";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { Navbar } from "@/components/layout/navbar";
@@ -10,19 +10,17 @@ import { Toaster } from "@/components/ui/sonner";
 import { PwaRegister } from "@/components/pwa-register";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
   title: {
     default: `${site.name}: student places, papers, and benefits`,
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  openGraph: {
+    title: site.name,
+    description: site.tagline,
+    images: ["/brand/og.svg"],
+  },
   manifest: "/manifest.webmanifest",
   appleWebApp: {
     capable: true,
@@ -30,13 +28,13 @@ export const metadata: Metadata = {
     statusBarStyle: "black-translucent",
   },
   icons: {
-    icon: "/icons/icon-192.png",
+    icon: "/favicon.svg",
     apple: "/icons/apple-touch-icon.png",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0a0a0a",
+  themeColor: "#0A0A0A",
 };
 
 export default function RootLayout({
@@ -48,7 +46,14 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("h-full", "antialiased", geistMono.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        "font-sans",
+        inter.variable,
+        spaceGrotesk.variable,
+        jetbrainsMono.variable,
+      )}
     >
       <body className="flex min-h-full flex-col">
         <ThemeProvider

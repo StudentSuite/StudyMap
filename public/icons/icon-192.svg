@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192" role="img" aria-label="StudyMap">
+  <rect width="192" height="192" fill="#0A0A0A"></rect>
+  
+  <path d="M96 44C75.01 44 58 61.01 58 82C58 110 96 148 96 148C96 148 134 110 134 82C134 61.01 116.99 44 96 44Z" fill="#F59E0B"></path>
+  
+  <path d="M75 72L93 75V91L75 88Z" fill="white" opacity="0.90"></path>
+  <path d="M99 75L117 72V88L99 91Z" fill="white" opacity="0.70"></path>
+  <line x1="96" y1="75" x2="96" y2="91" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.90"></line>
+</svg>

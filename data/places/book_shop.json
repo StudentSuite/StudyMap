@@ -1,8 +1,8 @@
 [
   {
-    "id": "mum-book_depot-01",
-    "name": "Sample Book Depot, Dadar",
-    "type": "book_depot",
+    "id": "mum-book_shop-01",
+    "name": "Sample Book Shop, Dadar",
+    "type": "book_shop",
     "city": "mumbai",
     "lat": 19.0186,
     "lng": 72.8423,
@@ -11,9 +11,9 @@
     "added_by": "seed"
   },
   {
-    "id": "thn-book_depot-01",
-    "name": "Sample Book House, Naupada",
-    "type": "book_depot",
+    "id": "thn-book_shop-01",
+    "name": "Sample Stationery & Books, Naupada",
+    "type": "book_shop",
     "city": "thane",
     "lat": 19.1953,
     "lng": 72.9706,
@@ -22,9 +22,9 @@
     "added_by": "seed"
   },
   {
-    "id": "nvm-book_depot-01",
-    "name": "Sample Books, Vashi",
-    "type": "book_depot",
+    "id": "nvm-book_shop-01",
+    "name": "Sample Book Shop, Vashi",
+    "type": "book_shop",
     "city": "navi_mumbai",
     "lat": 19.0771,
     "lng": 72.9986,

@@ -23,11 +23,11 @@ body:
     attributes:
       label: Type
       options:
-        - book_depot
+        - book_shop
         - library
         - exam_centre
-        - passport_office
-        - community_spot
+        - imp_locations
+        - stationery
         - internet_cafe
         - airport
         - train_station

@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { MapPin, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { navLinks, site } from "@/lib/site";
@@ -21,9 +21,11 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
-        <Link href="/" className="flex items-center gap-2 font-heading text-lg font-bold">
-          <MapPin className="size-5 text-primary" />
-          <span>{site.name}</span>
+        <Link href="/" className="flex items-center gap-2">
+          {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
+          <img src="/logo-light.svg" alt={site.name} width={176} height={34} className="h-7 w-auto dark:hidden" />
+          {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
+          <img src="/logo-dark.svg" alt={site.name} width={176} height={34} className="hidden h-7 w-auto dark:block" />
         </Link>
 
         <nav className="ml-4 hidden items-center gap-1 md:flex">

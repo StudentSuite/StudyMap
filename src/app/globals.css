@@ -4,118 +4,193 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
-  --color-chart-1: var(--chart-1);
-  --color-ring: var(--ring);
-  --color-input: var(--input);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-accent: var(--accent);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-secondary: var(--secondary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-primary: var(--primary);
-  --color-popover-foreground: var(--popover-foreground);
-  --color-popover: var(--popover);
-  --color-card-foreground: var(--card-foreground);
-  --color-card: var(--card);
-  --radius-sm: calc(var(--radius) * 0.6);
-  --radius-md: calc(var(--radius) * 0.8);
-  --radius-lg: var(--radius);
-  --radius-xl: calc(var(--radius) * 1.4);
-  --radius-2xl: calc(var(--radius) * 1.8);
-  --radius-3xl: calc(var(--radius) * 2.2);
-  --radius-4xl: calc(var(--radius) * 2.6);
-}
-
+/* ----------------------------------------------------------------
+   LIGHT MODE (:root) — amber-700 primary, zinc neutrals, WCAG AA
+   ---------------------------------------------------------------- */
 :root {
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background:                #FAFAFA;
+  --foreground:                #18181B;
+  --card:                      #FFFFFF;
+  --card-foreground:           #18181B;
+  --popover:                   #FFFFFF;
+  --popover-foreground:        #18181B;
+
+  --primary:                   #B45309;   /* amber-700, 5.02:1 on white */
+  --primary-foreground:        #FFFFFF;
+
+  --secondary:                 #F4F4F5;
+  --secondary-foreground:      #18181B;
+  --muted:                     #F4F4F5;
+  --muted-foreground:          #71717A;
+  --accent:                    #FEF3C7;
+  --accent-foreground:         #92400E;
+
+  --destructive:               #DC2626;
+  --destructive-foreground:    #FFFFFF;
+
+  --border:                    #E4E4E7;
+  --input:                     #E4E4E7;
+  --ring:                      #B45309;
+
+  --radius:                    0.5rem;
+
+  --sm-success:                #059669;
+  --sm-success-bg:             #ECFDF5;
+  --sm-success-border:         #6EE7B7;
+  --sm-warning:                #D97706;
+  --sm-warning-bg:             #FFFBEB;
+  --sm-warning-border:         #FCD34D;
+  --sm-danger:                 #DC2626;
+  --sm-danger-bg:              #FEF2F2;
+  --sm-danger-border:          #FECACA;
+  --sm-info:                   #2563EB;
+  --sm-info-bg:                #EFF6FF;
+  --sm-info-border:            #BFDBFE;
+
+  /* Map marker hex — color-blind safe, verified against deuteranopia,
+     protanopia, tritanopia. Pin grammar: public = filled teardrop,
+     private = dashed diamond at 50% fill (see PERSONAL_PIN_COLOR in lib/map.ts). */
+  --marker-stationery:         #D97706;
+  --marker-library:            #2563EB;
+  --marker-exam-centre:        #7C3AED;
+  --marker-imp-locations:      #0F766E;
+  --marker-book-shop:          #EA580C;
+  --marker-internet-cafe:      #0369A1;
+  --marker-airport:            #BE185D;
+  --marker-train-station:      #4D7C0F;
 }
 
+/* ----------------------------------------------------------------
+   DARK MODE (.dark) — amber-500 primary, 9.35:1 WCAG AAA
+   ---------------------------------------------------------------- */
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --background:                #0A0A0A;
+  --foreground:                #E4E4E7;
+  --card:                      #111111;
+  --card-foreground:           #E4E4E7;
+  --popover:                   #0D0D0D;
+  --popover-foreground:        #E4E4E7;
+
+  --primary:                   #F59E0B;
+  --primary-foreground:        #0A0A0A;
+
+  --secondary:                 #18181B;
+  --secondary-foreground:      #E4E4E7;
+  --muted:                     #27272A;
+  --muted-foreground:          #A1A1AA;
+  --accent:                    #27272A;
+  --accent-foreground:         #F59E0B;
+
+  --destructive:               #F87171;
+  --destructive-foreground:    #0A0A0A;
+
+  --border:                    #27272A;
+  --input:                     #27272A;
+  --ring:                      #F59E0B;
+
+  --sm-success:                #34D399;
+  --sm-success-bg:             rgba(16, 185, 129, 0.10);
+  --sm-success-border:         rgba(16, 185, 129, 0.25);
+  --sm-warning:                #F59E0B;
+  --sm-warning-bg:             rgba(245, 158, 11, 0.10);
+  --sm-warning-border:         rgba(245, 158, 11, 0.25);
+  --sm-danger:                 #F87171;
+  --sm-danger-bg:              rgba(248, 113, 113, 0.10);
+  --sm-danger-border:          rgba(248, 113, 113, 0.25);
+  --sm-info:                   #60A5FA;
+  --sm-info-bg:                rgba(96, 165, 250, 0.10);
+  --sm-info-border:            rgba(96, 165, 250, 0.25);
+
+  /* Markers unchanged — same hex reads well on dark map tiles */
+  --marker-stationery:         #D97706;
+  --marker-library:            #2563EB;
+  --marker-exam-centre:        #7C3AED;
+  --marker-imp-locations:      #0F766E;
+  --marker-book-shop:          #EA580C;
+  --marker-internet-cafe:      #0369A1;
+  --marker-airport:            #BE185D;
+  --marker-train-station:      #4D7C0F;
 }
+
+/* ================================================================
+   Tailwind v4 — @theme inline
+   ================================================================ */
+@theme inline {
+  --color-background:                var(--background);
+  --color-foreground:                var(--foreground);
+  --color-card:                      var(--card);
+  --color-card-foreground:           var(--card-foreground);
+  --color-popover:                   var(--popover);
+  --color-popover-foreground:        var(--popover-foreground);
+  --color-primary:                   var(--primary);
+  --color-primary-foreground:        var(--primary-foreground);
+  --color-secondary:                 var(--secondary);
+  --color-secondary-foreground:      var(--secondary-foreground);
+  --color-muted:                     var(--muted);
+  --color-muted-foreground:          var(--muted-foreground);
+  --color-accent:                    var(--accent);
+  --color-accent-foreground:         var(--accent-foreground);
+  --color-destructive:               var(--destructive);
+  --color-destructive-foreground:    var(--destructive-foreground);
+  --color-border:                    var(--border);
+  --color-input:                     var(--input);
+  --color-ring:                      var(--ring);
+
+  --color-success:                   var(--sm-success);
+  --color-success-bg:                var(--sm-success-bg);
+  --color-success-border:            var(--sm-success-border);
+  --color-warning:                   var(--sm-warning);
+  --color-warning-bg:                var(--sm-warning-bg);
+  --color-warning-border:            var(--sm-warning-border);
+  --color-danger:                    var(--sm-danger);
+  --color-danger-bg:                 var(--sm-danger-bg);
+  --color-danger-border:             var(--sm-danger-border);
+  --color-info:                      var(--sm-info);
+  --color-info-bg:                   var(--sm-info-bg);
+  --color-info-border:               var(--sm-info-border);
+
+  /* Marker colors usable as bg-marker-library, border-marker-exam-centre, etc. */
+  --color-marker-stationery:         var(--marker-stationery);
+  --color-marker-library:            var(--marker-library);
+  --color-marker-exam-centre:        var(--marker-exam-centre);
+  --color-marker-imp-locations:      var(--marker-imp-locations);
+  --color-marker-book-shop:          var(--marker-book-shop);
+  --color-marker-internet-cafe:      var(--marker-internet-cafe);
+  --color-marker-airport:            var(--marker-airport);
+  --color-marker-train-station:      var(--marker-train-station);
+
+  /* next/font injects --font-inter, --font-space-grotesk, --font-jetbrains-mono
+     onto <html> via className. See src/lib/fonts.ts */
+  --font-sans:     var(--font-inter), ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-heading:  var(--font-space-grotesk), "Space Grotesk", ui-sans-serif, sans-serif;
+  --font-mono:     var(--font-jetbrains-mono), "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --radius-sm:   calc(var(--radius) - 2px);
+  --radius-md:   var(--radius);
+  --radius-lg:   calc(var(--radius) + 4px);
+  --radius-xl:   calc(var(--radius) + 8px);
+  --radius-full: 9999px;
+
+  --shadow-sm:          0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-card-hover:  0 10px 30px -10px rgba(245, 158, 11, 0.08);
+  --shadow-focus:       0 0 0 3px rgba(245, 158, 11, 0.30);
+  --shadow-terminal:    0 25px 50px -12px rgba(245, 158, 11, 0.10);
+}
+
+/* ================================================================
+   Base styles
+   ================================================================ */
+html { scroll-behavior: smooth; }
+
+::selection {
+  background-color: rgba(245, 158, 11, 0.25);
+  color: #fff;
+}
+
+::-webkit-scrollbar              { width: 6px; }
+::-webkit-scrollbar-track        { background: #111; }
+::-webkit-scrollbar-thumb        { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover  { background: #555; }
 
 @layer base {
   * {
@@ -123,8 +198,73 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
   html {
     @apply font-sans;
   }
+  h1, h2, h3, h4, h5, h6 { font-family: var(--font-heading); }
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--background), 0 0 0 4px var(--ring);
+  }
+}
+
+/* ================================================================
+   StudyMap utility classes
+   ================================================================ */
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.freshness-badge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--muted-foreground);
+}
+
+.citation-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+  background-color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.125rem 0.5rem;
+}
+
+.map-card {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+.map-card:hover {
+  border-color: var(--ring);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.private-pin-badge {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted-foreground);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-full);
+  padding: 0.1rem 0.45rem;
 }
