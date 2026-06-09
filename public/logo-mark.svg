@@ -1,10 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 34" width="28" height="34" role="img" aria-label="StudyMap icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="StudyMap mark">
   
-  <path d="M14 2C8.477 2 4 6.477 4 12C4 18.5 14 32.5 14 32.5C14 32.5 24 18.5 24 12C24 6.477 19.523 2 14 2Z" fill="#F59E0B"></path>
   
-  <path d="M8.5 9L13.5 10V15L8.5 14Z" fill="white" opacity="0.90"></path>
+  <defs>
+    <clipPath id="lp-m"><path d="M16,7 Q10,5.5 4,7 L4,25 L16,25 Z"></path></clipPath>
+    <clipPath id="rp-m"><path d="M16,7 Q22,5.5 28,7 L28,25 L16,25 Z"></path></clipPath>
+  </defs>
+
   
-  <path d="M14.5 10L19.5 9V14L14.5 15Z" fill="white" opacity="0.70"></path>
+  <path d="M16,7 Q10,5.5 4,7 L4,25 L16,25 Z" fill="#FFFFFF"></path>
   
-  <line x1="14" y1="9.5" x2="14" y2="15" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.90"></line>
+  <path d="M16,7 Q22,5.5 28,7 L28,25 L16,25 Z" fill="#FFFFFF"></path>
+
+  
+  <g clip-path="url(#lp-m)" stroke="#0A0A0A" stroke-opacity="0.13" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+    <line x1="7" y1="7" x2="7" y2="25"></line>
+    <line x1="10" y1="7" x2="10" y2="25"></line>
+    <line x1="13" y1="7" x2="13" y2="25"></line>
+    
+    <line x1="4" y1="10.6" x2="16" y2="10.6"></line>
+    <line x1="4" y1="14.2" x2="16" y2="14.2"></line>
+    <line x1="4" y1="17.8" x2="16" y2="17.8"></line>
+    <line x1="4" y1="21.4" x2="16" y2="21.4"></line>
+  </g>
+
+  
+  <g clip-path="url(#rp-m)" stroke="#0A0A0A" stroke-opacity="0.13" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="16" y1="10" x2="28" y2="10"></line>
+    <line x1="16" y1="13" x2="28" y2="13"></line>
+    <line x1="16" y1="16" x2="28" y2="16"></line>
+    <line x1="16" y1="19" x2="28" y2="19"></line>
+    <line x1="16" y1="22" x2="28" y2="22"></line>
+  </g>
+
+  
+  <line x1="16" y1="7" x2="16" y2="25" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+
+  
+  <circle cx="10" cy="14.2" r="1.5" fill="#F59E0B"></circle>
 </svg>

@@ -1,113 +1,62 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="StudyMap — crowdsourced study resource map, worldwide">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="StudyMap — crowdsourced study resource map">
   <defs>
-    <radialGradient id="glow" cx="0%" cy="0%" r="60%">
-      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.07"></stop>
-      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"></stop>
-    </radialGradient>
-    
-    <path id="pin" d="M0-14C-7.73-14-14-7.73-14 0C-14 9.5 0 28 0 28C0 28 14 9.5 14 0C14-7.73 7.73-14 0-14Z"></path>
+
+    <pattern id="ambgrid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="#F59E0B" stroke-opacity="0.04" stroke-width="1"></path>
+    </pattern>
+    <clipPath id="lp-og"><path d="M600,145 Q550,139 500,145 L500,295 L600,295 Z"></path></clipPath>
+    <clipPath id="rp-og"><path d="M600,145 Q650,139 700,145 L700,295 L600,295 Z"></path></clipPath>
+
   </defs>
 
-  
-  <rect width="1200" height="630" fill="#0A0A0A"></rect>
-  
-  <rect width="1200" height="630" fill="url(#glow)"></rect>
-  
-  <rect x="680" y="0" width="520" height="630" fill="#0D0D0D"></rect>
-  
-  <line x1="680" y1="60" x2="680" y2="570" stroke="#27272A" stroke-width="1"></line>
 
-  
-  
-  <text x="80" y="180" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="13" font-weight="400" fill="#F59E0B" letter-spacing="3">STUDY RESOURCE MAP</text>
-  
-  <g transform="translate(80, 210)">
-    <path d="M20 2C12.268 2 6 8.268 6 16C6 25.5 20 44 20 44C20 44 34 25.5 34 16C34 8.268 27.732 2 20 2Z" fill="#F59E0B"></path>
-    <path d="M11 11L18.5 12.5V20L11 18.5Z" fill="white" opacity="0.9"></path>
-    <path d="M21.5 12.5L29 11V18.5L21.5 20Z" fill="white" opacity="0.7"></path>
-    <line x1="20" y1="12.5" x2="20" y2="20" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.9"></line>
+  <rect width="1200" height="630" fill="#0A0A0A"></rect>
+
+  <rect width="1200" height="630" fill="url(#ambgrid)"></rect>
+
+
+
+  <path d="M600,145 Q550,139 500,145 L500,295 L600,295 Z" fill="#FFFFFF"></path>
+
+  <path d="M600,145 Q650,139 700,145 L700,295 L600,295 Z" fill="#FFFFFF"></path>
+
+
+  <g clip-path="url(#lp-og)" stroke="#0A0A0A" stroke-opacity="0.12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="525" y1="145" x2="525" y2="295"></line>
+    <line x1="550" y1="145" x2="550" y2="295"></line>
+    <line x1="575" y1="145" x2="575" y2="295"></line>
+    <line x1="500" y1="175" x2="600" y2="175"></line>
+    <line x1="500" y1="205" x2="600" y2="205"></line>
+    <line x1="500" y1="235" x2="600" y2="235"></line>
+    <line x1="500" y1="265" x2="600" y2="265"></line>
   </g>
-  
-  <text x="124" y="246" font-family="&#39;Space Grotesk&#39;, ui-sans-serif, sans-serif" font-weight="700" font-size="52" letter-spacing="-1.5">
+
+
+  <g clip-path="url(#rp-og)" stroke="#0A0A0A" stroke-opacity="0.12" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="600" y1="170" x2="700" y2="170"></line>
+    <line x1="600" y1="195" x2="700" y2="195"></line>
+    <line x1="600" y1="220" x2="700" y2="220"></line>
+    <line x1="600" y1="245" x2="700" y2="245"></line>
+    <line x1="600" y1="270" x2="700" y2="270"></line>
+  </g>
+
+
+  <line x1="600" y1="145" x2="600" y2="295" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></line>
+
+
+  <circle cx="550" cy="205" r="9" fill="#F59E0B"></circle>
+
+
+  <text font-family="'Space Grotesk', ui-sans-serif, sans-serif" font-weight="700" font-size="64" letter-spacing="-2" text-anchor="middle" x="600" y="368">
     <tspan fill="#FFFFFF">Study</tspan><tspan fill="#F59E0B">Map</tspan>
   </text>
-  
-  <text x="80" y="308" font-family="&#39;Inter&#39;, ui-sans-serif, sans-serif" font-weight="400" font-size="22" fill="#A1A1AA">Crowdsourced. Verified. Worldwide.</text>
-  
-  <text x="80" y="560" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="13" fill="#3F3F46">studymap.world</text>
 
-  
-  
-  
-  <g transform="translate(750,175)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#D97706"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">St</text>
-  </g>
-  <text x="750" y="235" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">stationery</text>
-  
-  <g transform="translate(855,175)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#2563EB"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">L</text>
-  </g>
-  <text x="855" y="235" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">library</text>
-  
-  <g transform="translate(960,175)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#7C3AED"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">E</text>
-  </g>
-  <text x="960" y="235" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">exam centre</text>
-  
-  <g transform="translate(1065,175)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#0F766E"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">I</text>
-  </g>
-  <text x="1065" y="235" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">imp. locations</text>
-  
-  
-  <g transform="translate(750,315)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#EA580C"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11" fill="white" font-weight="600">S</text>
-  </g>
-  <text x="750" y="375" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#71717A">book shop</text>
-  
-  <g transform="translate(855,315)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#0369A1"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">W</text>
-  </g>
-  <text x="855" y="375" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">internet cafe</text>
-  
-  <g transform="translate(960,315)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#BE185D"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">A</text>
-  </g>
-  <text x="960" y="375" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">airport</text>
-  
-  <g transform="translate(1065,315)">
-    <path d="M0-20C-11-20-20-11-20 0C-20 14 0 40 0 40C0 40 20 14 20 0C20-11 11-20 0-20Z" fill="#4D7C0F"></path>
-    <circle cx="0" cy="-2" r="9" fill="rgba(255,255,255,0.15)"></circle>
-    <text x="0" y="3" text-anchor="middle" font-family="&#39;Inter&#39;, sans-serif" font-size="11" fill="white" font-weight="600">T</text>
-  </g>
-  <text x="1065" y="375" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#71717A">train station</text>
 
-  
-  <text x="907" y="128" text-anchor="middle" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#52525B" letter-spacing="2">MARKER CATEGORIES</text>
-  <line x1="710" y1="140" x2="1150" y2="140" stroke="#27272A" stroke-width="1"></line>
+  <line x1="490" y1="386" x2="710" y2="386" stroke="#F59E0B" stroke-width="2" stroke-linecap="round"></line>
 
-  
-  <g transform="translate(740,445)">
-    
-    <rect x="-10" y="-10" width="20" height="20" rx="2" fill="rgba(161,161,170,0.1)" stroke="#3F3F46" stroke-width="1.5" stroke-dasharray="3,2" transform="rotate(45)"></rect>
-  </g>
-  <text x="760" y="450" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#52525B">private pin (diamond, dashed)</text>
-  <g transform="translate(740,480)">
-    <path d="M0-10C-5.5-10-10-5.5-10 0C-10 7.5 0 20 0 20C0 20 10 7.5 10 0C10-5.5 5.5-10 0-10Z" fill="#D97706"></path>
-  </g>
-  <text x="760" y="485" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="11" fill="#52525B">public pin (teardrop, solid)</text>
+
+  <text font-family="'Inter', ui-sans-serif, sans-serif" font-weight="400" font-size="20" text-anchor="middle" x="600" y="416" fill="#6B7280">Find study spots and resources near you.</text>
+
+
+  <text font-family="'Inter', ui-sans-serif, sans-serif" font-size="13" font-weight="400" letter-spacing="0.04em" text-anchor="middle" x="600" y="590" fill="#3F3F46">studymap.world</text>
 </svg>

@@ -23,9 +23,9 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
         <Link href="/" className="flex items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-          <img src="/logo-light.svg" alt={site.name} width={176} height={34} className="h-7 w-auto dark:hidden" />
+          <img src="/logo-light.svg" alt={site.name} width={180} height={34} className="h-7 w-auto dark:hidden" />
           {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-          <img src="/logo-dark.svg" alt={site.name} width={176} height={34} className="hidden h-7 w-auto dark:block" />
+          <img src="/logo-dark.svg" alt={site.name} width={180} height={34} className="hidden h-7 w-auto dark:block" />
         </Link>
 
         <nav className="ml-4 hidden items-center gap-1 md:flex">

@@ -1,11 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 176 34" width="176" height="34" role="img" aria-label="StudyMap">
-  
-  <path d="M14 2C8.477 2 4 6.477 4 12C4 18.5 14 32.5 14 32.5C14 32.5 24 18.5 24 12C24 6.477 19.523 2 14 2Z" fill="#F59E0B"></path>
-  <path d="M8.5 9L13.5 10V15L8.5 14Z" fill="white" opacity="0.90"></path>
-  <path d="M14.5 10L19.5 9V14L14.5 15Z" fill="white" opacity="0.70"></path>
-  <line x1="14" y1="9.5" x2="14" y2="15" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.90"></line>
-  
-  <text font-family="&#39;Space Grotesk&#39;, ui-sans-serif, sans-serif" font-weight="700" font-size="22" letter-spacing="-0.3">
-    <tspan x="34" y="25" fill="#FFFFFF">Study</tspan><tspan fill="#F59E0B">Map</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 34" width="180" height="34" role="img" aria-label="StudyMap">
+
+  <defs>
+    <clipPath id="lp-d"><path d="M20,3 Q11,1.5 2,3 L2,31 L20,31 Z"></path></clipPath>
+    <clipPath id="rp-d"><path d="M20,3 Q29,1.5 38,3 L38,31 L20,31 Z"></path></clipPath>
+
+  </defs>
+
+
+  <path d="M20,3 Q11,1.5 2,3 L2,31 L20,31 Z" fill="#FFFFFF"></path>
+
+  <path d="M20,3 Q29,1.5 38,3 L38,31 L20,31 Z" fill="#FFFFFF"></path>
+
+
+  <g clip-path="url(#lp-d)" stroke="#0A0A0A" stroke-opacity="0.13" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="6.5" y1="3" x2="6.5" y2="31"></line>
+    <line x1="11" y1="3" x2="11" y2="31"></line>
+    <line x1="15.5" y1="3" x2="15.5" y2="31"></line>
+    <line x1="2" y1="8.6" x2="20" y2="8.6"></line>
+    <line x1="2" y1="14.2" x2="20" y2="14.2"></line>
+    <line x1="2" y1="19.8" x2="20" y2="19.8"></line>
+    <line x1="2" y1="25.4" x2="20" y2="25.4"></line>
+  </g>
+
+
+  <g clip-path="url(#rp-d)" stroke="#0A0A0A" stroke-opacity="0.13" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="20" y1="7.67" x2="38" y2="7.67"></line>
+    <line x1="20" y1="12.33" x2="38" y2="12.33"></line>
+    <line x1="20" y1="17" x2="38" y2="17"></line>
+    <line x1="20" y1="21.67" x2="38" y2="21.67"></line>
+    <line x1="20" y1="26.33" x2="38" y2="26.33"></line>
+  </g>
+
+
+  <line x1="20" y1="3" x2="20" y2="31" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+
+
+  <circle cx="11" cy="14.2" r="2" fill="#F59E0B"></circle>
+
+
+  <text font-family="'Space Grotesk', ui-sans-serif, sans-serif" font-weight="700" font-size="22" letter-spacing="-0.3" x="48" y="25">
+    <tspan fill="#FFFFFF">Study</tspan><tspan fill="#F59E0B">Map</tspan>
   </text>
 </svg>

@@ -35,6 +35,15 @@
       "purpose": "maskable"
     }
   ],
+  "screenshots": [
+    {
+      "src": "/brand/og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "StudyMap — resource map for Mumbai"
+    }
+  ],
   "related_applications": [],
   "prefer_related_applications": false
 }

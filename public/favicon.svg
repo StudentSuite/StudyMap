@@ -2,9 +2,12 @@
   
   <rect width="32" height="32" rx="6" fill="#0A0A0A"></rect>
   
-  <path d="M16 4C11.582 4 8 7.582 8 12C8 17.5 16 28 16 28C16 28 24 17.5 24 12C24 7.582 20.418 4 16 4Z" fill="#F59E0B"></path>
+  <path d="M16,7 Q10,5.5 4,7 L4,25 L16,25 Z" fill="#FFFFFF"></path>
   
-  <path d="M11 9.5L15.5 10.5V14.5L11 13.5Z" fill="white" opacity="0.90"></path>
-  <path d="M16.5 10.5L21 9.5V13.5L16.5 14.5Z" fill="white" opacity="0.70"></path>
-  <line x1="16" y1="10.5" x2="16" y2="14.5" stroke="white" stroke-width="1" stroke-linecap="round" opacity="0.90"></line>
+  <path d="M16,7 Q22,5.5 28,7 L28,25 L16,25 Z" fill="#FFFFFF"></path>
+  
+  <line x1="16" y1="7" x2="16" y2="25" stroke="#F59E0B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></line>
+  
+  
+  <circle cx="10" cy="14" r="1.8" fill="#F59E0B"></circle>
 </svg>

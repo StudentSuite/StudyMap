@@ -1,10 +1,39 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="StudyMap maskable">
   
-  <rect width="512" height="512" fill="#F59E0B"></rect>
+  <rect width="512" height="512" fill="#0A0A0A"></rect>
+  <defs>
+    <clipPath id="lp-512m"><path d="M256,147 Q184,142 111,147 L111,365 L256,365 Z"></path></clipPath>
+    <clipPath id="rp-512m"><path d="M256,147 Q328,142 401,147 L401,365 L256,365 Z"></path></clipPath>
+  </defs>
+
   
-  <path d="M256 100C218.34 100 188 130.34 188 168C188 214 256 310 256 310C256 310 324 214 324 168C324 130.34 293.66 100 256 100Z" fill="#0A0A0A"></path>
+  <path d="M256,147 Q184,142 111,147 L111,365 L256,365 Z" fill="#FFFFFF"></path>
   
-  <path d="M214 152L251 158V186L214 180Z" fill="white" opacity="0.90"></path>
-  <path d="M261 158L298 152V180L261 186Z" fill="white" opacity="0.70"></path>
-  <line x1="256" y1="158" x2="256" y2="186" stroke="white" stroke-width="4.5" stroke-linecap="round" opacity="0.90"></line>
+  <path d="M256,147 Q328,142 401,147 L401,365 L256,365 Z" fill="#FFFFFF"></path>
+
+  
+  <g clip-path="url(#lp-512m)" stroke="#0A0A0A" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="147.25" y1="147" x2="147.25" y2="365"></line>
+    <line x1="183.5" y1="147" x2="183.5" y2="365"></line>
+    <line x1="219.75" y1="147" x2="219.75" y2="365"></line>
+    <line x1="111" y1="190.6" x2="256" y2="190.6"></line>
+    <line x1="111" y1="234.2" x2="256" y2="234.2"></line>
+    <line x1="111" y1="277.8" x2="256" y2="277.8"></line>
+    <line x1="111" y1="321.4" x2="256" y2="321.4"></line>
+  </g>
+
+  
+  <g clip-path="url(#rp-512m)" stroke="#0A0A0A" stroke-opacity="0.12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="256" y1="183.33" x2="401" y2="183.33"></line>
+    <line x1="256" y1="219.67" x2="401" y2="219.67"></line>
+    <line x1="256" y1="256" x2="401" y2="256"></line>
+    <line x1="256" y1="292.33" x2="401" y2="292.33"></line>
+    <line x1="256" y1="328.67" x2="401" y2="328.67"></line>
+  </g>
+
+  
+  <line x1="256" y1="147" x2="256" y2="365" stroke="#F59E0B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></line>
+
+  
+  <circle cx="183.5" cy="234.2" r="14" fill="#F59E0B"></circle>
 </svg>
