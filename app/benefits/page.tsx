@@ -11,9 +11,9 @@ import {
 } from "@/components/ui/card";
 
 export const metadata: Metadata = {
-  title: "Benefits",
+  title: "Student Docs",
   description:
-    "Guides on claiming student perks, getting software free or discounted, travelling solo, and applying for a passport.",
+    "Guides for students: software discounts, travel, passports, textbooks, and subject selection.",
 };
 
 export default function BenefitsPage() {
@@ -22,11 +22,11 @@ export default function BenefitsPage() {
   return (
     <div className="mx-auto w-full max-w-4xl px-4 py-10">
       <h1 className="font-heading text-3xl font-bold tracking-tight">
-        Student benefits
+        Student Docs
       </h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Practical guides for students: claiming perks, getting software free or
-        discounted, travelling solo within India, and sorting out a passport.
+          Practical guides for students: software tools, travel, passports, recommended
+          textbooks, and choosing your IGCSE or IB subjects.
       </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2">
