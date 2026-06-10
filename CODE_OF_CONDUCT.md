@@ -1,21 +1,40 @@
 # Code of Conduct
 
-> Short stub. A fuller version (likely the Contributor Covenant) will replace this.
+## Our Commitment
 
-StudyMap is a tool built by and for students. We want contributing here to feel safe and welcoming for everyone, regardless of age, experience, background, or identity.
+StudyMap is built by and for students. We aim to create a respectful, inclusive, and welcoming space for everyone, especially those new to open source.
 
-## Expected behaviour
+---
 
-- Be respectful and patient. Many contributors are new to open source.
-- Assume good intent and give constructive, specific feedback.
-- Keep submitted data accurate and properly cited. Bad data hurts the students who rely on it.
+## Expected Behavior
 
-## Not acceptable
+* Be respectful, patient, and kind
+* Give constructive, helpful feedback
+* Assume good intent
+* Keep contributions accurate and well-sourced
 
-- Harassment, discrimination, or personal attacks.
-- Submitting deliberately false, spam, or low-quality place or resource entries.
-- Sharing other people's private information.
+---
+
+## Unacceptable Behavior
+
+* Harassment, discrimination, or personal attacks
+* Hostile or dismissive communication
+* False, spammy, or low-quality submissions
+* Sharing private information without consent
+
+---
 
 ## Reporting
 
-Open an issue or contact the maintainer through the repository. Reports will be handled privately and in good faith.
+Report issues by opening an issue or contacting the maintainer.
+All reports will be handled privately and in good faith.
+
+---
+
+## Enforcement
+
+Maintainers may warn, remove contributions, or restrict access if needed to keep the community safe.
+
+---
+
+Be respectful. Build responsibly. Help students.
