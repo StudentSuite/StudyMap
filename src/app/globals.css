@@ -277,11 +277,11 @@ html { scroll-behavior: smooth; }
    Leaflet theming — popups, controls, attribution follow app theme
    ================================================================ */
 
-/* Popup always uses light/white theme — legible on any map background */
+/* Popup follows app theme (light/dark) via CSS vars */
 .leaflet-popup-content-wrapper {
-  background: #ffffff;
-  color: #111827;
-  border: 1px solid #e5e7eb;
+  background: var(--popover);
+  color: var(--popover-foreground);
+  border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.25);
   padding: 0;
@@ -291,29 +291,13 @@ html { scroll-behavior: smooth; }
   margin: 14px 16px;
   font-family: var(--font-sans);
   line-height: 1.4;
-  color: #111827;
+  color: var(--popover-foreground);
 }
 
 .leaflet-popup-tip {
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
+  background: var(--popover);
+  border: 1px solid var(--border);
   box-shadow: none;
-}
-
-/* Force Tailwind dark-mode color utilities to use light values inside popups */
-.leaflet-popup-content .text-foreground       { color: #111827 !important; }
-.leaflet-popup-content .text-muted-foreground { color: #6b7280 !important; }
-.leaflet-popup-content .bg-muted             { background-color: #f3f4f6 !important; }
-
-/* Share button always light inside popup */
-.leaflet-popup-content button {
-  background-color: #ffffff !important;
-  border-color: #d1d5db !important;
-  color: #6b7280 !important;
-}
-.leaflet-popup-content button:hover {
-  background-color: #f9fafb !important;
-  color: #111827 !important;
 }
 
 /* Directions CTA: amber-700 background, white text (WCAG 4.5:1) */
@@ -325,13 +309,13 @@ html { scroll-behavior: smooth; }
 .leaflet-popup-content a.popup-cta:active { background-color: #78350f; }
 
 .leaflet-container a.leaflet-popup-close-button {
-  color: #6b7280;
+  color: var(--muted-foreground);
   font-size: 18px;
   padding: 6px 8px 0 0;
   transition: color 0.15s ease;
 }
 .leaflet-container a.leaflet-popup-close-button:hover {
-  color: #111827;
+  color: var(--foreground);
 }
 
 /* Zoom controls match cards */
