@@ -11,7 +11,6 @@ import { placesByDistance, formatDistance, type LatLng } from "@/lib/geo";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl } from "@/lib/map";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
-import { useAccount } from "@/components/account/use-account";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
@@ -32,13 +31,11 @@ interface PlacesMapProps {
 }
 
 export function PlacesMap({ places }: PlacesMapProps) {
-  const { pins, user } = useAccount();
   const [filters, setFilters] = React.useState<PlaceFilters>({
     types: [],
     cities: [],
   });
   const [focusId, setFocusId] = React.useState<string | null>(null);
-  const [showPersonal, setShowPersonal] = React.useState(true);
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const hydrated = React.useRef(false);
@@ -84,14 +81,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return placesByDistance(visible, userLocation).slice(0, 5);
   }, [visible, userLocation]);
 
-  const personalLayer = showPersonal ? pins : [];
-  const hasPersonal = Boolean(user) && pins.length > 0;
-
   return (
     <div className="relative size-full overflow-hidden">
       <MapView
         places={visible}
-        personalPins={personalLayer}
         userLocation={userLocation}
         focusId={focusId}
       />
@@ -116,9 +109,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
           filters={filters}
           onChange={setFilters}
           resultCount={visible.length}
-          personalCount={hasPersonal ? pins.length : undefined}
-          showPersonal={showPersonal}
-          onTogglePersonal={setShowPersonal}
         />
 
         <Separator className="my-3" />

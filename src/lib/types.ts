@@ -49,28 +49,6 @@ export interface Place {
   added_by: string;
 }
 
-/** A private place saved by a signed-in user. Never exposed publicly. */
-export const PERSONAL_PIN_TYPES = [
-  "home",
-  "school",
-  "office",
-  "coaching",
-  "custom",
-] as const;
-
-export type PersonalPinType = (typeof PERSONAL_PIN_TYPES)[number];
-
-export interface PersonalPin {
-  id: string;
-  owner_id: string;
-  name: string;
-  type: PersonalPinType;
-  lat: number;
-  lng: number;
-  note?: string;
-  created_at: string;
-}
-
 export const BOARDS = ["IB", "IGCSE", "SAT"] as const;
 
 export type Board = (typeof BOARDS)[number];

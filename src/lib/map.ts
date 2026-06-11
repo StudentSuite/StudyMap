@@ -16,9 +16,6 @@ export const PLACE_TYPE_COLORS: Record<PlaceType, string> = {
   train_station: "#4D7C0F",
 };
 
-/** Colour used for a signed-in user's private personal pins. */
-export const PERSONAL_PIN_COLOR = "#db2777";
-
 /** Build a Google Maps directions deep-link to a coordinate. */
 export function directionsUrl(lat: number, lng: number): string {
   return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;

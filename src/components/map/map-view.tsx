@@ -13,15 +13,14 @@ import {
   useMap,
 } from "react-leaflet";
 
-import type { PersonalPin, Place } from "@/lib/types";
+import type { Place } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { MMR_CENTER, MMR_DEFAULT_ZOOM } from "@/lib/places";
-import { PERSONAL_PIN_COLOR, PLACE_TYPE_COLORS, directionsUrl } from "@/lib/map";
+import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 
 interface MapViewProps {
   places: Place[];
-  personalPins?: PersonalPin[];
   userLocation?: LatLng | null;
   focusId?: string | null;
   /** When false, the map is a static preview: no pan, zoom, or controls. */
@@ -68,7 +67,6 @@ function PlaceMarker({ place, autoOpen }: { place: Place; autoOpen: boolean }) {
 
 export default function MapView({
   places,
-  personalPins = [],
   userLocation,
   focusId,
   interactive = true,
@@ -123,40 +121,6 @@ export default function MapView({
           place={place}
           autoOpen={place.id === focusId}
         />
-      ))}
-
-      {personalPins.map((pin) => (
-        <CircleMarker
-          key={pin.id}
-          center={[pin.lat, pin.lng]}
-          radius={9}
-          pathOptions={{
-            color: "#ffffff",
-            weight: 2,
-            dashArray: "3 3",
-            fillColor: PERSONAL_PIN_COLOR,
-            fillOpacity: 0.95,
-          }}
-        >
-          <Tooltip>{pin.name} (private)</Tooltip>
-          <Popup>
-            <div className="space-y-1">
-              <p className="text-sm font-semibold">{pin.name}</p>
-              <p className="text-xs capitalize text-muted-foreground">
-                {pin.type} . private pin
-              </p>
-              {pin.note && <p className="text-xs">{pin.note}</p>}
-              <a
-                href={directionsUrl(pin.lat, pin.lng)}
-                target="_blank"
-                rel="noreferrer"
-                className="text-xs font-medium text-primary underline underline-offset-2"
-              >
-                Get directions
-              </a>
-            </div>
-          </Popup>
-        </CircleMarker>
       ))}
     </MapContainer>
   );
