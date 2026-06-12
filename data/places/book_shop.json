@@ -53,5 +53,16 @@
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.2140,72.9680",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "mum-book_shop-06",
+    "name": "Pooja Books Depot",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 19.172849101790916,
+    "lng": 72.95632185581891,
+    "address": "Station Rd, Mulund West, Mumbai",
+    "gmaps_link": "https://www.google.com/maps/search/?api=1&query=Pooja+Books+Depot+Mulund",
+    "added_by": "shauryagangrade"
   }
 ]
