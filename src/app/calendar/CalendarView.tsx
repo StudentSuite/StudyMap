@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronLeft, ChevronRight, ExternalLink } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import {
   BOARD_LABELS,
@@ -198,7 +198,6 @@ export function CalendarView() {
                   className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
                 >
                   {ev.source.label}
-                  <ExternalLink className="size-3" />
                 </a>
               </div>
             ))}

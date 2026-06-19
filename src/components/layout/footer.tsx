@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Mail, Code } from "lucide-react";
 
 import { site } from "@/lib/site";
 
 const quickLinks = [
   { href: "/map", label: "Map" },
   { href: "/calendar", label: "Exam Calendar" },
+  { href: "/about", label: "About" },
   { href: "/contribute", label: "Contribute" },
   { href: "/docs", label: "Docs" },
 ];
@@ -64,24 +64,22 @@ export function Footer() {
           {/* Contact & Social */}
           <div>
             <p className="font-medium text-foreground">Connect</p>
-            <div className="mt-4 flex gap-3">
+            <nav className="mt-4 flex flex-col gap-2">
               <a
                 href="mailto:dhawansanay@gmail.com"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-muted hover:bg-muted/80 transition-colors"
-                aria-label="Email"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Mail className="size-4" />
+                Email
               </a>
               <a
                 href={site.repo}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-border bg-muted hover:bg-muted/80 transition-colors"
-                aria-label="GitHub"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
-                <Code className="size-4" />
+                GitHub
               </a>
-            </div>
+            </nav>
           </div>
         </div>
 

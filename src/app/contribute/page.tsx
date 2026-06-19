@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { ArrowRight, Code, MessageCircle } from "lucide-react";
 
 import { site } from "@/lib/site";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { PageContainer } from "@/components/layout/page-container";
 
 export const metadata: Metadata = {
   title: "Contribute",
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function ContributePage() {
   return (
-    <div className="mx-auto w-full max-w-4xl px-4 py-10">
+    <PageContainer>
       <h1 className="font-heading text-3xl font-bold tracking-tight">Contribute to StudyMap</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
         StudyMap is built by students, for students. Help improve the map, fix bugs, or suggest features.
@@ -22,10 +21,7 @@ export default function ContributePage() {
         {/* Add a place */}
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Code className="size-5" />
-              Add a place
-            </CardTitle>
+            <CardTitle>Add a place</CardTitle>
             <CardDescription>Contribute new exam centres, libraries, cafes, or other student-relevant locations</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -51,7 +47,6 @@ export default function ContributePage() {
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
             >
               View the repository
-              <ArrowRight className="size-4" />
             </a>
           </CardContent>
         </Card>
@@ -59,10 +54,7 @@ export default function ContributePage() {
         {/* Report an issue */}
         <Card>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <MessageCircle className="size-5" />
-              Report a bug or suggest a feature
-            </CardTitle>
+            <CardTitle>Report a bug or suggest a feature</CardTitle>
             <CardDescription>Found incorrect data, a broken link, or have an idea for improvement?</CardDescription>
           </CardHeader>
           <CardContent className="space-y-4">
@@ -85,7 +77,6 @@ export default function ContributePage() {
               className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
             >
               Open an issue
-              <ArrowRight className="size-4" />
             </a>
           </CardContent>
         </Card>
@@ -115,6 +106,6 @@ export default function ContributePage() {
           Every contribution (whether adding a place, fixing data, or improving docs) helps other students. Contributors are listed in the GitHub repository. Thank you for building StudyMap with us!
         </p>
       </div>
-    </div>
+    </PageContainer>
   );
 }

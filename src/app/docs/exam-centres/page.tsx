@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { MapPin, ArrowLeft, ExternalLink } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -8,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { PageContainer } from "@/components/layout/page-container";
 
 export const metadata: Metadata = {
   title: "Finding Exam Centres",
@@ -17,21 +17,17 @@ export const metadata: Metadata = {
 
 export default function ExamCentresPage() {
   return (
-    <div className="mx-auto w-full max-w-4xl px-4 py-10">
+    <PageContainer>
       <Link
         href="/docs"
-        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
+        className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
       >
-        <ArrowLeft className="size-4" />
-        Docs
+        Back to docs
       </Link>
 
-      <div className="flex items-center gap-3">
-        <MapPin className="size-7 text-primary" />
-        <h1 className="font-heading text-3xl font-bold tracking-tight">
-          Finding Exam Centres
-        </h1>
-      </div>
+      <h1 className="font-heading text-3xl font-bold tracking-tight">
+        Finding Exam Centres
+      </h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
         StudyMap lists exam centres for SAT, IB, and Cambridge IGCSE across
         Mumbai, Thane, and Navi Mumbai. Here is how to use the map effectively.
@@ -110,11 +106,10 @@ export default function ExamCentresPage() {
               className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
             >
               How to contribute a place
-              <ExternalLink className="size-3.5" />
             </Link>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </PageContainer>
   );
 }

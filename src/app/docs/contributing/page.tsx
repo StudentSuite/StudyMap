@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { GitFork, ArrowLeft, ExternalLink } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -8,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { PageContainer } from "@/components/layout/page-container";
 
 export const metadata: Metadata = {
   title: "Contributing Places",
@@ -17,21 +17,17 @@ export const metadata: Metadata = {
 
 export default function ContributingPage() {
   return (
-    <div className="mx-auto w-full max-w-4xl px-4 py-10">
+    <PageContainer>
       <Link
         href="/docs"
-        className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
+        className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
       >
-        <ArrowLeft className="size-4" />
-        Docs
+        Back to docs
       </Link>
 
-      <div className="flex items-center gap-3">
-        <GitFork className="size-7 text-primary" />
-        <h1 className="font-heading text-3xl font-bold tracking-tight">
-          Contributing Places
-        </h1>
-      </div>
+      <h1 className="font-heading text-3xl font-bold tracking-tight">
+        Contributing Places
+      </h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
         StudyMap is open-source and community-maintained. Every place in the
         database was added by a student. Here is how to add or fix one.
@@ -53,7 +49,6 @@ export default function ContributingPage() {
                 className="font-medium text-primary hover:underline"
               >
                 new GitHub issue
-                <ExternalLink className="inline size-3 ml-0.5 align-middle" />
               </a>{" "}
               with:
             </p>
@@ -86,7 +81,6 @@ export default function ContributingPage() {
                   className="font-medium text-primary hover:underline"
                 >
                   StudyMap repo
-                  <ExternalLink className="inline size-3 ml-0.5 align-middle" />
                 </a>
                 , clone it locally.
               </li>
@@ -141,11 +135,10 @@ export default function ContributingPage() {
               className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
             >
               Full contributing guide on GitHub
-              <ExternalLink className="size-3.5" />
             </a>
           </CardContent>
         </Card>
       </div>
-    </div>
+    </PageContainer>
   );
 }
