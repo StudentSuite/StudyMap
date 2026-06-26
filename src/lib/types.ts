@@ -11,7 +11,7 @@ export const PLACE_TYPES = [
 
 export type PlaceType = (typeof PLACE_TYPES)[number];
 
-export const CITIES = ["mumbai", "thane", "navi_mumbai"] as const;
+export const CITIES = ["mumbai", "thane", "navi_mumbai", "jakarta", "depok"] as const;
 
 export type City = (typeof CITIES)[number];
 
@@ -30,6 +30,8 @@ export const CITY_LABELS: Record<City, string> = {
   mumbai: "Mumbai",
   thane: "Thane",
   navi_mumbai: "Navi Mumbai",
+  jakarta: "Jakarta",
+  depok: "Depok",
 };
 
 /**
