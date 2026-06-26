@@ -75,5 +75,126 @@
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
     "added_by": "anaydhawan"
+  },
+  {
+    "id": "mum-imp_locations-08",
+    "name": "University of Mumbai Administration",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9279,
+    "lng": 72.8317,
+    "address": "Fort Campus, Fort, Mumbai 400032",
+    "gmaps_link": "https://maps.google.com/?q=18.9279,72.8317",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-imp_locations-09",
+    "name": "Mumbai GPO",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9374,
+    "lng": 72.8374,
+    "address": "Walchand Hirachand Marg, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9374,72.8374",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-imp_locations-10",
+    "name": "Maharashtra Public Service Commission Office",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9258,
+    "lng": 72.8237,
+    "address": "CGO Complex, Nariman Point, Mumbai 400021",
+    "gmaps_link": "https://maps.google.com/?q=18.9258,72.8237",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-imp_locations-11",
+    "name": "Regional Passport Office Mumbai",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9374,
+    "lng": 72.8348,
+    "address": "Badruddin Tyabji Lane, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9374,72.8348",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-imp_locations-12",
+    "name": "RTO Mumbai, Tardeo",
+    "type": "imp_locations",
+    "city": "mumbai",
+    "lat": 18.9702,
+    "lng": 72.8161,
+    "address": "Tardeo, Mumbai 400034",
+    "gmaps_link": "https://maps.google.com/?q=18.9702,72.8161",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-imp_locations-03",
+    "name": "Thane District Collectorate",
+    "type": "imp_locations",
+    "city": "thane",
+    "lat": 19.1972,
+    "lng": 72.9713,
+    "address": "Collector Office Road, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.1972,72.9713",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-imp_locations-04",
+    "name": "RTO Thane",
+    "type": "imp_locations",
+    "city": "thane",
+    "lat": 19.2068,
+    "lng": 72.9728,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2068,72.9728",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-imp_locations-05",
+    "name": "MSRTC Thane Bus Stand",
+    "type": "imp_locations",
+    "city": "thane",
+    "lat": 19.2139,
+    "lng": 72.9768,
+    "address": "Thane Station Area, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2139,72.9768",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-imp_locations-01",
+    "name": "Passport Seva Kendra, Navi Mumbai",
+    "type": "imp_locations",
+    "city": "navi_mumbai",
+    "lat": 19.0830,
+    "lng": 73.0280,
+    "address": "Turbhe, Navi Mumbai 400705",
+    "gmaps_link": "https://maps.google.com/?q=19.0830,73.0280",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-imp_locations-02",
+    "name": "NMMC Head Office",
+    "type": "imp_locations",
+    "city": "navi_mumbai",
+    "lat": 19.0218,
+    "lng": 73.0310,
+    "address": "CBD Belapur, Navi Mumbai 400614",
+    "gmaps_link": "https://maps.google.com/?q=19.0218,73.0310",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-imp_locations-03",
+    "name": "RTO Navi Mumbai",
+    "type": "imp_locations",
+    "city": "navi_mumbai",
+    "lat": 19.0760,
+    "lng": 73.0130,
+    "address": "Turbhe, Navi Mumbai 400705",
+    "gmaps_link": "https://maps.google.com/?q=19.0760,73.0130",
+    "added_by": "yashkewlani"
   }
 ]
