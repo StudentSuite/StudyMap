@@ -11,7 +11,6 @@ studymap/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── add-place.yml         # issue form: suggest a new place
-│   │   ├── add-benefit.yml       # issue form: suggest a benefit guide
 │   │   ├── bug_report.yml        # issue form: file a bug
 │   │   ├── feature_request.yml   # issue form: request a feature
 │   │   └── config.yml            # disables blank issues, adds contact links
