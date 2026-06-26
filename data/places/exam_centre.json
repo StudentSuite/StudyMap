@@ -97,5 +97,126 @@
     "address": "Sector 4, Kharghar, Navi Mumbai 410210",
     "gmaps_link": "https://maps.google.com/?q=19.0044,73.0733",
     "added_by": "anaydhawan"
+  },
+  {
+    "id": "mum-exam_centre-06",
+    "name": "Elphinstone College",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 18.9401,
+    "lng": 72.8319,
+    "address": "Mahapalika Marg, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9401,72.8319",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-exam_centre-07",
+    "name": "Ramnarain Ruia Autonomous College",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 19.0239,
+    "lng": 72.8423,
+    "address": "L.N. Road, Matunga West, Mumbai 400019",
+    "gmaps_link": "https://maps.google.com/?q=19.0239,72.8423",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-exam_centre-08",
+    "name": "Mithibai College",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 19.1074,
+    "lng": 72.8386,
+    "address": "Bhaktivedanta Swami Marg, Vile Parle West, Mumbai 400056",
+    "gmaps_link": "https://maps.google.com/?q=19.1074,72.8386",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-exam_centre-09",
+    "name": "Wilson College",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 18.9580,
+    "lng": 72.8196,
+    "address": "Chowpatty Seaface, Girgaon, Mumbai 400007",
+    "gmaps_link": "https://maps.google.com/?q=18.9580,72.8196",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-exam_centre-10",
+    "name": "K.C. College",
+    "type": "exam_centre",
+    "city": "mumbai",
+    "lat": 18.9397,
+    "lng": 72.8270,
+    "address": "Dinshaw Wachha Road, Churchgate, Mumbai 400020",
+    "gmaps_link": "https://maps.google.com/?q=18.9397,72.8270",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-exam_centre-03",
+    "name": "VPM's B.N. Bandodkar College of Science",
+    "type": "exam_centre",
+    "city": "thane",
+    "lat": 19.2078,
+    "lng": 72.9722,
+    "address": "Shastri Nagar, Thane West, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2078,72.9722",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-exam_centre-04",
+    "name": "Bedekar College",
+    "type": "exam_centre",
+    "city": "thane",
+    "lat": 19.2006,
+    "lng": 72.9714,
+    "address": "Gadkari Chowk, Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2006,72.9714",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-exam_centre-05",
+    "name": "Dnyanasadhana College",
+    "type": "exam_centre",
+    "city": "thane",
+    "lat": 19.2185,
+    "lng": 72.9602,
+    "address": "Panch Pakhadi, Thane West, Thane 400604",
+    "gmaps_link": "https://maps.google.com/?q=19.2185,72.9602",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-exam_centre-04",
+    "name": "SIES College of Arts, Science and Commerce",
+    "type": "exam_centre",
+    "city": "navi_mumbai",
+    "lat": 19.0281,
+    "lng": 73.0201,
+    "address": "SIES College Road, Sector 5, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0281,73.0201",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-exam_centre-05",
+    "name": "Apeejay School, Nerul",
+    "type": "exam_centre",
+    "city": "navi_mumbai",
+    "lat": 19.0383,
+    "lng": 73.0173,
+    "address": "Sector 6, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0383,73.0173",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-exam_centre-06",
+    "name": "Ryan International School, Kharghar",
+    "type": "exam_centre",
+    "city": "navi_mumbai",
+    "lat": 19.0462,
+    "lng": 73.0720,
+    "address": "Sector 6, Kharghar, Navi Mumbai 410210",
+    "gmaps_link": "https://maps.google.com/?q=19.0462,73.0720",
+    "added_by": "yashkewlani"
   }
 ]
