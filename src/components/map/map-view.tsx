@@ -16,6 +16,7 @@ import {
 import type { Place } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import { MAP_CENTER, DEFAULT_ZOOM } from "@/lib/constants";
+import type { Bounds } from "@/lib/places";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 
@@ -23,6 +24,8 @@ interface MapViewProps {
   places: Place[];
   userLocation?: LatLng | null;
   focusId?: string | null;
+  /** Bounding box to fly to, e.g. the selected city's pins. */
+  focusBounds?: Bounds | null;
   /** When false, the map is a static preview: no pan, zoom, or controls. */
   interactive?: boolean;
   /** Initial zoom level; falls back to the MMR default. */
@@ -35,6 +38,21 @@ function FlyTo({ to, zoom }: { to: LatLng; zoom: number }) {
   useEffect(() => {
     map.flyTo([to.lat, to.lng], zoom, { duration: 1 });
   }, [map, to, zoom]);
+  return null;
+}
+
+/** Eases the map to fit a bounding box, e.g. a selected city's pins. */
+function FlyToBounds({ bounds }: { bounds: Bounds }) {
+  const map = useMap();
+  useEffect(() => {
+    map.flyToBounds(
+      [
+        [bounds.minLat, bounds.minLng],
+        [bounds.maxLat, bounds.maxLng],
+      ],
+      { padding: [48, 48], duration: 1, maxZoom: 15 },
+    );
+  }, [map, bounds]);
   return null;
 }
 
@@ -116,6 +134,7 @@ export default function MapView({
   places,
   userLocation,
   focusId,
+  focusBounds,
   interactive = true,
   zoom = DEFAULT_ZOOM,
 }: MapViewProps) {
@@ -156,6 +175,8 @@ export default function MapView({
         <FlyTo to={userLocation} zoom={14} />
       ) : focusPlace ? (
         <FlyTo to={{ lat: focusPlace.lat, lng: focusPlace.lng }} zoom={15} />
+      ) : focusBounds ? (
+        <FlyToBounds bounds={focusBounds} />
       ) : null}
 
       {userLocation && (

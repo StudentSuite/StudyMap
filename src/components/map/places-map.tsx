@@ -6,7 +6,7 @@ import { Share2, SlidersHorizontal, X } from "lucide-react";
 import { toast } from "sonner";
 
 import type { Place } from "@/lib/types";
-import { filterPlaces } from "@/lib/places";
+import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import { placesByDistance, formatDistance, type LatLng } from "@/lib/geo";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl } from "@/lib/map";
@@ -34,17 +34,19 @@ interface PlacesMapProps {
 export function PlacesMap({ places }: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>({
     types: [],
-    cities: [],
+    city: null,
   });
   const [focusId, setFocusId] = React.useState<string | null>(null);
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const hydrated = React.useRef(false);
 
+  const cities = React.useMemo(() => getCities(places), [places]);
+
   // Restore filters and the focused pin from the URL on first load.
   React.useEffect(() => {
     const state = parseMapState(window.location.search);
-    setFilters({ types: state.types, cities: state.cities });
+    setFilters({ types: state.types, city: state.city });
     setFocusId(state.placeId);
     hydrated.current = true;
   }, []);
@@ -54,7 +56,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     if (!hydrated.current) return;
     const search = mapStateToSearch({
       types: filters.types,
-      cities: filters.cities,
+      city: filters.city,
       placeId: focusId,
     });
     window.history.replaceState(null, "", `${window.location.pathname}${search}`);
@@ -65,10 +67,17 @@ export function PlacesMap({ places }: PlacesMapProps) {
     [places, filters],
   );
 
+  // Fly the map to the selected city's bounding box, regardless of type filters,
+  // so picking a city always shows the whole city rather than just the visible types.
+  const focusBounds = React.useMemo(
+    () => (filters.city ? cityBounds(places, filters.city) : null),
+    [places, filters.city],
+  );
+
   function share() {
     const url = buildShareUrl({
       types: filters.types,
-      cities: filters.cities,
+      city: filters.city,
       placeId: focusId,
     });
     navigator.clipboard
@@ -89,6 +98,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
           places={visible}
           userLocation={userLocation}
           focusId={focusId}
+          focusBounds={focusBounds}
         />
       </MapErrorBoundary>
 
@@ -132,6 +142,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
         </div>
         <FilterPanel
           filters={filters}
+          cities={cities}
           onChange={setFilters}
           resultCount={visible.length}
         />

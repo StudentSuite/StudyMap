@@ -4,7 +4,7 @@ import { Link2, Navigation } from "lucide-react";
 import { toast } from "sonner";
 
 import type { Place } from "@/lib/types";
-import { CITY_LABELS, PLACE_TYPE_LABELS } from "@/lib/types";
+import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
 
@@ -14,7 +14,7 @@ interface PinPopupProps {
 
 export function PinPopup({ place }: PinPopupProps) {
   function copyLink() {
-    const url = buildShareUrl({ types: [], cities: [], placeId: place.id });
+    const url = buildShareUrl({ types: [], city: null, placeId: place.id });
     navigator.clipboard
       .writeText(url)
       .then(() => toast.success("Link copied"))
@@ -37,7 +37,7 @@ export function PinPopup({ place }: PinPopupProps) {
             />
             <span className="text-muted-foreground">{PLACE_TYPE_LABELS[place.type]}</span>
           </div>
-          <span className="text-muted-foreground">{CITY_LABELS[place.city]}</span>
+          <span className="text-muted-foreground">{humanizeCity(place.city)}</span>
         </div>
       </div>
 

@@ -11,9 +11,13 @@ export const PLACE_TYPES = [
 
 export type PlaceType = (typeof PLACE_TYPES)[number];
 
-export const CITIES = ["mumbai", "thane", "navi_mumbai"] as const;
-
-export type City = (typeof CITIES)[number];
+/**
+ * A place's city is a free-form slug (lowercase, underscore-separated,
+ * e.g. "navi_mumbai", "new_delhi"). Not a fixed enum: contributors can add
+ * places in any city, and the map's city picker is built from whatever
+ * slugs are actually present in the dataset.
+ */
+export type City = string;
 
 export const PLACE_TYPE_LABELS: Record<PlaceType, string> = {
   book_shop: "Book shop",
@@ -26,11 +30,13 @@ export const PLACE_TYPE_LABELS: Record<PlaceType, string> = {
   train_station: "Train station",
 };
 
-export const CITY_LABELS: Record<City, string> = {
-  mumbai: "Mumbai",
-  thane: "Thane",
-  navi_mumbai: "Navi Mumbai",
-};
+/** Turns a city slug into a display label, e.g. "navi_mumbai" -> "Navi Mumbai". */
+export function humanizeCity(city: City): string {
+  return city
+    .split("_")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
 
 /**
  * A public place pin. This is the entire committed record shape.

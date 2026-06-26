@@ -1,19 +1,27 @@
 "use client";
 
-import { CITIES, CITY_LABELS, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
+import { PLACE_TYPES, PLACE_TYPE_LABELS, humanizeCity } from "@/lib/types";
 import type { City, PlaceType } from "@/lib/types";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Separator } from "@/components/ui/separator";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export interface PlaceFilters {
   types: PlaceType[];
-  cities: City[];
+  city: City | null;
 }
 
 interface FilterPanelProps {
   filters: PlaceFilters;
+  cities: City[];
   onChange: (filters: PlaceFilters) => void;
   resultCount: number;
 }
@@ -26,10 +34,11 @@ function toggle<T>(list: T[], value: T): T[] {
 
 export function FilterPanel({
   filters,
+  cities,
   onChange,
   resultCount,
 }: FilterPanelProps) {
-  const allEmpty = filters.types.length === 0 && filters.cities.length === 0;
+  const allEmpty = filters.types.length === 0 && !filters.city;
 
   return (
     <div className="flex max-h-[70vh] w-full flex-col gap-3 overflow-y-auto">
@@ -42,27 +51,34 @@ export function FilterPanel({
             variant="ghost"
             size="sm"
             className="h-7 px-2 text-xs"
-            onClick={() => onChange({ types: [], cities: [] })}
+            onClick={() => onChange({ types: [], city: null })}
           >
             Reset
           </Button>
         )}
       </div>
 
-      <fieldset className="flex flex-col gap-2 border-0 p-0 m-0">
-        <legend className="text-xs font-medium text-muted-foreground">City</legend>
-        {CITIES.map((city) => (
-          <label key={city} className="flex items-center gap-2 text-sm">
-            <Checkbox
-              checked={filters.cities.includes(city)}
-              onCheckedChange={() =>
-                onChange({ ...filters, cities: toggle(filters.cities, city) })
-              }
-            />
-            {CITY_LABELS[city]}
-          </label>
-        ))}
-      </fieldset>
+      <div className="flex flex-col gap-2">
+        <p className="text-xs font-medium text-muted-foreground">City</p>
+        <Select
+          value={filters.city ?? "all"}
+          onValueChange={(value) =>
+            onChange({ ...filters, city: value === "all" ? null : value })
+          }
+        >
+          <SelectTrigger className="w-full">
+            <SelectValue placeholder="All cities" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="all">All cities</SelectItem>
+            {cities.map((city) => (
+              <SelectItem key={city} value={city}>
+                {humanizeCity(city)}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
 
       <Separator />
 
