@@ -262,5 +262,17 @@
     "address": "Gedung Crystal of Knowledge, Jl. Letjen DR. Sjarif Thajeb, Pondok Cina, Depok, West Java 16424",
     "gmaps_link": "https://maps.google.com/?cid=ChIJvYVjmBDsaS4Rr9Bc9B5a1VU",
     "added_by": "Yojeet(Circout-sudo)"
-  }
+  },
+  {
+  "id": "xiamen-library-01",
+  "name": "厦门图书馆集美新城馆东南门",
+  "type": "library",
+  "city": "厦门",
+  "lat": 24.59441,
+  "lng": 118.05789,
+  "address": "福建省厦门市集美区诚毅中路380号",
+  "gmaps_link": "https://map.baidu.com/poi/厦门市图书馆(集美新城馆区)/@13142924.585,2808849.87,18.12z?uid=93b7f97fd6dbf55ca0acc43c&info_merge=1&isBizPoi=false&ugc_type=3&ugc_ver=1&device_ratio=1&compat=1&en_uid=93b7f97fd6dbf55ca0acc43c&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl",
+  "added_by": "Yojeet(Circout-sudo)"
+}
+
 ]
