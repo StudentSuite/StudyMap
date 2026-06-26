@@ -15,7 +15,7 @@ import {
 
 import type { Place } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
-import { MMR_CENTER, MMR_DEFAULT_ZOOM } from "@/lib/places";
+import { MAP_CENTER, DEFAULT_ZOOM } from "@/lib/constants";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 
@@ -117,7 +117,7 @@ export default function MapView({
   userLocation,
   focusId,
   interactive = true,
-  zoom = MMR_DEFAULT_ZOOM,
+  zoom = DEFAULT_ZOOM,
 }: MapViewProps) {
   const focusPlace = focusId
     ? places.find((place) => place.id === focusId)
@@ -134,7 +134,7 @@ export default function MapView({
       className="size-full"
     >
     <MapContainer
-      center={MMR_CENTER}
+      center={MAP_CENTER}
       zoom={zoom}
       scrollWheelZoom={false}
       dragging={interactive}
