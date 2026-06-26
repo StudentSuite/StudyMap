@@ -5,6 +5,7 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 import type { Place } from "@/lib/types";
+import { MapErrorBoundary } from "@/components/map/map-error-boundary";
 
 const MapView = dynamic(() => import("@/components/map/map-view"), {
   ssr: false,
@@ -23,7 +24,9 @@ const MapView = dynamic(() => import("@/components/map/map-view"), {
 export function MapPreview({ places }: { places: Place[] }) {
   return (
     <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border bg-card shadow-sm lg:aspect-auto lg:h-full lg:min-h-[460px]">
-      <MapView places={places} interactive={false} zoom={10} />
+      <MapErrorBoundary>
+        <MapView places={places} interactive={false} zoom={10} />
+      </MapErrorBoundary>
 
       <div className="pointer-events-none absolute left-3 top-3 z-[1000] rounded-md border border-border bg-background/85 px-2 py-1 font-mono text-[0.65rem] uppercase tracking-wider text-muted-foreground">
         Live data, OpenStreetMap

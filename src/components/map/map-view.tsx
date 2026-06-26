@@ -124,6 +124,15 @@ export default function MapView({
     : undefined;
 
   return (
+    <div
+      role={interactive ? "region" : "img"}
+      aria-label={
+        interactive
+          ? "Interactive map of student places"
+          : "Map preview of student places"
+      }
+      className="size-full"
+    >
     <MapContainer
       center={MMR_CENTER}
       zoom={zoom}
@@ -172,5 +181,6 @@ export default function MapView({
         />
       ))}
     </MapContainer>
+    </div>
   );
 }

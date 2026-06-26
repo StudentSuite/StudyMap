@@ -5,7 +5,6 @@ import type { City, PlaceType } from "@/lib/types";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
 
 export interface PlaceFilters {
@@ -50,8 +49,8 @@ export function FilterPanel({
         )}
       </div>
 
-      <div className="flex flex-col gap-2">
-        <p className="text-xs font-medium text-muted-foreground">City</p>
+      <fieldset className="flex flex-col gap-2 border-0 p-0 m-0">
+        <legend className="text-xs font-medium text-muted-foreground">City</legend>
         {CITIES.map((city) => (
           <label key={city} className="flex items-center gap-2 text-sm">
             <Checkbox
@@ -63,12 +62,12 @@ export function FilterPanel({
             {CITY_LABELS[city]}
           </label>
         ))}
-      </div>
+      </fieldset>
 
       <Separator />
 
-      <div className="flex flex-col gap-2">
-        <p className="text-xs font-medium text-muted-foreground">Type</p>
+      <fieldset className="flex flex-col gap-2 border-0 p-0 m-0">
+        <legend className="text-xs font-medium text-muted-foreground">Type</legend>
         {PLACE_TYPES.map((type) => (
           <label key={type} className="flex items-center gap-2 text-sm">
             <Checkbox
@@ -85,12 +84,11 @@ export function FilterPanel({
             <span>{PLACE_TYPE_LABELS[type]}</span>
           </label>
         ))}
-      </div>
+      </fieldset>
 
       <p className="text-xs text-muted-foreground">
         No filter selected means everything shows.
       </p>
-      <Label className="sr-only">Filter places by city and type</Label>
     </div>
   );
 }

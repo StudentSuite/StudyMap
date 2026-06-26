@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { FilterPanel, type PlaceFilters } from "@/components/map/filter-panel";
+import { MapErrorBoundary } from "@/components/map/map-error-boundary";
 import { NearMeButton } from "@/components/map/near-me-button";
 
 const MapView = dynamic(() => import("@/components/map/map-view"), {
@@ -83,11 +84,13 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   return (
     <div className="relative size-full overflow-hidden">
-      <MapView
-        places={visible}
-        userLocation={userLocation}
-        focusId={focusId}
-      />
+      <MapErrorBoundary>
+        <MapView
+          places={visible}
+          userLocation={userLocation}
+          focusId={focusId}
+        />
+      </MapErrorBoundary>
 
       <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex justify-end sm:hidden">
         <Button

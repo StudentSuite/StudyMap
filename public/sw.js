@@ -11,7 +11,9 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(APP_CACHE);
-      await cache.addAll(PRECACHE).catch(() => {});
+      await cache.addAll(PRECACHE).catch((err) =>
+        console.warn("[SW] Precache failed:", err),
+      );
       self.skipWaiting();
     })(),
   );
@@ -55,7 +57,8 @@ self.addEventListener("fetch", (event) => {
             trimCache(TILE_CACHE, TILE_LIMIT);
           }
           return res;
-        } catch {
+        } catch (err) {
+          console.warn("[SW] Tile fetch failed:", err);
           return hit || Response.error();
         }
       })(),
