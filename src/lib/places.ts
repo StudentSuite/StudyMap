@@ -9,10 +9,6 @@ import library from "../../data/places/library.json";
 import impLocations from "../../data/places/imp_locations.json";
 import trainStation from "../../data/places/train_station.json";
 
-/** Approximate centre of the Mumbai Metropolitan Region, for the initial map view. */
-export const MMR_CENTER: [number, number] = [19.08, 72.95];
-export const MMR_DEFAULT_ZOOM = 11;
-
 const ALL: Place[] = [
   ...(airport as Place[]),
   ...(bookShop as Place[]),
