@@ -108,6 +108,138 @@
     "address": "Sector 5, Nerul, Navi Mumbai 400706",
     "gmaps_link": "https://maps.google.com/?q=19.0314,73.0246",
     "added_by": "thunderblitzyt-eng"
+  },
+  {
+    "id": "mum-library-06",
+    "name": "Asiatic Society of Mumbai Library",
+    "type": "library",
+    "city": "mumbai",
+    "lat": 18.9318,
+    "lng": 72.8362,
+    "address": "Town Hall, Shahid Bhagat Singh Rd, Horniman Circle, Fort, Mumbai 400023",
+    "gmaps_link": "https://maps.google.com/?q=18.9318,72.8362",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-library-07",
+    "name": "Mumbai University Library",
+    "type": "library",
+    "city": "mumbai",
+    "lat": 18.9279,
+    "lng": 72.8317,
+    "address": "Fort Campus, Rajabai Tower Complex, Fort, Mumbai 400032",
+    "gmaps_link": "https://maps.google.com/?q=18.9279,72.8317",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-library-08",
+    "name": "Andheri Municipal Library",
+    "type": "library",
+    "city": "mumbai",
+    "lat": 19.1197,
+    "lng": 72.8466,
+    "address": "Andheri West, Mumbai 400058",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8466",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-library-09",
+    "name": "Mulund Municipal Library",
+    "type": "library",
+    "city": "mumbai",
+    "lat": 19.1715,
+    "lng": 72.9558,
+    "address": "Mulund West, Mumbai 400080",
+    "gmaps_link": "https://maps.google.com/?q=19.1715,72.9558",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-library-10",
+    "name": "Kurla Municipal Library",
+    "type": "library",
+    "city": "mumbai",
+    "lat": 19.0726,
+    "lng": 72.8797,
+    "address": "Kurla West, Mumbai 400070",
+    "gmaps_link": "https://maps.google.com/?q=19.0726,72.8797",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-library-04",
+    "name": "Indian Library, Thane",
+    "type": "library",
+    "city": "thane",
+    "lat": 19.2183,
+    "lng": 72.9757,
+    "address": "Golden Plaza, LBS Marg, Gokul Nagar, Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2183,72.9757",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-library-05",
+    "name": "Marathi Granth Sangrahalaya",
+    "type": "library",
+    "city": "thane",
+    "lat": 19.1909,
+    "lng": 72.9769,
+    "address": "Jambli Naka, Station Road, Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.1909,72.9769",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-library-06",
+    "name": "Dombivali Municipal Library",
+    "type": "library",
+    "city": "thane",
+    "lat": 19.2139,
+    "lng": 73.0896,
+    "address": "Dombivali East, Thane District 421201",
+    "gmaps_link": "https://maps.google.com/?q=19.2139,73.0896",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-library-03",
+    "name": "Ideal Study Library",
+    "type": "library",
+    "city": "navi_mumbai",
+    "lat": 19.0371,
+    "lng": 73.0216,
+    "address": "Chandrai Arcade, Sector 20, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0371,73.0216",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-library-04",
+    "name": "NMMC Central Library",
+    "type": "library",
+    "city": "navi_mumbai",
+    "lat": 19.0395,
+    "lng": 73.0165,
+    "address": "Sector 22, Sanpada, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0395,73.0165",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-library-05",
+    "name": "Readnjoy Library, Kharghar",
+    "type": "library",
+    "city": "navi_mumbai",
+    "lat": 19.0473,
+    "lng": 73.0699,
+    "address": "Bhumiraj Woods, Sector 20, Kharghar, Navi Mumbai 410210",
+    "gmaps_link": "https://maps.google.com/?q=19.0473,73.0699",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-library-06",
+    "name": "Panvel Municipal Library",
+    "type": "library",
+    "city": "navi_mumbai",
+    "lat": 18.9894,
+    "lng": 73.1100,
+    "address": "Panvel, Navi Mumbai 410206",
+    "gmaps_link": "https://maps.google.com/?q=18.9894,73.1100",
+    "added_by": "yashkewlani"
   },{
   "id": "jakarta-library-01",
   "name": "Perpustakaan Nasional Republik Indonesia",
