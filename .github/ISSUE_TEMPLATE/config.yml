@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: General question or feedback
+    url: mailto:dhawansanay@gmail.com
+    about: Questions and general feedback — from CONTRIBUTING.md.
+  - name: Security vulnerability
+    url: mailto:anay@studymap.dev
+    about: Report security issues privately — do not open a public issue.
