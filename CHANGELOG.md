@@ -5,6 +5,27 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-06-26
+
+### Added
+
+- Map filter panel: city filter is now a dynamic dropdown built from the dataset
+  instead of a fixed Mumbai/Thane/Navi Mumbai checkbox list. Selecting a city
+  flies the map to that city's bounds.
+
+### Changed
+
+- StudyMap is now international in scope. `CONTRIBUTING.md` no longer
+  restricts `city` or coordinates to the Mumbai Metropolitan Region; any real,
+  verified place worldwide is welcome. Map page metadata updated to match.
+- Re-curated `train_station.json` back to the 5 major stations (CSMT, Dadar,
+  Andheri, Thane, Vashi) after a later contribution had reintroduced the full
+  Western/Central/Harbour line list, which diluted the curated set.
+- Navbar `z-index` raised so it always renders above the map's filter panel
+  and markers on the `/map` page.
+- Mobile hamburger nav drawer `z-index` raised above the map UI so it's no
+  longer covered when opened on small screens.
+
 ## [1.0.2] - 2026-06-26
 
 ### Added
@@ -73,5 +94,5 @@ Internal milestone: Places-only scope.
   student-docs, contact, and auth features (decision 2026-06-11; superseded
   for student-docs by 1.0.0, which reintroduces a single curated guide).
 
-[1.1.0]: https://github.com/AnayDhawan/StudyMap/compare/v1.0.1...v1.1.0
-[1.0.0]: https://github.com/AnayDhawan/StudyMap/releases/tag/v1.0.0
+[1.1.0]: https://github.com/StudentSuite/StudyMap/compare/v1.0.1...v1.1.0
+[1.0.0]: https://github.com/StudentSuite/StudyMap/releases/tag/v1.0.0
