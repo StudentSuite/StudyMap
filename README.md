@@ -86,7 +86,6 @@ src/
     site.ts             # site metadata, navLinks
 data/
   places/               # 8 JSON files, one per place type
-e2e/                    # Playwright tests (chromium, firefox, Mobile Chrome)
 ```
 
 ## Tech stack
@@ -95,7 +94,6 @@ e2e/                    # Playwright tests (chromium, firefox, Mobile Chrome)
 - **Leaflet + react-leaflet** (interactive map)
 - **shadcn/ui + Tailwind v4** (UI components)
 - **next-themes** (dark/light mode)
-- **Playwright** (E2E tests)
 
 ## Contributing
 
