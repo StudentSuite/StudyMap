@@ -6,7 +6,7 @@ import { PlacesMap } from "@/components/map/places-map";
 export const metadata: Metadata = {
   title: "Map",
   description:
-    "Interactive map of student-important places across Mumbai, Thane, and Navi Mumbai. Filter by type and city, find what is near you, and share the view.",
+    "Interactive map of student-important places worldwide. Filter by type and city, find what is near you, and share the view.",
 };
 
 export default function MapPage() {

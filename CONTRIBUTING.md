@@ -37,9 +37,9 @@ Each place is one object inside `data/places/<type>.json`. Valid types: `book_sh
 }
 ```
 
-- `city` is one of: `mumbai`, `thane`, `navi_mumbai`
+- `city` is a lowercase, underscore-separated slug (e.g. `mumbai`, `navi_mumbai`, `jakarta`). Any city worldwide is welcome — StudyMap is not limited to the Mumbai Metropolitan Region.
 - `id` format: `<city-prefix>-<type>-<number>`, unique within the file
-- Coordinates: `lat` 18-20, `lng` 72-73 (Mumbai Metropolitan Region)
+- Coordinates: real-world `lat`/`lng` for the place, matched to its `city`
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
 
 ## Commit message format
