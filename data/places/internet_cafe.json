@@ -86,5 +86,126 @@
     "address": "Nerul, Navi Mumbai 400706",
     "gmaps_link": "https://maps.google.com/?q=19.0350,73.0200",
     "added_by": "thunderblitzyt-eng"
+  },
+  {
+    "id": "mum-internet_cafe-07",
+    "name": "Bytes Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.1177,
+    "lng": 72.8784,
+    "address": "Andheri East, Mumbai 400069",
+    "gmaps_link": "https://maps.google.com/?q=19.1177,72.8784",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-internet_cafe-08",
+    "name": "Speedway Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.2307,
+    "lng": 72.8567,
+    "address": "Borivali West, Mumbai 400092",
+    "gmaps_link": "https://maps.google.com/?q=19.2307,72.8567",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-internet_cafe-09",
+    "name": "Digital Zone Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.0862,
+    "lng": 72.9069,
+    "address": "Ghatkopar West, Mumbai 400086",
+    "gmaps_link": "https://maps.google.com/?q=19.0862,72.9069",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-internet_cafe-10",
+    "name": "Net Planet Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.0726,
+    "lng": 72.8797,
+    "address": "Kurla West, Mumbai 400070",
+    "gmaps_link": "https://maps.google.com/?q=19.0726,72.8797",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-internet_cafe-11",
+    "name": "iCafe Internet Lounge",
+    "type": "internet_cafe",
+    "city": "mumbai",
+    "lat": 19.1868,
+    "lng": 72.8484,
+    "address": "Malad West, Mumbai 400064",
+    "gmaps_link": "https://maps.google.com/?q=19.1868,72.8484",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-internet_cafe-03",
+    "name": "Netzone Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "thane",
+    "lat": 19.2183,
+    "lng": 72.9781,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-internet_cafe-04",
+    "name": "GameStation Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "thane",
+    "lat": 19.2250,
+    "lng": 72.9700,
+    "address": "Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.2250,72.9700",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-internet_cafe-05",
+    "name": "Connect Cyber Cafe",
+    "type": "internet_cafe",
+    "city": "thane",
+    "lat": 19.2139,
+    "lng": 73.0860,
+    "address": "Dombivali East, Thane 421201",
+    "gmaps_link": "https://maps.google.com/?q=19.2139,73.0860",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-internet_cafe-03",
+    "name": "Speed Net Cafe",
+    "type": "internet_cafe",
+    "city": "navi_mumbai",
+    "lat": 19.0474,
+    "lng": 73.0737,
+    "address": "Sector 20, Kharghar, Navi Mumbai 410210",
+    "gmaps_link": "https://maps.google.com/?q=19.0474,73.0737",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-internet_cafe-04",
+    "name": "Cyber Hub",
+    "type": "internet_cafe",
+    "city": "navi_mumbai",
+    "lat": 18.9894,
+    "lng": 73.1100,
+    "address": "Panvel, Navi Mumbai 410206",
+    "gmaps_link": "https://maps.google.com/?q=18.9894,73.1100",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-internet_cafe-05",
+    "name": "Cyber World, Belapur",
+    "type": "internet_cafe",
+    "city": "navi_mumbai",
+    "lat": 19.0218,
+    "lng": 73.0304,
+    "address": "CBD Belapur, Navi Mumbai 400614",
+    "gmaps_link": "https://maps.google.com/?q=19.0218,73.0304",
+    "added_by": "yashkewlani"
   }
 ]
