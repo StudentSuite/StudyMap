@@ -158,10 +158,142 @@
     "name": "Roxy Library And Book shop(Mulund)",
     "type": "book_shop",
     "city": "mumbai",
-    "lat": 19.171616406088127, 
+    "lat": 19.171616406088127,
     "lng": 72.94725472189515,
     "address": "Mulund, Mumbai",
     "gmaps_link": "https://maps.app.goo.gl/wgjaXqFhCCHrTKRP7" ,
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "mum-book_shop-07",
+    "name": "Strand Book Stall",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 18.9294,
+    "lng": 72.8334,
+    "address": "Sir P.M. Road, near Hutatma Chowk, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9294,72.8334",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-book_shop-08",
+    "name": "Kitab Khana",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 18.9290,
+    "lng": 72.8338,
+    "address": "Somaiya Bhavan, Sir P.M. Road, Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9290,72.8338",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-book_shop-09",
+    "name": "Crossword Bookstore, Kemps Corner",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 18.9637,
+    "lng": 72.8099,
+    "address": "Kemps Corner, Mumbai 400036",
+    "gmaps_link": "https://maps.google.com/?q=18.9637,72.8099",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-book_shop-10",
+    "name": "Crossword Bookstore, Juhu",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 19.1031,
+    "lng": 72.8266,
+    "address": "Juhu, Mumbai 400049",
+    "gmaps_link": "https://maps.google.com/?q=19.1031,72.8266",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mum-book_shop-11",
+    "name": "Crossword Bookstore, Malad",
+    "type": "book_shop",
+    "city": "mumbai",
+    "lat": 19.1868,
+    "lng": 72.8484,
+    "address": "Infinity Mall, Malad West, Mumbai 400064",
+    "gmaps_link": "https://maps.google.com/?q=19.1868,72.8484",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-book_shop-04",
+    "name": "Crossword Bookstore, Viviana Mall",
+    "type": "book_shop",
+    "city": "thane",
+    "lat": 19.2295,
+    "lng": 72.9762,
+    "address": "Viviana Mall, Pokhran Road 2, Thane West, Thane 400610",
+    "gmaps_link": "https://maps.google.com/?q=19.2295,72.9762",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-book_shop-05",
+    "name": "Variety Book House",
+    "type": "book_shop",
+    "city": "thane",
+    "lat": 19.1983,
+    "lng": 72.9793,
+    "address": "Jambli Naka, Thane West, Thane 400601",
+    "gmaps_link": "https://maps.google.com/?q=19.1983,72.9793",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "thn-book_shop-06",
+    "name": "Book Corner, Dombivali",
+    "type": "book_shop",
+    "city": "thane",
+    "lat": 19.2139,
+    "lng": 73.0860,
+    "address": "Dombivali East, Thane 421201",
+    "gmaps_link": "https://maps.google.com/?q=19.2139,73.0860",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-book_shop-01",
+    "name": "Crossword Bookstore, Vashi",
+    "type": "book_shop",
+    "city": "navi_mumbai",
+    "lat": 19.0750,
+    "lng": 73.0045,
+    "address": "Inorbit Mall, Sector 30A, Vashi, Navi Mumbai 400703",
+    "gmaps_link": "https://maps.google.com/?q=19.0750,73.0045",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-book_shop-02",
+    "name": "New Light Book House",
+    "type": "book_shop",
+    "city": "navi_mumbai",
+    "lat": 19.0371,
+    "lng": 73.0216,
+    "address": "Sector 20, Nerul, Navi Mumbai 400706",
+    "gmaps_link": "https://maps.google.com/?q=19.0371,73.0216",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-book_shop-03",
+    "name": "Popular Book Depot, Kharghar",
+    "type": "book_shop",
+    "city": "navi_mumbai",
+    "lat": 19.0474,
+    "lng": 73.0699,
+    "address": "Sector 7, Kharghar, Navi Mumbai 410210",
+    "gmaps_link": "https://maps.google.com/?q=19.0474,73.0699",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "nvm-book_shop-04",
+    "name": "Panvel Book Centre",
+    "type": "book_shop",
+    "city": "navi_mumbai",
+    "lat": 18.9894,
+    "lng": 73.1073,
+    "address": "Panvel, Navi Mumbai 410206",
+    "gmaps_link": "https://maps.google.com/?q=18.9894,73.1073",
+    "added_by": "yashkewlani"
   }
 ]
