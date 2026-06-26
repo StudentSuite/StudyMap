@@ -108,5 +108,26 @@
     "address": "Sector 5, Nerul, Navi Mumbai 400706",
     "gmaps_link": "https://maps.google.com/?q=19.0314,73.0246",
     "added_by": "thunderblitzyt-eng"
-  }
+  },{
+  "id": "jakarta-library-01",
+  "name": "Perpustakaan Nasional Republik Indonesia",
+  "type": "library",
+  "city": "jakarta",
+  "lat": -6.1814519,
+  "lng": 106.8269647,
+  "address": "Jl. Medan Merdeka Sel. No.11, Gambir, Jakarta Pusat 10110",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJkwxuWUL0aS4RNv55CeSLpUs",
+  "added_by": "Yojeet(Circout-sudo)"
+},{
+  "id": "depok-library-01",
+  "name": "University of Indonesia Library",
+  "type": "library",
+  "city": "depok",
+  "lat": -6.3652214,
+  "lng": 106.8295695,
+  "address": "Gedung Crystal of Knowledge, Jl. Letjen DR. Sjarif Thajeb, Pondok Cina, Depok, West Java 16424",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJvYVjmBDsaS4Rr9Bc9B5a1VU",
+  "added_by": "Yojeet(Circout-sudo)"
+}
+  
 ]
