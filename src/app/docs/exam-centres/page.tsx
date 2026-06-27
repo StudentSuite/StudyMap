@@ -12,7 +12,7 @@ import { PageContainer } from "@/components/layout/page-container";
 export const metadata: Metadata = {
   title: "Finding Exam Centres",
   description:
-    "How to use StudyMap to locate SAT, IB, and IGCSE exam centres across the Mumbai Metropolitan Region.",
+    "How to use StudyMap to locate verified SAT centres in Mumbai and Goethe-Institut German exam centres in Mumbai and Pune.",
 };
 
 export default function ExamCentresPage() {

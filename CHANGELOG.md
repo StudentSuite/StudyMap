@@ -5,6 +5,24 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0] - 2026-06-27
+
+### Added
+
+- Map marker clustering: overlapping pins now merge into pie-chart-style cluster icons (color-segmented by place type) instead of rendering as a messy pile. Click a cluster to zoom into its children.
+- Exam centre metadata: places can now include `exam` (exam name) and `valid_till` (ISO date for reconfirmation) fields. Exam centres display exam type and validity date in popups.
+- Verified SAT exam centres (Mumbai city only): 7 major international schools verified via web cross-check (Aditya Birla World Academy, American School of Bombay, Cathedral & John Connon, Don Bosco International, B D Somani, Anjuman Islam, Bombay Teachers' Training College). Valid through Nov 7, 2026 SAT administration.
+- Goethe-Institut centres: Max Mueller Bhavan locations in Mumbai (Lower Parel, from Jul 15 2026) and Pune (Boat Club Road).
+
+### Changed
+
+- Exam centres now show individual place type markers (teardrop/pointer pins) instead of circles when isolated. Clusters use conic-gradient pie charts to visualize type distribution.
+- `/docs/exam-centres` metadata updated: coverage is now Mumbai-city SAT only (not full MMR) plus Goethe centres in two cities. Added note recommending students reconfirm exact centre via College Board's official Test Center Search before registering.
+
+### Removed
+
+- Old unverified IB/IGCSE exam centre entries across Thane and Navi Mumbai (replaced with high-confidence SAT centres only).
+
 ## [1.1.0] - 2026-06-26
 
 ### Added

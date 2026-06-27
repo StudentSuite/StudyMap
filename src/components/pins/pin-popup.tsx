@@ -12,6 +12,15 @@ interface PinPopupProps {
   place: Place;
 }
 
+function formatValidTill(iso: string): string {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso;
+  return new Date(iso + "T00:00:00").toLocaleDateString("en-IN", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
+}
+
 export function PinPopup({ place }: PinPopupProps) {
   function copyLink() {
     const url = buildShareUrl({ types: [], city: null, placeId: place.id });
@@ -44,6 +53,16 @@ export function PinPopup({ place }: PinPopupProps) {
       {/* Address */}
       {place.address && (
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
+      )}
+
+      {/* Exam centre validity */}
+      {place.exam && (
+        <div className="rounded-md border border-border/60 bg-muted/50 px-2 py-1.5 text-[11px] leading-snug text-muted-foreground">
+          <span className="font-medium text-foreground">{place.exam}</span> centre
+          {place.valid_till && (
+            <> &middot; reconfirm by {formatValidTill(place.valid_till)}</>
+          )}
+        </div>
       )}
 
       {/* Actions */}

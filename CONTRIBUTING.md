@@ -41,6 +41,9 @@ Each place is one object inside `data/places/<type>.json`. Valid types: `book_sh
 - `id` format: `<city-prefix>-<type>-<number>`, unique within the file
 - Coordinates: real-world `lat`/`lng` for the place, matched to its `city`
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
+- `exam` and `valid_till` are optional, `exam_centre`-only fields:
+  - `exam`: the exam this centre serves, e.g. `"SAT"`, `"Goethe-Zertifikat (A1-C2)"`
+  - `valid_till`: ISO date (`YYYY-MM-DD`) the entry should be reconfirmed by, e.g. the last exam administration the centre is verified for. Always reconfirm your exact centre with the exam board before relying on this field; centres change between administrations.
 
 ## Commit message format
 

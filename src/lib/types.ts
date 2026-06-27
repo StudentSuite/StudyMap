@@ -53,5 +53,9 @@ export interface Place {
   address?: string;
   gmaps_link: string;
   added_by: string;
+  /** Exam this place is a centre for, e.g. "SAT", "Goethe-Zertifikat (A1-C2)". */
+  exam?: string;
+  /** ISO date the centre's exam/address validity should be reconfirmed by. */
+  valid_till?: string;
 }
 
