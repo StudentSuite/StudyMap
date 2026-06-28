@@ -5,6 +5,18 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.1] - 2026-06-28
+
+### Added
+
+- Optional sign-in via Google OAuth and Supabase email/password auth. The site remains fully public - a Sign in button appears in the top-right navbar for users who want to authenticate. After sign-in, users are returned to the page they came from.
+
+### Fixed
+
+- Auth callbacks always redirect to `studymapp.vercel.app` regardless of which Vercel deployment URL receives the OAuth callback, preventing users from landing on the auto-assigned `studymapp-student-suite.vercel.app` domain.
+- Contact email updated to `studentsuite0@gmail.com` in `CONTRIBUTING.md`, `SECURITY.md`, and issue templates.
+- Canonical live URL corrected to `https://studymapp.vercel.app` in `README.md`.
+
 ## [1.2.0] - 2026-06-27
 
 ### Added
