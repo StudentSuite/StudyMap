@@ -25,24 +25,9 @@ export async function proxy(request: NextRequest) {
     },
   );
 
-  const { data } = await supabase.auth.getUser();
-  const user = data?.user ?? null;
-
-  const { pathname } = request.nextUrl;
-
-  // Unauthenticated — send to login
-  if (!user && !pathname.startsWith("/login") && !pathname.startsWith("/auth")) {
-    const url = request.nextUrl.clone();
-    url.pathname = "/login";
-    return NextResponse.redirect(url);
-  }
-
-  // Already logged in — skip the login page
-  if (user && pathname === "/login") {
-    const url = request.nextUrl.clone();
-    url.pathname = "/";
-    return NextResponse.redirect(url);
-  }
+  // Refresh the session so it doesn't expire mid-visit.
+  // No auth enforcement — the site is fully public.
+  await supabase.auth.getUser();
 
   return proxyResponse;
 }

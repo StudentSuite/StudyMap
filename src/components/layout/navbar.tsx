@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Menu, LogOut } from "lucide-react";
+import { Menu, LogOut, LogIn } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { navLinks, site } from "@/lib/site";
@@ -30,7 +30,6 @@ export function Navbar() {
   async function handleSignOut() {
     const supabase = createClient();
     await supabase.auth.signOut();
-    router.push("/login");
     router.refresh();
   }
 
@@ -64,7 +63,7 @@ export function Navbar() {
 
         <div className="ml-auto flex items-center gap-1">
           <ThemeToggle />
-          {loggedIn && (
+          {loggedIn ? (
             <Button
               variant="ghost"
               size="icon"
@@ -73,6 +72,18 @@ export function Navbar() {
               className="hidden md:inline-flex"
             >
               <LogOut className="size-4" />
+            </Button>
+          ) : (
+            <Button
+              variant="ghost"
+              size="sm"
+              asChild
+              className="hidden md:inline-flex gap-1.5"
+            >
+              <Link href="/login">
+                <LogIn className="size-4" />
+                Sign in
+              </Link>
             </Button>
           )}
 
@@ -98,7 +109,7 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                {loggedIn && (
+                {loggedIn ? (
                   <button
                     onClick={() => { setOpen(false); handleSignOut(); }}
                     className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
@@ -106,6 +117,15 @@ export function Navbar() {
                     <LogOut className="size-4" />
                     Sign out
                   </button>
+                ) : (
+                  <Link
+                    href="/login"
+                    onClick={() => setOpen(false)}
+                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                  >
+                    <LogIn className="size-4" />
+                    Sign in
+                  </Link>
                 )}
               </nav>
             </SheetContent>
