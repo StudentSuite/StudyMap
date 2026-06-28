@@ -2,7 +2,7 @@
 
 ## Reporting a Vulnerability
 
-If you discover a security vulnerability in StudyMap, please report it responsibly by emailing **dhawansanay@gmail.com** with the following details:
+If you discover a security vulnerability in StudyMap, please report it responsibly by emailing **studentsuite0@gmail.com** with the following details:
 
 - Description of the vulnerability
 - Steps to reproduce
