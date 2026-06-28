@@ -3,6 +3,7 @@ export const site = {
   tagline: "Find student places and perks across Mumbai, Thane, and Navi Mumbai.",
   description:
     "A crowdsourced map of student-important places (exam centres, libraries, book shops, and more) for the Mumbai Metropolitan Region.",
+  url: "https://studymapp.vercel.app",
   repo: "https://github.com/anaydhawan/studymap",
 } as const;
 
