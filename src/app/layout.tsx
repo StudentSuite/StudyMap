@@ -12,6 +12,7 @@ import { Analytics } from "@/components/analytics";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(site.url),
   title: {
     default: `${site.name}: student places and benefits`,
     template: `%s | ${site.name}`,
