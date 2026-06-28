@@ -38,7 +38,7 @@ export default function LoginPage() {
       if (error) {
         toast.error(error.message);
       } else {
-        router.push("/map");
+        router.push("/");
         router.refresh();
       }
     }
