@@ -68,4 +68,4 @@ Optional scope in parens: `feat(calendar): add today label`. One logical change 
 
 - No em dashes in any copy
 - Run `npm run dev` and verify your change on localhost before opening a PR
-- Questions: open an issue or email [dhawansanay@gmail.com](mailto:dhawansanay@gmail.com)
+- Questions: open an issue or email [studentsuite0@gmail.com](mailto:studentsuite0@gmail.com)
