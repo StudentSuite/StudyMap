@@ -40,6 +40,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [focusId, setFocusId] = React.useState<string | null>(null);
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
+  const [sortByDistance, setSortByDistance] = React.useState(false);
   const hydrated = React.useRef(false);
 
   const cities = React.useMemo(() => getCities(places), [places]);
@@ -95,10 +96,12 @@ export function PlacesMap({ places }: PlacesMapProps) {
       .catch(() => toast.error("Could not copy link"));
   }
 
-  const nearest = React.useMemo(() => {
+  const byDistance = React.useMemo(() => {
     if (!userLocation) return [];
-    return placesByDistance(visible, userLocation).slice(0, 5);
+    return placesByDistance(visible, userLocation);
   }, [visible, userLocation]);
+
+  const nearest = sortByDistance ? byDistance : byDistance.slice(0, 5);
 
   return (
     <div className="relative size-full overflow-hidden">
@@ -171,11 +174,22 @@ export function PlacesMap({ places }: PlacesMapProps) {
           </Button>
         </div>
 
-        {nearest.length > 0 && (
+        {byDistance.length > 0 && (
           <div className="mt-3 space-y-1.5">
-            <p className="text-xs font-medium text-muted-foreground">
-              Nearest to you
-            </p>
+            <div className="flex items-center justify-between">
+              <p className="text-xs font-medium text-muted-foreground">
+                {sortByDistance
+                  ? `All ${byDistance.length} - nearest first`
+                  : "Nearest to you"}
+              </p>
+              <button
+                type="button"
+                className="text-xs text-muted-foreground underline underline-offset-2 hover:text-foreground"
+                onClick={() => setSortByDistance((s) => !s)}
+              >
+                {sortByDistance ? "Show fewer" : "Show all"}
+              </button>
+            </div>
             <ul className="space-y-1.5">
               {nearest.map((place) => (
                 <li
