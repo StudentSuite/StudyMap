@@ -266,6 +266,30 @@ function ScrollZoomGuard() {
   );
 }
 
+/**
+ * Keeps Leaflet's tile grid in sync with the container's real size.
+ * Without this, anything that resizes the map div (mobile browser chrome
+ * collapsing, orientation change, the lg sidebar breakpoint) leaves stale
+ * tile bounds behind, which renders as blank tiles at the edges.
+ */
+function MapResizeHandler() {
+  const map = useMap();
+  useEffect(() => {
+    const container = map.getContainer();
+    let frame: number;
+    const observer = new ResizeObserver(() => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => map.invalidateSize());
+    });
+    observer.observe(container);
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [map]);
+  return null;
+}
+
 export default function MapView({
   places,
   userLocation,
@@ -314,6 +338,7 @@ export default function MapView({
         detectRetina
       />
 
+      <MapResizeHandler />
       {interactive && <ScrollZoomGuard />}
 
       {userLocation && (
