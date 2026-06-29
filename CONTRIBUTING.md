@@ -8,6 +8,90 @@ Thanks for helping students find their way around. The most useful contribution 
 - **Fix incorrect data** (wrong coordinates, outdated name, broken link)
 - **Fix code or docs**
 
+## Local development
+
+### 1. Clone and install
+
+```bash
+git clone https://github.com/StudentSuite/StudyMap.git
+cd StudyMap
+npm ci
+```
+
+### 2. Set up environment variables
+
+Copy the example file and fill in your values:
+
+```bash
+cp .env.example .env.local
+```
+
+The only required variables are the Supabase credentials (for auth). If you are only adding place data, you can leave them blank - the map still loads without auth.
+
+### 3. Start the dev server
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). The map is at [http://localhost:3000/map](http://localhost:3000/map).
+
+### Worked example: adding a library in Thane
+
+#### Step 1 - verify the place meets the quality gate
+
+Search the place on Google Maps. Confirm:
+
+- Rating is 4.0 or higher
+- It has 50 or more reviews
+- It is real and currently operating
+
+Note down the rating, review count, and date - these go in your PR, not the JSON.
+
+#### Step 2 - get the coordinates
+
+Click the place on Google Maps. The URL contains the coordinates, e.g. `@19.2183,72.9781`. Alternatively, right-click the entrance pin and copy the lat/lng.
+
+#### Step 3 - find the next available ID
+
+```bash
+node -e "const d = require('./data/places/library.json'); const ids = d.map(e=>e.id).filter(id=>id.startsWith('thn')); console.log(ids.sort().at(-1));"
+```
+
+If the last Thane library ID is `thn-library-03`, use `thn-library-04`.
+
+#### Step 4 - add the entry
+
+Open `data/places/library.json` and append before the closing `]`:
+
+```json
+{
+  "id": "thn-library-04",
+  "name": "Thane Municipal Library, Naupada",
+  "type": "library",
+  "city": "thane",
+  "lat": 19.2183,
+  "lng": 72.9781,
+  "address": "Naupada, Thane West",
+  "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
+  "added_by": "your-github-handle"
+}
+```
+
+#### Step 5 - validate
+
+```bash
+node -e "const d = require('./data/places/library.json'); console.log('Total:', d.length); const ids = d.map(e=>e.id); console.log('Dups:', ids.filter((id,i)=>ids.indexOf(id)!==i).length||'none');"
+```
+
+#### Step 6 - confirm the pin appears
+
+The dev server hot-reloads. Refresh [http://localhost:3000/map](http://localhost:3000/map) and check that the new pin appears at the right location.
+
+#### Step 7 - open a PR
+
+Commit with `feat(data): add Thane Municipal Library, Naupada` and open a pull request. Include the Google Maps rating, review count, and the date you verified the place in the PR description.
+
 ## Quality gate for places
 
 Public places live in the repo as JSON and must be trustworthy. Before a place is merged it must clear this gate, with proof shown in the PR:
