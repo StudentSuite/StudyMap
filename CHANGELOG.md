@@ -5,6 +5,24 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.2] - 2026-06-29
+
+### Added
+
+- Debounced text search input in the filter panel: filters visible pins live by place name or city substring (250 ms debounce).
+- Per-category counts next to every type row in the filter panel legend - counts update whenever filters or search change.
+- Nearest-first sort in the distance panel: after granting location, a "Show all" toggle expands the 5-nearest list to all visible places sorted by distance.
+- Local development section in `CONTRIBUTING.md` with step-by-step setup (clone, `npm ci`, `npm run dev`) and a full worked example of adding a place end-to-end.
+
+### Fixed
+
+- Map double-render on load: replaced `useEffect` + `setState` URL hydration with lazy `useState` initialisers so URL state is read on the first render, not patched in after it.
+
+### CI
+
+- New `lint.yml` workflow: runs `npm run lint` and `tsc --noEmit` on every pull request, failing the check on any lint or type error.
+- Removed `continue-on-error` from the lint step in `ci.yml` - lint failures now block the build job too.
+
 ## [1.2.1] - 2026-06-28
 
 ### Added
