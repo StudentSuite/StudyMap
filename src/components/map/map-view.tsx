@@ -3,7 +3,6 @@
 import "leaflet/dist/leaflet.css";
 
 import { useEffect, useMemo, useRef, useState } from "react";
-import { useTheme } from "next-themes";
 import L from "leaflet";
 import Supercluster from "supercluster";
 import {
@@ -303,10 +302,11 @@ export default function MapView({
     ? places.find((place) => place.id === focusId)
     : undefined;
 
-  const { resolvedTheme } = useTheme();
-  // Muted CARTO basemap so the colored category pins read clearly against it.
-  // Dark matter in dark mode, Voyager (soft colour) in light mode.
-  const tileVariant = resolvedTheme === "dark" ? "dark_all" : "voyager";
+  // Same colorful MapTiler "streets" style in both themes — every dark-mode
+  // map style (CARTO, MapTiler, Mapbox alike) is conventionally muted for
+  // legibility, which read as "not colorful" against the brief, so dark
+  // mode reuses the light style instead of a washed-out dark variant.
+  const tileVariant = "streets";
 
   return (
     <div
@@ -332,9 +332,8 @@ export default function MapView({
     >
       <TileLayer
         key={tileVariant}
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        url={`https://{s}.basemaps.cartocdn.com/rastertiles/${tileVariant}/{z}/{x}/{y}{r}.png`}
-        subdomains="abcd"
+        attribution='&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+        url={`https://api.maptiler.com/maps/${tileVariant}/256/{z}/{x}/{y}{r}.png?key=${process.env.NEXT_PUBLIC_MAPTILER_KEY}`}
         maxZoom={20}
         detectRetina
       />
