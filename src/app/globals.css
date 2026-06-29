@@ -277,6 +277,16 @@ html { scroll-behavior: smooth; }
    Leaflet theming — popups, controls, attribution follow app theme
    ================================================================ */
 
+/* Boost basemap colour saturation; scoped to the tile pane only so
+   markers, popups, and controls stay untouched. CARTO dark_all is
+   near-grayscale, so dark mode needs a stronger push. */
+.leaflet-tile-pane {
+  filter: saturate(1.45) contrast(1.05);
+}
+.dark .leaflet-tile-pane {
+  filter: saturate(1.7) contrast(1.1) brightness(1.05);
+}
+
 /* Popup follows app theme (light/dark) via CSS vars.
    Scoped under .leaflet-container so these beat Leaflet's own default
    white background, which otherwise wins on equal specificity because
