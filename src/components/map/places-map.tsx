@@ -33,13 +33,16 @@ interface PlacesMapProps {
 }
 
 export function PlacesMap({ places }: PlacesMapProps) {
-  const [filters, setFilters] = React.useState<PlaceFilters>({
-    types: [],
-    city: null,
-    query: "",
+  const [filters, setFilters] = React.useState<PlaceFilters>(() => {
+    if (typeof window === "undefined") return { types: [], city: null, query: "" };
+    const state = parseMapState(window.location.search);
+    return { types: state.types, city: state.city, query: "" };
   });
   const [debouncedQuery, setDebouncedQuery] = React.useState("");
-  const [focusId, setFocusId] = React.useState<string | null>(null);
+  const [focusId, setFocusId] = React.useState<string | null>(() => {
+    if (typeof window === "undefined") return null;
+    return parseMapState(window.location.search).placeId ?? null;
+  });
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [sortByDistance, setSortByDistance] = React.useState(false);
@@ -47,11 +50,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   const cities = React.useMemo(() => getCities(places), [places]);
 
-  // Restore filters and the focused pin from the URL on first load.
+  // Mark hydrated after first paint so the URL-sync effect below doesn't
+  // overwrite the URL before state has settled.
   React.useEffect(() => {
-    const state = parseMapState(window.location.search);
-    setFilters({ types: state.types, city: state.city, query: "" });
-    setFocusId(state.placeId);
     hydrated.current = true;
   }, []);
 
