@@ -51,13 +51,13 @@ export function ResultsList({
           {emptyHint}
         </p>
       ) : (
-        <ul className="min-h-0 space-y-0.5 overflow-y-auto">
+        <ul className="min-h-0 space-y-1 overflow-y-auto">
           {rows.map(({ place, distanceKm }) => (
             <li key={place.id}>
-              <div className="group flex items-center gap-2 rounded-md px-2 py-1.5 hover:bg-muted">
+              <div className="group flex items-center gap-2.5 rounded-md px-2 py-2 hover:bg-muted">
                 <span
                   aria-hidden
-                  className="size-2.5 shrink-0 rounded-full"
+                  className="size-3 shrink-0 rounded-full"
                   style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
                 />
                 <button
@@ -69,7 +69,7 @@ export function ResultsList({
                   <span className="block truncate text-sm text-foreground">
                     {place.name}
                   </span>
-                  <span className="block truncate text-[11px] text-muted-foreground">
+                  <span className="block truncate text-xs text-muted-foreground">
                     {PLACE_TYPE_LABELS[place.type]}
                     {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
                   </span>
@@ -80,9 +80,9 @@ export function ResultsList({
                   rel="noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   aria-label={`Directions to ${place.name}`}
-                  className="shrink-0 rounded-md p-1.5 text-muted-foreground opacity-0 transition-opacity hover:bg-background hover:text-foreground focus-visible:opacity-100 group-hover:opacity-100"
+                  className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
                 >
-                  <Navigation className="size-3.5" />
+                  <Navigation className="size-4" />
                 </a>
               </div>
             </li>

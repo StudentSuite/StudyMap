@@ -202,12 +202,12 @@ export function PlacesMap({ places }: PlacesMapProps) {
               value={filters.query}
               onChange={(e) => setFilters({ ...filters, query: e.target.value })}
               aria-label="Search places by name or city"
-              className="h-10 bg-card pl-8 shadow-md"
+              className="h-11 bg-card pl-8 shadow-md"
             />
           </div>
           <Button
             variant="secondary"
-            className="pointer-events-auto h-10 shrink-0 px-3 shadow-md"
+            className="pointer-events-auto h-11 shrink-0 px-4 shadow-md"
             onClick={openSheet}
             aria-label="Open filters"
           >
@@ -219,7 +219,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
         {/* Mobile near-me FAB, lifted above the peek bar */}
         <NearMeFab
           onLocated={onLocated}
-          className="absolute bottom-20 right-4 z-[1000] lg:hidden"
+          className="absolute bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
         />
 
         {/* Mobile peek bar: always-visible results summary; tap to open sheet */}
@@ -227,14 +227,14 @@ export function PlacesMap({ places }: PlacesMapProps) {
           type="button"
           onClick={openSheet}
           aria-label="Open places and filters"
-          className="absolute inset-x-0 bottom-0 z-[1000] flex items-center justify-between border-t border-border bg-card px-4 py-3 text-left shadow-[0_-4px_16px_-8px_rgba(0,0,0,0.3)] lg:hidden"
+          className="absolute inset-x-0 bottom-0 z-[1000] flex min-h-14 items-center justify-between border-t border-border bg-card px-4 py-3 text-left shadow-[0_-4px_16px_-8px_rgba(0,0,0,0.3)] lg:hidden"
         >
           <span className="text-sm font-semibold text-foreground">
             {visible.length} {visible.length === 1 ? "place" : "places"} shown
           </span>
-          <span className="flex items-center gap-1 text-xs text-muted-foreground">
+          <span className="flex items-center gap-1 text-sm text-muted-foreground">
             {userLocation ? "Nearest" : "Browse"}
-            <ChevronUp className="size-4" />
+            <ChevronUp className="size-5" />
           </span>
         </button>
 
