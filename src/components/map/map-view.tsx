@@ -101,8 +101,8 @@ function ClusteredMarkers({
 
   const index = useMemo(() => {
     const sc = new Supercluster<ClusterPointProps, ClusterAggProps>({
-      radius: 60,
-      maxZoom: 18,
+      radius: 90,
+      maxZoom: 16,
       map: (props) => {
         const counts = emptyTypeCounts();
         counts[props.type] += 1;
