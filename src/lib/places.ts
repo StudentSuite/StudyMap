@@ -27,14 +27,21 @@ export function getPlaces(): Place[] {
 
 export function filterPlaces(
   places: Place[],
-  opts: { types?: PlaceType[]; city?: City | null },
+  opts: { types?: PlaceType[]; city?: City | null; query?: string },
 ): Place[] {
+  const q = opts.query?.trim().toLowerCase() ?? "";
   return places.filter((place) => {
     if (opts.types && opts.types.length > 0 && !opts.types.includes(place.type)) {
       return false;
     }
     if (opts.city && place.city !== opts.city) {
       return false;
+    }
+    if (q) {
+      const cityNorm = place.city.replace(/_/g, " ");
+      if (!place.name.toLowerCase().includes(q) && !cityNorm.includes(q)) {
+        return false;
+      }
     }
     return true;
   });

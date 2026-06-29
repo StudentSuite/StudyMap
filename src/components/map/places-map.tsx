@@ -36,7 +36,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>({
     types: [],
     city: null,
+    query: "",
   });
+  const [debouncedQuery, setDebouncedQuery] = React.useState("");
   const [focusId, setFocusId] = React.useState<string | null>(null);
   const [panelOpen, setPanelOpen] = React.useState(false);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
@@ -48,10 +50,20 @@ export function PlacesMap({ places }: PlacesMapProps) {
   // Restore filters and the focused pin from the URL on first load.
   React.useEffect(() => {
     const state = parseMapState(window.location.search);
-    setFilters({ types: state.types, city: state.city });
+    setFilters({ types: state.types, city: state.city, query: "" });
     setFocusId(state.placeId);
     hydrated.current = true;
   }, []);
+
+  // Debounce the search query so filtering doesn't run on every keystroke.
+  React.useEffect(() => {
+    if (!filters.query) {
+      setDebouncedQuery("");
+      return;
+    }
+    const timer = setTimeout(() => setDebouncedQuery(filters.query), 250);
+    return () => clearTimeout(timer);
+  }, [filters.query]);
 
   // Mirror filter and focus state back into the URL so it stays shareable.
   React.useEffect(() => {
@@ -65,8 +77,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
   }, [filters, focusId]);
 
   const visible = React.useMemo(
-    () => filterPlaces(places, filters),
-    [places, filters],
+    () => filterPlaces(places, { ...filters, query: debouncedQuery }),
+    [places, filters.types, filters.city, debouncedQuery],
   );
 
   const typeCounts = React.useMemo(() => {

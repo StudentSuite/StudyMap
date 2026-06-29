@@ -5,6 +5,7 @@ import type { City, PlaceType } from "@/lib/types";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import {
   Select,
@@ -17,6 +18,7 @@ import {
 export interface PlaceFilters {
   types: PlaceType[];
   city: City | null;
+  query: string;
 }
 
 interface FilterPanelProps {
@@ -40,10 +42,19 @@ export function FilterPanel({
   resultCount,
   typeCounts,
 }: FilterPanelProps) {
-  const allEmpty = filters.types.length === 0 && !filters.city;
+  const allEmpty = filters.types.length === 0 && !filters.city && !filters.query;
 
   return (
     <div className="flex max-h-[70vh] w-full flex-col gap-3 overflow-y-auto">
+      <Input
+        type="search"
+        placeholder="Search places..."
+        value={filters.query}
+        onChange={(e) => onChange({ ...filters, query: e.target.value })}
+        className="h-8 text-sm"
+        aria-label="Search places by name or city"
+      />
+
       <div className="flex items-center justify-between">
         <p className="text-sm font-semibold">
           {resultCount} {resultCount === 1 ? "place" : "places"}
@@ -53,7 +64,7 @@ export function FilterPanel({
             variant="ghost"
             size="sm"
             className="h-7 px-2 text-xs"
-            onClick={() => onChange({ types: [], city: null })}
+            onClick={() => onChange({ types: [], city: null, query: "" })}
           >
             Reset
           </Button>
