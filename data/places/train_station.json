@@ -15,8 +15,8 @@
     "name": "Dadar Railway Station",
     "type": "train_station",
     "city": "mumbai",
-    "lat": 19.0176,
-    "lng": 72.8479,
+    "lat": 19.01715,
+    "lng": 72.8471206,
     "address": "Dadar West, Mumbai 400028",
     "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
     "added_by": "shauryagangrade"
@@ -26,8 +26,8 @@
     "name": "Andheri Railway Station",
     "type": "train_station",
     "city": "mumbai",
-    "lat": 19.1197,
-    "lng": 72.8468,
+    "lat": 19.11925,
+    "lng": 72.8460206,
     "address": "Andheri East, Mumbai 400072",
     "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
     "added_by": "shauryagangrade"

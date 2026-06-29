@@ -16,7 +16,7 @@
     "type": "imp_locations",
     "city": "mumbai",
     "lat": 18.9674,
-    "lng": 72.8348,
+    "lng": 72.8357,
     "address": "Fort, Mumbai 400001",
     "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
     "added_by": "anaydhawan"
@@ -48,8 +48,8 @@
     "name": "ICICI Bank - Andheri",
     "type": "imp_locations",
     "city": "mumbai",
-    "lat": 19.1197,
-    "lng": 72.8468,
+    "lat": 19.11925,
+    "lng": 72.8475794,
     "address": "Andheri East, Mumbai 400072",
     "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
     "added_by": "anaydhawan"
@@ -169,8 +169,8 @@
     "name": "Passport Seva Kendra, Navi Mumbai",
     "type": "imp_locations",
     "city": "navi_mumbai",
-    "lat": 19.0830,
-    "lng": 73.0280,
+    "lat": 19.083,
+    "lng": 73.028,
     "address": "Turbhe, Navi Mumbai 400705",
     "gmaps_link": "https://maps.google.com/?q=19.0830,73.0280",
     "added_by": "yashkewlani"
@@ -181,7 +181,7 @@
     "type": "imp_locations",
     "city": "navi_mumbai",
     "lat": 19.0218,
-    "lng": 73.0310,
+    "lng": 73.031,
     "address": "CBD Belapur, Navi Mumbai 400614",
     "gmaps_link": "https://maps.google.com/?q=19.0218,73.0310",
     "added_by": "yashkewlani"
@@ -191,8 +191,8 @@
     "name": "RTO Navi Mumbai",
     "type": "imp_locations",
     "city": "navi_mumbai",
-    "lat": 19.0760,
-    "lng": 73.0130,
+    "lat": 19.076,
+    "lng": 73.013,
     "address": "Turbhe, Navi Mumbai 400705",
     "gmaps_link": "https://maps.google.com/?q=19.0760,73.0130",
     "added_by": "yashkewlani"
