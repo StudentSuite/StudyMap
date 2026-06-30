@@ -48,6 +48,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
     SHEET_SNAP_POINTS[0],
   );
   const [sheetOpen, setSheetOpen] = React.useState(false);
+  const [zoomHintVisible, setZoomHintVisible] = React.useState(() => {
+    if (typeof window === "undefined") return false;
+    return localStorage.getItem("studymap:zoom-hint-dismissed") !== "true";
+  });
   const hydrated = React.useRef(false);
 
   const cities = React.useMemo(() => getCities(places), [places]);
@@ -190,6 +194,24 @@ export function PlacesMap({ places }: PlacesMapProps) {
             closePopupTrigger={closePopupTrigger}
           />
         </MapErrorBoundary>
+
+        {/* Desktop zoom hint: dismissible pill, laptop only */}
+        {zoomHintVisible && (
+          <div className="pointer-events-auto absolute left-1/2 top-3 z-[999] hidden -translate-x-1/2 items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-1.5 text-xs text-muted-foreground shadow-sm backdrop-blur-sm lg:flex">
+            <span>Best viewed at 75% browser zoom</span>
+            <button
+              type="button"
+              aria-label="Dismiss hint"
+              className="ml-1 text-muted-foreground hover:text-foreground"
+              onClick={() => {
+                setZoomHintVisible(false);
+                localStorage.setItem("studymap:zoom-hint-dismissed", "true");
+              }}
+            >
+              x
+            </button>
+          </div>
+        )}
 
         {/* Mobile top bar: persistent search + filters trigger */}
         <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex gap-2 lg:hidden">
