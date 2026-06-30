@@ -22,9 +22,7 @@ import type { PlaceFilters } from "@/components/map/filters";
 const MapView = dynamic(() => import("@/components/map/map-view"), {
   ssr: false,
   loading: () => (
-    <div className="flex size-full items-center justify-center bg-muted text-sm text-muted-foreground">
-      Loading map...
-    </div>
+    <div className="size-full animate-pulse bg-muted" aria-hidden />
   ),
 });
 
