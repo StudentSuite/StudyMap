@@ -71,13 +71,7 @@ function boundsToBbox(bounds: L.LatLngBounds): [number, number, number, number] 
  * render exactly as the plain PlaceMarker below; only overlapping points
  * change appearance, and clicking a cluster zooms into it.
  */
-function ClusteredMarkers({
-  places,
-  focusId,
-}: {
-  places: Place[];
-  focusId?: string | null;
-}) {
+function ClusteredMarkers({ places }: { places: Place[] }) {
   const map = useMap();
   const [bbox, setBbox] = useState<[number, number, number, number]>(() =>
     boundsToBbox(map.getBounds()),
@@ -159,8 +153,6 @@ function ClusteredMarkers({
             eventHandlers={{
               click: (e) => {
                 L.DomEvent.stopPropagation(e);
-                if (focusId === place.id) return;
-                map.flyTo([place.lat, place.lng], 15, { duration: 0.5 });
               },
             }}
           >
@@ -393,7 +385,7 @@ export default function MapView({
         </CircleMarker>
       )}
 
-      <ClusteredMarkers places={places} focusId={focusId} />
+      <ClusteredMarkers places={places} />
     </MapContainer>
     </div>
   );
