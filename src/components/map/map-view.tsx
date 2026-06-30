@@ -176,6 +176,21 @@ interface MapViewProps {
   interactive?: boolean;
   /** Initial zoom level; falls back to the MMR default. */
   zoom?: number;
+  /** Increment to imperatively close all open popups. */
+  closePopupTrigger?: number;
+}
+
+/** Closes all open popups whenever the trigger counter increments. */
+function ClosePopupOnTrigger({ trigger }: { trigger: number }) {
+  const map = useMap();
+  const prev = useRef(trigger);
+  useEffect(() => {
+    if (trigger !== prev.current) {
+      prev.current = trigger;
+      map.closePopup();
+    }
+  }, [map, trigger]);
+  return null;
 }
 
 /** Eases the map to the user's location when it is first set. */
@@ -310,6 +325,7 @@ export default function MapView({
   focusBounds,
   interactive = true,
   zoom = DEFAULT_ZOOM,
+  closePopupTrigger = 0,
 }: MapViewProps) {
   const focusPlace = focusId
     ? places.find((place) => place.id === focusId)
@@ -355,6 +371,7 @@ export default function MapView({
       />
 
       <MapResizeHandler />
+      <ClosePopupOnTrigger trigger={closePopupTrigger} />
       {interactive && <ScrollZoomGuard />}
       {interactive && !userLocation && !focusPlace && !focusBounds && (
         <FitAllOnMount places={places} />

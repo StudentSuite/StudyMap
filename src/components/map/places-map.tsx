@@ -42,6 +42,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return parseMapState(window.location.search).placeId ?? null;
   });
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
+  const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
   const [sortByDistance, setSortByDistance] = React.useState(false);
   const [snap, setSnap] = React.useState<number | string | null>(
     SHEET_SNAP_POINTS[0],
@@ -143,6 +144,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   function onLocated(loc: LatLng) {
     setUserLocation(loc);
+    setClosePopupTrigger((t) => t + 1);
   }
 
   function openSheet() {
@@ -185,6 +187,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
             userLocation={userLocation}
             focusId={focusId}
             focusBounds={focusBounds}
+            closePopupTrigger={closePopupTrigger}
           />
         </MapErrorBoundary>
 
