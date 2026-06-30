@@ -164,7 +164,7 @@ function ClusteredMarkers({
               },
             }}
           >
-            <Popup autoClose={false} autoPan={false} closeOnClick={false}>
+            <Popup autoPan={false} closeOnClick={false}>
               <PinPopup place={place} />
             </Popup>
           </Marker>
