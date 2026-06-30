@@ -143,8 +143,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   function onLocated(loc: LatLng) {
     setUserLocation(loc);
-    setSnap(SHEET_SNAP_POINTS[0]);
-    setSheetOpen(true); // surface the nearest list once we have a location
   }
 
   function openSheet() {
