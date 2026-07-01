@@ -99,6 +99,10 @@ data/
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
