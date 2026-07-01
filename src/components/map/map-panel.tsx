@@ -16,9 +16,25 @@ import {
 } from "@/components/ui/select";
 import { CategoryChips } from "@/components/map/category-chips";
 import { NearMeButton } from "@/components/map/near-me-button";
+import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { ResultsList, type ResultRow } from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 import type { LatLng } from "@/lib/geo";
+import type { UserHome, UserPlaceRow } from "@/lib/user-places";
+
+export interface MyPlacesProps {
+  savedPlaces: UserPlaceRow[];
+  cities: City[];
+  query: string;
+  onQueryChange: (query: string) => void;
+  city: City | null;
+  onCityChange: (city: City | null) => void;
+  home: UserHome | null;
+  onAddPlace: () => void;
+  onEditPlace: (place: UserPlaceRow) => void;
+  onLocateHome: () => void;
+  onEditHome: () => void;
+}
 
 interface MapPanelProps {
   filters: PlaceFilters;
@@ -35,6 +51,9 @@ interface MapPanelProps {
 
   onLocated: (loc: LatLng) => void;
   onShare: () => void;
+
+  /** Signed-in-only saved places section; omitted entirely when logged out. */
+  myPlaces?: MyPlacesProps | null;
 
   showSearch?: boolean;
   showNearMe?: boolean;
@@ -60,6 +79,7 @@ export function MapPanel({
   onSelectPlace,
   onLocated,
   onShare,
+  myPlaces,
   showSearch = true,
   showNearMe = true,
   scrollChips = false,
@@ -146,6 +166,8 @@ export function MapPanel({
           </Button>
         </div>
       )}
+
+      {myPlaces && <MyPlacesPanel {...myPlaces} />}
 
       <Separator />
 

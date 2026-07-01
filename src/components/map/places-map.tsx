@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import dynamic from "next/dynamic";
+import type { User } from "@supabase/supabase-js";
 import { ChevronUp, Search, SlidersHorizontal } from "lucide-react";
 import { toast } from "sonner";
 
@@ -10,12 +11,22 @@ import { PLACE_TYPES } from "@/lib/types";
 import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
+import { createClient } from "@/lib/supabase/client";
+import {
+  fetchUserHome,
+  fetchUserPlaces,
+  userPlaceToPlace,
+  type UserHome,
+  type UserPlaceRow,
+} from "@/lib/user-places";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapErrorBoundary } from "@/components/map/map-error-boundary";
 import { MapPanel } from "@/components/map/map-panel";
 import { MapSheet, SHEET_SNAP_POINTS } from "@/components/map/map-sheet";
 import { NearMeFab } from "@/components/map/near-me-fab";
+import { UserPlaceDialog } from "@/components/map/user-place-dialog";
+import { UserHomeDialog } from "@/components/map/user-home-dialog";
 import type { ResultRow } from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 
@@ -54,11 +65,39 @@ export function PlacesMap({ places }: PlacesMapProps) {
   });
   const hydrated = React.useRef(false);
 
+  const [user, setUser] = React.useState<User | null>(null);
+  const [savedPlaces, setSavedPlaces] = React.useState<UserPlaceRow[]>([]);
+  const [home, setHome] = React.useState<UserHome | null>(null);
+  const [myQuery, setMyQuery] = React.useState("");
+  const [myCity, setMyCity] = React.useState<string | null>(null);
+  const [placeDialogOpen, setPlaceDialogOpen] = React.useState(false);
+  const [editingPlace, setEditingPlace] = React.useState<UserPlaceRow | null>(null);
+  const [homeDialogOpen, setHomeDialogOpen] = React.useState(false);
+
   const cities = React.useMemo(() => getCities(places), [places]);
 
   React.useEffect(() => {
     hydrated.current = true;
   }, []);
+
+  React.useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => setUser(data.user));
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_, session) => setUser(session?.user ?? null));
+    return () => subscription.unsubscribe();
+  }, []);
+
+  React.useEffect(() => {
+    if (!user) {
+      setSavedPlaces([]);
+      setHome(null);
+      return;
+    }
+    fetchUserPlaces().then(setSavedPlaces).catch(() => setSavedPlaces([]));
+    fetchUserHome().then(setHome).catch(() => setHome(null));
+  }, [user]);
 
   // Debounce the search query so filtering doesn't run on every keystroke.
   // Clearing the box applies immediately (0 ms); typing waits 250 ms.
@@ -103,6 +142,19 @@ export function PlacesMap({ places }: PlacesMapProps) {
     () => (filters.city ? cityBounds(places, filters.city) : null),
     [places, filters.city],
   );
+
+  // Private layer: saved places always render on top of the public set,
+  // independent of the public search/type/city filters above.
+  const privatePlaces = React.useMemo(
+    () => savedPlaces.map(userPlaceToPlace),
+    [savedPlaces],
+  );
+  const mapPlaces = React.useMemo(
+    () => [...visible, ...privatePlaces],
+    [visible, privatePlaces],
+  );
+
+  const myCities = React.useMemo(() => getCities(privatePlaces), [privatePlaces]);
 
   const byDistance = React.useMemo(() => {
     if (!userLocation) return [];
@@ -151,6 +203,40 @@ export function PlacesMap({ places }: PlacesMapProps) {
     setClosePopupTrigger((t) => t + 1);
   }
 
+  function openAddPlace() {
+    setEditingPlace(null);
+    setPlaceDialogOpen(true);
+  }
+
+  function openEditPlace(place: UserPlaceRow) {
+    setEditingPlace(place);
+    setPlaceDialogOpen(true);
+  }
+
+  function handlePlaceSaved(saved: UserPlaceRow) {
+    setSavedPlaces((prev) =>
+      prev.some((p) => p.id === saved.id)
+        ? prev.map((p) => (p.id === saved.id ? saved : p))
+        : [...prev, saved],
+    );
+  }
+
+  function handlePlaceDeleted(id: string) {
+    setSavedPlaces((prev) => prev.filter((p) => p.id !== id));
+  }
+
+  function handleHomeSaved(saved: UserHome) {
+    setHome(saved);
+  }
+
+  function handleHomeDeleted() {
+    setHome(null);
+  }
+
+  function locateHome() {
+    if (home) onLocated({ lat: home.lat, lng: home.lng });
+  }
+
   function openSheet() {
     setSnap(SHEET_SNAP_POINTS[0]);
     setSheetOpen(true);
@@ -174,6 +260,21 @@ export function PlacesMap({ places }: PlacesMapProps) {
     onSelectPlace: selectPlace,
     onLocated,
     onShare: share,
+    myPlaces: user
+      ? {
+          savedPlaces,
+          cities: myCities,
+          query: myQuery,
+          onQueryChange: setMyQuery,
+          city: myCity,
+          onCityChange: setMyCity,
+          home,
+          onAddPlace: openAddPlace,
+          onEditPlace: openEditPlace,
+          onLocateHome: locateHome,
+          onEditHome: () => setHomeDialogOpen(true),
+        }
+      : null,
   };
 
   return (
@@ -187,7 +288,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
       <div className="relative min-w-0 flex-1">
         <MapErrorBoundary>
           <MapView
-            places={visible}
+            places={mapPlaces}
             userLocation={userLocation}
             focusId={focusId}
             focusBounds={focusBounds}
@@ -274,6 +375,25 @@ export function PlacesMap({ places }: PlacesMapProps) {
           />
         </MapSheet>
       </div>
+
+      {user && (
+        <>
+          <UserPlaceDialog
+            open={placeDialogOpen}
+            onOpenChange={setPlaceDialogOpen}
+            place={editingPlace}
+            onSaved={handlePlaceSaved}
+            onDeleted={handlePlaceDeleted}
+          />
+          <UserHomeDialog
+            open={homeDialogOpen}
+            onOpenChange={setHomeDialogOpen}
+            home={home}
+            onSaved={handleHomeSaved}
+            onDeleted={handleHomeDeleted}
+          />
+        </>
+      )}
     </div>
   );
 }
