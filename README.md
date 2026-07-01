@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-Open http://localhost:3000. No environment variables needed; the map reads place data directly from `data/places/`.
+Open http://localhost:3000. No environment variables needed; the map reads place data via `studymap.config.ts`, which imports it from `data/places/`.
 
 ## Data schema
 
@@ -35,6 +35,7 @@ Places live in `data/places/<type>.json`, one file per category:
 | `stationery.json` | `stationery` |
 | `internet_cafe.json` | `internet_cafe` |
 | `imp_locations.json` | `imp_locations` |
+| `repair_shop.json` | `repair_shop` |
 
 Each record shape (`src/lib/types.ts`):
 
@@ -42,8 +43,8 @@ Each record shape (`src/lib/types.ts`):
 {
   id: string;          // kebab-case, unique across all types
   name: string;
-  type: PlaceType;     // one of the 8 keys above
-  city: "mumbai" | "thane" | "navi_mumbai";
+  type: PlaceType;     // one of the 9 keys above
+  city: string;         // free-form slug, e.g. "mumbai", "navi_mumbai" - any city worldwide
   lat: number;
   lng: number;
   address?: string;
@@ -65,33 +66,45 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 ## Architecture
 
 ```
+studymap.config.ts     # region + dataset config - the one file a fork edits to retarget StudyMap
 src/
   app/
     page.tsx            # homepage (hero + map preview)
     map/page.tsx        # full interactive map
+    calendar/           # public exam calendar + signed-in personal events
+    login/               # optional sign-in (Google OAuth, email)
+    auth/callback/       # OAuth code exchange
     contribute/page.tsx # contribution guide
     legal/              # privacy, terms, disclaimer
     layout.tsx          # root layout (navbar, footer, theme)
   components/
     home/               # Hero, MapPreview
-    map/                # PlacesMap, MapView, FilterPanel, NearMeButton
+    map/                # PlacesMap, MapView, MapPanel, MyPlacesPanel, dialogs
+    calendar/           # PersonalEventDialog
     pins/               # PinPopup
     layout/             # Navbar, Footer
   lib/
-    places.ts           # getPlaces(), filterPlaces(), city loader
+    places.ts           # getPlaces(), filterPlaces(), getCities() - reads from studymap.config.ts
     geo.ts              # distance calculation, LatLng type
     types.ts            # PlaceType, City, Place interface
     map.ts              # PLACE_TYPE_COLORS, directionsUrl
     share.ts            # URL state encode/decode for shareable links
     site.ts             # site metadata, navLinks
+    user-places.ts       # saved places + home location (signed-in only)
+    user-events.ts       # personal calendar events (signed-in only)
 data/
-  places/               # 8 JSON files, one per place type
+  places/               # 9 JSON files, one per place type
+supabase/
+  migrations/            # SQL for the two optional, sign-in-gated tables (run once by hand)
 ```
+
+See [ARCHITECTURE.md](ARCHITECTURE.md) for the full breakdown.
 
 ## Tech stack
 
-- **Next.js 16** (App Router, static export)
-- **Leaflet + react-leaflet** (interactive map)
+- **Next.js 16** (App Router)
+- **Leaflet + react-leaflet** (interactive map, marker clustering)
+- **Supabase** (optional sign-in, gates saved places + personal calendar events)
 - **shadcn/ui + Tailwind v4** (UI components)
 - **next-themes** (dark/light mode)
 

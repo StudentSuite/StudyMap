@@ -18,6 +18,7 @@ import type { UserHome, UserPlaceRow } from "@/lib/user-places";
 
 interface MyPlacesPanelProps {
   savedPlaces: UserPlaceRow[];
+  error: string | null;
   cities: City[];
   query: string;
   onQueryChange: (query: string) => void;
@@ -33,6 +34,7 @@ interface MyPlacesPanelProps {
 /** Signed-in-only saved-places layer: own search, own city filter, own CRUD. */
 export function MyPlacesPanel({
   savedPlaces,
+  error,
   cities,
   query,
   onQueryChange,
@@ -117,7 +119,11 @@ export function MyPlacesPanel({
       )}
 
       <div className="flex min-h-0 flex-col gap-2 overflow-y-auto">
-        {savedPlaces.length === 0 ? (
+        {error ? (
+          <p className="rounded-lg border border-destructive/40 bg-destructive/5 py-4 text-center text-xs text-destructive">
+            {error}
+          </p>
+        ) : savedPlaces.length === 0 ? (
           <p className="rounded-lg border border-border py-4 text-center text-xs text-muted-foreground">
             No saved places yet.
           </p>
