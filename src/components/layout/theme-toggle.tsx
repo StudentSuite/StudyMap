@@ -10,6 +10,9 @@ export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
 
+  // Mount-only flag to avoid an SSR/hydration mismatch (next-themes can't
+  // know the resolved theme on the server); there's no prop to derive this from.
+  // eslint-disable-next-line react-hooks/set-state-in-effect
   React.useEffect(() => setMounted(true), []);
 
   const isDark = resolvedTheme === "dark";

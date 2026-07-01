@@ -137,7 +137,7 @@ Pure TypeScript modules. No JSX, no React imports. Each file has a single respon
 | File | What it does |
 |------|-------------|
 | `types.ts` | `Place`, `PlaceType`, `City` types; label maps |
-| `places.ts` | Imports all 8 JSON files; exports `getPlaces()` and `filterPlaces()` |
+| `places.ts` | Reads places from `studymap.config.ts`; exports `getPlaces()` and `filterPlaces()` |
 | `geo.ts` | Haversine distance, `placesByDistance()`, `formatDistance()` |
 | `map.ts` | `PLACE_TYPE_COLORS` (color-blind-safe palette); `directionsUrl()` |
 | `share.ts` | URL state encode/decode for shareable filtered map links |
@@ -151,10 +151,10 @@ Pure TypeScript modules. No JSX, no React imports. Each file has a single respon
 ## Data flow
 
 ```
-data/places/*.json
+studymap.config.ts         imports data/places/*.json, exports the merged Place[]
        │
        ▼
-src/lib/places.ts          getPlaces() merges all 8 files into one Place[]
+src/lib/places.ts          getPlaces() reads the config's Place[]
        │                   filterPlaces() narrows by type and/or city
        ▼
 src/components/map/places-map.tsx
@@ -176,7 +176,7 @@ src/components/pins/pin-popup.tsx
           buildShareUrl(state)     ←  src/lib/share.ts
 ```
 
-**No network requests at runtime.** The JSON is bundled at build time via static `import` statements in `places.ts`. The Leaflet tile layer (OpenStreetMap) is the only external request when the map is open.
+**No network requests at runtime.** The JSON is bundled at build time via static `import` statements in `studymap.config.ts`. The Leaflet tile layer is the only external request when the map is open.
 
 ---
 
@@ -189,9 +189,12 @@ The single aggregation point for place data. Every component that needs places c
 ```ts
 getPlaces(): Place[]
 filterPlaces(places, { types?, cities? }): Place[]
-MMR_CENTER   // [lat, lng] for the initial map view
-MMR_DEFAULT_ZOOM
+getCities(places, preferredOrder?): City[]
 ```
+
+Region and dataset settings (initial map center, default zoom, coordinate bounds, the
+city display order, and which `data/places/*.json` files get loaded) live in
+`studymap.config.ts` at the repo root, the one file a fork edits to retarget StudyMap.
 
 ### `src/lib/geo.ts`
 

@@ -148,6 +148,11 @@ Use [Conventional Commits](https://www.conventionalcommits.org/): `<type>: <shor
 
 Optional scope in parens: `feat(calendar): add today label`. One logical change per commit.
 
+## Get recognized
+
+First merged PR? Add your GitHub handle to [CONTRIBUTORS.md](CONTRIBUTORS.md), in the
+same PR or a quick follow-up.
+
 ## House rules
 
 - No em dashes in any copy

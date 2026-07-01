@@ -2,6 +2,7 @@
 
 import React, {
   useEffect,
+  useLayoutEffect,
   useRef,
   useState,
   type ComponentPropsWithoutRef,
@@ -304,9 +305,15 @@ export const Particles: React.FC<ParticlesProps> = ({
     rafID.current = window.requestAnimationFrame(animateRef.current)
   }
 
-  initCanvasRef.current = initCanvas
-  onMouseMoveRef.current = onMouseMove
-  animateRef.current = animate
+  // Keep the refs pointed at the latest closures so the effects below (and
+  // the rAF loop) always call the current versions without re-subscribing.
+  // Layout effects commit before this component's passive effects, so the
+  // refs are up to date by the time those effects run.
+  useLayoutEffect(() => {
+    initCanvasRef.current = initCanvas
+    onMouseMoveRef.current = onMouseMove
+    animateRef.current = animate
+  })
 
   return (
     <div

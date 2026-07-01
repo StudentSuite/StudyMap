@@ -1,0 +1,24 @@
+[
+  {
+    "id": "example-library-01",
+    "name": "Example City Central Library",
+    "type": "library",
+    "city": "example_city",
+    "lat": 0,
+    "lng": 0,
+    "address": "Replace with a real address",
+    "gmaps_link": "https://maps.google.com/?q=0,0",
+    "added_by": "your-github-handle"
+  },
+  {
+    "id": "example-library-02",
+    "name": "Example University Library",
+    "type": "library",
+    "city": "example_city",
+    "lat": 0.01,
+    "lng": 0.01,
+    "address": "Replace with a real address",
+    "gmaps_link": "https://maps.google.com/?q=0.01,0.01",
+    "added_by": "your-github-handle"
+  }
+]

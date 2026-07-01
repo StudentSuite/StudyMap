@@ -1,0 +1,33 @@
+title: "[city request] "
+labels: ["community"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want StudyMap to cover your city? Tell us which one and why, we use these
+        requests to prioritize where the dataset grows next.
+  - type: input
+    id: city
+    attributes:
+      label: Which city?
+      description: Name the city (and state/country if it could be ambiguous).
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why this city?
+      description: What makes it student-relevant, e.g. exam centres, colleges, coaching hubs.
+    validations:
+      required: true
+  - type: dropdown
+    id: help
+    attributes:
+      label: Willing to help with data?
+      description: Adding places is a PR, see CONTRIBUTING.md.
+      options:
+        - "Yes, I can contribute places"
+        - "Maybe, depends on scope"
+        - "No, just requesting"
+    validations:
+      required: true

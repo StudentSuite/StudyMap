@@ -18,7 +18,7 @@ import {
 import type { Place, PlaceType } from "@/lib/types";
 import { PLACE_TYPES } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
-import { MAP_CENTER, DEFAULT_ZOOM } from "@/lib/constants";
+import studyMapConfig from "../../../studymap.config";
 import type { Bounds } from "@/lib/places";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
@@ -324,7 +324,7 @@ export default function MapView({
   focusId,
   focusBounds,
   interactive = true,
-  zoom = DEFAULT_ZOOM,
+  zoom = studyMapConfig.defaultZoom,
   closePopupTrigger = 0,
 }: MapViewProps) {
   const focusPlace = focusId
@@ -348,7 +348,7 @@ export default function MapView({
       className="size-full"
     >
     <MapContainer
-      center={MAP_CENTER}
+      center={studyMapConfig.center}
       zoom={zoom}
       scrollWheelZoom={false}
       dragging={interactive}

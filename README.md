@@ -95,9 +95,23 @@ data/
 - **shadcn/ui + Tailwind v4** (UI components)
 - **next-themes** (dark/light mode)
 
+## Running your own fork
+
+Want StudyMap for a different city? Click "Use this template" above, then follow
+[SELF-HOSTING.md](SELF-HOSTING.md): set your region and dataset in one config file, optionally
+wire up your own Supabase project for sign-in, and deploy.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Good first issues
+
+New here? Start with an issue tagged [`good first issue`](https://github.com/StudentSuite/StudyMap/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) or browse everything tagged [`help wanted`](https://github.com/StudentSuite/StudyMap/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22). Adding a place from your own neighbourhood ([#18](https://github.com/StudentSuite/StudyMap/issues/18)) needs no coding at all.
+
+## Contributors
+
+See [CONTRIBUTORS.md](CONTRIBUTORS.md).
 
 ## License
 

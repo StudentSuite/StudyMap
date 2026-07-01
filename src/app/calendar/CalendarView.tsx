@@ -1,14 +1,23 @@
 "use client";
 
-import { useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useEffect, useState } from "react";
+import type { User } from "@supabase/supabase-js";
+import { ChevronLeft, ChevronRight, Pencil, Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   BOARD_LABELS,
   EXAM_EVENTS,
   type ExamBoard,
   type ExamEvent,
 } from "@/lib/exam-dates";
+import { createClient } from "@/lib/supabase/client";
+import {
+  fetchUserEvents,
+  PERSONAL_EVENT_CATEGORIES,
+  type PersonalEvent,
+} from "@/lib/user-events";
+import { PersonalEventDialog } from "@/components/calendar/personal-event-dialog";
 
 const BOARDS: ExamBoard[] = ["SAT", "IB", "IGCSE"];
 
@@ -17,6 +26,12 @@ const BOARD_COLORS: Record<ExamBoard, string> = {
   IB: "#8b5cf6",
   IGCSE: "#10b981",
 };
+
+const PERSONAL_EVENT_COLOR = "#ec4899";
+
+const PERSONAL_CATEGORY_LABELS = Object.fromEntries(
+  PERSONAL_EVENT_CATEGORIES.map((c) => [c.value, c.label]),
+);
 
 const MONTH_NAMES = [
   "January", "February", "March", "April", "May", "June",
@@ -54,6 +69,24 @@ function getEventsInMonth(year: number, month: number): ExamEvent[] {
   });
 }
 
+function toIsoDate(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+function getPersonalEventsInMonth(
+  events: PersonalEvent[],
+  year: number,
+  month: number,
+): PersonalEvent[] {
+  return events.filter((ev) => {
+    const d = new Date(ev.date + "T00:00:00");
+    return d.getFullYear() === year && d.getMonth() === month;
+  });
+}
+
 function getActiveDaysForEvent(ev: ExamEvent, year: number, month: number): Set<number> {
   const set = new Set<number>();
   if (!/^\d{4}-\d{2}-\d{2}$/.test(ev.examStart)) return set;
@@ -74,10 +107,67 @@ export function CalendarView() {
   const [year, setYear] = useState(today.getFullYear());
   const [month, setMonth] = useState(today.getMonth());
 
+  const [user, setUser] = useState<User | null>(null);
+  const [personalEvents, setPersonalEvents] = useState<PersonalEvent[]>([]);
+  const [dialogOpen, setDialogOpen] = useState(false);
+  const [editingEvent, setEditingEvent] = useState<PersonalEvent | null>(null);
+  const [lastUserId, setLastUserId] = useState<string | null>(null);
+
+  // Clear stale events as soon as the signed-in user changes, during render
+  // rather than an effect, so there's no stale-data flash.
+  const userId = user?.id ?? null;
+  if (userId !== lastUserId) {
+    setLastUserId(userId);
+    setPersonalEvents([]);
+  }
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data }) => setUser(data.user));
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_, session) => setUser(session?.user ?? null));
+    return () => subscription.unsubscribe();
+  }, []);
+
+  useEffect(() => {
+    if (!user) return;
+    fetchUserEvents()
+      .then(setPersonalEvents)
+      .catch(() => setPersonalEvents([]));
+  }, [user]);
+
+  function handleSaved(saved: PersonalEvent) {
+    setPersonalEvents((prev) => {
+      const next = prev.some((e) => e.id === saved.id)
+        ? prev.map((e) => (e.id === saved.id ? saved : e))
+        : [...prev, saved];
+      return [...next].sort((a, b) => a.date.localeCompare(b.date));
+    });
+  }
+
+  function handleDeleted(id: string) {
+    setPersonalEvents((prev) => prev.filter((e) => e.id !== id));
+  }
+
+  function openAddDialog() {
+    setEditingEvent(null);
+    setDialogOpen(true);
+  }
+
+  function openEditDialog(ev: PersonalEvent) {
+    setEditingEvent(ev);
+    setDialogOpen(true);
+  }
+
   const events = getEventsInMonth(year, month);
+  const personalEventsThisMonth = getPersonalEventsInMonth(personalEvents, year, month);
   const firstDay = new Date(year, month, 1).getDay();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
   const isThisMonth = today.getFullYear() === year && today.getMonth() === month;
+  const defaultDialogDate = isThisMonth
+    ? toIsoDate(today)
+    : toIsoDate(new Date(year, month, 1));
 
   const dayColors: Record<number, string[]> = {};
   for (const ev of events) {
@@ -87,6 +177,11 @@ export function CalendarView() {
       const c = BOARD_COLORS[ev.board];
       if (!dayColors[d].includes(c)) dayColors[d].push(c);
     });
+  }
+
+  const personalDays = new Set<number>();
+  for (const ev of personalEventsThisMonth) {
+    personalDays.add(new Date(ev.date + "T00:00:00").getDate());
   }
 
   const cells: (number | null)[] = [
@@ -129,7 +224,7 @@ export function CalendarView() {
       </div>
 
       {/* Board legend */}
-      <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2">
+      <div className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-2">
         {BOARDS.map((board) => (
           <div key={board} className="flex items-center gap-1.5 text-sm text-muted-foreground">
             <span
@@ -139,7 +234,65 @@ export function CalendarView() {
             {BOARD_LABELS[board]}
           </div>
         ))}
+        {user && (
+          <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+            <span
+              className="h-0.5 w-3.5 rounded-full flex-shrink-0"
+              style={{ backgroundColor: PERSONAL_EVENT_COLOR }}
+            />
+            Your events
+          </div>
+        )}
       </div>
+
+      {/* Personal events for this month */}
+      {user && (
+        <div className="mb-6 space-y-3">
+          <div className="flex items-center justify-between">
+            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Your events
+            </p>
+            <Button size="sm" variant="outline" onClick={openAddDialog} className="gap-1">
+              <Plus className="size-3.5" />
+              Add event
+            </Button>
+          </div>
+
+          {personalEventsThisMonth.length === 0 ? (
+            <p className="rounded-lg border border-border py-6 text-center text-sm text-muted-foreground">
+              No personal events this month.
+            </p>
+          ) : (
+            personalEventsThisMonth.map((ev) => (
+              <div key={ev.id} className="rounded-lg border border-border p-4">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className="size-2.5 rounded-full flex-shrink-0"
+                    style={{ backgroundColor: PERSONAL_EVENT_COLOR }}
+                  />
+                  <p className="font-medium text-foreground">{ev.title}</p>
+                  <Badge variant="outline" className="text-xs text-muted-foreground">
+                    {PERSONAL_CATEGORY_LABELS[ev.category] ?? ev.category}
+                  </Badge>
+                  <Button
+                    size="icon-sm"
+                    variant="ghost"
+                    onClick={() => openEditDialog(ev)}
+                    aria-label={`Edit ${ev.title}`}
+                    className="ml-auto"
+                  >
+                    <Pencil className="size-3.5" />
+                  </Button>
+                </div>
+                <p className="mt-2 text-sm font-medium">{formatDate(ev.date)}</p>
+                {ev.notes && (
+                  <p className="mt-1 text-xs text-muted-foreground">{ev.notes}</p>
+                )}
+              </div>
+            ))
+          )}
+        </div>
+      )}
 
       {/* Events list for this month */}
       <div className="mb-6">
@@ -234,26 +387,32 @@ export function CalendarView() {
 
             const colors = dayColors[day] ?? [];
             const hasEvent = colors.length > 0;
+            const hasPersonalEvent = personalDays.has(day);
             const isToday = isThisMonth && today.getDate() === day;
+            const titleParts = [
+              ...(hasEvent
+                ? events
+                    .filter((ev) => getActiveDaysForEvent(ev, year, month).has(day))
+                    .map((ev) => ev.session)
+                : []),
+              ...(hasPersonalEvent
+                ? personalEventsThisMonth
+                    .filter((ev) => new Date(ev.date + "T00:00:00").getDate() === day)
+                    .map((ev) => ev.title)
+                : []),
+            ];
 
             return (
               <div
                 key={day}
-                className={`aspect-square flex flex-col items-center justify-center gap-1 border-b border-r border-border last:border-r-0 transition-colors
-                  ${hasEvent && !isToday ? "bg-primary/5" : ""}
+                className={`relative aspect-square flex flex-col items-center justify-center gap-1 border-b border-r border-border last:border-r-0 transition-colors
+                  ${(hasEvent || hasPersonalEvent) && !isToday ? "bg-primary/5" : ""}
                 `}
-                title={
-                  hasEvent
-                    ? events
-                        .filter((ev) => getActiveDaysForEvent(ev, year, month).has(day))
-                        .map((ev) => ev.session)
-                        .join(", ")
-                    : undefined
-                }
+                title={titleParts.length ? titleParts.join(", ") : undefined}
               >
                 <span
                   className={`flex h-7 w-7 sm:h-8 sm:w-8 items-center justify-center rounded-full text-xs sm:text-sm font-medium
-                    ${isToday ? "bg-primary text-primary-foreground font-bold" : hasEvent ? "text-foreground" : "text-muted-foreground"}
+                    ${isToday ? "bg-primary text-primary-foreground font-bold" : hasEvent || hasPersonalEvent ? "text-foreground" : "text-muted-foreground"}
                   `}
                 >
                   {day}
@@ -274,11 +433,28 @@ export function CalendarView() {
                     ))}
                   </div>
                 )}
+                {hasPersonalEvent && (
+                  <span
+                    className="absolute bottom-1 h-0.5 w-3.5 rounded-full"
+                    style={{ backgroundColor: PERSONAL_EVENT_COLOR }}
+                  />
+                )}
               </div>
             );
           })}
         </div>
       </div>
+
+      {user && (
+        <PersonalEventDialog
+          open={dialogOpen}
+          onOpenChange={setDialogOpen}
+          event={editingEvent}
+          defaultDate={defaultDialogDate}
+          onSaved={handleSaved}
+          onDeleted={handleDeleted}
+        />
+      )}
     </div>
   );
 }

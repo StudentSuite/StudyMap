@@ -21,9 +21,13 @@ export function HeroParticles() {
   const [reducedMotion, setReducedMotion] = useState(false);
 
   useEffect(() => {
+    // Mount-only reads of browser-only APIs (SSR has no window); there's no
+    // prop to derive these from, so an effect-based sync is the only option.
+    /* eslint-disable react-hooks/set-state-in-effect */
     setMounted(true);
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setReducedMotion(mq.matches);
+    /* eslint-enable react-hooks/set-state-in-effect */
     const onChange = () => setReducedMotion(mq.matches);
     mq.addEventListener("change", onChange);
     return () => mq.removeEventListener("change", onChange);

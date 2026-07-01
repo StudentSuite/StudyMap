@@ -1,0 +1,13 @@
+[
+  {
+    "id": "example-book_shop-01",
+    "name": "Example Street Book Shop",
+    "type": "book_shop",
+    "city": "example_city",
+    "lat": -0.01,
+    "lng": 0.01,
+    "address": "Replace with a real address",
+    "gmaps_link": "https://maps.google.com/?q=-0.01,0.01",
+    "added_by": "your-github-handle"
+  }
+]
