@@ -30,6 +30,7 @@ const VALID_TYPES = new Set([
   "internet_cafe",
   "airport",
   "train_station",
+  "repair_shop",
 ]);
 
 // Valid geographic coordinate ranges. Catches impossible values (e.g. lat=200)

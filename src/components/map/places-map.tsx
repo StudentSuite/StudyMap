@@ -12,6 +12,7 @@ import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
 import { createClient } from "@/lib/supabase/client";
+import { isMissingTableError } from "@/lib/utils";
 import {
   fetchUserHome,
   fetchUserPlaces,
@@ -73,6 +74,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [placeDialogOpen, setPlaceDialogOpen] = React.useState(false);
   const [editingPlace, setEditingPlace] = React.useState<UserPlaceRow | null>(null);
   const [homeDialogOpen, setHomeDialogOpen] = React.useState(false);
+  const [myPlacesError, setMyPlacesError] = React.useState<string | null>(null);
   const [lastUserId, setLastUserId] = React.useState<string | null>(null);
 
   const cities = React.useMemo(() => getCities(places), [places]);
@@ -84,6 +86,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     setLastUserId(userId);
     setSavedPlaces([]);
     setHome(null);
+    setMyPlacesError(null);
   }
 
   React.useEffect(() => {
@@ -101,7 +104,19 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   React.useEffect(() => {
     if (!user) return;
-    fetchUserPlaces().then(setSavedPlaces).catch(() => setSavedPlaces([]));
+    fetchUserPlaces()
+      .then((rows) => {
+        setSavedPlaces(rows);
+        setMyPlacesError(null);
+      })
+      .catch((err) => {
+        setSavedPlaces([]);
+        setMyPlacesError(
+          isMissingTableError(err)
+            ? "This deployment's saved-places table isn't set up yet. See SELF-HOSTING.md."
+            : "Couldn't load your saved places. Try reloading.",
+        );
+      });
     fetchUserHome().then(setHome).catch(() => setHome(null));
   }, [user]);
 
@@ -269,6 +284,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     myPlaces: user
       ? {
           savedPlaces,
+          error: myPlacesError,
           cities: myCities,
           query: myQuery,
           onQueryChange: setMyQuery,

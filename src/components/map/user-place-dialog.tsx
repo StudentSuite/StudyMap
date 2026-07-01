@@ -21,6 +21,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import { isMissingTableError } from "@/lib/utils";
 import {
   createUserPlace,
   deleteUserPlace,
@@ -120,8 +121,12 @@ export function UserPlaceDialog({
         : await createUserPlace(input);
       onSaved(saved);
       onOpenChange(false);
-    } catch {
-      setError("Couldn't save this place. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's saved-places table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't save this place. Try again.",
+      );
     } finally {
       setSaving(false);
     }
@@ -135,8 +140,12 @@ export function UserPlaceDialog({
       await deleteUserPlace(place.id);
       onDeleted(place.id);
       onOpenChange(false);
-    } catch {
-      setError("Couldn't delete this place. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's saved-places table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't delete this place. Try again.",
+      );
     } finally {
       setSaving(false);
     }

@@ -14,6 +14,7 @@ Places live in `data/places/<type>.json`, one file per place type, one JSON obje
 | `internet_cafe.json` | Cyber cafes and internet kiosks |
 | `airport.json` | Airports |
 | `train_station.json` | Railway stations |
+| `repair_shop.json` | Phone, laptop, and gadget repair shops |
 
 ## Record format
 

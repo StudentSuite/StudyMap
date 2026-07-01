@@ -105,7 +105,7 @@ Proof goes in the pull request, never in the committed JSON.
 
 ## The place record
 
-Each place is one object inside `data/places/<type>.json`. Valid types: `book_shop`, `library`, `exam_centre`, `imp_locations`, `stationery`, `internet_cafe`, `airport`, `train_station`.
+Each place is one object inside `data/places/<type>.json`. Valid types: `book_shop`, `library`, `exam_centre`, `imp_locations`, `stationery`, `internet_cafe`, `airport`, `train_station`, `repair_shop`.
 
 ```json
 {

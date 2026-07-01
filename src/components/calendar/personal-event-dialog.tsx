@@ -26,6 +26,7 @@ import {
   type PersonalEvent,
   type PersonalEventCategory,
 } from "@/lib/user-events";
+import { isMissingTableError } from "@/lib/utils";
 
 interface PersonalEventDialogProps {
   open: boolean;
@@ -82,8 +83,12 @@ export function PersonalEventDialog({
         : await createUserEvent(input);
       onSaved(saved);
       onOpenChange(false);
-    } catch {
-      setError("Couldn't save this event. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's personal-events table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't save this event. Try again.",
+      );
     } finally {
       setSaving(false);
     }
@@ -97,8 +102,12 @@ export function PersonalEventDialog({
       await deleteUserEvent(event.id);
       onDeleted(event.id);
       onOpenChange(false);
-    } catch {
-      setError("Couldn't delete this event. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's personal-events table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't delete this event. Try again.",
+      );
     } finally {
       setSaving(false);
     }

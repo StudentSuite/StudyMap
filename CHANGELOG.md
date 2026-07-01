@@ -14,6 +14,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Repair shop as a ninth place category (color: red `#DC2626`), wired through the full design system (type definitions, color tokens, CSS custom properties, Tailwind utilities, hero legend).
 - Map auto-fits to all loaded places on first load instead of a fixed Mumbai crop.
 - CARTO basemap saturation pass for improved visual clarity before the MapTiler migration.
+- Config-driven region and dataset: `studymap.config.ts` at the repo root holds `center`, `defaultZoom`, `bounds`, and a `cities` display-order registry, plus the place-data imports. Retargeting StudyMap to a new city or dataset means editing this one file.
+- Data-source abstraction: `src/lib/places.ts` now reads places from `studymap.config.ts` instead of importing `data/places/*.json` directly. `src/lib/constants.ts` removed, fully superseded.
+- Template-repo support for forks: "Use this template" enabled on the repo, plus `studymap.config.example.ts` and a minimal `data/places.sample/` dataset to start from.
+- `SELF-HOSTING.md`: full walkthrough for running a fork - config, dataset, env vars, optional Supabase setup, deployment, keeping a fork current.
+- Saved custom places and a home location for signed-in users: a private pin layer with its own search and city filter, add/edit/delete, and "Nearest to home" distance sorting. Backed by new `user_places`/`user_home` Supabase tables, RLS-scoped to each user.
+- Personal calendar deadlines/events for signed-in users, overlaid on the public exam calendar. Backed by a new `user_events` Supabase table, RLS-scoped to each user.
+- GitHub Discussions enabled, with a "Request a city" discussion template.
+- `CONTRIBUTORS.md` and a documented recognition process (add your handle on your first merged PR).
+- `good first issue` / `help wanted` labels applied to the issues that are actually ready to pick up, plus a "Good first issues" README section pointing newcomers at them.
+- Vitest + React Testing Library; unit tests for `lib/geo`, `lib/share`, and `lib/places` (`npm run test:unit`).
+- `docs/OFFLINE_CACHING.md`: what the PWA service worker caches and how to force a fresh load after a deploy.
+- `repair_shop` documented as a valid place type in `CONTRIBUTING.md`, `data/CONTRIBUTING.md`, `README.md`, and the data validator (was a valid `PlaceType` but undocumented and rejected by `scripts/validate-places.mjs`).
+
+### Changed
+
+- `getCities()` now orders cities by `studymap.config.ts`'s `cities` registry, falling back to alphabetical for anything not in that list (previously always alphabetical).
 
 ### Fixed
 
@@ -30,14 +46,31 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 17 places that shared identical coordinates are now spread to their true locations.
 - Hero section: explicit space rendered between category count and the word "categories".
 - Initial tile load optimized: `keepBuffer` and `updateWhenZooming` tuned for faster first paint.
+- Saved-places and personal-events UI now surfaces a clear, actionable error when the backend tables haven't been set up yet, instead of silently rendering an empty state.
+- Various `react-hooks` lint violations (`set-state-in-effect`, `refs`) across effect-based state resets and a vendored particles component.
+
+### Removed
+
+- `src/lib/constants.ts`, superseded by `studymap.config.ts`.
 
 ### Closes issues
 
+- #29 Config-driven region (`studymap.config.ts`)
+- #30 Data-source abstraction (configurable places path)
+- #31 SELF-HOSTING.md
+- #33 Template repo + config.example + sample dataset
+- #35 good-first-issue labels + starter board + README section
+- #36 CONTRIBUTORS recognition
+- #37 Enable Discussions + request-a-city template
+- #39 Vitest + RTL unit tests for lib/{geo,share,places}
+- #60 Saved custom places + home location (signed-in, private)
+- #61 Personal calendar deadlines/events (signed-in, private)
 - #62 Bottom sheet / Filters fails to open on real mobile devices
 - #63 Map popups auto-close immediately after opening
 - #64 Tune marker clustering so unrelated categories don't render as overlapping pins
 - #65 Migrate basemap provider for genuine colorful light+dark tiles
 - #66 Service worker tile-cache check targets a stale hostname
+- #67 Document PWA service-worker caching behaviour + how to force-refresh
 
 ## [1.2.2] - 2026-06-29
 

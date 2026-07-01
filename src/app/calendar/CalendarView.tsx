@@ -12,6 +12,7 @@ import {
   type ExamEvent,
 } from "@/lib/exam-dates";
 import { createClient } from "@/lib/supabase/client";
+import { isMissingTableError } from "@/lib/utils";
 import {
   fetchUserEvents,
   PERSONAL_EVENT_CATEGORIES,
@@ -112,6 +113,7 @@ export function CalendarView() {
   const [dialogOpen, setDialogOpen] = useState(false);
   const [editingEvent, setEditingEvent] = useState<PersonalEvent | null>(null);
   const [lastUserId, setLastUserId] = useState<string | null>(null);
+  const [eventsError, setEventsError] = useState<string | null>(null);
 
   // Clear stale events as soon as the signed-in user changes, during render
   // rather than an effect, so there's no stale-data flash.
@@ -119,6 +121,7 @@ export function CalendarView() {
   if (userId !== lastUserId) {
     setLastUserId(userId);
     setPersonalEvents([]);
+    setEventsError(null);
   }
 
   useEffect(() => {
@@ -133,8 +136,18 @@ export function CalendarView() {
   useEffect(() => {
     if (!user) return;
     fetchUserEvents()
-      .then(setPersonalEvents)
-      .catch(() => setPersonalEvents([]));
+      .then((events) => {
+        setPersonalEvents(events);
+        setEventsError(null);
+      })
+      .catch((err) => {
+        setPersonalEvents([]);
+        setEventsError(
+          isMissingTableError(err)
+            ? "This deployment's personal-events table isn't set up yet. See SELF-HOSTING.md."
+            : "Couldn't load your events. Try reloading.",
+        );
+      });
   }, [user]);
 
   function handleSaved(saved: PersonalEvent) {
@@ -258,7 +271,11 @@ export function CalendarView() {
             </Button>
           </div>
 
-          {personalEventsThisMonth.length === 0 ? (
+          {eventsError ? (
+            <p className="rounded-lg border border-destructive/40 bg-destructive/5 py-6 text-center text-sm text-destructive">
+              {eventsError}
+            </p>
+          ) : personalEventsThisMonth.length === 0 ? (
             <p className="rounded-lg border border-border py-6 text-center text-sm text-muted-foreground">
               No personal events this month.
             </p>

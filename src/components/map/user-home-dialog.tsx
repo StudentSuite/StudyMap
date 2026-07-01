@@ -14,6 +14,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { deleteUserHome, upsertUserHome, type UserHome } from "@/lib/user-places";
+import { isMissingTableError } from "@/lib/utils";
 
 interface UserHomeDialogProps {
   open: boolean;
@@ -82,8 +83,12 @@ export function UserHomeDialog({
       const saved = await upsertUserHome({ label: label.trim(), lat: latNum, lng: lngNum });
       onSaved(saved);
       onOpenChange(false);
-    } catch {
-      setError("Couldn't save your home location. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's home-location table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't save your home location. Try again.",
+      );
     } finally {
       setSaving(false);
     }
@@ -96,8 +101,12 @@ export function UserHomeDialog({
       await deleteUserHome();
       onDeleted();
       onOpenChange(false);
-    } catch {
-      setError("Couldn't remove your home location. Try again.");
+    } catch (err) {
+      setError(
+        isMissingTableError(err)
+          ? "This deployment's home-location table isn't set up yet. See SELF-HOSTING.md."
+          : "Couldn't remove your home location. Try again.",
+      );
     } finally {
       setSaving(false);
     }

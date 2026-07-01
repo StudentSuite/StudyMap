@@ -24,6 +24,7 @@ import type { UserHome, UserPlaceRow } from "@/lib/user-places";
 
 export interface MyPlacesProps {
   savedPlaces: UserPlaceRow[];
+  error: string | null;
   cities: City[];
   query: string;
   onQueryChange: (query: string) => void;
