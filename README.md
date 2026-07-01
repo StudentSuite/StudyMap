@@ -97,13 +97,9 @@ data/
 
 ## Running your own fork
 
-Want StudyMap for a different city? Click "Use this template" above, then:
-
-1. `cp studymap.config.example.ts studymap.config.ts`
-2. Swap the sample imports in `studymap.config.ts` for your own `data/places/*.json`, and set `center` / `defaultZoom` / `bounds` / `cities` for your region.
-3. `npm run dev` and open [http://localhost:3000/map](http://localhost:3000/map). You should see the placeholder places from `data/places.sample/` until you add your own.
-
-That's the whole app-facing surface, `src/lib/places.ts` reads everything from this one config file. A full self-hosting walkthrough is tracked in [#31](https://github.com/StudentSuite/StudyMap/issues/31).
+Want StudyMap for a different city? Click "Use this template" above, then follow
+[SELF-HOSTING.md](SELF-HOSTING.md): set your region and dataset in one config file, optionally
+wire up your own Supabase project for sign-in, and deploy.
 
 ## Contributing
 
