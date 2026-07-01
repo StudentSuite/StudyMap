@@ -5,6 +5,40 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2026-07-01
+
+### Added
+
+- Responsive redesign: desktop now shows a collapsible sidebar; mobile gets a bottom sheet (Vaul) replacing the old panel. Fully reachable on small screens.
+- MapTiler basemap with a colorful style in both light and dark themes, replacing the flat CARTO tiles.
+- Repair shop as a ninth place category (color: red `#DC2626`), wired through the full design system (type definitions, color tokens, CSS custom properties, Tailwind utilities, hero legend).
+- Map auto-fits to all loaded places on first load instead of a fixed Mumbai crop.
+- CARTO basemap saturation pass for improved visual clarity before the MapTiler migration.
+
+### Fixed
+
+- Popups no longer auto-close immediately after opening (#63).
+- Clicking a marker no longer zooms the map.
+- Clicking a different marker now closes the previously open popup.
+- Popup no longer closes prematurely when a second marker is nearby (#63 edge case).
+- Near Me button closes any open popup before setting user location.
+- Near Me no longer auto-opens the bottom sheet or locks map interaction (#62).
+- Service worker tile-cache check now targets the current MapTiler hostname instead of the stale CARTO hostname (#66).
+- Cluster radius widened so unrelated markers in adjacent categories no longer render as overlapping pins (#64).
+- Vaul `snapPoints` units corrected (was silently broken).
+- Leaflet tile grid kept in sync after container resize.
+- 17 places that shared identical coordinates are now spread to their true locations.
+- Hero section: explicit space rendered between category count and the word "categories".
+- Initial tile load optimized: `keepBuffer` and `updateWhenZooming` tuned for faster first paint.
+
+### Closes issues
+
+- #62 Bottom sheet / Filters fails to open on real mobile devices
+- #63 Map popups auto-close immediately after opening
+- #64 Tune marker clustering so unrelated categories don't render as overlapping pins
+- #65 Migrate basemap provider for genuine colorful light+dark tiles
+- #66 Service worker tile-cache check targets a stale hostname
+
 ## [1.2.2] - 2026-06-29
 
 ### Added
