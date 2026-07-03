@@ -114,7 +114,13 @@ export function UserHomeDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent
+        // Only the X button or Escape should close this form. Ignoring
+        // outside pointer/interaction events keeps a stray click (or a
+        // click-injecting browser extension) from dismissing it mid-edit.
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>{home ? "Edit home location" : "Set home location"}</DialogTitle>
         </DialogHeader>
