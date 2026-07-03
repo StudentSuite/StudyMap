@@ -115,7 +115,13 @@ export function PersonalEventDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent>
+      <DialogContent
+        // Only the X button or Escape should close this form. Ignoring
+        // outside pointer/interaction events keeps a stray click (or a
+        // click-injecting browser extension) from dismissing it mid-edit.
+        onPointerDownOutside={(e) => e.preventDefault()}
+        onInteractOutside={(e) => e.preventDefault()}
+      >
         <DialogHeader>
           <DialogTitle>{event ? "Edit event" : "Add event"}</DialogTitle>
         </DialogHeader>
