@@ -2,7 +2,7 @@
   {
     "id": "amd-exam_centre-03",
     "name": "Ahmedabad Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ahmedabad",
     "lat": 23.021537,
     "lng": 72.580057,
@@ -15,7 +15,7 @@
   {
     "id": "amd-exam_centre-04",
     "name": "Indo American Education Society",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ahmedabad",
     "lat": 23.021537,
     "lng": 72.580057,
@@ -28,7 +28,7 @@
   {
     "id": "ajm-exam_centre-01",
     "name": "Mayo College",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ajmer",
     "lat": 26.443355,
     "lng": 74.649731,
@@ -41,7 +41,7 @@
   {
     "id": "atq-exam_centre-04",
     "name": "Ashok Vatika Public School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "amritsar",
     "lat": 31.635666,
     "lng": 74.87875,
@@ -54,7 +54,7 @@
   {
     "id": "atq-exam_centre-03",
     "name": "Delhi Public School Amritsar",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "amritsar",
     "lat": 31.635666,
     "lng": 74.87875,
@@ -67,7 +67,7 @@
   {
     "id": "atq-exam_centre-02",
     "name": "Invictus International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "amritsar",
     "lat": 31.635666,
     "lng": 74.87875,
@@ -80,7 +80,7 @@
   {
     "id": "blr-exam_centre-05",
     "name": "Bangalore Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "GEDDALAHALLI, HENNUR BAGALUR ROAD, BANGALORE, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -94,7 +94,7 @@
   {
     "id": "blr-exam_centre-02",
     "name": "Canadian Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "4 AND 20 MANCHENAHALLI,, YELAHANKA, BANGALORE",
     "added_by": "shauryagangrade",
@@ -108,7 +108,7 @@
   {
     "id": "blr-exam_centre-07",
     "name": "Candor International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "lat": 12.819929,
     "lng": 77.620889,
@@ -121,7 +121,7 @@
   {
     "id": "blr-exam_centre-12",
     "name": "Ebenezer Intl Sch Bangalore",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "SINGENA AGRAHARA ROAD HUSKUR PO, ELECTRONIC CITY, BANGALORE, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -135,7 +135,7 @@
   {
     "id": "blr-exam_centre-04",
     "name": "Head Start Educational Academy",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "lat": 12.859316,
     "lng": 77.73509,
@@ -148,7 +148,7 @@
   {
     "id": "blr-exam_centre-14",
     "name": "Inventure Academy",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "lat": 12.895634,
     "lng": 77.743955,
@@ -161,7 +161,7 @@
   {
     "id": "blr-exam_centre-01",
     "name": "Legacy School Bangalore",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "LEGACY SCHOOL BANGALORE, 6-1 A, 6 -2 BYRATHI VILLAGE, BIDARAHALLI HOBLI, EAST TALUK, BANGALORE, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -175,7 +175,7 @@
   {
     "id": "blr-exam_centre-09",
     "name": "Mallya Aditi International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "YELAHANKA, NEW TOWN, BANGALORE, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -189,7 +189,7 @@
   {
     "id": "blr-exam_centre-06",
     "name": "Neev Academy",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "SY # 16, YEMALUR KEMPAPURA ROAD, OPP SAI GARDEN APARTMENTS YAMALUR, BANGALORE",
     "added_by": "shauryagangrade",
@@ -202,7 +202,7 @@
   {
     "id": "blr-exam_centre-13",
     "name": "The International Sch Bangalore",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "THE INTERNATIONAL SCHOOL BANGALORE, NAFL VALLEY, WHITEFIELD-SARJAPUR RD,, NEAR DOMMASANDRA CIRCLE,, BANGALORE, KARNATKA",
     "added_by": "shauryagangrade",
@@ -216,7 +216,7 @@
   {
     "id": "blr-exam_centre-03",
     "name": "Trio World Academy",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bangalore",
     "address": "TRIO WORLD ACADEMY, NO 3-5 KODIGEHALLI, MAIN ROAD  SAHAKAR NAGAR, BANGALORE, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -229,7 +229,7 @@
   {
     "id": "blr-exam_centre-08",
     "name": "Bishop Cotton Boys Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bengaluru",
     "address": "NO. 15, RESIDENCY ROAD,, RICHMOND TOWN, BENGALURU, KARNATAKA",
     "added_by": "shauryagangrade",
@@ -243,7 +243,7 @@
   {
     "id": "blr-exam_centre-11",
     "name": "Vidyashilp Academy",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bengaluru",
     "lat": 13.131905,
     "lng": 77.587775,
@@ -256,7 +256,7 @@
   {
     "id": "bpl-exam_centre-01",
     "name": "Billabong High Intl Sch Bhopal",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bhopal",
     "lat": 23.258486,
     "lng": 77.401989,
@@ -269,7 +269,7 @@
   {
     "id": "bbs-exam_centre-02",
     "name": "Dav Public School Unit Viii",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bhubaneswar",
     "lat": 20.275484,
     "lng": 85.818149,
@@ -282,7 +282,7 @@
   {
     "id": "bbs-exam_centre-04",
     "name": "Mother'S Public School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bhubaneswar",
     "lat": 28.978832,
     "lng": 77.735883,
@@ -295,7 +295,7 @@
   {
     "id": "bbs-exam_centre-01",
     "name": "Sai Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bhubaneswar",
     "address": "5-A CHANDAKA INDUSTRIAL ESTATE, INFOCITY ROAD,PATIA, BEHIND CIPET, BHUBANESWAR, ODISHA",
     "added_by": "shauryagangrade",
@@ -309,7 +309,7 @@
   {
     "id": "bkc-exam_centre-01",
     "name": "Mount Litera School International",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "bkc mumbai",
     "lat": 19.06449,
     "lng": 72.859433,
@@ -322,7 +322,7 @@
   {
     "id": "ccj-exam_centre-01",
     "name": "The White School International",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "calicut",
     "address": "HILITE KNOWLEDGE VILLAGE, PARAMMAL, PERUMANNA, CALICUT, KERALA",
     "added_by": "shauryagangrade",
@@ -336,7 +336,7 @@
   {
     "id": "ixc-exam_centre-01",
     "name": "Chitkara International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "chandigarh",
     "lat": 30.759287,
     "lng": 76.757612,
@@ -349,7 +349,7 @@
   {
     "id": "ixc-exam_centre-02",
     "name": "Strawberry Fields Hs",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "chandigarh",
     "lat": 30.730009,
     "lng": 76.809112,
@@ -362,7 +362,7 @@
   {
     "id": "che-exam_centre-07",
     "name": "Alphabet International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "chennai",
     "lat": 33.936987,
     "lng": 75.119879,
@@ -375,7 +375,7 @@
   {
     "id": "che-exam_centre-02",
     "name": "Heartfulness Intl Sch, Omega Branch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "chennai",
     "lat": 13.000989,
     "lng": 80.149284,
@@ -388,7 +388,7 @@
   {
     "id": "che-exam_centre-01",
     "name": "Kc High",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "chennai",
     "lat": 19.314738,
     "lng": 84.78401,
@@ -401,7 +401,7 @@
   {
     "id": "cjb-exam_centre-01",
     "name": "Chinmaya Intl Residential School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "coimbatore",
     "lat": 10.929688,
     "lng": 76.739857,
@@ -414,7 +414,7 @@
   {
     "id": "cjb-exam_centre-03",
     "name": "Cs Academy Coimbatore",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "coimbatore",
     "lat": 11.001812,
     "lng": 76.962842,
@@ -427,7 +427,7 @@
   {
     "id": "cjb-exam_centre-02",
     "name": "Ssvm World School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "coimbatore",
     "lat": 10.985361,
     "lng": 77.042195,
@@ -440,7 +440,7 @@
   {
     "id": "ddn-exam_centre-03",
     "name": "Hopetown Girls' School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "dehradun",
     "lat": 30.359299,
     "lng": 77.877566,
@@ -453,7 +453,7 @@
   {
     "id": "ddn-exam_centre-02",
     "name": "The Doon School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "dehradun",
     "address": "MALL ROAD, DEHRADUN, UTTARAKHAND",
     "added_by": "shauryagangrade",
@@ -466,7 +466,7 @@
   {
     "id": "ddn-exam_centre-04",
     "name": "Unison World School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "dehradun",
     "lat": 30.325565,
     "lng": 78.043681,
@@ -479,7 +479,7 @@
   {
     "id": "ddn-exam_centre-06",
     "name": "Uttaranchal University",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "dehradun",
     "lat": 30.340039,
     "lng": 77.951225,
@@ -492,7 +492,7 @@
   {
     "id": "erd-exam_centre-02",
     "name": "The Indian Public School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "erode",
     "lat": 11.291085,
     "lng": 77.693078,
@@ -505,7 +505,7 @@
   {
     "id": "fbd-exam_centre-01",
     "name": "Manav Rachna International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "faridabad",
     "lat": 28.495019,
     "lng": 77.287977,
@@ -518,7 +518,7 @@
   {
     "id": "gnd-exam_centre-01",
     "name": "Swarrnim Startup And Innovation Univ",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gandhinagar",
     "lat": 23.223288,
     "lng": 72.649227,
@@ -531,7 +531,7 @@
   {
     "id": "gzb-exam_centre-01",
     "name": "Seth Anandram Jaipuria School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ghaziabad",
     "lat": 28.659364,
     "lng": 77.361315,
@@ -544,7 +544,7 @@
   {
     "id": "gno-exam_centre-01",
     "name": "Metro Delhi International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "greater noida",
     "lat": 28.467073,
     "lng": 77.513765,
@@ -557,7 +557,7 @@
   {
     "id": "gre-exam_centre-01",
     "name": "Sarvottam International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "greater noida west",
     "address": "PLOT NO 6, TECHZONE IV, NOIDA PHASE 2, PATWARI, GREATER NOIDA WEST, UTTAR PRADESH",
     "added_by": "shauryagangrade",
@@ -571,7 +571,7 @@
   {
     "id": "ggn-exam_centre-05",
     "name": "Kunskapsskolan Gurgaon",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurgaon",
     "lat": 28.382965,
     "lng": 77.010024,
@@ -584,7 +584,7 @@
   {
     "id": "ggn-exam_centre-01",
     "name": "Pathways World Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurgaon",
     "address": "PATHWAYS WORLD SCHOOL ARAVALI,, ARAVALLI RETREAT,, OFF GURGAON SOHNA ROAD, GURGAON, HARYANA",
     "added_by": "shauryagangrade",
@@ -598,7 +598,7 @@
   {
     "id": "ggn-exam_centre-02",
     "name": "Scottish High International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurgaon",
     "lat": 28.42642,
     "lng": 77.088966,
@@ -611,7 +611,7 @@
   {
     "id": "gur-exam_centre-01",
     "name": "Pathways School Gurgaon",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurgaon haryana",
     "address": "BALIAWAS VILLAGE, GURGAON-FARIDABAD ROAD, GURGAON HARYANA, HARYANA",
     "added_by": "shauryagangrade",
@@ -625,7 +625,7 @@
   {
     "id": "ggn-exam_centre-03",
     "name": "Excelsior American School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurugram",
     "lat": 28.457328,
     "lng": 77.088967,
@@ -638,7 +638,7 @@
   {
     "id": "ggn-exam_centre-04",
     "name": "Matrikiran High School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gurugram",
     "lat": 28.464615,
     "lng": 77.029919,
@@ -651,7 +651,7 @@
   {
     "id": "gau-exam_centre-01",
     "name": "Sanskriti The Gurukul",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "guwahati",
     "lat": 26.180598,
     "lng": 91.753943,
@@ -664,7 +664,7 @@
   {
     "id": "gwa-exam_centre-01",
     "name": "The Scindia Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "gwalior",
     "lat": 26.203725,
     "lng": 78.157363,
@@ -677,7 +677,7 @@
   {
     "id": "hyd-exam_centre-09",
     "name": "Aga Khan Academy Hyderabad",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.360589,
     "lng": 78.474061,
@@ -690,7 +690,7 @@
   {
     "id": "hyd-exam_centre-11",
     "name": "Chirec International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.473136,
     "lng": 78.332386,
@@ -703,7 +703,7 @@
   {
     "id": "hyd-exam_centre-12",
     "name": "Delhi Public Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "address": "PLOT 44, 42A NACHARAM MALLAPUR ROAD,, BEHIND NACHARAM TELEHONE EXCHANGE, HYDERABAD, TELANGANA",
     "added_by": "shauryagangrade",
@@ -717,7 +717,7 @@
   {
     "id": "hyd-exam_centre-05",
     "name": "Drs International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "address": "SURVEY NO. 523, OPP APPAREL PARK, GUNDLA POCHHAMPALLY, KOMPALLY, HYDERABAD, TELANGANA",
     "added_by": "shauryagangrade",
@@ -731,7 +731,7 @@
   {
     "id": "hyd-exam_centre-03",
     "name": "Epistemo Vikas Leadership School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.468571,
     "lng": 78.303836,
@@ -744,7 +744,7 @@
   {
     "id": "hyd-exam_centre-10",
     "name": "Indus International School Hyderabad",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.43515,
     "lng": 78.404687,
@@ -757,7 +757,7 @@
   {
     "id": "hyd-exam_centre-07",
     "name": "Manthan School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.459701,
     "lng": 78.298522,
@@ -770,7 +770,7 @@
   {
     "id": "hyd-exam_centre-13",
     "name": "Sancta Maria International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.482263,
     "lng": 78.319448,
@@ -783,7 +783,7 @@
   {
     "id": "hyd-exam_centre-01",
     "name": "Sreenidhi International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.339267,
     "lng": 78.342011,
@@ -796,7 +796,7 @@
   {
     "id": "hyd-exam_centre-06",
     "name": "The Gaudium School - Kollur Campus",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.360589,
     "lng": 78.474061,
@@ -809,7 +809,7 @@
   {
     "id": "hyd-exam_centre-02",
     "name": "The Hyderabad Public School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "hyderabad",
     "lat": 17.442849,
     "lng": 78.488623,
@@ -822,7 +822,7 @@
   {
     "id": "idr-exam_centre-02",
     "name": "Daly College Indore",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "indore",
     "lat": 22.703003,
     "lng": 75.895558,
@@ -835,7 +835,7 @@
   {
     "id": "idr-exam_centre-01",
     "name": "Emerald Heights Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "indore",
     "lat": 22.720362,
     "lng": 75.8682,
@@ -848,7 +848,7 @@
   {
     "id": "jai-exam_centre-03",
     "name": "Jayshree Periwal Intl School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "jaipur",
     "lat": 26.930975,
     "lng": 75.794535,
@@ -861,7 +861,7 @@
   {
     "id": "jai-exam_centre-02",
     "name": "Mayoor School Jaipur",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "jaipur",
     "lat": 26.915458,
     "lng": 75.818982,
@@ -874,7 +874,7 @@
   {
     "id": "jai-exam_centre-04",
     "name": "Yagyavalkya Inst Of Tech Jaipur",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "jaipur",
     "lat": 26.915458,
     "lng": 75.818982,
@@ -887,7 +887,7 @@
   {
     "id": "jod-exam_centre-01",
     "name": "Lucky International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "jodhpur, rajasthan",
     "lat": 26.20888,
     "lng": 73.031475,
@@ -900,7 +900,7 @@
   {
     "id": "knp-exam_centre-01",
     "name": "Allenhouse Public School Khalasi",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kanpur",
     "lat": 26.460914,
     "lng": 80.321759,
@@ -913,7 +913,7 @@
   {
     "id": "cok-exam_centre-01",
     "name": "Gems Modern Academy Kochi",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kochi",
     "lat": 9.967903,
     "lng": 76.244438,
@@ -926,7 +926,7 @@
   {
     "id": "kol-exam_centre-06",
     "name": "Sanjay Ghodawat International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolhapur",
     "lat": 18.533385,
     "lng": 73.592956,
@@ -939,7 +939,7 @@
   {
     "id": "kol-exam_centre-08",
     "name": "Assembly Of God Church School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.543432,
     "lng": 88.365963,
@@ -952,7 +952,7 @@
   {
     "id": "kol-exam_centre-05",
     "name": "Calcutta International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.514256,
     "lng": 88.409886,
@@ -965,7 +965,7 @@
   {
     "id": "kol-exam_centre-04",
     "name": "La Martiniere For Boys",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.542159,
     "lng": 88.356447,
@@ -978,7 +978,7 @@
   {
     "id": "kol-exam_centre-01",
     "name": "Modern High School International",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.530042,
     "lng": 88.36552,
@@ -991,7 +991,7 @@
   {
     "id": "kol-exam_centre-07",
     "name": "Newtown School Kolkata",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.567182,
     "lng": 88.481905,
@@ -1004,7 +1004,7 @@
   {
     "id": "kol-exam_centre-03",
     "name": "Rp Goenka International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "kolkata",
     "lat": 22.537617,
     "lng": 88.327468,
@@ -1017,7 +1017,7 @@
   {
     "id": "lko-exam_centre-03",
     "name": "City Montessori Intercollege",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "lucknow",
     "lat": 26.8381,
     "lng": 80.9346,
@@ -1030,7 +1030,7 @@
   {
     "id": "lko-exam_centre-01",
     "name": "School Of Mgmt Sciences Lucknow",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "lucknow",
     "lat": 26.8381,
     "lng": 80.9346,
@@ -1043,7 +1043,7 @@
   {
     "id": "lko-exam_centre-02",
     "name": "Seth Anandram Jaipuria Sch-Lucknow",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "lucknow",
     "lat": 26.8381,
     "lng": 80.9346,
@@ -1056,7 +1056,7 @@
   {
     "id": "ldh-exam_centre-01",
     "name": "Harvest International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ludhiana",
     "lat": 12.792829,
     "lng": 77.778634,
@@ -1069,7 +1069,7 @@
   {
     "id": "ldh-exam_centre-02",
     "name": "Kundan Vidya Mandir Sr. Sec School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ludhiana",
     "lat": 30.909016,
     "lng": 75.851601,
@@ -1082,7 +1082,7 @@
   {
     "id": "ixm-exam_centre-01",
     "name": "Vikaasa World School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "madurai",
     "lat": 10.00644,
     "lng": 78.133523,
@@ -1095,7 +1095,7 @@
   {
     "id": "moh-exam_centre-01",
     "name": "Learning Paths Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mohali",
     "lat": 30.69088,
     "lng": 76.711488,
@@ -1108,7 +1108,7 @@
   {
     "id": "mum-exam_centre-19",
     "name": "Anjuman Islam Hs",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "address": "ALLANA INSTITUTE OF MGMT STUDIES, AIAIMS, 92, D N ROAD,, OPP. CSMT (VT) RLY STN. FORT, MUMBAI, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1121,7 +1121,7 @@
   {
     "id": "mum-exam_centre-24",
     "name": "B D Somani International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 18.91607,
     "lng": 72.819921,
@@ -1134,7 +1134,7 @@
   {
     "id": "mum-exam_centre-20",
     "name": "Don Bosco International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "address": "GATE NO. 4 NATHALAL PAREKH MARG., MATUNGA EAST, MUMBAI, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1147,7 +1147,7 @@
   {
     "id": "mum-exam_centre-28",
     "name": "Hfs International",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.11357,
     "lng": 72.905794,
@@ -1160,7 +1160,7 @@
   {
     "id": "mum-exam_centre-34",
     "name": "Jbcn International School Borivali",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.248167,
     "lng": 72.854561,
@@ -1173,7 +1173,7 @@
   {
     "id": "mum-exam_centre-33",
     "name": "Jbcn International School Parel",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 18.999019,
     "lng": 72.8457,
@@ -1186,7 +1186,7 @@
   {
     "id": "mum-exam_centre-29",
     "name": "Kanakia International School (Ib)",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.054999,
     "lng": 72.869203,
@@ -1199,7 +1199,7 @@
   {
     "id": "mum-exam_centre-26",
     "name": "Oberoi International  School Jvlr",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.140234,
     "lng": 72.867586,
@@ -1212,7 +1212,7 @@
   {
     "id": "mum-exam_centre-25",
     "name": "Oberoi International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "address": "OBEROI BUSINESS PARK, OFF WESTERN EXPRESS HIGHWAY, OBEROI GARDEN CITY, GOREGAON EAST, MUMBAI, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1225,7 +1225,7 @@
   {
     "id": "mum-exam_centre-22",
     "name": "Rbk International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.062551,
     "lng": 72.913629,
@@ -1238,7 +1238,7 @@
   {
     "id": "mum-exam_centre-27",
     "name": "Ryan Global School Andheri Mumbai",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "lat": 19.054999,
     "lng": 72.869203,
@@ -1251,7 +1251,7 @@
   {
     "id": "mum-exam_centre-32",
     "name": "Singapore International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "address": "OFF NH NO-8,, ADJACENT TO AARADHYA HIGH PARK, NEXT TO AAYAPPA TEMPLE, DAHISAR EAST, MUMBAI, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1264,7 +1264,7 @@
   {
     "id": "mum-exam_centre-23",
     "name": "Universal School-Ghatkopar",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mumbai",
     "address": "PLOT NO.17, TILAK ROAD, OPP. LION'S GARDEN, GHATKOPAR, EAST, MUMBAI, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1277,7 +1277,7 @@
   {
     "id": "ddn-exam_centre-07",
     "name": "Woodstock Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "mussoorie",
     "address": "TEHRI ROAD, LANDOUR, MUSSOORIE, UTTARAKHAND",
     "added_by": "shauryagangrade",
@@ -1291,7 +1291,7 @@
   {
     "id": "nag-exam_centre-01",
     "name": "Centre Point School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "nagpur",
     "address": "KATOL ROAD, NEAR VENUKA WASIM COLONY, SEMINARY HILLS, NAGPUR, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1305,7 +1305,7 @@
   {
     "id": "del-exam_centre-01",
     "name": "All India Inst. Of Local Self Gov",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "new delhi",
     "lat": 28.613895,
     "lng": 77.209006,
@@ -1318,7 +1318,7 @@
   {
     "id": "del-exam_centre-03",
     "name": "Amity International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "new delhi",
     "lat": 28.523484,
     "lng": 77.214672,
@@ -1331,7 +1331,7 @@
   {
     "id": "del-exam_centre-02",
     "name": "Apeejay School Intl South Delhi",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "new delhi",
     "lat": 28.613895,
     "lng": 77.209006,
@@ -1344,7 +1344,7 @@
   {
     "id": "del-exam_centre-04",
     "name": "Pp International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "new delhi",
     "lat": 28.697966,
     "lng": 77.144564,
@@ -1357,7 +1357,7 @@
   {
     "id": "noi-exam_centre-01",
     "name": "Genesis Global School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "noida",
     "lat": 28.512882,
     "lng": 77.381606,
@@ -1370,7 +1370,7 @@
   {
     "id": "noi-exam_centre-03",
     "name": "Pathways Sch Noida",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "noida",
     "lat": 28.570633,
     "lng": 77.327215,
@@ -1383,7 +1383,7 @@
   {
     "id": "noi-exam_centre-02",
     "name": "Prometheus School, Noida",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "noida",
     "lat": 28.512376,
     "lng": 77.359867,
@@ -1396,7 +1396,7 @@
   {
     "id": "old-exam_centre-01",
     "name": "Sunshine Worldwide School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "old goa",
     "lat": 15.488128,
     "lng": 73.907047,
@@ -1409,7 +1409,7 @@
   {
     "id": "oot-exam_centre-01",
     "name": "Good Shepherd Intl Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ootacamund",
     "address": "GOOD SHEPHERD KNOWLEDGE VILLAGE, M.PALADA, OOTACAMUND, TAMIL NADU",
     "added_by": "shauryagangrade",
@@ -1423,7 +1423,7 @@
   {
     "id": "oot-exam_centre-02",
     "name": "Lawrence School Lovedale",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ooty",
     "lat": 11.379982,
     "lng": 76.70049,
@@ -1436,7 +1436,7 @@
   {
     "id": "pun-exam_centre-03",
     "name": "Chatrabhuj Narsee School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.521135,
     "lng": 73.946686,
@@ -1449,7 +1449,7 @@
   {
     "id": "pun-exam_centre-07",
     "name": "D Y Patil International School Pune",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.621037,
     "lng": 73.910041,
@@ -1462,7 +1462,7 @@
   {
     "id": "pun-exam_centre-05",
     "name": "Dept Of Psychology, S. P. Pune Univ.",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.521374,
     "lng": 73.854507,
@@ -1475,7 +1475,7 @@
   {
     "id": "pun-exam_centre-09",
     "name": "Elpro International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "address": "ELPRO COMPOUND, SHRIDHAR NAGAR ROAD, PIMPRI-CHINCHWAD LINK RD, CHINCHWAD, PUNE, MAHARASHTRA",
     "added_by": "shauryagangrade",
@@ -1488,7 +1488,7 @@
   {
     "id": "pun-exam_centre-06",
     "name": "Indus International School Pune",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.521374,
     "lng": 73.854507,
@@ -1501,7 +1501,7 @@
   {
     "id": "pun-exam_centre-02",
     "name": "Kalyani School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.546353,
     "lng": 73.901117,
@@ -1514,7 +1514,7 @@
   {
     "id": "pun-exam_centre-04",
     "name": "Mahindra United World Col Of India",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "pune",
     "lat": 18.521374,
     "lng": 73.854507,
@@ -1527,7 +1527,7 @@
   {
     "id": "rpr-exam_centre-01",
     "name": "Rungta International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "raipur",
     "lat": 21.238091,
     "lng": 81.633699,
@@ -1540,7 +1540,7 @@
   {
     "id": "raj-exam_centre-02",
     "name": "Laurel High Global Sch Main Campus",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "rajamahendravaram",
     "lat": 17.005045,
     "lng": 81.780473,
@@ -1553,7 +1553,7 @@
   {
     "id": "ixr-exam_centre-01",
     "name": "Delhi Public School Ranchi",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ranchi",
     "lat": 23.333066,
     "lng": 85.300535,
@@ -1566,7 +1566,7 @@
   {
     "id": "ixr-exam_centre-02",
     "name": "Odm Sapphire Global School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "ranchi",
     "lat": 23.37005,
     "lng": 85.325039,
@@ -1579,7 +1579,7 @@
   {
     "id": "rrk-exam_centre-01",
     "name": "Delhi Public School Rourkela",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "rourkela",
     "lat": 22.2557,
     "lng": 84.837696,
@@ -1592,7 +1592,7 @@
   {
     "id": "soh-exam_centre-01",
     "name": "G D Goenka World Sch",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "sohna",
     "address": "G. D. GOENKA WORLD SCHOOL, SOHNA GURGAON ROAD, GURGAON, SOHNA, HARYANA",
     "added_by": "shauryagangrade",
@@ -1606,7 +1606,7 @@
   {
     "id": "sri-exam_centre-01",
     "name": "Delhi Public School - Srinagar",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "srinagar",
     "lat": 34.041102,
     "lng": 74.87946,
@@ -1619,7 +1619,7 @@
   {
     "id": "sur-exam_centre-01",
     "name": "Fountainhead School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "surat",
     "lat": 21.209489,
     "lng": 72.831706,
@@ -1632,7 +1632,7 @@
   {
     "id": "trv-exam_centre-01",
     "name": "Trivandrum International School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "trivandrum",
     "address": "TRIVANDRUM INTERNATIONAL SCHOOL, EDACKODE PO, KORANI, TRIVANDRUM, KERALA",
     "added_by": "shauryagangrade",
@@ -1645,7 +1645,7 @@
   {
     "id": "udr-exam_centre-01",
     "name": "Rockwoods High School",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "udaipur",
     "lat": 17.410004,
     "lng": 78.484952,
@@ -1658,7 +1658,7 @@
   {
     "id": "vja-exam_centre-02",
     "name": "Delhi Public School Vijayawada",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "vijayawada",
     "lat": 16.513178,
     "lng": 80.714587,
@@ -1671,7 +1671,7 @@
   {
     "id": "viz-exam_centre-01",
     "name": "Oakridge Intl Sch-Vizag",
-    "type": "exam_centre",
+    "type": "sat_centre",
     "city": "visakhapatnam",
     "lat": 17.693553,
     "lng": 83.29213,
