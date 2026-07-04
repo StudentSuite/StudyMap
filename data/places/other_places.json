@@ -1,0 +1,46 @@
+[
+  {
+    "id": "mum-other_places-01",
+    "name": "St Xavier's College (Exam Hall)",
+    "type": "other_places",
+    "city": "mumbai",
+    "lat": 18.9674,
+    "lng": 72.8357,
+    "address": "Fort, Mumbai 400001",
+    "gmaps_link": "https://maps.google.com/?q=18.9674,72.8348",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "mum-other_places-02",
+    "name": "HDFC Bank - Dadar",
+    "type": "other_places",
+    "city": "mumbai",
+    "lat": 19.0176,
+    "lng": 72.8479,
+    "address": "Dadar West, Mumbai 400028",
+    "gmaps_link": "https://maps.google.com/?q=19.0176,72.8479",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "mum-other_places-03",
+    "name": "ICICI Bank - Andheri",
+    "type": "other_places",
+    "city": "mumbai",
+    "lat": 19.11925,
+    "lng": 72.8475794,
+    "address": "Andheri East, Mumbai 400072",
+    "gmaps_link": "https://maps.google.com/?q=19.1197,72.8468",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "mum-other_places-04",
+    "name": "University of Mumbai Administration",
+    "type": "other_places",
+    "city": "mumbai",
+    "lat": 18.9279,
+    "lng": 72.8317,
+    "address": "Fort Campus, Fort, Mumbai 400032",
+    "gmaps_link": "https://maps.google.com/?q=18.9279,72.8317",
+    "added_by": "yashkewlani"
+  }
+]

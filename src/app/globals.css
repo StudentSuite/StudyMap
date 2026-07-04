@@ -50,10 +50,11 @@
   /* Map marker hex — color-blind safe, verified against deuteranopia,
      protanopia, tritanopia. */
   --marker-library:                    #2563EB;
-  --marker-imp-locations:              #0F766E;
+  --marker-other-places:               #0F766E;
   --marker-airport:                    #BE185D;
   --marker-sat-centre:                 #7C3AED;
   --marker-foreign-lang-exam-centre:   #0891B2;
+  --marker-gov-offices:                #B45309;
 }
 
 /* ----------------------------------------------------------------
@@ -99,10 +100,11 @@
 
   /* Markers unchanged — same hex reads well on dark map tiles */
   --marker-library:                    #2563EB;
-  --marker-imp-locations:              #0F766E;
+  --marker-other-places:               #0F766E;
   --marker-airport:                    #BE185D;
   --marker-sat-centre:                 #7C3AED;
   --marker-foreign-lang-exam-centre:   #0891B2;
+  --marker-gov-offices:                #B45309;
 }
 
 /* ================================================================
@@ -144,10 +146,11 @@
 
   /* Marker colors usable as bg-marker-library, border-marker-sat-centre, etc. */
   --color-marker-library:                    var(--marker-library);
-  --color-marker-imp-locations:              var(--marker-imp-locations);
+  --color-marker-other-places:               var(--marker-other-places);
   --color-marker-airport:                    var(--marker-airport);
   --color-marker-sat-centre:                 var(--marker-sat-centre);
   --color-marker-foreign-lang-exam-centre:   var(--marker-foreign-lang-exam-centre);
+  --color-marker-gov-offices:                var(--marker-gov-offices);
 
   /* next/font injects --font-inter, --font-space-grotesk, --font-jetbrains-mono
      onto <html> via className. See src/lib/fonts.ts */

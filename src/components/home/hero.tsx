@@ -11,10 +11,11 @@ import { HeroParticles } from "@/components/home/hero-particles";
 // Full literal class strings so Tailwind's scanner keeps the marker utilities.
 const MARKER_DOT: Record<PlaceType, string> = {
   library: "bg-marker-library",
-  imp_locations: "bg-marker-imp-locations",
+  other_places: "bg-marker-other-places",
   airport: "bg-marker-airport",
   sat_centre: "bg-marker-sat-centre",
   foreign_lang_exam_centre: "bg-marker-foreign-lang-exam-centre",
+  gov_offices: "bg-marker-gov-offices",
 };
 
 export function Hero() {

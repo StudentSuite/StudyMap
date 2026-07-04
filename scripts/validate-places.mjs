@@ -23,10 +23,11 @@ const DATA_DIR = join(__dirname, "../data/places");
 
 const VALID_TYPES = new Set([
   "library",
-  "imp_locations",
+  "other_places",
   "airport",
   "sat_centre",
   "foreign_lang_exam_centre",
+  "gov_offices",
 ]);
 
 // Valid geographic coordinate ranges. Catches impossible values (e.g. lat=200)

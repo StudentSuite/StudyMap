@@ -11,9 +11,10 @@ import type { City, Place } from "@/lib/types";
 
 import airport from "./data/places/airport.json";
 import library from "./data/places/library.json";
-import impLocations from "./data/places/imp_locations.json";
+import otherPlaces from "./data/places/other_places.json";
 import satCentre from "./data/places/sat_centre.json";
 import foreignLangExamCentre from "./data/places/foreign_lang_exam_centre.json";
+import govOffices from "./data/places/gov_offices.json";
 
 export interface StudyMapConfig {
   /** Initial map center, as [lat, lng]. */
@@ -44,9 +45,10 @@ const studyMapConfig: StudyMapConfig = {
   places: [
     ...(airport as Place[]),
     ...(library as Place[]),
-    ...(impLocations as Place[]),
+    ...(otherPlaces as Place[]),
     ...(satCentre as Place[]),
     ...(foreignLangExamCentre as Place[]),
+    ...(govOffices as Place[]),
   ],
 };
 

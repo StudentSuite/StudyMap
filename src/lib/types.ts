@@ -1,9 +1,10 @@
 export const PLACE_TYPES = [
   "library",
-  "imp_locations",
+  "other_places",
   "airport",
   "sat_centre",
   "foreign_lang_exam_centre",
+  "gov_offices",
 ] as const;
 
 export type PlaceType = (typeof PLACE_TYPES)[number];
@@ -18,10 +19,11 @@ export type City = string;
 
 export const PLACE_TYPE_LABELS: Record<PlaceType, string> = {
   library: "Library",
-  imp_locations: "Important locations",
+  other_places: "Other places",
   airport: "Airport",
   sat_centre: "SAT centre",
   foreign_lang_exam_centre: "Foreign lang exam centre",
+  gov_offices: "Government offices",
 };
 
 /** Turns a city slug into a display label, e.g. "navi_mumbai" -> "Navi Mumbai". */
