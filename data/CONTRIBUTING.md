@@ -6,15 +6,12 @@ Places live in `data/places/<type>.json`, one file per place type, one JSON obje
 
 | File | What goes here |
 |------|---------------|
-| `exam_centre.json` | SAT, IB, IGCSE test centres |
+| `sat_centre.json` | SAT exam venues. Include `exam: "SAT"` and `valid_till` |
+| `foreign_lang_exam_centre.json` | IELTS, TOEFL, Goethe, DELF, and other foreign-language exam venues. Include `exam` name and `valid_till` where known |
 | `library.json` | Public and institutional libraries |
-| `book_shop.json` | Book shops and book depots |
-| `imp_locations.json` | Passport Seva, embassies, council offices |
-| `stationery.json` | Stationery and print shops |
-| `internet_cafe.json` | Cyber cafes and internet kiosks |
+| `gov_offices.json` | Passport offices, RTOs, embassies, post offices, district offices, and other government/civic offices |
 | `airport.json` | Airports |
-| `train_station.json` | Railway stations |
-| `repair_shop.json` | Phone, laptop, and gadget repair shops |
+| `other_places.json` | Miscellaneous student-relevant places that don't fit another category |
 
 ## Record format
 
