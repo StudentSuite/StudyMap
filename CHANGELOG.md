@@ -5,6 +5,13 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.1] - 2026-07-05
+
+### Fixed
+
+- 2 Chennai SAT centres with completely wrong coordinates: Alphabet International School was plotted in Kashmir (33.9°N 75.1°E), KC High was plotted in Odisha (19.3°N 84.8°E). Both corrected to actual Chennai locations (Palavakkam and Navalur OMR respectively).
+- 8 SAT centres across Lucknow (3), Ahmedabad (2), and Amritsar (3) that shared a single placeholder coordinate now have individual approximate coordinates derived from their address fields. Previously all pins in each city stacked on one spot.
+
 ## [2.2.0] - 2026-07-05
 
 ### Added
