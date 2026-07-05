@@ -5,6 +5,24 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.2.0] - 2026-07-05
+
+### Added
+
+- `gov_offices` as a new place type (amber `#B45309`): passport offices, RTOs, post offices, district collectorates, MPSC, and municipal offices. Wired through type definitions, color tokens, CSS custom properties, Tailwind utilities, hero legend, config imports, and the data validator.
+- `data/places/gov_offices.json`: 14 verified government offices — 6 in Mumbai (Passport Seva Kendra Lower Parel, Central Post Office Fort, Mumbai GPO, MPSC Office, Regional Passport Office, RTO Tardeo), 5 in Thane (Passport Seva Kendra, Head Post Office, District Collectorate, RTO, MSRTC bus stand), 3 in Navi Mumbai (Passport Seva Kendra, NMMC Head Office, RTO Navi Mumbai).
+
+### Changed
+
+- `imp_locations` place type renamed to `other_places` (teal `#0F766E`). All type definitions, color tokens, and config references updated. Source data file (`data/places/imp_locations.json`) archived to `data/places.archive/`; new `data/places/other_places.json` created.
+- `other_places.json` trimmed to University of Mumbai Administration (Fort Campus) only; removed St Xavier's exam hall, HDFC Bank Dadar, ICICI Bank Andheri (out-of-scope entries).
+- Both `CONTRIBUTING.md` and `data/CONTRIBUTING.md` updated to document the current 6 valid place types (`library`, `airport`, `sat_centre`, `foreign_lang_exam_centre`, `gov_offices`, `other_places`); removed references to the 8 retired types.
+
+### Fixed
+
+- Category chips now wrap to multiple lines instead of horizontal scroll, so all category filters are always visible.
+- Category chip tap targets enlarged on mobile (`px-3.5 py-2`) for easier one-tap selection; desktop restores the tighter size via `sm:px-3 sm:py-1.5`.
+
 ## [2.1.0] - 2026-07-03
 
 ### Added
@@ -14,10 +32,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `data/places/sat_centre.json`: 7 verified SAT centres in Mumbai (migrated from `exam_centre`, type updated).
 - `data/places/foreign_lang_exam_centre.json`: 2 Goethe-Institut / Max Mueller Bhavan locations (Mumbai + Pune, migrated from `exam_centre`, type updated).
 
+### Fixed
+
+- Validator (`scripts/validate-places.mjs`) `VALID_TYPES` updated to match the new category set; removed type data files archived to `data/places.archive/` instead of deleted.
+- Form dialogs (add/edit personal event, home location, custom place) no longer close on outside click caused by extension-injected events or stray pointer events from the Leaflet map.
+- Dialog, dropdown menu, and select z-indexes raised above Leaflet map layers (panes at z-400, controls at z-1000) so they render correctly over the map.
+
 ### Removed
 
-- `exam_centre` place type: replaced by the more specific `sat_centre` and `foreign_lang_exam_centre` types. Source data file (`data/places/exam_centre.json`) retained on disk for reference.
-- `book_shop`, `stationery`, `internet_cafe`, `train_station`, `repair_shop` place types: removed for scope clarity. Source data files retained on disk.
+- `exam_centre` place type: replaced by the more specific `sat_centre` and `foreign_lang_exam_centre` types. Source data file archived to `data/places.archive/`.
+- `book_shop`, `stationery`, `internet_cafe`, `train_station`, `repair_shop` place types: removed for scope clarity. Source data files archived to `data/places.archive/`.
 
 ## [2.0.0] - 2026-07-01
 
