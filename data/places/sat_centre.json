@@ -4592,5 +4592,15 @@
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
-  }
+  },{
+  "id": "berlin-examcentre-01",
+  "name": "John F. Kennedy School (SAT Centre)",
+  "type": "sat_centre",
+  "city": "BERLIN",
+  "lat": 52.4258517,
+  "lng": 13.2627852,
+  "address": "Teltower Damm 87-93, 14167 Berlin, Deutschland",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJwYZwr8tbqEcR75RdXB8G_Fc",
+  "added_by": "Yojeet(Circout)"
+}
 ]
