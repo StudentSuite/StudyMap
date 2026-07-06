@@ -1,6 +1,8 @@
 import { createServerClient } from "@supabase/ssr";
 import { NextResponse, type NextRequest } from "next/server";
 
+import { isSupabaseConfigured } from "@/lib/supabase/config";
+
 const CANONICAL = "https://studymapp.vercel.app";
 // Vercel auto-assigns this URL based on the team name — it can't be deleted,
 // so we intercept every request on it and redirect to the canonical domain.
@@ -19,6 +21,12 @@ export async function proxy(request: NextRequest) {
   }
 
   let proxyResponse = NextResponse.next({ request });
+
+  // Self-host / preview mode: no Supabase, so there's no session to refresh.
+  // Skipping this keeps every route working without Supabase credentials.
+  if (!isSupabaseConfigured()) {
+    return proxyResponse;
+  }
 
   const supabase = createServerClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

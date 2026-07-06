@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { createClient } from "@/lib/supabase/client";
+import { isSupabaseConfigured } from "@/lib/supabase/config";
 
 export function Navbar() {
   const pathname = usePathname();
@@ -18,8 +19,13 @@ export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [loggedIn, setLoggedIn] = React.useState(false);
 
+  // Auth is only available when Supabase is configured. In self-host / preview
+  // mode we hide sign-in entirely and skip the auth listener.
+  const authEnabled = isSupabaseConfigured();
+
   React.useEffect(() => {
     const supabase = createClient();
+    if (!supabase) return;
     supabase.auth.getUser().then(({ data }) => setLoggedIn(!!data.user));
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_, session) => setLoggedIn(!!session),
@@ -29,6 +35,7 @@ export function Navbar() {
 
   async function handleSignOut() {
     const supabase = createClient();
+    if (!supabase) return;
     await supabase.auth.signOut();
     router.refresh();
   }
@@ -63,29 +70,30 @@ export function Navbar() {
 
         <div className="ml-auto flex items-center gap-1">
           <ThemeToggle />
-          {loggedIn ? (
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={handleSignOut}
-              aria-label="Sign out"
-              className="hidden md:inline-flex"
-            >
-              <LogOut className="size-4" />
-            </Button>
-          ) : (
-            <Button
-              variant="ghost"
-              size="sm"
-              asChild
-              className="hidden md:inline-flex gap-1.5"
-            >
-              <Link href={`/login?next=${encodeURIComponent(pathname)}`}>
-                <LogIn className="size-4" />
-                Sign in
-              </Link>
-            </Button>
-          )}
+          {authEnabled &&
+            (loggedIn ? (
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleSignOut}
+                aria-label="Sign out"
+                className="hidden md:inline-flex"
+              >
+                <LogOut className="size-4" />
+              </Button>
+            ) : (
+              <Button
+                variant="ghost"
+                size="sm"
+                asChild
+                className="hidden md:inline-flex gap-1.5"
+              >
+                <Link href={`/login?next=${encodeURIComponent(pathname)}`}>
+                  <LogIn className="size-4" />
+                  Sign in
+                </Link>
+              </Button>
+            ))}
 
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
@@ -109,24 +117,25 @@ export function Navbar() {
                     {link.label}
                   </Link>
                 ))}
-                {loggedIn ? (
-                  <button
-                    onClick={() => { setOpen(false); handleSignOut(); }}
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
-                  >
-                    <LogOut className="size-4" />
-                    Sign out
-                  </button>
-                ) : (
-                  <Link
-                    href={`/login?next=${encodeURIComponent(pathname)}`}
-                    onClick={() => setOpen(false)}
-                    className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-                  >
-                    <LogIn className="size-4" />
-                    Sign in
-                  </Link>
-                )}
+                {authEnabled &&
+                  (loggedIn ? (
+                    <button
+                      onClick={() => { setOpen(false); handleSignOut(); }}
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
+                    >
+                      <LogOut className="size-4" />
+                      Sign out
+                    </button>
+                  ) : (
+                    <Link
+                      href={`/login?next=${encodeURIComponent(pathname)}`}
+                      onClick={() => setOpen(false)}
+                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                    >
+                      <LogIn className="size-4" />
+                      Sign in
+                    </Link>
+                  ))}
               </nav>
             </SheetContent>
           </Sheet>

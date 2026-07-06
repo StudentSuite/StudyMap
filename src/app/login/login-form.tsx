@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
@@ -23,19 +24,41 @@ export function LoginForm() {
   const [password, setPassword] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
+  // Self-host / preview mode: Supabase isn't configured, so there's no auth.
+  if (!supabase) {
+    return (
+      <div className="flex min-h-[calc(100dvh-3.5rem)] items-center justify-center px-4">
+        <div className="w-full max-w-sm rounded-xl border bg-card p-6 text-center shadow-sm">
+          <p className="text-sm text-muted-foreground">
+            Sign-in is not available on this deployment. StudyMap is running in
+            preview mode without accounts. The map and calendar work fully
+            without signing in.
+          </p>
+          <Button asChild className="mt-4">
+            <Link href="/map">Go to the map</Link>
+          </Button>
+        </div>
+      </div>
+    );
+  }
+
+  // Non-null past the guard above; captured so the handler closures below
+  // don't re-widen it back to `SupabaseClient | null`.
+  const client = supabase;
+
   async function handleEmailAuth(e: React.FormEvent) {
     e.preventDefault();
     setLoading(true);
 
     if (mode === "signup") {
-      const { error } = await supabase.auth.signUp({ email, password });
+      const { error } = await client.auth.signUp({ email, password });
       if (error) {
         toast.error(error.message);
       } else {
         toast.success("Check your email to confirm your account.");
       }
     } else {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { error } = await client.auth.signInWithPassword({
         email,
         password,
       });
@@ -55,7 +78,7 @@ export function LoginForm() {
     // fall back to the hardcoded canonical domain so any auto-assigned
     // Vercel URL never leaks into the OAuth redirectTo.
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
-    const { error } = await supabase.auth.signInWithOAuth({
+    const { error } = await client.auth.signInWithOAuth({
       provider: "google",
       options: {
         redirectTo: `${siteUrl}/auth/callback?next=${encodeURIComponent(next)}`,

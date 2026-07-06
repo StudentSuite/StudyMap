@@ -53,15 +53,26 @@ export function userPlaceToPlace(row: UserPlaceRow): Place {
   };
 }
 
-async function currentUserId(): Promise<string> {
+/**
+ * Supabase client for the private-data calls below. These only ever run for a
+ * signed-in user, which is impossible without Supabase configured, so a null
+ * client here means something is badly misconfigured - throw rather than guess.
+ */
+function requireClient() {
   const supabase = createClient();
+  if (!supabase) throw new Error("Supabase is not configured");
+  return supabase;
+}
+
+async function currentUserId(): Promise<string> {
+  const supabase = requireClient();
   const { data } = await supabase.auth.getUser();
   if (!data.user) throw new Error("Not signed in");
   return data.user.id;
 }
 
 export async function fetchUserPlaces(): Promise<UserPlaceRow[]> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const { data, error } = await supabase
     .from("user_places")
     .select("*")
@@ -71,7 +82,7 @@ export async function fetchUserPlaces(): Promise<UserPlaceRow[]> {
 }
 
 export async function createUserPlace(input: UserPlaceInput): Promise<UserPlaceRow> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const user_id = await currentUserId();
   const { data, error } = await supabase
     .from("user_places")
@@ -86,7 +97,7 @@ export async function updateUserPlace(
   id: string,
   input: UserPlaceInput,
 ): Promise<UserPlaceRow> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const { data, error } = await supabase
     .from("user_places")
     .update(input)
@@ -98,20 +109,20 @@ export async function updateUserPlace(
 }
 
 export async function deleteUserPlace(id: string): Promise<void> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const { error } = await supabase.from("user_places").delete().eq("id", id);
   if (error) throw error;
 }
 
 export async function fetchUserHome(): Promise<UserHome | null> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const { data, error } = await supabase.from("user_home").select("*").maybeSingle();
   if (error) throw error;
   return data;
 }
 
 export async function upsertUserHome(input: UserHomeInput): Promise<UserHome> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const user_id = await currentUserId();
   const { data, error } = await supabase
     .from("user_home")
@@ -123,7 +134,7 @@ export async function upsertUserHome(input: UserHomeInput): Promise<UserHome> {
 }
 
 export async function deleteUserHome(): Promise<void> {
-  const supabase = createClient();
+  const supabase = requireClient();
   const user_id = await currentUserId();
   const { error } = await supabase.from("user_home").delete().eq("user_id", user_id);
   if (error) throw error;
