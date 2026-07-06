@@ -95,6 +95,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   React.useEffect(() => {
     const supabase = createClient();
+    if (!supabase) return; // self-host / preview mode: no auth, no private layer
     supabase.auth.getUser().then(({ data }) => setUser(data.user));
     const {
       data: { subscription },

@@ -1,7 +1,15 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 
+import { isSupabaseConfigured } from "./config";
+
+/**
+ * Server Supabase client, or `null` when Supabase isn't configured
+ * (self-host / preview mode).
+ */
 export async function createClient() {
+  if (!isSupabaseConfigured()) return null;
+
   const cookieStore = await cookies();
 
   return createServerClient(
