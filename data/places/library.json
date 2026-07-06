@@ -273,5 +273,36 @@
     "address": "福建省厦门市集美区诚毅中路380号",
     "gmaps_link": "https://maps.google.com/?q=24.59441,118.05789",
     "added_by": "Yojeet(Circout-sudo)"
-  }
+  },{
+  "id": "stahnsdorf-library-01",
+  "name": "Bibliothek Stahnsdorf",
+  "type": "library",
+  "city": "stahnsdorf",
+  "lat": 52.3813222,
+  "lng": 13.2122294,
+  "address": "Annastraße 3, 14532 Stahnsdorf, Deutschland",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJ0UL6dKheqEcRmgDyIeIO00c",
+  "added_by": "Yojeet(Circout-sudo)"
+},
+{
+  "id": "kleinmachnow-library-01",
+  "name": "Bibliothek Kleinmachnow",
+  "type": "library",
+  "city": "kleinmachnow",
+  "lat": 52.4031025,
+  "lng": 13.2199122,
+  "address": "Adolf-Grimme-Ring 10, 14532 Kleinmachnow, Deutschland",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJR_4_wFlZqEcRH3brQxCh_nc",
+  "added_by": "Yojeet(Circout-sudo)"
+},{
+  "id": "yangzhou-library-01",
+  "name": "明月湖城市书房",
+  "type": "library",
+  "city": "yangzhou",
+  "lat": 32.38783107112308,
+  "lng": 119.37374725752026,
+  "address": "江苏省扬州市邗江区文昌西路, 与国展路交汇处, 明月湖公园",
+  "gmaps_link": "https://map.baidu.com/poi/明月湖城市书房/@13289419.112274475,3791948.318816694,20.2z?uid=1f28529ebca0cef65b1093a4&info_merge=1&isBizPoi=false&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&en_uid=1f28529ebca0cef65b1093a4&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl",
+  "added_by": "Yojeet(Circout-sudo)"
+}
 ]
