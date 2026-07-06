@@ -19,7 +19,7 @@ const DOCS = [
     href: "/docs/exam-centres",
     title: "Finding Exam Centres",
     description:
-      "Use the map to locate SAT, IB, and IGCSE exam centres across Mumbai, Thane, and Navi Mumbai.",
+      "Use the map to locate verified SAT centres and foreign language exam centres across India and worldwide.",
   },
   {
     href: "/docs/contributing",
@@ -34,7 +34,10 @@ export default function DocsIndexPage() {
     <PageContainer>
       <h1 className="font-heading text-3xl font-bold tracking-tight">Docs</h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        Student guides for StudyMap and the tools around it.
+        Student guides for StudyMap and the tools around it. The map covers
+        libraries, SAT centres, foreign language exam centres, government
+        offices (passport offices, RTOs, post offices), airports, and other
+        student-relevant places.
       </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-3">

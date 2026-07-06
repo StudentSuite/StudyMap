@@ -43,7 +43,7 @@ export default function ContributingPage() {
             <p>
               Open a{" "}
               <a
-                href="https://github.com/AnayDhawan/StudyMap/issues/new"
+                href="https://github.com/StudentSuite/StudyMap/issues/new"
                 target="_blank"
                 rel="noreferrer"
                 className="font-medium text-primary hover:underline"
@@ -55,8 +55,8 @@ export default function ContributingPage() {
             <ul className="ml-4 list-disc space-y-1">
               <li>Place name</li>
               <li>Full address</li>
-              <li>Type (exam centre, library, book shop, stationery, internet cafe, train station, airport, or important location)</li>
-              <li>City: Mumbai, Thane, or Navi Mumbai</li>
+              <li>Type: SAT centre, foreign language exam centre, library, government office (passport office, RTO, post office), airport, or other place</li>
+              <li>City and country (SAT and foreign language centres are listed worldwide; other categories currently focus on the Mumbai region)</li>
               <li>Google Maps link</li>
             </ul>
             <p className="text-xs text-muted-foreground">
@@ -75,7 +75,7 @@ export default function ContributingPage() {
               <li>
                 Fork the{" "}
                 <a
-                  href="https://github.com/AnayDhawan/StudyMap"
+                  href="https://github.com/StudentSuite/StudyMap"
                   target="_blank"
                   rel="noreferrer"
                   className="font-medium text-primary hover:underline"
@@ -112,8 +112,8 @@ export default function ContributingPage() {
             </div>
 
             <p className="text-xs text-muted-foreground mt-2">
-              ID format: <code className="bg-muted px-1 rounded">mum</code> / <code className="bg-muted px-1 rounded">thn</code> / <code className="bg-muted px-1 rounded">nvm</code> prefix, then type, then next available number.
-              Lat/lng range: lat 18-20, lng 72-73.
+              ID format: a short city-code prefix (<code className="bg-muted px-1 rounded">mum</code>, <code className="bg-muted px-1 rounded">thn</code>, <code className="bg-muted px-1 rounded">nvm</code>, <code className="bg-muted px-1 rounded">blr</code>, and so on), then the type, then the next available number in that file.
+              Coordinates come straight from Google Maps, so there is no fixed range: SAT and foreign language centres span the globe.
             </p>
           </CardContent>
         </Card>
@@ -129,13 +129,56 @@ export default function ContributingPage() {
               edit the existing entry in the relevant JSON file and update the field.
             </p>
             <a
-              href="https://github.com/AnayDhawan/StudyMap/blob/main/data/CONTRIBUTING.md"
+              href="https://github.com/StudentSuite/StudyMap/blob/main/data/CONTRIBUTING.md"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
             >
               Full contributing guide on GitHub
             </a>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>Adding SAT centres for a new country</CardTitle>
+            <CardDescription>Help expand the map beyond India</CardDescription>
+          </CardHeader>
+          <CardContent className="space-y-3 text-sm text-foreground/80">
+            <p>
+              We are adding SAT centres country by country. Several countries
+              already have open tracking issues (Germany, France, UK, UAE,
+              Australia, and more).
+            </p>
+            <ol className="ml-4 list-decimal space-y-2">
+              <li>
+                Check the{" "}
+                <a
+                  href="https://github.com/StudentSuite/StudyMap/issues?q=is%3Aissue+is%3Aopen+%22Add+SAT+centres%22"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-medium text-primary hover:underline"
+                >
+                  open country requests
+                </a>
+                . If your country is listed, comment there or open a PR that
+                closes it. If not, open a new issue for it.
+              </li>
+              <li>
+                Add each centre to{" "}
+                <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+                  data/places/sat_centre.json
+                </code>{" "}
+                with <code className="rounded bg-muted px-1 font-mono">type</code>{" "}
+                set to <code className="rounded bg-muted px-1 font-mono">sat_centre</code>,
+                plus <code className="rounded bg-muted px-1 font-mono">exam: &quot;SAT&quot;</code>{" "}
+                and a <code className="rounded bg-muted px-1 font-mono">valid_till</code> date.
+              </li>
+              <li>
+                Use the real city name and coordinates from Google Maps. Centres
+                outside India are welcome and expected here.
+              </li>
+            </ol>
           </CardContent>
         </Card>
       </div>

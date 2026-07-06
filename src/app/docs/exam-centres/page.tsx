@@ -104,6 +104,18 @@ export default function ExamCentresPage() {
               If you know of a SAT or foreign language exam centre that is not on
               the map, or an existing entry has moved or closed, please report it.
             </p>
+            <p>
+              We are also expanding SAT coverage country by country. See the{" "}
+              <a
+                href="https://github.com/StudentSuite/StudyMap/issues?q=is%3Aissue+is%3Aopen+%22Add+SAT+centres%22"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-primary hover:underline"
+              >
+                open country requests
+              </a>{" "}
+              to add centres for your country.
+            </p>
             <Link
               href="/docs/contributing"
               className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
