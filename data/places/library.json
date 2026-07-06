@@ -273,5 +273,26 @@
     "address": "福建省厦门市集美区诚毅中路380号",
     "gmaps_link": "https://maps.google.com/?q=24.59441,118.05789",
     "added_by": "Yojeet(Circout-sudo)"
-  }
+  },{
+  "id": "stahnsdorf-library-01",
+  "name": "Bibliothek Stahnsdorf",
+  "type": "library",
+  "city": "stahnsdorf",
+  "lat": 52.3813222,
+  "lng": 13.2122294,
+  "address": "Annastraße 3, 14532 Stahnsdorf, Deutschland",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJ0UL6dKheqEcRmgDyIeIO00c",
+  "added_by": "your-github-handle"
+},
+{
+  "id": "kleinmachnow-library-01",
+  "name": "Bibliothek Kleinmachnow",
+  "type": "library",
+  "city": "kleinmachnow",
+  "lat": 52.4031025,
+  "lng": 13.2199122,
+  "address": "Adolf-Grimme-Ring 10, 14532 Kleinmachnow, Deutschland",
+  "gmaps_link": "https://maps.google.com/?cid=ChIJR_4_wFlZqEcRH3brQxCh_nc",
+  "added_by": "your-github-handle"
+}
 ]
