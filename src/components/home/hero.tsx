@@ -24,6 +24,16 @@ export function Hero() {
 
   return (
     <section className="relative isolate overflow-hidden">
+      <div
+        className="graph-paper absolute inset-0 -z-10"
+        style={{
+          maskImage:
+            "radial-gradient(ellipse 120% 90% at 50% 0%, black 50%, transparent 100%)",
+          WebkitMaskImage:
+            "radial-gradient(ellipse 120% 90% at 50% 0%, black 50%, transparent 100%)",
+        }}
+        aria-hidden="true"
+      />
       <HeroParticles />
       <div className="mx-auto grid w-full max-w-6xl items-stretch gap-10 px-4 pb-16 pt-12 sm:pt-16 lg:grid-cols-12 lg:gap-12 lg:pb-24">
         <div className="flex flex-col justify-center lg:col-span-5">

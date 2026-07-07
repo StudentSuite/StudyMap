@@ -55,6 +55,10 @@
   --marker-sat-centre:                 #7C3AED;
   --marker-foreign-lang-exam-centre:   #0891B2;
   --marker-gov-offices:                #B45309;
+
+  /* Notebook grid (shared StudentSuite design language) */
+  --grid-line:      rgba(180, 83, 9, 0.055);
+  --grid-line-bold: rgba(180, 83, 9, 0.10);
 }
 
 /* ----------------------------------------------------------------
@@ -105,6 +109,10 @@
   --marker-sat-centre:                 #7C3AED;
   --marker-foreign-lang-exam-centre:   #0891B2;
   --marker-gov-offices:                #B45309;
+
+  /* Notebook grid (shared StudentSuite design language) */
+  --grid-line:      rgba(245, 158, 11, 0.05);
+  --grid-line-bold: rgba(245, 158, 11, 0.09);
 }
 
 /* ================================================================
@@ -215,6 +223,20 @@ html { scroll-behavior: smooth; }
 /* ================================================================
    StudyMap utility classes
    ================================================================ */
+
+/* Notebook graph-paper backdrop (shared StudentSuite design language) */
+.graph-paper {
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    linear-gradient(var(--grid-line-bold) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line-bold) 1px, transparent 1px);
+  background-size:
+    24px 24px,
+    24px 24px,
+    120px 120px,
+    120px 120px;
+}
 
 .kicker {
   font-family: var(--font-mono);

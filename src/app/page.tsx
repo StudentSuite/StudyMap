@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Hero } from "@/components/home/hero";
@@ -83,8 +84,9 @@ export default function HomePage() {
               <p className="mt-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                 {section.body}
               </p>
-              <span className="mt-4 text-sm font-medium text-primary group-hover:underline">
+              <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-medium text-primary">
                 {section.cta}
+                <ArrowRight className="size-3.5 transition-transform group-hover:translate-x-0.5" />
               </span>
             </Link>
           ))}
