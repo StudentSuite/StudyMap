@@ -79,6 +79,14 @@ export function Footer() {
               >
                 GitHub
               </a>
+              <a
+                href="https://instagram.com/studentsuite"
+                target="_blank"
+                rel="noreferrer"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              >
+                Instagram
+              </a>
             </nav>
           </div>
         </div>
