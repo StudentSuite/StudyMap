@@ -9,7 +9,6 @@ import { Footer } from "@/components/layout/footer";
 import { Toaster } from "@/components/ui/sonner";
 import { PwaRegister } from "@/components/pwa-register";
 import { Analytics } from "@/components/analytics";
-import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -73,7 +72,6 @@ export default function RootLayout({
           <PwaRegister />
         </ThemeProvider>
         <Analytics />
-        <VercelAnalytics />
       </body>
     </html>
   );
