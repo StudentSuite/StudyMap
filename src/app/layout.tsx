@@ -10,6 +10,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { PwaRegister } from "@/components/pwa-register";
 import { Analytics } from "@/components/analytics";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
@@ -74,6 +75,7 @@ export default function RootLayout({
         </ThemeProvider>
         <Analytics />
         <VercelAnalytics />
+        <SpeedInsights />
       </body>
     </html>
   );
