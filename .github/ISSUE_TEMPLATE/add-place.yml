@@ -23,24 +23,20 @@ body:
     attributes:
       label: Type
       options:
-        - book_shop
         - library
-        - exam_centre
-        - imp_locations
-        - stationery
-        - internet_cafe
+        - other_places
         - airport
-        - train_station
+        - sat_centre
+        - foreign_lang_exam_centre
+        - gov_offices
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: city
     attributes:
       label: City
-      options:
-        - mumbai
-        - thane
-        - navi_mumbai
+      description: Lowercase, underscore-separated slug, e.g. mumbai, navi_mumbai, jakarta. Any city worldwide is welcome.
+      placeholder: mumbai
     validations:
       required: true
   - type: input

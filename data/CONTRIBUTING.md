@@ -30,8 +30,8 @@ Places live in `data/places/<type>.json`, one file per place type, one JSON obje
 ```
 
 **Fields:**
-- `id`: `<city-prefix>-<type>-<number>`. Prefixes: `mum`, `thane`, `navi`. Increment from the highest existing number in the file.
-- `city`: one of: `mumbai`, `thane`, `navi_mumbai`
+- `id`: `<city-prefix>-<type>-<number>`. Prefix is a short slug for the city (e.g. `mum`, `thane`, `navi`, `ldn`, `jkt`). Increment from the highest existing number in the file for that prefix.
+- `city`: lowercase, underscore-separated slug (e.g. `mumbai`, `navi_mumbai`, `jakarta`). Any city worldwide is welcome, not just Mumbai/Thane/Navi Mumbai.
 - `type`: must match the filename exactly
 - `lat`/`lng`: from Google Maps (right-click pin, "What's here?"). Range: lat 18-20, lng 72-73.
 - `address`: optional, short, human-readable

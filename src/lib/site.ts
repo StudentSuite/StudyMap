@@ -4,7 +4,7 @@ export const site = {
   description:
     "A crowdsourced map of student-important places (exam centres, libraries, book shops, and more) for the Mumbai Metropolitan Region.",
   url: "https://studyymap.com",
-  repo: "https://github.com/anaydhawan/studymap",
+  repo: "https://github.com/StudentSuite/StudyMap",
 } as const;
 
 export const navLinks = [

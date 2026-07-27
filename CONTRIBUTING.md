@@ -26,7 +26,7 @@ Copy the example file and fill in your values:
 cp .env.example .env.local
 ```
 
-The only required variables are the Supabase credentials (for auth). If you are only adding place data, you can leave them blank - the map still loads without auth.
+`NEXT_PUBLIC_MAPTILER_KEY` is required - the map basemap will not render without it. Get a free key at [cloud.maptiler.com](https://cloud.maptiler.com/account/keys/). The Supabase variables are optional: leave them blank and the map, filters, and calendar all work, you just lose sign-in, saved places, and personal calendar events.
 
 ### 3. Start the dev server
 
@@ -157,4 +157,5 @@ same PR or a quick follow-up.
 
 - No em dashes in any copy
 - Run `npm run dev` and verify your change on localhost before opening a PR
+- Before opening a PR, run what CI runs: `npm run lint`, `npx tsc --noEmit`, and `npm run test:unit` (add `npm run validate` too if you touched `data/`)
 - Questions: open an issue or email [studentsuite0@gmail.com](mailto:studentsuite0@gmail.com)
