@@ -226,6 +226,25 @@ requests: Supabase Auth, plus `user-places.ts`/`user-events.ts` calls for the tw
 
 ---
 
+## State and data flow in `places-map.tsx`
+
+The single most central component. It owns four independent pieces of state and merges them into one `Place[]` for the map:
+
+| State | Source | Notes |
+|-------|--------|-------|
+| Filters (`types`, `city`, `query`) | `useState`, seeded from the URL via `parseMapState()` | `query` is debounced (250 ms typing, 0 ms clearing) into `debouncedQuery` before `filterPlaces()` runs |
+| Focus (`focusId`) | `useState`, seeded from the URL | Set when a result row or pin is selected; collapses the mobile sheet |
+| Geolocation (`userLocation`, `sortByDistance`) | `useState`, set by the near-me button/FAB | Drives `placesByDistance()` for "nearest to you" sorting |
+| Auth (`user`, `savedPlaces`, `home`) | Supabase `onAuthStateChange` listener | Cleared synchronously during render (not in an effect) whenever `user.id` changes, so there's no stale-data flash between accounts |
+
+Filters and focus are mirrored back into the URL on every change (`mapStateToSearch()`), which is what makes map links shareable. Filters and geolocation each run through `filterPlaces()`/`placesByDistance()` independently; they don't affect each other.
+
+**Merge order for what actually reaches the map:** `filterPlaces(places, filters)` → `visible`, then `visible` is concatenated with `savedPlaces` (mapped through `userPlaceToPlace()`) → `mapPlaces`. Saved places always render regardless of the public filters — they're a private layer on top, not filtered by type/city/query. If a signed-in user's saved-places fetch fails because the Supabase table doesn't exist yet (self-hosted, migrations not run), `isMissingTableError()` catches it and shows a specific "table isn't set up, see SELF-HOSTING.md" message instead of a generic error.
+
+Desktop and mobile share the same `panelProps` object (filters, results, my-places) — the only difference is which shell renders it: a fixed sidebar (`<aside>`) on `lg:` and up, or the `MapSheet` bottom drawer below that, toggled by `sheetOpen`/`snap`.
+
+---
+
 ## Key modules
 
 ### `src/lib/places.ts`
