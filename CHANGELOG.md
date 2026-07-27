@@ -5,6 +5,33 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.3.0] - 2026-07-27
+
+### Added
+
+- `PRODUCT.md`: durable product context (users, positioning, capabilities, brand commitments) for design tooling and future contributors.
+- `docs/TROUBLESHOOTING.md`: missing MapTiler key, missing Supabase table, geolocation errors, stale PWA content.
+- `src/components/docs/`: `DocsPageHeader` (kicker/breadcrumb + graph-paper band), `StepCard` (numbered sequence), `CalloutCard` (non-sequential cards), `CodeBlock` (syntax-tinted JSON + copy button) — shared across all `/docs` pages.
+- "State and data flow in `places-map.tsx`" section in `ARCHITECTURE.md`.
+- `center` prop on `MapView`, previously hardcoded to the Mumbai region regardless of caller.
+
+### Changed
+
+- Homepage hero: compact centered layout (text on top, map preview below at all breakpoints, not just mobile), bigger headline, smaller subhead. Category-legend list removed (map preview shows real pin colors instead).
+- Homepage map preview now shows a genuine world view (the SAT-centre dataset spans 217 cities across India, the US, Canada, and Europe) instead of a Mumbai-local crop.
+- All 4 `/docs` pages redesigned with the site's actual brand system (kicker labels, graph-paper texture, marker-color topic icons, numbered steppers, syntax-tinted code block) instead of plain unstyled card stacks.
+- `.github/ISSUE_TEMPLATE/add-place.yml`: `type` dropdown updated to the current 6 types; `city` field changed from a 3-value Mumbai-only dropdown to free text (any city worldwide).
+- `CONTRIBUTING.md`, `data/CONTRIBUTING.md`: corrected env-var requirement (MapTiler key required, Supabase optional — was documented backwards) and city-scope wording (worldwide, not a fixed enum); added the local-verification steps CI already enforces.
+
+### Fixed
+
+- Hardcoded "3 cities" stat on the homepage — now computed from the real dataset.
+- `src/lib/site.ts` `repo` URL pointed at a personal account instead of `StudentSuite/StudyMap`.
+
+### Removed
+
+- Unused `table.tsx` / `tabs.tsx` shadcn primitives (zero imports anywhere in the codebase).
+
 ## [2.2.1] - 2026-07-05
 
 ### Fixed
