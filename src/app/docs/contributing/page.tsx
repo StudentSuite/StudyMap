@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -8,6 +7,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { PageContainer } from "@/components/layout/page-container";
+import { DocsPageHeader } from "@/components/docs/docs-page-header";
+import { CodeBlock } from "@/components/docs/code-block";
 
 export const metadata: Metadata = {
   title: "Contributing Places",
@@ -15,25 +16,28 @@ export const metadata: Metadata = {
     "Add a missing location or fix stale data on StudyMap using a GitHub issue or pull request.",
 };
 
+const SCHEMA_EXAMPLE = `{
+  "id": "mum-library-07",
+  "name": "Place Name",
+  "type": "library",
+  "city": "mumbai",
+  "lat": 19.1234,
+  "lng": 72.8765,
+  "address": "Street, Area, City PINCODE",
+  "gmaps_link": "https://maps.google.com/?q=19.1234,72.8765",
+  "added_by": "your-github-username"
+}`;
+
 export default function ContributingPage() {
   return (
-    <PageContainer>
-      <Link
-        href="/docs"
-        className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
-      >
-        Back to docs
-      </Link>
-
-      <h1 className="font-heading text-3xl font-bold tracking-tight">
-        Contributing Places
-      </h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        StudyMap is open-source and community-maintained. Every place in the
-        database was added by a student. Here is how to add or fix one.
-      </p>
-
-      <div className="mt-8 space-y-4">
+    <>
+      <DocsPageHeader
+        title="Contributing Places"
+        breadcrumbLabel="Contributing Places"
+        description="StudyMap is open-source and community-maintained. Every place in the database was added by a student. Here is how to add or fix one."
+      />
+      <PageContainer>
+        <div className="space-y-4">
         <Card>
           <CardHeader>
             <CardTitle>Option A: GitHub Issue (easiest)</CardTitle>
@@ -56,7 +60,7 @@ export default function ContributingPage() {
               <li>Place name</li>
               <li>Full address</li>
               <li>Type: SAT centre, foreign language exam centre, library, government office (passport office, RTO, post office), airport, or other place</li>
-              <li>City and country (SAT and foreign language centres are listed worldwide; other categories currently focus on the Mumbai region)</li>
+              <li>City and country (any city worldwide is welcome; SAT and foreign language centres already span several countries, other categories currently have the most coverage in India)</li>
               <li>Google Maps link</li>
             </ul>
             <p className="text-xs text-muted-foreground">
@@ -97,19 +101,7 @@ export default function ContributingPage() {
               <li>Commit and open a pull request against{" "}<code className="rounded bg-muted px-1 py-0.5 font-mono">main</code>.</li>
             </ol>
 
-            <div className="mt-3 rounded-lg bg-muted p-4 font-mono text-xs leading-relaxed">
-              {`{
-  "id": "mum-library-07",
-  "name": "Place Name",
-  "type": "library",
-  "city": "mumbai",
-  "lat": 19.1234,
-  "lng": 72.8765,
-  "address": "Street, Area, City PINCODE",
-  "gmaps_link": "https://maps.google.com/?q=19.1234,72.8765",
-  "added_by": "your-github-username"
-}`}
-            </div>
+            <CodeBlock code={SCHEMA_EXAMPLE} className="mt-3" />
 
             <p className="text-xs text-muted-foreground mt-2">
               ID format: a short city-code prefix (<code className="bg-muted px-1 rounded">mum</code>, <code className="bg-muted px-1 rounded">thn</code>, <code className="bg-muted px-1 rounded">nvm</code>, <code className="bg-muted px-1 rounded">blr</code>, and so on), then the type, then the next available number in that file.
@@ -181,7 +173,8 @@ export default function ContributingPage() {
             </ol>
           </CardContent>
         </Card>
-      </div>
-    </PageContainer>
+        </div>
+      </PageContainer>
+    </>
   );
 }

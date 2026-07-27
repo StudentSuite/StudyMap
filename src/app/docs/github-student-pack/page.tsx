@@ -1,13 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+
 import { PageContainer } from "@/components/layout/page-container";
+import { DocsPageHeader } from "@/components/docs/docs-page-header";
+import { StepCard } from "@/components/docs/step-card";
+import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
   title: "GitHub Student Developer Pack",
@@ -32,31 +28,16 @@ const SOURCES = [
 
 export default function StudentPackPage() {
   return (
-    <PageContainer>
-      <Link
-        href="/docs"
-        className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors mb-6"
-      >
-        Back to docs
-      </Link>
-
-      <h1 className="font-heading text-3xl font-bold tracking-tight">
-        GitHub Student Developer Pack
-      </h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        Free developer tools worth hundreds of dollars for verified students:
-        cloud credits, domains, IDEs, GitHub Copilot Pro, and more. Full process,
-        start to finish.
-      </p>
-
-      <div className="mt-8 space-y-4">
-        <Card>
-          <CardHeader>
-            <CardTitle>1. Check eligibility</CardTitle>
-            <CardDescription>You qualify if all of these are true</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="ml-4 list-disc space-y-2 text-sm text-foreground/80">
+    <>
+      <DocsPageHeader
+        title="GitHub Student Developer Pack"
+        breadcrumbLabel="GitHub Student Developer Pack"
+        description="Free developer tools worth hundreds of dollars for verified students: cloud credits, domains, IDEs, GitHub Copilot Pro, and more. Full process, start to finish."
+      />
+      <PageContainer>
+        <div className="space-y-0">
+          <StepCard step={1} title="Check eligibility" description="You qualify if all of these are true">
+            <ul className="ml-4 list-disc space-y-2">
               <li>You are at least 13 years old.</li>
               <li>
                 You are currently enrolled in a degree- or diploma-granting course of
@@ -69,18 +50,14 @@ export default function StudentPackPage() {
               </li>
               <li>You have a personal GitHub account (free tier is fine).</li>
             </ul>
-          </CardContent>
-        </Card>
+          </StepCard>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>2. Prepare your proof</CardTitle>
-            <CardDescription>
-              Indian schools rarely issue student emails. Documents work too.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="ml-4 list-disc space-y-2 text-sm text-foreground/80">
+          <StepCard
+            step={2}
+            title="Prepare your proof"
+            description="Indian schools rarely issue student emails. Documents work too."
+          >
+            <ul className="ml-4 list-disc space-y-2">
               <li>
                 Best: a school email address (e.g.{" "}
                 <code className="rounded bg-muted px-1.5 py-0.5 font-mono">you@school.edu.in</code>)
@@ -95,16 +72,10 @@ export default function StudentPackPage() {
                 the application, so keep the physical document handy.
               </li>
             </ul>
-          </CardContent>
-        </Card>
+          </StepCard>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>3. Apply</CardTitle>
-            <CardDescription>Takes about 10 minutes</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ol className="ml-4 list-decimal space-y-2 text-sm text-foreground/80">
+          <StepCard step={3} title="Apply" description="Takes about 10 minutes">
+            <ol className="ml-4 list-decimal space-y-2">
               <li>
                 Sign in to GitHub, then go to{" "}
                 <a
@@ -133,16 +104,10 @@ export default function StudentPackPage() {
                 periods can take longer.
               </li>
             </ol>
-          </CardContent>
-        </Card>
+          </StepCard>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>4. After approval</CardTitle>
-            <CardDescription>What you actually get</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="ml-4 list-disc space-y-2 text-sm text-foreground/80">
+          <StepCard step={4} title="After approval" description="What you actually get" isLast>
+            <ul className="ml-4 list-disc space-y-2">
               <li>GitHub Pro features on your personal account while you remain a student.</li>
               <li>GitHub Copilot Pro at no cost.</li>
               <li>
@@ -155,36 +120,34 @@ export default function StudentPackPage() {
                 re-verifies periodically, so keep your proof current.
               </li>
             </ul>
-            <p className="mt-3 text-xs text-muted-foreground">
+            <p className="text-xs text-muted-foreground">
               Rejected? Most common causes: mismatched names, undated documents,
               missing two-factor authentication. Fix the issue and reapply. No penalty.
             </p>
-          </CardContent>
-        </Card>
+          </StepCard>
+        </div>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Sources</CardTitle>
-            <CardDescription>Official documentation this guide is based on</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-2">
-              {SOURCES.map((source) => (
-                <li key={source.url}>
-                  <a
-                    href={source.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-                  >
-                    {source.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-        </Card>
-      </div>
-    </PageContainer>
+        <CalloutCard
+          title="Sources"
+          description="Official documentation this guide is based on"
+          className="mt-4"
+        >
+          <ul className="space-y-2">
+            {SOURCES.map((source) => (
+              <li key={source.url}>
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
+                >
+                  {source.label}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </CalloutCard>
+      </PageContainer>
+    </>
   );
 }
