@@ -58,3 +58,6 @@ next-env.d.ts
 # ssh keys (never commit)
 id_*
 *.pub
+
+# impeccable design-skill runtime state (local, not project docs)
+/.impeccable/
