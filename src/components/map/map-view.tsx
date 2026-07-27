@@ -176,6 +176,8 @@ interface MapViewProps {
   interactive?: boolean;
   /** Initial zoom level; falls back to the MMR default. */
   zoom?: number;
+  /** Initial center, as [lat, lng]; falls back to the configured region center. */
+  center?: [number, number];
   /** Increment to imperatively close all open popups. */
   closePopupTrigger?: number;
 }
@@ -325,6 +327,7 @@ export default function MapView({
   focusBounds,
   interactive = true,
   zoom = studyMapConfig.defaultZoom,
+  center = studyMapConfig.center,
   closePopupTrigger = 0,
 }: MapViewProps) {
   const focusPlace = focusId
@@ -348,7 +351,7 @@ export default function MapView({
       className="size-full"
     >
     <MapContainer
-      center={studyMapConfig.center}
+      center={center}
       zoom={zoom}
       scrollWheelZoom={false}
       dragging={interactive}
