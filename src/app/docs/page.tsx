@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, Database, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -49,6 +49,14 @@ const DOCS = [
     description:
       "Add a missing location or fix stale data. JSON or GitHub issue, both work.",
     icon: GitPullRequest,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/data-sources",
+    title: "Data Sources & Provenance",
+    description:
+      "Where the place and exam-centre data comes from, how it's verified, licensing, and known accuracy caveats.",
+    icon: Database,
     iconClassName: "text-primary",
   },
   {
