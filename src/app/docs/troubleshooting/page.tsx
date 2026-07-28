@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { site } from "@/lib/site";
 import {
@@ -126,14 +127,9 @@ export default function TroubleshootingPage() {
             <CardContent className="text-sm text-foreground/80">
               <p>
                 See{" "}
-                <a
-                  href={`${site.repo}/blob/main/docs/OFFLINE_CACHING.md`}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-medium text-primary hover:underline"
-                >
-                  OFFLINE_CACHING.md
-                </a>{" "}
+                <Link href="/docs/install" className="font-medium text-primary hover:underline">
+                  Install &amp; Offline Usage
+                </Link>{" "}
                 for what gets cached and how to force a fresh load.
               </p>
             </CardContent>

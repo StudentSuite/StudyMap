@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, CircleHelp, Database, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Download, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -89,6 +89,14 @@ const DOCS = [
     description:
       "Common questions about StudyMap: data accuracy, reporting wrong info, why a place isn't listed, and accounts.",
     icon: CircleHelp,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/install",
+    title: "Install & Offline Usage",
+    description:
+      "Install StudyMap as an app and use it offline: what's cached and how to force a fresh load.",
+    icon: Download,
     iconClassName: "text-primary",
   },
   {
