@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - In-app "Suggest a place" flow: a public, no-account form (`suggest-place-dialog.tsx`, launched from `MapPanel`) that opens a pre-filled GitHub issue, lowering the contribution barrier below forking the repo without touching the existing PR review process.
 - `data/places.schema.json`: a real JSON Schema for the place record. `scripts/validate-places.mjs` now derives its valid types, required fields, coordinate bounds, and `gmaps_link` pattern from it instead of a second hardcoded copy, and flags any field not declared in the schema.
+- 10 new `/docs` pages, each cross-linking instead of duplicating: `calendar`, `troubleshooting`, `map-controls`, `data-sources`, `faq`, `install`, `self-hosting` (hand-authored guides), plus `changelog` (`src/lib/changelog.ts` parses `CHANGELOG.md` directly instead of hand-copying it), `data-format` (reads `data/places.schema.json` directly), and `architecture` (renders `ARCHITECTURE.md` live via a new `react-markdown` + `remark-gfm` dependency, finally putting the previously-unused `mdxComponents` map to work).
+- 3 new `/docs` pages (`awesome-student-resources`, `awesome-study-resources`, `awesome-skills-plugins`) that fetch and render the StudentSuite awesome-list READMEs at request time with a 24h ISR revalidate window, plus a search box and section-count filter chips once a list crosses ~100 entries.
 
 ### Changed
 
@@ -19,10 +21,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `CODE_OF_CONDUCT.md`: replaced generic boilerplate with the Contributor Covenant v2.1, naming `studentsuite3@gmail.com` as the reporting contact.
 - Contact email updated to `studentsuite3@gmail.com` across `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `docs/TROUBLESHOOTING.md`, and the GitHub issue templates.
 - `/about`: maintainer attribution corrected from an individual contributor to StudentSuite.
+- `README.md`: the stale, hand-maintained "Architecture" folder tree (still listing 9 retired place types) replaced with a pointer to `/docs/architecture` and `ARCHITECTURE.md`.
 
 ### Fixed
 
 - `data/places/sat_centre.json`: normalized 225 ALL-CAPS `city` values (e.g. `"SALISBURY"` -> `"salisbury"`) left over from a bulk CEEB import, which were cluttering the map's city filter dropdown.
+- Reinstalled `@vercel/analytics`: it was added via an automated Vercel PR, then reverted 11 minutes later with no stated reason, silently removing Web Analytics from the site ever since.
+- 3 remaining `contact@thestudentsuite.com` addresses (footer, `/about`, `/contribute`) that an earlier pass missed, updated to `studentsuite3@gmail.com`.
+- Awesome-list pages: table no longer silently clips on narrow viewports (was `overflow-hidden` with auto layout; switched to `table-fixed` with explicit column widths and an `overflow-x-auto` safety net), and filter chips with long labels no longer wrap mid-word (now a horizontally scrollable row).
 
 ## [2.3.0] - 2026-07-27
 

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, Layers, MapPin, MousePointerClick, Puzzle, Server, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -28,11 +28,59 @@ const DOCS = [
     iconClassName: "text-marker-sat-centre",
   },
   {
+    href: "/docs/map-controls",
+    title: "Map Controls",
+    description:
+      "Every way to zoom, pan, search, and filter the map, including keyboard equivalents.",
+    icon: MousePointerClick,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/calendar",
+    title: "Using the Exam Calendar",
+    description:
+      "Read SAT, IB, and Cambridge IGCSE exam windows and result dates, and add your own personal events.",
+    icon: CalendarDays,
+    iconClassName: "text-primary",
+  },
+  {
     href: "/docs/contributing",
     title: "Contributing Places",
     description:
       "Add a missing location or fix stale data. JSON or GitHub issue, both work.",
     icon: GitPullRequest,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/data-format",
+    title: "Place Data Format",
+    description:
+      "The JSON schema for data/places/*.json: every field, the id-prefix convention, and the 6 place types.",
+    icon: FileJson,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/data-sources",
+    title: "Data Sources & Provenance",
+    description:
+      "Where the place and exam-centre data comes from, how it's verified, licensing, and known accuracy caveats.",
+    icon: Database,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/architecture",
+    title: "Architecture",
+    description:
+      "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
+    icon: Layers,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/self-hosting",
+    title: "Self-Hosting Guide",
+    description:
+      "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
+    icon: Server,
     iconClassName: "text-primary",
   },
   {
@@ -57,6 +105,37 @@ const DOCS = [
     description:
       "Curated AI coding agent skills and plugins for students, synced daily from the awesome-skills-plugins-for-students list.",
     icon: Puzzle,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/faq",
+    title: "FAQ",
+    description:
+      "Common questions about StudyMap: data accuracy, reporting wrong info, why a place isn't listed, and accounts.",
+    icon: CircleHelp,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/install",
+    title: "Install & Offline Usage",
+    description:
+      "Install StudyMap as an app and use it offline: what's cached and how to force a fresh load.",
+    icon: Download,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/troubleshooting",
+    title: "Troubleshooting",
+    description:
+      "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
+    icon: Wrench,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/changelog",
+    title: "Changelog",
+    description: "Every notable change to StudyMap, release by release.",
+    icon: History,
     iconClassName: "text-primary",
   },
 ];

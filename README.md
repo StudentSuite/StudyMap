@@ -8,8 +8,9 @@ A crowdsourced map of student-important places across the Mumbai Metropolitan Re
 
 ## What it does
 
-- **Places map**: find exam centres, libraries, book shops, stationery, internet cafes, train stations, and airports across the MMR. Filter by type and city.
-- **Contribute**: add places or fix data via GitHub pull request. No account needed.
+- **Places map**: find libraries, SAT centres, foreign language exam centres, government offices, airports, and other student-relevant places. Filter by type and city. SAT and foreign language centres already span several countries; other categories currently have the most coverage in India.
+- **Contribute**: add places or fix data via a GitHub pull request or issue, or the in-app "Suggest a place" button on the map - no account needed either way.
+- **Docs**: guides covering the map, calendar, contributing, self-hosting, and more at [/docs](https://studyymap.com/docs).
 - **Legal**: privacy policy, terms of service, and data disclaimer for the crowdsourced dataset.
 
 ## Quick start
@@ -41,40 +42,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
 
 ## Architecture
 
-```
-studymap.config.ts     # region + dataset config - the one file a fork edits to retarget StudyMap
-src/
-  app/
-    page.tsx            # homepage (hero + map preview)
-    map/page.tsx        # full interactive map
-    calendar/           # public exam calendar + signed-in personal events
-    login/               # optional sign-in (Google OAuth, email)
-    auth/callback/       # OAuth code exchange
-    contribute/page.tsx # contribution guide
-    legal/              # privacy, terms, disclaimer
-    layout.tsx          # root layout (navbar, footer, theme)
-  components/
-    home/               # Hero, MapPreview
-    map/                # PlacesMap, MapView, MapPanel, MyPlacesPanel, dialogs
-    calendar/           # PersonalEventDialog
-    pins/               # PinPopup
-    layout/             # Navbar, Footer
-  lib/
-    places.ts           # getPlaces(), filterPlaces(), getCities() - reads from studymap.config.ts
-    geo.ts              # distance calculation, LatLng type
-    types.ts            # PlaceType, City, Place interface
-    map.ts              # PLACE_TYPE_COLORS, directionsUrl
-    share.ts            # URL state encode/decode for shareable links
-    site.ts             # site metadata, navLinks
-    user-places.ts       # saved places + home location (signed-in only)
-    user-events.ts       # personal calendar events (signed-in only)
-data/
-  places/               # 9 JSON files, one per place type
-supabase/
-  migrations/            # SQL for the two optional, sign-in-gated tables (run once by hand)
-```
-
-See [ARCHITECTURE.md](ARCHITECTURE.md) for the full breakdown.
+The folder layout, data flow, and key modules are documented once in
+[ARCHITECTURE.md](ARCHITECTURE.md) (also rendered live at
+[/docs/architecture](https://studyymap.com/docs/architecture)) - not duplicated here, so this
+README can't drift from the real thing the way its old copy of the folder tree did.
 
 ## Tech stack
 
@@ -87,8 +58,9 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the full breakdown.
 ## Running your own fork
 
 Want StudyMap for a different city? Click "Use this template" above, then follow
-[SELF-HOSTING.md](SELF-HOSTING.md): set your region and dataset in one config file, optionally
-wire up your own Supabase project for sign-in, and deploy.
+[SELF-HOSTING.md](SELF-HOSTING.md) (also at [/docs/self-hosting](https://studyymap.com/docs/self-hosting)):
+set your region and dataset in one config file, optionally wire up your own Supabase project for
+sign-in, and deploy.
 
 ## Contributing
 
