@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, History, MapPin, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -73,6 +73,13 @@ const DOCS = [
     description:
       "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
     icon: Wrench,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/changelog",
+    title: "Changelog",
+    description: "Every notable change to StudyMap, release by release.",
+    icon: History,
     iconClassName: "text-primary",
   },
 ];
