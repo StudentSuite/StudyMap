@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Gift, GitPullRequest, MapPin } from "lucide-react";
+import { BookOpen, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -33,6 +33,30 @@ const DOCS = [
     description:
       "Add a missing location or fix stale data. JSON or GitHub issue, both work.",
     icon: GitPullRequest,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/awesome-student-resources",
+    title: "Awesome Student Resources",
+    description:
+      "Curated software, tools, textbooks, and channels for students, synced daily from the awesome-student-resources list.",
+    icon: BookOpen,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/awesome-study-resources",
+    title: "Awesome Study Resources",
+    description:
+      "Curated exam prep, subject-study, and learning-tool resources, synced daily from the awesome-study-resources list.",
+    icon: GraduationCap,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/awesome-skills-plugins",
+    title: "Awesome Skills & Plugins",
+    description:
+      "Curated AI coding agent skills and plugins for students, synced daily from the awesome-skills-plugins-for-students list.",
+    icon: Puzzle,
     iconClassName: "text-primary",
   },
 ];
