@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, Database, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -81,6 +81,14 @@ const DOCS = [
     description:
       "Curated AI coding agent skills and plugins for students, synced daily from the awesome-skills-plugins-for-students list.",
     icon: Puzzle,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/faq",
+    title: "FAQ",
+    description:
+      "Common questions about StudyMap: data accuracy, reporting wrong info, why a place isn't listed, and accounts.",
+    icon: CircleHelp,
     iconClassName: "text-primary",
   },
   {
