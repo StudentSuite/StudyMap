@@ -74,4 +74,38 @@ export const mdxComponents = {
   hr: ({ className, ...props }: ComponentPropsWithoutRef<"hr">) => (
     <hr className={cn("my-8 border-border", className)} {...props} />
   ),
+  // Fenced code blocks land as `<pre><code>`, with or without a language
+  // className depending on whether the fence declares one (` ``` ` vs
+  // ` ```ts `) - resetting the inline `code` pill styling via a `pre >
+  // code` selector here works either way, instead of trying to detect
+  // "is this inline or block" from the code element alone.
+  pre: ({ className, ...props }: ComponentPropsWithoutRef<"pre">) => (
+    <pre
+      className={cn(
+        "my-4 overflow-x-auto rounded-lg border border-border bg-muted p-4 font-mono text-xs leading-relaxed [&>code]:rounded-none [&>code]:bg-transparent [&>code]:p-0 [&>code]:text-xs",
+        className,
+      )}
+      {...props}
+    />
+  ),
+  table: ({ className, ...props }: ComponentPropsWithoutRef<"table">) => (
+    <div className="my-4 overflow-x-auto">
+      <table className={cn("w-full text-left text-sm", className)} {...props} />
+    </div>
+  ),
+  thead: ({ className, ...props }: ComponentPropsWithoutRef<"thead">) => (
+    <thead
+      className={cn("border-b border-border text-xs text-muted-foreground", className)}
+      {...props}
+    />
+  ),
+  tr: ({ className, ...props }: ComponentPropsWithoutRef<"tr">) => (
+    <tr className={cn("border-b border-border/50 last:border-0", className)} {...props} />
+  ),
+  th: ({ className, ...props }: ComponentPropsWithoutRef<"th">) => (
+    <th className={cn("py-2 pr-4 font-medium", className)} {...props} />
+  ),
+  td: ({ className, ...props }: ComponentPropsWithoutRef<"td">) => (
+    <td className={cn("py-2 pr-4 text-foreground/80", className)} {...props} />
+  ),
 };

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, Layers, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -65,6 +65,14 @@ const DOCS = [
     description:
       "Where the place and exam-centre data comes from, how it's verified, licensing, and known accuracy caveats.",
     icon: Database,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/architecture",
+    title: "Architecture",
+    description:
+      "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
+    icon: Layers,
     iconClassName: "text-primary",
   },
   {
