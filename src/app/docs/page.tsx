@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, Layers, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, Layers, MapPin, MousePointerClick, Puzzle, Server, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -73,6 +73,14 @@ const DOCS = [
     description:
       "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
     icon: Layers,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/self-hosting",
+    title: "Self-Hosting Guide",
+    description:
+      "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
+    icon: Server,
     iconClassName: "text-primary",
   },
   {
