@@ -64,6 +64,9 @@ export function MyPlacesPanel({
           Add
         </Button>
       </div>
+      <p className="-mt-1 text-[11px] text-muted-foreground">
+        Private to you - these never appear on the public map for other students.
+      </p>
 
       {home ? (
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
