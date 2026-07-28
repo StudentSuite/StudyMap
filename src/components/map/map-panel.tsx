@@ -1,6 +1,7 @@
 "use client";
 
-import { Search, Share2, X } from "lucide-react";
+import * as React from "react";
+import { MapPinPlus, Search, Share2, X } from "lucide-react";
 
 import type { City, PlaceType, Place } from "@/lib/types";
 import { humanizeCity } from "@/lib/types";
@@ -17,6 +18,7 @@ import {
 import { CategoryChips } from "@/components/map/category-chips";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
+import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
 import { ResultsList, type ResultRow } from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 import type { LatLng } from "@/lib/geo";
@@ -85,6 +87,8 @@ export function MapPanel({
   showNearMe = true,
   scrollChips = false,
 }: MapPanelProps) {
+  const [suggestOpen, setSuggestOpen] = React.useState(false);
+
   const dirty =
     filters.types.length > 0 || !!filters.city || !!filters.query;
 
@@ -168,6 +172,16 @@ export function MapPanel({
         </div>
       )}
 
+      <Button
+        size="sm"
+        variant="ghost"
+        className="h-8 justify-start gap-1.5 px-1.5 text-muted-foreground"
+        onClick={() => setSuggestOpen(true)}
+      >
+        <MapPinPlus className="size-3.5" />
+        Suggest a place
+      </Button>
+
       {myPlaces && <MyPlacesPanel {...myPlaces} />}
 
       <Separator />
@@ -183,6 +197,8 @@ export function MapPanel({
         onSelect={onSelectPlace}
         toggle={resultsToggle}
       />
+
+      <SuggestPlaceDialog open={suggestOpen} onOpenChange={setSuggestOpen} />
     </div>
   );
 }

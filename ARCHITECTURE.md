@@ -114,6 +114,7 @@ components/
 │   ├── my-places-panel.tsx   # signed-in-only saved-places section: own search/city filter, CRUD
 │   ├── user-place-dialog.tsx # add/edit/delete a saved place
 │   ├── user-home-dialog.tsx  # set/edit/remove the saved home location
+│   ├── suggest-place-dialog.tsx # public "suggest a place" form -> pre-filled GitHub issue link
 │   ├── category-chips.tsx    # type filter chips with counts
 │   ├── results-list.tsx      # scrollable place list, optionally distance-sorted
 │   ├── map-sheet.tsx         # mobile bottom sheet (vaul) wrapping MapPanel
