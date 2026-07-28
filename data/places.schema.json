@@ -1,0 +1,62 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/StudentSuite/StudyMap/blob/main/data/places.schema.json",
+  "title": "StudyMap place record",
+  "description": "Canonical schema for one entry in data/places/<type>.json. Mirrors the Place type in src/lib/types.ts. See data/CONTRIBUTING.md for the human-readable guide.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "type", "city", "lat", "lng", "gmaps_link", "added_by"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "<city-prefix>-<type>-<number>, unique within the file, e.g. mum-library-07"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "type": "string",
+      "enum": ["library", "other_places", "airport", "sat_centre", "foreign_lang_exam_centre", "gov_offices"],
+      "description": "Must match the filename it lives in, e.g. data/places/library.json -> \"library\""
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Lowercase, underscore-separated slug, e.g. \"mumbai\", \"navi_mumbai\". Any city worldwide is welcome, not a fixed enum."
+    },
+    "lat": {
+      "type": "number",
+      "minimum": -90,
+      "maximum": 90
+    },
+    "lng": {
+      "type": "number",
+      "minimum": -180,
+      "maximum": 180
+    },
+    "address": {
+      "type": "string",
+      "description": "Optional, short, human-readable"
+    },
+    "gmaps_link": {
+      "type": "string",
+      "pattern": "^https://(maps\\.google\\.com(\\?|/)|maps\\.app\\.goo\\.gl/|www\\.google\\.com/maps/|goo\\.gl/maps/)"
+    },
+    "added_by": {
+      "type": "string",
+      "minLength": 1,
+      "description": "GitHub username of the contributor"
+    },
+    "exam": {
+      "type": "string",
+      "description": "Optional. Only for sat_centre / foreign_lang_exam_centre, e.g. \"SAT\", \"IELTS\", \"Goethe-Zertifikat (A1-C2)\""
+    },
+    "valid_till": {
+      "type": "string",
+      "format": "date",
+      "description": "Optional. Only for sat_centre / foreign_lang_exam_centre. ISO date (YYYY-MM-DD) the entry should be reconfirmed by."
+    }
+  }
+}

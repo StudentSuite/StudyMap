@@ -23,41 +23,17 @@ Open http://localhost:3000. No environment variables needed; the map reads place
 
 ## Data schema
 
-Places live in `data/places/<type>.json`, one file per category:
-
-| File | Type key |
-|------|----------|
-| `airport.json` | `airport` |
-| `train_station.json` | `train_station` |
-| `exam_centre.json` | `exam_centre` |
-| `library.json` | `library` |
-| `book_shop.json` | `book_shop` |
-| `stationery.json` | `stationery` |
-| `internet_cafe.json` | `internet_cafe` |
-| `imp_locations.json` | `imp_locations` |
-| `repair_shop.json` | `repair_shop` |
-
-Each record shape (`src/lib/types.ts`):
-
-```ts
-{
-  id: string;          // kebab-case, unique across all types
-  name: string;
-  type: PlaceType;     // one of the 9 keys above
-  city: string;         // free-form slug, e.g. "mumbai", "navi_mumbai" - any city worldwide
-  lat: number;
-  lng: number;
-  address?: string;
-  gmaps_link: string;  // must contain "maps.google.com"
-  added_by: string;    // GitHub username of contributor
-}
-```
+Places live in `data/places/<type>.json`, one file per category. The record shape,
+valid types, and per-field rules are documented once in
+[`data/CONTRIBUTING.md`](data/CONTRIBUTING.md) and enforced by
+[`data/places.schema.json`](data/places.schema.json) via `npm run validate` -
+that pair is the source of truth, not this README.
 
 ## How to add a place
 
 1. Fork this repo
 2. Add your place to the correct `data/places/<type>.json`
-3. Verify `lat`/`lng` against Google Maps; `lat` 18–20, `lng` 72–73
+3. Verify `lat`/`lng` against Google Maps
 4. Set `gmaps_link` to the Google Maps link
 5. Open a pull request with a description of the place and a source
 

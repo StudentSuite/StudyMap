@@ -2,6 +2,11 @@
 
 Places live in `data/places/<type>.json`, one file per place type, one JSON object per place.
 
+This file is the single source of truth for the place-record schema - `README.md`,
+`CONTRIBUTING.md`, and `ARCHITECTURE.md` link here instead of repeating it. The shape
+below is also machine-enforced by [`places.schema.json`](places.schema.json), which
+`npm run validate` checks every record against.
+
 ## Pick the right file
 
 | File | What goes here |
