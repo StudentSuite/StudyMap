@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
+import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -26,6 +26,14 @@ const DOCS = [
       "Use the map to locate verified SAT centres and foreign language exam centres across India and worldwide.",
     icon: MapPin,
     iconClassName: "text-marker-sat-centre",
+  },
+  {
+    href: "/docs/calendar",
+    title: "Using the Exam Calendar",
+    description:
+      "Read SAT, IB, and Cambridge IGCSE exam windows and result dates, and add your own personal events.",
+    icon: CalendarDays,
+    iconClassName: "text-primary",
   },
   {
     href: "/docs/contributing",
