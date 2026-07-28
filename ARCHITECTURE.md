@@ -64,37 +64,15 @@ studymap/
 
 ### `data/places/`
 
-Nine JSON files, one per place category (imported by `studymap.config.ts` at the repo root, not
+One JSON file per place category (imported by `studymap.config.ts` at the repo root, not
 directly by `src/lib/places.ts` - see [Data flow](#data-flow) below). Each file is a flat array of
 place objects. This is the only place place data lives — nothing is duplicated elsewhere.
 
-| File | Type key |
-|------|----------|
-| `airport.json` | `airport` |
-| `train_station.json` | `train_station` |
-| `exam_centre.json` | `exam_centre` |
-| `library.json` | `library` |
-| `book_shop.json` | `book_shop` |
-| `stationery.json` | `stationery` |
-| `internet_cafe.json` | `internet_cafe` |
-| `imp_locations.json` | `imp_locations` |
-| `repair_shop.json` | `repair_shop` |
-
-Record shape (defined in `src/lib/types.ts`):
-
-```ts
-{
-  id: string;        // kebab-case, unique across all types
-  name: string;
-  type: PlaceType;
-  city: string;       // free-form slug, e.g. "mumbai", "navi_mumbai" - any city worldwide
-  lat: number;
-  lng: number;
-  address?: string;
-  gmaps_link: string;
-  added_by: string;  // GitHub username
-}
-```
+The record shape, valid type keys, and per-field rules are documented once in
+[`data/CONTRIBUTING.md`](data/CONTRIBUTING.md) and enforced by
+[`data/places.schema.json`](data/places.schema.json) via `npm run validate` -
+that pair is the source of truth, not this file. The `PlaceType` union and
+`Place` interface in `src/lib/types.ts` mirror the same schema.
 
 ### `src/app/`
 

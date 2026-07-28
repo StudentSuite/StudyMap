@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 /**
- * Validates every data/places/*.json file against the Place schema.
+ * Validates every data/places/*.json file against data/places.schema.json,
+ * the single source of truth for the place-record shape (see #94).
  *
  * Checks:
  *   - Valid JSON and root array
- *   - Required fields present and non-empty
+ *   - Required fields present and non-empty (from schema.required)
+ *   - No fields outside the schema's properties
  *   - Unique id within each file and across all files
- *   - type is one of the known PlaceType values
- *   - lat/lng are numbers within reasonable India-wide bounds
- *   - gmaps_link matches https://maps.google.com/?q=<lat>,<lng>
+ *   - type is one of the schema's enum values
+ *   - lat/lng are numbers within the schema's min/max bounds
+ *   - gmaps_link matches the schema's pattern
  *   - No em dashes in any string field
  *
  * Exits 0 when all files pass, 1 when any error is found.
@@ -20,29 +22,20 @@ import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "../data/places");
+const SCHEMA_PATH = join(__dirname, "../data/places.schema.json");
 
-const VALID_TYPES = new Set([
-  "library",
-  "other_places",
-  "airport",
-  "sat_centre",
-  "foreign_lang_exam_centre",
-  "gov_offices",
-]);
+const schema = JSON.parse(readFileSync(SCHEMA_PATH, "utf8"));
 
-// Valid geographic coordinate ranges. Catches impossible values (e.g. lat=200)
-// while allowing any location worldwide as the dataset grows beyond India.
-const BOUNDS = { minLat: -90, maxLat: 90, minLng: -180, maxLng: 180 };
-
-const REQUIRED_FIELDS = ["id", "name", "type", "city", "lat", "lng", "gmaps_link", "added_by"];
-
-// Accept all common Google Maps URL forms:
-//   https://maps.google.com/?q=<lat>,<lng>      (preferred)
-//   https://maps.app.goo.gl/<id>                (short link — shows place name/info)
-//   https://www.google.com/maps/...             (full URL, place or search)
-//   https://goo.gl/maps/<id>                    (legacy short link)
-const GMAPS_RE =
-  /^https:\/\/(maps\.google\.com(\?|\/)|maps\.app\.goo\.gl\/|www\.google\.com\/maps\/|goo\.gl\/maps\/).*/;
+const VALID_TYPES = new Set(schema.properties.type.enum);
+const REQUIRED_FIELDS = schema.required;
+const KNOWN_FIELDS = new Set(Object.keys(schema.properties));
+const BOUNDS = {
+  minLat: schema.properties.lat.minimum,
+  maxLat: schema.properties.lat.maximum,
+  minLng: schema.properties.lng.minimum,
+  maxLng: schema.properties.lng.maximum,
+};
+const GMAPS_RE = new RegExp(schema.properties.gmaps_link.pattern);
 
 let totalErrors = 0;
 const globalIds = new Set();
@@ -94,6 +87,13 @@ for (const file of files) {
       }
     }
 
+    // No fields outside the schema (catches stray proof fields like rating/reviews)
+    for (const field of Object.keys(r)) {
+      if (!KNOWN_FIELDS.has(field)) {
+        err(loc, `unknown field "${field}" — not in data/places.schema.json`);
+      }
+    }
+
     // Unique id — within file
     if (r.id) {
       if (fileIds.has(r.id)) {
@@ -120,7 +120,7 @@ for (const file of files) {
       if (typeof r.lat !== "number") {
         err(loc, `lat must be a number, got ${typeof r.lat}`);
       } else if (r.lat < BOUNDS.minLat || r.lat > BOUNDS.maxLat) {
-        err(loc, `lat ${r.lat} is outside India bounds [${BOUNDS.minLat}, ${BOUNDS.maxLat}]`);
+        err(loc, `lat ${r.lat} is outside valid bounds [${BOUNDS.minLat}, ${BOUNDS.maxLat}]`);
       }
     }
 
@@ -129,7 +129,7 @@ for (const file of files) {
       if (typeof r.lng !== "number") {
         err(loc, `lng must be a number, got ${typeof r.lng}`);
       } else if (r.lng < BOUNDS.minLng || r.lng > BOUNDS.maxLng) {
-        err(loc, `lng ${r.lng} is outside India bounds [${BOUNDS.minLng}, ${BOUNDS.maxLng}]`);
+        err(loc, `lng ${r.lng} is outside valid bounds [${BOUNDS.minLng}, ${BOUNDS.maxLng}]`);
       }
     }
 

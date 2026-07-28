@@ -39,6 +39,9 @@ export default function ContributePage() {
               <p className="text-xs text-muted-foreground">
                 All places must have a source citation and meet a minimum verification threshold (e.g., Google Maps listing with reviews).
               </p>
+              <p className="text-xs text-muted-foreground">
+                Just want to save a place for yourself, not add it to the public map? Sign in and use &quot;My places&quot; on the map instead - those are private to your account only and won&apos;t go through this review process.
+              </p>
             </div>
             <a
               href={site.repo}

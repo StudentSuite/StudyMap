@@ -105,29 +105,11 @@ Proof goes in the pull request, never in the committed JSON.
 
 ## The place record
 
-Each place is one object inside `data/places/<type>.json`. Valid types: `library`, `other_places`, `airport`, `sat_centre`, `foreign_lang_exam_centre`, `gov_offices`.
-
-```json
-{
-  "id": "mum-library-07",
-  "name": "City Library, Dadar branch",
-  "type": "library",
-  "city": "mumbai",
-  "lat": 19.0176,
-  "lng": 72.8562,
-  "address": "Optional, short and human-readable",
-  "gmaps_link": "https://maps.app.goo.gl/...",
-  "added_by": "your-github-handle"
-}
-```
-
-- `city` is a lowercase, underscore-separated slug (e.g. `mumbai`, `navi_mumbai`, `jakarta`). Any city worldwide is welcome — StudyMap is not limited to the Mumbai Metropolitan Region.
-- `id` format: `<city-prefix>-<type>-<number>`, unique within the file
-- Coordinates: real-world `lat`/`lng` for the place, matched to its `city`
-- Do not add rating, review count, or verified date to the JSON. Those go in the PR.
-- `exam` and `valid_till` are optional fields for `sat_centre` and `foreign_lang_exam_centre`:
-  - `exam`: the exam this centre serves, e.g. `"SAT"`, `"Goethe-Zertifikat (A1-C2)"`, `"IELTS"`
-  - `valid_till`: ISO date (`YYYY-MM-DD`) the entry should be reconfirmed by, e.g. the last exam administration the centre is verified for. Always reconfirm your exact centre with the exam board before relying on this field; centres change between administrations.
+Each place is one object inside `data/places/<type>.json`. The record shape, valid
+types, and per-field rules are documented once in
+[`data/CONTRIBUTING.md`](data/CONTRIBUTING.md) and enforced by
+[`data/places.schema.json`](data/places.schema.json) via `npm run validate` - see
+that file for the schema itself rather than this one.
 
 ## Commit message format
 
