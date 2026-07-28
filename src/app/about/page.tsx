@@ -77,7 +77,7 @@ export default function AboutPage() {
           Who maintains it
         </h2>
         <p className="max-w-2xl text-sm leading-relaxed text-foreground/80">
-          StudyMap is maintained by Anay Dhawan, a student, as an open-source
+          StudyMap is maintained by StudentSuite, as an open-source
           project. Questions, corrections, and ideas are always welcome at{" "}
           <a
             href="mailto:contact@thestudentsuite.com"
