@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
+import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -65,6 +65,14 @@ const DOCS = [
     description:
       "Curated AI coding agent skills and plugins for students, synced daily from the awesome-skills-plugins-for-students list.",
     icon: Puzzle,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/troubleshooting",
+    title: "Troubleshooting",
+    description:
+      "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
+    icon: Wrench,
     iconClassName: "text-primary",
   },
 ];
