@@ -41,4 +41,4 @@ cached and how to force a fresh load.
 ## Still stuck
 
 Open an issue at [github.com/StudentSuite/StudyMap/issues](https://github.com/StudentSuite/StudyMap/issues)
-or email [studentsuite0@gmail.com](mailto:studentsuite0@gmail.com).
+or email [studentsuite3@gmail.com](mailto:studentsuite3@gmail.com).

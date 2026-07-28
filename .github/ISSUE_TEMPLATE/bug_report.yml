@@ -51,5 +51,5 @@ body:
       options:
         - label: I searched existing issues and this is not a duplicate.
           required: true
-        - label: This is not a security vulnerability (those go to studentsuite0@gmail.com).
+        - label: This is not a security vulnerability (those go to studentsuite3@gmail.com).
           required: true

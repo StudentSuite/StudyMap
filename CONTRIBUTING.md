@@ -140,4 +140,4 @@ same PR or a quick follow-up.
 - No em dashes in any copy
 - Run `npm run dev` and verify your change on localhost before opening a PR
 - Before opening a PR, run what CI runs: `npm run lint`, `npx tsc --noEmit`, and `npm run test:unit` (add `npm run validate` too if you touched `data/`)
-- Questions: open an issue or email [studentsuite0@gmail.com](mailto:studentsuite0@gmail.com)
+- Questions: open an issue or email [studentsuite3@gmail.com](mailto:studentsuite3@gmail.com)
