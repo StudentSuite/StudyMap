@@ -60,12 +60,16 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
         </p>
       </div>
 
-      <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by section">
+      <div
+        className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0"
+        role="group"
+        aria-label="Filter by section"
+      >
         <button
           type="button"
           onClick={() => setActiveSection(null)}
           className={cn(
-            "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+            "shrink-0 whitespace-nowrap rounded-full border px-3 py-1 text-xs font-medium transition-colors",
             activeSection === null
               ? "border-primary bg-primary/10 text-primary"
               : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
@@ -80,7 +84,7 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
             type="button"
             onClick={() => setActiveSection(section.title)}
             className={cn(
-              "rounded-full border px-3 py-1 text-xs font-medium transition-colors",
+              "shrink-0 whitespace-nowrap rounded-full border px-3 py-1 text-xs font-medium transition-colors",
               activeSection === section.title
                 ? "border-primary bg-primary/10 text-primary"
                 : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
@@ -92,17 +96,17 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
         ))}
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-border">
-        <table className="w-full text-left text-sm">
+      <div className="overflow-x-auto rounded-xl border border-border">
+        <table className="w-full table-fixed text-left text-sm">
           <thead className="border-b border-border bg-muted/40 text-xs uppercase tracking-wide text-muted-foreground">
             <tr>
-              <th scope="col" className="px-4 py-2.5 font-medium">
+              <th scope="col" className="w-2/5 px-4 py-2.5 font-medium sm:w-1/4">
                 Name
               </th>
               <th scope="col" className="px-4 py-2.5 font-medium">
                 Description
               </th>
-              <th scope="col" className="hidden px-4 py-2.5 font-medium sm:table-cell">
+              <th scope="col" className="hidden w-1/4 px-4 py-2.5 font-medium sm:table-cell">
                 Section
               </th>
             </tr>
@@ -110,14 +114,16 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
           <tbody className="divide-y divide-border">
             {filtered.map((row, index) => (
               <tr key={`${row.section}::${row.url}::${index}`} className="align-top">
-                <td className="px-4 py-3 font-medium">
+                <td className="break-words px-4 py-3 font-medium">
                   <a href={row.url} target="_blank" rel="noreferrer" className="text-primary hover:underline">
                     {row.name}
                   </a>
                 </td>
-                <td className="px-4 py-3 text-foreground/80">{row.description}</td>
+                <td className="break-words px-4 py-3 text-foreground/80">{row.description}</td>
                 <td className="hidden px-4 py-3 sm:table-cell">
-                  <Badge variant="outline">{row.section}</Badge>
+                  <Badge variant="outline" className="h-auto whitespace-normal text-left">
+                    {row.section}
+                  </Badge>
                 </td>
               </tr>
             ))}
