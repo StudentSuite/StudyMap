@@ -5,6 +5,25 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.4.0] - 2026-07-28
+
+### Added
+
+- In-app "Suggest a place" flow: a public, no-account form (`suggest-place-dialog.tsx`, launched from `MapPanel`) that opens a pre-filled GitHub issue, lowering the contribution barrier below forking the repo without touching the existing PR review process.
+- `data/places.schema.json`: a real JSON Schema for the place record. `scripts/validate-places.mjs` now derives its valid types, required fields, coordinate bounds, and `gmaps_link` pattern from it instead of a second hardcoded copy, and flags any field not declared in the schema.
+
+### Changed
+
+- `README.md`, `CONTRIBUTING.md`, `ARCHITECTURE.md`: replaced 3 duplicated copies of the place-data schema with a pointer to `data/CONTRIBUTING.md` (now the single source of truth) plus `data/places.schema.json`. Two of the three had drifted to a stale 9-type list that no longer matched the dataset.
+- `/contribute`, `/docs/contributing`, and the map's "My places" panel: clarified that public places (added via GitHub PR/issue) and private saved places (Supabase, signed-in only) are two separate systems - a saved place never appears on the public map for other users.
+- `CODE_OF_CONDUCT.md`: replaced generic boilerplate with the Contributor Covenant v2.1, naming `studentsuite3@gmail.com` as the reporting contact.
+- Contact email updated to `studentsuite3@gmail.com` across `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `SECURITY.md`, `docs/TROUBLESHOOTING.md`, and the GitHub issue templates.
+- `/about`: maintainer attribution corrected from an individual contributor to StudentSuite.
+
+### Fixed
+
+- `data/places/sat_centre.json`: normalized 225 ALL-CAPS `city` values (e.g. `"SALISBURY"` -> `"salisbury"`) left over from a bulk CEEB import, which were cluttering the map's city filter dropdown.
+
 ## [2.3.0] - 2026-07-27
 
 ### Added
