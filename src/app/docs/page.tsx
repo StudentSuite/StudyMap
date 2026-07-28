@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, History, MapPin, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -26,6 +26,14 @@ const DOCS = [
       "Use the map to locate verified SAT centres and foreign language exam centres across India and worldwide.",
     icon: MapPin,
     iconClassName: "text-marker-sat-centre",
+  },
+  {
+    href: "/docs/map-controls",
+    title: "Map Controls",
+    description:
+      "Every way to zoom, pan, search, and filter the map, including keyboard equivalents.",
+    icon: MousePointerClick,
+    iconClassName: "text-primary",
   },
   {
     href: "/docs/calendar",
