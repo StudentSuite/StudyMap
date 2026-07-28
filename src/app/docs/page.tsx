@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpen, CalendarDays, CircleHelp, Database, Download, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
+import { BookOpen, CalendarDays, CircleHelp, Database, Download, FileJson, Gift, GitPullRequest, GraduationCap, History, MapPin, MousePointerClick, Puzzle, Wrench } from "lucide-react";
 
 import { PageContainer } from "@/components/layout/page-container";
 import { DocsPageHeader } from "@/components/docs/docs-page-header";
@@ -49,6 +49,14 @@ const DOCS = [
     description:
       "Add a missing location or fix stale data. JSON or GitHub issue, both work.",
     icon: GitPullRequest,
+    iconClassName: "text-primary",
+  },
+  {
+    href: "/docs/data-format",
+    title: "Place Data Format",
+    description:
+      "The JSON schema for data/places/*.json: every field, the id-prefix convention, and the 6 place types.",
+    icon: FileJson,
     iconClassName: "text-primary",
   },
   {
