@@ -26,7 +26,12 @@ export function CategoryChips({
 }: CategoryChipsProps) {
   return (
     <div
-      className="flex flex-wrap gap-1.5"
+      className={cn(
+        "flex gap-1.5",
+        scroll
+          ? "overflow-x-auto pb-1 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          : "flex-wrap",
+      )}
       role="group"
       aria-label="Filter by place type"
     >
