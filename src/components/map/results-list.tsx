@@ -32,7 +32,7 @@ export function ResultsList({
   toggle,
 }: ResultsListProps) {
   return (
-    <div className="flex min-h-0 flex-col">
+    <div className="flex min-h-[120px] flex-1 flex-col">
       <div className="flex items-center justify-between pb-1.5">
         <p className="text-xs font-medium text-muted-foreground">{header}</p>
         {toggle && (
