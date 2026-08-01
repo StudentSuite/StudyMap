@@ -1,8 +1,8 @@
 export const site = {
   name: "StudyMap",
-  tagline: "Find student places and perks across Mumbai, Thane, and Navi Mumbai.",
+  tagline: "Find student places and perks in cities worldwide.",
   description:
-    "A crowdsourced map of student-important places (exam centres, libraries, book shops, and more) for the Mumbai Metropolitan Region.",
+    "A crowdsourced map of student-important places (exam centres, libraries, book shops, and more) covering hundreds of cities worldwide.",
   url: "https://studyymap.com",
   repo: "https://github.com/StudentSuite/StudyMap",
 } as const;

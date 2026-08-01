@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { StepCard } from "@/components/docs/step-card";
 import { CalloutCard } from "@/components/docs/callout-card";
 
@@ -29,13 +27,7 @@ const SOURCES = [
 export default function StudentPackPage() {
   return (
     <>
-      <DocsPageHeader
-        title="GitHub Student Developer Pack"
-        breadcrumbLabel="GitHub Student Developer Pack"
-        description="Free developer tools worth hundreds of dollars for verified students: cloud credits, domains, IDEs, GitHub Copilot Pro, and more. Full process, start to finish."
-      />
-      <PageContainer>
-        <div className="space-y-0">
+      <div className="space-y-0">
           <StepCard step={1} title="Check eligibility" description="You qualify if all of these are true">
             <ul className="ml-4 list-disc space-y-2">
               <li>You are at least 13 years old.</li>
@@ -147,7 +139,6 @@ export default function StudentPackPage() {
             ))}
           </ul>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

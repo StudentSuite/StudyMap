@@ -134,13 +134,26 @@ components/
 │   └── theme-toggle.tsx
 ├── legal/
 │   └── legal-page.tsx      # shared shell for privacy/terms/disclaimer pages
+├── docs/
+│   ├── docs-header.tsx         # resolves the current /docs route against lib/docs-nav.ts, renders DocsPageHeader
+│   ├── docs-page-header.tsx    # full-bleed graph-paper header band (kicker + H1 + description)
+│   ├── docs-sidebar.tsx        # DocsDesktopSidebar (persistent, lg+) + DocsMobileNav (Sheet drawer, <lg)
+│   ├── docs-pager.tsx          # prev/next link pair, reads page order from lib/docs-nav.ts
+│   ├── docs-prose.tsx          # typography wrapper for freeform doc paragraphs
+│   ├── step-card.tsx           # numbered sequential step with connector line
+│   ├── callout-card.tsx        # dashed-border callout, outside the step sequence
+│   ├── code-block.tsx          # copy-button code block (hand-rolled JSON tint, not a real highlighter)
+│   └── awesome-list-browser.tsx # search/filter table for the 3 synced awesome-list pages
 ├── ui/                     # shadcn/ui primitives (Badge, Button, Card, Checkbox,
 │                           #   Dialog, DropdownMenu, Input, Label, Particles,
 │                           #   Select, Separator, Sheet, Sonner, Switch, Table, Tabs)
 ├── analytics.tsx           # Umami analytics script (privacy-friendly, cookieless)
-├── mdx-content.tsx         # MDX renderer used by docs pages
 └── pwa-register.tsx        # service worker registration for offline / PWA support
 ```
+
+`src/lib/docs-nav.ts` is the single source of truth for every `/docs` route (title, blurb, icon,
+sidebar group) - the index grid, sidebar, header, and pager all read from it instead of keeping
+separate lists.
 
 `src/app/calendar/CalendarView.tsx` (a page-level component, not under `components/`) renders the
 public exam calendar and, when signed in, the personal-events overlay.

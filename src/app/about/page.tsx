@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const principles = [
   {
     title: "One map, not ten tabs",
-    body: "Exam centres, libraries, book shops, stationery, and the spots students actually use, in one place across Mumbai, Thane, and Navi Mumbai. No login, no app to install.",
+    body: "Exam centres, libraries, book shops, stationery, and the spots students actually use, in one place across cities worldwide. No login, no app to install.",
   },
   {
     title: "Crowdsourced, in the open",
@@ -64,7 +64,7 @@ export default function AboutPage() {
         </h2>
         <p className="max-w-2xl text-sm leading-relaxed text-foreground/80">
           StudyMap currently tracks {total} places across {PLACE_TYPES.length}{" "}
-          categories in the Mumbai Metropolitan Region. Each one is stored as
+          categories in cities worldwide. Each one is stored as
           plain JSON in the public repository, with a name, location, category,
           and a source link. Entries are added or corrected through pull requests
           and issues, so the map gets more accurate every time a student helps

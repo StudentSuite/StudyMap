@@ -80,7 +80,7 @@ export function Footer() {
                 GitHub
               </a>
               <a
-                href="https://instagram.com/studentsuite"
+                href="https://instagram.com/student.suite"
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors"

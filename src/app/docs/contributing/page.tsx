@@ -6,8 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
+import { DocsProse } from "@/components/docs/docs-prose";
 import { CodeBlock } from "@/components/docs/code-block";
 
 export const metadata: Metadata = {
@@ -31,16 +30,12 @@ const SCHEMA_EXAMPLE = `{
 export default function ContributingPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Contributing Places"
-        breadcrumbLabel="Contributing Places"
-        description="StudyMap is open-source and community-maintained. Every place in the database was added by a student. Here is how to add or fix one."
-      />
-      <PageContainer>
-        <p className="text-sm text-muted-foreground">
+      <DocsProse className="mb-6">
+        <p className="text-sm">
           This page covers the public map, which every visitor sees. If you just want to save a place for yourself instead, sign in and use &quot;My places&quot; on the map - those are private to your account and never go through this review process.
         </p>
-        <div className="mt-4 space-y-4">
+      </DocsProse>
+      <div className="space-y-4">
         <Card>
           <CardHeader>
             <CardTitle>Option A: GitHub Issue (easiest)</CardTitle>
@@ -176,8 +171,7 @@ export default function ContributingPage() {
             </ol>
           </CardContent>
         </Card>
-        </div>
-      </PageContainer>
+      </div>
     </>
   );
 }
