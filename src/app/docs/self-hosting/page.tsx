@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { StepCard } from "@/components/docs/step-card";
 import { CalloutCard } from "@/components/docs/callout-card";
 import { CodeBlock } from "@/components/docs/code-block";
@@ -34,13 +32,7 @@ git merge upstream/main`;
 export default function SelfHostingPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Self-Hosting Guide"
-        breadcrumbLabel="Self-Hosting Guide"
-        description="Run StudyMap for your own city. Everything below works from a fork, no coding required beyond editing one config file and your place data."
-      />
-      <PageContainer>
-        <div className="space-y-0">
+      <div className="space-y-0">
           <StepCard step={1} title="Get the code" description="Fork, clone, install">
             <p>
               Click <span className="font-medium">&quot;Use this template&quot;</span> at
@@ -55,7 +47,7 @@ export default function SelfHostingPage() {
               </a>{" "}
               to create your own copy, then clone it.
             </p>
-            <CodeBlock code={CLONE} />
+            <CodeBlock code={CLONE} lang="bash" />
           </StepCard>
 
           <StepCard
@@ -68,7 +60,7 @@ export default function SelfHostingPage() {
               <code className="rounded bg-muted px-1.5 py-0.5 font-mono">studymap.config.ts</code>{" "}
               at the repo root.
             </p>
-            <CodeBlock code={CONFIG_COPY} />
+            <CodeBlock code={CONFIG_COPY} lang="bash" />
             <p>Edit it:</p>
             <ul className="ml-4 list-disc space-y-1.5">
               <li>
@@ -105,7 +97,7 @@ export default function SelfHostingPage() {
               the dataset that ships with the template.
             </p>
             <p>Validate as you go:</p>
-            <CodeBlock code={VALIDATE} />
+            <CodeBlock code={VALIDATE} lang="bash" />
           </StepCard>
 
           <StepCard
@@ -113,7 +105,7 @@ export default function SelfHostingPage() {
             title="Environment variables"
             description="One required, the rest optional"
           >
-            <CodeBlock code={ENV_COPY} />
+            <CodeBlock code={ENV_COPY} lang="bash" />
             <ul className="ml-4 list-disc space-y-1.5">
               <li>
                 <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">
@@ -139,7 +131,7 @@ export default function SelfHostingPage() {
           </StepCard>
 
           <StepCard step={4} title="Run it" description="Confirm your places show up">
-            <CodeBlock code={DEV} />
+            <CodeBlock code={DEV} lang="bash" />
             <p>
               Open{" "}
               <a
@@ -201,7 +193,7 @@ export default function SelfHostingPage() {
             isLast
           >
             <p>Deploy like any standard Next.js app, for example on Vercel:</p>
-            <CodeBlock code={DEPLOY} />
+            <CodeBlock code={DEPLOY} lang="bash" />
             <p>
               or import the repo at{" "}
               <a
@@ -233,7 +225,7 @@ export default function SelfHostingPage() {
           className="mt-4"
         >
           <p>To pull in upstream fixes, add the original repo as a remote and merge from it:</p>
-          <CodeBlock code={UPSTREAM} />
+          <CodeBlock code={UPSTREAM} lang="bash" />
           <p>
             Your <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">studymap.config.ts</code>,{" "}
             <code className="rounded bg-muted px-1 py-0.5 font-mono text-xs">.env.local</code>, and{" "}
@@ -242,7 +234,6 @@ export default function SelfHostingPage() {
             without touching them, unless you&apos;ve also edited those files.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

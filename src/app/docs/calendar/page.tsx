@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { StepCard } from "@/components/docs/step-card";
 import { CalloutCard } from "@/components/docs/callout-card";
 
@@ -15,20 +13,7 @@ export const metadata: Metadata = {
 export default function CalendarGuidePage() {
   return (
     <>
-      <DocsPageHeader
-        title="Using the Exam Calendar"
-        breadcrumbLabel="Using the Exam Calendar"
-        description={
-          <>
-            The <strong>Calendar</strong> page tracks upcoming <strong>SAT</strong>,{" "}
-            <strong>IB</strong>, and <strong>Cambridge IGCSE</strong> exam windows and
-            result dates, sourced from the official boards. No sign-in needed to
-            browse it.
-          </>
-        }
-      />
-      <PageContainer>
-        <div className="space-y-0">
+      <div className="space-y-0">
           <StepCard
             step={1}
             title="Browse exam windows"
@@ -109,7 +94,6 @@ export default function CalendarGuidePage() {
             with a link to the official board source.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

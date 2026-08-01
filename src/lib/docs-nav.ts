@@ -1,7 +1,24 @@
 import type { LucideIcon } from "lucide-react";
-import { BookOpen, Gift, GitPullRequest, GraduationCap, MapPin, Puzzle } from "lucide-react";
+import {
+  BookOpen,
+  CalendarDays,
+  CircleHelp,
+  Database,
+  Download,
+  FileJson,
+  Gift,
+  GitPullRequest,
+  GraduationCap,
+  History,
+  Layers,
+  MapPin,
+  MousePointerClick,
+  Puzzle,
+  Server,
+  Wrench,
+} from "lucide-react";
 
-export type DocsGroup = "Guides" | "Awesome Lists" | "Contributing";
+export type DocsGroup = "Guides" | "Awesome Lists" | "Contributing" | "Developers";
 
 export interface DocsNavEntry {
   href: string;
@@ -46,13 +63,38 @@ export const docsNav: DocsNavEntry[] = [
     group: "Guides",
   },
   {
-    href: "/docs/contributing",
-    title: "Contributing Places",
-    description:
-      "StudyMap is open-source and community-maintained. Add a missing location or fix stale data with a GitHub issue or a pull request.",
-    icon: GitPullRequest,
+    href: "/docs/map-controls",
+    title: "Map Controls",
+    description: "Every way to zoom, pan, search, and filter the map, including keyboard equivalents.",
+    icon: MousePointerClick,
     iconClassName: "text-primary",
-    group: "Contributing",
+    group: "Guides",
+  },
+  {
+    href: "/docs/calendar",
+    title: "Using the Exam Calendar",
+    description:
+      "Read SAT, IB, and Cambridge IGCSE exam windows and result dates, and add your own personal events.",
+    icon: CalendarDays,
+    iconClassName: "text-primary",
+    group: "Guides",
+  },
+  {
+    href: "/docs/install",
+    title: "Install & Offline Usage",
+    description: "Install StudyMap as an app and use it offline: what's cached and how to force a fresh load.",
+    icon: Download,
+    iconClassName: "text-primary",
+    group: "Guides",
+  },
+  {
+    href: "/docs/faq",
+    title: "FAQ",
+    description:
+      "Common questions about StudyMap: data accuracy, reporting wrong info, why a place isn't listed, and accounts.",
+    icon: CircleHelp,
+    iconClassName: "text-primary",
+    group: "Guides",
   },
   {
     href: "/docs/awesome-student-resources",
@@ -80,6 +122,65 @@ export const docsNav: DocsNavEntry[] = [
     icon: Puzzle,
     iconClassName: "text-primary",
     group: "Awesome Lists",
+  },
+  {
+    href: "/docs/contributing",
+    title: "Contributing Places",
+    description:
+      "StudyMap is open-source and community-maintained. Add a missing location or fix stale data with a GitHub issue or a pull request.",
+    icon: GitPullRequest,
+    iconClassName: "text-primary",
+    group: "Contributing",
+  },
+  {
+    href: "/docs/data-sources",
+    title: "Data Sources & Provenance",
+    description:
+      "Where the place and exam-centre data comes from, how it's verified, licensing, and known accuracy caveats.",
+    icon: Database,
+    iconClassName: "text-primary",
+    group: "Contributing",
+  },
+  {
+    href: "/docs/data-format",
+    title: "Place Data Format",
+    description:
+      "The JSON schema for data/places/*.json: every field, the id-prefix convention, and the 6 place types.",
+    icon: FileJson,
+    iconClassName: "text-primary",
+    group: "Contributing",
+  },
+  {
+    href: "/docs/architecture",
+    title: "Architecture",
+    description: "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
+    icon: Layers,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/self-hosting",
+    title: "Self-Hosting Guide",
+    description: "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
+    icon: Server,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/troubleshooting",
+    title: "Troubleshooting",
+    description: "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
+    icon: Wrench,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/changelog",
+    title: "Changelog",
+    description: "Every notable change to StudyMap, release by release.",
+    icon: History,
+    iconClassName: "text-primary",
+    group: "Developers",
   },
 ];
 

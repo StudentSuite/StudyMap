@@ -11,8 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 
 export const metadata: Metadata = {
   title: "Changelog",
@@ -38,26 +36,19 @@ export default function ChangelogPage() {
 
   return (
     <>
-      <DocsPageHeader
-        title="Changelog"
-        breadcrumbLabel="Changelog"
-        description={
-          <>
-            Every notable change to StudyMap, generated from{" "}
-            <a
-              href={`${site.repo}/blob/main/CHANGELOG.md`}
-              target="_blank"
-              rel="noreferrer"
-              className="font-medium text-primary hover:underline"
-            >
-              CHANGELOG.md
-            </a>{" "}
-            so this page never drifts from the real history.
-          </>
-        }
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <p className="mb-6 text-foreground/80">
+        Generated from{" "}
+        <a
+          href={`${site.repo}/blob/main/CHANGELOG.md`}
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-primary hover:underline"
+        >
+          CHANGELOG.md
+        </a>{" "}
+        so this page never drifts from the real history.
+      </p>
+      <div className="space-y-4">
           {releases.map((release) => (
             <Card key={release.version}>
               <CardHeader>
@@ -87,8 +78,7 @@ export default function ChangelogPage() {
               </CardContent>
             </Card>
           ))}
-        </div>
-      </PageContainer>
+      </div>
     </>
   );
 }

@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { site } from "@/lib/site";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
@@ -15,13 +13,7 @@ export const metadata: Metadata = {
 export default function FaqPage() {
   return (
     <>
-      <DocsPageHeader
-        title="FAQ"
-        breadcrumbLabel="FAQ"
-        description="Common questions about StudyMap, answered short. Follow the links for the full guide on each topic."
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <div className="space-y-4">
           <CalloutCard title="How accurate is the data?">
             <p>
               Every place was added by a contributor through GitHub, with a required
@@ -99,8 +91,7 @@ export default function FaqPage() {
               a public contribution.
             </p>
           </CalloutCard>
-        </div>
-      </PageContainer>
+      </div>
     </>
   );
 }

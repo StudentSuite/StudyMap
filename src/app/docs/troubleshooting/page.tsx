@@ -9,8 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
@@ -22,13 +20,7 @@ export const metadata: Metadata = {
 export default function TroubleshootingPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Troubleshooting"
-        breadcrumbLabel="Troubleshooting"
-        description="Common problems when running StudyMap locally or on a fork, and what actually causes them."
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>Map doesn&apos;t load, or the basemap is blank/grey</CardTitle>
@@ -157,7 +149,6 @@ export default function TroubleshootingPage() {
             .
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

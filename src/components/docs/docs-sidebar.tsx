@@ -10,7 +10,7 @@ import { docsPages, type DocsGroup } from "@/lib/docs-nav";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
-const GROUPS: DocsGroup[] = ["Guides", "Awesome Lists", "Contributing"];
+const GROUPS: DocsGroup[] = ["Guides", "Awesome Lists", "Contributing", "Developers"];
 
 function DocsNavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {
   return (

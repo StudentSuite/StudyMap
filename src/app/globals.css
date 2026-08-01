@@ -224,6 +224,19 @@ html { scroll-behavior: smooth; }
    StudyMap utility classes
    ================================================================ */
 
+/* Shiki dual-theme code blocks (docs/code-block.tsx): shiki emits per-token
+   CSS vars via `defaultColor: false`; these two rules pick light vs dark. */
+.shiki,
+.shiki span {
+  color: var(--shiki-light);
+  background-color: var(--shiki-light-bg);
+}
+.dark .shiki,
+.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}
+
 /* Notebook graph-paper backdrop (shared StudentSuite design language) */
 .graph-paper {
   background-image:

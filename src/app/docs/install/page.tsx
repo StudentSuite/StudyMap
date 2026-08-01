@@ -7,8 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
@@ -20,13 +18,7 @@ export const metadata: Metadata = {
 export default function InstallPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Install & Offline Usage"
-        breadcrumbLabel="Install & Offline Usage"
-        description="StudyMap is a Progressive Web App: install it to your home screen and it keeps working with a weak or absent signal, useful on exam day."
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>Add to Home Screen</CardTitle>
@@ -132,7 +124,6 @@ export default function InstallPage() {
             the deployment status before assuming it&apos;s a caching issue.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

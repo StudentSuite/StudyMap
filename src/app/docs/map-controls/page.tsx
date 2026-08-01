@@ -7,8 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
@@ -20,13 +18,7 @@ export const metadata: Metadata = {
 export default function MapControlsPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Map Controls"
-        breadcrumbLabel="Map Controls"
-        description="Every way to zoom, pan, search, and filter the interactive map, on desktop, mobile, and keyboard."
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>Zoom</CardTitle>
@@ -159,7 +151,6 @@ export default function MapControlsPage() {
             . This page will be updated with the keyboard equivalents once that ships.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

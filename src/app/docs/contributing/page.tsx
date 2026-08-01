@@ -99,7 +99,7 @@ export default function ContributingPage() {
               <li>Commit and open a pull request against{" "}<code className="rounded bg-muted px-1 py-0.5 font-mono">main</code>.</li>
             </ol>
 
-            <CodeBlock code={SCHEMA_EXAMPLE} className="mt-3" />
+            <CodeBlock code={SCHEMA_EXAMPLE} lang="json" className="mt-3" />
 
             <p className="text-xs text-muted-foreground mt-2">
               ID format: a short city-code prefix (<code className="bg-muted px-1 rounded">mum</code>, <code className="bg-muted px-1 rounded">thn</code>, <code className="bg-muted px-1 rounded">nvm</code>, <code className="bg-muted px-1 rounded">blr</code>, and so on), then the type, then the next available number in that file.

@@ -9,8 +9,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CalloutCard } from "@/components/docs/callout-card";
 
 export const metadata: Metadata = {
@@ -22,22 +20,15 @@ export const metadata: Metadata = {
 export default function DataSourcesPage() {
   return (
     <>
-      <DocsPageHeader
-        title="Data Sources & Provenance"
-        breadcrumbLabel="Data Sources & Provenance"
-        description={
-          <>
-            Where the map&apos;s data comes from and how it&apos;s verified. For the
-            legal side (liability, use-at-your-own-risk), see the{" "}
-            <Link href="/legal/disclaimer" className="font-medium text-primary hover:underline">
-              Disclaimer
-            </Link>{" "}
-            page instead - this one is about provenance, not privacy or liability.
-          </>
-        }
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <p className="mb-6 text-foreground/80">
+        Where the map&apos;s data comes from and how it&apos;s verified. For the
+        legal side (liability, use-at-your-own-risk), see the{" "}
+        <Link href="/legal/disclaimer" className="font-medium text-primary hover:underline">
+          Disclaimer
+        </Link>{" "}
+        page instead - this one is about provenance, not privacy or liability.
+      </p>
+      <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>How places get added</CardTitle>
@@ -170,7 +161,6 @@ export default function DataSourcesPage() {
             for why you should always verify details before visiting.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }

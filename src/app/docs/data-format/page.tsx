@@ -11,8 +11,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { PageContainer } from "@/components/layout/page-container";
-import { DocsPageHeader } from "@/components/docs/docs-page-header";
 import { CodeBlock } from "@/components/docs/code-block";
 import { CalloutCard } from "@/components/docs/callout-card";
 
@@ -53,25 +51,18 @@ export default function DataFormatPage() {
 
   return (
     <>
-      <DocsPageHeader
-        title="Place Data Format"
-        breadcrumbLabel="Place Data Format"
-        description={
-          <>
-            The JSON schema behind every entry in{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-sm">
-              data/places/&lt;type&gt;.json
-            </code>
-            . For the GitHub issue/PR process itself, see{" "}
-            <Link href="/docs/contributing" className="font-medium text-primary hover:underline">
-              Contributing Places
-            </Link>{" "}
-            instead - this page is only about the data shape.
-          </>
-        }
-      />
-      <PageContainer>
-        <div className="space-y-4">
+      <p className="mb-6 text-foreground/80">
+        The JSON schema behind every entry in{" "}
+        <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-sm">
+          data/places/&lt;type&gt;.json
+        </code>
+        . For the GitHub issue/PR process itself, see{" "}
+        <Link href="/docs/contributing" className="font-medium text-primary hover:underline">
+          Contributing Places
+        </Link>{" "}
+        instead - this page is only about the data shape.
+      </p>
+      <div className="space-y-4">
           <Card>
             <CardHeader>
               <CardTitle>The 6 place types</CardTitle>
@@ -142,7 +133,7 @@ export default function DataFormatPage() {
               <CardTitle>Example record</CardTitle>
             </CardHeader>
             <CardContent>
-              <CodeBlock code={EXAMPLE} />
+              <CodeBlock code={EXAMPLE} lang="json" />
             </CardContent>
           </Card>
 
@@ -193,7 +184,6 @@ export default function DataFormatPage() {
             needs a manual edit to match.
           </p>
         </CalloutCard>
-      </PageContainer>
     </>
   );
 }
