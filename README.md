@@ -72,7 +72,9 @@ New here? Start with an issue tagged [`good first issue`](https://github.com/Stu
 
 ## Contributors
 
-See [CONTRIBUTORS.md](CONTRIBUTORS.md).
+Thanks to everyone who has added a place, fixed the map, or improved the docs.
+
+[![Contributors](https://contrib.rocks/image?repo=StudentSuite/StudyMap)](https://github.com/StudentSuite/StudyMap/graphs/contributors)
 
 ## License
 

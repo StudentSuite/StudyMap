@@ -132,8 +132,8 @@ Optional scope in parens: `feat(calendar): add today label`. One logical change 
 
 ## Get recognized
 
-First merged PR? Add your GitHub handle to [CONTRIBUTORS.md](CONTRIBUTORS.md), in the
-same PR or a quick follow-up.
+Nothing to do. Once your PR is merged, your avatar appears in the Contributors
+section of the [README](README.md) automatically.
 
 ## House rules
 

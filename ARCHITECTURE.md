@@ -46,7 +46,6 @@ studymap/
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md
 ├── CONTRIBUTING.md
-├── CONTRIBUTORS.md
 ├── LICENSE
 ├── README.md
 ├── SECURITY.md
