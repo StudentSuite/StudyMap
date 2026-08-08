@@ -5,6 +5,26 @@ All notable changes to StudyMap are documented here.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+
+- `robots.ts`: allows crawling, points at the sitemap, and keeps `/auth`, `/login`, and the PWA `/offline` fallback out of the index.
+- `app/sitemap.ts` generated from the same `docs-nav.ts` source of truth used for the docs sidebar.
+- README contributors section: an auto-updating avatar grid linked to the GitHub contributors graph.
+
+### Changed
+
+- `/docs`: persistent sidebar (grouped nav, desktop + mobile drawer), a shared prose wrapper, and a prev/next pager, all sourced from one `lib/docs-nav.ts` instead of per-page duplicated lists. `docs-nav.ts` now covers all 16 routes across four groups (Guides, Awesome Lists, Contributing, Developers).
+- `CodeBlock` moved from hand-rolled JSON tinting to server-rendered `shiki` (dual light/dark theme), so bash and JSON snippets get real syntax highlighting.
+- `lib/site.ts` and `/about` no longer claim Mumbai-only coverage now that the dataset is global; Instagram footer link corrected to `@student.suite`.
+- Category chips now use horizontal scroll on desktop (matching mobile) instead of `flex-wrap`, eliminating multi-row wrapping of long labels like "Foreign lang exam centre". Results list fills remaining sidebar space via `flex-1` with a 120px floor.
+- `CONTRIBUTORS.md` (manual, append-your-own-handle list) dropped; README now renders the contributors graph directly.
+
+### Removed
+
+- The "Best viewed at 75% browser zoom" pill, now that the sidebar density problem it was working around is fixed.
+
 ## [2.4.0] - 2026-07-28
 
 ### Added
