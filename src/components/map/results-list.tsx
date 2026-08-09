@@ -1,12 +1,13 @@
 "use client";
 
-import { Navigation } from "lucide-react";
+import { MapPinPlus, Navigation, RotateCcw } from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { directionsUrl } from "@/lib/map";
 import { formatDistance } from "@/lib/geo";
+import { Button } from "@/components/ui/button";
 
 export interface ResultRow {
   place: Place;
@@ -16,8 +17,11 @@ export interface ResultRow {
 interface ResultsListProps {
   header: string;
   rows: ResultRow[];
-  /** Shown when there are no rows (e.g. filters exclude everything). */
-  emptyHint: string;
+  emptyState: {
+    activeFilters: string[];
+    onReset: () => void;
+    onSuggest: () => void;
+  };
   onSelect: (place: Place) => void;
   /** Optional expand/collapse control (e.g. "Show all" for the nearest list). */
   toggle?: { label: string; onClick: () => void } | null;
@@ -27,7 +31,7 @@ interface ResultsListProps {
 export function ResultsList({
   header,
   rows,
-  emptyHint,
+  emptyState,
   onSelect,
   toggle,
 }: ResultsListProps) {
@@ -47,9 +51,33 @@ export function ResultsList({
       </div>
 
       {rows.length === 0 ? (
-        <p className="rounded-md bg-muted/50 px-3 py-4 text-center text-xs text-muted-foreground">
-          {emptyHint}
-        </p>
+        <div
+          role="status"
+          className="rounded-md border border-dashed border-border bg-muted/30 px-3 py-4 text-center"
+        >
+          <p className="text-sm font-medium text-foreground">
+            {emptyState.activeFilters.length > 0
+              ? `No places match ${emptyState.activeFilters.join(" · ")}.`
+              : "No places are available in this view yet."}
+          </p>
+          <p className="mt-1 text-xs text-muted-foreground">
+            {emptyState.activeFilters.length > 0
+              ? "Clear a filter or suggest the place that is missing."
+              : "Know a useful place we should add? Suggest it to the maintainers."}
+          </p>
+          <div className="mt-3 flex flex-wrap justify-center gap-2">
+            {emptyState.activeFilters.length > 0 && (
+              <Button type="button" size="sm" variant="outline" onClick={emptyState.onReset}>
+                <RotateCcw className="size-3.5" />
+                Clear filters
+              </Button>
+            )}
+            <Button type="button" size="sm" onClick={emptyState.onSuggest}>
+              <MapPinPlus className="size-3.5" />
+              Suggest a place
+            </Button>
+          </div>
+        </div>
       ) : (
         <ul className="min-h-0 space-y-1 overflow-y-auto">
           {rows.map(({ place, distanceKm }) => (

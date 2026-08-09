@@ -19,6 +19,21 @@ export default function OfflinePage() {
         Pages you have already opened still work offline, including the map. This
         page just means the one you asked for has not been cached yet.
       </p>
+      <div className="mt-6 grid w-full gap-3 rounded-lg border border-border bg-card p-4 text-left text-sm">
+        <div>
+          <h2 className="font-semibold text-foreground">Available offline</h2>
+          <p className="mt-1 text-muted-foreground">
+            Previously opened pages and cached map data may still be available.
+          </p>
+        </div>
+        <div>
+          <h2 className="font-semibold text-foreground">Needs a connection</h2>
+          <p className="mt-1 text-muted-foreground">
+            Uncached pages, fresh map tiles, sign-in, and live updates need the
+            network.
+          </p>
+        </div>
+      </div>
       <Button asChild className="mt-6">
         <Link href="/">Back to the map</Link>
       </Button>

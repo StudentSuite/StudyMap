@@ -7,7 +7,7 @@ import { ChevronUp, Search, SlidersHorizontal } from "lucide-react";
 import { toast } from "sonner";
 
 import type { Place, PlaceType } from "@/lib/types";
-import { PLACE_TYPES } from "@/lib/types";
+import { humanizeCity, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
@@ -34,7 +34,15 @@ import type { PlaceFilters } from "@/components/map/filters";
 const MapView = dynamic(() => import("@/components/map/map-view"), {
   ssr: false,
   loading: () => (
-    <div className="size-full animate-pulse bg-muted" aria-hidden />
+    <div
+      className="relative size-full animate-pulse bg-muted"
+      role="status"
+      aria-label="Loading map"
+    >
+      <div className="absolute inset-6 rounded-xl border border-border/60 bg-card/30" />
+      <div className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full bg-card/60" />
+      <span className="sr-only">Loading map</span>
+    </div>
   ),
 });
 
@@ -74,6 +82,16 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [lastUserId, setLastUserId] = React.useState<string | null>(null);
 
   const cities = React.useMemo(() => getCities(places), [places]);
+
+  const activeFilters = React.useMemo(() => {
+    const labels: string[] = [];
+    if (filters.types.length > 0) {
+      labels.push(`types: ${filters.types.map((type) => PLACE_TYPE_LABELS[type]).join(", ")}`);
+    }
+    if (filters.city) labels.push(`city: ${humanizeCity(filters.city)}`);
+    if (filters.query.trim()) labels.push(`search: ${filters.query.trim()}`);
+    return labels;
+  }, [filters]);
 
   // Clear stale saved-places/home data as soon as the signed-in user changes,
   // during render rather than an effect, so there's no stale-data flash.
@@ -273,7 +291,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
     resultCount: visible.length,
     rows,
     resultsHeader,
-    resultsEmptyHint: "No places match these filters. Try Reset.",
+    activeFilters,
+    onResetFilters: () => setFilters({ types: [], city: null, query: "" }),
     resultsToggle,
     onSelectPlace: selectPlace,
     onLocated,
