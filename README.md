@@ -6,6 +6,23 @@ A crowdsourced map of student-important places across the Mumbai Metropolitan Re
 
 ---
 
+## See it in action
+
+StudyMap puts student-relevant places on one searchable, filterable map.
+
+![StudyMap map overview](docs/media/map-overview.png)
+
+<details>
+<summary>View the dark theme</summary>
+
+![StudyMap map overview in dark theme](docs/media/map-overview-dark.png)
+
+</details>
+
+Search for a place, filter by category, and open a result to focus the map:
+
+![StudyMap map search and place selection walkthrough](docs/media/map-walkthrough.gif)
+
 ## What it does
 
 - **Places map**: find libraries, SAT centres, foreign language exam centres, government offices, airports, and other student-relevant places. Filter by type and city. SAT and foreign language centres already span several countries; other categories currently have the most coverage in India.
@@ -39,6 +56,15 @@ that pair is the source of truth, not this README.
 5. Open a pull request with a description of the place and a source
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for full guidelines.
+
+### Contribution flow
+
+The in-app contribution page explains the place-data workflow, while the docs
+cover the issue-based path for proposing additions and corrections.
+
+![StudyMap contribution flow](docs/media/contribute-flow.png)
+
+![StudyMap contributing places guide](docs/media/contributing-guide.png)
 
 ## Architecture
 
