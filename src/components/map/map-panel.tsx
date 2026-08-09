@@ -48,7 +48,8 @@ interface MapPanelProps {
 
   rows: ResultRow[];
   resultsHeader: string;
-  resultsEmptyHint: string;
+  activeFilters: string[];
+  onResetFilters: () => void;
   resultsToggle?: { label: string; onClick: () => void } | null;
   onSelectPlace: (place: Place) => void;
 
@@ -77,7 +78,8 @@ export function MapPanel({
   resultCount,
   rows,
   resultsHeader,
-  resultsEmptyHint,
+  activeFilters,
+  onResetFilters,
   resultsToggle,
   onSelectPlace,
   onLocated,
@@ -193,7 +195,11 @@ export function MapPanel({
       <ResultsList
         header={resultsHeader}
         rows={rows}
-        emptyHint={resultsEmptyHint}
+        emptyState={{
+          activeFilters,
+          onReset: onResetFilters,
+          onSuggest: () => setSuggestOpen(true),
+        }}
         onSelect={onSelectPlace}
         toggle={resultsToggle}
       />
