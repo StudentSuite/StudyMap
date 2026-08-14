@@ -148,6 +148,37 @@ for (const file of files) {
       }
     }
 
+    // Optional `verified` object: must carry a non-empty verifier handle and a
+    // real YYYY-MM-DD date, and nothing else (see #126).
+    if (r.verified !== undefined) {
+      if (r.verified === null || typeof r.verified !== "object" || Array.isArray(r.verified)) {
+        err(loc, `verified must be an object with "by" and "on", got ${JSON.stringify(r.verified)}`);
+      } else {
+        const v = r.verified;
+        for (const key of Object.keys(v)) {
+          if (key !== "by" && key !== "on") {
+            err(loc, `verified has unknown field "${key}" — allowed: by, on`);
+          }
+        }
+        if (typeof v.by !== "string" || v.by.trim() === "") {
+          err(loc, `verified.by must be a non-empty GitHub username`);
+        }
+        if (typeof v.on !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(v.on)) {
+          err(loc, `verified.on must be an ISO date (YYYY-MM-DD), got "${v.on}"`);
+        } else {
+          const d = new Date(`${v.on}T00:00:00Z`);
+          const valid = !Number.isNaN(d.getTime()) &&
+            d.toISOString().slice(0, 10) === v.on;
+          if (!valid) {
+            err(loc, `verified.on "${v.on}" is not a real calendar date`);
+          }
+        }
+        if (typeof v.by === "string" && v.by.includes("—")) {
+          err(loc, `verified.by contains an em dash (—) — use a plain hyphen instead`);
+        }
+      }
+    }
+
     fileErrors += totalErrors - before;
   }
 

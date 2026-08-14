@@ -8,6 +8,7 @@ import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { directionsUrl } from "@/lib/map";
 import { formatDistance } from "@/lib/geo";
 import { Button } from "@/components/ui/button";
+import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 export interface ResultRow {
   place: Place;
@@ -94,8 +95,11 @@ export function ResultsList({
                   className="min-w-0 flex-1 text-left"
                   title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
                 >
-                  <span className="block truncate text-sm text-foreground">
-                    {place.name}
+                  <span className="flex items-center gap-1.5">
+                    <span className="block truncate text-sm text-foreground">
+                      {place.name}
+                    </span>
+                    <VerifiedBadge place={place} />
                   </span>
                   <span className="block truncate text-xs text-muted-foreground">
                     {PLACE_TYPE_LABELS[place.type]}

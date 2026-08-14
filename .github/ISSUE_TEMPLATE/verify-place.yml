@@ -1,0 +1,51 @@
+name: Verify a place
+description: Re-check an existing place on the map (address, entrance, open status). A smaller ask than adding a new place.
+title: "[verify] "
+labels: ["verification"]
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Thanks for re-checking a place. Picking a place whose listing is stale
+        (older than the expiry window: 12 months, 6 months for exam centres)
+        is most valuable. When the place checks out, the maintainer adds the
+        `verified` block to its record and it earns a badge on the map.
+  - type: input
+    id: place_id
+    attributes:
+      label: Place id
+      description: From the dataset file (data/places/<type>.json) or the map share link (`/map?place=...`).
+      placeholder: mum-library-07
+    validations:
+      required: true
+  - type: input
+    id: checked_on
+    attributes:
+      label: Date you checked it (YYYY-MM-DD)
+      placeholder: "2026-08-14"
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: What you found
+      description: Is the address/entrance still correct? Is it still open and operating? Any change (name, address, closed) means the record should be updated instead — say so here.
+      placeholder: Address matches Google Maps, entrance unchanged, still open as of today.
+    validations:
+      required: true
+  - type: input
+    id: github_handle
+    attributes:
+      label: Your GitHub handle
+      placeholder: your-handle
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Quality gate
+      options:
+        - label: I physically visited or checked this place on Google Maps this month.
+          required: true
+        - label: The listing's address and entrance match what is on the ground.
+          required: true

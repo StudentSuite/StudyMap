@@ -49,6 +49,24 @@
       "minLength": 1,
       "description": "GitHub username of the contributor"
     },
+    "verified": {
+      "type": "object",
+      "description": "Optional proof a contributor re-checked this place. Verified places show a badge. Expiry: 12 months, or 6 months for exam centres (sat_centre / foreign_lang_exam_centre); see data/CONTRIBUTING.md.",
+      "additionalProperties": false,
+      "required": ["by", "on"],
+      "properties": {
+        "by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "GitHub username of the verifier"
+        },
+        "on": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO date (YYYY-MM-DD) the place was last verified"
+        }
+      }
+    },
     "exam": {
       "type": "string",
       "description": "Optional. Only for sat_centre / foreign_lang_exam_centre, e.g. \"SAT\", \"IELTS\", \"Goethe-Zertifikat (A1-C2)\""

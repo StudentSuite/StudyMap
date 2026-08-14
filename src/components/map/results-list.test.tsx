@@ -1,7 +1,9 @@
-import { fireEvent, render, screen } from "@testing-library/react";
-import { describe, expect, it, vi } from "vitest";
+import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
+import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { ResultsList } from "@/components/map/results-list";
+
+afterEach(cleanup);
 
 describe("ResultsList empty state", () => {
   it("describes active filters and offers reset and contribution actions", () => {
@@ -29,5 +31,44 @@ describe("ResultsList empty state", () => {
 
     expect(onReset).toHaveBeenCalledOnce();
     expect(onSuggest).toHaveBeenCalledOnce();
+  });
+});
+
+describe("ResultsList verified badge", () => {
+  const place = {
+    id: "mum-library-07",
+    name: "City Library",
+    type: "library" as const,
+    city: "mumbai",
+    lat: 19.0176,
+    lng: 72.8562,
+    gmaps_link: "https://maps.google.com/?q=19.0176,72.8562",
+    added_by: "someone",
+  };
+
+  it("shows a badge for verified places", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[{ place: { ...place, verified: { by: "verifier", on: "2026-08-01" } } }]}
+        emptyState={{ activeFilters: [], onReset: vi.fn(), onSuggest: vi.fn() }}
+        onSelect={vi.fn()}
+      />,
+    );
+    expect(screen.getByText("Verified")).toBeTruthy();
+  });
+
+  it("shows no badge for unverified places", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[{ place }]}
+        emptyState={{ activeFilters: [], onReset: vi.fn(), onSuggest: vi.fn() }}
+        onSelect={vi.fn()}
+      />,
+    );
+    const row = screen.getByText("City Library").closest("li");
+    expect(row).not.toBeNull();
+    expect(within(row as HTMLElement).queryByText("Verified")).toBeNull();
   });
 });

@@ -7,6 +7,7 @@ import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
+import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 interface PinPopupProps {
   place: Place;
@@ -47,6 +48,7 @@ export function PinPopup({ place }: PinPopupProps) {
             <span className="text-muted-foreground">{PLACE_TYPE_LABELS[place.type]}</span>
           </div>
           <span className="text-muted-foreground">{humanizeCity(place.city)}</span>
+          <VerifiedBadge place={place} />
         </div>
       </div>
 
