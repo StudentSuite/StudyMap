@@ -16,7 +16,7 @@ import {
 } from "react-leaflet";
 
 import type { Place, PlaceType } from "@/lib/types";
-import { PLACE_TYPES } from "@/lib/types";
+import { PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import studyMapConfig from "../../../studymap.config";
 import type { Bounds } from "@/lib/places";
@@ -31,7 +31,7 @@ function emptyTypeCounts(): ClusterAggProps {
 }
 
 /** Builds a pie-style divIcon: a conic-gradient ring colored by place type, count in the middle. */
-function clusterIcon(counts: ClusterAggProps, total: number): L.DivIcon {
+function clusterIcon(counts: ClusterAggProps, total: number, label: string): L.DivIcon {
   let acc = 0;
   const stops: string[] = [];
   for (const type of PLACE_TYPES) {
@@ -44,11 +44,27 @@ function clusterIcon(counts: ClusterAggProps, total: number): L.DivIcon {
   }
   const size = total < 10 ? 36 : total < 50 ? 44 : 54;
   return L.divIcon({
-    html: `<div class="cluster-pie" style="width:${size}px;height:${size}px;background:conic-gradient(${stops.join(", ")});box-sizing:border-box;"><span>${total}</span></div>`,
+    html: `<div class="cluster-pie" style="width:${size}px;height:${size}px;background:conic-gradient(${stops.join(", ")});box-sizing:border-box;" role="button" tabindex="0" aria-label="${label}"><span>${total}</span></div>`,
     className: "cluster-pie-icon",
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
   });
+}
+
+/** Summarizes a cluster's contents for assistive tech, e.g. "Cluster of 11 places, mostly SAT centre". */
+function clusterLabel(counts: ClusterAggProps, total: number): string {
+  let dominant: PlaceType | null = null;
+  let dominantCount = 0;
+  for (const type of PLACE_TYPES) {
+    if (counts[type] > dominantCount) {
+      dominant = type;
+      dominantCount = counts[type];
+    }
+  }
+  if (!dominant || dominant === "other_places") {
+    return `Cluster of ${total} ${total === 1 ? "place" : "places"}`;
+  }
+  return `Cluster of ${total} ${total === 1 ? "place" : "places"}, mostly ${PLACE_TYPE_LABELS[dominant].toLowerCase()}`;
 }
 
 function pinIcon(color: string): L.DivIcon {
@@ -129,9 +145,18 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
             <Marker
               key={`cluster-${clusterId}`}
               position={[lat, lng]}
-              icon={clusterIcon(properties, count)}
+              icon={clusterIcon(properties, count, clusterLabel(properties, count))}
               eventHandlers={{
                 click: () => {
+                  const expansionZoom = Math.min(
+                    index.getClusterExpansionZoom(clusterId),
+                    18,
+                  );
+                  map.flyTo([lat, lng], expansionZoom, { duration: 0.5 });
+                },
+                keydown: (e) => {
+                  if (e.originalEvent.key !== "Enter" && e.originalEvent.key !== " ") return;
+                  e.originalEvent.preventDefault();
                   const expansionZoom = Math.min(
                     index.getClusterExpansionZoom(clusterId),
                     18,
@@ -290,9 +315,14 @@ function ScrollZoomGuard() {
   }, [map]);
 
   return (
-    <div className={`scroll-zoom-hint${hint ? " visible" : ""}`} aria-hidden>
-      Use Ctrl + scroll to zoom the map
-    </div>
+    <>
+      <div className={`scroll-zoom-hint${hint ? " visible" : ""}`} aria-hidden>
+        Use Ctrl + scroll to zoom the map
+      </div>
+      <span className="sr-only" role="note">
+        Zoom the map with the + and - keys, or Ctrl/Cmd + scroll
+      </span>
+    </>
   );
 }
 
