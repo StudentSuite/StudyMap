@@ -42,6 +42,31 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
 - `address`: optional, short, human-readable
 - `gmaps_link`: Google Maps share link (Share -> Copy link)
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
+- `verified` is the one exception (#126): a maintainer may add it after a
+  contributor re-checks a place. See [Verification](#verification) below.
+
+## Verification
+
+Places can carry an optional `verified` block recording that a contributor
+re-checked the place:
+
+```json
+"verified": {
+  "by": "your-github-handle",
+  "on": "2026-08-14"
+}
+```
+
+- `by` is the verifier's GitHub username; `on` is the ISO date (YYYY-MM-DD)
+  they checked it.
+- A verification stays valid for **12 months** — or **6 months** for exam
+  centres (`sat_centre` / `foreign_lang_exam_centre`), where a stale address
+  is worse than no address. After the window, the place should be verified
+  again or the block removed.
+- Verified places show a small badge on the map and in lists; unverified
+  places look exactly as before.
+- `npm run validate` fails on a malformed `verified` block (missing or empty
+  `by`, a non-date or impossible `on`, or extra keys).
 
 ## Quality gate (must pass before merge)
 

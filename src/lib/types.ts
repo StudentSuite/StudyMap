@@ -34,10 +34,19 @@ export function humanizeCity(city: City): string {
     .join(" ");
 }
 
+/** Who verified a place and when, for the optional `verified` badge. */
+export interface Verified {
+  /** GitHub username of the verifier. */
+  by: string;
+  /** ISO date (YYYY-MM-DD) the place was last verified. */
+  on: string;
+}
+
 /**
  * A public place pin. This is the entire committed record shape.
- * Proof of quality (source citation, Google Maps rating and review count,
- * verified date) lives in the contribution PR, not in this dataset.
+ * Proof of quality (source citation, Google Maps rating and review count)
+ * lives in the contribution PR, not in this dataset; the `verified` field is
+ * the one exception (#126).
  */
 export interface Place {
   id: string;
@@ -49,6 +58,8 @@ export interface Place {
   address?: string;
   gmaps_link: string;
   added_by: string;
+  /** Optional proof a contributor re-checked this place; verified places show a badge. */
+  verified?: Verified;
   /** Exam this place is a centre for, e.g. "SAT", "Goethe-Zertifikat (A1-C2)". */
   exam?: string;
   /** ISO date the centre's exam/address validity should be reconfirmed by. */
