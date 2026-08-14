@@ -191,6 +191,12 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
   );
 }
 
+export interface MapViewport {
+  lat: number;
+  lng: number;
+  zoom: number;
+}
+
 interface MapViewProps {
   places: Place[];
   userLocation?: LatLng | null;
@@ -203,6 +209,10 @@ interface MapViewProps {
   zoom?: number;
   /** Initial center, as [lat, lng]; falls back to the configured region center. */
   center?: [number, number];
+  /** When set, the map starts at this viewport instead of fitting all places. */
+  initialViewport?: MapViewport | null;
+  /** Fired on pan/zoom end with the current center and zoom. */
+  onViewportChange?: (viewport: MapViewport) => void;
   /** Increment to imperatively close all open popups. */
   closePopupTrigger?: number;
 }
@@ -327,6 +337,43 @@ function ScrollZoomGuard() {
 }
 
 /**
+ * Reports the map center and zoom to the parent whenever the user pans or
+ * zooms, so the URL can stay in sync (see #118). Dedupes identical values
+ * so an unchanged viewport never rewrites the URL.
+ */
+function ViewportReporter({
+  onViewportChange,
+}: {
+  onViewportChange: (viewport: MapViewport) => void;
+}) {
+  const map = useMap();
+  const last = useRef<string>("");
+
+  useEffect(() => {
+    function report() {
+      const center = map.getCenter();
+      const viewport = {
+        lat: Math.round(center.lat * 1e5) / 1e5,
+        lng: Math.round(center.lng * 1e5) / 1e5,
+        zoom: Math.round(map.getZoom() * 10) / 10,
+      };
+      const key = `${viewport.lat},${viewport.lng},${viewport.zoom}`;
+      if (key === last.current) return;
+      last.current = key;
+      onViewportChange(viewport);
+    }
+    map.on("moveend", report);
+    map.on("zoomend", report);
+    return () => {
+      map.off("moveend", report);
+      map.off("zoomend", report);
+    };
+  }, [map, onViewportChange]);
+
+  return null;
+}
+
+/**
  * Keeps Leaflet's tile grid in sync with the container's real size.
  * Without this, anything that resizes the map div (mobile browser chrome
  * collapsing, orientation change, the lg sidebar breakpoint) leaves stale
@@ -358,6 +405,8 @@ export default function MapView({
   interactive = true,
   zoom = studyMapConfig.defaultZoom,
   center = studyMapConfig.center,
+  initialViewport = null,
+  onViewportChange,
   closePopupTrigger = 0,
 }: MapViewProps) {
   const focusPlace = focusId
@@ -406,7 +455,10 @@ export default function MapView({
       <MapResizeHandler />
       <ClosePopupOnTrigger trigger={closePopupTrigger} />
       {interactive && <ScrollZoomGuard />}
-      {interactive && !userLocation && !focusPlace && !focusBounds && (
+      {interactive && onViewportChange && (
+        <ViewportReporter onViewportChange={onViewportChange} />
+      )}
+      {interactive && !userLocation && !focusPlace && !focusBounds && !initialViewport && (
         <FitAllOnMount places={places} />
       )}
 

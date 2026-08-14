@@ -11,6 +11,8 @@ import { humanizeCity, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
+import type { MapViewport } from "@/components/map/map-view";
+import studyMapConfig from "../../../studymap.config";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
 import {
@@ -61,6 +63,21 @@ export function PlacesMap({ places }: PlacesMapProps) {
     if (typeof window === "undefined") return null;
     return parseMapState(window.location.search).placeId ?? null;
   });
+  // A viewport in the URL restores that exact center/zoom on load instead of
+  // fitting all places; it is then kept in sync as the user pans (see #118).
+  const [viewport, setViewport] = React.useState<MapViewport | null>(() => {
+    if (typeof window === "undefined") return null;
+    const state = parseMapState(window.location.search);
+    if (state.lat === null || state.lng === null) return null;
+    return {
+      lat: state.lat,
+      lng: state.lng,
+      zoom: state.zoom ?? studyMapConfig.defaultZoom,
+    };
+  });
+  const handleViewportChange = React.useCallback((next: MapViewport) => {
+    setViewport(next);
+  }, []);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
   const [sortByDistance, setSortByDistance] = React.useState(false);
@@ -145,16 +162,21 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return () => clearTimeout(timer);
   }, [filters.query]);
 
-  // Mirror filter and focus state back into the URL so it stays shareable.
+  // Mirror filter, focus, and viewport state back into the URL so it stays
+  // shareable. replaceState keeps panning out of browser history, so the back
+  // button still leaves the map in one press (see #118).
   React.useEffect(() => {
     if (!hydrated.current) return;
     const search = mapStateToSearch({
       types: filters.types,
       city: filters.city,
       placeId: focusId,
+      lat: viewport?.lat ?? null,
+      lng: viewport?.lng ?? null,
+      zoom: viewport?.zoom ?? null,
     });
     window.history.replaceState(null, "", `${window.location.pathname}${search}`);
-  }, [filters, focusId]);
+  }, [filters, focusId, viewport]);
 
   const visible = React.useMemo(
     () =>
@@ -227,6 +249,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
       types: filters.types,
       city: filters.city,
       placeId: focusId,
+      lat: viewport?.lat ?? null,
+      lng: viewport?.lng ?? null,
+      zoom: viewport?.zoom ?? null,
     });
     navigator.clipboard
       .writeText(url)
@@ -331,6 +356,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
             focusId={focusId}
             focusBounds={focusBounds}
             closePopupTrigger={closePopupTrigger}
+            center={viewport ? [viewport.lat, viewport.lng] : undefined}
+            zoom={viewport?.zoom}
+            initialViewport={viewport}
+            onViewportChange={handleViewportChange}
           />
         </MapErrorBoundary>
 

@@ -23,7 +23,14 @@ function formatValidTill(iso: string): string {
 
 export function PinPopup({ place }: PinPopupProps) {
   function copyLink() {
-    const url = buildShareUrl({ types: [], city: null, placeId: place.id });
+    const url = buildShareUrl({
+      types: [],
+      city: null,
+      placeId: place.id,
+      lat: place.lat,
+      lng: place.lng,
+      zoom: 15,
+    });
     navigator.clipboard
       .writeText(url)
       .then(() => toast.success("Link copied"))
