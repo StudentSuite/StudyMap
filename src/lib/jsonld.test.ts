@@ -70,9 +70,9 @@ describe("placeJsonLd", () => {
   });
 
   it("omits geo when coordinates are missing instead of emitting nulls", () => {
-    const withoutLat = { ...place(), lat: undefined } as Place;
+    const withoutLat = ({ ...place(), lat: undefined } as unknown) as Place;
     expect(placeJsonLd(withoutLat)).not.toHaveProperty("geo");
-    const withoutLng = { ...place(), lng: undefined } as Place;
+    const withoutLng = ({ ...place(), lng: undefined } as unknown) as Place;
     expect(placeJsonLd(withoutLng)).not.toHaveProperty("geo");
   });
 
