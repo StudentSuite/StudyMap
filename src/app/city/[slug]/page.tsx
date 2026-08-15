@@ -8,6 +8,7 @@ import {
   placesByType,
 } from "@/lib/city-pages";
 import { getPlaces } from "@/lib/places";
+import { placeJsonLdScript } from "@/lib/jsonld";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -64,6 +65,15 @@ export default async function CityPage({ params }: CityPageProps) {
 
   return (
     <PageContainer>
+      {page.places.map((place) => (
+        <script
+          key={place.id}
+          type="application/ld+json"
+          // One schema.org/Place node per place: real fields only, no
+          // placeholders, geo omitted when coordinates are missing (#120).
+          dangerouslySetInnerHTML={{ __html: placeJsonLdScript(place) }}
+        />
+      ))}
       <p className="kicker">Places in</p>
       <h1 className="mt-3 font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         {name}
