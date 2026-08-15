@@ -159,6 +159,14 @@ export const docsNav: DocsNavEntry[] = [
     group: "Developers",
   },
   {
+    href: "/docs/places-api",
+    title: "Places API",
+    description: "Read the crowdsourced places dataset programmatically: GET /api/places, filters, pagination, and errors.",
+    icon: Database,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
     href: "/docs/self-hosting",
     title: "Self-Hosting Guide",
     description: "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
