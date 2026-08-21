@@ -320,6 +320,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     onResetFilters: () => setFilters({ types: [], city: null, query: "" }),
     resultsToggle,
     onSelectPlace: selectPlace,
+    focusId,
     onLocated,
     onShare: share,
     myPlaces: user
