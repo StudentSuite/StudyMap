@@ -327,7 +327,7 @@ function ScrollZoomGuard() {
   return (
     <>
       <div className={`scroll-zoom-hint${hint ? " visible" : ""}`} aria-hidden>
-        Use Ctrl + scroll to zoom the map
+        Use Ctrl/Cmd + scroll to zoom the map
       </div>
       <span className="sr-only" role="note">
         Zoom the map with the + and - keys, or Ctrl/Cmd + scroll
