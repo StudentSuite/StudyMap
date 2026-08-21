@@ -63,8 +63,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     if (typeof window === "undefined") return null;
     return parseMapState(window.location.search).placeId ?? null;
   });
-  // A viewport in the URL restores that exact center/zoom on load instead of
-  // fitting all places; it is then kept in sync as the user pans (see #118).
   const [viewport, setViewport] = React.useState<MapViewport | null>(() => {
     if (typeof window === "undefined") return null;
     const state = parseMapState(window.location.search);
@@ -110,8 +108,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return labels;
   }, [filters]);
 
-  // Clear stale saved-places/home data as soon as the signed-in user changes,
-  // during render rather than an effect, so there's no stale-data flash.
   const userId = user?.id ?? null;
   if (userId !== lastUserId) {
     setLastUserId(userId);
@@ -126,7 +122,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   React.useEffect(() => {
     const supabase = createClient();
-    if (!supabase) return; // self-host / preview mode: no auth, no private layer
+    if (!supabase) return;
     supabase.auth.getUser().then(({ data }) => setUser(data.user));
     const {
       data: { subscription },
@@ -152,8 +148,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     fetchUserHome().then(setHome).catch(() => setHome(null));
   }, [user]);
 
-  // Debounce the search query so filtering doesn't run on every keystroke.
-  // Clearing the box applies immediately (0 ms); typing waits 250 ms.
   React.useEffect(() => {
     const timer = setTimeout(
       () => setDebouncedQuery(filters.query),
@@ -162,9 +156,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return () => clearTimeout(timer);
   }, [filters.query]);
 
-  // Mirror filter, focus, and viewport state back into the URL so it stays
-  // shareable. replaceState keeps panning out of browser history, so the back
-  // button still leaves the map in one press (see #118).
   React.useEffect(() => {
     if (!hydrated.current) return;
     const search = mapStateToSearch({
@@ -201,8 +192,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     [places, filters.city],
   );
 
-  // Private layer: saved places always render on top of the public set,
-  // independent of the public search/type/city filters above.
   const privatePlaces = React.useMemo(
     () => savedPlaces.map(userPlaceToPlace),
     [savedPlaces],
@@ -219,7 +208,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return placesByDistance(visible, userLocation);
   }, [visible, userLocation]);
 
-  // Build the results list: nearest-first when located, otherwise all visible.
   const { rows, resultsHeader, resultsToggle } = React.useMemo(() => {
     if (userLocation && byDistance.length > 0) {
       const shown = sortByDistance ? byDistance : byDistance.slice(0, 5);
@@ -253,6 +241,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
       lng: viewport?.lng ?? null,
       zoom: viewport?.zoom ?? null,
     });
+    if (!("clipboard" in navigator)) {
+      toast.error("Copying isn't supported in this browser");
+      return;
+    }
     navigator.clipboard
       .writeText(url)
       .then(() => toast.success("Link copied"))
@@ -305,7 +297,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   function selectPlace(place: Place) {
     setFocusId(place.id);
-    setSheetOpen(false); // collapse the mobile sheet so the pin is visible
+    setSheetOpen(false);
   }
 
   const panelProps = {
@@ -342,12 +334,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
 
   return (
     <div className="flex h-full w-full overflow-hidden">
-      {/* Desktop sidebar */}
       <aside className="hidden w-[360px] shrink-0 flex-col overflow-hidden border-r border-border bg-card p-4 lg:flex">
         <MapPanel {...panelProps} showSearch showNearMe scrollChips />
       </aside>
 
-      {/* Map + mobile overlays */}
       <div className="relative min-w-0 flex-1">
         <MapErrorBoundary>
           <MapView
@@ -363,7 +353,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
           />
         </MapErrorBoundary>
 
-        {/* Mobile top bar: persistent search + filters trigger */}
         <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex gap-2 lg:hidden">
           <div className="pointer-events-auto relative flex-1">
             <Search className="pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
@@ -387,42 +376,31 @@ export function PlacesMap({ places }: PlacesMapProps) {
           </Button>
         </div>
 
-        {/* Mobile near-me FAB, lifted above the peek bar */}
         <NearMeFab
           onLocated={onLocated}
           className="absolute bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
         />
 
-        {/* Mobile peek bar: always-visible results summary; tap to open sheet */}
         <button
           type="button"
           onClick={openSheet}
           aria-label="Open places and filters"
-          className="absolute inset-x-0 bottom-0 z-[1000] flex min-h-14 items-center justify-between border-t border-border bg-card px-4 py-3 text-left shadow-[0_-4px_16px_-8px_rgba(0,0,0,0.3)] lg:hidden"
+          className="absolute inset-x-0 bottom-0 z-[1000] flex min-h-14 items-center justify-between border-t border-border bg-card/95 px-4 py-2 shadow-lg backdrop-blur lg:hidden"
         >
-          <span className="text-sm font-semibold text-foreground">
-            {visible.length} {visible.length === 1 ? "place" : "places"} shown
-          </span>
-          <span className="flex items-center gap-1 text-sm text-muted-foreground">
-            {userLocation ? "Nearest" : "Browse"}
-            <ChevronUp className="size-5" />
-          </span>
+          <div className="min-w-0 text-left">
+            <p className="truncate text-sm font-semibold text-foreground">{resultsHeader}</p>
+            <p className="text-xs text-muted-foreground">{visible.length} places</p>
+          </div>
+          <ChevronUp className="size-5 shrink-0 text-muted-foreground" />
         </button>
 
-        {/* Mobile bottom sheet */}
         <MapSheet
           open={sheetOpen}
           onOpenChange={setSheetOpen}
           snap={snap}
           onSnapChange={setSnap}
-        >
-          <MapPanel
-            {...panelProps}
-            showSearch={false}
-            showNearMe={false}
-            scrollChips
-          />
-        </MapSheet>
+          {...panelProps}
+        />
       </div>
 
       {user && (
