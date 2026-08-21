@@ -24,6 +24,7 @@ interface ResultsListProps {
     onSuggest: () => void;
   };
   onSelect: (place: Place) => void;
+  focusId?: string | null;
   /** Optional expand/collapse control (e.g. "Show all" for the nearest list). */
   toggle?: { label: string; onClick: () => void } | null;
 }
@@ -34,6 +35,7 @@ export function ResultsList({
   rows,
   emptyState,
   onSelect,
+  focusId,
   toggle,
 }: ResultsListProps) {
   return (
@@ -81,44 +83,52 @@ export function ResultsList({
         </div>
       ) : (
         <ul className="min-h-0 space-y-1 overflow-y-auto">
-          {rows.map(({ place, distanceKm }) => (
-            <li key={place.id}>
-              <div className="group flex items-center gap-2.5 rounded-md px-2 py-2 hover:bg-muted">
-                <span
-                  aria-hidden
-                  className="size-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-                />
-                <button
-                  type="button"
-                  onClick={() => onSelect(place)}
-                  className="min-w-0 flex-1 text-left"
-                  title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
+          {rows.map(({ place, distanceKm }) => {
+            const focused = focusId === place.id;
+            return (
+              <li key={place.id}>
+                <div
+                  className={`group flex items-center gap-2.5 rounded-md px-2 py-2 ${
+                    focused ? "bg-muted ring-1 ring-border" : "hover:bg-muted"
+                  }`}
                 >
-                  <span className="flex items-center gap-1.5">
-                    <span className="block truncate text-sm text-foreground">
-                      {place.name}
+                  <span
+                    aria-hidden
+                    className="size-3 shrink-0 rounded-full"
+                    style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => onSelect(place)}
+                    aria-current={focused ? "true" : undefined}
+                    className="min-w-0 flex-1 text-left"
+                    title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <span className="block truncate text-sm text-foreground">
+                        {place.name}
+                      </span>
+                      <VerifiedBadge place={place} />
                     </span>
-                    <VerifiedBadge place={place} />
-                  </span>
-                  <span className="block truncate text-xs text-muted-foreground">
-                    {PLACE_TYPE_LABELS[place.type]}
-                    {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
-                  </span>
-                </button>
-                <a
-                  href={directionsUrl(place.lat, place.lng)}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  aria-label={`Directions to ${place.name}`}
-                  className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
-                >
-                  <Navigation className="size-4" />
-                </a>
-              </div>
-            </li>
-          ))}
+                    <span className="block truncate text-xs text-muted-foreground">
+                      {PLACE_TYPE_LABELS[place.type]}
+                      {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
+                    </span>
+                  </button>
+                  <a
+                    href={directionsUrl(place.lat, place.lng)}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`Directions to ${place.name}`}
+                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                  >
+                    <Navigation className="size-4" />
+                  </a>
+                </div>
+              </li>
+            );
+          })}
         </ul>
       )}
     </div>
