@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 
 import {
   cityPageSlugs,
-  cityPages,
+  findCityPage,
   placesByType,
 } from "@/lib/city-pages";
 import { getPlaces } from "@/lib/places";
@@ -28,23 +28,11 @@ interface CityPageProps {
   params: Promise<{ slug: string }>;
 }
 
-// Next may pass a still-encoded segment (e.g. "%E5%8E%A6%E9%97%A8" for the
-// city 厦门), so decode before comparing against dataset slugs.
-function decodeSlug(raw: string): string {
-  try {
-    return decodeURIComponent(raw);
-  } catch {
-    return raw;
-  }
-}
-
 export async function generateMetadata({
   params,
 }: CityPageProps): Promise<Metadata> {
   const { slug } = await params;
-  const page = cityPages(getPlaces()).find(
-    (candidate) => candidate.slug === decodeSlug(slug),
-  );
+  const page = findCityPage(getPlaces(), slug);
   if (!page) return {};
   const name = humanizeCity(page.city);
   return {
@@ -55,9 +43,7 @@ export async function generateMetadata({
 
 export default async function CityPage({ params }: CityPageProps) {
   const { slug } = await params;
-  const page = cityPages(getPlaces()).find(
-    (candidate) => candidate.slug === decodeSlug(slug),
-  );
+  const page = findCityPage(getPlaces(), slug);
   if (!page) notFound();
 
   const name = humanizeCity(page.city);

@@ -66,6 +66,26 @@ export function cityPageSlugs(places: Place[]): { slug: string }[] {
   return cityPages(places).map(({ slug }) => ({ slug }));
 }
 
+/**
+ * Find a city page by the raw slug Next hands a route (page or image file).
+ * The segment may still be percent-encoded (e.g. "%E5%8E%A6%E9%97%A8" for
+ * 厦门), so decode before comparing against dataset slugs; malformed
+ * sequences fall back to the raw value. Returns undefined — not an error —
+ * for slugs outside the dataset, leaving 404 policy to the caller.
+ */
+export function findCityPage(
+  places: Place[],
+  rawSlug: string,
+): CityPage | undefined {
+  let slug = rawSlug;
+  try {
+    slug = decodeURIComponent(rawSlug);
+  } catch {
+    // Keep the raw segment rather than throwing on malformed input.
+  }
+  return cityPages(places).find((candidate) => candidate.slug === slug);
+}
+
 /** A city's places grouped by type, in the canonical PLACE_TYPES order. */
 export function placesByType(places: Place[]): [PlaceType, Place[]][] {
   return (PLACE_TYPES.map(
