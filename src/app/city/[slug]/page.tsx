@@ -37,7 +37,7 @@ export async function generateMetadata({
   const name = humanizeCity(page.city);
   return {
     title: `${name} — student places`,
-    description: `Student-important places in ${name}: ${page.places.length} exam centre${page.places.length === 1 ? "" : "s"}, library${page.places.length === 1 ? "" : "ies"} and more, on the crowdsourced StudyMap.`,
+    description: `Student-important places in ${name}: ${page.places.length} exam centre${page.places.length === 1 ? "" : "s"}, ${page.places.length === 1 ? "library" : "libraries"} and more, on the crowdsourced StudyMap.`,
   };
 }
 
