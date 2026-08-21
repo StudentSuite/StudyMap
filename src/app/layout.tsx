@@ -22,7 +22,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: site.name,
     description: site.tagline,
-    images: ["/brand/og.svg"],
+    // PNG, not SVG: crawlers (Facebook, X, WhatsApp, iMessage) refuse SVG
+    // og:image, so an SVG fallback never unfurls outside the site itself.
+    images: ["/brand/og.png"],
   },
   manifest: "/manifest.webmanifest",
   appleWebApp: {

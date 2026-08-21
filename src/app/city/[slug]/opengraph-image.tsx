@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { notFound } from "next/navigation";
 
-import { cityPages, cityPageSlugs } from "@/lib/city-pages";
+import { cityPageSlugs, findCityPage } from "@/lib/city-pages";
 import { getPlaces } from "@/lib/places";
 import { ogCitySummary } from "@/lib/og";
 
@@ -18,25 +18,21 @@ export function generateStaticParams(): { slug: string }[] {
   return cityPageSlugs(getPlaces());
 }
 
-// Next may pass a still-encoded segment (e.g. "%E5%8E%A6%E9%97%A8" for the
-// city 厦门), so decode before comparing against dataset slugs — mirrors the
-// city page's own decodeSlug.
-function decodeSlug(raw: string): string {
-  try {
-    return decodeURIComponent(raw);
-  } catch {
-    return raw;
-  }
-}
-
 // next/og runs on the edge runtime, where there is no system font to rely
 // on — fetch the brand typeface instead. Request the CSS with a legacy
 // user-agent so Google returns truetype URLs: the image renderer reads
-// ttf/otf, not woff2. The result is cached for the process lifetime (the
+// ttf/otf, not woff2. Each font carries the weight parsed from its own
+// @font-face block, so a changed block count or order can never silently
+// mislabel weights. The result is cached for the process lifetime (the
 // build, for these static pages).
-let headingFontPromise: Promise<ArrayBuffer[] | null> | null = null;
+interface HeadingFont {
+  data: ArrayBuffer;
+  weight: 400 | 700;
+}
 
-function loadHeadingFonts(): Promise<ArrayBuffer[] | null> {
+let headingFontPromise: Promise<HeadingFont[] | null> | null = null;
+
+function loadHeadingFonts(): Promise<HeadingFont[] | null> {
   if (!headingFontPromise) {
     headingFontPromise = (async () => {
       try {
@@ -44,16 +40,24 @@ function loadHeadingFonts(): Promise<ArrayBuffer[] | null> {
           "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap",
           { headers: { "User-Agent": "Mozilla/4.0" } },
         ).then((response) => response.text());
-        const fonts: ArrayBuffer[] = [];
+        const byWeight = new Map<400 | 700, ArrayBuffer>();
         for (const block of css.matchAll(/@font-face\s*\{([^}]+)\}/g)) {
           const url = block[1].match(
             /url\((https:\/\/fonts\.gstatic\.com\/[^)]+\.ttf)\)/,
           )?.[1];
-          if (url) {
-            fonts.push(await fetch(url).then((response) => response.arrayBuffer()));
-          }
+          const weight = Number(
+            block[1].match(/font-weight:\s*(\d+)/)?.[1],
+          );
+          if (!url || (weight !== 400 && weight !== 700)) continue;
+          if (byWeight.has(weight)) continue;
+          byWeight.set(
+            weight,
+            await fetch(url).then((response) => response.arrayBuffer()),
+          );
         }
-        return fonts.length ? fonts : null;
+        return byWeight.size
+          ? Array.from(byWeight, ([weight, data]) => ({ data, weight }))
+          : null;
       } catch {
         // Unreachable font host must not fail the build: fall back to a
         // system stack rather than shipping no image at all.
@@ -70,17 +74,15 @@ interface CityOgImageProps {
 
 export default async function CityOgImage({ params }: CityOgImageProps) {
   const { slug } = await params;
-  const page = cityPages(getPlaces()).find(
-    (candidate) => candidate.slug === decodeSlug(slug),
-  );
+  const page = findCityPage(getPlaces(), slug);
   if (!page) notFound();
 
   const summary = ogCitySummary(page);
   const fontData = await loadHeadingFonts();
-  const fonts = (fontData ?? []).map((data, index) => ({
+  const fonts = (fontData ?? []).map(({ data, weight }) => ({
     data,
     name: "Space Grotesk",
-    weight: (index === 0 ? 400 : 700) as 400 | 700,
+    weight,
     style: "normal" as const,
   }));
   const fontFamily = fontData
