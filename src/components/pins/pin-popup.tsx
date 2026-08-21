@@ -44,6 +44,7 @@ export function PinPopup({ place }: PinPopupProps) {
 
   return (
     <div className="flex min-w-[200px] max-w-[260px] flex-col gap-3">
+      {/* Header */}
       <div className="space-y-1">
         <p className="text-sm font-semibold leading-tight text-foreground">
           {place.name}
@@ -62,10 +63,12 @@ export function PinPopup({ place }: PinPopupProps) {
         </div>
       </div>
 
+      {/* Address */}
       {place.address && (
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
       )}
 
+      {/* Exam centre validity */}
       {place.exam && (
         <div className="rounded-md border border-border/60 bg-muted/50 px-2 py-1.5 text-[11px] leading-snug text-muted-foreground">
           <span className="font-medium text-foreground">{place.exam}</span> centre
@@ -75,6 +78,7 @@ export function PinPopup({ place }: PinPopupProps) {
         </div>
       )}
 
+      {/* Actions */}
       <div className="flex items-center gap-2">
         <a
           href={directionsUrl(place.lat, place.lng)}
@@ -96,6 +100,7 @@ export function PinPopup({ place }: PinPopupProps) {
         </button>
       </div>
 
+      {/* Footer badge */}
       <div className="border-t border-border/30 pt-2">
         <p className="text-[11px] text-muted-foreground/75">Added by <span className="font-medium text-muted-foreground">{place.added_by}</span></p>
       </div>
