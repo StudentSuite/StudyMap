@@ -21,19 +21,22 @@ function parseList(raw: string | null, allowed: Set<string>): string[] {
     .filter((value) => allowed.has(value));
 }
 
-function parseNumber(raw: string | null): number | null {
+function parseNumber(raw: string | null, min?: number, max?: number): number | null {
   if (raw === null || raw.trim() === "") return null;
   const value = Number(raw);
-  return Number.isFinite(value) ? value : null;
+  if (!Number.isFinite(value)) return null;
+  if (min !== undefined && value < min) return null;
+  if (max !== undefined && value > max) return null;
+  return value;
 }
 
 /** Read filter, focused-pin, and viewport state out of a URL query string. */
 export function parseMapState(search: string): MapShareState {
   const params = new URLSearchParams(search);
   const city = params.get("city")?.trim() || null;
-  const lat = parseNumber(params.get("lat"));
-  const lng = parseNumber(params.get("lng"));
-  const zoom = parseNumber(params.get("zoom"));
+  const lat = parseNumber(params.get("lat"), -90, 90);
+  const lng = parseNumber(params.get("lng"), -180, 180);
+  const zoom = parseNumber(params.get("zoom"), 0, 20);
   // A viewport only makes sense with both coordinates; otherwise ignore all three.
   const hasViewport = lat !== null && lng !== null;
   return {
