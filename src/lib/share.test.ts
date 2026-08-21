@@ -75,6 +75,30 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
     expect(bogus.lng).toBeNull();
   });
 
+  it("rejects out-of-range viewport coordinates and zoom", () => {
+    expect(parseMapState("?lat=90&lng=180&zoom=20")).toMatchObject({
+      lat: 90,
+      lng: 180,
+      zoom: 20,
+    });
+
+    expect(parseMapState("?lat=91&lng=180&zoom=20")).toMatchObject({
+      lat: null,
+      lng: null,
+      zoom: null,
+    });
+    expect(parseMapState("?lat=-90&lng=-181&zoom=20")).toMatchObject({
+      lat: null,
+      lng: null,
+      zoom: null,
+    });
+    expect(parseMapState("?lat=0&lng=0&zoom=21")).toMatchObject({
+      lat: 0,
+      lng: 0,
+      zoom: null,
+    });
+  });
+
   it("omits the zoom when it is null", () => {
     const search = mapStateToSearch({ ...emptyState, lat: 19.076, lng: 72.8777 });
     expect(search).toBe("?lat=19.076&lng=72.8777");
