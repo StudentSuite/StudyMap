@@ -83,52 +83,49 @@ export function ResultsList({
         </div>
       ) : (
         <ul className="min-h-0 space-y-1 overflow-y-auto">
-          {rows.map(({ place, distanceKm }) => {
-            const focused = focusId === place.id;
-            return (
-              <li key={place.id}>
-                <div
-                  className={`group flex items-center gap-2.5 rounded-md px-2 py-2 ${
-                    focused ? "bg-muted ring-1 ring-border" : "hover:bg-muted"
-                  }`}
+          {rows.map(({ place, distanceKm }) => (
+            <li key={place.id}>
+              <div
+                className={`group flex items-center gap-2.5 rounded-md px-2 py-2 ${
+                  focusId === place.id ? "bg-muted ring-1 ring-border" : "hover:bg-muted"
+                }`}
+              >
+                <span
+                  aria-hidden
+                  className="size-3 shrink-0 rounded-full"
+                  style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
+                />
+                <button
+                  type="button"
+                  onClick={() => onSelect(place)}
+                  aria-current={focusId === place.id ? "true" : undefined}
+                  className="min-w-0 flex-1 text-left"
+                  title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
                 >
-                  <span
-                    aria-hidden
-                    className="size-3 shrink-0 rounded-full"
-                    style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-                  />
-                  <button
-                    type="button"
-                    onClick={() => onSelect(place)}
-                    aria-current={focused ? "true" : undefined}
-                    className="min-w-0 flex-1 text-left"
-                    title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
-                  >
-                    <span className="flex items-center gap-1.5">
-                      <span className="block truncate text-sm text-foreground">
-                        {place.name}
-                      </span>
-                      <VerifiedBadge place={place} />
+                  <span className="flex items-center gap-1.5">
+                    <span className="block truncate text-sm text-foreground">
+                      {place.name}
                     </span>
-                    <span className="block truncate text-xs text-muted-foreground">
-                      {PLACE_TYPE_LABELS[place.type]}
-                      {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
-                    </span>
-                  </button>
-                  <a
-                    href={directionsUrl(place.lat, place.lng)}
-                    target="_blank"
-                    rel="noreferrer"
-                    onClick={(e) => e.stopPropagation()}
-                    aria-label={`Directions to ${place.name}`}
-                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
-                  >
-                    <Navigation className="size-4" />
-                  </a>
-                </div>
-              </li>
-            );
-          })}
+                    <VerifiedBadge place={place} />
+                  </span>
+                  <span className="block truncate text-xs text-muted-foreground">
+                    {PLACE_TYPE_LABELS[place.type]}
+                    {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
+                  </span>
+                </button>
+                <a
+                  href={directionsUrl(place.lat, place.lng)}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={(e) => e.stopPropagation()}
+                  aria-label={`Directions to ${place.name}`}
+                  className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                >
+                  <Navigation className="size-4" />
+                </a>
+              </div>
+            </li>
+          ))}
         </ul>
       )}
     </div>
