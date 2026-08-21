@@ -26,7 +26,7 @@ export function Navbar() {
   React.useEffect(() => {
     const supabase = createClient();
     if (!supabase) return;
-    supabase.auth.getUser().then(({ data }) => setLoggedIn(!!data.user));
+    supabase.auth.getUser().then(({ data }) => setLoggedIn(!!data.user)).catch(() => setLoggedIn(false));
     const { data: { subscription } } = supabase.auth.onAuthStateChange(
       (_, session) => setLoggedIn(!!session),
     );
