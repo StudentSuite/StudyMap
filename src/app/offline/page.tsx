@@ -35,7 +35,7 @@ export default function OfflinePage() {
         </div>
       </div>
       <Button asChild className="mt-6">
-        <Link href="/">Back to the map</Link>
+        <Link href="/map">Back to the map</Link>
       </Button>
     </div>
   );
