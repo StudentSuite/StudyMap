@@ -60,8 +60,6 @@ export function UserPlaceDialog({
   const [error, setError] = React.useState<string | null>(null);
   const [lastResetKey, setLastResetKey] = React.useState<string | null>(null);
 
-  // Re-fill the form during render (not an effect) each time the dialog
-  // opens, or opens for a different place, so there's no stale-data flash.
   const resetKey = open ? place?.id ?? "new" : null;
   if (resetKey !== lastResetKey) {
     setLastResetKey(resetKey);
@@ -99,8 +97,17 @@ export function UserPlaceDialog({
 
   const latNum = Number(lat);
   const lngNum = Number(lng);
+  const latError = lat !== "" && (Number.isNaN(latNum) || latNum < -90 || latNum > 90);
+  const lngError = lng !== "" && (Number.isNaN(lngNum) || lngNum < -180 || lngNum > 180);
   const isValid =
-    name.trim() && city.trim() && lat !== "" && lng !== "" && !Number.isNaN(latNum) && !Number.isNaN(lngNum);
+    name.trim() &&
+    city.trim() &&
+    lat !== "" &&
+    lng !== "" &&
+    !Number.isNaN(latNum) &&
+    !Number.isNaN(lngNum) &&
+    !latError &&
+    !lngError;
 
   async function handleSave() {
     if (!isValid) return;
@@ -154,9 +161,6 @@ export function UserPlaceDialog({
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        // Only the X button or Escape should close this form. Ignoring
-        // outside pointer/interaction events keeps a stray click (or a
-        // click-injecting browser extension) from dismissing it mid-edit.
         onPointerDownOutside={(e) => e.preventDefault()}
         onInteractOutside={(e) => e.preventDefault()}
       >
@@ -212,7 +216,11 @@ export function UserPlaceDialog({
                 step="any"
                 value={lat}
                 onChange={(e) => setLat(e.target.value)}
+                aria-invalid={latError}
               />
+              {latError && (
+                <p className="text-sm text-destructive">Latitude must be between -90 and 90.</p>
+              )}
             </div>
             <div className="grid gap-1.5">
               <Label htmlFor="user-place-lng">Longitude</Label>
@@ -222,7 +230,11 @@ export function UserPlaceDialog({
                 step="any"
                 value={lng}
                 onChange={(e) => setLng(e.target.value)}
+                aria-invalid={lngError}
               />
+              {lngError && (
+                <p className="text-sm text-destructive">Longitude must be between -180 and 180.</p>
+              )}
             </div>
           </div>
 
