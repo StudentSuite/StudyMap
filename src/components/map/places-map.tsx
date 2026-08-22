@@ -253,6 +253,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
       lng: viewport?.lng ?? null,
       zoom: viewport?.zoom ?? null,
     });
+    if (!("clipboard" in navigator)) {
+      toast.error("Copying isn't supported in this browser");
+      return;
+    }
     navigator.clipboard
       .writeText(url)
       .then(() => toast.success("Link copied"))

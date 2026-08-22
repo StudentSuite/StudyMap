@@ -32,6 +32,10 @@ export function PinPopup({ place }: PinPopupProps) {
       lng: place.lng,
       zoom: 15,
     });
+    if (!("clipboard" in navigator)) {
+      toast.error("Copying isn't supported in this browser");
+      return;
+    }
     navigator.clipboard
       .writeText(url)
       .then(() => toast.success("Link copied"))
