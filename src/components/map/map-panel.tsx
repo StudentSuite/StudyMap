@@ -52,6 +52,7 @@ interface MapPanelProps {
   onResetFilters: () => void;
   resultsToggle?: { label: string; onClick: () => void } | null;
   onSelectPlace: (place: Place) => void;
+  focusId?: string | null;
 
   onLocated: (loc: LatLng) => void;
   onShare: () => void;
@@ -82,6 +83,7 @@ export function MapPanel({
   onResetFilters,
   resultsToggle,
   onSelectPlace,
+  focusId,
   onLocated,
   onShare,
   myPlaces,
@@ -201,6 +203,7 @@ export function MapPanel({
           onSuggest: () => setSuggestOpen(true),
         }}
         onSelect={onSelectPlace}
+        focusId={focusId}
         toggle={resultsToggle}
       />
 

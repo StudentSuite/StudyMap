@@ -24,6 +24,7 @@ interface ResultsListProps {
     onSuggest: () => void;
   };
   onSelect: (place: Place) => void;
+  focusId?: string | null;
   /** Optional expand/collapse control (e.g. "Show all" for the nearest list). */
   toggle?: { label: string; onClick: () => void } | null;
 }
@@ -34,6 +35,7 @@ export function ResultsList({
   rows,
   emptyState,
   onSelect,
+  focusId,
   toggle,
 }: ResultsListProps) {
   return (
@@ -83,7 +85,11 @@ export function ResultsList({
         <ul className="min-h-0 space-y-1 overflow-y-auto">
           {rows.map(({ place, distanceKm }) => (
             <li key={place.id}>
-              <div className="group flex items-center gap-2.5 rounded-md px-2 py-2 hover:bg-muted">
+              <div
+                className={`group flex items-center gap-2.5 rounded-md px-2 py-2 ${
+                  focusId === place.id ? "bg-muted ring-1 ring-border" : "hover:bg-muted"
+                }`}
+              >
                 <span
                   aria-hidden
                   className="size-3 shrink-0 rounded-full"
@@ -92,6 +98,7 @@ export function ResultsList({
                 <button
                   type="button"
                   onClick={() => onSelect(place)}
+                  aria-current={focusId === place.id ? "true" : undefined}
                   className="min-w-0 flex-1 text-left"
                   title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
                 >
