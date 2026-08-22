@@ -1,11 +1,21 @@
-// StudyMap service worker. Caches the app shell and visited map tiles so the
-// map still opens on exam day with a weak or absent signal.
+// StudyMap service worker template. scripts/build-sw.mjs replaces the build ID
+// token before Next.js packages public/sw.js for deployment.
 
-const VERSION = "studymap-v1";
-const APP_CACHE = `app-${VERSION}`;
-const TILE_CACHE = `tiles-${VERSION}`;
+const VERSION = __STUDYMAP_BUILD_ID__;
+const APP_CACHE = `studymap-app-${VERSION}`;
+const TILE_CACHE = `studymap-tiles-${VERSION}`;
 const TILE_LIMIT = 300;
-const PRECACHE = ["/", "/offline", "/manifest.webmanifest"];
+const PRECACHE = ["/", "/map", "/offline", "/manifest.webmanifest"];
+const STUDYMAP_CACHE_PREFIXES = ["studymap-app-", "studymap-tiles-"];
+const LEGACY_CACHE_NAMES = new Set(["app-studymap-v1", "tiles-studymap-v1"]);
+const ACTIVE_CACHES = new Set([APP_CACHE, TILE_CACHE]);
+
+function isStudyMapCache(name) {
+  return (
+    LEGACY_CACHE_NAMES.has(name) ||
+    STUDYMAP_CACHE_PREFIXES.some((prefix) => name.startsWith(prefix))
+  );
+}
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
@@ -23,9 +33,10 @@ self.addEventListener("activate", (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys();
-      await Promise.all(
-        keys.filter((key) => !key.endsWith(VERSION)).map((key) => caches.delete(key)),
+      const staleStudyMapCaches = keys.filter(
+        (key) => isStudyMapCache(key) && !ACTIVE_CACHES.has(key),
       );
+      await Promise.all(staleStudyMapCaches.map((key) => caches.delete(key)));
       await self.clients.claim();
     })(),
   );
@@ -34,7 +45,26 @@ self.addEventListener("activate", (event) => {
 async function trimCache(name, max) {
   const cache = await caches.open(name);
   const keys = await cache.keys();
-  if (keys.length > max) await cache.delete(keys[0]);
+  const excess = keys.length - max;
+  if (excess <= 0) return;
+  await Promise.all(keys.slice(0, excess).map((key) => cache.delete(key)));
+}
+
+// Cache writes are serialized so concurrent tile responses cannot race the
+// limit check and leave more than TILE_LIMIT entries behind.
+let tileMutationQueue = Promise.resolve();
+
+function cacheTile(request, response) {
+  const update = tileMutationQueue.then(async () => {
+    const cache = await caches.open(TILE_CACHE);
+    await cache.put(request, response);
+    await trimCache(TILE_CACHE, TILE_LIMIT);
+  });
+
+  // Keep the queue usable even if one cache write fails. The caller still gets
+  // the original rejection so it can report the failed cache update.
+  tileMutationQueue = update.catch(() => {});
+  return update;
 }
 
 self.addEventListener("fetch", (event) => {
@@ -53,8 +83,11 @@ self.addEventListener("fetch", (event) => {
         try {
           const res = await fetch(request);
           if (res.ok) {
-            cache.put(request, res.clone());
-            trimCache(TILE_CACHE, TILE_LIMIT);
+            try {
+              await cacheTile(request, res.clone());
+            } catch (err) {
+              console.warn("[SW] Tile cache update failed:", err);
+            }
           }
           return res;
         } catch (err) {
