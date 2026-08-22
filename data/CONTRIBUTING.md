@@ -89,3 +89,15 @@ One place per commit is fine. Multiple places of the same type in one commit is 
 
 - Run `npm run dev` and verify the pin lands on the correct spot on the map before opening a PR.
 - If adding many places at once, batch by type (one commit per file).
+
+## Adding a new place type (maintainers)
+
+The list of valid place types lives in more than one place. Adding a type #7
+(e.g. a new `<type>.json`) also requires:
+
+1. `src/lib/types.ts` — extend `PLACE_TYPES` (labels/colors derive from it)
+2. `data/places.schema.json` — extend the `type` enum
+3. `.github/ISSUE_TEMPLATE/add-place.yml` — extend the dropdown
+4. A DB migration for the `user_places.type` CHECK constraint
+   (`supabase/migrations/20260822_harden_user_places.sql`) so saved places of
+   the new type pass validation
