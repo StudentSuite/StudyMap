@@ -27,9 +27,15 @@ export function NearMeButton({ onLocated, className }: NearMeButtonProps) {
         setBusy(false);
         onLocated({ lat: pos.coords.latitude, lng: pos.coords.longitude });
       },
-      () => {
+      (err) => {
         setBusy(false);
-        setError("Could not read your location.");
+        setError(
+          err.code === err.PERMISSION_DENIED
+            ? "Allow location access in your browser settings."
+            : err.code === err.TIMEOUT
+              ? "Location request timed out. Try again."
+              : "Your location could not be determined. Try again.",
+        );
       },
       { enableHighAccuracy: true, timeout: 10000 },
     );
@@ -47,7 +53,11 @@ export function NearMeButton({ onLocated, className }: NearMeButtonProps) {
         <LocateFixed className="size-4" />
         {busy ? "Locating..." : "Near me"}
       </Button>
-      {error && <p className="mt-1 text-xs text-destructive">{error}</p>}
+      {error && (
+        <p className="mt-1 text-xs text-destructive" role="alert">
+          {error}
+        </p>
+      )}
     </div>
   );
 }
