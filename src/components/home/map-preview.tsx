@@ -32,6 +32,27 @@ export function MapPreview({ places }: { places: Place[] }) {
         Live data, OpenStreetMap
       </div>
 
+      <div className="absolute bottom-2 left-2 z-[1001] rounded bg-background/90 px-1.5 py-0.5 text-[0.65rem] leading-tight text-muted-foreground shadow-sm">
+        <a
+          href="https://www.maptiler.com/copyright/"
+          target="_blank"
+          rel="noreferrer"
+          className="pointer-events-auto underline underline-offset-2"
+        >
+          MapTiler
+        </a>{" "}
+        <span aria-hidden="true">·</span>{" "}
+        <a
+          href="https://www.openstreetmap.org/copyright"
+          target="_blank"
+          rel="noreferrer"
+          className="pointer-events-auto underline underline-offset-2"
+        >
+          OpenStreetMap
+        </a>{" "}
+        contributors
+      </div>
+
       <Link
         href="/map"
         aria-label="Open the full interactive map"
