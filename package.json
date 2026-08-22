@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "validate": "node scripts/validate-places.mjs",
+    "check:freshness": "node scripts/check-data-freshness.mjs",
     "test:unit": "vitest run"
   },
   "dependencies": {
