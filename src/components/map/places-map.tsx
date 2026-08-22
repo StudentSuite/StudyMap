@@ -61,7 +61,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [debouncedQuery, setDebouncedQuery] = React.useState("");
   const [focusId, setFocusId] = React.useState<string | null>(() => {
     if (typeof window === "undefined") return null;
-    return parseMapState(window.location.search).placeId ?? null;
+    const id = parseMapState(window.location.search).placeId ?? null;
+    return id && places.some((place) => place.id === id) ? id : null;
   });
   // A viewport in the URL restores that exact center/zoom on load instead of
   // fitting all places; it is then kept in sync as the user pans (see #118).
