@@ -2,6 +2,7 @@ import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
+import { safeNext } from "@/lib/safe-next";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 
 // Always redirect to the canonical domain after OAuth so that arriving via
@@ -13,7 +14,7 @@ const SITE_URL =
 export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const code = searchParams.get("code");
-  const next = searchParams.get("next") ?? "/";
+  const next = safeNext(searchParams.get("next"));
 
   // No Supabase configured (self-host / preview mode): nothing to exchange.
   if (!isSupabaseConfigured()) {
