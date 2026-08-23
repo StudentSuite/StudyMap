@@ -37,9 +37,11 @@ if (tokenCount !== 1) {
   );
 }
 
-// JSON encoding keeps the generated script valid even if a future build ID
-// contains characters that would otherwise need JavaScript string escaping.
-const rendered = template.replace(BUILD_ID_TOKEN, JSON.stringify(buildId));
+// A replacer function keeps "$"-sequences in the build ID from being
+// interpreted as special replacement patterns, and JSON encoding keeps the
+// generated script valid even if a future build ID contains characters that
+// would otherwise need JavaScript string escaping.
+const rendered = template.replace(BUILD_ID_TOKEN, () => JSON.stringify(buildId));
 
 await mkdir(dirname(outputPath), { recursive: true });
 await writeFile(outputPath, rendered, "utf8");
