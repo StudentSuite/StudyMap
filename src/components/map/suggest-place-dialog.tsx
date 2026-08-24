@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { toast } from "sonner";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -53,6 +54,26 @@ function buildIssueUrl(fields: {
   return `${site.repo}/issues/new?${params.toString()}`;
 }
 
+export function isGoogleMapsUrl(value: string): boolean {
+  try {
+    const url = new URL(value.trim());
+    if (url.protocol !== "https:") return false;
+
+    if (url.hostname === "maps.google.com") return true;
+    if (url.hostname === "maps.app.goo.gl") return url.pathname.length > 1;
+    if (url.hostname === "www.google.com") {
+      return url.pathname === "/maps" || url.pathname.startsWith("/maps/");
+    }
+    if (url.hostname === "goo.gl") {
+      return url.pathname === "/maps" || url.pathname.startsWith("/maps/");
+    }
+
+    return false;
+  } catch {
+    return false;
+  }
+}
+
 /**
  * Public, no-account entry point for suggesting a new place: collects the
  * same fields as the GitHub-issue path in /docs/contributing, then opens a
@@ -66,6 +87,7 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
   const [address, setAddress] = React.useState("");
   const [gmapsLink, setGmapsLink] = React.useState("");
   const [note, setNote] = React.useState("");
+  const [popupBlocked, setPopupBlocked] = React.useState(false);
   const [lastResetKey, setLastResetKey] = React.useState<boolean | null>(null);
 
   // Clear the form each time the dialog opens, during render (not an
@@ -79,22 +101,43 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
       setAddress("");
       setGmapsLink("");
       setNote("");
+      setPopupBlocked(false);
     }
   }
 
-  const isValid = name.trim() && city.trim() && gmapsLink.trim();
+  const trimmedName = name.trim();
+  const trimmedCity = city.trim();
+  const trimmedGmapsLink = gmapsLink.trim();
+  const isGmapsLinkValid = isGoogleMapsUrl(trimmedGmapsLink);
+  const showGmapsError = trimmedGmapsLink.length > 0 && !isGmapsLinkValid;
+  const isValid = Boolean(trimmedName && trimmedCity && isGmapsLinkValid);
+  const issueUrl = isValid
+    ? buildIssueUrl({
+        name: trimmedName,
+        type,
+        city: trimmedCity,
+        address: address.trim(),
+        gmapsLink: trimmedGmapsLink,
+        note,
+      })
+    : null;
 
   function handleSubmit() {
-    if (!isValid) return;
-    const url = buildIssueUrl({
-      name: name.trim(),
-      type,
-      city: city.trim(),
-      address: address.trim(),
-      gmapsLink: gmapsLink.trim(),
-      note,
-    });
-    window.open(url, "_blank", "noopener,noreferrer");
+    if (!issueUrl) return;
+
+    // Open a blank tab first so a non-null handle genuinely means the browser
+    // allowed the popup. Passing "noopener" to window.open intentionally
+    // returns null even when the tab opens. Sever opener before navigating.
+    const opened = window.open("", "_blank");
+    if (!opened) {
+      setPopupBlocked(true);
+      toast.error("Pop-up blocked. Your suggestion is still here.");
+      return;
+    }
+
+    opened.opener = null;
+    opened.location.replace(issueUrl);
+    setPopupBlocked(false);
     onOpenChange(false);
   }
 
@@ -166,7 +209,14 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
               value={gmapsLink}
               onChange={(e) => setGmapsLink(e.target.value)}
               placeholder="https://maps.app.goo.gl/..."
+              aria-invalid={showGmapsError}
+              aria-describedby={showGmapsError ? "suggest-place-gmaps-error" : undefined}
             />
+            {showGmapsError ? (
+              <p id="suggest-place-gmaps-error" role="alert" className="text-xs text-destructive">
+                Enter a valid Google Maps link.
+              </p>
+            ) : null}
           </div>
 
           <div className="grid gap-1.5">
@@ -181,6 +231,21 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
               placeholder="Optional - why it belongs on the map, rating, review count..."
             />
           </div>
+
+          {popupBlocked && issueUrl ? (
+            <p role="alert" className="text-sm text-destructive">
+              Pop-up blocked. Your suggestion is still here.{" "}
+              <a
+                href={issueUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium underline underline-offset-4"
+              >
+                Open GitHub here
+              </a>
+              .
+            </p>
+          ) : null}
         </div>
 
         <DialogFooter>
