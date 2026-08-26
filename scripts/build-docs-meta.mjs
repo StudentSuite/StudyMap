@@ -39,7 +39,9 @@ function lastModifiedDate(absPath) {
   try {
     const out = execFileSync(
       "git",
-      ["log", "-1", "--follow", "--date=short", "--format=%ad", "--", absPath],
+      // --diff-filter=AM skips pure-rename commits (e.g. a route-group move)
+      // so this reflects the last real content change, not the last move.
+      ["log", "--follow", "--diff-filter=AM", "-1", "--date=short", "--format=%ad", "--", absPath],
       { cwd: ROOT, encoding: "utf8" },
     ).trim();
     return out || FALLBACK_DATE;
