@@ -58,6 +58,7 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
+              aria-current={isActive(link.href) ? "page" : undefined}
               className={cn(
                 "rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
                 isActive(link.href) && "bg-muted text-foreground",
@@ -101,24 +102,29 @@ export function Navbar() {
                 <Menu className="size-5" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-64">
-              <SheetTitle className="px-4 pt-4">{site.name}</SheetTitle>
-              <nav className="mt-2 flex flex-col gap-1 px-2">
+            <SheetContent side="right" className="w-72">
+              <SheetTitle className="px-5 pt-6 font-heading text-lg font-semibold">
+                {site.name}
+              </SheetTitle>
+              <nav className="mt-4 flex flex-col gap-1 px-3">
                 {navLinks.map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
                     onClick={() => setOpen(false)}
+                    aria-current={isActive(link.href) ? "page" : undefined}
                     className={cn(
-                      "rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground",
-                      isActive(link.href) && "bg-muted text-foreground",
+                      "rounded-md px-3 py-3 text-xl font-semibold transition-colors duration-[var(--duration-fast)] ease-[var(--ease-out)] text-muted-foreground hover:bg-muted hover:text-foreground",
+                      isActive(link.href) && "text-primary",
                     )}
                   >
                     {link.label}
                   </Link>
                 ))}
-                {authEnabled &&
-                  (loggedIn ? (
+              </nav>
+              {authEnabled && (
+                <div className="mt-4 border-t px-3 pt-4">
+                  {loggedIn ? (
                     <button
                       onClick={() => { setOpen(false); handleSignOut(); }}
                       className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
@@ -135,8 +141,9 @@ export function Navbar() {
                       <LogIn className="size-4" />
                       Sign in
                     </Link>
-                  ))}
-              </nav>
+                  )}
+                </div>
+              )}
             </SheetContent>
           </Sheet>
         </div>

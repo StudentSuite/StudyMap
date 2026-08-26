@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
-import placesSchema from "../../../../data/places.schema.json";
+import placesSchema from "../../../../../data/places.schema.json";
 import {
   Card,
   CardContent,

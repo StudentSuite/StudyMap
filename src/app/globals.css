@@ -59,6 +59,11 @@
   /* Notebook grid (shared StudentSuite design language) */
   --grid-line:      rgba(180, 83, 9, 0.055);
   --grid-line-bold: rgba(180, 83, 9, 0.10);
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 170ms;
+  --duration-med: 280ms;
+  --duration-slow: 450ms;
 }
 
 /* ----------------------------------------------------------------
