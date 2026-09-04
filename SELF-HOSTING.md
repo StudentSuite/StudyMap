@@ -56,6 +56,8 @@ cp .env.example .env.local
 
 - `NEXT_PUBLIC_MAPTILER_KEY` is required for the map basemap. Free tier, no credit card, at
   [cloud.maptiler.com](https://cloud.maptiler.com/account/keys/).
+- If the key is missing or empty, the map shows "Basemap unavailable" instead of loading tiles.
+  Add the key to `.env.local`, then restart the development server or redeploy the site.
 - The Supabase variables are optional. Leave them blank and the map, filters, and calendar all
   work; you just won't get sign-in or the two private features below. See step 5 to fill them in.
 
