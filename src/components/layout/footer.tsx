@@ -18,7 +18,12 @@ const legalLinks = [
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t bg-background">
+    // The `dark` class is deliberate and is not a theme bug: the footer is
+    // always dark, in every theme. `.dark` in globals.css is a plain class
+    // selector, so putting it here redefines the colour tokens for this
+    // subtree only, and every semantic utility below resolves to its dark
+    // value without a single hardcoded hex.
+    <footer className="dark mt-auto border-t bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid gap-10 sm:grid-cols-4">
           {/* About */}
