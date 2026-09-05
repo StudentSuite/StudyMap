@@ -217,6 +217,35 @@ interface MapViewProps {
   closePopupTrigger?: number;
 }
 
+let didWarnAboutMissingMapTilerKey = false;
+
+function BasemapUnavailable() {
+  return (
+    <div
+      role="status"
+      aria-label="Basemap unavailable"
+      className="flex size-full items-center justify-center bg-muted p-6 text-center"
+    >
+      <div className="max-w-sm space-y-2 text-sm text-muted-foreground">
+        <p className="font-medium text-foreground">Basemap unavailable</p>
+        <p>
+          The site administrator needs to configure{" "}
+          <code className="font-mono text-foreground">
+            NEXT_PUBLIC_MAPTILER_KEY
+          </code>{" "}
+          before the map can load.
+        </p>
+        <a
+          href="/docs/self-hosting"
+          className="inline-flex font-medium text-primary underline underline-offset-4"
+        >
+          Open the self-hosting setup
+        </a>
+      </div>
+    </div>
+  );
+}
+
 /** Closes all open popups whenever the trigger counter increments. */
 function ClosePopupOnTrigger({ trigger }: { trigger: number }) {
   const map = useMap();
@@ -409,6 +438,25 @@ export default function MapView({
   onViewportChange,
   closePopupTrigger = 0,
 }: MapViewProps) {
+  const mapTilerKey = process.env.NEXT_PUBLIC_MAPTILER_KEY?.trim();
+
+  useEffect(() => {
+    if (
+      process.env.NODE_ENV !== "production" &&
+      !mapTilerKey &&
+      !didWarnAboutMissingMapTilerKey
+    ) {
+      didWarnAboutMissingMapTilerKey = true;
+      console.warn(
+        "[MapView] NEXT_PUBLIC_MAPTILER_KEY is missing. The basemap cannot load. See SELF-HOSTING.md for setup instructions.",
+      );
+    }
+  }, [mapTilerKey]);
+
+  if (!mapTilerKey) {
+    return <BasemapUnavailable />;
+  }
+
   const focusPlace = focusId
     ? places.find((place) => place.id === focusId)
     : undefined;
@@ -445,7 +493,7 @@ export default function MapView({
       <TileLayer
         key={tileVariant}
         attribution='&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
-        url={`https://api.maptiler.com/maps/${tileVariant}/256/{z}/{x}/{y}{r}.png?key=${process.env.NEXT_PUBLIC_MAPTILER_KEY}`}
+        url={`https://api.maptiler.com/maps/${tileVariant}/256/{z}/{x}/{y}{r}.png?key=${mapTilerKey}`}
         maxZoom={20}
         keepBuffer={2}
         updateWhenZooming={false}
