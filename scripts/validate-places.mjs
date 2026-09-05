@@ -25,6 +25,7 @@
 import { readFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
+import { Reporter, hasEmDash, isRealIsoDate } from "./lib/data-validation.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "../data/places");
@@ -51,25 +52,10 @@ const ID_NUMERIC_RE = /^[0-9]+$/;
 
 const NEAR_DUPE_METERS = 50;
 
-let totalErrors = 0;
-let totalWarnings = 0;
+const reporter = new Reporter();
+const err = (loc, msg) => reporter.err(loc, msg);
+const warn = (loc, msg) => reporter.warn(loc, msg);
 const globalIds = new Set();
-
-function err(loc, msg) {
-  console.error(`  ERROR  ${loc}: ${msg}`);
-  totalErrors++;
-}
-
-function warn(loc, msg) {
-  console.error(`  WARN   ${loc}: ${msg}`);
-  totalWarnings++;
-}
-
-function isRealIsoDate(value) {
-  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
-  const parsed = new Date(`${value}T00:00:00Z`);
-  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
-}
 
 // Haversine distance in meters between two lat/lng points.
 function metersBetween(a, b) {
@@ -100,14 +86,12 @@ for (const file of files) {
   try {
     records = JSON.parse(readFileSync(filePath, "utf8"));
   } catch (e) {
-    console.error(`  ERROR  ${file}: invalid JSON — ${e.message}`);
-    totalErrors++;
+    err(file, `invalid JSON — ${e.message}`);
     continue;
   }
 
   if (!Array.isArray(records)) {
-    console.error(`  ERROR  ${file}: root value must be a JSON array`);
-    totalErrors++;
+    err(file, "root value must be a JSON array");
     continue;
   }
 
@@ -118,7 +102,7 @@ for (const file of files) {
   for (let i = 0; i < records.length; i++) {
     const r = records[i];
     const loc = `${file}[${i}] (id: ${r.id ?? "?"})`;
-    const before = totalErrors;
+    const before = reporter.totalErrors;
 
     // Required fields
     for (const field of REQUIRED_FIELDS) {
@@ -157,7 +141,10 @@ for (const file of files) {
 
     // type must match the filename it lives in
     if (r.type !== undefined && r.type !== expectedType) {
-      err(loc, `type "${r.type}" does not match filename "${file}" (expected "${expectedType}")`);
+      err(
+        loc,
+        `type "${r.type}" does not match filename "${file}" (expected "${expectedType}")`,
+      );
     }
 
     // id must be <city-prefix>-<type>-<number>, or a bare numeric code
@@ -178,7 +165,10 @@ for (const file of files) {
       if (typeof r.lat !== "number") {
         err(loc, `lat must be a number, got ${typeof r.lat}`);
       } else if (r.lat < BOUNDS.minLat || r.lat > BOUNDS.maxLat) {
-        err(loc, `lat ${r.lat} is outside valid bounds [${BOUNDS.minLat}, ${BOUNDS.maxLat}]`);
+        err(
+          loc,
+          `lat ${r.lat} is outside valid bounds [${BOUNDS.minLat}, ${BOUNDS.maxLat}]`,
+        );
       }
     }
 
@@ -187,7 +177,10 @@ for (const file of files) {
       if (typeof r.lng !== "number") {
         err(loc, `lng must be a number, got ${typeof r.lng}`);
       } else if (r.lng < BOUNDS.minLng || r.lng > BOUNDS.maxLng) {
-        err(loc, `lng ${r.lng} is outside valid bounds [${BOUNDS.minLng}, ${BOUNDS.maxLng}]`);
+        err(
+          loc,
+          `lng ${r.lng} is outside valid bounds [${BOUNDS.minLng}, ${BOUNDS.maxLng}]`,
+        );
       }
     }
 
@@ -201,7 +194,7 @@ for (const file of files) {
 
     // No em dashes in any string field
     for (const [key, val] of Object.entries(r)) {
-      if (typeof val === "string" && val.includes("—")) {
+      if (hasEmDash(val)) {
         err(loc, `field "${key}" contains an em dash (—) — use a plain hyphen instead`);
       }
     }
@@ -209,8 +202,15 @@ for (const file of files) {
     // Optional `verified` object: must carry a non-empty verifier handle and a
     // real YYYY-MM-DD date, and nothing else (see #126).
     if (r.verified !== undefined) {
-      if (r.verified === null || typeof r.verified !== "object" || Array.isArray(r.verified)) {
-        err(loc, `verified must be an object with "by" and "on", got ${JSON.stringify(r.verified)}`);
+      if (
+        r.verified === null ||
+        typeof r.verified !== "object" ||
+        Array.isArray(r.verified)
+      ) {
+        err(
+          loc,
+          `verified must be an object with "by" and "on", got ${JSON.stringify(r.verified)}`,
+        );
       } else {
         const v = r.verified;
         for (const key of Object.keys(v)) {
@@ -225,19 +225,19 @@ for (const file of files) {
           err(loc, `verified.on must be an ISO date (YYYY-MM-DD), got "${v.on}"`);
         } else {
           const d = new Date(`${v.on}T00:00:00Z`);
-          const valid = !Number.isNaN(d.getTime()) &&
-            d.toISOString().slice(0, 10) === v.on;
+          const valid =
+            !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === v.on;
           if (!valid) {
             err(loc, `verified.on "${v.on}" is not a real calendar date`);
           }
         }
-        if (typeof v.by === "string" && v.by.includes("—")) {
+        if (hasEmDash(v.by)) {
           err(loc, `verified.by contains an em dash (—) — use a plain hyphen instead`);
         }
       }
     }
 
-    fileErrors += totalErrors - before;
+    fileErrors += reporter.totalErrors - before;
   }
 
   // Warn on near-duplicate coordinates between different-named places. Two
@@ -264,13 +264,19 @@ for (const file of files) {
   }
 
   const status = fileErrors === 0 ? " OK " : "FAIL";
-  console.log(`  ${status}   ${file} (${records.length} records, ${fileErrors} error(s))`);
+  console.log(
+    `  ${status}   ${file} (${records.length} records, ${fileErrors} error(s))`,
+  );
 }
 
 console.log("");
-if (totalErrors > 0) {
-  console.error(`Validation failed: ${totalErrors} error(s), ${totalWarnings} warning(s). Fix the errors before merging.`);
+if (reporter.totalErrors > 0) {
+  console.error(
+    `Validation failed: ${reporter.totalErrors} error(s), ${reporter.totalWarnings} warning(s). Fix the errors before merging.`,
+  );
   process.exit(1);
 } else {
-  console.log(`Validation passed: all ${files.length} file(s) clean, ${totalWarnings} warning(s).`);
+  console.log(
+    `Validation passed: all ${files.length} file(s) clean, ${reporter.totalWarnings} warning(s).`,
+  );
 }

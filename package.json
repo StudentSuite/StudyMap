@@ -11,7 +11,9 @@
     "typecheck": "tsc --noEmit",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "validate": "node scripts/validate-places.mjs",
+    "validate:places": "node scripts/validate-places.mjs",
+    "validate:competitions": "node scripts/validate-competitions.mjs",
+    "validate": "npm run validate:places && npm run validate:competitions",
     "check:freshness": "node scripts/check-data-freshness.mjs",
     "test:unit": "vitest run",
     "test:watch": "vitest"

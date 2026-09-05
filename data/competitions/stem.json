@@ -75,7 +75,7 @@
     },
     "prize": "Gold, silver or bronze medal awarded by score.",
     "official_url": "https://www.ibo-info.org/en",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "IBO 2026 (Vilnius, Lithuania)",
@@ -86,11 +86,19 @@
         "source_url": "https://www.ibo-info.org/en"
       },
       {
-        "label": "Results announced",
+        "label": "Results announced (IBO 2026)",
         "date": "2026-07-19",
         "type": "results",
         "timezone": "UTC+3",
         "estimated": false,
+        "source_url": "https://www.ibo-info.org/en"
+      },
+      {
+        "label": "IBO 2027 (host to be confirmed)",
+        "date": "2027-07-12",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
         "source_url": "https://www.ibo-info.org/en"
       }
     ],
@@ -222,7 +230,7 @@
     },
     "prize": "Gold, silver or bronze medal awarded by score.",
     "official_url": "https://www.icho2026.uz/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "IChO 2026 (Tashkent, Uzbekistan)",
@@ -233,11 +241,19 @@
         "source_url": "https://www.icho2026.uz/"
       },
       {
-        "label": "Results announced",
+        "label": "Results announced (IChO 2026)",
         "date": "2026-07-19",
         "type": "results",
         "timezone": "UTC+5",
         "estimated": false,
+        "source_url": "https://www.icho2026.uz/"
+      },
+      {
+        "label": "IChO 2027 (host to be confirmed)",
+        "date": "2027-07-10",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
         "source_url": "https://www.icho2026.uz/"
       }
     ],
@@ -295,7 +311,7 @@
     },
     "prize": "Gold, silver or bronze medal awarded by score.",
     "official_url": "https://www.ipho-new.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "IPhO 2026 (Bucaramanga, Colombia)",
@@ -306,11 +322,19 @@
         "source_url": "https://www.ipho-new.org/"
       },
       {
-        "label": "Results announced",
+        "label": "Results announced (IPhO 2026)",
         "date": "2026-07-12",
         "type": "results",
         "timezone": "UTC-5",
         "estimated": false,
+        "source_url": "https://www.ipho-new.org/"
+      },
+      {
+        "label": "IPhO 2027 (host to be confirmed)",
+        "date": "2027-07-04",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
         "source_url": "https://www.ipho-new.org/"
       }
     ],

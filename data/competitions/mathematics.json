@@ -76,7 +76,7 @@
     },
     "prize": "Gold, silver or bronze medal; top scorers may also receive special prizes.",
     "official_url": "https://www.imo-official.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "IMO 2026 (Sunshine Coast, Australia)",
@@ -87,10 +87,18 @@
         "source_url": "https://www.imo-official.org/"
       },
       {
-        "label": "Results announced",
+        "label": "Results announced (IMO 2026)",
         "date": "2026-07-20",
         "type": "results",
         "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.imo-official.org/"
+      },
+      {
+        "label": "IMO 2027 (Shanghai, China)",
+        "date": "2027-07-01",
+        "type": "round",
+        "timezone": "UTC+8",
         "estimated": false,
         "source_url": "https://www.imo-official.org/"
       }

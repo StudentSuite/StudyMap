@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Validate place data
+      - name: Validate place and competition data
         run: npm run validate
       - name: Check data freshness
         run: npm run check:freshness

@@ -38,6 +38,14 @@
         "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://www.essaycomp.org/"
+      },
+      {
+        "label": "Prizes must be claimed by",
+        "date": "2026-09-30",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/"
       }
     ],
     "added_by": "yashkewlani",
@@ -45,7 +53,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-10-01"
+    "valid_till": "2026-10-15"
   },
   {
     "id": "jfk-profile-in-courage-essay-contest",
@@ -136,6 +144,14 @@
         "timezone": "UTC",
         "estimated": false,
         "source_url": "https://www.johnlockeinstitute.com/essay-competition"
+      },
+      {
+        "label": "Awards dinner",
+        "date": "2026-10-03",
+        "type": "ceremony",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
       }
     ],
     "added_by": "yashkewlani",
@@ -143,7 +159,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-08-01"
+    "valid_till": "2026-11-01"
   },
   {
     "id": "the-politic-high-school-essay-competition",
@@ -181,6 +197,14 @@
         "label": "Essay submission deadline",
         "date": "2026-08-21",
         "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://thepolitic.org/high-school-competition/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2026-09-11",
+        "type": "results",
         "timezone": "UTC-5",
         "estimated": false,
         "source_url": "https://thepolitic.org/high-school-competition/"

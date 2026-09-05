@@ -130,22 +130,30 @@
     },
     "prize": "Up to USD 12,500 in scholarships for National Medalists.",
     "official_url": "https://www.artandwriting.org/awards/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Latest regional deadline",
-        "date": "2026-01-06",
-        "type": "deadline",
-        "timezone": "UTC-5",
-        "estimated": false,
+        "label": "Entries open (2026-27 cycle)",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
         "source_url": "https://www.artandwriting.org/awards/"
       },
       {
-        "label": "National results",
-        "date": "2026-03-25",
+        "label": "Latest regional deadline (following the usual early-January pattern)",
+        "date": "2027-01-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.artandwriting.org/awards/"
+      },
+      {
+        "label": "National results (following the usual late-March pattern)",
+        "date": "2027-03-25",
         "type": "results",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.artandwriting.org/awards/"
       }
     ],
@@ -156,7 +164,7 @@
         "stages": [
           {
             "name": "Region-at-Large (Canada, excluding Quebec)",
-            "date": "2026-01-06",
+            "date": "2027-01-06",
             "estimated": true,
             "source_url": "https://www.artandwriting.org/regions/"
           }
@@ -168,7 +176,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-05-01"
+    "valid_till": "2027-05-01"
   },
   {
     "id": "toyota-dream-car-art-contest",

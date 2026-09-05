@@ -1,24 +1,22 @@
 #!/usr/bin/env node
 import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
+import { isRealIsoDate } from "./lib/data-validation.mjs";
 
-const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
-
-function isRealIsoDate(value) {
-  if (typeof value !== "string" || !ISO_DATE_RE.test(value)) return false;
-  const parsed = new Date(`${value}T00:00:00Z`);
-  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
-}
+// Directories checked when --data-dir is not given. --data-dir overrides this
+// list with a single directory, which is how tests point the check at a temp
+// fixture directory (see src/lib/data-freshness.test.ts).
+const DEFAULT_DATA_DIRS = ["data/places", "data/competitions"];
 
 function parseArgs(argv) {
   let today = new Date().toISOString().slice(0, 10);
-  let dataDir = resolve("data/places");
+  let dataDirs = DEFAULT_DATA_DIRS.map((dir) => resolve(dir));
 
   for (const arg of argv) {
     if (arg.startsWith("--today=")) {
       today = arg.slice("--today=".length);
     } else if (arg.startsWith("--data-dir=")) {
-      dataDir = resolve(arg.slice("--data-dir=".length));
+      dataDirs = [resolve(arg.slice("--data-dir=".length))];
     } else {
       throw new Error(`unknown argument "${arg}"`);
     }
@@ -28,10 +26,30 @@ function parseArgs(argv) {
     throw new Error(`--today must be a real ISO date (YYYY-MM-DD), got "${today}"`);
   }
 
-  return { today, dataDir };
+  return { today, dataDirs };
 }
 
-function checkFreshness({ today, dataDir }) {
+// Whether a competition record's cycle has visibly lapsed: its cycle_year is
+// before the current year, or the last entry in its dates[] array (its final
+// milestone, e.g. a ceremony or results date) is in the past.
+function cycleHasLapsed(record, today) {
+  const todayYear = Number(today.slice(0, 4));
+
+  if (typeof record.cycle_year === "number" && record.cycle_year < todayYear) {
+    return `cycle_year ${record.cycle_year} has passed (current year is ${todayYear})`;
+  }
+
+  if (Array.isArray(record.dates) && record.dates.length > 0) {
+    const last = record.dates[record.dates.length - 1];
+    if (last && isRealIsoDate(last.date) && last.date < today) {
+      return `last dates[] entry "${last.label ?? last.date}" (${last.date}) is in the past`;
+    }
+  }
+
+  return null;
+}
+
+function checkDir(dataDir, today) {
   const files = readdirSync(dataDir)
     .filter((file) => file.endsWith(".json"))
     .sort();
@@ -70,27 +88,52 @@ function checkFreshness({ today, dataDir }) {
         continue;
       }
 
-      if (record.valid_till === undefined) continue;
-
-      datedRecords++;
       const recordLoc = `${loc} (id: ${record.id ?? "?"})`;
+      let dated = false;
 
-      if (!isRealIsoDate(record.valid_till)) {
-        console.error(
-          `ERROR ${recordLoc}: valid_till must be a real ISO date (YYYY-MM-DD), got "${record.valid_till}"`,
-        );
-        totalErrors++;
-        continue;
+      if (record.valid_till !== undefined) {
+        dated = true;
+
+        if (!isRealIsoDate(record.valid_till)) {
+          console.error(
+            `ERROR ${recordLoc}: valid_till must be a real ISO date (YYYY-MM-DD), got "${record.valid_till}"`,
+          );
+          totalErrors++;
+        } else if (record.valid_till < today) {
+          // Valid ISO YYYY-MM-DD strings sort in chronological order.
+          console.error(
+            `ERROR ${recordLoc}: valid_till expired on ${record.valid_till}; re-verify this record for ${today}`,
+          );
+          totalErrors++;
+        }
       }
 
-      // Valid ISO YYYY-MM-DD strings sort in chronological order.
-      if (record.valid_till < today) {
+      const lapseReason = cycleHasLapsed(record, today);
+      if (lapseReason) {
+        dated = true;
         console.error(
-          `ERROR ${recordLoc}: valid_till expired on ${record.valid_till}; re-verify this record for ${today}`,
+          `ERROR ${recordLoc}: ${lapseReason}; refresh this record for ${today}`,
         );
         totalErrors++;
       }
+
+      if (dated) datedRecords++;
     }
+  }
+
+  return { totalRecords, datedRecords, totalErrors };
+}
+
+function checkFreshness({ today, dataDirs }) {
+  let totalRecords = 0;
+  let datedRecords = 0;
+  let totalErrors = 0;
+
+  for (const dataDir of dataDirs) {
+    const result = checkDir(dataDir, today);
+    totalRecords += result.totalRecords;
+    datedRecords += result.datedRecords;
+    totalErrors += result.totalErrors;
   }
 
   if (totalErrors > 0) {

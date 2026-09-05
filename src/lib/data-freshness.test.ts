@@ -65,4 +65,53 @@ describe("data freshness check", () => {
     expect(result.status).toBe(1);
     expect(result.stderr).toContain("--today must be a real ISO date");
   });
+
+  it("flags a competition whose cycle_year has passed", () => {
+    const result = runFreshness([{ id: "old-cycle", cycle_year: 2025 }]);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain("id: old-cycle");
+    expect(result.stderr).toContain("cycle_year 2025 has passed");
+  });
+
+  it("accepts a competition whose cycle_year has not passed", () => {
+    const result = runFreshness([{ id: "current-cycle", cycle_year: 2026 }]);
+
+    expect(result.status).toBe(0);
+  });
+
+  it("flags a competition whose last dates[] entry is in the past", () => {
+    const result = runFreshness([
+      {
+        id: "stale-dates",
+        cycle_year: 2026,
+        dates: [
+          { label: "Registration opens", date: "2026-01-01" },
+          { label: "Results announced", date: "2026-08-01" },
+        ],
+      },
+    ]);
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain("id: stale-dates");
+    expect(result.stderr).toContain(
+      'last dates[] entry "Results announced" (2026-08-01) is in the past',
+    );
+  });
+
+  it("accepts a competition whose last dates[] entry is in the future", () => {
+    const result = runFreshness([
+      {
+        id: "upcoming-dates",
+        cycle_year: 2026,
+        dates: [
+          { label: "Registration opens", date: "2026-01-01" },
+          { label: "Deadline", date: "2026-11-07" },
+        ],
+      },
+    ]);
+
+    expect(result.status).toBe(0);
+    expect(result.stdout).toContain("1 record(s), 0 dated record(s)");
+  });
 });

@@ -82,7 +82,7 @@
     },
     "prize": "Gold, silver or bronze medal awarded by score.",
     "official_url": "https://ioinformatics.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "IOI 2026 begins (Uzbekistan)",
@@ -98,6 +98,14 @@
         "type": "results",
         "timezone": "UTC+5",
         "estimated": false,
+        "source_url": "https://ioinformatics.org/"
+      },
+      {
+        "label": "IOI 2027 (host to be confirmed)",
+        "date": "2027-08-08",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
         "source_url": "https://ioinformatics.org/"
       }
     ],

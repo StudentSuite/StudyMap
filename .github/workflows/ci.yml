@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Validate place data
+      - name: Validate place and competition data
         run: npm run validate
   unit-tests:
     runs-on: ubuntu-latest
