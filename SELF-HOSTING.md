@@ -69,10 +69,10 @@ npm run dev
 Open [http://localhost:3000/map](http://localhost:3000/map) and confirm your places show up in
 the right spot.
 
-## 5. Optional: sign-in, saved places, personal calendar events, and saved competitions
+## 5. Optional: sign-in, saved places, personal calendar events, saved competitions, and onboarding
 
 These features (`src/app/login`, saved custom places, personal calendar events, saved
-competitions) need a Supabase project:
+competitions, the first-run onboarding questionnaire) need a Supabase project:
 
 1. Create a free project at [supabase.com](https://supabase.com).
 2. Copy its URL and anon key into `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`).
@@ -82,7 +82,11 @@ competitions) need a Supabase project:
    `user_events` (the three original sign-in-gated tables), plus `competition_saves` and
    `competition_stats` for the competitions vertical: saves are private per user, and
    `competition_stats` is a public save-count aggregate kept in sync by a trigger, readable by
-   anyone but writable only by that trigger, never directly.
+   anyone but writable only by that trigger, never directly. It also includes `user_profiles`,
+   one row per user holding their answers to the first-run onboarding questionnaire
+   (graduation year, board, field, country, referral source), all columns nullable since the
+   questionnaire is skippable and resumable, and owner-only RLS so nobody but the user (or the
+   dashboard's service-role SQL editor) can read their answers.
 4. Enable whichever auth providers you want (email, Google, etc.) under Authentication > Providers.
 
 Skip this whole section if you only want the public map and calendar.
