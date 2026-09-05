@@ -59,6 +59,7 @@ export function UserPlaceDialog({
   const [saving, setSaving] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const [lastResetKey, setLastResetKey] = React.useState<string | null>(null);
+  const [confirmingDelete, setConfirmingDelete] = React.useState(false);
 
   const resetKey = open ? place?.id ?? "new" : null;
   if (resetKey !== lastResetKey) {
@@ -72,6 +73,7 @@ export function UserPlaceDialog({
       setAddress(place?.address ?? "");
       setNote(place?.note ?? "");
       setError(null);
+      setConfirmingDelete(false);
     }
   }
 
@@ -278,16 +280,37 @@ export function UserPlaceDialog({
         </div>
 
         <DialogFooter>
-          {place && (
-            <Button
-              variant="destructive"
-              onClick={handleDelete}
-              disabled={saving}
-              className="sm:mr-auto"
-            >
-              Delete
-            </Button>
-          )}
+          {place &&
+            (confirmingDelete ? (
+              <div className="flex items-center gap-2 sm:mr-auto">
+                <span className="text-sm text-muted-foreground">Delete this place?</span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setConfirmingDelete(false)}
+                  disabled={saving}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  onClick={handleDelete}
+                  disabled={saving}
+                >
+                  Yes, delete
+                </Button>
+              </div>
+            ) : (
+              <Button
+                variant="destructive"
+                onClick={() => setConfirmingDelete(true)}
+                disabled={saving}
+                className="sm:mr-auto"
+              >
+                Delete
+              </Button>
+            ))}
           <Button onClick={handleSave} disabled={saving || !isValid}>
             {place ? "Save changes" : "Add place"}
           </Button>

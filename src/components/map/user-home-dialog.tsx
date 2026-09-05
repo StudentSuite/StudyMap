@@ -38,6 +38,7 @@ export function UserHomeDialog({
   const [saving, setSaving] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
   const [wasOpen, setWasOpen] = React.useState(false);
+  const [confirmingDelete, setConfirmingDelete] = React.useState(false);
 
   if (open !== wasOpen) {
     setWasOpen(open);
@@ -46,6 +47,7 @@ export function UserHomeDialog({
       setLat(home ? String(home.lat) : "");
       setLng(home ? String(home.lng) : "");
       setError(null);
+      setConfirmingDelete(false);
     }
   }
 
@@ -188,16 +190,37 @@ export function UserHomeDialog({
         </div>
 
         <DialogFooter>
-          {home && (
-            <Button
-              variant="destructive"
-              onClick={handleDelete}
-              disabled={saving}
-              className="sm:mr-auto"
-            >
-              Remove
-            </Button>
-          )}
+          {home &&
+            (confirmingDelete ? (
+              <div className="flex items-center gap-2 sm:mr-auto">
+                <span className="text-sm text-muted-foreground">Remove home location?</span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => setConfirmingDelete(false)}
+                  disabled={saving}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  variant="destructive"
+                  size="sm"
+                  onClick={handleDelete}
+                  disabled={saving}
+                >
+                  Yes, remove
+                </Button>
+              </div>
+            ) : (
+              <Button
+                variant="destructive"
+                onClick={() => setConfirmingDelete(true)}
+                disabled={saving}
+                className="sm:mr-auto"
+              >
+                Remove
+              </Button>
+            ))}
           <Button onClick={handleSave} disabled={saving || !isValid}>
             {home ? "Save changes" : "Set home"}
           </Button>
