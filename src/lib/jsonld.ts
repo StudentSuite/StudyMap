@@ -1,4 +1,5 @@
 import { site } from "@/lib/site";
+import type { Competition, CompetitionFormat } from "@/lib/types";
 import type { Place } from "@/lib/types";
 
 /**
@@ -60,4 +61,68 @@ export function placeJsonLd(place: Place): Record<string, unknown> {
  */
 export function placeJsonLdScript(place: Place): string {
   return JSON.stringify(placeJsonLd(place)).replace(/</g, "\\u003c");
+}
+
+const EVENT_ATTENDANCE_MODES: Record<CompetitionFormat, string> = {
+  online: "https://schema.org/OnlineEventAttendanceMode",
+  in_person: "https://schema.org/OfflineEventAttendanceMode",
+  hybrid: "https://schema.org/MixedEventAttendanceMode",
+};
+
+/**
+ * schema.org/Event for most competitions; schema.org/EducationalOccupationalProgram
+ * for the `scholarship` category, since a scholarship judged on a body of
+ * work is a program a student applies to, not a single dated event.
+ */
+export function schemaOrgCompetitionType(category: Competition["category"]): string {
+  return category === "scholarship" ? "EducationalOccupationalProgram" : "Event";
+}
+
+/**
+ * Build the schema.org JSON-LD graph node for one competition.
+ *
+ * Only `estimated: false` dates ever reach `startDate`/`endDate` -
+ * publishing an estimated date as structured data would invite a search
+ * engine to present a guess as a fact. When every date on the record is
+ * still estimated, `startDate`/`endDate` are omitted entirely rather than
+ * emitting a guess.
+ */
+export function competitionJsonLd(competition: Competition): Record<string, unknown> {
+  const confirmedDates = competition.dates
+    .filter((date) => !date.estimated)
+    .map((date) => date.date)
+    .sort();
+
+  const node: Record<string, unknown> = {
+    "@context": "https://schema.org",
+    "@type": schemaOrgCompetitionType(competition.category),
+    name: competition.name,
+    description: competition.description,
+    // The StudyMap detail page, not the organizer's own site - matches
+    // placeJsonLd's convention of linking back to StudyMap's own page.
+    url: `${site.url}/competitions/${competition.id}`,
+    organizer: {
+      "@type": "Organization",
+      name: competition.organizer,
+      url: competition.organizer_url,
+    },
+    eventAttendanceMode: EVENT_ATTENDANCE_MODES[competition.format],
+    isAccessibleForFree: competition.fee.amount === 0,
+  };
+
+  if (confirmedDates.length > 0) {
+    node.startDate = confirmedDates[0];
+    node.endDate = confirmedDates[confirmedDates.length - 1];
+  }
+
+  return node;
+}
+
+/**
+ * The JSON payload for a `<script type="application/ld+json">` block.
+ * `<` is escaped so a name or description containing `</script>` can never
+ * terminate the block early and inject markup.
+ */
+export function competitionJsonLdScript(competition: Competition): string {
+  return JSON.stringify(competitionJsonLd(competition)).replace(/</g, "\\u003c");
 }

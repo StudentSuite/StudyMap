@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { getCompetitions } from "@/lib/competitions";
+import { competitionJsonLdScript } from "@/lib/jsonld";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { createClient } from "@/lib/supabase/server";
 import type { CompetitionCountry } from "@/lib/types";
@@ -83,6 +84,10 @@ export default async function CompetitionPage({ params }: CompetitionPageProps) 
 
   return (
     <PageContainer width="content" className="max-w-3xl">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: competitionJsonLdScript(competition) }}
+      />
       <CompetitionDetail
         competition={competition}
         related={related}
