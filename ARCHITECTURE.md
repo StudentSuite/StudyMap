@@ -40,8 +40,9 @@ studymap/
 │   ├── components/               # React components, grouped by feature
 │   └── lib/                      # pure TypeScript utilities (no JSX)
 ├── supabase/
-│   └── migrations/                # SQL for the two optional, sign-in-gated tables (user_places,
-│                                   #   user_home, user_events), run once by hand - see SELF-HOSTING.md
+│   └── migrations/                # SQL for the optional, sign-in-gated tables (user_places,
+│                                   #   user_home, user_events, competition_saves,
+│                                   #   competition_stats), run once by hand - see SELF-HOSTING.md
 ├── ARCHITECTURE.md
 ├── CHANGELOG.md
 ├── CODE_OF_CONDUCT.md

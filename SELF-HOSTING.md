@@ -69,16 +69,20 @@ npm run dev
 Open [http://localhost:3000/map](http://localhost:3000/map) and confirm your places show up in
 the right spot.
 
-## 5. Optional: sign-in, saved places, and personal calendar events
+## 5. Optional: sign-in, saved places, personal calendar events, and saved competitions
 
-These three features (`src/app/login`, saved custom places, personal calendar events) need a
-Supabase project:
+These features (`src/app/login`, saved custom places, personal calendar events, saved
+competitions) need a Supabase project:
 
 1. Create a free project at [supabase.com](https://supabase.com).
 2. Copy its URL and anon key into `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`).
 3. In the Supabase SQL editor, run every file in `supabase/migrations/`, in filename order. Each
    one creates its tables with row-level security already scoped to `auth.uid()`, so users can
-   only ever read or write their own rows.
+   only ever read or write their own rows. This includes `user_places`, `user_home`, and
+   `user_events` (the three original sign-in-gated tables), plus `competition_saves` and
+   `competition_stats` for the competitions vertical: saves are private per user, and
+   `competition_stats` is a public save-count aggregate kept in sync by a trigger, readable by
+   anyone but writable only by that trigger, never directly.
 4. Enable whichever auth providers you want (email, Google, etc.) under Authentication > Providers.
 
 Skip this whole section if you only want the public map and calendar.
