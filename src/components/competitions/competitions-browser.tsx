@@ -9,6 +9,7 @@ import { CompetitionFiltersPanel } from "@/components/competitions/competition-f
 import { CompetitionCard } from "@/components/competitions/competition-card";
 import type { CompetitionFilterState } from "@/components/competitions/filters";
 import { activeFilterCount } from "@/components/competitions/filters";
+import { useViewMode, ViewToggle } from "@/components/competitions/view-toggle";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { fetchSaveCounts, fetchSavedCompetitionIds } from "@/lib/competition-saves";
@@ -80,6 +81,7 @@ export function CompetitionsBrowser({
   const pathname = usePathname();
   const now = useMemo(() => new Date(nowIso), [nowIso]);
   const [filters, setFilters] = useState<CompetitionFilterState>(initialFilters);
+  const [viewMode, setViewMode] = useViewMode("studymap:competitions-view");
 
   // Bulk-fetched once for the whole grid, rather than each of the 50 cards'
   // save buttons independently querying the same competition_stats table.
@@ -208,9 +210,12 @@ export function CompetitionsBrowser({
             aria-label="Search competitions"
           />
         </div>
-        <p className="text-sm text-muted-foreground">
-          {sorted.length} of {competitions.length} competitions
-        </p>
+        <div className="flex items-center gap-3">
+          <p className="text-sm text-muted-foreground">
+            {sorted.length} of {competitions.length} competitions
+          </p>
+          <ViewToggle value={viewMode} onChange={setViewMode} className="ml-auto sm:ml-0" />
+        </div>
       </div>
 
       <div
@@ -265,7 +270,13 @@ export function CompetitionsBrowser({
           )}
         </div>
       ) : (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div
+          className={
+            viewMode === "grid"
+              ? "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+              : "flex flex-col gap-3"
+          }
+        >
           {sorted.map((competition) => (
             <CompetitionCard
               key={competition.id}
@@ -273,6 +284,7 @@ export function CompetitionsBrowser({
               now={now}
               initialSaved={savedIds.has(competition.id)}
               initialCount={saveCounts[competition.id] ?? 0}
+              variant={viewMode}
             />
           ))}
         </div>
