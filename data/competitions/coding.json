@@ -1,0 +1,249 @@
+[
+  {
+    "id": "cyberpatriot",
+    "name": "CyberPatriot National Youth Cyber Defense Competition",
+    "organizer": "Air and Space Forces Association",
+    "organizer_url": "https://www.uscyberpatriot.org/",
+    "category": "coding",
+    "subjects": [
+      "cybersecurity"
+    ],
+    "description": "A team cyber defense competition scored on how well a team secures a set of virtual operating systems against vulnerabilities. Top-scoring teams advance to an in-person National Finals round.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "All-expenses-paid trip to the in-person National Finals.",
+    "official_url": "https://www.uscyberpatriot.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Team registration closes",
+        "date": "2026-10-01",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.uscyberpatriot.org/"
+      },
+      {
+        "label": "Round scoring deadline",
+        "date": "2027-01-16",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.uscyberpatriot.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CA",
+        "official_url": "https://cybertitan.ca/",
+        "stages": [
+          {
+            "name": "CyberTitan (Canada's national cyber defense competition)",
+            "date": "2027-01-01",
+            "estimated": true,
+            "source_url": "http://web.archive.org/web/20230703213917/https://www.cybertitan.ca/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "international-olympiad-in-informatics",
+    "name": "International Olympiad in Informatics (IOI)",
+    "organizer": "IOI Foundation and the annual host country",
+    "organizer_url": "https://ioinformatics.org/",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms"
+    ],
+    "description": "The premier annual competitive programming olympiad for secondary school students. Contestants solve algorithmic tasks scored by an online judge over two five-hour on-site days, with national teams of up to four selected by their own country's informatics olympiad.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal awarded by score.",
+    "official_url": "https://ioinformatics.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IOI 2026 begins (Uzbekistan)",
+        "date": "2026-08-09",
+        "type": "round",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://ioinformatics.org/"
+      },
+      {
+        "label": "IOI 2026 ends",
+        "date": "2026-08-16",
+        "type": "results",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://ioinformatics.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://www.iarcs.org.in/",
+        "stages": [
+          {
+            "name": "Zonal Informatics Olympiad (ZIO)",
+            "date": "2026-11-08",
+            "estimated": true,
+            "source_url": "https://www.iarcs.org.in/"
+          },
+          {
+            "name": "Zonal Computing Olympiad (ZCO)",
+            "date": "2027-01-10",
+            "estimated": true,
+            "source_url": "https://www.iarcs.org.in/"
+          },
+          {
+            "name": "Indian National Olympiad in Informatics (INOI)",
+            "date": "2027-02-14",
+            "estimated": true,
+            "source_url": "https://www.iarcs.org.in/"
+          }
+        ]
+      },
+      {
+        "country": "US",
+        "official_url": "https://usaco.org/",
+        "stages": [
+          {
+            "name": "USACO December contest",
+            "date": "2026-12-11",
+            "estimated": true,
+            "source_url": "https://usaco.org/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://www.olympiad.org.uk/",
+        "stages": [
+          {
+            "name": "British Informatics Olympiad Round 1",
+            "date": "2026-11-01",
+            "estimated": true,
+            "source_url": "https://www.olympiad.org.uk/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-05"
+  },
+  {
+    "id": "meta-hacker-cup",
+    "name": "Meta Hacker Cup",
+    "organizer": "Meta",
+    "organizer_url": "https://www.facebook.com/codingcompetitions/hacker-cup",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms"
+    ],
+    "description": "Meta's annual algorithmic programming contest, open to programmers worldwide of any skill level. A qualification round is followed by successive online elimination rounds leading to a final round.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 99,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes for top finalists; recognition for qualifying rounds.",
+    "official_url": "https://www.facebook.com/codingcompetitions/hacker-cup",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Qualification round deadline",
+        "date": "2026-09-19",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "http://web.archive.org/web/20260831141908/https://www.facebook.com/codingcompetitions/hacker-cup"
+      },
+      {
+        "label": "Final round",
+        "date": "2026-12-18",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "http://web.archive.org/web/20260831141908/https://www.facebook.com/codingcompetitions/hacker-cup"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "picoctf",
+    "name": "picoCTF",
+    "organizer": "Carnegie Mellon University CyLab",
+    "organizer_url": "https://picoctf.org/",
+    "category": "coding",
+    "subjects": [
+      "cybersecurity",
+      "cryptography"
+    ],
+    "description": "A free capture-the-flag cybersecurity competition from Carnegie Mellon University's CyLab. The timed competition runs for about two weeks each spring and is open worldwide, with a separate ranked prize pool for eligible US middle and high school teams.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes for top eligible US middle and high school teams.",
+    "official_url": "https://picoctf.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Competition closes",
+        "date": "2027-03-12",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://picoctf.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-04-01"
+  }
+]

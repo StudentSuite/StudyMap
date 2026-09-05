@@ -1,0 +1,607 @@
+[
+  {
+    "id": "ijso",
+    "name": "International Junior Science Olympiad (IJSO)",
+    "organizer": "IJSO member countries",
+    "organizer_url": "https://ijsoweb.org/",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "chemistry",
+      "physics"
+    ],
+    "description": "An annual science olympiad for students under sixteen, combining theory and practical tests across biology, chemistry and physics. Around 50 member countries send national delegations, selected through their own junior science olympiad.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 15,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Individual gold, silver and bronze medals plus team awards.",
+    "official_url": "https://ijsoweb.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IJSO 2026 (Bulgaria)",
+        "date": "2026-12-02",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://ijsoweb.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://www.iapt.org.in/",
+        "stages": [
+          {
+            "name": "National Standard Examination in Junior Science (NSEJS)",
+            "date": "2026-11-22",
+            "estimated": true,
+            "source_url": "https://www.iapt.org.in/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "international-biology-olympiad",
+    "name": "International Biology Olympiad (IBO)",
+    "organizer": "IBO Coordinating Centre and the annual host country",
+    "organizer_url": "https://www.ibo-info.org/en",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "An annual biology competition for secondary school students, combining a written theory exam with hands on laboratory practicals. Each country sends a national team of up to four students selected through its own biology olympiad.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal awarded by score.",
+    "official_url": "https://www.ibo-info.org/en",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IBO 2026 (Vilnius, Lithuania)",
+        "date": "2026-07-12",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": false,
+        "source_url": "https://www.ibo-info.org/en"
+      },
+      {
+        "label": "Results announced",
+        "date": "2026-07-19",
+        "type": "results",
+        "timezone": "UTC+3",
+        "estimated": false,
+        "source_url": "https://www.ibo-info.org/en"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://olympiads.hbcse.tifr.res.in/",
+        "stages": [
+          {
+            "name": "Indian National Biology Olympiad (INBO)",
+            "date": "2027-01-24",
+            "estimated": true,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://ukbiologycompetitions.org/",
+        "stages": [
+          {
+            "name": "British Biology Olympiad",
+            "date": "2027-01-20",
+            "estimated": true,
+            "source_url": "https://ukbiologycompetitions.org/"
+          }
+        ]
+      },
+      {
+        "country": "US",
+        "official_url": "https://usabo-trc.org/",
+        "stages": [
+          {
+            "name": "USA Biolympiad (USABO) open exam",
+            "date": "2027-01-01",
+            "estimated": true,
+            "source_url": "https://usabo-trc.org/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-05"
+  },
+  {
+    "id": "international-brain-bee",
+    "name": "International Brain Bee",
+    "organizer": "International Brain Bee",
+    "organizer_url": "https://thebrainbee.org/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience",
+      "biology"
+    ],
+    "description": "A three-tiered neuroscience quiz competition for teens. Students who win their country's National Brain Bee go on to represent that country at the International Brain Bee World Championship.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Advancement to the IBB World Championship; national champions represent their country.",
+    "official_url": "https://thebrainbee.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "World Championship registration deadline",
+        "date": "2027-04-24",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://thebrainbee.org/"
+      },
+      {
+        "label": "World Championship",
+        "date": "2027-07-23",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://thebrainbee.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://www.brainbee.in/",
+        "stages": [
+          {
+            "name": "Indian National Brain Bee",
+            "date": "2027-02-01",
+            "estimated": true,
+            "source_url": "https://www.brainbee.in/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "international-chemistry-olympiad",
+    "name": "International Chemistry Olympiad (IChO)",
+    "organizer": "IChO International Steering Committee and the annual host country",
+    "organizer_url": "https://www.icho2026.uz/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A theoretical and experimental chemistry competition for secondary school students, held annually since 1968. National teams of up to four students qualify through their own country's chemistry olympiad.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal awarded by score.",
+    "official_url": "https://www.icho2026.uz/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IChO 2026 (Tashkent, Uzbekistan)",
+        "date": "2026-07-10",
+        "type": "round",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://www.icho2026.uz/"
+      },
+      {
+        "label": "Results announced",
+        "date": "2026-07-19",
+        "type": "results",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://www.icho2026.uz/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://olympiads.hbcse.tifr.res.in/",
+        "stages": [
+          {
+            "name": "Indian National Chemistry Olympiad (INChO)",
+            "date": "2027-01-24",
+            "estimated": true,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+          }
+        ]
+      },
+      {
+        "country": "US",
+        "official_url": "https://www.acs.org/education/students/highschool/olympiad.html",
+        "stages": [
+          {
+            "name": "USNCO local exam",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://www.acs.org/education/students/highschool/olympiad.html"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-05"
+  },
+  {
+    "id": "international-physics-olympiad",
+    "name": "International Physics Olympiad (IPhO)",
+    "organizer": "IPhO Secretariat and the annual host country",
+    "organizer_url": "https://www.ipho-new.org/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "A theoretical and experimental physics competition for secondary school students who have not yet started university. National teams of up to five students, plus two team leaders, qualify through their own country's physics olympiad.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal awarded by score.",
+    "official_url": "https://www.ipho-new.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IPhO 2026 (Bucaramanga, Colombia)",
+        "date": "2026-07-04",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ipho-new.org/"
+      },
+      {
+        "label": "Results announced",
+        "date": "2026-07-12",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ipho-new.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://olympiads.hbcse.tifr.res.in/",
+        "stages": [
+          {
+            "name": "Indian National Physics Olympiad (INPhO)",
+            "date": "2027-01-24",
+            "estimated": true,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://www.bpho.org.uk/",
+        "stages": [
+          {
+            "name": "British Physics Olympiad Round 1",
+            "date": "2026-11-04",
+            "estimated": true,
+            "source_url": "https://www.bpho.org.uk/"
+          }
+        ]
+      },
+      {
+        "country": "US",
+        "official_url": "https://www.aapt.org/physicsteam/",
+        "stages": [
+          {
+            "name": "USA Physics Olympiad (USAPhO)",
+            "date": "2027-01-27",
+            "estimated": true,
+            "source_url": "https://www.aapt.org/physicsteam/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-05"
+  },
+  {
+    "id": "ioaa",
+    "name": "International Olympiad on Astronomy and Astrophysics (IOAA)",
+    "organizer": "IOAA Foundation",
+    "organizer_url": "https://ioaastrophysics.org/",
+    "category": "stem",
+    "subjects": [
+      "astronomy",
+      "astrophysics",
+      "physics"
+    ],
+    "description": "An annual astronomy and astrophysics competition for high school students, with theoretical, data analysis and observational rounds. National teams are selected through each country's own astronomy olympiad.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals plus honourable mentions.",
+    "official_url": "https://ioaastrophysics.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IOAA 2026 (Hanoi, Vietnam)",
+        "date": "2026-09-25",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": false,
+        "source_url": "https://ioaastrophysics.org/"
+      },
+      {
+        "label": "Results announced",
+        "date": "2026-10-05",
+        "type": "results",
+        "timezone": "UTC+7",
+        "estimated": false,
+        "source_url": "https://ioaastrophysics.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://olympiads.hbcse.tifr.res.in/",
+        "stages": [
+          {
+            "name": "Indian National Astronomy Olympiad (INAO)",
+            "date": "2027-01-31",
+            "estimated": true,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "regeneron-isef",
+    "name": "Regeneron International Science and Engineering Fair (ISEF)",
+    "organizer": "Society for Science",
+    "organizer_url": "https://www.societyforscience.org/isef/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "engineering",
+      "research"
+    ],
+    "description": "The largest pre-college science and engineering fair in the world. Students present an original research project after winning a place at a Society-affiliated regional, state or national fair.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 100,000 George D. Yancopoulos Innovator Award, plus category and special awards.",
+    "official_url": "https://www.societyforscience.org/isef/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Affiliated fairs conclude",
+        "date": "2027-04-14",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.societyforscience.org/isef/"
+      },
+      {
+        "label": "ISEF 2027 (Los Angeles)",
+        "date": "2027-05-08",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.societyforscience.org/isef/"
+      },
+      {
+        "label": "Grand Awards Ceremony",
+        "date": "2027-05-14",
+        "type": "ceremony",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.societyforscience.org/isef/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://irisindia.org/",
+        "stages": [
+          {
+            "name": "IRIS National Fair (India's ISEF-affiliated fair)",
+            "date": "2027-01-15",
+            "estimated": true,
+            "source_url": "https://irisindia.org/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "science-olympiad",
+    "name": "Science Olympiad",
+    "organizer": "Science Olympiad",
+    "organizer_url": "https://www.soinc.org/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "engineering"
+    ],
+    "description": "A US team tournament spanning roughly 23 lab, study and build events each season. Teams advance from regional to state tournaments and then to the National Tournament.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "prize": "National Tournament championship title and individual event medals.",
+    "official_url": "https://www.soinc.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 season events published",
+        "date": "2026-09-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.soinc.org/"
+      },
+      {
+        "label": "National Tournament",
+        "date": "2027-05-22",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.soinc.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "world-robot-olympiad",
+    "name": "World Robot Olympiad (WRO)",
+    "organizer": "World Robot Olympiad Association",
+    "organizer_url": "https://wro-association.org/",
+    "category": "stem",
+    "subjects": [
+      "robotics",
+      "engineering",
+      "coding"
+    ],
+    "description": "A global robotics competition for teams of two or three students, ages 8 to 19 (up to 22 in the Future Engineers category), plus a coach. Teams design, build and program a robot for the season's theme and qualify through their own country's national event.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "International Final trophies and category awards; exact amounts vary by season and country.",
+    "official_url": "https://wro-association.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "National qualifying deadline",
+        "date": "2026-11-14",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://wro-association.org/"
+      },
+      {
+        "label": "WRO 2026 International Final (Puerto Rico)",
+        "date": "2026-12-08",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://wro-association.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://wroindia.org/",
+        "stages": [
+          {
+            "name": "WRO India National Final",
+            "date": "2026-10-01",
+            "estimated": true,
+            "source_url": "https://wroindia.org/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  }
+]

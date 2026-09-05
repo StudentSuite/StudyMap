@@ -1,0 +1,42 @@
+[
+  {
+    "id": "all-american-high-school-film-festival",
+    "name": "All American High School Film Festival",
+    "organizer": "All American High School Film Festival",
+    "organizer_url": "https://www.hsfilmfest.com/",
+    "category": "film_video",
+    "subjects": [
+      "film",
+      "media arts"
+    ],
+    "description": "A high school film festival held each year in New York City, screening student films and media arts projects. Selected filmmakers attend industry panels alongside the screenings and awards.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarships and technology prizes.",
+    "official_url": "https://www.hsfilmfest.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-06-30",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.hsfilmfest.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-08-01"
+  }
+]

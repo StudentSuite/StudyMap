@@ -1,0 +1,128 @@
+[
+  {
+    "id": "international-linguistics-olympiad",
+    "name": "International Linguistics Olympiad (IOL)",
+    "organizer": "International Linguistics Olympiad Committee and the annual host country",
+    "organizer_url": "https://ioling.org/",
+    "category": "humanities",
+    "subjects": [
+      "linguistics",
+      "logic"
+    ],
+    "description": "An annual competition for secondary school students who use logic and pattern recognition to work out the grammar, structure or script of an unfamiliar language. Students qualify by placing well in their own country's national linguistics olympiad.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal for the individual round; team-round medals.",
+    "official_url": "https://ioling.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline (host country registration)",
+        "date": "2027-07-24",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://ioling.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "US",
+        "official_url": "https://www.naclo.org/",
+        "stages": [
+          {
+            "name": "North American Computational Linguistics Open Competition (NACLO)",
+            "date": "2027-01-28",
+            "estimated": true,
+            "source_url": "https://www.naclo.org/"
+          }
+        ]
+      },
+      {
+        "country": "CA",
+        "official_url": "https://www.naclo.org/",
+        "stages": [
+          {
+            "name": "North American Computational Linguistics Open Competition (NACLO)",
+            "date": "2027-01-28",
+            "estimated": true,
+            "source_url": "https://www.naclo.org/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://www.uklo.org/",
+        "stages": [
+          {
+            "name": "UK Linguistics Olympiad",
+            "date": "2027-01-01",
+            "estimated": true,
+            "source_url": "https://www.uklo.org/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-08-01"
+  },
+  {
+    "id": "national-latin-exam",
+    "name": "National Latin Exam",
+    "organizer": "National Latin Exam",
+    "organizer_url": "https://www.nle.org/",
+    "category": "humanities",
+    "subjects": [
+      "latin",
+      "classics"
+    ],
+    "description": "A long-running Latin examination that students worldwide sit through their own school at the level their teacher enters them for. Medals and certificates are awarded at multiple score bands.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 8,
+      "currency": "USD"
+    },
+    "prize": "Medals and certificates for high scorers.",
+    "official_url": "https://www.nle.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Online exam registration closes",
+        "date": "2027-02-20",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.nle.org/"
+      },
+      {
+        "label": "Examination window closes",
+        "date": "2027-03-19",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.nle.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-04-01"
+  }
+]

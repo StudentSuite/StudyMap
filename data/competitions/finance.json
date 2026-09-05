@@ -1,0 +1,161 @@
+[
+  {
+    "id": "national-personal-finance-challenge",
+    "name": "National Personal Finance Challenge",
+    "organizer": "Council for Economic Education",
+    "organizer_url": "https://www.councilforeconed.org/programs/for-students/national-personal-finance-challenge/",
+    "category": "finance",
+    "subjects": [
+      "personal finance"
+    ],
+    "description": "A national personal finance competition for US high school teams. Teams build a financial plan for a given family scenario, starting with an online exam before advancing through state rounds to a national final.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National championship title and cash awards.",
+    "official_url": "https://www.councilforeconed.org/programs/for-students/national-personal-finance-challenge/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "State-level submission deadline",
+        "date": "2027-05-22",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.councilforeconed.org/programs/for-students/national-personal-finance-challenge/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "new-york-fed-s-high-school-economics-essay",
+    "name": "High School Fed Challenge",
+    "organizer": "Federal Reserve Bank of New York",
+    "organizer_url": "https://www.newyorkfed.org/education",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "monetary policy"
+    ],
+    "description": "A team competition in which US high school students research monetary policy and current economic conditions. Strong submissions have a chance to be published in the Journal of Future Economists.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in the Journal of Future Economists.",
+    "official_url": "https://www.newyorkfed.org/education",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2026-11-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.newyorkfed.org/education"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "wharton-global-high-school-investment-competition",
+    "name": "Wharton Global High School Investment Competition",
+    "organizer": "Wharton Global Youth Program, University of Pennsylvania",
+    "organizer_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/",
+    "category": "finance",
+    "subjects": [
+      "investing",
+      "finance"
+    ],
+    "description": "A ten-week team investment challenge that uses the Wharton Investment Simulator. Teams are judged on the reasoning behind their strategy rather than their simulated portfolio return.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Global Finale at the Wharton School in Philadelphia.",
+    "official_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-12-05",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "wharton-high-school-data-science-competition",
+    "name": "Wharton High School Data Science Competition",
+    "organizer": "Wharton Sports Analytics and Business Initiative, University of Pennsylvania",
+    "organizer_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/",
+    "category": "finance",
+    "subjects": [
+      "data science",
+      "sports analytics"
+    ],
+    "description": "A free global sports analytics competition in which teams analyze real league data on a rotating sport theme to build predictions and a written analysis. Teams register with a teacher advisor and submit over roughly two months.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Global Finale at the Wharton School in Philadelphia.",
+    "official_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-03-31",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  }
+]

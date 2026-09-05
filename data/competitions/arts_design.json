@@ -1,0 +1,292 @@
+[
+  {
+    "id": "bow-seat-ocean-awareness-contest",
+    "name": "Ocean Awareness Contest",
+    "organizer": "Bow Seat Ocean Awareness Programs",
+    "organizer_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "environment"
+    ],
+    "description": "An international creative contest on ocean and climate themes, open to art, writing, film, music and multimedia entries. Students respond to a new annual theme and a Gold Award is given in each age division.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 1,000 Gold Award in each division.",
+    "official_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission closed",
+        "date": "2026-06-08",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2026-11-15",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "doodle-for-google",
+    "name": "Doodle for Google",
+    "organizer": "Google",
+    "organizer_url": "https://doodles.google.com/d4g/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art"
+    ],
+    "description": "An annual US art contest for K-12 students who redesign the Google logo around the year's theme. The National Winner's doodle appears on Google's homepage and the winner receives a college scholarship plus a technology grant for their school.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 55,000 college scholarship and a USD 50,000 school technology package for the National Winner.",
+    "official_url": "https://doodles.google.com/d4g/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2026-12-16",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://doodles.google.com/d4g/"
+      },
+      {
+        "label": "Finalists notified by",
+        "date": "2027-05-31",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://doodles.google.com/d4g/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CA",
+        "official_url": "https://blog.google/intl/en-ca/products/explore-get-answers/d4gcanada/",
+        "stages": [
+          {
+            "name": "Doodle 4 Google Canada",
+            "date": "2027-01-01",
+            "estimated": true,
+            "source_url": "https://blog.google/intl/en-ca/products/explore-get-answers/d4gcanada/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "scholastic-art-and-writing-awards",
+    "name": "Scholastic Art & Writing Awards",
+    "organizer": "Alliance for Young Artists & Writers",
+    "organizer_url": "https://www.artandwriting.org/awards/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "writing"
+    ],
+    "description": "The longest-running recognition program for creative teenagers in the United States, judging original art and writing across 29 categories. Students first enter through a regional affiliate before national medalists are chosen.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 10,
+      "currency": "USD"
+    },
+    "prize": "Up to USD 12,500 in scholarships for National Medalists.",
+    "official_url": "https://www.artandwriting.org/awards/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Latest regional deadline",
+        "date": "2026-01-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.artandwriting.org/awards/"
+      },
+      {
+        "label": "National results",
+        "date": "2026-03-25",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.artandwriting.org/awards/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CA",
+        "official_url": "https://www.artandwriting.org/regions/",
+        "stages": [
+          {
+            "name": "Region-at-Large (Canada, excluding Quebec)",
+            "date": "2026-01-06",
+            "estimated": true,
+            "source_url": "https://www.artandwriting.org/regions/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-05-01"
+  },
+  {
+    "id": "toyota-dream-car-art-contest",
+    "name": "Toyota Dream Car Art Contest",
+    "organizer": "Toyota Motor Corporation",
+    "organizer_url": "https://www.toyota-dreamcarart.com/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "design"
+    ],
+    "description": "One of the world's largest youth art contests, where children draw their vision of a future car. National contests run in dozens of countries and regions, and each country's winners advance to a World Contest in Japan.",
+    "format": "hybrid",
+    "age_min": 5,
+    "age_max": 15,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National and World Contest awards; exact prizes vary by country.",
+    "official_url": "https://www.toyota-dreamcarart.com/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission deadline (varies by country)",
+        "date": "2027-01-18",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.toyota-dreamcarart.com/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "JP",
+        "official_url": "https://www.toyota-dreamcarart.com/district/",
+        "stages": [
+          {
+            "name": "Japan National Contest",
+            "date": "2027-01-18",
+            "estimated": true,
+            "source_url": "https://www.toyota-dreamcarart.com/district/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://www.toyota-dreamcarart.com/district/",
+        "stages": [
+          {
+            "name": "United Kingdom National Contest",
+            "date": "2027-01-18",
+            "estimated": true,
+            "source_url": "https://www.toyota-dreamcarart.com/district/"
+          }
+        ]
+      },
+      {
+        "country": "BR",
+        "official_url": "https://www.toyota-dreamcarart.com/district/",
+        "stages": [
+          {
+            "name": "Brazil National Contest",
+            "date": "2027-01-18",
+            "estimated": true,
+            "source_url": "https://www.toyota-dreamcarart.com/district/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "youngarts-national-arts-competition",
+    "name": "YoungArts National Arts Award",
+    "organizer": "YoungArts",
+    "organizer_url": "https://youngarts.org/competition/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "performing arts",
+      "writing"
+    ],
+    "description": "A national arts award for US-based artists aged 15 to 18, judged by portfolio or audition across ten disciplines. Winners receive cash awards and ongoing professional support from YoungArts.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 35,
+      "currency": "USD"
+    },
+    "prize": "Cash awards from USD 250 to USD 10,000.",
+    "official_url": "https://youngarts.org/competition/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2026-10-10",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://youngarts.org/competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-12-01"
+  }
+]

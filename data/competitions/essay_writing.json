@@ -1,0 +1,196 @@
+[
+  {
+    "id": "harvard-crimson-global-essay-competition",
+    "name": "The Harvard Crimson Global Essay Competition",
+    "organizer": "The Harvard Crimson, in partnership with Crimson Education",
+    "organizer_url": "https://www.essaycomp.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "writing",
+      "journalism"
+    ],
+    "description": "A paid-entry writing competition run by Harvard's student newspaper with Crimson Education, judged across creative, argumentative and journalistic tracks. Entrants pick one of fifteen prompts and the top writers advance to a Global Final.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes up to USD 8,000 and an internship with The Crimson.",
+    "official_url": "https://www.essaycomp.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Regular registration closes",
+        "date": "2026-02-10",
+        "type": "registration_close",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2026-08-30",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-10-01"
+  },
+  {
+    "id": "jfk-profile-in-courage-essay-contest",
+    "name": "John F. Kennedy Profile in Courage Essay Contest",
+    "organizer": "John F. Kennedy Library Foundation",
+    "organizer_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "category": "essay_writing",
+    "subjects": [
+      "history",
+      "civics"
+    ],
+    "description": "A national essay contest for US high school students on political courage. Entrants profile a US elected official, serving during or after 1917, who took a costly principled stand.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 10,000 for the first-place essay.",
+    "official_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-01-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "http://web.archive.org/web/20260813231243/https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "john-locke-global-essay-prize",
+    "name": "John Locke Institute Global Essay Prize",
+    "organizer": "John Locke Institute",
+    "organizer_url": "https://www.johnlockeinstitute.com/essay-competition",
+    "category": "essay_writing",
+    "subjects": [
+      "philosophy",
+      "politics",
+      "economics",
+      "history"
+    ],
+    "description": "An argumentative essay competition across ten subject categories in the humanities and social sciences. Entrants answer one of roughly thirty published questions, and shortlisted writers are invited to an academic conference and awards dinner.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 5,000 scholarship for each category winner.",
+    "official_url": "https://www.johnlockeinstitute.com/essay-competition",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration closes",
+        "date": "2026-03-31",
+        "type": "registration_close",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
+      },
+      {
+        "label": "Submission closes",
+        "date": "2026-05-31",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
+      },
+      {
+        "label": "Shortlist announced",
+        "date": "2026-07-07",
+        "type": "results",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-08-01"
+  },
+  {
+    "id": "the-politic-high-school-essay-competition",
+    "name": "The Politic High School Essay Competition",
+    "organizer": "The Politic, Yale University",
+    "organizer_url": "https://thepolitic.org/high-school-competition/",
+    "category": "essay_writing",
+    "subjects": [
+      "journalism",
+      "politics"
+    ],
+    "description": "An investigative journalism competition run by Yale's undergraduate politics journal. Entries must be original reporting on a real, specific issue affecting the writer's local community, not opinion writing.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 30,
+      "currency": "USD"
+    },
+    "prize": "First, second and third place cash prizes, plus publication in The Politic.",
+    "official_url": "https://thepolitic.org/high-school-competition/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Regular registration closes",
+        "date": "2026-08-14",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://thepolitic.org/high-school-competition/"
+      },
+      {
+        "label": "Essay submission deadline",
+        "date": "2026-08-21",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://thepolitic.org/high-school-competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-10-01"
+  }
+]

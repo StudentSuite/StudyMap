@@ -1,0 +1,228 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/StudentSuite/StudyMap/blob/main/data/competitions.schema.json",
+  "title": "StudyMap competition record",
+  "description": "Canonical schema for one entry in data/competitions/<category>.json. See data/competitions/CONTRIBUTING.md for the human-readable guide.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "organizer",
+    "organizer_url",
+    "category",
+    "subjects",
+    "description",
+    "format",
+    "age_min",
+    "age_max",
+    "participation",
+    "region",
+    "fee",
+    "prize",
+    "official_url",
+    "cycle_year",
+    "dates",
+    "added_by"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Kebab-case slug, unique across every data/competitions/<category>.json file, e.g. breakthrough-junior-challenge"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "organizer": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The body that runs the competition, e.g. \"Breakthrough Prize Foundation\""
+    },
+    "organizer_url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "stem",
+        "mathematics",
+        "coding",
+        "essay_writing",
+        "creative_writing",
+        "arts_design",
+        "film_video",
+        "business",
+        "finance",
+        "humanities",
+        "history",
+        "debate_mun",
+        "research",
+        "scholarship",
+        "interdisciplinary"
+      ],
+      "description": "Must match the filename it lives in, e.g. data/competitions/coding.json -> \"coding\""
+    },
+    "subjects": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "Free-form subject tags, e.g. [\"physics\", \"science communication\"]"
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1,
+      "description": "One to three plain sentences, written fresh by the contributor. Never copied from doq.world or any other catalog."
+    },
+    "format": {
+      "type": "string",
+      "enum": ["online", "in_person", "hybrid"]
+    },
+    "age_min": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "age_max": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 99
+    },
+    "participation": {
+      "type": "string",
+      "enum": ["individual", "team", "individual_or_team"]
+    },
+    "region": {
+      "type": "string",
+      "description": "\"international\", or an ISO-3166 alpha-2 country code"
+    },
+    "fee": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["amount", "currency"],
+      "properties": {
+        "amount": { "type": "number", "minimum": 0 },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 }
+      }
+    },
+    "prize": {
+      "type": "string",
+      "minLength": 1
+    },
+    "official_url": {
+      "type": "string",
+      "pattern": "^https://"
+    },
+    "cycle_year": {
+      "type": "integer",
+      "minimum": 2020,
+      "maximum": 2100,
+      "description": "The competition year this record's dates describe, e.g. 2026"
+    },
+    "dates": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "date", "type", "timezone", "estimated", "source_url"],
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "date": { "type": "string", "format": "date" },
+          "type": {
+            "type": "string",
+            "enum": [
+              "registration_open",
+              "registration_close",
+              "deadline",
+              "round",
+              "results",
+              "ceremony"
+            ]
+          },
+          "timezone": {
+            "type": "string",
+            "minLength": 1,
+            "description": "UTC offset the date/time was read in, e.g. \"UTC-4\""
+          },
+          "estimated": {
+            "type": "boolean",
+            "description": "True if this date is a best estimate (e.g. following the typical cycle) rather than a confirmed date for the current cycle"
+          },
+          "source_url": {
+            "type": "string",
+            "pattern": "^https?://",
+            "description": "The URL this date was read from. Must resolve."
+          }
+        }
+      }
+    },
+    "country_tracks": {
+      "type": "array",
+      "description": "Optional. Real national qualifier pathways into this competition, one entry per country with a genuine pathway.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["country", "official_url", "stages"],
+        "properties": {
+          "country": {
+            "type": "string",
+            "enum": ["IN", "US", "GB", "CA", "AU", "SG", "DE", "FR", "CN", "JP", "KR", "BR", "ZA"]
+          },
+          "official_url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "stages": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "date", "estimated", "source_url"],
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "date": { "type": "string", "format": "date" },
+                "estimated": { "type": "boolean" },
+                "source_url": {
+                  "type": "string",
+                  "pattern": "^https?://"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "added_by": {
+      "type": "string",
+      "minLength": 1,
+      "description": "GitHub username of the contributor"
+    },
+    "verified": {
+      "type": "object",
+      "description": "Optional proof a contributor re-checked this record. Verified competitions show a badge.",
+      "additionalProperties": false,
+      "required": ["by", "on"],
+      "properties": {
+        "by": {
+          "type": "string",
+          "minLength": 1,
+          "description": "GitHub username of the verifier"
+        },
+        "on": {
+          "type": "string",
+          "format": "date",
+          "description": "ISO date (YYYY-MM-DD) the record was last verified"
+        }
+      }
+    },
+    "valid_till": {
+      "type": "string",
+      "format": "date",
+      "description": "ISO date (YYYY-MM-DD) this record should be reconfirmed by. Every date is a precision claim, so this and the freshness cron are what stop the catalog rotting."
+    }
+  }
+}

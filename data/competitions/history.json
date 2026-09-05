@@ -1,0 +1,163 @@
+[
+  {
+    "id": "concord-review",
+    "name": "The Concord Review",
+    "organizer": "The Concord Review, Inc.",
+    "organizer_url": "https://tcr.org/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "research writing"
+    ],
+    "description": "The only quarterly journal publishing history research papers written by secondary school students. Submissions are accepted on a rolling basis across four issue deadlines a year, and publication is the recognition.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 70,
+      "currency": "USD"
+    },
+    "prize": "Publication in The Concord Review.",
+    "official_url": "https://tcr.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Winter issue deadline",
+        "date": "2026-08-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://tcr.org/"
+      },
+      {
+        "label": "Spring issue deadline",
+        "date": "2026-11-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://tcr.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "national-history-bowl",
+    "name": "National History Bowl",
+    "organizer": "International Academic Competitions",
+    "organizer_url": "https://www.historybowl.com/",
+    "category": "history",
+    "subjects": [
+      "history"
+    ],
+    "description": "A buzzer-based history quiz competition covering world and US history across all eras and regions. Teams advance through regional tournaments to the National Championships by winning at least half their preliminary rounds.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National Championship title in history quiz bowl.",
+    "official_url": "https://www.historybowl.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regionals begin",
+        "date": "2026-10-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.historybowl.com/"
+      },
+      {
+        "label": "National Championships (Arlington)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.historybowl.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "national-history-day",
+    "name": "National History Day Contest",
+    "organizer": "National History Day",
+    "organizer_url": "https://nhd.org/en/contest/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "research"
+    ],
+    "description": "A year-long historical research contest that runs from school affiliate contests to a national final. Students present their research as a paper, exhibit, documentary, website or performance on the year's theme.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Top three entries in each of five categories are recognized nationally.",
+    "official_url": "https://nhd.org/en/contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National contest opens",
+        "date": "2027-06-13",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nhd.org/en/contest/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CN",
+        "official_url": "https://nhd.org/en/affiliates/nhd-china/",
+        "stages": [
+          {
+            "name": "NHD China affiliate contest",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://nhd.org/en/affiliates/nhd-china/"
+          }
+        ]
+      },
+      {
+        "country": "KR",
+        "official_url": "https://nhd.org/en/affiliates/nhd-korea/",
+        "stages": [
+          {
+            "name": "NHD Korea affiliate contest",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://nhd.org/en/affiliates/nhd-korea/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-07-01"
+  }
+]

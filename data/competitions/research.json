@@ -1,0 +1,44 @@
+[
+  {
+    "id": "regeneron-science-talent-search",
+    "name": "Regeneron Science Talent Search",
+    "organizer": "Society for Science",
+    "organizer_url": "https://www.societyforscience.org/regeneron-sts/",
+    "category": "research",
+    "subjects": [
+      "science",
+      "mathematics",
+      "engineering",
+      "research"
+    ],
+    "description": "The oldest science research competition for US high school seniors. Entrants submit an original, independent research project in science, mathematics or engineering along with a full application.",
+    "format": "hybrid",
+    "age_min": 17,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 250,000 top award; USD 3.1 million distributed annually.",
+    "official_url": "https://www.societyforscience.org/regeneron-sts/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Application and recommendations close",
+        "date": "2026-11-05",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.societyforscience.org/regeneron-sts/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-01-01"
+  }
+]

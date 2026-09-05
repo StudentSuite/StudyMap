@@ -1,0 +1,193 @@
+[
+  {
+    "id": "conrad-challenge",
+    "name": "Conrad Challenge",
+    "organizer": "Conrad Foundation and Space Center Houston",
+    "organizer_url": "https://conrad.spacecenter.org/the-challenge/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "innovation"
+    ],
+    "description": "A year-long innovation and entrepreneurship challenge for teams of two to five students. Teams design a solution to a real-world problem in one of five categories and build out a business case and pitch.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 499,
+      "currency": "USD"
+    },
+    "prize": "Category winners are named Pete Conrad Scholars.",
+    "official_url": "https://conrad.spacecenter.org/the-challenge/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-01-16",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://conrad.spacecenter.org/the-challenge/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "deca-icdc",
+    "name": "DECA International Career Development Conference (ICDC)",
+    "organizer": "DECA Inc.",
+    "organizer_url": "https://www.deca.org/conferences/icdc",
+    "category": "business",
+    "subjects": [
+      "marketing",
+      "finance",
+      "entrepreneurship",
+      "hospitality"
+    ],
+    "description": "The culmination of the DECA competitive year across marketing, finance, hospitality, management and entrepreneurship events. Members qualify by placing at their state or chartered association conference.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "International champion titles, trophies and cash awards.",
+    "official_url": "https://www.deca.org/conferences/icdc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 ICDC opens (Anaheim)",
+        "date": "2027-04-17",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.deca.org/conferences/icdc"
+      },
+      {
+        "label": "2027 ICDC ends",
+        "date": "2027-04-20",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.deca.org/conferences/icdc"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CA",
+        "official_url": "https://www.deca.ca/",
+        "stages": [
+          {
+            "name": "DECA Canada Provincial Conference",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://www.deca.ca/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "diamond-challenge",
+    "name": "Diamond Challenge",
+    "organizer": "Horn Entrepreneurship, University of Delaware",
+    "organizer_url": "https://diamondchallenge.org/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship"
+    ],
+    "description": "A global high school entrepreneurship competition with business and social-innovation tracks. Teams of two to four develop a venture concept, submit a written entry, and pitch live to advance.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 12,000 for first place in each track.",
+    "official_url": "https://diamondchallenge.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-02-05",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://diamondchallenge.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "nfte-world-series-of-innovation",
+    "name": "NFTE World Series of Innovation",
+    "organizer": "Network for Teaching Entrepreneurship (NFTE)",
+    "organizer_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "innovation"
+    ],
+    "description": "A global online competition inviting young people to propose original ideas addressing the UN Sustainable Development Goals. Separate age tracks run for younger and older entrants.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 300 to USD 1,500.",
+    "official_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2026-12-07",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/"
+      },
+      {
+        "label": "Winners announced (ages 13-24)",
+        "date": "2027-04-13",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  }
+]

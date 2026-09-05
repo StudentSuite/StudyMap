@@ -1,0 +1,165 @@
+[
+  {
+    "id": "harvard-model-united-nations",
+    "name": "Harvard Model United Nations",
+    "organizer": "Harvard International Relations Council",
+    "organizer_url": "https://www.harvardmun.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "diplomacy",
+      "public speaking"
+    ],
+    "description": "One of the oldest and largest Model UN conferences for high school students, staffed by Harvard undergraduates. Delegations represent an assigned country or character across a range of simulated committees.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Delegate awards including Best Delegate and Honorable Mention.",
+    "official_url": "https://www.harvardmun.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "HMUN 2027 opens",
+        "date": "2027-01-28",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.harvardmun.org/"
+      },
+      {
+        "label": "HMUN 2027 closes",
+        "date": "2027-01-31",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.harvardmun.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "nsda-national-tournament",
+    "name": "National Speech & Debate Tournament",
+    "organizer": "National Speech & Debate Association",
+    "organizer_url": "https://www.speechanddebate.org/nationals/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "public speaking"
+    ],
+    "description": "The largest academic competition in the world by entrant count, spanning more than 40 speech and debate events. Students reach the National Tournament by qualifying at their district tournament series each spring.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National championship titles across more than 40 events.",
+    "official_url": "https://www.speechanddebate.org/nationals/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "District tournament series",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.speechanddebate.org/nationals/"
+      },
+      {
+        "label": "National Tournament",
+        "date": "2027-06-14",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.speechanddebate.org/nationals/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "world-scholars-cup",
+    "name": "The World Scholar's Cup",
+    "organizer": "The World Scholar's Cup",
+    "organizer_url": "https://www.scholarscup.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "general knowledge",
+      "writing"
+    ],
+    "description": "A global team academic tournament combining debate, writing, a quiz bowl and a multi-subject test on an annual interdisciplinary theme. Teams advance from Regional Rounds to a Global Round and the Tournament of Champions at Yale.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Medals across events and advancement to the Tournament of Champions at Yale.",
+    "official_url": "https://www.scholarscup.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline for late Regional Round registration",
+        "date": "2027-05-30",
+        "type": "registration_close",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.scholarscup.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://scholarscup.org/calendar/3567-gurgaon-round/",
+        "stages": [
+          {
+            "name": "Gurgaon Regional Round",
+            "date": "2027-04-13",
+            "estimated": true,
+            "source_url": "https://scholarscup.org/calendar/3567-gurgaon-round/"
+          }
+        ]
+      },
+      {
+        "country": "SG",
+        "official_url": "https://www.scholarscup.org/calendar/5381-singapore-round/",
+        "stages": [
+          {
+            "name": "Singapore Regional Round",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://www.scholarscup.org/calendar/5381-singapore-round/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-06-01"
+  }
+]

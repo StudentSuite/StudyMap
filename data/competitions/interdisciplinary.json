@@ -1,0 +1,133 @@
+[
+  {
+    "id": "first-robotics-competition",
+    "name": "FIRST Robotics Competition (FRC)",
+    "organizer": "FIRST",
+    "organizer_url": "https://www.firstinspires.org/robotics/frc",
+    "category": "interdisciplinary",
+    "subjects": [
+      "robotics",
+      "engineering",
+      "coding",
+      "teamwork"
+    ],
+    "description": "The flagship FIRST robotics league for high school teams, who design, build and program a full-size competition robot during a short, intense build season. Teams compete at regional events before an international championship.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "FIRST Championship titles and a large scholarship pool.",
+    "official_url": "https://www.firstinspires.org/robotics/frc",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Kickoff selection closes",
+        "date": "2026-11-17",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.firstinspires.org/robotics/frc"
+      },
+      {
+        "label": "Game reveal",
+        "date": "2027-01-09",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.firstinspires.org/robotics/frc"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "CA",
+        "official_url": "https://www.firstroboticscanada.org/",
+        "stages": [
+          {
+            "name": "FIRST Robotics Canada regional events",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://www.firstroboticscanada.org/"
+          }
+        ]
+      },
+      {
+        "country": "AU",
+        "official_url": "https://www.firstaustralia.com.au/",
+        "stages": [
+          {
+            "name": "FIRST Australia regional events",
+            "date": "2027-03-01",
+            "estimated": true,
+            "source_url": "https://www.firstaustralia.com.au/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "technovation-girls",
+    "name": "Technovation Girls",
+    "organizer": "Technovation",
+    "organizer_url": "https://technovationchallenge.org/competition/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "coding",
+      "entrepreneurship",
+      "app development"
+    ],
+    "description": "A global technology and entrepreneurship program for girls and gender-expansive youth, who build a mobile app or AI solution addressing a problem in their community. Teams submit a working app, a business plan and a pitch video.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Educational scholarships for finalist and grand prize teams.",
+    "official_url": "https://technovationchallenge.org/competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-04-24",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://technovationchallenge.org/competition/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://technovationchallenge.org/",
+        "stages": [
+          {
+            "name": "Technovation India regional chapter",
+            "date": "2027-04-24",
+            "estimated": true,
+            "source_url": "https://technovationchallenge.org/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-06-01"
+  }
+]

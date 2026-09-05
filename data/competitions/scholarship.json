@@ -1,0 +1,46 @@
+[
+  {
+    "id": "davidson-fellows-scholarship",
+    "name": "Davidson Fellows Scholarship",
+    "organizer": "Davidson Institute",
+    "organizer_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "category": "scholarship",
+    "subjects": [
+      "science",
+      "technology",
+      "mathematics",
+      "literature",
+      "music",
+      "philosophy"
+    ],
+    "description": "A scholarship for students aged 18 and under who have completed a significant piece of original work at or near graduate level, judged by independent experts in the relevant field.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 100,000, USD 50,000 or USD 25,000 scholarship.",
+    "official_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2027-02-11",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-01"
+  }
+]

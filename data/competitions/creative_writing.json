@@ -1,0 +1,136 @@
+[
+  {
+    "id": "foyle-young-poets-of-the-year-award",
+    "name": "Foyle Young Poets of the Year Award",
+    "organizer": "The Poetry Society",
+    "organizer_url": "https://foyleyoungpoets.org/",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry"
+    ],
+    "description": "One of the largest poetry competitions in the world for young writers, free to enter on any theme or style. Winners are published in the Foyle Young Poets anthology and given Poetry Society membership.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in the Foyle Young Poets anthology and Poetry Society membership.",
+    "official_url": "https://foyleyoungpoets.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission closes",
+        "date": "2026-07-31",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://foyleyoungpoets.org/"
+      },
+      {
+        "label": "Winners contacted",
+        "date": "2026-10-01",
+        "type": "results",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://foyleyoungpoets.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "rattle-poetry-prize",
+    "name": "Rattle Poetry Prize",
+    "organizer": "Rattle Foundation",
+    "organizer_url": "https://rattle.com/page/poetryprize/",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry"
+    ],
+    "description": "An annual open poetry contest run by the literary magazine Rattle. A winner and ten finalists are chosen through anonymised editor review and printed in the winter issue, and a separate Readers' Choice Award is then voted on by subscribers and entrants.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 99,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 30,
+      "currency": "USD"
+    },
+    "prize": "USD 15,000 winner, ten USD 500 finalists, and a USD 5,000 Readers' Choice Award.",
+    "official_url": "https://rattle.com/page/poetryprize/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2026-07-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://rattle.com/page/poetryprize/"
+      },
+      {
+        "label": "Winner and finalists announced",
+        "date": "2026-09-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://rattle.com/page/poetryprize/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-10-01"
+  },
+  {
+    "id": "river-of-words",
+    "name": "River of Words International Youth Poetry and Art Contest",
+    "organizer": "Center for Environmental Literacy, Saint Mary's College of California",
+    "organizer_url": "https://www.stmarys-ca.edu/centers-institutes/center-environmental-literacy/river-of-words",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "environment"
+    ],
+    "description": "A free international poetry and art contest on the watershed and natural place where a student lives. It is judged separately in poetry and art, with a Grand Prize in each age category.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Grand Prize in each age category for both poetry and art.",
+    "official_url": "https://www.stmarys-ca.edu/centers-institutes/center-environmental-literacy/river-of-words",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-02-28",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.stmarys-ca.edu/centers-institutes/center-environmental-literacy/river-of-words"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-04-01"
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "id": "hmmt",
+    "name": "Harvard-MIT Mathematics Tournament (HMMT)",
+    "organizer": "Harvard-MIT Mathematics Tournament",
+    "organizer_url": "https://www.hmmt.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "One of the largest high school mathematics tournaments in the world, run by Harvard and MIT students and held twice a year, once at MIT and once at Harvard. Teams of up to six compete across individual, team and guts rounds.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 80,
+      "currency": "USD"
+    },
+    "prize": "Individual, team and event awards; recognition among top US math programs.",
+    "official_url": "https://www.hmmt.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration closes",
+        "date": "2026-09-20",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.hmmt.org/"
+      },
+      {
+        "label": "HMMT November (MIT)",
+        "date": "2026-11-07",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.hmmt.org/"
+      },
+      {
+        "label": "HMMT February (Harvard)",
+        "date": "2027-02-13",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.hmmt.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "international-mathematical-olympiad",
+    "name": "International Mathematical Olympiad (IMO)",
+    "organizer": "IMO Board",
+    "organizer_url": "https://www.imo-official.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The oldest international science olympiad, held annually since 1959. Each country sends a team of up to six students to sit six proof-based problems in algebra, combinatorics, geometry and number theory over two days.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal; top scorers may also receive special prizes.",
+    "official_url": "https://www.imo-official.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "IMO 2026 (Sunshine Coast, Australia)",
+        "date": "2026-07-10",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.imo-official.org/"
+      },
+      {
+        "label": "Results announced",
+        "date": "2026-07-20",
+        "type": "results",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.imo-official.org/"
+      }
+    ],
+    "country_tracks": [
+      {
+        "country": "IN",
+        "official_url": "https://olympiads.hbcse.tifr.res.in/",
+        "stages": [
+          {
+            "name": "Indian National Mathematical Olympiad (INMO)",
+            "date": "2027-01-17",
+            "estimated": true,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+          }
+        ]
+      },
+      {
+        "country": "GB",
+        "official_url": "https://bmos.ukmt.org.uk/",
+        "stages": [
+          {
+            "name": "British Mathematical Olympiad Round 1",
+            "date": "2026-11-26",
+            "estimated": true,
+            "source_url": "https://bmos.ukmt.org.uk/"
+          }
+        ]
+      },
+      {
+        "country": "CA",
+        "official_url": "https://cms.math.ca/competitions/comc/",
+        "stages": [
+          {
+            "name": "Canadian Mathematical Olympiad Challenge (COMC)",
+            "date": "2026-11-05",
+            "estimated": true,
+            "source_url": "https://cms.math.ca/competitions/comc/"
+          }
+        ]
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-03-05"
+  },
+  {
+    "id": "math-prize-for-girls",
+    "name": "Advantage Testing Foundation / Jane Street Math Prize for Girls",
+    "organizer": "Advantage Testing Foundation",
+    "organizer_url": "https://mathprize.atfoundation.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The largest monetary mathematics prize for young women, held annually at MIT. Around 300 contestants are invited based on their AMC score and sit 20 challenging problems in two and a half hours.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 50,000 first prize, from a USD 100,000 total prize pool.",
+    "official_url": "https://mathprize.atfoundation.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Contest at MIT",
+        "date": "2026-10-11",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://mathprize.atfoundation.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "usamo",
+    "name": "USA Mathematical Olympiad (USAMO)",
+    "organizer": "Mathematical Association of America (MAA)",
+    "organizer_url": "https://maa.org/maa-invitational-competitions/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The final invitational round of the American Mathematics Competitions series. Students qualify through the AMC and AIME, sit six proof-based problems over two days, and top scorers are invited to the Mathematical Olympiad Program and considered for the US IMO team.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USAMO Awardee recognition plus MOP and IMO team consideration.",
+    "official_url": "https://maa.org/maa-invitational-competitions/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "USAMO test date",
+        "date": "2027-03-24",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "http://web.archive.org/web/20260826221856/https://maa.org/maa-invitational-competitions/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-05"
+    },
+    "valid_till": "2027-04-01"
+  }
+]

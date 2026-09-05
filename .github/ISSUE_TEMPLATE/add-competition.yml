@@ -1,0 +1,185 @@
+name: Add a competition
+description: Suggest a student competition for the catalog. A citation and a quality check are required.
+title: "[competition] "
+labels: ["competition"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for adding to the catalog. Competitions ship inside the repo, so the bar
+        is a real, currently-running competition that a student can verify. Facts only,
+        no copied descriptions, every date needs a source that resolves.
+  - type: input
+    id: name
+    attributes:
+      label: Competition name
+      placeholder: Regeneron International Science and Engineering Fair
+    validations:
+      required: true
+  - type: input
+    id: organizer
+    attributes:
+      label: Organizer
+      placeholder: Society for Science
+    validations:
+      required: true
+  - type: input
+    id: organizer_url
+    attributes:
+      label: Organizer website
+      placeholder: https://www.societyforscience.org/isef/
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - stem
+        - mathematics
+        - coding
+        - essay_writing
+        - creative_writing
+        - arts_design
+        - film_video
+        - business
+        - finance
+        - humanities
+        - history
+        - debate_mun
+        - research
+        - scholarship
+        - interdisciplinary
+    validations:
+      required: true
+  - type: input
+    id: subjects
+    attributes:
+      label: Subjects
+      description: Comma-separated, e.g. biology, research
+      placeholder: biology, research
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: One to three plain sentences, written by you. Do not copy from doq.world, Wikipedia, or the competition's own marketing copy.
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format
+      options:
+        - online
+        - in_person
+        - hybrid
+    validations:
+      required: true
+  - type: input
+    id: age_min
+    attributes:
+      label: Minimum age
+      placeholder: "13"
+    validations:
+      required: true
+  - type: input
+    id: age_max
+    attributes:
+      label: Maximum age
+      placeholder: "18"
+    validations:
+      required: true
+  - type: dropdown
+    id: participation
+    attributes:
+      label: Participation
+      options:
+        - individual
+        - team
+        - individual_or_team
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Region
+      description: '"international", or an ISO-3166 alpha-2 country code, e.g. US, GB, IN'
+      placeholder: international
+    validations:
+      required: true
+  - type: input
+    id: fee
+    attributes:
+      label: Entry fee
+      description: Amount and currency, e.g. "0 USD" or "80 USD"
+      placeholder: 0 USD
+    validations:
+      required: true
+  - type: input
+    id: prize
+    attributes:
+      label: Prize
+      placeholder: USD 100,000 top award
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official competition URL
+      placeholder: https://www.societyforscience.org/isef/
+    validations:
+      required: true
+  - type: input
+    id: cycle_year
+    attributes:
+      label: Cycle year
+      placeholder: "2026"
+    validations:
+      required: true
+  - type: textarea
+    id: dates
+    attributes:
+      label: Dates
+      description: One per line, as "label | date | type | timezone | source_url". Type is one of registration_open, registration_close, deadline, round, results, ceremony.
+      placeholder: |
+        Submission deadline | 2026-06-25 | deadline | UTC-4 | https://example.org/rules
+    validations:
+      required: true
+  - type: textarea
+    id: country_tracks
+    attributes:
+      label: Country tracks (optional)
+      description: Only fill this in for a real national qualifying pathway. One per line, as "country | stage name | date | official_url".
+      placeholder: |
+        IN | ZIO | 2026-11-15 | https://www.iarcs.org.in/
+    validations:
+      required: false
+  - type: input
+    id: source
+    attributes:
+      label: Source or citation (proof, not committed verbatim)
+      description: A link showing this is a real, currently-running competition.
+    validations:
+      required: true
+  - type: input
+    id: added_by
+    attributes:
+      label: Your GitHub handle (added_by)
+      placeholder: your-handle
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgements
+    attributes:
+      label: Quality gate
+      options:
+        - label: This is a real, currently-running competition, not a defunct or one-off event.
+          required: true
+        - label: The description above is my own writing, not copied from doq.world, Wikipedia, or any other source.
+          required: true
+        - label: Every source URL above resolves. I opened each one myself.
+          required: true
+        - label: No em dashes anywhere in my submission.
+          required: true
