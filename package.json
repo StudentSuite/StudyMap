@@ -8,9 +8,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
     "validate": "node scripts/validate-places.mjs",
     "check:freshness": "node scripts/check-data-freshness.mjs",
-    "test:unit": "vitest run"
+    "test:unit": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
@@ -30,7 +34,6 @@
     "react-leaflet": "^5.0.0",
     "react-markdown": "^10.1.0",
     "remark-gfm": "^4.0.1",
-    "shadcn": "^4.10.0",
     "shiki": "^3.9.4",
     "sonner": "^2.0.7",
     "supercluster": "^8.0.1",
@@ -48,8 +51,10 @@
     "@types/react-dom": "^19",
     "@types/supercluster": "^7.1.3",
     "eslint": "^9",
-    "eslint-config-next": "16.2.7",
+    "eslint-config-next": "^16.2.9",
     "jsdom": "^29.1.1",
+    "prettier": "^3.6.2",
+    "shadcn": "^4.10.0",
     "tailwindcss": "^4",
     "typescript": "^5",
     "vitest": "^4.1.9"

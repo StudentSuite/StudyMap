@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+coverage
+public/sw.js
+
+# Generated at prebuild by scripts/build-docs-meta.mjs, never hand-edited.
+src/lib/docs-meta.generated.json
+
+# Place data is hand-authored and reviewed as data, not as code. Reformatting
+# it would bury real contributions under whitespace churn in every diff, and
+# scripts/validate-places.mjs is the gate that actually matters here.
+data/
