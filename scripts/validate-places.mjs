@@ -9,9 +9,15 @@
  *   - No fields outside the schema's properties
  *   - Unique id within each file and across all files
  *   - type is one of the schema's enum values
+ *   - type matches the filename it lives in
+ *   - id matches the <city-prefix>-<type>-<number> convention, or is a bare
+ *     numeric id (the College Board SAT centre code convention)
  *   - lat/lng are numbers within the schema's min/max bounds
  *   - gmaps_link matches the schema's pattern
+ *   - valid_till is a real ISO date (YYYY-MM-DD), when present
  *   - No em dashes in any string field
+ *   - Warns (does not fail) on near-duplicate coordinates between
+ *     different-named places within the same file
  *
  * Exits 0 when all files pass, 1 when any error is found.
  */
@@ -37,12 +43,45 @@ const BOUNDS = {
 };
 const GMAPS_RE = new RegExp(schema.properties.gmaps_link.pattern);
 
+// <city-prefix>-<type>-<number>, allowing multi-segment city/type prefixes
+// (e.g. "delhi-ncr-sat-01", "mum-airport-terminal-01"), or a bare numeric id
+// (the College Board SAT centre code convention used throughout sat_centre.json).
+const ID_SLUG_RE = /^[a-z][a-z0-9_]*(-[a-z0-9_]+)*-[0-9]+$/;
+const ID_NUMERIC_RE = /^[0-9]+$/;
+
+const NEAR_DUPE_METERS = 50;
+
 let totalErrors = 0;
+let totalWarnings = 0;
 const globalIds = new Set();
 
 function err(loc, msg) {
   console.error(`  ERROR  ${loc}: ${msg}`);
   totalErrors++;
+}
+
+function warn(loc, msg) {
+  console.error(`  WARN   ${loc}: ${msg}`);
+  totalWarnings++;
+}
+
+function isRealIsoDate(value) {
+  if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const parsed = new Date(`${value}T00:00:00Z`);
+  return !Number.isNaN(parsed.getTime()) && parsed.toISOString().slice(0, 10) === value;
+}
+
+// Haversine distance in meters between two lat/lng points.
+function metersBetween(a, b) {
+  const R = 6371000;
+  const toRad = (deg) => (deg * Math.PI) / 180;
+  const dLat = toRad(b.lat - a.lat);
+  const dLng = toRad(b.lng - a.lng);
+  const lat1 = toRad(a.lat);
+  const lat2 = toRad(b.lat);
+  const h =
+    Math.sin(dLat / 2) ** 2 + Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
 }
 
 const files = readdirSync(DATA_DIR)
@@ -72,6 +111,7 @@ for (const file of files) {
     continue;
   }
 
+  const expectedType = file.slice(0, -".json".length);
   const fileIds = new Set();
   let fileErrors = 0;
 
@@ -113,6 +153,24 @@ for (const file of files) {
     // Valid type
     if (r.type !== undefined && !VALID_TYPES.has(r.type)) {
       err(loc, `invalid type "${r.type}" — valid types: ${[...VALID_TYPES].join(", ")}`);
+    }
+
+    // type must match the filename it lives in
+    if (r.type !== undefined && r.type !== expectedType) {
+      err(loc, `type "${r.type}" does not match filename "${file}" (expected "${expectedType}")`);
+    }
+
+    // id must be <city-prefix>-<type>-<number>, or a bare numeric code
+    if (r.id !== undefined && !ID_SLUG_RE.test(r.id) && !ID_NUMERIC_RE.test(r.id)) {
+      err(
+        loc,
+        `id "${r.id}" does not match the <city-prefix>-<type>-<number> convention (or a bare numeric code)`,
+      );
+    }
+
+    // valid_till format, when present
+    if (r.valid_till !== undefined && !isRealIsoDate(r.valid_till)) {
+      err(loc, `valid_till must be a real ISO date (YYYY-MM-DD), got "${r.valid_till}"`);
     }
 
     // lat bounds
@@ -182,14 +240,37 @@ for (const file of files) {
     fileErrors += totalErrors - before;
   }
 
+  // Warn on near-duplicate coordinates between different-named places. Two
+  // records sharing exact or near-identical lat/lng almost always means a
+  // copy-paste coordinate error on one of them, not two real places at the
+  // same spot — but it is a warning, not a hard failure, since it can happen.
+  const geotagged = records.filter(
+    (r) => typeof r.lat === "number" && typeof r.lng === "number",
+  );
+  for (let i = 0; i < geotagged.length; i++) {
+    for (let j = i + 1; j < geotagged.length; j++) {
+      const a = geotagged[i];
+      const b = geotagged[j];
+      if (a.name === b.name) continue;
+      const distance = metersBetween(a, b);
+      if (distance < NEAR_DUPE_METERS) {
+        warn(
+          file,
+          `"${a.name}" (id: ${a.id ?? "?"}) and "${b.name}" (id: ${b.id ?? "?"}) are ` +
+            `~${distance.toFixed(0)}m apart — check for a duplicated/copy-pasted coordinate`,
+        );
+      }
+    }
+  }
+
   const status = fileErrors === 0 ? " OK " : "FAIL";
   console.log(`  ${status}   ${file} (${records.length} records, ${fileErrors} error(s))`);
 }
 
 console.log("");
 if (totalErrors > 0) {
-  console.error(`Validation failed: ${totalErrors} error(s). Fix them before merging.`);
+  console.error(`Validation failed: ${totalErrors} error(s), ${totalWarnings} warning(s). Fix the errors before merging.`);
   process.exit(1);
 } else {
-  console.log(`Validation passed: all ${files.length} file(s) clean.`);
+  console.log(`Validation passed: all ${files.length} file(s) clean, ${totalWarnings} warning(s).`);
 }
