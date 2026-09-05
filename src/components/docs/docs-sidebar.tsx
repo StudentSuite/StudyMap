@@ -6,16 +6,14 @@ import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { docsPages, type DocsGroup } from "@/lib/docs-nav";
+import { docsPages, DOCS_GROUPS } from "@/lib/docs-nav";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-
-const GROUPS: DocsGroup[] = ["Guides", "Awesome Lists", "Contributing", "Developers"];
 
 function DocsNavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {
   return (
     <nav className="flex flex-col gap-6">
-      {GROUPS.map((group) => {
+      {DOCS_GROUPS.map((group) => {
         const items = docsPages.filter((entry) => entry.group === group);
         if (items.length === 0) return null;
         return (

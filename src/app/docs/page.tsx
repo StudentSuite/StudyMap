@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 import { DocsHeader } from "@/components/docs/docs-header";
-import { DocsIndexList } from "@/components/docs/docs-index-list";
+import { DocsIndex } from "@/components/docs/docs-index";
 import { PageContainer } from "@/components/layout/page-container";
 
 export const metadata: Metadata = {
@@ -14,7 +14,7 @@ export default function DocsIndexPage() {
     <>
       <DocsHeader />
       <PageContainer width="content">
-        <DocsIndexList />
+        <DocsIndex />
       </PageContainer>
     </>
   );

@@ -20,6 +20,18 @@ import {
 
 export type DocsGroup = "Guides" | "Awesome Lists" | "Contributing" | "Developers";
 
+/**
+ * The one place the group order is stated. The sidebar and the /docs index
+ * (list and grid views) all read this instead of each keeping their own copy,
+ * so they can't drift out of sync with each other.
+ */
+export const DOCS_GROUPS: DocsGroup[] = [
+  "Guides",
+  "Awesome Lists",
+  "Contributing",
+  "Developers",
+];
+
 export interface DocsNavEntry {
   href: string;
   title: string;
