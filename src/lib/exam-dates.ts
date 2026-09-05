@@ -5,7 +5,7 @@
  * `confirmed: false` means the board has published a provisional window
  * that is still subject to confirmation.
  *
- * Last verified: 2026-06-11.
+ * Last verified: 2026-09-05.
  */
 
 export type ExamBoard = "SAT" | "IB" | "IGCSE";
@@ -24,6 +24,13 @@ export interface ExamEvent {
   /** True when results date is an estimate based on board guidance. */
   resultsEstimated?: boolean;
   confirmed: boolean;
+  /**
+   * True once a maintainer has confirmed this session has fully passed and
+   * is being kept only as a historical record. `exam-dates.test.ts` fails
+   * for any event whose results/exam-end date is in the past and isn't
+   * marked `archived`, so aging entries can't go stale silently.
+   */
+  archived?: boolean;
   notes?: string;
   source: { label: string; url: string };
 }
@@ -38,6 +45,7 @@ export const EXAM_EVENTS: ExamEvent[] = [
     examEnd: "2026-08-22",
     results: "2026-09-04",
     confirmed: true,
+    archived: true,
     source: {
       label: "College Board: SAT dates and deadlines",
       url: "https://satsuite.collegeboard.org/sat/dates-deadlines",
@@ -125,7 +133,8 @@ export const EXAM_EVENTS: ExamEvent[] = [
     examEnd: "2026-06-09",
     results: "2026-08-18",
     confirmed: true,
-    notes: "Results release 06:00 GMT. Certificates ship by end of October 2026.",
+    archived: true,
+    notes: "Results released 2026-08-18. Certificates ship by end of October 2026.",
     source: {
       label: "Cambridge International: June 2026 results",
       url: "https://help.cambridgeinternational.org/hc/en-gb/articles/29567611785234-When-will-June-2026-results-be-released",

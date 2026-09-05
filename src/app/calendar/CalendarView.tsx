@@ -70,6 +70,11 @@ function getEventsInMonth(year: number, month: number): ExamEvent[] {
   });
 }
 
+function isEventPast(ev: ExamEvent, now: Date): boolean {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(ev.examEnd)) return false;
+  return new Date(ev.examEnd + "T23:59:59") < now;
+}
+
 function toIsoDate(date: Date): string {
   const y = date.getFullYear();
   const m = String(date.getMonth() + 1).padStart(2, "0");
@@ -323,18 +328,29 @@ export function CalendarView() {
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
               Events this month
             </p>
-            {events.map((ev) => (
-              <div key={ev.id} className="rounded-lg border border-border p-4">
+            {events.map((ev) => {
+              const past = isEventPast(ev, today);
+              return (
+              <div
+                key={ev.id}
+                className={`rounded-lg border border-border p-4 ${past ? "opacity-60" : ""}`}
+              >
                 <div className="flex flex-wrap items-center gap-2">
                   <span
                     className="size-2.5 rounded-full flex-shrink-0"
                     style={{ backgroundColor: BOARD_COLORS[ev.board] }}
                   />
                   <p className="font-medium text-foreground">{ev.session}</p>
-                  {!ev.confirmed && (
+                  {past ? (
                     <Badge variant="outline" className="text-xs text-muted-foreground">
-                      Provisional
+                      Passed
                     </Badge>
+                  ) : (
+                    !ev.confirmed && (
+                      <Badge variant="outline" className="text-xs text-muted-foreground">
+                        Provisional
+                      </Badge>
+                    )
                   )}
                 </div>
 
@@ -371,7 +387,8 @@ export function CalendarView() {
                   {ev.source.label}
                 </a>
               </div>
-            ))}
+              );
+            })}
           </div>
         )}
       </div>
