@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { User } from "@supabase/supabase-js";
 import { ChevronLeft, ChevronRight, Pencil, Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +20,19 @@ import {
   type PersonalEvent,
 } from "@/lib/user-events";
 import { PersonalEventDialog } from "@/components/calendar/personal-event-dialog";
+import { getCompetitions } from "@/lib/competitions";
+import { fetchSavedCompetitionIds } from "@/lib/competition-saves";
+import {
+  competitionEvents,
+  competitionEventsInMonth,
+  competitionsForCountry,
+  type CompetitionEvent,
+} from "@/lib/competition-events";
+import {
+  COMPETITION_COUNTRIES,
+  COMPETITION_COUNTRY_LABELS,
+  type CompetitionCountry,
+} from "@/lib/types";
 
 const BOARDS: ExamBoard[] = ["SAT", "IB", "IGCSE"];
 
@@ -30,13 +44,30 @@ const BOARD_COLORS: Record<ExamBoard, string> = {
 
 const PERSONAL_EVENT_COLOR = "#ec4899";
 
+const COMPETITION_EVENT_COLOR = "#f59e0b";
+
+// No signed-in profile country to default to yet (that lands in #203/#204),
+// so the country picker starts on a fixed, sensible guess rather than an
+// empty selection - StudyMap's own userbase is India-centric.
+const DEFAULT_COMPETITION_COUNTRY: CompetitionCountry = "IN";
+
 const PERSONAL_CATEGORY_LABELS = Object.fromEntries(
   PERSONAL_EVENT_CATEGORIES.map((c) => [c.value, c.label]),
 );
 
 const MONTH_NAMES = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
 ];
 
 const DAY_NAMES = [
@@ -120,6 +151,16 @@ export function CalendarView() {
   const [lastUserId, setLastUserId] = useState<string | null>(null);
   const [eventsError, setEventsError] = useState<string | null>(null);
 
+  // Saved competitions: null means "not fetched yet" (signed out, or the
+  // fetch hasn't resolved), distinct from an empty array (signed in with
+  // zero saves), so the saved-only default only kicks in once we actually
+  // know there is at least one save.
+  const [savedCompetitionIds, setSavedCompetitionIds] = useState<string[] | null>(null);
+  const [showAllCompetitions, setShowAllCompetitions] = useState(false);
+  const [competitionCountry, setCompetitionCountry] = useState<CompetitionCountry>(
+    DEFAULT_COMPETITION_COUNTRY,
+  );
+
   // Clear stale events as soon as the signed-in user changes, during render
   // rather than an effect, so there's no stale-data flash.
   const userId = user?.id ?? null;
@@ -127,6 +168,7 @@ export function CalendarView() {
     setLastUserId(userId);
     setPersonalEvents([]);
     setEventsError(null);
+    setSavedCompetitionIds(null);
   }
 
   useEffect(() => {
@@ -138,6 +180,13 @@ export function CalendarView() {
     } = supabase.auth.onAuthStateChange((_, session) => setUser(session?.user ?? null));
     return () => subscription.unsubscribe();
   }, []);
+
+  useEffect(() => {
+    if (!user) return;
+    fetchSavedCompetitionIds()
+      .then(setSavedCompetitionIds)
+      .catch(() => setSavedCompetitionIds([]));
+  }, [user]);
 
   useEffect(() => {
     if (!user) return;
@@ -188,6 +237,23 @@ export function CalendarView() {
     ? toIsoDate(today)
     : toIsoDate(new Date(year, month, 1));
 
+  // Signed in with at least one save: default to saved-only, with a toggle
+  // to reveal everything (still country-scoped, never all ~50 competitions
+  // x their dates unfiltered - see the "density problem" in #201). Everyone
+  // else - signed out, or signed in with no saves yet - gets the same
+  // country-scoped "all" view, so the calendar is never empty.
+  const hasSaves =
+    Boolean(user) && savedCompetitionIds !== null && savedCompetitionIds.length > 0;
+  const showingSavedOnly = hasSaves && !showAllCompetitions;
+  const visibleCompetitions = showingSavedOnly
+    ? getCompetitions().filter((c) => savedCompetitionIds!.includes(c.id))
+    : competitionsForCountry(getCompetitions(), competitionCountry);
+  const competitionEventsThisMonth = competitionEventsInMonth(
+    competitionEvents(visibleCompetitions, competitionCountry),
+    year,
+    month,
+  );
+
   const dayColors: Record<number, string[]> = {};
   for (const ev of events) {
     const days = getActiveDaysForEvent(ev, year, month);
@@ -196,6 +262,22 @@ export function CalendarView() {
       const c = BOARD_COLORS[ev.board];
       if (!dayColors[d].includes(c)) dayColors[d].push(c);
     });
+  }
+
+  // Capped to "is there a confirmed one" / "is there an estimated one" per
+  // day, regardless of how many events actually land there - a day with 30
+  // competition dates on it still shows at most two dots, so a busy month
+  // stays legible on a 360px-wide grid.
+  const competitionDayMarkers: Record<
+    number,
+    { confirmed: boolean; estimated: boolean }
+  > = {};
+  for (const ev of competitionEventsThisMonth) {
+    const day = new Date(`${ev.date}T00:00:00`).getDate();
+    const marker = competitionDayMarkers[day] ?? { confirmed: false, estimated: false };
+    if (ev.estimated) marker.estimated = true;
+    else marker.confirmed = true;
+    competitionDayMarkers[day] = marker;
   }
 
   const personalDays = new Set<number>();
@@ -210,13 +292,17 @@ export function CalendarView() {
   while (cells.length % 7 !== 0) cells.push(null);
 
   const goBack = () => {
-    if (month === 0) { setYear((y) => y - 1); setMonth(11); }
-    else setMonth((m) => m - 1);
+    if (month === 0) {
+      setYear((y) => y - 1);
+      setMonth(11);
+    } else setMonth((m) => m - 1);
   };
 
   const goForward = () => {
-    if (month === 11) { setYear((y) => y + 1); setMonth(0); }
-    else setMonth((m) => m + 1);
+    if (month === 11) {
+      setYear((y) => y + 1);
+      setMonth(0);
+    } else setMonth((m) => m + 1);
   };
 
   return (
@@ -245,7 +331,10 @@ export function CalendarView() {
       {/* Board legend */}
       <div className="mb-4 flex flex-wrap items-center gap-x-5 gap-y-2">
         {BOARDS.map((board) => (
-          <div key={board} className="flex items-center gap-1.5 text-sm text-muted-foreground">
+          <div
+            key={board}
+            className="flex items-center gap-1.5 text-sm text-muted-foreground"
+          >
             <span
               className="size-2.5 rounded-full flex-shrink-0"
               style={{ backgroundColor: BOARD_COLORS[board] }}
@@ -253,6 +342,20 @@ export function CalendarView() {
             {BOARD_LABELS[board]}
           </div>
         ))}
+        <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+          <span
+            className="size-2.5 rounded-full flex-shrink-0"
+            style={{ backgroundColor: COMPETITION_EVENT_COLOR }}
+          />
+          Competitions
+        </div>
+        <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
+          <span
+            className="size-2.5 flex-shrink-0 rounded-full border-2 bg-transparent"
+            style={{ borderColor: COMPETITION_EVENT_COLOR }}
+          />
+          Estimated date
+        </div>
         {user && (
           <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
             <span
@@ -261,6 +364,43 @@ export function CalendarView() {
             />
             Your events
           </div>
+        )}
+      </div>
+
+      {/* Competition controls: country scope and (when the user has saves) the saved/all toggle */}
+      <div className="mb-4 flex flex-wrap items-center gap-3">
+        <label className="flex items-center gap-2 text-sm text-muted-foreground">
+          Country
+          <select
+            value={competitionCountry}
+            onChange={(event) =>
+              setCompetitionCountry(event.target.value as CompetitionCountry)
+            }
+            className="h-8 rounded-md border border-border bg-background px-2 text-sm text-foreground"
+            aria-label="Country for competition qualifier stages"
+          >
+            {COMPETITION_COUNTRIES.map((country) => (
+              <option key={country} value={country}>
+                {COMPETITION_COUNTRY_LABELS[country]}
+              </option>
+            ))}
+          </select>
+        </label>
+        {hasSaves && (
+          <button
+            type="button"
+            onClick={() => setShowAllCompetitions((v) => !v)}
+            aria-pressed={showAllCompetitions}
+            className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+              showAllCompetitions
+                ? "border-primary bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
+            }`}
+          >
+            {showAllCompetitions
+              ? "Showing all competitions"
+              : "Showing saved competitions only"}
+          </button>
         )}
       </div>
 
@@ -331,64 +471,131 @@ export function CalendarView() {
             {events.map((ev) => {
               const past = isEventPast(ev, today);
               return (
-              <div
-                key={ev.id}
-                className={`rounded-lg border border-border p-4 ${past ? "opacity-60" : ""}`}
-              >
+                <div
+                  key={ev.id}
+                  className={`rounded-lg border border-border p-4 ${past ? "opacity-60" : ""}`}
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span
+                      className="size-2.5 rounded-full flex-shrink-0"
+                      style={{ backgroundColor: BOARD_COLORS[ev.board] }}
+                    />
+                    <p className="font-medium text-foreground">{ev.session}</p>
+                    {past ? (
+                      <Badge variant="outline" className="text-xs text-muted-foreground">
+                        Passed
+                      </Badge>
+                    ) : (
+                      !ev.confirmed && (
+                        <Badge
+                          variant="outline"
+                          className="text-xs text-muted-foreground"
+                        >
+                          Provisional
+                        </Badge>
+                      )
+                    )}
+                  </div>
+
+                  <dl className="mt-2.5 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
+                    <div className="flex gap-2">
+                      <dt className="text-muted-foreground shrink-0">Exam:</dt>
+                      <dd className="font-medium">
+                        {ev.examStart === ev.examEnd
+                          ? formatDate(ev.examStart)
+                          : `${formatDate(ev.examStart)} to ${formatDate(ev.examEnd)}`}
+                      </dd>
+                    </div>
+                    <div className="flex gap-2">
+                      <dt className="text-muted-foreground shrink-0">Results:</dt>
+                      <dd className="font-medium">
+                        {formatDate(ev.results)}
+                        {ev.resultsEstimated && (
+                          <span className="ml-1 text-xs text-muted-foreground">
+                            (expected)
+                          </span>
+                        )}
+                      </dd>
+                    </div>
+                  </dl>
+
+                  {ev.notes && (
+                    <p className="mt-2 text-xs text-muted-foreground">{ev.notes}</p>
+                  )}
+
+                  <a
+                    href={ev.source.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
+                  >
+                    {ev.source.label}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Competitions list for this month */}
+      <div className="mb-6 space-y-3">
+        <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+          Competitions this month
+        </p>
+        {competitionEventsThisMonth.length === 0 ? (
+          <p className="rounded-lg border border-border py-8 text-center text-sm text-muted-foreground">
+            {showingSavedOnly
+              ? "No saved competitions this month."
+              : `No competitions this month for ${COMPETITION_COUNTRY_LABELS[competitionCountry]}.`}
+          </p>
+        ) : (
+          <div className="space-y-3">
+            {competitionEventsThisMonth.map((ev: CompetitionEvent) => (
+              <div key={ev.id} className="rounded-lg border border-border p-4">
                 <div className="flex flex-wrap items-center gap-2">
                   <span
-                    className="size-2.5 rounded-full flex-shrink-0"
-                    style={{ backgroundColor: BOARD_COLORS[ev.board] }}
+                    className={
+                      ev.estimated
+                        ? "size-2.5 flex-shrink-0 rounded-full border-2 bg-transparent"
+                        : "size-2.5 flex-shrink-0 rounded-full"
+                    }
+                    style={
+                      ev.estimated
+                        ? { borderColor: COMPETITION_EVENT_COLOR }
+                        : { backgroundColor: COMPETITION_EVENT_COLOR }
+                    }
                   />
-                  <p className="font-medium text-foreground">{ev.session}</p>
-                  {past ? (
+                  <Link
+                    href={`/competitions/${ev.competitionId}`}
+                    className="font-medium text-foreground hover:underline"
+                  >
+                    {ev.competitionName}
+                  </Link>
+                  {ev.country && (
                     <Badge variant="outline" className="text-xs text-muted-foreground">
-                      Passed
+                      {COMPETITION_COUNTRY_LABELS[ev.country]}
                     </Badge>
-                  ) : (
-                    !ev.confirmed && (
-                      <Badge variant="outline" className="text-xs text-muted-foreground">
-                        Provisional
-                      </Badge>
-                    )
+                  )}
+                  {ev.estimated && (
+                    <Badge variant="outline" className="text-xs text-muted-foreground">
+                      Estimated
+                    </Badge>
                   )}
                 </div>
-
-                <dl className="mt-2.5 grid gap-x-8 gap-y-1 text-sm sm:grid-cols-2">
-                  <div className="flex gap-2">
-                    <dt className="text-muted-foreground shrink-0">Exam:</dt>
-                    <dd className="font-medium">
-                      {ev.examStart === ev.examEnd
-                        ? formatDate(ev.examStart)
-                        : `${formatDate(ev.examStart)} to ${formatDate(ev.examEnd)}`}
-                    </dd>
-                  </div>
-                  <div className="flex gap-2">
-                    <dt className="text-muted-foreground shrink-0">Results:</dt>
-                    <dd className="font-medium">
-                      {formatDate(ev.results)}
-                      {ev.resultsEstimated && (
-                        <span className="ml-1 text-xs text-muted-foreground">(expected)</span>
-                      )}
-                    </dd>
-                  </div>
-                </dl>
-
-                {ev.notes && (
-                  <p className="mt-2 text-xs text-muted-foreground">{ev.notes}</p>
-                )}
-
+                <p className="mt-2 text-sm font-medium">
+                  {ev.label} &middot; {formatDate(ev.date)}
+                </p>
                 <a
-                  href={ev.source.url}
+                  href={ev.sourceUrl}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-2 inline-flex items-center gap-1 text-xs font-medium text-primary hover:underline"
                 >
-                  {ev.source.label}
+                  Source
                 </a>
               </div>
-              );
-            })}
+            ))}
           </div>
         )}
       </div>
@@ -421,14 +628,21 @@ export function CalendarView() {
             }
 
             const colors = dayColors[day] ?? [];
-            const hasEvent = colors.length > 0;
+            const competitionMarker = competitionDayMarkers[day];
+            const hasCompetitionEvent = Boolean(competitionMarker);
+            const hasEvent = colors.length > 0 || hasCompetitionEvent;
             const hasPersonalEvent = personalDays.has(day);
             const isToday = isThisMonth && today.getDate() === day;
             const titleParts = [
-              ...(hasEvent
+              ...(colors.length > 0
                 ? events
                     .filter((ev) => getActiveDaysForEvent(ev, year, month).has(day))
                     .map((ev) => ev.session)
+                : []),
+              ...(hasCompetitionEvent
+                ? competitionEventsThisMonth
+                    .filter((ev) => new Date(`${ev.date}T00:00:00`).getDate() === day)
+                    .map((ev) => ev.competitionName)
                 : []),
               ...(hasPersonalEvent
                 ? personalEventsThisMonth
@@ -466,6 +680,26 @@ export function CalendarView() {
                         style={{ width: 4, height: 4, backgroundColor: c }}
                       />
                     ))}
+                    {competitionMarker?.confirmed && (
+                      <span
+                        className="rounded-full"
+                        style={{
+                          width: 4,
+                          height: 4,
+                          backgroundColor: COMPETITION_EVENT_COLOR,
+                        }}
+                      />
+                    )}
+                    {competitionMarker?.estimated && (
+                      <span
+                        className="rounded-full bg-transparent"
+                        style={{
+                          width: 4,
+                          height: 4,
+                          border: `1px solid ${COMPETITION_EVENT_COLOR}`,
+                        }}
+                      />
+                    )}
                   </div>
                 )}
                 {hasPersonalEvent && (
