@@ -3,7 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Menu, LogOut, LogIn } from "lucide-react";
+import { Menu, LogOut, LogIn, UserRound } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { navLinks, site } from "@/lib/site";
@@ -73,15 +73,28 @@ export function Navbar() {
           <ThemeToggle />
           {authEnabled &&
             (loggedIn ? (
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={handleSignOut}
-                aria-label="Sign out"
-                className="hidden md:inline-flex"
-              >
-                <LogOut className="size-4" />
-              </Button>
+              <>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  asChild
+                  aria-label="Your account"
+                  className="hidden md:inline-flex"
+                >
+                  <Link href="/account" aria-current={isActive("/account") ? "page" : undefined}>
+                    <UserRound className="size-4" />
+                  </Link>
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={handleSignOut}
+                  aria-label="Sign out"
+                  className="hidden md:inline-flex"
+                >
+                  <LogOut className="size-4" />
+                </Button>
+              </>
             ) : (
               <Button
                 variant="ghost"
@@ -125,13 +138,24 @@ export function Navbar() {
               {authEnabled && (
                 <div className="mt-4 border-t px-3 pt-4">
                   {loggedIn ? (
-                    <button
-                      onClick={() => { setOpen(false); handleSignOut(); }}
-                      className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
-                    >
-                      <LogOut className="size-4" />
-                      Sign out
-                    </button>
+                    <>
+                      <Link
+                        href="/account"
+                        onClick={() => setOpen(false)}
+                        aria-current={isActive("/account") ? "page" : undefined}
+                        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+                      >
+                        <UserRound className="size-4" />
+                        Your account
+                      </Link>
+                      <button
+                        onClick={() => { setOpen(false); handleSignOut(); }}
+                        className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
+                      >
+                        <LogOut className="size-4" />
+                        Sign out
+                      </button>
+                    </>
                   ) : (
                     <Link
                       href={`/login?next=${encodeURIComponent(pathname)}`}
