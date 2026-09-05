@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { toast } from "sonner";
-import { Loader2 } from "lucide-react";
+import { Loader2, TriangleAlert, X } from "lucide-react";
 
 import { createClient } from "@/lib/supabase/client";
 import { safeNext } from "@/lib/safe-next";
@@ -13,10 +13,20 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
+const AUTH_ERROR_MESSAGES = new Map([
+  ["auth_error", "Sign-in failed or was cancelled. Please try again."],
+]);
+
+const DEFAULT_AUTH_ERROR_MESSAGE = "Sign-in failed. Please try again.";
+
 export function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const next = safeNext(searchParams.get("next"));
+  const errorCode = searchParams.get("error");
+  const errorMessage = errorCode
+    ? (AUTH_ERROR_MESSAGES.get(errorCode) ?? DEFAULT_AUTH_ERROR_MESSAGE)
+    : null;
 
   const supabase = createClient();
 
@@ -24,6 +34,9 @@ export function LoginForm() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [loading, setLoading] = React.useState(false);
+  const [dismissedErrorCode, setDismissedErrorCode] = React.useState<string | null>(
+    null,
+  );
 
   // Self-host / preview mode: Supabase isn't configured, so there's no auth.
   if (!supabase) {
@@ -113,6 +126,24 @@ export function LoginForm() {
             {mode === "signin" ? "Sign in to continue" : "Create your account"}
           </p>
         </div>
+
+        {errorMessage && dismissedErrorCode !== errorCode && (
+          <div
+            role="alert"
+            className="flex items-start gap-3 rounded-lg border border-destructive/30 bg-destructive/10 p-3 text-sm text-destructive"
+          >
+            <TriangleAlert className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+            <p className="flex-1">{errorMessage}</p>
+            <button
+              type="button"
+              aria-label="Dismiss sign-in error"
+              className="flex size-6 shrink-0 items-center justify-center rounded-sm opacity-70 transition-opacity hover:opacity-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              onClick={() => setDismissedErrorCode(errorCode)}
+            >
+              <X className="size-4" aria-hidden="true" />
+            </button>
+          </div>
+        )}
 
         {/* Card */}
         <div className="rounded-xl border bg-card p-6 shadow-sm space-y-5">
