@@ -126,6 +126,28 @@ export const COMPETITION_COUNTRIES = [
 
 export type CompetitionCountry = (typeof COMPETITION_COUNTRIES)[number];
 
+export const COMPETITION_COUNTRY_LABELS: Record<CompetitionCountry, string> = {
+  IN: "India",
+  US: "United States",
+  GB: "United Kingdom",
+  CA: "Canada",
+  AU: "Australia",
+  SG: "Singapore",
+  DE: "Germany",
+  FR: "France",
+  CN: "China",
+  JP: "Japan",
+  KR: "South Korea",
+  BR: "Brazil",
+  ZA: "South Africa",
+};
+
+/** Turns a competition's `region` field into a display label, e.g. "US" -> "United States". */
+export function humanizeRegion(region: string): string {
+  if (region === "international") return "International";
+  return COMPETITION_COUNTRY_LABELS[region as CompetitionCountry] ?? region;
+}
+
 /** An entry recorded directly on a competition's own `dates` array. */
 export interface CompetitionDateEntry {
   label: string;

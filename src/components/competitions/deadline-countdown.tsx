@@ -83,7 +83,7 @@ export interface DeadlineCountdownProps {
   /**
    * Reference time for picking "the next date". Supplied by the server
    * (e.g. the page component) so the pre-mount render is identical on the
-   * server and on the client's first paint — a fresh `new Date()` on each
+   * server and on the client's first paint. A fresh `new Date()` on each
    * side would risk selecting a different "next" date right at a rollover
    * and would always disagree by however long the request took.
    */

@@ -5,8 +5,10 @@ import {
   getCategories,
   getCompetitions,
   nextDate,
+  sortByNextDate,
   upcomingDates,
 } from "@/lib/competitions";
+import { humanizeRegion } from "@/lib/types";
 import type { Competition } from "@/lib/types";
 
 function competition(overrides: Partial<Competition> & { id: string }): Competition {
@@ -317,5 +319,71 @@ describe("nextDate", () => {
     });
 
     expect(nextDate(c, NOW)).toBeUndefined();
+  });
+});
+
+describe("sortByNextDate", () => {
+  const NOW = new Date("2026-06-01T00:00:00Z");
+
+  function withDate(id: string, date: string | null): Competition {
+    return competition({
+      id,
+      dates: date
+        ? [
+            {
+              label: "Deadline",
+              date,
+              type: "deadline",
+              timezone: "UTC",
+              estimated: false,
+              source_url: "https://example.com",
+            },
+          ]
+        : [
+            {
+              label: "Past deadline",
+              date: "2020-01-01",
+              type: "deadline",
+              timezone: "UTC",
+              estimated: false,
+              source_url: "https://example.com",
+            },
+          ],
+    });
+  }
+
+  it("sorts ascending by soonest upcoming date", () => {
+    const input = [withDate("later", "2026-12-01"), withDate("sooner", "2026-07-01")];
+    expect(sortByNextDate(input, NOW).map((c) => c.id)).toEqual(["sooner", "later"]);
+  });
+
+  it("sorts competitions with no future date last", () => {
+    const input = [withDate("no-future", null), withDate("has-future", "2026-07-01")];
+    expect(sortByNextDate(input, NOW).map((c) => c.id)).toEqual([
+      "has-future",
+      "no-future",
+    ]);
+  });
+
+  it("does not mutate the input array", () => {
+    const input = [withDate("b", "2026-12-01"), withDate("a", "2026-07-01")];
+    const original = [...input];
+    sortByNextDate(input, NOW);
+    expect(input).toEqual(original);
+  });
+});
+
+describe("humanizeRegion", () => {
+  it('labels "international" specially', () => {
+    expect(humanizeRegion("international")).toBe("International");
+  });
+
+  it("expands a known country code to its full name", () => {
+    expect(humanizeRegion("US")).toBe("United States");
+    expect(humanizeRegion("IN")).toBe("India");
+  });
+
+  it("falls back to the raw code for an unrecognised region", () => {
+    expect(humanizeRegion("ZZ")).toBe("ZZ");
   });
 });

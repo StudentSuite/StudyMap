@@ -131,7 +131,7 @@ function isoDate(date: Date): string {
  *
  * Always includes the competition's own `dates[]`. When `country` is given,
  * also includes that country's `country_tracks` stages (tagged with
- * `country` so callers can tell them apart) — country stages are omitted
+ * `country` so callers can tell them apart); country stages are omitted
  * entirely when no country is requested.
  */
 export function upcomingDates(
@@ -176,4 +176,19 @@ export function nextDate(
   country?: CompetitionCountry,
 ): CompetitionDate | undefined {
   return upcomingDates(competition, now, country)[0];
+}
+
+/**
+ * Sorts by soonest upcoming date (ascending). Competitions with no future
+ * date at all sort last, in their original relative order.
+ */
+export function sortByNextDate(competitions: Competition[], now: Date): Competition[] {
+  return [...competitions].sort((a, b) => {
+    const dateA = nextDate(a, now)?.date;
+    const dateB = nextDate(b, now)?.date;
+    if (dateA === undefined && dateB === undefined) return 0;
+    if (dateA === undefined) return 1;
+    if (dateB === undefined) return -1;
+    return dateA.localeCompare(dateB);
+  });
 }
