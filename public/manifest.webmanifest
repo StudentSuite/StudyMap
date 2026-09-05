@@ -6,7 +6,7 @@
   "display": "standalone",
   "orientation": "portrait-primary",
   "background_color": "#0A0A0A",
-  "theme_color": "#F59E0B",
+  "theme_color": "#0A0A0A",
   "categories": ["education", "utilities", "navigation"],
   "lang": "en",
   "icons": [

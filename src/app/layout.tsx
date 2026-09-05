@@ -19,11 +19,27 @@ export const metadata: Metadata = {
     template: `%s | ${site.name}`,
   },
   description: site.description,
+  // Relative canonical: Next resolves it per-route against metadataBase, so
+  // every page gets its own canonical URL and trailing-slash or query-string
+  // variants stop reading as separate documents.
+  alternates: {
+    canonical: "./",
+  },
   openGraph: {
     title: site.name,
     description: site.tagline,
+    url: "./",
+    siteName: site.name,
+    type: "website",
+    locale: "en_US",
     // PNG, not SVG: crawlers (Facebook, X, WhatsApp, iMessage) refuse SVG
     // og:image, so an SVG fallback never unfurls outside the site itself.
+    images: ["/brand/og.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: site.name,
+    description: site.tagline,
     images: ["/brand/og.png"],
   },
   manifest: "/manifest.webmanifest",
@@ -39,7 +55,14 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#0A0A0A",
+  // Follows the active theme rather than pinning dark. Both values are the
+  // --background token from globals.css (:root and .dark), so the browser
+  // chrome matches the page instead of fighting it. next-themes defaults to
+  // "system", so prefers-color-scheme is the right signal here.
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#FAFAFA" },
+    { media: "(prefers-color-scheme: dark)", color: "#0A0A0A" },
+  ],
   viewportFit: "cover",
 };
 
