@@ -9,6 +9,7 @@ import { fetchSaveCounts, fetchSavedCompetitionIds } from "@/lib/competition-sav
 import { getCompetitions, sortByNextDate } from "@/lib/competitions";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
+import { CalendarFeedCard } from "@/components/competitions/calendar-feed-card";
 import { CompetitionCard } from "@/components/competitions/competition-card";
 import { Button } from "@/components/ui/button";
 import { PageContainer } from "@/components/layout/page-container";
@@ -125,6 +126,8 @@ export default function SavedCompetitionsPage() {
       </p>
 
       {error && <p className="mt-4 text-sm text-destructive">{error}</p>}
+
+      <CalendarFeedCard />
 
       {savedIds !== null && competitions.length === 0 ? (
         <div

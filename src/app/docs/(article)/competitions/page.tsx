@@ -114,6 +114,38 @@ export default function CompetitionsGuidePage() {
       </CalloutCard>
 
       <CalloutCard
+        title="Get reminders in your own calendar"
+        description="Subscribe once, see every saved deadline automatically"
+        className="mt-4"
+      >
+        <p>
+          A countdown only helps if you are already looking at the page. On the{" "}
+          <Link
+            href="/competitions/saved"
+            className="font-medium text-primary hover:underline"
+          >
+            Saved
+          </Link>{" "}
+          page, signed-in users get a private feed URL (
+          <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+            /api/competitions/saved.ics?token=...
+          </code>
+          ) to subscribe to in Google Calendar (Settings &gt; Add calendar &gt; From
+          URL) or Apple Calendar (File &gt; New Calendar Subscription). Every saved
+          competition&apos;s dates then show up there automatically, kept in sync
+          each time your calendar app refreshes the feed. Dates still marked{" "}
+          <span className="font-medium">estimated</span> in the catalog appear as
+          &quot;approximate&quot; in the event title, never as a confirmed date.
+        </p>
+        <p className="text-xs text-muted-foreground">
+          The link is a bearer credential, like a password - anyone who has it can
+          see your saved competitions, so treat it like one. The Saved page has a
+          button to get a new link at any time, which immediately stops the old one
+          from working.
+        </p>
+      </CalloutCard>
+
+      <CalloutCard
         title="Contributing a competition"
         description="The catalog is community-maintained"
         className="mt-4"

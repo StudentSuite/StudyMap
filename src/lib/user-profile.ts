@@ -98,6 +98,8 @@ export interface UserProfileRow {
   country: OnboardingCountry | null;
   referral_source: OnboardingReferralSource | null;
   referral_other: string | null;
+  /** Opaque bearer token behind the saved-competitions calendar feed (#210). */
+  calendar_token: string;
   created_at: string;
   updated_at: string;
 }
@@ -163,6 +165,38 @@ export async function saveProfileStep(
     .single();
   if (error) throw error;
   return data;
+}
+
+/**
+ * The signed-in user's calendar-feed token (#210), creating a blank
+ * `user_profiles` row first if none exists yet. Deliberately independent of
+ * onboarding completion or even having been offered it - a user who signed
+ * in before this feature existed, or who skipped onboarding entirely, still
+ * gets a token the first time anything asks for one.
+ */
+export async function fetchCalendarToken(): Promise<string> {
+  const profile = await ensureProfileRow();
+  return profile.calendar_token;
+}
+
+/**
+ * Replaces the calendar-feed token with a fresh random one, invalidating
+ * every previously issued feed URL. The old value is never re-derivable
+ * from the new one - this is a full swap, not a rotation scheme with a
+ * grace period.
+ */
+export async function rotateCalendarToken(): Promise<string> {
+  const supabase = requireClient();
+  const user_id = await currentUserId();
+  const calendar_token = crypto.randomUUID();
+  const { data, error } = await supabase
+    .from("user_profiles")
+    .update({ calendar_token, updated_at: new Date().toISOString() })
+    .eq("user_id", user_id)
+    .select("calendar_token")
+    .single();
+  if (error) throw error;
+  return data.calendar_token;
 }
 
 /**

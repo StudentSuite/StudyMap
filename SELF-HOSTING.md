@@ -72,7 +72,8 @@ the right spot.
 ## 5. Optional: sign-in, saved places, personal calendar events, saved competitions, and onboarding
 
 These features (`src/app/login`, saved custom places, personal calendar events, saved
-competitions, the first-run onboarding questionnaire) need a Supabase project:
+competitions, the first-run onboarding questionnaire, the saved-competitions calendar feed) need
+a Supabase project:
 
 1. Create a free project at [supabase.com](https://supabase.com).
 2. Copy its URL and anon key into `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`).
@@ -86,7 +87,11 @@ competitions, the first-run onboarding questionnaire) need a Supabase project:
    one row per user holding their answers to the first-run onboarding questionnaire
    (graduation year, board, field, country, referral source), all columns nullable since the
    questionnaire is skippable and resumable, and owner-only RLS so nobody but the user (or the
-   dashboard's service-role SQL editor) can read their answers.
+   dashboard's service-role SQL editor) can read their answers. `user_profiles.calendar_token` (a
+   later migration) is the opaque bearer token behind `GET /api/competitions/saved.ics?token=...`,
+   the saved-competitions calendar subscription feed: that route authenticates itself with the
+   token via a `security definer` SQL function rather than a signed-in session, since a calendar
+   app fetching the feed carries no cookies at all.
 4. Enable whichever auth providers you want (email, Google, etc.) under Authentication > Providers.
 
 Skip this whole section if you only want the public map and calendar.

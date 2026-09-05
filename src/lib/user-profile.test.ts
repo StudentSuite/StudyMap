@@ -92,4 +92,82 @@ describe("user-profile", () => {
     expect(profileCompetitionCountry("Other")).toBeNull();
     expect(profileCompetitionCountry(null)).toBeNull();
   });
+
+  it("fetchCalendarToken ensures a row exists and returns its token", async () => {
+    let upsertedPayload: unknown;
+    mockClient = {
+      auth: { getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }) },
+      from: () => ({
+        upsert: (payload: unknown) => {
+          upsertedPayload = payload;
+          return {
+            select: () => ({
+              single: () =>
+                Promise.resolve({
+                  data: { user_id: "u1", calendar_token: "existing-token" },
+                  error: null,
+                }),
+            }),
+          };
+        },
+      }),
+    };
+    vi.resetModules();
+    const { fetchCalendarToken } = await import("@/lib/user-profile");
+    await expect(fetchCalendarToken()).resolves.toBe("existing-token");
+    // ensureProfileRow's whole point is not overwriting an existing row's
+    // answers, so the upsert payload carries only user_id/updated_at.
+    expect(upsertedPayload).toMatchObject({ user_id: "u1" });
+  });
+
+  it("rotateCalendarToken writes a fresh random token and returns it", async () => {
+    let updatedPayload: unknown;
+    mockClient = {
+      auth: { getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }) },
+      from: () => ({
+        update: (payload: { calendar_token: string }) => {
+          updatedPayload = payload;
+          return {
+            eq: () => ({
+              select: () => ({
+                single: () =>
+                  Promise.resolve({
+                    data: { calendar_token: payload.calendar_token },
+                    error: null,
+                  }),
+              }),
+            }),
+          };
+        },
+      }),
+    };
+    vi.resetModules();
+    const { rotateCalendarToken } = await import("@/lib/user-profile");
+    const token = await rotateCalendarToken();
+    expect(token).toMatch(
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i,
+    );
+    expect((updatedPayload as { calendar_token: string }).calendar_token).toBe(token);
+  });
+
+  it("rotateCalendarToken produces a different value each time", async () => {
+    mockClient = {
+      auth: { getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }) },
+      from: () => ({
+        update: (payload: { calendar_token: string }) => ({
+          eq: () => ({
+            select: () => ({
+              single: () =>
+                Promise.resolve({ data: { calendar_token: payload.calendar_token }, error: null }),
+            }),
+          }),
+        }),
+      }),
+    };
+    vi.resetModules();
+    const { rotateCalendarToken } = await import("@/lib/user-profile");
+    const first = await rotateCalendarToken();
+    const second = await rotateCalendarToken();
+    expect(first).not.toBe(second);
+  });
 });

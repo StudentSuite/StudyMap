@@ -60,6 +60,19 @@ describe("SavedCompetitionsPage", () => {
         getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }),
         onAuthStateChange: () => ({ data: { subscription: { unsubscribe: vi.fn() } } }),
       },
+      // The signed-in view also renders CalendarFeedCard (#210), which
+      // fetches/creates a user_profiles row for its feed token.
+      from: () => ({
+        upsert: () => ({
+          select: () => ({
+            single: () =>
+              Promise.resolve({
+                data: { user_id: "u1", calendar_token: "test-token" },
+                error: null,
+              }),
+          }),
+        }),
+      }),
     };
     fetchSavedCompetitionIds.mockResolvedValue([]);
 
@@ -78,6 +91,19 @@ describe("SavedCompetitionsPage", () => {
         getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }),
         onAuthStateChange: () => ({ data: { subscription: { unsubscribe: vi.fn() } } }),
       },
+      // The signed-in view also renders CalendarFeedCard (#210), which
+      // fetches/creates a user_profiles row for its feed token.
+      from: () => ({
+        upsert: () => ({
+          select: () => ({
+            single: () =>
+              Promise.resolve({
+                data: { user_id: "u1", calendar_token: "test-token" },
+                error: null,
+              }),
+          }),
+        }),
+      }),
     };
     fetchSavedCompetitionIds.mockResolvedValue(["regeneron-isef"]);
 
