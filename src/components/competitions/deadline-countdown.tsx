@@ -2,29 +2,14 @@
 
 import { useEffect, useState } from "react";
 
-import { nextDate } from "@/lib/competitions";
+import { formatCompetitionDate, nextDate } from "@/lib/competitions";
 import type { Competition, CompetitionCountry, CompetitionDateEntry } from "@/lib/types";
 
-const MONTH_NAMES = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
-
-/** Formats a "YYYY-MM-DD" date as e.g. "August 21, 2026". */
-export function formatCompetitionDate(iso: string): string {
-  const [year, month, day] = iso.split("-").map(Number);
-  return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
-}
+// Re-exported so existing imports of formatCompetitionDate from this module
+// keep working; the implementation lives in src/lib/competitions.ts (a
+// plain, non-"use client" module) since server components like
+// competition-detail.tsx need to call it too.
+export { formatCompetitionDate };
 
 // Parses a "UTC", "UTC+5", "UTC-4", or "UTC+5:30"-style offset string into
 // minutes (negative when behind UTC). Unrecognised input is treated as UTC

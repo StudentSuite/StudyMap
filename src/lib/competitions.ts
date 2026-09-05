@@ -8,6 +8,31 @@ import type {
 } from "@/lib/types";
 import { COMPETITION_CATEGORIES } from "@/lib/types";
 
+const MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
+/**
+ * Formats a "YYYY-MM-DD" date as e.g. "August 21, 2026". Lives here (a
+ * plain module, not "use client") so both client components (the
+ * countdown) and server components (the detail page) can call it.
+ */
+export function formatCompetitionDate(iso: string): string {
+  const [year, month, day] = iso.split("-").map(Number);
+  return `${MONTH_NAMES[month - 1]} ${day}, ${year}`;
+}
+
 import artsDesign from "../../data/competitions/arts_design.json";
 import business from "../../data/competitions/business.json";
 import coding from "../../data/competitions/coding.json";
