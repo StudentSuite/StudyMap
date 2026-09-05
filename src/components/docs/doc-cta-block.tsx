@@ -17,6 +17,12 @@ export function DocCtaBlock() {
         <Link href="/calendar" className={cn(buttonVariants({ variant: "outline", size: "sm" }))}>
           Check the calendar
         </Link>
+        <Link
+          href="/competitions"
+          className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+        >
+          Browse competitions
+        </Link>
       </div>
     </div>
   );

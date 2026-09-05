@@ -15,6 +15,7 @@ import {
   MousePointerClick,
   Puzzle,
   Server,
+  Trophy,
   Wrench,
 } from "lucide-react";
 
@@ -88,6 +89,15 @@ export const docsNav: DocsNavEntry[] = [
     description:
       "Read SAT, IB, and Cambridge IGCSE exam windows and result dates, and add your own personal events.",
     icon: CalendarDays,
+    iconClassName: "text-primary",
+    group: "Guides",
+  },
+  {
+    href: "/docs/competitions",
+    title: "Using the Competitions Catalog",
+    description:
+      "Search and filter student competitions, read deadlines and country pathways, save the ones you care about, and see them on the calendar.",
+    icon: Trophy,
     iconClassName: "text-primary",
     group: "Guides",
   },
