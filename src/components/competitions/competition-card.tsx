@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { DeadlineCountdown } from "@/components/competitions/deadline-countdown";
+import { SaveButton } from "@/components/competitions/save-button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import {
@@ -15,13 +16,25 @@ interface CompetitionCardProps {
   competition: Competition;
   /** Reference time, threaded down from the server so the deadline countdown hydrates safely. */
   now: Date;
+  /**
+   * Starting save state/count, when the caller already bulk-fetched them for
+   * many cards at once (see competitions-browser.tsx). Omit to let the save
+   * button fetch its own.
+   */
+  initialSaved?: boolean;
+  initialCount?: number;
 }
 
 /**
  * A single competition in the browse grid: name, organizer, category chip,
  * status/countdown, a clamped description, and four scannable meta pills.
  */
-export function CompetitionCard({ competition, now }: CompetitionCardProps) {
+export function CompetitionCard({
+  competition,
+  now,
+  initialSaved,
+  initialCount,
+}: CompetitionCardProps) {
   return (
     <Card className="gap-3 px-4">
       <div className="flex items-start justify-between gap-2">
@@ -64,8 +77,11 @@ export function CompetitionCard({ competition, now }: CompetitionCardProps) {
       </dl>
 
       <div className="flex items-center justify-between pt-1">
-        {/* Save button with a saved-count lands in #200; nothing renders here until then. */}
-        <span />
+        <SaveButton
+          competitionId={competition.id}
+          initialSaved={initialSaved}
+          initialCount={initialCount}
+        />
         <Link
           href={`/competitions/${competition.id}`}
           className="text-sm font-medium text-primary hover:underline"

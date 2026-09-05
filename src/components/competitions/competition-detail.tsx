@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { CountryTrackList } from "@/components/competitions/country-track-list";
 import { DeadlineCountdown } from "@/components/competitions/deadline-countdown";
+import { SaveButton } from "@/components/competitions/save-button";
 import { Badge } from "@/components/ui/badge";
 import { formatCompetitionDate } from "@/lib/competitions";
 import {
@@ -53,8 +54,7 @@ export function CompetitionDetail({ competition, related, now }: CompetitionDeta
             {competition.organizer}
           </a>
         </div>
-        {/* Save button with a saved-count lands in #200; nothing renders here until then. */}
-        <span />
+        <SaveButton competitionId={competition.id} />
       </header>
 
       <DeadlineCountdown competition={competition} now={now} />

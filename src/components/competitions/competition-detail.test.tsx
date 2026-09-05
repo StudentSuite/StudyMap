@@ -1,5 +1,13 @@
 import { cleanup, render, screen } from "@testing-library/react";
-import { afterEach, describe, expect, it } from "vitest";
+import { afterEach, describe, expect, it, vi } from "vitest";
+
+// SaveButton is out of scope for this test file (see save-button.test.tsx);
+// rendering with Supabase unconfigured keeps it a no-op here.
+vi.mock("next/navigation", () => ({
+  useRouter: () => ({ push: vi.fn() }),
+  usePathname: () => "/competitions",
+}));
+vi.mock("@/lib/supabase/client", () => ({ createClient: () => null }));
 
 import { CompetitionDetail } from "@/components/competitions/competition-detail";
 import type { Competition } from "@/lib/types";

@@ -1,7 +1,8 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import type { User } from "@supabase/supabase-js";
 import { Search } from "lucide-react";
 
 import { CompetitionFiltersPanel } from "@/components/competitions/competition-filters";
@@ -10,8 +11,10 @@ import type { CompetitionFilterState } from "@/components/competitions/filters";
 import { activeFilterCount } from "@/components/competitions/filters";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { fetchSaveCounts, fetchSavedCompetitionIds } from "@/lib/competition-saves";
 import { filterCompetitions, sortByNextDate, nextDate } from "@/lib/competitions";
 import { competitionFiltersToSearch } from "@/lib/competitions-share";
+import { createClient } from "@/lib/supabase/client";
 import {
   COMPETITION_CATEGORIES,
   COMPETITION_CATEGORY_LABELS,
@@ -77,6 +80,50 @@ export function CompetitionsBrowser({
   const pathname = usePathname();
   const now = useMemo(() => new Date(nowIso), [nowIso]);
   const [filters, setFilters] = useState<CompetitionFilterState>(initialFilters);
+
+  // Bulk-fetched once for the whole grid, rather than each of the 50 cards'
+  // save buttons independently querying the same competition_stats table.
+  const [saveCounts, setSaveCounts] = useState<Record<string, number>>({});
+  const [savedIds, setSavedIds] = useState<Set<string>>(new Set());
+
+  useEffect(() => {
+    const supabase = createClient();
+    if (!supabase) return;
+
+    fetchSaveCounts()
+      .then(setSaveCounts)
+      .catch(() => {
+        /* counts are decorative; a failed fetch just leaves them hidden */
+      });
+
+    let cancelled = false;
+    supabase.auth
+      .getUser()
+      .then(({ data }) => {
+        if (!cancelled) fetchSavedIdsFor(data.user);
+      })
+      .catch(() => {});
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_, session) =>
+      fetchSavedIdsFor(session?.user ?? null),
+    );
+
+    function fetchSavedIdsFor(user: User | null) {
+      if (!user) {
+        setSavedIds(new Set());
+        return;
+      }
+      fetchSavedCompetitionIds()
+        .then((ids) => setSavedIds(new Set(ids)))
+        .catch(() => setSavedIds(new Set()));
+    }
+
+    return () => {
+      cancelled = true;
+      subscription.unsubscribe();
+    };
+  }, []);
 
   const regions = useMemo(() => {
     const present = new Set(competitions.map((c) => c.region));
@@ -220,7 +267,13 @@ export function CompetitionsBrowser({
       ) : (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {sorted.map((competition) => (
-            <CompetitionCard key={competition.id} competition={competition} now={now} />
+            <CompetitionCard
+              key={competition.id}
+              competition={competition}
+              now={now}
+              initialSaved={savedIds.has(competition.id)}
+              initialCount={saveCounts[competition.id] ?? 0}
+            />
           ))}
         </div>
       )}
