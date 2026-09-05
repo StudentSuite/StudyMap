@@ -189,6 +189,14 @@ export const docsNav: DocsNavEntry[] = [
     group: "Developers",
   },
   {
+    href: "/docs/competitions-api",
+    title: "Competitions API",
+    description: "Read the competitions dataset programmatically: GET /api/competitions, filters, pagination, and errors.",
+    icon: Trophy,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
     href: "/docs/self-hosting",
     title: "Self-Hosting Guide",
     description: "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
