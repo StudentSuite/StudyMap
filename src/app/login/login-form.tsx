@@ -9,6 +9,7 @@ import { Loader2, TriangleAlert, X } from "lucide-react";
 import { createClient } from "@/lib/supabase/client";
 import { safeNext } from "@/lib/safe-next";
 import { site } from "@/lib/site";
+import { hasSeenOnboarding } from "@/lib/user-profile";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -79,7 +80,11 @@ export function LoginForm() {
       if (error) {
         toast.error(error.message);
       } else {
-        router.push(next);
+        // Password sign-in never passes through /auth/callback, so the
+        // first-run-onboarding check (#204) that route does for OAuth has
+        // to happen here too. Fails open to `next` on any error.
+        const seen = await hasSeenOnboarding().catch(() => true);
+        router.push(seen ? next : `/onboarding?next=${encodeURIComponent(next)}`);
         router.refresh();
       }
     }

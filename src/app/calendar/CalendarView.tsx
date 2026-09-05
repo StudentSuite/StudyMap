@@ -33,6 +33,11 @@ import {
   COMPETITION_COUNTRY_LABELS,
   type CompetitionCountry,
 } from "@/lib/types";
+import {
+  boardToExamBoards,
+  fetchUserProfile,
+  profileCompetitionCountry,
+} from "@/lib/user-profile";
 
 const BOARDS: ExamBoard[] = ["SAT", "IB", "IGCSE"];
 
@@ -46,9 +51,9 @@ const PERSONAL_EVENT_COLOR = "#ec4899";
 
 const COMPETITION_EVENT_COLOR = "#f59e0b";
 
-// No signed-in profile country to default to yet (that lands in #203/#204),
-// so the country picker starts on a fixed, sensible guess rather than an
-// empty selection - StudyMap's own userbase is India-centric.
+// Fallback when there's no signed-in profile country to default to (signed
+// out, or the profile's country answer was skipped/"Other") - StudyMap's own
+// userbase is India-centric.
 const DEFAULT_COMPETITION_COUNTRY: CompetitionCountry = "IN";
 
 const PERSONAL_CATEGORY_LABELS = Object.fromEntries(
@@ -161,6 +166,13 @@ export function CalendarView() {
     DEFAULT_COMPETITION_COUNTRY,
   );
 
+  // The signed-in user's onboarding `board` answer (#204), translated to the
+  // exam boards it should default the calendar to. Null means "no usable
+  // default" (signed out, no answer, or a board with no matching exam-date
+  // data) - same as showing everything, same as today.
+  const [profileBoards, setProfileBoards] = useState<ExamBoard[] | null>(null);
+  const [showAllBoards, setShowAllBoards] = useState(false);
+
   // Clear stale events as soon as the signed-in user changes, during render
   // rather than an effect, so there's no stale-data flash.
   const userId = user?.id ?? null;
@@ -169,6 +181,8 @@ export function CalendarView() {
     setPersonalEvents([]);
     setEventsError(null);
     setSavedCompetitionIds(null);
+    setProfileBoards(null);
+    setShowAllBoards(false);
   }
 
   useEffect(() => {
@@ -186,6 +200,27 @@ export function CalendarView() {
     fetchSavedCompetitionIds()
       .then(setSavedCompetitionIds)
       .catch(() => setSavedCompetitionIds([]));
+  }, [user]);
+
+  // Onboarding-profile defaults (#204): the user's board picks which exam
+  // sessions show by default, their country picks the default competition
+  // country track. Silently a no-op when there's no profile, no answer, or
+  // the table doesn't exist yet on this deployment - the calendar already
+  // has a sensible default without it.
+  useEffect(() => {
+    if (!user) return;
+    fetchUserProfile()
+      .then((profile) => {
+        if (!profile) return;
+        setProfileBoards(boardToExamBoards(profile.board));
+        const defaultCountry = profileCompetitionCountry(profile.country);
+        if (defaultCountry) {
+          setCompetitionCountry((current) =>
+            current === DEFAULT_COMPETITION_COUNTRY ? defaultCountry : current,
+          );
+        }
+      })
+      .catch(() => {});
   }, [user]);
 
   useEffect(() => {
@@ -228,7 +263,14 @@ export function CalendarView() {
     setDialogOpen(true);
   }
 
-  const events = getEventsInMonth(year, month);
+  // A profile board with real exam-date data behind it (IB, IGCSE) narrows
+  // the default list; everyone else, and anyone who's flipped the toggle,
+  // sees every board - same as before #204.
+  const hasBoardFilter = profileBoards !== null;
+  const activeBoards = hasBoardFilter && !showAllBoards ? profileBoards! : BOARDS;
+  const events = getEventsInMonth(year, month).filter((ev) =>
+    activeBoards.includes(ev.board),
+  );
   const personalEventsThisMonth = getPersonalEventsInMonth(personalEvents, year, month);
   const firstDay = new Date(year, month, 1).getDay();
   const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -333,7 +375,9 @@ export function CalendarView() {
         {BOARDS.map((board) => (
           <div
             key={board}
-            className="flex items-center gap-1.5 text-sm text-muted-foreground"
+            className={`flex items-center gap-1.5 text-sm ${
+              activeBoards.includes(board) ? "text-muted-foreground" : "text-muted-foreground/40"
+            }`}
           >
             <span
               className="size-2.5 rounded-full flex-shrink-0"
@@ -342,6 +386,20 @@ export function CalendarView() {
             {BOARD_LABELS[board]}
           </div>
         ))}
+        {hasBoardFilter && (
+          <button
+            type="button"
+            onClick={() => setShowAllBoards((v) => !v)}
+            aria-pressed={showAllBoards}
+            className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+              showAllBoards
+                ? "border-primary bg-primary/10 text-primary"
+                : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground"
+            }`}
+          >
+            {showAllBoards ? "Showing all boards" : "Showing your board only"}
+          </button>
+        )}
         <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
           <span
             className="size-2.5 rounded-full flex-shrink-0"

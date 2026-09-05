@@ -8,7 +8,7 @@ import { Home, LogOut, Trash2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
+import { COMPETITION_COUNTRY_LABELS, humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 import { isMissingTableError } from "@/lib/utils";
@@ -26,6 +26,7 @@ import {
   PERSONAL_EVENT_CATEGORIES,
   type PersonalEvent,
 } from "@/lib/user-events";
+import { fetchUserProfile, type UserProfileRow } from "@/lib/user-profile";
 
 const CATEGORY_LABELS = Object.fromEntries(
   PERSONAL_EVENT_CATEGORIES.map((c) => [c.value, c.label]),
@@ -68,6 +69,10 @@ export function AccountView() {
   const [eventsError, setEventsError] = React.useState<string | null>(null);
   const [confirmingEventId, setConfirmingEventId] = React.useState<string | null>(null);
 
+  // The onboarding questionnaire (#204) is skippable, so `null` here just
+  // means "not fetched yet" until the effect below settles it either way.
+  const [profile, setProfile] = React.useState<UserProfileRow | null>(null);
+
   // Reset per-user state at render time, before the effects below repopulate
   // it, so switching accounts never flashes the previous user's data.
   const [lastUserId, setLastUserId] = React.useState<string | null>(null);
@@ -83,6 +88,7 @@ export function AccountView() {
     setConfirmingPlaceId(null);
     setConfirmingHome(false);
     setConfirmingEventId(null);
+    setProfile(null);
   }
 
   React.useEffect(() => {
@@ -141,6 +147,12 @@ export function AccountView() {
             : "Couldn't load your events. Try reloading.",
         );
       });
+    // Silent on failure (including a missing table on a deployment that
+    // hasn't run the #203 migration yet): the profile section below just
+    // stays hidden rather than surfacing an error for an optional feature.
+    fetchUserProfile()
+      .then(setProfile)
+      .catch(() => setProfile(null));
   }, [user]);
 
   async function handleSignOut() {
@@ -424,6 +436,59 @@ export function AccountView() {
                 <p className="mt-1 text-xs text-muted-foreground">{formatDate(ev.date)}</p>
               </div>
             ))
+          )}
+        </div>
+      </section>
+
+      {/* Onboarding questionnaire answers (#204) */}
+      <section>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-foreground">Profile</h2>
+          <Link
+            href={`/onboarding?next=${encodeURIComponent(pathname)}`}
+            className="text-xs font-medium text-primary hover:underline"
+          >
+            {profile ? "Edit answers" : "Complete your profile"}
+          </Link>
+        </div>
+
+        <div className="mt-3">
+          {profile &&
+          (profile.graduation_year || profile.board || profile.field || profile.country) ? (
+            <dl className="grid gap-x-6 gap-y-2 rounded-lg border border-border p-3 text-xs sm:grid-cols-2">
+              {profile.graduation_year && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-muted-foreground">Graduating</dt>
+                  <dd className="font-medium text-foreground">{profile.graduation_year}</dd>
+                </div>
+              )}
+              {profile.board && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-muted-foreground">Board</dt>
+                  <dd className="font-medium text-foreground">{profile.board}</dd>
+                </div>
+              )}
+              {profile.field && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-muted-foreground">Field</dt>
+                  <dd className="font-medium text-foreground">{profile.field}</dd>
+                </div>
+              )}
+              {profile.country && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-muted-foreground">Country</dt>
+                  <dd className="font-medium text-foreground">
+                    {profile.country === "Other"
+                      ? "Other"
+                      : (COMPETITION_COUNTRY_LABELS[profile.country] ?? profile.country)}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          ) : (
+            <p className="rounded-lg border border-border py-4 text-center text-xs text-muted-foreground">
+              You haven&apos;t answered the onboarding questions yet.
+            </p>
           )}
         </div>
       </section>

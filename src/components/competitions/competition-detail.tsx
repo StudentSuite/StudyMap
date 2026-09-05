@@ -11,13 +11,15 @@ import {
   COMPETITION_PARTICIPATION_LABELS,
   humanizeRegion,
 } from "@/lib/types";
-import type { Competition } from "@/lib/types";
+import type { Competition, CompetitionCountry } from "@/lib/types";
 
 interface CompetitionDetailProps {
   competition: Competition;
   related: Competition[];
   /** Reference time, computed once by the server page so the countdown hydrates safely. */
   now: Date;
+  /** The signed-in user's onboarding country answer (#204), if any. */
+  defaultCountry?: CompetitionCountry;
 }
 
 function formatFee(fee: Competition["fee"]): string {
@@ -32,7 +34,12 @@ function formatFee(fee: Competition["fee"]): string {
  * pathways when a real one exists, an official-site call to action, and
  * related competitions in the same category.
  */
-export function CompetitionDetail({ competition, related, now }: CompetitionDetailProps) {
+export function CompetitionDetail({
+  competition,
+  related,
+  now,
+  defaultCountry,
+}: CompetitionDetailProps) {
   return (
     <div className="space-y-8">
       <header className="flex flex-wrap items-start justify-between gap-3">
@@ -151,7 +158,7 @@ export function CompetitionDetail({ competition, related, now }: CompetitionDeta
       </section>
 
       {competition.country_tracks && (
-        <CountryTrackList tracks={competition.country_tracks} />
+        <CountryTrackList tracks={competition.country_tracks} defaultCountry={defaultCountry} />
       )}
 
       <section className="rounded-xl border border-border bg-muted/30 p-4 text-center">
