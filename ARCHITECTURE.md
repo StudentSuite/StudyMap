@@ -248,7 +248,7 @@ filterPlaces(places, { types?, cities? }): Place[]
 getCities(places, preferredOrder?): City[]
 ```
 
-Region and dataset settings (initial map center, default zoom, coordinate bounds, the
+Region and dataset settings (initial map center, default zoom, preferred
 city display order, and which `data/places/*.json` files get loaded) live in
 `studymap.config.ts` at the repo root, the one file a fork edits to retarget StudyMap.
 

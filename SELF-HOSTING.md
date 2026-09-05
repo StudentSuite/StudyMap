@@ -32,9 +32,8 @@ Edit it:
 
 - `center`: `[lat, lng]` for the initial map view
 - `defaultZoom`: initial zoom level (11-13 works well for a metro area)
-- `bounds`: rough coordinate box around your region, used for data validation and map fitting
-- `cities`: display order for the city filter (any city present in your data but missing here
-  still shows, just sorted alphabetically after)
+- `cities`: preferred display order for the city filter — a hint, not an exhaustive list (any
+  city present in your data but missing here still shows, just sorted alphabetically after)
 - `places`: swap the sample imports for your own `data/places/*.json` files
 
 The dataset itself follows the schema in [`data/CONTRIBUTING.md`](data/CONTRIBUTING.md): one JSON
