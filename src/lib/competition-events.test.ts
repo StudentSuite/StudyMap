@@ -123,6 +123,62 @@ describe("competitionEvents", () => {
     const events = competitionEvents(competitions, "IN");
     expect(events.map((e) => e.label)).toEqual(["ZIO"]);
     expect(events[0].country).toBe("IN");
+    // The estimated flag on a stage survives flattening too, not just on
+    // a competition's own dates[] entries.
+    expect(events[0].estimated).toBe(true);
+  });
+
+  it("a competition with no country_tracks at all produces only its own dates, even when a country is requested", () => {
+    const competitions = [
+      competition({
+        id: "c1",
+        dates: [
+          {
+            label: "Deadline",
+            date: "2026-06-01",
+            type: "deadline",
+            timezone: "UTC",
+            estimated: false,
+            source_url: "https://example.com/d",
+          },
+        ],
+        // country_tracks intentionally omitted (undefined), not an empty array.
+      }),
+    ];
+
+    const events = competitionEvents(competitions, "IN");
+    expect(events.map((e) => e.label)).toEqual(["Deadline"]);
+    expect(events.every((e) => e.country === undefined)).toBe(true);
+  });
+
+  it("the estimated flag survives flattening for a competition's own dates[] too", () => {
+    const competitions = [
+      competition({
+        id: "c1",
+        dates: [
+          {
+            label: "Confirmed",
+            date: "2026-06-01",
+            type: "deadline",
+            timezone: "UTC",
+            estimated: false,
+            source_url: "https://example.com",
+          },
+          {
+            label: "Provisional",
+            date: "2026-07-01",
+            type: "results",
+            timezone: "UTC",
+            estimated: true,
+            source_url: "https://example.com",
+          },
+        ],
+      }),
+    ];
+
+    const events = competitionEvents(competitions);
+    expect(events.find((e) => e.label === "Confirmed")?.estimated).toBe(false);
+    expect(events.find((e) => e.label === "Provisional")?.estimated).toBe(true);
   });
 });
 
@@ -154,6 +210,39 @@ describe("competitionEventsInMonth", () => {
 
     const result = competitionEventsInMonth(events, 2026, 5); // June, 0-indexed
     expect(result.map((e) => e.label)).toEqual(["June"]);
+  });
+
+  it("keeps a month-boundary date in its own month regardless of the runner's local timezone", () => {
+    // event.date is parsed as `${date}T00:00:00` (local time, no `Z`), not
+    // a bare "YYYY-MM-DD" (which Date parses as UTC midnight and can read
+    // back as the previous day in any timezone behind UTC). Prove that by
+    // running the same assertion under a timezone on each side of UTC.
+    const events = competitionEvents([
+      competition({
+        id: "c1",
+        dates: [
+          {
+            label: "First of the month",
+            date: "2026-06-01",
+            type: "deadline",
+            timezone: "UTC",
+            estimated: false,
+            source_url: "https://example.com",
+          },
+        ],
+      }),
+    ]);
+
+    const originalTz = process.env.TZ;
+    for (const tz of ["Pacific/Kiritimati", "Etc/GMT+12"]) {
+      process.env.TZ = tz;
+      try {
+        const result = competitionEventsInMonth(events, 2026, 5); // June
+        expect(result.map((e) => e.label)).toEqual(["First of the month"]);
+      } finally {
+        process.env.TZ = originalTz;
+      }
+    }
   });
 });
 

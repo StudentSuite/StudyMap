@@ -116,6 +116,23 @@ describe("filterCompetitions", () => {
     expect(result.map((c) => c.id)).toEqual(["coding-team"]);
   });
 
+  it("age filter is inclusive at both age_min and age_max", () => {
+    // coding-team spans age_min: 10, age_max: 18.
+    expect(filterCompetitions(FIXTURE, { age: 10 }).map((c) => c.id)).toContain(
+      "coding-team",
+    );
+    expect(filterCompetitions(FIXTURE, { age: 18 }).map((c) => c.id)).toContain(
+      "coding-team",
+    );
+    // One below/above the range excludes it.
+    expect(filterCompetitions(FIXTURE, { age: 9 }).map((c) => c.id)).not.toContain(
+      "coding-team",
+    );
+    expect(filterCompetitions(FIXTURE, { age: 19 }).map((c) => c.id)).not.toContain(
+      "coding-team",
+    );
+  });
+
   it("matches a query against name, organizer and subjects, case-insensitively", () => {
     expect(filterCompetitions(FIXTURE, { query: "regeneron" }).map((c) => c.id)).toEqual([
       "stem-free",
@@ -126,6 +143,23 @@ describe("filterCompetitions", () => {
     expect(
       filterCompetitions(FIXTURE, { query: "cybersecurity" }).map((c) => c.id),
     ).toEqual(["coding-team"]);
+  });
+
+  it("ignores surrounding whitespace in the query", () => {
+    expect(
+      filterCompetitions(FIXTURE, { query: "  regeneron  " }).map((c) => c.id),
+    ).toEqual(["stem-free"]);
+  });
+
+  it("composes three filters at once with AND semantics, more than just two", () => {
+    const result = filterCompetitions(FIXTURE, {
+      categories: ["coding", "mathematics"],
+      participation: "team",
+      age: 11,
+    });
+    // Only coding-team is a team competition in one of those categories
+    // whose range includes age 11 (math-paid's range starts at 13).
+    expect(result.map((c) => c.id)).toEqual(["coding-team"]);
   });
 
   it("composes two filters at once with AND semantics", () => {
