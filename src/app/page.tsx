@@ -103,7 +103,7 @@ export default function HomePage() {
       <section className="border-t border-border bg-muted/30">
         <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
-            <h2 className="text-xl font-semibold tracking-tight">
+            <h2 className="text-2xl font-semibold tracking-tight">
               Open data, maintained by students.
             </h2>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">

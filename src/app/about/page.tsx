@@ -49,7 +49,7 @@ export default function AboutPage() {
         {principles.map(({ title, body }) => (
           <Card key={title}>
             <CardHeader>
-              <CardTitle className="text-base leading-snug">{title}</CardTitle>
+              <CardTitle>{title}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-sm leading-relaxed text-muted-foreground">{body}</p>

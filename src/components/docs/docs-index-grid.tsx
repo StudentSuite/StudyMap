@@ -36,7 +36,7 @@ export function DocsIndexGrid() {
                       className={`size-5 ${entry.iconClassName ?? "text-primary"}`}
                       aria-hidden="true"
                     />
-                    <h2 className="font-heading font-semibold text-foreground leading-snug">
+                    <h2 className="font-heading text-lg font-semibold text-foreground leading-snug">
                       {entry.title}
                     </h2>
                     <p className="flex-1 text-sm text-muted-foreground">{entry.description}</p>

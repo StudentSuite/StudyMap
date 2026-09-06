@@ -51,7 +51,7 @@ export function CompetitionCard({
       {/* Header: name, organizer, category */}
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
-          <h3 className="font-heading text-base font-semibold leading-snug text-foreground">
+          <h3 className="font-heading text-lg font-semibold leading-snug text-foreground">
             {competition.name}
           </h3>
           <p className="mt-0.5 truncate text-sm text-muted-foreground">
