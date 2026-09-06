@@ -349,11 +349,12 @@ export function CalendarView() {
 
   return (
     <div className="mt-8">
-      {/* Month navigation */}
-      <div className="flex items-center justify-between mb-6">
+      {/* Month navigation: sticky below the fixed navbar so the current month
+          stays visible while scrolling a long calendar page. */}
+      <div className="sticky top-14 z-20 -mx-4 mb-6 flex items-center justify-between border-b border-border bg-background/95 px-4 py-2 backdrop-blur-sm supports-[backdrop-filter]:bg-background/80">
         <button
           onClick={goBack}
-          className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-muted transition-colors"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-border hover:bg-muted transition-colors sm:h-9 sm:w-9"
           aria-label="Previous month"
         >
           <ChevronLeft className="size-5" />
@@ -363,7 +364,7 @@ export function CalendarView() {
         </h2>
         <button
           onClick={goForward}
-          className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-muted transition-colors"
+          className="flex h-11 w-11 items-center justify-center rounded-lg border border-border hover:bg-muted transition-colors sm:h-9 sm:w-9"
           aria-label="Next month"
         >
           <ChevronRight className="size-5" />

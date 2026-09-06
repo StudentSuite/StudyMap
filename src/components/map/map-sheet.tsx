@@ -7,7 +7,10 @@ import { Drawer } from "vaul";
 // string is parsed as a literal pixel value. These must be numbers, not
 // percentage strings, or vaul silently mis-parses "48%" as 48px.
 // Three stops: peek (summary bar), half (list browsable), full (all content).
-export const SHEET_SNAP_POINTS = [0.12, 0.48, 0.92] as const;
+// Peek is 0.15 rather than a tighter fraction so the drag handle, the
+// min-h-11 peek button, and the safe-area padding all fit without clipping
+// the summary text on short viewports (see #216).
+export const SHEET_SNAP_POINTS = [0.15, 0.48, 0.92] as const;
 
 interface MapSheetProps {
   open: boolean;

@@ -5,6 +5,7 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export function ThemeToggle() {
   const { resolvedTheme, setTheme } = useTheme();
@@ -23,7 +24,7 @@ export function ThemeToggle() {
       size="icon"
       aria-label="Toggle theme"
       onClick={() => setTheme(isDark ? "light" : "dark")}
-      className={mounted && isDark ? "bg-muted text-foreground" : ""}
+      className={cn("size-11 sm:size-8", mounted && isDark && "bg-muted text-foreground")}
     >
       {mounted && isDark ? (
         <Sun className="size-5" />

@@ -85,8 +85,8 @@ export function CompetitionCard({
         {competition.description}
       </p>
 
-      {/* Meta pills: structured, high-contrast */}
-      <div className="mt-3 flex flex-wrap gap-2">
+      {/* Meta pills: stack on narrow screens instead of wrapping, wrap from sm up */}
+      <div className="mt-3 flex flex-col items-start gap-1.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-2">
         <span className="inline-flex items-center gap-1 rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
           <Clock className="size-3" aria-hidden />
           {COMPETITION_FORMAT_LABELS[competition.format]}

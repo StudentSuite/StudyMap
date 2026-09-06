@@ -148,6 +148,7 @@ export function Navbar() {
           <Button
             variant="ghost"
             size="icon"
+            className="size-11 sm:size-8"
             onClick={openSearch}
             aria-label="Search (Cmd/Ctrl+K)"
           >
@@ -196,7 +197,7 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Open menu">
+              <Button variant="ghost" size="icon" className="size-11 md:hidden" aria-label="Open menu">
                 <Menu className="size-5" />
               </Button>
             </SheetTrigger>
