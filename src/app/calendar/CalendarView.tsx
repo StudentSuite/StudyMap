@@ -348,9 +348,9 @@ export function CalendarView() {
   };
 
   return (
-    <div className="mt-6">
+    <div className="mt-8">
       {/* Month navigation */}
-      <div className="flex items-center justify-between mb-5">
+      <div className="flex items-center justify-between mb-6">
         <button
           onClick={goBack}
           className="flex h-9 w-9 items-center justify-center rounded-lg border border-border hover:bg-muted transition-colors"

@@ -48,7 +48,7 @@ export default function HomePage() {
       <Hero />
 
       <section className="border-t border-border bg-muted/30">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-5 px-4 py-12 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-5 px-4 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <p className="kicker">Why StudyMap</p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight">
@@ -71,13 +71,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mx-auto w-full max-w-6xl px-4 py-16">
+      <section className="mx-auto w-full max-w-6xl px-4 py-24">
         <p className="kicker">What is inside</p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight">
           Everything in one place.
         </h2>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
           {sections.map((section) => (
             <Link
               key={section.href}
@@ -101,7 +101,7 @@ export default function HomePage() {
       </section>
 
       <section className="border-t border-border bg-muted/30">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-12 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-4 px-4 py-16 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <h2 className="text-xl font-semibold tracking-tight">
               Open data, maintained by students.

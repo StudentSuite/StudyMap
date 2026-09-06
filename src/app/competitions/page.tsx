@@ -36,14 +36,14 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
         <h1 className="font-heading text-3xl font-bold tracking-tight text-foreground">
           Competitions
         </h1>
-        <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+        <p className="mt-2 max-w-2xl text-base leading-relaxed text-muted-foreground">
           {competitions.length} student competitions worldwide, from STEM olympiads to essay
           contests to hackathons. Every deadline links back to its source, and country
           qualifier tracks are called out where a real national pathway exists.
         </p>
       </div>
 
-      <div className="mt-6">
+      <div className="mt-8">
         <CompetitionsBrowser
           competitions={competitions}
           nowIso={now.toISOString()}

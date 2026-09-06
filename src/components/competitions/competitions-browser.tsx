@@ -195,7 +195,7 @@ export function CompetitionsBrowser({
   const activeDescriptions = describeActiveFilters(filters);
 
   return (
-    <div className="space-y-5">
+    <div className="space-y-6">
       {/* Search + count + view toggle */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div className="relative w-full sm:max-w-sm">
@@ -275,8 +275,8 @@ export function CompetitionsBrowser({
         <div
           className={
             viewMode === "grid"
-              ? "grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
-              : "flex flex-col gap-4"
+              ? "grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              : "flex flex-col gap-5"
           }
         >
           {sorted.map((competition) => (

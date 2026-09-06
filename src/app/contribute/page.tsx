@@ -17,7 +17,7 @@ export default function ContributePage() {
         StudyMap is built by students, for students. Help improve the map, fix bugs, or suggest features.
       </p>
 
-      <div className="mt-8 space-y-6">
+      <div className="mt-10 space-y-8">
         {/* Add a place */}
         <Card>
           <CardHeader>
@@ -103,7 +103,7 @@ export default function ContributePage() {
       </div>
 
       {/* Recognition */}
-      <div className="mt-12 rounded-lg bg-muted p-6">
+      <div className="mt-16 rounded-lg bg-muted p-6">
         <h2 className="font-heading text-lg font-semibold">Contributors are awesome</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Every contribution (whether adding a place, fixing data, or improving docs) helps other students. Contributors are listed in the GitHub repository. Thank you for building StudyMap with us!

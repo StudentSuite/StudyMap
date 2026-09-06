@@ -45,7 +45,7 @@ export default function AboutPage() {
         to start from scratch.
       </p>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+      <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {principles.map(({ title, body }) => (
           <Card key={title}>
             <CardHeader>
@@ -58,7 +58,7 @@ export default function AboutPage() {
         ))}
       </div>
 
-      <section className="mt-12 space-y-3">
+      <section className="mt-16 space-y-3">
         <h2 className="font-heading text-xl font-semibold tracking-tight">
           Where the data comes from
         </h2>
@@ -72,7 +72,7 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="mt-10 space-y-3">
+      <section className="mt-12 space-y-3">
         <h2 className="font-heading text-xl font-semibold tracking-tight">
           Who maintains it
         </h2>
