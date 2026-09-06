@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { notFound } from "next/navigation";
 
 import { getCompetitions, formatCompetitionDate } from "@/lib/competitions";
+import { loadHeadingFonts } from "@/lib/og-fonts";
 import { ogCompetitionSummary } from "@/lib/og";
 
 // A different image per competition, so shared links stop looking identical
@@ -18,54 +19,6 @@ export function generateStaticParams(): { slug: string }[] {
   return getCompetitions().map((competition) => ({ slug: competition.id }));
 }
 
-// next/og runs on the edge runtime, where there is no system font to rely
-// on — fetch the brand typeface instead. Request the CSS with a legacy
-// user-agent so Google returns truetype URLs: the image renderer reads
-// ttf/otf, not woff2. Each font carries the weight parsed from its own
-// @font-face block, so a changed block count or order can never silently
-// mislabel weights. The result is cached for the process lifetime (the
-// build, for these static pages).
-interface HeadingFont {
-  data: ArrayBuffer;
-  weight: 400 | 700;
-}
-
-let headingFontPromise: Promise<HeadingFont[] | null> | null = null;
-
-function loadHeadingFonts(): Promise<HeadingFont[] | null> {
-  if (!headingFontPromise) {
-    headingFontPromise = (async () => {
-      try {
-        const css = await fetch(
-          "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap",
-          { headers: { "User-Agent": "Mozilla/4.0" } },
-        ).then((response) => response.text());
-        const byWeight = new Map<400 | 700, ArrayBuffer>();
-        for (const block of css.matchAll(/@font-face\s*\{([^}]+)\}/g)) {
-          const url = block[1].match(
-            /url\((https:\/\/fonts\.gstatic\.com\/[^)]+\.ttf)\)/,
-          )?.[1];
-          const weight = Number(block[1].match(/font-weight:\s*(\d+)/)?.[1]);
-          if (!url || (weight !== 400 && weight !== 700)) continue;
-          if (byWeight.has(weight)) continue;
-          byWeight.set(
-            weight,
-            await fetch(url).then((response) => response.arrayBuffer()),
-          );
-        }
-        return byWeight.size
-          ? Array.from(byWeight, ([weight, data]) => ({ data, weight }))
-          : null;
-      } catch {
-        // Unreachable font host must not fail the build: fall back to a
-        // system stack rather than shipping no image at all.
-        return null;
-      }
-    })();
-  }
-  return headingFontPromise;
-}
-
 interface CompetitionOgImageProps {
   params: Promise<{ slug: string }>;
 }
@@ -78,16 +31,13 @@ export default async function CompetitionOgImage({ params }: CompetitionOgImageP
   // Computed once, at build time, same as the detail page's own `now` -
   // there is no per-request rendering here for it to drift against.
   const summary = ogCompetitionSummary(competition, new Date());
-  const fontData = await loadHeadingFonts();
-  const fonts = (fontData ?? []).map(({ data, weight }) => ({
+  const fonts = (await loadHeadingFonts()).map(({ data, weight }) => ({
     data,
     name: "Space Grotesk",
     weight,
     style: "normal" as const,
   }));
-  const fontFamily = fontData
-    ? '"Space Grotesk", "Inter", system-ui, sans-serif'
-    : '"Inter", system-ui, sans-serif';
+  const fontFamily = '"Space Grotesk", "Inter", system-ui, sans-serif';
 
   return new ImageResponse(
     <div
