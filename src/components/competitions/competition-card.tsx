@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Calendar, Clock, ExternalLink, MapPin, Users } from "lucide-react";
+import { Calendar, Clock, ExternalLink, MapPin, Trophy, Users } from "lucide-react";
 
 import { DeadlineCountdown } from "@/components/competitions/deadline-countdown";
 import { SaveButton } from "@/components/competitions/save-button";
@@ -48,6 +49,34 @@ export function CompetitionCard({
         isGrid ? "h-full p-4" : "p-4 sm:p-5",
       )}
     >
+      {/* Grid banner: logo in the top half, links out to the official site */}
+      {isGrid && (
+        <a
+          href={competition.official_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`${competition.name} official site`}
+          className="relative -mx-4 -mt-4 mb-4 block aspect-[2/1] overflow-hidden rounded-t-xl bg-gradient-to-br from-muted via-card to-muted/40 ring-1 ring-border/60"
+        >
+          {competition.image ? (
+            <Image
+              src={competition.image}
+              alt={`${competition.name} logo`}
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              className="object-contain p-5"
+            />
+          ) : (
+            <span className="absolute inset-0 flex items-center justify-center">
+              <Trophy
+                className="size-10 text-muted-foreground/50"
+                aria-hidden="true"
+              />
+            </span>
+          )}
+        </a>
+      )}
+
       {/* Header: name, organizer, category */}
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">

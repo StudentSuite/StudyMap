@@ -73,7 +73,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/first-robotics-competition.png"
   },
   {
     "id": "technovation-girls",
@@ -128,7 +129,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/technovation-girls.png"
   },
   {
     "id": "envirothon",
@@ -169,7 +171,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-08-01"
+    "valid_till": "2027-08-01",
+    "image": "/competitions/envirothon.png"
   },
   {
     "id": "ecybermission",
@@ -211,7 +214,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-03-15"
+    "valid_till": "2027-03-15",
+    "image": "/competitions/ecybermission.png"
   },
   {
     "id": "first-tech-challenge",
@@ -260,7 +264,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/first-tech-challenge.png"
   },
   {
     "id": "igem-high-school",
@@ -301,7 +306,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-07-01"
+    "valid_till": "2027-07-01",
+    "image": "/competitions/igem-high-school.png"
   },
   {
     "id": "first-global-challenge",
@@ -350,7 +356,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/first-global-challenge.png"
   },
   {
     "id": "nasa-space-apps-challenge",
@@ -416,6 +423,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/nasa-space-apps-challenge.png"
   }
 ]

@@ -53,7 +53,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-10-15"
+    "valid_till": "2026-10-15",
+    "image": "/competitions/harvard-crimson-global-essay-competition.png"
   },
   {
     "id": "jfk-profile-in-courage-essay-contest",
@@ -93,7 +94,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/jfk-profile-in-courage-essay-contest.png"
   },
   {
     "id": "john-locke-global-essay-prize",
@@ -159,7 +161,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2026-11-01",
+    "image": "/competitions/john-locke-global-essay-prize.png"
   },
   {
     "id": "the-politic-high-school-essay-competition",
@@ -215,7 +218,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-10-01"
+    "valid_till": "2026-10-01",
+    "image": "/competitions/the-politic-high-school-essay-competition.png"
   },
   {
     "id": "ayn-rand-institute-essay-contests",
@@ -271,7 +275,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-15"
+    "valid_till": "2027-01-15",
+    "image": "/competitions/ayn-rand-institute-essay-contests.png"
   },
   {
     "id": "princeton-prize-in-race-relations",
@@ -311,7 +316,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/princeton-prize-in-race-relations.png"
   },
   {
     "id": "signet-classics-student-scholarship-essay-contest",
@@ -350,6 +356,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-05-15"
+    "valid_till": "2027-05-15",
+    "image": "/competitions/signet-classics-student-scholarship-essay-contest.png"
   }
 ]

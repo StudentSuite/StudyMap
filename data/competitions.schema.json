@@ -115,6 +115,11 @@
       "type": "string",
       "pattern": "^https://"
     },
+    "image": {
+      "type": "string",
+      "pattern": "^(https?://|/)",
+      "description": "Optional localized logo or banner for the competition card, e.g. \"/competitions/regeneron-isef.png\""
+    },
     "cycle_year": {
       "type": "integer",
       "minimum": 2020,

@@ -45,7 +45,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/harvard-model-united-nations.png"
   },
   {
     "id": "nsda-national-tournament",
@@ -93,7 +94,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-07-01"
+    "valid_till": "2027-07-01",
+    "image": "/competitions/nsda-national-tournament.png"
   },
   {
     "id": "world-scholars-cup",
@@ -160,6 +162,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/world-scholars-cup.png"
   }
 ]

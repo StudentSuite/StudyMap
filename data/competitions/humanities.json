@@ -75,7 +75,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-08-01"
+    "valid_till": "2027-08-01",
+    "image": "/competitions/international-linguistics-olympiad.png"
   },
   {
     "id": "national-latin-exam",
@@ -123,6 +124,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/national-latin-exam.png"
   }
 ]

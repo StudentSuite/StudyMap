@@ -44,7 +44,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2026-11-01",
+    "image": "/competitions/foyle-young-poets-of-the-year-award.png"
   },
   {
     "id": "rattle-poetry-prize",
@@ -91,7 +92,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-10-01"
+    "valid_till": "2026-10-01",
+    "image": "/competitions/rattle-poetry-prize.png"
   },
   {
     "id": "river-of-words",
@@ -131,6 +133,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/river-of-words.png"
   }
 ]

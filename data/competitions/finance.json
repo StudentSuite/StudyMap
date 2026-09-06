@@ -36,7 +36,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/national-personal-finance-challenge.png"
   },
   {
     "id": "new-york-fed-s-high-school-economics-essay",
@@ -76,7 +77,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/new-york-fed-s-high-school-economics-essay.png"
   },
   {
     "id": "wharton-global-high-school-investment-competition",
@@ -116,7 +118,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/wharton-global-high-school-investment-competition.png"
   },
   {
     "id": "wharton-high-school-data-science-competition",
@@ -156,7 +159,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/wharton-high-school-data-science-competition.png"
   },
   {
     "id": "national-economics-challenge",
@@ -203,7 +207,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-15"
+    "valid_till": "2027-01-15",
+    "image": "/competitions/national-economics-challenge.png"
   },
   {
     "id": "stock-market-game",
@@ -243,6 +248,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/stock-market-game.png"
   }
 ]
