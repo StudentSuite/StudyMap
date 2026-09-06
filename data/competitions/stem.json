@@ -627,5 +627,183 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-01-01"
+  },
+  {
+    "id": "international-earth-science-olympiad",
+    "name": "International Earth Science Olympiad (IESO)",
+    "organizer": "International Geoscience Education Organisation (IGEO)",
+    "organizer_url": "https://www.igeoscied.org/",
+    "category": "stem",
+    "subjects": [
+      "earth science",
+      "geology",
+      "environmental science"
+    ],
+    "description": "An annual competition for secondary students that tests earth science knowledge through written exams, a team Earth System Project and field investigations. National teams qualify through their own country's earth science olympiad selection process.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals by individual score, plus a team project award.",
+    "official_url": "https://www.igeoscied.org/activities/ieso/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "IESO 2026 (Turin, Italy)",
+        "date": "2026-08-20",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://eurogeologists.eu/event/ieso-2026/"
+      },
+      {
+        "label": "IESO 2027 (host to be confirmed, following the usual August pattern)",
+        "date": "2027-08-19",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.igeoscied.org/activities/ieso/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "international-olympiad-in-ai",
+    "name": "International Olympiad in Artificial Intelligence (IOAI)",
+    "organizer": "IOAI Foundation and the annual host institution",
+    "organizer_url": "https://ioai-official.org/",
+    "category": "stem",
+    "subjects": [
+      "artificial intelligence",
+      "machine learning",
+      "computer science"
+    ],
+    "description": "A science olympiad for high school students covering machine learning, natural language processing and AI safety through both theory and hands on coding rounds. National teams are selected through each country's own AI olympiad process.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver or bronze medal awarded by score.",
+    "official_url": "https://ioai-official.org/singapore-2027/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "IOAI 2027 (Singapore)",
+        "date": "2027-07-04",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://ioai-official.org/singapore-2027/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "european-physics-olympiad",
+    "name": "European Physics Olympiad (EuPhO)",
+    "organizer": "EuPhO organizing committee and the annual host country",
+    "organizer_url": "https://eupho.ee/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "An annual theoretical physics competition open to secondary school students from Europe and invited guest countries. Each delegation sends a team, and problems are set at a level comparable to the International Physics Olympiad.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals plus honourable mentions.",
+    "official_url": "https://eupho.ee/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "EuPhO 2026 (Gothenburg, Sweden)",
+        "date": "2026-06-12",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://eupho.ee/eupho-2026/"
+      },
+      {
+        "label": "EuPhO 2027 (host to be confirmed, following the usual mid-June pattern)",
+        "date": "2027-06-11",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://eupho.ee/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "international-biogeneius-challenge",
+    "name": "International BioGENEius Challenge",
+    "organizer": "Biotechnology Institute",
+    "organizer_url": "https://biotechinstitute.org/biogeneius/",
+    "category": "stem",
+    "subjects": [
+      "biotechnology",
+      "biology",
+      "research"
+    ],
+    "description": "A biotechnology research competition for high school age students, judged across Global Healthcare, Global Sustainability and Global Environment tracks. Finalists advance from state and regional BioGENEius competitions to present their research before a panel of industry and academic judges.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash awards and recognition across three research tracks at the national final.",
+    "official_url": "https://biotechinstitute.org/biogeneius/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National final (following the usual autumn pattern, exact 2027 dates not yet posted)",
+        "date": "2027-10-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://biotechinstitute.org/biogeneius/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-03-01"
   }
 ]

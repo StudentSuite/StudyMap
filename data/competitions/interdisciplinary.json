@@ -129,5 +129,227 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "envirothon",
+    "name": "NCF-Envirothon",
+    "organizer": "National Conservation Foundation",
+    "organizer_url": "https://envirothon.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "environmental science",
+      "soil science",
+      "ecology"
+    ],
+    "description": "North America's largest high school environmental education competition, testing teams across soils, aquatics, forestry, wildlife and a rotating current issue. Teams qualify through state or provincial envirothons before the week long international final.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "International champion team title plus category awards.",
+    "official_url": "https://envirothon.org/2027-maryland/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 NCF-Envirothon (Emmitsburg, Maryland)",
+        "date": "2027-07-24",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://envirothon.org/2027-maryland/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-08-01"
+  },
+  {
+    "id": "ecybermission",
+    "name": "eCYBERMISSION",
+    "organizer": "US Army Educational Outreach Program (AEOP)",
+    "organizer_url": "https://usaeop.com/program/ecybermission/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "science",
+      "technology",
+      "engineering",
+      "mathematics"
+    ],
+    "description": "A free team STEM competition for US students in grades 6 through 9, who identify a real problem in their community and apply the scientific or engineering design process to solve it. Teams submit a Mission Folder that is judged virtually, with top teams invited to a national judging and awards event.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 15,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "US Savings Bonds up to USD 9,000 per team member for national winners.",
+    "official_url": "https://www.ecybermission.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2027-02-24",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://usaeop.com/program/ecybermission/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-03-15"
+  },
+  {
+    "id": "first-tech-challenge",
+    "name": "FIRST Tech Challenge (FTC)",
+    "organizer": "FIRST",
+    "organizer_url": "https://www.firstinspires.org/programs/ftc/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "robotics",
+      "engineering",
+      "coding"
+    ],
+    "description": "A robotics program for grades 7 through 12 in which small teams design, build and program a robot to compete in a new game released each September. Teams advance from local qualifying and league tournaments to regional and, for top teams, the FIRST Championship.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "FIRST Championship titles and a large scholarship pool.",
+    "official_url": "https://www.firstinspires.org/programs/ftc/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2026-2027 season kickoff",
+        "date": "2026-09-12",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/season-dates"
+      },
+      {
+        "label": "Qualifying and league tournaments (following the usual January to February pattern)",
+        "date": "2027-01-15",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/season-dates"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "igem-high-school",
+    "name": "iGEM High School Synthetic Biology Competition",
+    "organizer": "iGEM Foundation",
+    "organizer_url": "https://competition.igem.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "synthetic biology",
+      "biotechnology",
+      "engineering"
+    ],
+    "description": "A free synthetic biology competition for teams of high school students, who design, build and test a system using standard biological parts under the guidance of an adult principal investigator. Teams work over the school year and present their project at the iGEM Jamboree alongside university teams.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Medals and track awards judged at the iGEM Jamboree.",
+    "official_url": "https://competition.igem.org/about",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team registration deadline",
+        "date": "2027-06-04",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://competition.igem.org/about"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "first-global-challenge",
+    "name": "FIRST Global Challenge",
+    "organizer": "FIRST Global",
+    "organizer_url": "https://first.global/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "robotics",
+      "engineering",
+      "international relations"
+    ],
+    "description": "An olympics style robotics competition in which one team represents each participating nation, held in a different host country each year. National teams build and program a robot to complete tasks themed around a global engineering challenge, such as the 2026 wildfire prevention theme.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National team medals plus awards for design, teamwork and sportsmanship.",
+    "official_url": "https://first.global/fgc/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2026 Challenge (Incheon, Republic of Korea)",
+        "date": "2026-10-07",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://first.global/fgc/"
+      },
+      {
+        "label": "2027 Challenge (host not yet announced, following the usual October pattern)",
+        "date": "2027-10-06",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://first.global/fgc/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-01"
   }
 ]

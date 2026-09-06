@@ -159,5 +159,84 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-07-01"
+  },
+  {
+    "id": "national-history-bee",
+    "name": "National History Bee",
+    "organizer": "International Academic Competitions",
+    "organizer_url": "https://www.historybowl.com/",
+    "category": "history",
+    "subjects": [
+      "history"
+    ],
+    "description": "A buzzer based individual quiz competition on world and US history, run at Junior Varsity and Varsity levels. Students advance from regional bee tournaments to a National Championship based on their qualifying score.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National Championship title in individual history quiz.",
+    "official_url": "https://www.historybowl.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Championships (Arlington, VA)",
+        "date": "2027-04-26",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.historybowl.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-15"
+  },
+  {
+    "id": "we-the-students-essay-contest",
+    "name": "We the Students Essay Contest",
+    "organizer": "Bill of Rights Institute",
+    "organizer_url": "https://billofrightsinstitute.org/",
+    "category": "history",
+    "subjects": [
+      "civics",
+      "history"
+    ],
+    "description": "A national essay contest on the US Constitution and Bill of Rights, open to students in grades 8 through 12. Entrants write a 500 to 800 word essay responding to the year's constitutional prompt.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 7,500 first prize from a USD 20,000 total prize pool.",
+    "official_url": "https://billofrightsinstitute.org/we-the-students-essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-04-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://billofrightsinstitute.org/we-the-students-essay-contest/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-15"
   }
 ]

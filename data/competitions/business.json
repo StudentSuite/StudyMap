@@ -189,5 +189,135 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "fbla-national-leadership-conference",
+    "name": "FBLA National Leadership Conference (NLC)",
+    "organizer": "Future Business Leaders of America (FBLA)",
+    "organizer_url": "https://www.fbla.org/",
+    "category": "business",
+    "subjects": [
+      "business",
+      "leadership",
+      "entrepreneurship"
+    ],
+    "description": "The annual national conference of Future Business Leaders of America, where members compete in over 60 business and leadership events. Students qualify by placing at their state FBLA conference earlier in the year.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National champion titles and cash awards across dozens of competitive events.",
+    "official_url": "https://www.fbla.org/fbla-national-leadership-conference/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 NLC (Columbus, OH)",
+        "date": "2027-06-23",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.experiencecolumbus.com/articles/post/future-business-leaders-of-america-selects-columbus-for-its-2027-national-leadership-conference/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "bpa-national-leadership-conference",
+    "name": "Business Professionals of America National Leadership Conference (NLC)",
+    "organizer": "Business Professionals of America (BPA)",
+    "organizer_url": "https://bpa.org/",
+    "category": "business",
+    "subjects": [
+      "business",
+      "office administration",
+      "information technology"
+    ],
+    "description": "The national capstone event of Business Professionals of America, covering business, finance, IT and administrative career competitive events. Members advance to the national conference by placing at their state BPA conference.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National champion titles across dozens of career and technology competitive events.",
+    "official_url": "https://bpa.org/nlc_conference/2027-nlc/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 NLC (Denver, CO)",
+        "date": "2027-05-05",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://bpa.org/nlc_conference/2027-nlc/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ja-company-of-the-year",
+    "name": "JA Company of the Year",
+    "organizer": "Junior Achievement USA",
+    "organizer_url": "https://jausa.ja.org/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "business"
+    ],
+    "description": "A capstone to the JA Company Program in which teams of three to five students run a real student company over roughly 13 weeks, raising capital and managing actual operations. Regional Company of the Year winners advance to Future Bound, JA's national culminating event each June.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National recognition at Future Bound, judged on financial performance and a live pitch to business leaders.",
+    "official_url": "https://jausa.ja.org/events/opportunity/ja-company-of-the-year",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Future Bound 2026 (Boston, MA)",
+        "date": "2026-06-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.jaworldwide.org/news/future-bound-2026"
+      },
+      {
+        "label": "Future Bound 2027 (following the usual early-June pattern, host not yet announced)",
+        "date": "2027-06-06",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://jausa.ja.org/events/future-bound-by-junior-achievement"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-01"
   }
 ]

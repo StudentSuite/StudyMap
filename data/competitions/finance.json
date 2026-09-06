@@ -157,5 +157,92 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "national-economics-challenge",
+    "name": "National Economics Challenge (NEC)",
+    "organizer": "Council for Economic Education",
+    "organizer_url": "https://www.councilforeconed.org/",
+    "category": "finance",
+    "subjects": [
+      "economics"
+    ],
+    "description": "A team economics quiz competition for US high school students, run in a beginner David Ricardo division and an advanced Adam Smith division. Teams advance from a state round through an online national round and semifinals to an in person national final.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 1,000 for the first-place team at the national final.",
+    "official_url": "https://www.councilforeconed.org/programs/for-students/national-economic-challenge/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Finals 2026 (Atlanta, GA)",
+        "date": "2026-05-28",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.councilforeconed.org/programs/for-students/national-economic-challenge/"
+      },
+      {
+        "label": "National Finals 2027 (following the usual late-May pattern, host not yet announced)",
+        "date": "2027-05-27",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.councilforeconed.org/programs/for-students/national-economic-challenge/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "stock-market-game",
+    "name": "The Stock Market Game",
+    "organizer": "SIFMA Foundation",
+    "organizer_url": "https://www.sifmafoundation.org/",
+    "category": "finance",
+    "subjects": [
+      "investing",
+      "personal finance"
+    ],
+    "description": "A classroom investing simulation in which teams of students manage a virtual USD 100,000 portfolio of real stocks, bonds and mutual funds over a school-selected session. Teachers run the game through a regional SIFMA Foundation partner, and sessions culminate in a portfolio performance ranking rather than a single national final.",
+    "format": "online",
+    "age_min": 9,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Regional and state leaderboard recognition; specific awards vary by SIFMA Foundation state partner.",
+    "official_url": "https://www.stockmarketgame.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Spring 2027 session (following the usual January to April pattern)",
+        "date": "2027-01-25",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.stockmarketgame.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-01"
   }
 ]

@@ -296,5 +296,92 @@
       "on": "2026-09-05"
     },
     "valid_till": "2026-12-01"
+  },
+  {
+    "id": "congressional-art-competition",
+    "name": "Congressional Art Competition",
+    "organizer": "United States House of Representatives",
+    "organizer_url": "https://www.house.gov/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art"
+    ],
+    "description": "An annual nationwide art contest in which each member of the US House of Representatives runs a district-level competition for high school students. Each district's winning artwork is displayed for a year in the Cannon Tunnel connecting the Capitol to House office buildings.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "A year on display in the US Capitol and a trip to Washington, DC for the winner's district ceremony.",
+    "official_url": "https://www.house.gov/educators-and-students/congressional-art-competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "District submission deadline (varies by congressional office, following the usual spring pattern)",
+        "date": "2027-04-02",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.house.gov/educators-and-students/congressional-art-competition"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "vans-custom-culture",
+    "name": "Vans Custom Culture",
+    "organizer": "Vans",
+    "organizer_url": "https://www.vans.com/",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "design"
+    ],
+    "description": "A national high school art contest in which registered art classes customize blank canvas Vans shoes around a set of yearly themes. Public voting and internal judging narrow entries to a small group of finalists, and the winning school's art program receives a cash donation.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 50,000 donation to the winning school's art program.",
+    "official_url": "https://www.vans.com/custom-culture",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2026 winner announced",
+        "date": "2026-04-01",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://www.prnewswire.com/news-releases/vans-celebrates-grand-prize-winner-and-runner-up-finalists-in-high-school-custom-culture-competition-301552999.html"
+      },
+      {
+        "label": "2027 registration opens (following the usual January pattern)",
+        "date": "2027-01-15",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.vans.com/custom-culture"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-15"
   }
 ]

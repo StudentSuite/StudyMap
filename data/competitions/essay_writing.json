@@ -216,5 +216,140 @@
       "on": "2026-09-05"
     },
     "valid_till": "2026-10-01"
+  },
+  {
+    "id": "ayn-rand-institute-essay-contests",
+    "name": "Ayn Rand Institute Essay Contests",
+    "organizer": "Ayn Rand Institute",
+    "organizer_url": "https://aynrand.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "literature",
+      "philosophy"
+    ],
+    "description": "A set of three separate essay contests on Ayn Rand's novels Anthem, The Fountainhead and Atlas Shrugged, each with its own deadline and age band. Students analyze a set prompt about the assigned novel and submit online for a chance at cash prizes and scholarships.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Up to USD 25,000 for the top Atlas Shrugged essay, with smaller prizes across all three contests.",
+    "official_url": "https://aynrand.org/students/essay-contests",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Anthem contest deadline",
+        "date": "2027-05-31",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://aynrand.org/students/essay-contests"
+      },
+      {
+        "label": "The Fountainhead contest deadline",
+        "date": "2027-09-13",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://aynrand.org/students/essay-contests"
+      },
+      {
+        "label": "Atlas Shrugged contest deadline",
+        "date": "2027-09-20",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://aynrand.org/students/essay-contests"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "princeton-prize-in-race-relations",
+    "name": "Princeton Prize in Race Relations",
+    "organizer": "Princeton Prize in Race Relations, Princeton University",
+    "organizer_url": "https://pprize.princeton.edu/",
+    "category": "essay_writing",
+    "subjects": [
+      "civics",
+      "race relations"
+    ],
+    "description": "A national recognition program for high school students who have led or contributed to a project improving race relations in their school or community. Entrants submit a written application describing their project rather than a standalone essay, and regional winners are invited to a symposium at Princeton.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 2,500 for each of about 29 regional recipients, plus a paid trip to the Princeton symposium.",
+    "official_url": "https://pprize.princeton.edu/apply",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2027-01-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://pprize.princeton.edu/apply"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "signet-classics-student-scholarship-essay-contest",
+    "name": "Signet Classics Student Scholarship Essay Contest",
+    "organizer": "Penguin Random House",
+    "organizer_url": "https://www.penguinrandomhouse.com/",
+    "category": "essay_writing",
+    "subjects": [
+      "literature"
+    ],
+    "description": "An annual essay contest built around a different Signet Classics literary title each year, open to 11th and 12th grade students in the United States plus home schooled students aged 16 to 18. A teacher or parent submits the essay on the student's behalf.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 1,000 scholarship for each of five winning essays.",
+    "official_url": "https://www.penguinrandomhouse.com/signet-essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline (following the usual late-April pattern)",
+        "date": "2027-04-22",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.penguinrandomhouse.com/signet-essay-contest/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-15"
   }
 ]

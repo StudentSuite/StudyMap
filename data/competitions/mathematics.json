@@ -226,5 +226,202 @@
       "on": "2026-09-05"
     },
     "valid_till": "2027-04-01"
+  },
+  {
+    "id": "arml",
+    "name": "American Regions Mathematics League (ARML)",
+    "organizer": "American Regions Mathematics League",
+    "organizer_url": "https://arml3.com/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "A national team mathematics competition held simultaneously each spring at several US university sites. Fifteen-student teams representing a school, district or state compete across relay, team and individual rounds.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Team and individual rankings across all competing sites; top scorers recognized nationally.",
+    "official_url": "https://arml3.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "ARML 2026 (multiple sites)",
+        "date": "2026-05-29",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://arml3.com/arml-2026-registration-page/"
+      },
+      {
+        "label": "ARML 2027 (following the usual late-May pattern)",
+        "date": "2027-05-28",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://arml3.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "mathcounts",
+    "name": "MATHCOUNTS Competition Series",
+    "organizer": "MATHCOUNTS Foundation",
+    "organizer_url": "https://www.mathcounts.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "A national middle school math competition series that runs from school and chapter rounds through state competitions to a national final. Students compete individually and as four-member school teams through sprint, target and team rounds.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 14,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 45,
+      "currency": "USD"
+    },
+    "prize": "USD 4,000 college scholarship for the national champion, plus team and individual awards at every level.",
+    "official_url": "https://www.mathcounts.org/programs/mathcounts-competition-series",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School registration guarantee deadline",
+        "date": "2026-12-15",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathcounts.org/programs/critical-dates"
+      },
+      {
+        "label": "Chapter competitions",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathcounts.org/programs/critical-dates"
+      },
+      {
+        "label": "2027 RTX MATHCOUNTS National Competition (Orlando, FL)",
+        "date": "2027-05-09",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.mathcounts.org/programs/national-competition-schedule-glance"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "purple-comet-math-meet",
+    "name": "Purple Comet! Math Meet",
+    "organizer": "Purple Comet! Math Meet",
+    "organizer_url": "https://purplecomet.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "A free online team math competition open to middle and high school students worldwide. Teams have a multi-day window each spring to work through a set of relay style problems together and submit numeric answers online.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Team and individual rankings published online; no cash prize.",
+    "official_url": "https://purplecomet.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest window opens",
+        "date": "2027-04-06",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://purplecomet.org/"
+      },
+      {
+        "label": "Contest window closes",
+        "date": "2027-04-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://purplecomet.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "tournament-of-the-towns",
+    "name": "International Mathematics Tournament of the Towns",
+    "organizer": "Tournament of the Towns Central Organizing Committee",
+    "organizer_url": "https://www.turgor.ru/en/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "A proof based mathematics competition for school students, run in a Fall round and a Spring round each year across dozens of participating cities worldwide. Students sit a Junior or Senior paper at either a Basic or Advanced difficulty level, free of charge.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Diplomas of first, second and third degree by score; no cash prize.",
+    "official_url": "https://www.turgor.ru/en/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Fall round (following the usual October pattern, local city dates vary)",
+        "date": "2026-10-25",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://www.turgor.ru/en/"
+      },
+      {
+        "label": "Spring round (following the usual February to March pattern, local city dates vary)",
+        "date": "2027-02-21",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://www.turgor.ru/en/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-11-15"
   }
 ]
