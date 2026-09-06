@@ -37,7 +37,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/conrad-challenge.png"
   },
   {
     "id": "deca-icdc",
@@ -101,7 +102,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/deca-icdc.png"
   },
   {
     "id": "diamond-challenge",
@@ -140,7 +142,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/diamond-challenge.png"
   },
   {
     "id": "nfte-world-series-of-innovation",
@@ -188,7 +191,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/nfte-world-series-of-innovation.png"
   },
   {
     "id": "fbla-national-leadership-conference",
@@ -229,7 +233,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-07-01"
+    "valid_till": "2027-07-01",
+    "image": "/competitions/fbla-national-leadership-conference.png"
   },
   {
     "id": "bpa-national-leadership-conference",
@@ -270,7 +275,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/bpa-national-leadership-conference.png"
   },
   {
     "id": "ja-company-of-the-year",
@@ -318,6 +324,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/ja-company-of-the-year.png"
   }
 ]

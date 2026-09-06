@@ -52,7 +52,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-15"
+    "valid_till": "2027-01-15",
+    "image": "/competitions/ijso.png"
   },
   {
     "id": "international-biology-olympiad",
@@ -145,7 +146,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-05"
+    "valid_till": "2027-03-05",
+    "image": "/competitions/international-biology-olympiad.png"
   },
   {
     "id": "international-brain-bee",
@@ -207,7 +209,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/international-brain-bee.png"
   },
   {
     "id": "international-chemistry-olympiad",
@@ -288,7 +291,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-05"
+    "valid_till": "2027-03-05",
+    "image": "/competitions/international-chemistry-olympiad.png"
   },
   {
     "id": "international-physics-olympiad",
@@ -381,7 +385,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-05"
+    "valid_till": "2027-03-05",
+    "image": "/competitions/international-physics-olympiad.png"
   },
   {
     "id": "ioaa",
@@ -444,7 +449,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/ioaa.png"
   },
   {
     "id": "regeneron-isef",
@@ -515,7 +521,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/regeneron-isef.png"
   },
   {
     "id": "science-olympiad",
@@ -563,7 +570,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/science-olympiad.png"
   },
   {
     "id": "world-robot-olympiad",
@@ -626,7 +634,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/world-robot-olympiad.png"
   },
   {
     "id": "international-earth-science-olympiad",
@@ -675,7 +684,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/international-earth-science-olympiad.png"
   },
   {
     "id": "international-olympiad-in-ai",
@@ -716,7 +726,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-01-15"
+    "valid_till": "2027-01-15",
+    "image": "/competitions/international-olympiad-in-ai.png"
   },
   {
     "id": "european-physics-olympiad",
@@ -763,7 +774,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/european-physics-olympiad.png"
   },
   {
     "id": "international-biogeneius-challenge",
@@ -804,6 +816,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/international-biogeneius-challenge.png"
   }
 ]

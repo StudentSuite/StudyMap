@@ -45,7 +45,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/bow-seat-ocean-awareness-contest.png"
   },
   {
     "id": "doodle-for-google",
@@ -106,7 +107,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/doodle-for-google.png"
   },
   {
     "id": "scholastic-art-and-writing-awards",
@@ -176,7 +178,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/scholastic-art-and-writing-awards.png"
   },
   {
     "id": "toyota-dream-car-art-contest",
@@ -254,7 +257,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/toyota-dream-car-art-contest.png"
   },
   {
     "id": "youngarts-national-arts-competition",
@@ -295,7 +299,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/youngarts-national-arts-competition.png"
   },
   {
     "id": "congressional-art-competition",
@@ -334,6 +339,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/congressional-art-competition.png"
   }
 ]

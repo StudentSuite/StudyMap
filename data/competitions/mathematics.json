@@ -52,7 +52,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/hmmt.png"
   },
   {
     "id": "international-mathematical-olympiad",
@@ -146,7 +147,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-05"
+    "valid_till": "2027-03-05",
+    "image": "/competitions/international-mathematical-olympiad.png"
   },
   {
     "id": "math-prize-for-girls",
@@ -185,7 +187,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2026-11-01",
+    "image": "/competitions/math-prize-for-girls.png"
   },
   {
     "id": "usamo",
@@ -225,7 +228,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/usamo.png"
   },
   {
     "id": "arml",
@@ -272,7 +276,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2026-12-01",
+    "image": "/competitions/arml.png"
   },
   {
     "id": "mathcounts",
@@ -327,7 +332,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/mathcounts.png"
   },
   {
     "id": "purple-comet-math-meet",
@@ -374,7 +380,8 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/purple-comet-math-meet.png"
   },
   {
     "id": "tournament-of-the-towns",
@@ -422,6 +429,7 @@
       "by": "yashkewlani",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-11-15"
+    "valid_till": "2026-11-15",
+    "image": "/competitions/tournament-of-the-towns.png"
   }
 ]

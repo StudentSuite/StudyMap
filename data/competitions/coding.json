@@ -58,7 +58,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/cyberpatriot.png"
   },
   {
     "id": "international-olympiad-in-informatics",
@@ -164,7 +165,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-03-05"
+    "valid_till": "2027-03-05",
+    "image": "/competitions/international-olympiad-in-informatics.png"
   },
   {
     "id": "meta-hacker-cup",
@@ -212,7 +214,8 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-01-01",
+    "image": "/competitions/meta-hacker-cup.png"
   },
   {
     "id": "picoctf",
@@ -252,6 +255,7 @@
       "by": "yashkewlani",
       "on": "2026-09-05"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/picoctf.png"
   }
 ]

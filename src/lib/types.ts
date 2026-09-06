@@ -200,6 +200,8 @@ export interface Competition {
   fee: CompetitionFee;
   prize: string;
   official_url: string;
+  /** Optional localized logo or banner for the competition card, e.g. "/competitions/regeneron-isef.png". */
+  image?: string;
   cycle_year: number;
   dates: CompetitionDateEntry[];
   /** Optional. Only present when a real national qualifying pathway exists. */
