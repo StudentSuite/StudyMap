@@ -10,6 +10,7 @@
  *   - Unique id within each file and across all files
  *   - type is one of the schema's enum values
  *   - type matches the filename it lives in
+ *   - city is a lowercase, underscore-separated slug
  *   - id matches the <city-prefix>-<type>-<number> convention, or is a bare
  *     numeric id (the College Board SAT centre code convention)
  *   - lat/lng are numbers within the schema's min/max bounds
@@ -43,6 +44,7 @@ const BOUNDS = {
   maxLng: schema.properties.lng.maximum,
 };
 const GMAPS_RE = new RegExp(schema.properties.gmaps_link.pattern);
+const CITY_SLUG_RE = new RegExp(schema.properties.city.pattern);
 
 // <city-prefix>-<type>-<number>, allowing multi-segment city/type prefixes
 // (e.g. "delhi-ncr-sat-01", "mum-airport-terminal-01"), or a bare numeric id
@@ -152,6 +154,17 @@ for (const file of files) {
       err(
         loc,
         `id "${r.id}" does not match the <city-prefix>-<type>-<number> convention (or a bare numeric code)`,
+      );
+    }
+
+    // city must use the canonical lowercase, underscore-separated slug form
+    if (
+      r.city !== undefined &&
+      (typeof r.city !== "string" || !CITY_SLUG_RE.test(r.city))
+    ) {
+      err(
+        loc,
+        `city must be a lowercase, underscore-separated slug, got ${JSON.stringify(r.city)}`,
       );
     }
 

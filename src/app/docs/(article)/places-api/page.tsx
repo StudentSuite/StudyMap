@@ -46,7 +46,7 @@ const FILTERS: { name: string; type: string; notes: string }[] = [
     name: "city",
     type: "string",
     notes:
-      "Case-insensitive; spaces and hyphens are normalized to the dataset's underscore slugs (e.g. `New Delhi` matches `new delhi`). No matching city returns an empty `data` array.",
+      "Case-insensitive; spaces and hyphens are normalized to the dataset's underscore slugs (e.g. `New Delhi` matches `new_delhi`). No matching city returns an empty `data` array.",
   },
   {
     name: "category",
