@@ -70,5 +70,77 @@
     "gmaps_link": "https://maps.google.com/?q=23.039716,72.529538",
     "added_by": "yashkewlani",
     "exam": "IELTS"
-  }
+  },
+{
+  "id": "delhi-ncr-foreign_lang_exam_centre-01",
+  "name": "British Council IELTS Test Centre, New Delhi",
+  "type": "foreign_lang_exam_centre",
+  "city": "new_delhi",
+  "lat": 28.6269199,
+  "lng": 77.2223994,
+  "address": "17 Kasturba Gandhi Marg, Connaught Place, New Delhi 110001",
+  "gmaps_link": "https://maps.google.com/?q=28.6269199,77.2223994",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "sin-foreign_lang_exam_centre-01",
+  "name": "British Council Singapore, Napier Road Exam Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "singapore",
+  "lat": 1.3050887,
+  "lng": 103.8214566,
+  "address": "30 Napier Road, Singapore 258509",
+  "gmaps_link": "https://maps.google.com/?q=1.3050887,103.8214566",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "dxb-foreign_lang_exam_centre-01",
+  "name": "British Council IELTS Test Centre, Dubai (World Trade Centre)",
+  "type": "foreign_lang_exam_centre",
+  "city": "dubai",
+  "lat": 25.1856357,
+  "lng": 55.2758106,
+  "address": "Office 106, Opal Tower, Burj Khalifa Street, Business Bay, Dubai, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.1856357,55.2758106",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "ldn-foreign_lang_exam_centre-01",
+  "name": "British Council / International House London IELTS Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "london",
+  "lat": 51.5114248,
+  "lng": -0.1331587,
+  "address": "Sovereign House, 212 Shaftesbury Avenue, London WC2H 8DP",
+  "gmaps_link": "https://maps.google.com/?q=51.5114248,-0.1331587",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "nyc-foreign_lang_exam_centre-01",
+  "name": "Prometric Testing Center, Broadway (TOEFL iBT)",
+  "type": "foreign_lang_exam_centre",
+  "city": "new_york",
+  "lat": 40.747666,
+  "lng": -73.9878545,
+  "address": "1250 Broadway, New York, NY 10001",
+  "gmaps_link": "https://maps.google.com/?q=40.7476660,-73.9878545",
+  "added_by": "yashkewlani",
+  "exam": "TOEFL"
+},
+{
+  "id": "cai-foreign_lang_exam_centre-01",
+  "name": "British Council Cairo, Agouza IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "cairo",
+  "lat": 30.0514974,
+  "lng": 31.2139664,
+  "address": "192 El Nil Street, Agouza, Cairo, Egypt",
+  "gmaps_link": "https://maps.google.com/?q=30.0514974,31.2139664",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+}
 ]

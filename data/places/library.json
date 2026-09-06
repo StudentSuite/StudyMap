@@ -371,5 +371,170 @@
   "address": "Pir Mohammad Shah Road, Kalupur, Ahmedabad 380001",
   "gmaps_link": "https://maps.google.com/?q=23.0263,72.5865",
   "added_by": "yashkewlani"
+},
+{
+  "id": "delhi-ncr-library-01",
+  "name": "Delhi Public Library, Old Delhi",
+  "type": "library",
+  "city": "new_delhi",
+  "lat": 28.65972,
+  "lng": 77.2297964,
+  "address": "Shyama Prasad Mukherji Marg, Chandni Chowk, Old Delhi 110006",
+  "gmaps_link": "https://maps.google.com/?q=28.6597200,77.2297964",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jaipur-library-01",
+  "name": "Dr. Radha Krishnan State Central Library",
+  "type": "library",
+  "city": "jaipur",
+  "lat": 26.8797471,
+  "lng": 75.8123342,
+  "address": "Saumya Marg, Gandhi Nagar, opposite Rajasthan College, Jaipur 302004",
+  "gmaps_link": "https://maps.google.com/?q=26.8797471,75.8123342",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lucknow-library-01",
+  "name": "Amir-ud-Daula Public Library",
+  "type": "library",
+  "city": "lucknow",
+  "lat": 26.8498749,
+  "lng": 80.9314544,
+  "address": "Qaiserbagh, Lucknow 226001",
+  "gmaps_link": "https://maps.google.com/?q=26.8498749,80.9314544",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "chandigarh-library-01",
+  "name": "Central State Library, Sector 17",
+  "type": "library",
+  "city": "chandigarh",
+  "lat": 30.7397087,
+  "lng": 76.7807236,
+  "address": "Sector 17-C, near Bridge Market, Chandigarh 160017",
+  "gmaps_link": "https://maps.google.com/?q=30.7397087,76.7807236",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sin-library-01",
+  "name": "National Library, Singapore",
+  "type": "library",
+  "city": "singapore",
+  "lat": 1.2976671,
+  "lng": 103.8542924,
+  "address": "100 Victoria Street, Singapore 188064",
+  "gmaps_link": "https://maps.google.com/?q=1.2976671,103.8542924",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "dxb-library-01",
+  "name": "Mohammed Bin Rashid Library",
+  "type": "library",
+  "city": "dubai",
+  "lat": 25.2208974,
+  "lng": 55.3438434,
+  "address": "555 Al Jaddaf Road, Al Jaddaf, Dubai, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.2208974,55.3438434",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ldn-library-01",
+  "name": "The British Library",
+  "type": "library",
+  "city": "london",
+  "lat": 51.5299119,
+  "lng": -0.1276918,
+  "address": "96 Euston Road, London NW1 2DB",
+  "gmaps_link": "https://maps.google.com/?q=51.5299119,-0.1276918",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ldn-library-02",
+  "name": "West End Arts Library (formerly Westminster Reference Library)",
+  "type": "library",
+  "city": "london",
+  "lat": 51.5096164,
+  "lng": -0.1298017,
+  "address": "35 St Martin's Street, London WC2H 7HP",
+  "gmaps_link": "https://maps.google.com/?q=51.5096164,-0.1298017",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nyc-library-01",
+  "name": "New York Public Library, Stephen A. Schwarzman Building",
+  "type": "library",
+  "city": "new_york",
+  "lat": 40.7533445,
+  "lng": -73.9821524,
+  "address": "476 Fifth Avenue, New York, NY 10018",
+  "gmaps_link": "https://maps.google.com/?q=40.7533445,-73.9821524",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nyc-library-02",
+  "name": "Brooklyn Public Library, Central Branch",
+  "type": "library",
+  "city": "new_york",
+  "lat": 40.6721312,
+  "lng": -73.9681891,
+  "address": "10 Grand Army Plaza, Brooklyn, NY 11238",
+  "gmaps_link": "https://maps.google.com/?q=40.6721312,-73.9681891",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "tor-library-01",
+  "name": "Toronto Reference Library",
+  "type": "library",
+  "city": "toronto",
+  "lat": 43.6718771,
+  "lng": -79.3866663,
+  "address": "789 Yonge Street, Toronto, ON M4W 2G8",
+  "gmaps_link": "https://maps.google.com/?q=43.6718771,-79.3866663",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "tor-library-02",
+  "name": "Robarts Library, University of Toronto",
+  "type": "library",
+  "city": "toronto",
+  "lat": 43.6644349,
+  "lng": -79.3996531,
+  "address": "130 St George Street, Toronto, ON M5S 1A5",
+  "gmaps_link": "https://maps.google.com/?q=43.6644349,-79.3996531",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cai-library-01",
+  "name": "Dar al-Kutub (Egyptian National Library and Archives)",
+  "type": "library",
+  "city": "cairo",
+  "lat": 30.0443381,
+  "lng": 31.252426,
+  "address": "Shar'e El Qal'a, Bab Al-Khalq, Cairo, Egypt",
+  "gmaps_link": "https://maps.google.com/?q=30.0443381,31.2524260",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nbo-library-01",
+  "name": "Kenya National Library Service Headquarters (Maktaba Kuu)",
+  "type": "library",
+  "city": "nairobi",
+  "lat": -1.2946435,
+  "lng": 36.811649,
+  "address": "Ngong Road, Upper Hill, Nairobi, Kenya",
+  "gmaps_link": "https://maps.google.com/?q=-1.2946435,36.8116490",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cpt-library-01",
+  "name": "National Library of South Africa, Cape Town Campus",
+  "type": "library",
+  "city": "cape_town",
+  "lat": -33.9252902,
+  "lng": 18.4185215,
+  "address": "5 Queen Victoria Street, Cape Town 8001, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-33.9252902,18.4185215",
+  "added_by": "yashkewlani"
 }
 ]

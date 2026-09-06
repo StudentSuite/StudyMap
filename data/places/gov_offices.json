@@ -295,5 +295,225 @@
     "address": "Aarya Arcade, Netaji Subhash Chandra Road, Navrangpura, Ahmedabad 380009",
     "gmaps_link": "https://maps.google.com/?q=23.0297208,72.5623337",
     "added_by": "yashkewlani"
-  }
+  },
+{
+  "id": "delhi-ncr-gov_offices-01",
+  "name": "Passport Seva Kendra, R.K. Puram",
+  "type": "gov_offices",
+  "city": "new_delhi",
+  "lat": 28.5702618,
+  "lng": 77.1878709,
+  "address": "Bhikaji Cama Place area, R.K. Puram, New Delhi 110066",
+  "gmaps_link": "https://maps.google.com/?q=28.5702618,77.1878709",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "delhi-ncr-gov_offices-02",
+  "name": "Transport Department Zonal Office, Sarai Kale Khan",
+  "type": "gov_offices",
+  "city": "new_delhi",
+  "lat": 28.5891891,
+  "lng": 77.2580654,
+  "address": "Sarai Kale Khan, New Delhi 110013",
+  "gmaps_link": "https://maps.google.com/?q=28.5891891,77.2580654",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jaipur-gov_offices-01",
+  "name": "Passport Seva Kendra, Jaipur",
+  "type": "gov_offices",
+  "city": "jaipur",
+  "lat": 26.8934885,
+  "lng": 75.8115038,
+  "address": "Bhawani Singh Road, Jaipur 302001",
+  "gmaps_link": "https://maps.google.com/?q=26.8934885,75.8115038",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jaipur-gov_offices-02",
+  "name": "Jaipur Regional Transport Office",
+  "type": "gov_offices",
+  "city": "jaipur",
+  "lat": 26.8464244,
+  "lng": 75.8562288,
+  "address": "RTO Road, Sanganer, Jaipur 302017",
+  "gmaps_link": "https://maps.google.com/?q=26.8464244,75.8562288",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lucknow-gov_offices-01",
+  "name": "Passport Seva Kendra, Gomti Nagar, Lucknow",
+  "type": "gov_offices",
+  "city": "lucknow",
+  "lat": 26.8611743,
+  "lng": 81.0039196,
+  "address": "Passport Bhawan, Vipin Khand, Gomti Nagar, Lucknow 226010",
+  "gmaps_link": "https://maps.google.com/?q=26.8611743,81.0039196",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lucknow-gov_offices-02",
+  "name": "RTO Lucknow, Transport Nagar",
+  "type": "gov_offices",
+  "city": "lucknow",
+  "lat": 26.7774158,
+  "lng": 80.9026554,
+  "address": "Kanpur Road, Transport Nagar, Lucknow 226012",
+  "gmaps_link": "https://maps.google.com/?q=26.7774158,80.9026554",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "chandigarh-gov_offices-01",
+  "name": "Passport Seva Kendra, Chandigarh",
+  "type": "gov_offices",
+  "city": "chandigarh",
+  "lat": 30.7237448,
+  "lng": 76.7690185,
+  "address": "SCO 28-32, Sector 34A, Chandigarh 160022",
+  "gmaps_link": "https://maps.google.com/?q=30.7237448,76.7690185",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "chandigarh-gov_offices-02",
+  "name": "RTO Chandigarh, Sector 17",
+  "type": "gov_offices",
+  "city": "chandigarh",
+  "lat": 30.7354368,
+  "lng": 76.7792464,
+  "address": "SCO 89-91, Sector 17D, near ISBT, Chandigarh 160017",
+  "gmaps_link": "https://maps.google.com/?q=30.7354368,76.7792464",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sin-gov_offices-01",
+  "name": "High Commission of India, Singapore",
+  "type": "gov_offices",
+  "city": "singapore",
+  "lat": 1.2994702,
+  "lng": 103.8342337,
+  "address": "31 Grange Road, Singapore 239702",
+  "gmaps_link": "https://maps.google.com/?q=1.2994702,103.8342337",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sin-gov_offices-02",
+  "name": "Immigration and Checkpoints Authority (ICA) Building",
+  "type": "gov_offices",
+  "city": "singapore",
+  "lat": 1.3068088,
+  "lng": 103.8627678,
+  "address": "10 Kallang Road, Singapore 208718",
+  "gmaps_link": "https://maps.google.com/?q=1.3068088,103.8627678",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "dxb-gov_offices-01",
+  "name": "Consulate General of India, Dubai",
+  "type": "gov_offices",
+  "city": "dubai",
+  "lat": 25.235456,
+  "lng": 55.3003671,
+  "address": "Al Hamriya Diplomatic Enclave, Zabeel area (near Dubai Frame), Bur Dubai, Dubai, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.2354560,55.3003671",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "dxb-gov_offices-02",
+  "name": "Amer Centre, Al Karama",
+  "type": "gov_offices",
+  "city": "dubai",
+  "lat": 25.2445099,
+  "lng": 55.2981834,
+  "address": "Al Yamama Building, 15A Street, Al Karama, Dubai, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.2445099,55.2981834",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ldn-gov_offices-01",
+  "name": "High Commission of India, London (India House)",
+  "type": "gov_offices",
+  "city": "london",
+  "lat": 51.5125641,
+  "lng": -0.1181877,
+  "address": "India House, Aldwych, London WC2B 4NA",
+  "gmaps_link": "https://maps.google.com/?q=51.5125641,-0.1181877",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nyc-gov_offices-01",
+  "name": "Consulate General of India, New York",
+  "type": "gov_offices",
+  "city": "new_york",
+  "lat": 40.7672963,
+  "lng": -73.970017,
+  "address": "3 East 64th Street, New York, NY 10065",
+  "gmaps_link": "https://maps.google.com/?q=40.7672963,-73.9700170",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nyc-gov_offices-02",
+  "name": "New York Passport Agency",
+  "type": "gov_offices",
+  "city": "new_york",
+  "lat": 40.7283847,
+  "lng": -74.0069687,
+  "address": "376 Hudson Street, New York, NY 10014",
+  "gmaps_link": "https://maps.google.com/?q=40.7283847,-74.0069687",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "tor-gov_offices-01",
+  "name": "Consulate General of India, Toronto",
+  "type": "gov_offices",
+  "city": "toronto",
+  "lat": 43.6718684,
+  "lng": -79.3778172,
+  "address": "365 Bloor Street East, Suite 700, Toronto, ON M4W 3L4",
+  "gmaps_link": "https://maps.google.com/?q=43.6718684,-79.3778172",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "tor-gov_offices-02",
+  "name": "ServiceOntario, Downtown Service Counter",
+  "type": "gov_offices",
+  "city": "toronto",
+  "lat": 43.65018,
+  "lng": -79.37678,
+  "address": "33 Victoria Street, Unit 150, Toronto, ON M5C 2A1",
+  "gmaps_link": "https://maps.google.com/?q=43.6501800,-79.3767800",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cai-gov_offices-01",
+  "name": "Embassy of India, Cairo",
+  "type": "gov_offices",
+  "city": "cairo",
+  "lat": 30.0610126,
+  "lng": 31.2242229,
+  "address": "5 Aziz Abaza Street, Zamalek, Cairo, Egypt",
+  "gmaps_link": "https://maps.google.com/?q=30.0610126,31.2242229",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nbo-gov_offices-01",
+  "name": "High Commission of India, Nairobi",
+  "type": "gov_offices",
+  "city": "nairobi",
+  "lat": -1.2884863,
+  "lng": 36.8253646,
+  "address": "Jeevan Bharati Building, Harambee Avenue, Nairobi, Kenya",
+  "gmaps_link": "https://maps.google.com/?q=-1.2884863,36.8253646",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cpt-gov_offices-01",
+  "name": "Consulate General of India, Cape Town",
+  "type": "gov_offices",
+  "city": "cape_town",
+  "lat": -33.9184415,
+  "lng": 18.4206563,
+  "address": "The Terraces, 8th Floor, 34 Bree Street, Cape Town 8001, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-33.9184415,18.4206563",
+  "added_by": "yashkewlani"
+}
 ]

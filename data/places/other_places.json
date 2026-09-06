@@ -20,5 +20,104 @@
     "address": "Sardar Patel Road, Guindy, Chennai 600025",
     "gmaps_link": "https://maps.google.com/?q=13.0136638,80.236502",
     "added_by": "yashkewlani"
-  }
+  },
+{
+  "id": "delhi-ncr-other_places-01",
+  "name": "The American Center New Delhi",
+  "type": "other_places",
+  "city": "new_delhi",
+  "lat": 28.6290317,
+  "lng": 77.2225167,
+  "address": "24 Kasturba Gandhi Marg, Connaught Place, New Delhi 110001",
+  "gmaps_link": "https://maps.google.com/?q=28.6290317,77.2225167",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jaipur-other_places-01",
+  "name": "Jawahar Kala Kendra",
+  "type": "other_places",
+  "city": "jaipur",
+  "lat": 26.8763094,
+  "lng": 75.8091334,
+  "address": "JLN Marg, Bapu Nagar, Jaipur 302004",
+  "gmaps_link": "https://maps.google.com/?q=26.8763094,75.8091334",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sin-other_places-01",
+  "name": "The Hive Carpenter (coworking space)",
+  "type": "other_places",
+  "city": "singapore",
+  "lat": 1.2880461,
+  "lng": 103.8477342,
+  "address": "36 Carpenter Street, Singapore 059915",
+  "gmaps_link": "https://maps.google.com/?q=1.2880461,103.8477342",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "dxb-other_places-01",
+  "name": "Dubai Knowledge Park",
+  "type": "other_places",
+  "city": "dubai",
+  "lat": 25.1031335,
+  "lng": 55.1636217,
+  "address": "Dubai Knowledge Park, Al Sufouh, Dubai, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.1031335,55.1636217",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ldn-other_places-01",
+  "name": "UKVCAS Visa and Citizenship Application Service Point, Wandsworth",
+  "type": "other_places",
+  "city": "london",
+  "lat": 51.458316,
+  "lng": -0.1926689,
+  "address": "18 Ryeland Boulevard, Ram Quarter, Wandsworth, London SW18 1UN",
+  "gmaps_link": "https://maps.google.com/?q=51.4583160,-0.1926689",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "tor-other_places-01",
+  "name": "MaRS Discovery District",
+  "type": "other_places",
+  "city": "toronto",
+  "lat": 43.6598584,
+  "lng": -79.3881289,
+  "address": "101 College Street, Toronto, ON M5G 1L7",
+  "gmaps_link": "https://maps.google.com/?q=43.6598584,-79.3881289",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cai-other_places-01",
+  "name": "El Sawy Culture Wheel",
+  "type": "other_places",
+  "city": "cairo",
+  "lat": 30.0623,
+  "lng": 31.2164,
+  "address": "End of 26th of July Street, under 15th of May Bridge, Zamalek, Cairo, Egypt",
+  "gmaps_link": "https://maps.google.com/?q=30.06230,31.21640",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "nbo-other_places-01",
+  "name": "iHub Nairobi",
+  "type": "other_places",
+  "city": "nairobi",
+  "lat": -1.2891257,
+  "lng": 36.7834024,
+  "address": "6th Floor, Senteu Plaza, Lenana Road, Kilimani, Nairobi, Kenya",
+  "gmaps_link": "https://maps.google.com/?q=-1.2891257,36.7834024",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "cpt-other_places-01",
+  "name": "Bandwidth Barn, Woodstock",
+  "type": "other_places",
+  "city": "cape_town",
+  "lat": -33.9268834,
+  "lng": 18.445957,
+  "address": "3rd Floor, Block B, The Woodstock Exchange, 66 Albert Road, Woodstock, Cape Town 7915, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-33.9268834,18.4459570",
+  "added_by": "yashkewlani"
+}
 ]
