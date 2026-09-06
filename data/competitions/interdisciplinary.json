@@ -351,5 +351,71 @@
       "on": "2026-09-06"
     },
     "valid_till": "2027-01-01"
+  },
+  {
+    "id": "nasa-space-apps-challenge",
+    "name": "NASA Space Apps Challenge",
+    "organizer": "NASA",
+    "organizer_url": "https://www.nasa.gov/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "space science",
+      "coding",
+      "data science",
+      "design"
+    ],
+    "description": "A global hackathon organized by NASA in which individuals or teams spend a weekend building a project that addresses a real space or Earth science problem using NASA's open data and APIs. Participants join one of hundreds of in-person local events worldwide or a virtual Universal Event, and standout projects are recognized across ten global award categories.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 99,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Recognition across 10 Global Award categories (e.g. Best Use of Science, Best Use of Data); no cash prize.",
+    "official_url": "https://www.spaceappschallenge.org/2026/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-08-26",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.spaceappschallenge.org/2026/"
+      },
+      {
+        "label": "Hackathon weekend",
+        "date": "2026-11-14",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.spaceappschallenge.org/2026/"
+      },
+      {
+        "label": "Project submission deadline (11:59pm local time at each event)",
+        "date": "2026-11-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.spaceappschallenge.org/2026/"
+      },
+      {
+        "label": "Global winners announced (estimated from the 2025 cycle's ~10 week post-event pattern)",
+        "date": "2027-01-22",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.spaceappschallenge.org/2025/awards/global-finalists/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-01"
   }
 ]
