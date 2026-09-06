@@ -234,10 +234,10 @@ export function CompetitionsBrowser({
               onClick={() => toggleCategory(category)}
               aria-pressed={pressed}
               className={cn(
-                "shrink-0 rounded-full border px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-all",
+                "shrink-0 rounded-full px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-colors",
                 pressed
-                  ? "border-primary bg-primary/15 text-primary shadow-sm"
-                  : "border-border text-muted-foreground hover:border-foreground/20 hover:bg-muted/50 hover:text-foreground",
+                  ? "bg-primary/15 text-primary ring-1 ring-primary"
+                  : "border border-border text-muted-foreground hover:border-foreground/20 hover:bg-muted/50 hover:text-foreground",
               )}
             >
               {COMPETITION_CATEGORY_LABELS[category]}

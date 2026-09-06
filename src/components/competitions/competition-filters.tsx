@@ -41,10 +41,10 @@ function Pill({
       onClick={onClick}
       aria-pressed={pressed}
       className={cn(
-        "rounded-full border px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors",
+        "rounded-full px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors",
         pressed
-          ? "border-primary bg-primary/10 text-primary"
-          : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
+          ? "bg-primary/10 text-primary ring-1 ring-primary"
+          : "border border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
       )}
     >
       {children}
@@ -86,7 +86,7 @@ export function CompetitionFiltersPanel({
   }
 
   return (
-    <CollapsiblePrimitive.Root className="rounded-xl border border-border bg-card/50">
+    <CollapsiblePrimitive.Root className="rounded-xl bg-muted/30">
       <CollapsiblePrimitive.Trigger asChild>
         <button
           type="button"

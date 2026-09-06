@@ -44,7 +44,7 @@ export function CompetitionCard({
   return (
     <article
       className={cn(
-        "group relative flex flex-col rounded-xl border border-border bg-card transition-all duration-200 hover:border-primary/30 hover:shadow-[0_4px_20px_-6px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_4px_20px_-6px_rgba(245,158,11,0.08)]",
+        "group relative flex flex-col rounded-xl border border-border bg-card transition-colors duration-200 hover:border-primary/40",
         isGrid ? "h-full p-4" : "p-4 sm:p-5",
       )}
     >
@@ -60,14 +60,14 @@ export function CompetitionCard({
         </div>
         <Badge
           variant="secondary"
-          className="shrink-0 border border-border bg-secondary text-secondary-foreground"
+          className="shrink-0 bg-secondary text-secondary-foreground"
         >
           {COMPETITION_CATEGORY_LABELS[competition.category]}
         </Badge>
       </div>
 
       {/* Deadline countdown: prominent placement */}
-      <div className="mt-3 rounded-lg border border-border/60 bg-muted/40 px-3 py-2.5">
+      <div className="mt-3 rounded-lg bg-muted/40 px-3 py-2.5">
         <DeadlineCountdown
           competition={competition}
           now={now}
@@ -87,36 +87,36 @@ export function CompetitionCard({
 
       {/* Meta pills: structured, high-contrast */}
       <div className="mt-3 flex flex-wrap gap-2">
-        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+        <span className="inline-flex items-center gap-1 rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
           <Clock className="size-3" aria-hidden />
           {COMPETITION_FORMAT_LABELS[competition.format]}
         </span>
-        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+        <span className="inline-flex items-center gap-1 rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
           <Calendar className="size-3" aria-hidden />
           Age {competition.age_min}-{competition.age_max}
         </span>
-        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+        <span className="inline-flex items-center gap-1 rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
           <Users className="size-3" aria-hidden />
           {COMPETITION_PARTICIPATION_LABELS[competition.participation]}
         </span>
-        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+        <span className="inline-flex items-center gap-1 rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
           <MapPin className="size-3" aria-hidden />
           {humanizeRegion(competition.region)}
         </span>
         {isFree && (
-          <span className="inline-flex items-center rounded-md border border-success-border bg-success-bg px-2 py-1 text-xs font-medium text-success">
+          <span className="inline-flex items-center rounded-md bg-success-bg px-2 py-1 text-xs font-medium text-success">
             Free
           </span>
         )}
         {!isFree && (
-          <span className="inline-flex items-center rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+          <span className="inline-flex items-center rounded-md bg-muted/60 px-2 py-1 text-xs text-foreground/70">
             {competition.fee.currency} {competition.fee.amount}
           </span>
         )}
       </div>
 
       {/* Footer: save (+ official site, grid only) + details */}
-      <div className={cn("mt-4 flex items-center justify-between border-t border-border/60 pt-3", isGrid && "mt-auto")}>
+      <div className={cn("mt-4 flex items-center justify-between", isGrid && "mt-auto")}>
         <div className="flex min-w-0 items-center gap-3">
           <SaveButton
             competitionId={competition.id}

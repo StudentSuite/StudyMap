@@ -82,7 +82,7 @@ export default function HomePage() {
             <Link
               key={section.href}
               href={section.href}
-              className="group flex flex-col rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:shadow-md"
+              className="group flex flex-col rounded-xl bg-muted/30 p-6 transition-colors hover:bg-muted/50"
             >
               <p className="kicker">{section.label}</p>
               <h3 className="mt-2 font-heading text-lg font-semibold tracking-tight text-foreground">
