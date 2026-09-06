@@ -28,9 +28,9 @@ describe("DocsIndex", () => {
     fireEvent.click(gridButton);
 
     expect(gridButton.getAttribute("aria-pressed")).toBe("true");
-    expect(screen.getByRole("button", { name: "List" }).getAttribute("aria-pressed")).toBe(
-      "false",
-    );
+    expect(
+      screen.getByRole("button", { name: "List" }).getAttribute("aria-pressed"),
+    ).toBe("false");
     // Grid view renders the restored icon-card layout's own copy.
     expect(screen.getAllByText("Read guide").length).toBeGreaterThan(0);
   });

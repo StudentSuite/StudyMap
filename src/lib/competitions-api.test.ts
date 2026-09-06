@@ -151,7 +151,7 @@ describe("parseCompetitionsQuery validation", () => {
     if (!parsed.ok) expect(parsed.error).toContain("ZZ");
   });
 
-  it('accepts fee=free and rejects any other fee value', () => {
+  it("accepts fee=free and rejects any other fee value", () => {
     const parsed = parseCompetitionsQuery(params([["fee", "free"]]));
     expect(parsed.ok && parsed.query.freeOnly).toBe(true);
     expect(parseCompetitionsQuery(params([["fee", "cheap"]])).ok).toBe(false);
@@ -168,9 +168,9 @@ describe("parseCompetitionsQuery validation", () => {
   });
 
   it("rejects a malformed deadline_before", () => {
-    expect(
-      parseCompetitionsQuery(params([["deadline_before", "not-a-date"]])).ok,
-    ).toBe(false);
+    expect(parseCompetitionsQuery(params([["deadline_before", "not-a-date"]])).ok).toBe(
+      false,
+    );
   });
 
   it("accepts a well-formed deadline_before", () => {

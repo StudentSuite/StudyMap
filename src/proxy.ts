@@ -15,8 +15,7 @@ export async function proxy(request: NextRequest) {
   // Domain enforcement — must happen before anything else so that OAuth
   // callbacks landing on a wrong/legacy domain get bounced to the right one
   // before the auth code exchange runs.
-  const host =
-    request.headers.get("x-forwarded-host") ?? request.nextUrl.hostname;
+  const host = request.headers.get("x-forwarded-host") ?? request.nextUrl.hostname;
 
   if (WRONG_DOMAINS.has(host)) {
     const canonical = `${CANONICAL}${request.nextUrl.pathname}${request.nextUrl.search}`;
@@ -41,9 +40,7 @@ export async function proxy(request: NextRequest) {
             return request.cookies.getAll();
           },
           setAll(cookiesToSet) {
-            cookiesToSet.forEach(({ name, value }) =>
-              request.cookies.set(name, value),
-            );
+            cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
             proxyResponse = NextResponse.next({ request });
             cookiesToSet.forEach(({ name, value, options }) =>
               proxyResponse.cookies.set(name, value, options),

@@ -37,9 +37,7 @@ export function LegalSection({
       <h2 className="font-heading text-xl font-semibold tracking-tight text-foreground">
         {heading}
       </h2>
-      <div className="space-y-3 text-sm leading-7 text-foreground/80">
-        {children}
-      </div>
+      <div className="space-y-3 text-sm leading-7 text-foreground/80">{children}</div>
     </section>
   );
 }

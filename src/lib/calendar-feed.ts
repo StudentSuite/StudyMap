@@ -1,7 +1,6 @@
 import { createAnonClient } from "@/lib/supabase/anon";
 
-const UUID_RE =
-  /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /**
  * Resolves a calendar-feed token (#210) to the set of competition ids that
@@ -26,10 +25,9 @@ export async function savedCompetitionIdsForCalendarToken(
   const supabase = createAnonClient();
   if (!supabase) return null;
 
-  const { data, error } = await supabase.rpc(
-    "saved_competition_ids_for_calendar_token",
-    { p_token: token },
-  );
+  const { data, error } = await supabase.rpc("saved_competition_ids_for_calendar_token", {
+    p_token: token,
+  });
   if (error || data === null) return null;
   return data as string[];
 }

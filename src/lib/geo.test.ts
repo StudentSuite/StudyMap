@@ -18,12 +18,17 @@ function place(id: string, lat: number, lng: number): Place {
 
 describe("haversineKm", () => {
   it("returns 0 for identical points", () => {
-    expect(haversineKm({ lat: 19.076, lng: 72.8777 }, { lat: 19.076, lng: 72.8777 })).toBe(0);
+    expect(
+      haversineKm({ lat: 19.076, lng: 72.8777 }, { lat: 19.076, lng: 72.8777 }),
+    ).toBe(0);
   });
 
   it("matches the known great-circle distance between Mumbai and Thane", () => {
     // Mumbai (CST) to Thane station, ~ 31 km apart.
-    const km = haversineKm({ lat: 18.9401, lng: 72.8352 }, { lat: 19.1863, lng: 72.9781 });
+    const km = haversineKm(
+      { lat: 18.9401, lng: 72.8352 },
+      { lat: 19.1863, lng: 72.9781 },
+    );
     expect(km).toBeGreaterThan(28);
     expect(km).toBeLessThan(34);
   });

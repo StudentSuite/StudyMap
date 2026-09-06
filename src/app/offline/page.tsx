@@ -16,8 +16,8 @@ export default function OfflinePage() {
         You are offline
       </h1>
       <p className="mt-2 text-muted-foreground">
-        Pages you have already opened still work offline, including the map. This
-        page just means the one you asked for has not been cached yet.
+        Pages you have already opened still work offline, including the map. This page
+        just means the one you asked for has not been cached yet.
       </p>
       <div className="mt-6 grid w-full gap-3 rounded-lg border border-border bg-card p-4 text-left text-sm">
         <div>
@@ -29,8 +29,7 @@ export default function OfflinePage() {
         <div>
           <h2 className="font-semibold text-foreground">Needs a connection</h2>
           <p className="mt-1 text-muted-foreground">
-            Uncached pages, fresh map tiles, sign-in, and live updates need the
-            network.
+            Uncached pages, fresh map tiles, sign-in, and live updates need the network.
           </p>
         </div>
       </div>

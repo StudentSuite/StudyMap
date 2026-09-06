@@ -45,9 +45,7 @@ function loadHeadingFonts(): Promise<HeadingFont[] | null> {
           const url = block[1].match(
             /url\((https:\/\/fonts\.gstatic\.com\/[^)]+\.ttf)\)/,
           )?.[1];
-          const weight = Number(
-            block[1].match(/font-weight:\s*(\d+)/)?.[1],
-          );
+          const weight = Number(block[1].match(/font-weight:\s*(\d+)/)?.[1]);
           if (!url || (weight !== 400 && weight !== 700)) continue;
           if (byWeight.has(weight)) continue;
           byWeight.set(
@@ -92,119 +90,121 @@ export default async function CompetitionOgImage({ params }: CompetitionOgImageP
     : '"Inter", system-ui, sans-serif';
 
   return new ImageResponse(
-    (
+    <div
+      style={{
+        width: 1200,
+        height: 630,
+        background: "#0A0A0A",
+        color: "#FAFAFA",
+        display: "flex",
+        flexDirection: "column",
+        padding: "64px 76px",
+        fontFamily,
+      }}
+    >
+      {/* Wordmark: the StudyMap pin mark + name */}
+      <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+        <div
+          style={{
+            width: 34,
+            height: 34,
+            borderRadius: "50% 50% 50% 0",
+            transform: "rotate(-45deg)",
+            background: "#F59E0B",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{ width: 12, height: 12, borderRadius: 999, background: "#0A0A0A" }}
+          />
+        </div>
+        <span style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.02em" }}>
+          StudyMap
+        </span>
+      </div>
+
+      {/* Category pill */}
       <div
         style={{
-          width: 1200,
-          height: 630,
-          background: "#0A0A0A",
-          color: "#FAFAFA",
           display: "flex",
-          flexDirection: "column",
-          padding: "64px 76px",
-          fontFamily,
+          marginTop: 48,
+          alignSelf: "flex-start",
+          background: "#18181B",
+          border: "1px solid #27272A",
+          borderRadius: 999,
+          padding: "8px 20px",
+          fontSize: 22,
+          color: "#F59E0B",
+          fontWeight: 700,
         }}
       >
-        {/* Wordmark: the StudyMap pin mark + name */}
-        <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-          <div
-            style={{
-              width: 34,
-              height: 34,
-              borderRadius: "50% 50% 50% 0",
-              transform: "rotate(-45deg)",
-              background: "#F59E0B",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div style={{ width: 12, height: 12, borderRadius: 999, background: "#0A0A0A" }} />
-          </div>
-          <span style={{ fontSize: 32, fontWeight: 700, letterSpacing: "-0.02em" }}>
-            StudyMap
-          </span>
-        </div>
+        {summary.category}
+      </div>
 
-        {/* Category pill */}
+      {/* Competition name - kept short and large so it reads at thumbnail size */}
+      <div
+        style={{
+          marginTop: 28,
+          fontSize: 64,
+          fontWeight: 700,
+          letterSpacing: "-0.02em",
+          lineHeight: 1.08,
+          // next/og has no line-clamp; a hard maxHeight plus overflow hidden
+          // keeps a long name from pushing the rest of the card off-canvas.
+          maxHeight: 220,
+          overflow: "hidden",
+        }}
+      >
+        {summary.name}
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          marginTop: 18,
+          fontSize: 28,
+          color: "#A1A1AA",
+        }}
+      >
+        {summary.organizer}
+      </div>
+
+      {/* Next deadline */}
+      {summary.nextDate && (
         <div
           style={{
             display: "flex",
-            marginTop: 48,
-            alignSelf: "flex-start",
+            alignItems: "center",
+            gap: 12,
+            marginTop: "auto",
             background: "#18181B",
             border: "1px solid #27272A",
             borderRadius: 999,
-            padding: "8px 20px",
-            fontSize: 22,
-            color: "#F59E0B",
-            fontWeight: 700,
+            padding: "14px 26px",
+            alignSelf: "flex-start",
           }}
         >
-          {summary.category}
+          <span style={{ fontSize: 24, color: "#D4D4D8" }}>
+            {summary.nextDate.label}:
+          </span>
+          <span style={{ fontSize: 24, fontWeight: 700, color: "#F59E0B" }}>
+            {formatCompetitionDate(summary.nextDate.date)}
+          </span>
         </div>
+      )}
 
-        {/* Competition name - kept short and large so it reads at thumbnail size */}
-        <div
-          style={{
-            marginTop: 28,
-            fontSize: 64,
-            fontWeight: 700,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.08,
-            // next/og has no line-clamp; a hard maxHeight plus overflow hidden
-            // keeps a long name from pushing the rest of the card off-canvas.
-            maxHeight: 220,
-            overflow: "hidden",
-          }}
-        >
-          {summary.name}
-        </div>
-
-        <div
-          style={{
-            display: "flex",
-            marginTop: 18,
-            fontSize: 28,
-            color: "#A1A1AA",
-          }}
-        >
-          {summary.organizer}
-        </div>
-
-        {/* Next deadline */}
-        {summary.nextDate && (
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 12,
-              marginTop: "auto",
-              background: "#18181B",
-              border: "1px solid #27272A",
-              borderRadius: 999,
-              padding: "14px 26px",
-              alignSelf: "flex-start",
-            }}
-          >
-            <span style={{ fontSize: 24, color: "#D4D4D8" }}>{summary.nextDate.label}:</span>
-            <span style={{ fontSize: 24, fontWeight: 700, color: "#F59E0B" }}>
-              {formatCompetitionDate(summary.nextDate.date)}
-            </span>
-          </div>
-        )}
-
-        <div
-          style={{
-            marginTop: summary.nextDate ? 24 : "auto",
-            fontSize: 20,
-            color: "#71717A",
-          }}
-        >
-          studyymap.com
-        </div>
+      <div
+        style={{
+          marginTop: summary.nextDate ? 24 : "auto",
+          fontSize: 20,
+          color: "#71717A",
+        }}
+      >
+        studyymap.com
       </div>
-    ),
+    </div>,
     {
       ...size,
       fonts,

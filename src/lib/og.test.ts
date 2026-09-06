@@ -4,7 +4,10 @@ import type { CityPage } from "@/lib/city-pages";
 import { ogCitySummary, ogCompetitionSummary, MAX_OG_COUNT_ROWS } from "@/lib/og";
 import type { Competition } from "@/lib/types";
 
-function page(places: Array<{ type: string; name: string }>, city = "navi_mumbai"): CityPage {
+function page(
+  places: Array<{ type: string; name: string }>,
+  city = "navi_mumbai",
+): CityPage {
   return {
     slug: city,
     city,
@@ -51,10 +54,15 @@ describe("ogCitySummary", () => {
   });
 
   it("caps the card and reports the remainder as more", () => {
-    const types = ["library", "airport", "sat_centre", "gov_offices", "foreign_lang_exam_centre", "other_places"];
-    const summary = ogCitySummary(
-      page(types.map((type) => ({ type, name: type }))),
-    );
+    const types = [
+      "library",
+      "airport",
+      "sat_centre",
+      "gov_offices",
+      "foreign_lang_exam_centre",
+      "other_places",
+    ];
+    const summary = ogCitySummary(page(types.map((type) => ({ type, name: type }))));
     expect(summary.counts).toHaveLength(MAX_OG_COUNT_ROWS);
     expect(summary.more).toBe(types.length - MAX_OG_COUNT_ROWS);
   });

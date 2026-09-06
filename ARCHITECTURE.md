@@ -78,21 +78,21 @@ that pair is the source of truth, not this file. The `PlaceType` union and
 
 Next.js App Router. Each folder is a route segment.
 
-| Route | File | Purpose |
-|-------|------|---------|
-| `/` | `page.tsx` | Homepage: hero, feature grid, CTA |
-| `/map` | `map/page.tsx` | Full interactive map |
-| `/calendar` | `calendar/page.tsx` | Exam calendar (SAT, IB, IGCSE) |
-| `/docs` | `docs/page.tsx` | Docs index linking to guides |
-| `/docs/contributing` | | How to add a place via PR |
-| `/docs/exam-centres` | | How to use the map for exam centres |
-| `/docs/github-student-pack` | | GitHub Student Pack guide |
-| `/contribute` | `contribute/page.tsx` | Contribution hub (add place / bug / question) |
-| `/about` | `about/page.tsx` | Principles, stats, maintainers |
-| `/legal/*` | | Privacy, terms, disclaimer |
-| `/offline` | `offline/page.tsx` | PWA offline fallback |
-| `/login` | `login/page.tsx` | Optional sign-in (Google OAuth, email) |
-| `/auth/callback` | `auth/callback/route.ts` | OAuth code exchange (dynamic, not static-export-safe) |
+| Route                       | File                     | Purpose                                               |
+| --------------------------- | ------------------------ | ----------------------------------------------------- |
+| `/`                         | `page.tsx`               | Homepage: hero, feature grid, CTA                     |
+| `/map`                      | `map/page.tsx`           | Full interactive map                                  |
+| `/calendar`                 | `calendar/page.tsx`      | Exam calendar (SAT, IB, IGCSE)                        |
+| `/docs`                     | `docs/page.tsx`          | Docs index linking to guides                          |
+| `/docs/contributing`        |                          | How to add a place via PR                             |
+| `/docs/exam-centres`        |                          | How to use the map for exam centres                   |
+| `/docs/github-student-pack` |                          | GitHub Student Pack guide                             |
+| `/contribute`               | `contribute/page.tsx`    | Contribution hub (add place / bug / question)         |
+| `/about`                    | `about/page.tsx`         | Principles, stats, maintainers                        |
+| `/legal/*`                  |                          | Privacy, terms, disclaimer                            |
+| `/offline`                  | `offline/page.tsx`       | PWA offline fallback                                  |
+| `/login`                    | `login/page.tsx`         | Optional sign-in (Google OAuth, email)                |
+| `/auth/callback`            | `auth/callback/route.ts` | OAuth code exchange (dynamic, not static-export-safe) |
 
 `layout.tsx` (root) wraps every page with `Navbar`, `Footer`, and the theme provider.
 
@@ -162,20 +162,20 @@ public exam calendar and, when signed in, the personal-events overlay.
 
 Pure TypeScript modules. No JSX, no React imports. Each file has a single responsibility.
 
-| File | What it does |
-|------|-------------|
-| `types.ts` | `Place`, `PlaceType`, `City` types; label maps |
-| `places.ts` | Reads places from `studymap.config.ts`; exports `getPlaces()` and `filterPlaces()` |
-| `geo.ts` | Haversine distance, `placesByDistance()`, `formatDistance()` |
-| `map.ts` | `PLACE_TYPE_COLORS` (color-blind-safe palette); `directionsUrl()` |
-| `share.ts` | URL state encode/decode for shareable filtered map links |
-| `site.ts` | Site name, tagline, repo URL, nav link list |
-| `exam-dates.ts` | `EXAM_EVENTS` array with SAT/IB/IGCSE session data |
-| `fonts.ts` | next/font setup (Inter, Space Grotesk, JetBrains Mono) |
-| `utils.ts` | `cn()` — clsx + tailwind-merge helper; `isMissingTableError()` — detects an unrun Supabase migration |
-| `user-places.ts` | CRUD for saved places + home location (`user_places`, `user_home` tables) |
-| `user-events.ts` | CRUD for personal calendar events (`user_events` table) |
-| `supabase/client.ts`, `supabase/server.ts` | Browser and server Supabase clients (`@supabase/ssr`) |
+| File                                       | What it does                                                                                         |
+| ------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| `types.ts`                                 | `Place`, `PlaceType`, `City` types; label maps                                                       |
+| `places.ts`                                | Reads places from `studymap.config.ts`; exports `getPlaces()` and `filterPlaces()`                   |
+| `geo.ts`                                   | Haversine distance, `placesByDistance()`, `formatDistance()`                                         |
+| `map.ts`                                   | `PLACE_TYPE_COLORS` (color-blind-safe palette); `directionsUrl()`                                    |
+| `share.ts`                                 | URL state encode/decode for shareable filtered map links                                             |
+| `site.ts`                                  | Site name, tagline, repo URL, nav link list                                                          |
+| `exam-dates.ts`                            | `EXAM_EVENTS` array with SAT/IB/IGCSE session data                                                   |
+| `fonts.ts`                                 | next/font setup (Inter, Space Grotesk, JetBrains Mono)                                               |
+| `utils.ts`                                 | `cn()` — clsx + tailwind-merge helper; `isMissingTableError()` — detects an unrun Supabase migration |
+| `user-places.ts`                           | CRUD for saved places + home location (`user_places`, `user_home` tables)                            |
+| `user-events.ts`                           | CRUD for personal calendar events (`user_events` table)                                              |
+| `supabase/client.ts`, `supabase/server.ts` | Browser and server Supabase clients (`@supabase/ssr`)                                                |
 
 `types.ts`, `places.ts`, `geo.ts`, `map.ts`, `share.ts`, `exam-dates.ts` have no Supabase dependency
 and no side effects, they're the easiest targets for new unit tests (see `*.test.ts` next to
@@ -222,12 +222,12 @@ requests: Supabase Auth, plus `user-places.ts`/`user-events.ts` calls for the tw
 
 The single most central component. It owns four independent pieces of state and merges them into one `Place[]` for the map:
 
-| State | Source | Notes |
-|-------|--------|-------|
-| Filters (`types`, `city`, `query`) | `useState`, seeded from the URL via `parseMapState()` | `query` is debounced (250 ms typing, 0 ms clearing) into `debouncedQuery` before `filterPlaces()` runs |
-| Focus (`focusId`) | `useState`, seeded from the URL | Set when a result row or pin is selected; collapses the mobile sheet |
-| Geolocation (`userLocation`, `sortByDistance`) | `useState`, set by the near-me button/FAB | Drives `placesByDistance()` for "nearest to you" sorting |
-| Auth (`user`, `savedPlaces`, `home`) | Supabase `onAuthStateChange` listener | Cleared synchronously during render (not in an effect) whenever `user.id` changes, so there's no stale-data flash between accounts |
+| State                                          | Source                                                | Notes                                                                                                                              |
+| ---------------------------------------------- | ----------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| Filters (`types`, `city`, `query`)             | `useState`, seeded from the URL via `parseMapState()` | `query` is debounced (250 ms typing, 0 ms clearing) into `debouncedQuery` before `filterPlaces()` runs                             |
+| Focus (`focusId`)                              | `useState`, seeded from the URL                       | Set when a result row or pin is selected; collapses the mobile sheet                                                               |
+| Geolocation (`userLocation`, `sortByDistance`) | `useState`, set by the near-me button/FAB             | Drives `placesByDistance()` for "nearest to you" sorting                                                                           |
+| Auth (`user`, `savedPlaces`, `home`)           | Supabase `onAuthStateChange` listener                 | Cleared synchronously during render (not in an effect) whenever `user.id` changes, so there's no stale-data flash between accounts |
 
 Filters and focus are mirrored back into the URL on every change (`mapStateToSearch()`), which is what makes map links shareable. Filters and geolocation each run through `filterPlaces()`/`placesByDistance()` independently; they don't affect each other.
 

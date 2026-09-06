@@ -7,14 +7,18 @@ import { cn } from "@/lib/utils";
 export function DocCtaBlock() {
   return (
     <div className="mt-10 flex flex-col gap-3 rounded-xl border border-border bg-card p-6 sm:flex-row sm:items-center sm:justify-between">
-      <p className="text-sm text-muted-foreground">
-        Ready to use what you just read?
-      </p>
+      <p className="text-sm text-muted-foreground">Ready to use what you just read?</p>
       <div className="flex flex-wrap gap-2">
-        <Link href="/map" className={cn(buttonVariants({ variant: "default", size: "sm" }))}>
+        <Link
+          href="/map"
+          className={cn(buttonVariants({ variant: "default", size: "sm" }))}
+        >
           Open the map
         </Link>
-        <Link href="/calendar" className={cn(buttonVariants({ variant: "outline", size: "sm" }))}>
+        <Link
+          href="/calendar"
+          className={cn(buttonVariants({ variant: "outline", size: "sm" }))}
+        >
           Check the calendar
         </Link>
         <Link

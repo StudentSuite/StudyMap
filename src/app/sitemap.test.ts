@@ -38,7 +38,9 @@ describe("sitemap", () => {
       if (!entry?.lastModified) continue;
       // A real dataset date should never land within a second of "now" -
       // the smell of `new Date()` sneaking back in (see #163).
-      expect(Math.abs(new Date(entry.lastModified).getTime() - now)).toBeGreaterThan(1000);
+      expect(Math.abs(new Date(entry.lastModified).getTime() - now)).toBeGreaterThan(
+        1000,
+      );
     }
   });
 
@@ -47,7 +49,8 @@ describe("sitemap", () => {
     const competitions = getCompetitions();
 
     for (const competition of competitions) {
-      const hasRealDate = Boolean(competition.verified?.on) || competition.dates.length > 0;
+      const hasRealDate =
+        Boolean(competition.verified?.on) || competition.dates.length > 0;
       if (!hasRealDate) continue;
       const entry = entries.find(
         (e) => e.url === `${site.url}/competitions/${competition.id}`,

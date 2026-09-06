@@ -15,12 +15,12 @@
 Fill this in for every place added in this PR. It stays in the PR, not in the
 dataset.
 
-| Field | Value |
-|-------|-------|
-| Source or citation | |
-| Google Maps rating (must be >= 4.0) | |
-| Google Maps review count (must be >= 50) | |
-| Date verified | |
+| Field                                    | Value |
+| ---------------------------------------- | ----- |
+| Source or citation                       |       |
+| Google Maps rating (must be >= 4.0)      |       |
+| Google Maps review count (must be >= 50) |       |
+| Date verified                            |       |
 
 - [ ] Each place's rating is 4.0 or higher.
 - [ ] Each place has 50 or more reviews.

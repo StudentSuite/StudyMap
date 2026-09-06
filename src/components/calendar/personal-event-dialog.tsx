@@ -55,7 +55,7 @@ export function PersonalEventDialog({
 
   // Re-fill the form during render (not an effect) each time the dialog
   // opens, or opens for a different event, so there's no stale-data flash.
-  const resetKey = open ? event?.id ?? "new" : null;
+  const resetKey = open ? (event?.id ?? "new") : null;
   if (resetKey !== lastResetKey) {
     setLastResetKey(resetKey);
     if (open) {
@@ -194,10 +194,7 @@ export function PersonalEventDialog({
               Delete
             </Button>
           )}
-          <Button
-            onClick={handleSave}
-            disabled={saving || !title.trim() || !date}
-          >
+          <Button onClick={handleSave} disabled={saving || !title.trim() || !date}>
             {event ? "Save changes" : "Add event"}
           </Button>
         </DialogFooter>

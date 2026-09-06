@@ -21,9 +21,9 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(APP_CACHE);
-      await cache.addAll(PRECACHE).catch((err) =>
-        console.warn("[SW] Precache failed:", err),
-      );
+      await cache
+        .addAll(PRECACHE)
+        .catch((err) => console.warn("[SW] Precache failed:", err));
       self.skipWaiting();
     })(),
   );

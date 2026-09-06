@@ -18,24 +18,24 @@ export default function PrivacyPage() {
 
       <LegalSection heading="How we use it">
         <p>
-          Contributed places power the public map. Your GitHub username is shown
-          as the contributor on entries you add. Usage analytics help us see
-          which features students actually use, so we can improve them.
+          Contributed places power the public map. Your GitHub username is shown as the
+          contributor on entries you add. Usage analytics help us see which features
+          students actually use, so we can improve them.
         </p>
       </LegalSection>
 
       <LegalSection heading="What we do not do">
         <p>
-          We do not sell your data, run third-party ad trackers, or require an
-          account to browse the map. The dataset is open, so anything you
-          contribute is public by design.
+          We do not sell your data, run third-party ad trackers, or require an account to
+          browse the map. The dataset is open, so anything you contribute is public by
+          design.
         </p>
       </LegalSection>
 
       <LegalSection heading="Your rights">
         <p>
-          You can request to see, edit, or delete your data anytime. Email us and
-          we will help.
+          You can request to see, edit, or delete your data anytime. Email us and we will
+          help.
         </p>
       </LegalSection>
     </LegalPage>

@@ -30,7 +30,10 @@ function newestVerifiedOn(places: { verified?: { on: string } }[]): Date | undef
  */
 function competitionLastModified(competition: Competition): Date | undefined {
   if (competition.verified?.on) return new Date(competition.verified.on);
-  const latest = competition.dates.map((date) => date.date).sort().at(-1);
+  const latest = competition.dates
+    .map((date) => date.date)
+    .sort()
+    .at(-1);
   return latest ? new Date(latest) : undefined;
 }
 

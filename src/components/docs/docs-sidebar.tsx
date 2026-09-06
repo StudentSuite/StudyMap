@@ -10,7 +10,13 @@ import { docsPages, DOCS_GROUPS } from "@/lib/docs-nav";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
-function DocsNavList({ pathname, onNavigate }: { pathname: string; onNavigate?: () => void }) {
+function DocsNavList({
+  pathname,
+  onNavigate,
+}: {
+  pathname: string;
+  onNavigate?: () => void;
+}) {
   return (
     <nav className="flex flex-col gap-6">
       {DOCS_GROUPS.map((group) => {

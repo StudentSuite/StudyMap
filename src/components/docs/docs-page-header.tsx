@@ -14,7 +14,11 @@ interface DocsPageHeaderProps {
  * a kicker + H1 + intro paragraph. Brings docs visually in line with
  * Home/About instead of the plain unstyled card stack it used to be.
  */
-export function DocsPageHeader({ title, description, breadcrumbLabel }: DocsPageHeaderProps) {
+export function DocsPageHeader({
+  title,
+  description,
+  breadcrumbLabel,
+}: DocsPageHeaderProps) {
   return (
     <div className="relative isolate overflow-hidden border-b border-border">
       <div

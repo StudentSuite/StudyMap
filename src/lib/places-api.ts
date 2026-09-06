@@ -32,8 +32,7 @@ export interface PlacesQueryResult {
 }
 
 export type PlacesQueryParse =
-  | { ok: true; query: PlacesQuery }
-  | { ok: false; error: string };
+  { ok: true; query: PlacesQuery } | { ok: false; error: string };
 
 function isNonNegativeInteger(value: string): boolean {
   return /^\d+$/.test(value);
@@ -107,7 +106,7 @@ export function parsePlacesQuery(params: URLSearchParams): PlacesQueryParse {
   let limit: number = PLACES_API_LIMITS.defaultLimit;
   if (rawLimit !== null) {
     if (!isNonNegativeInteger(rawLimit) || Number(rawLimit) === 0) {
-      return { ok: false, error: 'limit must be a positive integer' };
+      return { ok: false, error: "limit must be a positive integer" };
     }
     limit = Math.min(Number(rawLimit), PLACES_API_LIMITS.maxLimit);
   }

@@ -9,7 +9,12 @@ import { cn } from "@/lib/utils";
 import { getPlaces } from "@/lib/places";
 import { getCompetitions } from "@/lib/competitions";
 import { docsPages } from "@/lib/docs-nav";
-import { searchSite, searchSiteTotal, type SearchResult, type SearchResultType } from "@/lib/search";
+import {
+  searchSite,
+  searchSiteTotal,
+  type SearchResult,
+  type SearchResultType,
+} from "@/lib/search";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 
 /**
@@ -19,7 +24,10 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
  * Matches how map/places-map.tsx code-splits the Leaflet map view.
  */
 
-const GROUP_ICON: Record<SearchResultType, React.ComponentType<{ className?: string }>> = {
+const GROUP_ICON: Record<
+  SearchResultType,
+  React.ComponentType<{ className?: string }>
+> = {
   place: MapPin,
   competition: Trophy,
   doc: BookOpen,
@@ -75,7 +83,10 @@ function SiteSearchPanel({ onOpenChange }: SiteSearchPanelProps) {
     [query, places, competitions, docs],
   );
   const total = searchSiteTotal(groups);
-  const flatResults = React.useMemo(() => groups.flatMap((group) => group.results), [groups]);
+  const flatResults = React.useMemo(
+    () => groups.flatMap((group) => group.results),
+    [groups],
+  );
   // Row index of each result, keyed by its result key, so the JSX below can
   // look up "am I the active row" without a mutable counter across renders.
   const indexByKey = React.useMemo(() => {
@@ -144,7 +155,10 @@ function SiteSearchPanel({ onOpenChange }: SiteSearchPanelProps) {
 
         {groups.map((group) => {
           const Icon = GROUP_ICON[group.type];
-          const seeAll = group.total > group.results.length ? seeAllHref(group.type, query.trim()) : null;
+          const seeAll =
+            group.total > group.results.length
+              ? seeAllHref(group.type, query.trim())
+              : null;
           return (
             <div key={group.type} className="mb-2 last:mb-0">
               <div className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-muted-foreground">
@@ -164,11 +178,15 @@ function SiteSearchPanel({ onOpenChange }: SiteSearchPanelProps) {
                         onMouseEnter={() => setActiveIndex(rowIndex)}
                         className={cn(
                           "flex flex-col gap-0.5 rounded-md px-3 py-2 text-sm transition-colors",
-                          isActive ? "bg-muted text-foreground" : "text-foreground hover:bg-muted",
+                          isActive
+                            ? "bg-muted text-foreground"
+                            : "text-foreground hover:bg-muted",
                         )}
                       >
                         <span className="font-medium">{result.title}</span>
-                        <span className="truncate text-xs text-muted-foreground">{result.subtitle}</span>
+                        <span className="truncate text-xs text-muted-foreground">
+                          {result.subtitle}
+                        </span>
                       </Link>
                     </li>
                   );
@@ -195,16 +213,24 @@ function SiteSearchPanel({ onOpenChange }: SiteSearchPanelProps) {
 
       <div className="hidden items-center gap-3 border-t border-border px-3 py-2 text-xs text-muted-foreground sm:flex">
         <span className="flex items-center gap-1">
-          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">&uarr;</kbd>
-          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">&darr;</kbd>
+          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">
+            &uarr;
+          </kbd>
+          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">
+            &darr;
+          </kbd>
           to navigate
         </span>
         <span className="flex items-center gap-1">
-          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">&crarr;</kbd>
+          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">
+            &crarr;
+          </kbd>
           to select
         </span>
         <span className="flex items-center gap-1">
-          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">esc</kbd>
+          <kbd className="rounded border border-border bg-muted px-1 py-0.5 font-mono">
+            esc
+          </kbd>
           to close
         </span>
       </div>

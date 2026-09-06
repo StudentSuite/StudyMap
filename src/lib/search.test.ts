@@ -46,13 +46,30 @@ const PLACES: Place[] = [
 ];
 
 const COMPETITIONS: Competition[] = [
-  competition({ id: "comp-1", name: "International Library Olympiad", organizer: "Book Foundation" }),
-  competition({ id: "comp-2", name: "Math Bowl", organizer: "MathOrg", subjects: ["mathematics"] }),
+  competition({
+    id: "comp-1",
+    name: "International Library Olympiad",
+    organizer: "Book Foundation",
+  }),
+  competition({
+    id: "comp-2",
+    name: "Math Bowl",
+    organizer: "MathOrg",
+    subjects: ["mathematics"],
+  }),
 ];
 
 const DOCS: SearchSiteData["docs"] = [
-  { href: "/docs/map-controls", title: "Map Controls", description: "Zoom, pan, search, and filter the map." },
-  { href: "/docs/faq", title: "FAQ", description: "Common questions about the library dataset and books." },
+  {
+    href: "/docs/map-controls",
+    title: "Map Controls",
+    description: "Zoom, pan, search, and filter the map.",
+  },
+  {
+    href: "/docs/faq",
+    title: "FAQ",
+    description: "Common questions about the library dataset and books.",
+  },
 ];
 
 const DATA: SearchSiteData = { places: PLACES, competitions: COMPETITIONS, docs: DOCS };
@@ -93,11 +110,15 @@ describe("searchSite", () => {
   });
 
   it("matches a competition by organizer or subject", () => {
-    expect(searchSite("MathOrg", DATA).find((g) => g.type === "competition")?.results.map((r) => r.id)).toEqual([
-      "comp-2",
-    ]);
     expect(
-      searchSite("mathematics", DATA).find((g) => g.type === "competition")?.results.map((r) => r.id),
+      searchSite("MathOrg", DATA)
+        .find((g) => g.type === "competition")
+        ?.results.map((r) => r.id),
+    ).toEqual(["comp-2"]);
+    expect(
+      searchSite("mathematics", DATA)
+        .find((g) => g.type === "competition")
+        ?.results.map((r) => r.id),
     ).toEqual(["comp-2"]);
   });
 
@@ -116,7 +137,11 @@ describe("searchSite", () => {
     const manyPlaces: Place[] = Array.from({ length: 12 }, (_, i) =>
       place({ id: `p-${i}`, name: `Library ${i}` }),
     );
-    const groups = searchSite("library", { places: manyPlaces, competitions: [], docs: [] }, { limit: 5 });
+    const groups = searchSite(
+      "library",
+      { places: manyPlaces, competitions: [], docs: [] },
+      { limit: 5 },
+    );
     const places = groups.find((g) => g.type === "place")!;
 
     expect(places.total).toBe(12);
@@ -127,7 +152,11 @@ describe("searchSite", () => {
     const manyPlaces: Place[] = Array.from({ length: 12 }, (_, i) =>
       place({ id: `p-${i}`, name: `Library ${i}` }),
     );
-    const groups = searchSite("library", { places: manyPlaces, competitions: [], docs: [] }, { limit: 2 });
+    const groups = searchSite(
+      "library",
+      { places: manyPlaces, competitions: [], docs: [] },
+      { limit: 2 },
+    );
     expect(groups.find((g) => g.type === "place")!.results).toHaveLength(2);
   });
 });
@@ -135,9 +164,7 @@ describe("searchSite", () => {
 describe("searchSiteTotal", () => {
   it("sums totals across groups", () => {
     const groups = searchSite("library", DATA);
-    expect(searchSiteTotal(groups)).toBe(
-      groups.reduce((sum, g) => sum + g.total, 0),
-    );
+    expect(searchSiteTotal(groups)).toBe(groups.reduce((sum, g) => sum + g.total, 0));
   });
 
   it("is 0 for no groups", () => {

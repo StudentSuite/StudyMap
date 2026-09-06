@@ -17,10 +17,38 @@ function place(overrides: Partial<Place> & { id: string }): Place {
 }
 
 const FIXTURE: Place[] = [
-  place({ id: "lib-1", name: "Central Library", type: "library", city: "mumbai", lat: 18.94, lng: 72.83 }),
-  place({ id: "lib-2", name: "Thane Public Library", type: "library", city: "thane", lat: 19.19, lng: 72.97 }),
-  place({ id: "book-1", name: "Old Book Depot", type: "sat_centre", city: "mumbai", lat: 18.95, lng: 72.84 }),
-  place({ id: "cafe-1", name: "Cyber Cafe", type: "foreign_lang_exam_centre", city: "navi_mumbai", lat: 19.03, lng: 73.02 }),
+  place({
+    id: "lib-1",
+    name: "Central Library",
+    type: "library",
+    city: "mumbai",
+    lat: 18.94,
+    lng: 72.83,
+  }),
+  place({
+    id: "lib-2",
+    name: "Thane Public Library",
+    type: "library",
+    city: "thane",
+    lat: 19.19,
+    lng: 72.97,
+  }),
+  place({
+    id: "book-1",
+    name: "Old Book Depot",
+    type: "sat_centre",
+    city: "mumbai",
+    lat: 18.95,
+    lng: 72.84,
+  }),
+  place({
+    id: "cafe-1",
+    name: "Cyber Cafe",
+    type: "foreign_lang_exam_centre",
+    city: "navi_mumbai",
+    lat: 19.03,
+    lng: 73.02,
+  }),
 ];
 
 describe("filterPlaces", () => {
@@ -69,7 +97,11 @@ describe("filterPlaces", () => {
 
 describe("getCities", () => {
   it("orders cities by the given preferred order, alphabetically after that for the rest", () => {
-    expect(getCities(FIXTURE, ["thane", "mumbai"])).toEqual(["thane", "mumbai", "navi_mumbai"]);
+    expect(getCities(FIXTURE, ["thane", "mumbai"])).toEqual([
+      "thane",
+      "mumbai",
+      "navi_mumbai",
+    ]);
   });
 
   it("falls back to alphabetical order when no preferred order is given", () => {

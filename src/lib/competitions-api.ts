@@ -59,8 +59,7 @@ export interface CompetitionsQueryResult {
 }
 
 export type CompetitionsQueryParse =
-  | { ok: true; query: CompetitionsQuery }
-  | { ok: false; error: string };
+  { ok: true; query: CompetitionsQuery } | { ok: false; error: string };
 
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
@@ -124,7 +123,9 @@ export function parseCompetitionsQuery(params: URLSearchParams): CompetitionsQue
   const rawParticipation = params.get("participation");
   let participation: CompetitionParticipation | undefined;
   if (rawParticipation !== null) {
-    if (!(COMPETITION_PARTICIPATION_TYPES as readonly string[]).includes(rawParticipation)) {
+    if (
+      !(COMPETITION_PARTICIPATION_TYPES as readonly string[]).includes(rawParticipation)
+    ) {
       return {
         ok: false,
         error: `unknown participation "${rawParticipation}"; expected one of ${COMPETITION_PARTICIPATION_TYPES.join(", ")}`,
@@ -228,7 +229,18 @@ export function parseCompetitionsQuery(params: URLSearchParams): CompetitionsQue
  */
 export function queryCompetitions(
   competitions: Competition[],
-  { category, format, participation, region, country, freeOnly, age, deadlineBefore, limit, offset }: CompetitionsQuery,
+  {
+    category,
+    format,
+    participation,
+    region,
+    country,
+    freeOnly,
+    age,
+    deadlineBefore,
+    limit,
+    offset,
+  }: CompetitionsQuery,
 ): CompetitionsQueryResult {
   const matches = filterCompetitions(competitions, {
     categories: category ? [category] : undefined,

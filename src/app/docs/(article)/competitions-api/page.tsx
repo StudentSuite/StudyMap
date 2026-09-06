@@ -86,7 +86,7 @@ const FILTERS: { name: string; type: string; notes: string }[] = [
     name: "country",
     type: "enum",
     notes:
-      'Matches `country_tracks[].country`: one of the 13 countries with a real qualifying pathway (IN, US, GB, CA, AU, SG, DE, FR, CN, JP, KR, BR, ZA). Unlike the places API, where `country` is rejected outright because that dataset has no such field, this filter genuinely works here.',
+      "Matches `country_tracks[].country`: one of the 13 countries with a real qualifying pathway (IN, US, GB, CA, AU, SG, DE, FR, CN, JP, KR, BR, ZA). Unlike the places API, where `country` is rejected outright because that dataset has no such field, this filter genuinely works here.",
   },
   {
     name: "fee",
@@ -97,12 +97,14 @@ const FILTERS: { name: string; type: string; notes: string }[] = [
   {
     name: "age",
     type: "non-negative integer",
-    notes: "Kept only when the age falls within the competition's own age_min/age_max, inclusive at both ends.",
+    notes:
+      "Kept only when the age falls within the competition's own age_min/age_max, inclusive at both ends.",
   },
   {
     name: "deadline_before",
     type: "ISO date (YYYY-MM-DD)",
-    notes: 'Keeps competitions with at least one `dates[]` entry of type `"deadline"` on or before this date.',
+    notes:
+      'Keeps competitions with at least one `dates[]` entry of type `"deadline"` on or before this date.',
   },
   {
     name: "limit",
@@ -127,7 +129,10 @@ export default function CompetitionsApiPage() {
         - one file per category, including the real national qualifying pathways in{" "}
         <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country_tracks</code>{" "}
         where one exists. The API below exposes that dataset read-only, mirroring the{" "}
-        <Link href="/docs/places-api" className="font-medium text-primary hover:underline">
+        <Link
+          href="/docs/places-api"
+          className="font-medium text-primary hover:underline"
+        >
           places API
         </Link>{" "}
         exactly, so anything can be built on top of it without cloning the repo.
@@ -157,8 +162,8 @@ curl "https://studyymap.com/api/competitions?country=IN"`}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
               Access-Control-Allow-Origin: *
             </code>
-            ), so browser code can call it directly. Responses are cached for 6
-            hours (the dataset changes a few times a week at most) via{" "}
+            ), so browser code can call it directly. Responses are cached for 6 hours (the
+            dataset changes a few times a week at most) via{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
               Cache-Control
             </code>{" "}
@@ -171,8 +176,8 @@ curl "https://studyymap.com/api/competitions?country=IN"`}
         <CardHeader>
           <CardTitle>Query parameters</CardTitle>
           <CardDescription>
-            All optional; every value is validated, and invalid values are a
-            400 with a message - never silently ignored.
+            All optional; every value is validated, and invalid values are a 400 with a
+            message - never silently ignored.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -208,9 +213,9 @@ curl "https://studyymap.com/api/competitions?country=IN"`}
         <CardContent className="space-y-3">
           <CodeBlock lang="json" code={RESPONSE_EXAMPLE} />
           <p className="text-sm text-foreground/80">
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">total</code>{" "}
-            is the number of matches before pagination, so consumers know the
-            full result set size. The canonical record shape lives in{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">total</code> is the
+            number of matches before pagination, so consumers know the full result set
+            size. The canonical record shape lives in{" "}
             <Link
               href="https://github.com/StudentSuite/StudyMap/blob/main/data/competitions.schema.json"
               className="font-medium text-primary hover:underline"
@@ -234,25 +239,30 @@ curl "https://studyymap.com/api/competitions?country=IN"`}
         <CardContent className="space-y-3">
           <CodeBlock lang="json" code={ERROR_EXAMPLE} />
           <p className="text-sm text-foreground/80">
-            400 cases: an unknown <code className="rounded bg-muted px-1.5 py-0.5 font-mono">category</code>,{" "}
+            400 cases: an unknown{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">category</code>,{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">format</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">participation</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code>, or{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">fee</code> value; a
-            malformed <code className="rounded bg-muted px-1.5 py-0.5 font-mono">age</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">deadline_before</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">limit</code>, or{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+              participation
+            </code>
+            , <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code>,
+            or <code className="rounded bg-muted px-1.5 py-0.5 font-mono">fee</code>{" "}
+            value; a malformed{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">age</code>,{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+              deadline_before
+            </code>
+            , <code className="rounded bg-muted px-1.5 py-0.5 font-mono">limit</code>, or{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">offset</code>; or a
-            repeated parameter. A filter combination with no matches is an empty
-            result, not an error.
+            repeated parameter. A filter combination with no matches is an empty result,
+            not an error.
           </p>
         </CardContent>
       </Card>
 
       <CalloutCard title="No API key, no write access">
-        This endpoint is read-only and deliberately unauthenticated - the
-        dataset is public by design. To add or correct a competition, open a
-        pull request against{" "}
+        This endpoint is read-only and deliberately unauthenticated - the dataset is
+        public by design. To add or correct a competition, open a pull request against{" "}
         <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
           data/competitions/*.json
         </code>{" "}

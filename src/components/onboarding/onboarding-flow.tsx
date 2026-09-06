@@ -38,7 +38,13 @@ interface OnboardingFlowProps {
 
 type StepId = "graduation_year" | "board" | "field" | "country" | "referral_source";
 
-const STEPS: StepId[] = ["graduation_year", "board", "field", "country", "referral_source"];
+const STEPS: StepId[] = [
+  "graduation_year",
+  "board",
+  "field",
+  "country",
+  "referral_source",
+];
 
 const STEP_COPY: Record<StepId, { title: string; hint?: string }> = {
   graduation_year: { title: "When are you graduating?" },
@@ -170,7 +176,8 @@ export function OnboardingFlow({ next }: OnboardingFlowProps) {
       case "referral_source":
         return advance({
           referral_source: referralSource,
-          referral_other: referralSource === "Other" ? referralOther.trim() || null : null,
+          referral_other:
+            referralSource === "Other" ? referralOther.trim() || null : null,
         });
     }
   }
@@ -183,10 +190,25 @@ export function OnboardingFlow({ next }: OnboardingFlowProps) {
     return (
       <div className="flex flex-col items-center justify-center gap-4 py-20">
         {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-        <img src="/logo-light.svg" alt={site.name} width={140} height={26} className="h-6 w-auto dark:hidden" />
+        <img
+          src="/logo-light.svg"
+          alt={site.name}
+          width={140}
+          height={26}
+          className="h-6 w-auto dark:hidden"
+        />
         {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-        <img src="/logo-dark.svg" alt={site.name} width={140} height={26} className="hidden h-6 w-auto dark:block" />
-        <Loader2 className="size-5 animate-spin text-muted-foreground" aria-hidden="true" />
+        <img
+          src="/logo-dark.svg"
+          alt={site.name}
+          width={140}
+          height={26}
+          className="hidden h-6 w-auto dark:block"
+        />
+        <Loader2
+          className="size-5 animate-spin text-muted-foreground"
+          aria-hidden="true"
+        />
       </div>
     );
   }
@@ -305,7 +327,9 @@ export function OnboardingFlow({ next }: OnboardingFlowProps) {
             <Label htmlFor="onboarding-referral-source">How did you find StudyMap?</Label>
             <Select
               value={referralSource ?? undefined}
-              onValueChange={(value) => setReferralSource(value as OnboardingReferralSource)}
+              onValueChange={(value) =>
+                setReferralSource(value as OnboardingReferralSource)
+              }
             >
               <SelectTrigger id="onboarding-referral-source" className="w-full">
                 <SelectValue placeholder="Choose one (optional)" />
@@ -336,7 +360,11 @@ export function OnboardingFlow({ next }: OnboardingFlowProps) {
       {error && <p className="text-sm text-destructive">{error}</p>}
 
       <div className="flex items-center justify-between pt-2">
-        <Button variant="outline" onClick={handleBack} disabled={stepIndex === 0 || saving}>
+        <Button
+          variant="outline"
+          onClick={handleBack}
+          disabled={stepIndex === 0 || saving}
+        >
           Back
         </Button>
         <Button onClick={handleNext} disabled={saving}>

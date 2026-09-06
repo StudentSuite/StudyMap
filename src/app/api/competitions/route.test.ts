@@ -77,9 +77,7 @@ describe("GET /api/competitions (route handler)", () => {
   });
 
   it("filters by country (country_tracks), unlike the places API's country filter", async () => {
-    const withTrack = getCompetitions().find(
-      (c) => (c.country_tracks ?? []).length > 0,
-    );
+    const withTrack = getCompetitions().find((c) => (c.country_tracks ?? []).length > 0);
     if (!withTrack) return; // nothing in the current dataset carries a track; skip rather than fail
 
     const country = withTrack.country_tracks![0].country;
@@ -127,23 +125,17 @@ describe("GET /api/competitions (route handler)", () => {
   });
 
   it("filters by deadline_before", async () => {
-    const response = await GET(
-      request("/api/competitions?deadline_before=2030-01-01"),
-    );
+    const response = await GET(request("/api/competitions?deadline_before=2030-01-01"));
     expect(response.status).toBe(200);
   });
 
   it("returns 400 for a malformed deadline_before", async () => {
-    const response = await GET(
-      request("/api/competitions?deadline_before=not-a-date"),
-    );
+    const response = await GET(request("/api/competitions?deadline_before=not-a-date"));
     expect(response.status).toBe(400);
   });
 
   it("composes multiple filters at once", async () => {
-    const response = await GET(
-      request("/api/competitions?format=online&fee=free"),
-    );
+    const response = await GET(request("/api/competitions?format=online&fee=free"));
     const body = await json(response);
     expect(response.status).toBe(200);
     expect(
@@ -166,12 +158,8 @@ describe("GET /api/competitions (route handler)", () => {
   });
 
   it("paginates stably via offset", async () => {
-    const first = await json(
-      await GET(request("/api/competitions?limit=5&offset=0")),
-    );
-    const second = await json(
-      await GET(request("/api/competitions?limit=5&offset=5")),
-    );
+    const first = await json(await GET(request("/api/competitions?limit=5&offset=0")));
+    const second = await json(await GET(request("/api/competitions?limit=5&offset=5")));
     const firstIds = (first.data as { id: string }[]).map((c) => c.id);
     const secondIds = (second.data as { id: string }[]).map((c) => c.id);
     expect(firstIds).not.toEqual(secondIds);

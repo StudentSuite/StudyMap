@@ -41,7 +41,16 @@ function lastModifiedDate(absPath) {
       "git",
       // --diff-filter=AM skips pure-rename commits (e.g. a route-group move)
       // so this reflects the last real content change, not the last move.
-      ["log", "--follow", "--diff-filter=AM", "-1", "--date=short", "--format=%ad", "--", absPath],
+      [
+        "log",
+        "--follow",
+        "--diff-filter=AM",
+        "-1",
+        "--date=short",
+        "--format=%ad",
+        "--",
+        absPath,
+      ],
       { cwd: ROOT, encoding: "utf8" },
     ).trim();
     return out || FALLBACK_DATE;

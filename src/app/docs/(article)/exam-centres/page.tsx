@@ -18,34 +18,39 @@ export default function ExamCentresPage() {
         <p>
           StudyMap currently lists <strong>SAT centres</strong> and{" "}
           <strong>foreign language exam centres</strong> (Goethe-Zertifikat, IELTS, TOEFL,
-          DELF). IB and Cambridge IGCSE centres are not listed and there is no current plan
-          to add them.
+          DELF). IB and Cambridge IGCSE centres are not listed and there is no current
+          plan to add them.
         </p>
       </DocsProse>
 
       <div className="space-y-0">
-        <StepCard step={1} title="Open the map and filter" description="Start at the Map page">
+        <StepCard
+          step={1}
+          title="Open the map and filter"
+          description="Start at the Map page"
+        >
           <p>
             Go to the{" "}
             <Link href="/map" className="font-medium text-primary hover:underline">
               Map
             </Link>{" "}
             page. In the filter panel (left side on desktop, tap the filter icon on
-            mobile), select <span className="font-medium">SAT centre</span> for SAT
-            venues or <span className="font-medium">Foreign lang exam centre</span>{" "}
-            for Goethe, IELTS, TOEFL, and DELF venues.
+            mobile), select <span className="font-medium">SAT centre</span> for SAT venues
+            or <span className="font-medium">Foreign lang exam centre</span> for Goethe,
+            IELTS, TOEFL, and DELF venues.
           </p>
           <p>
-            Purple pins are SAT centres. Cyan pins are foreign language exam centres.
-            Each pin shows the name, city, and address when tapped.
+            Purple pins are SAT centres. Cyan pins are foreign language exam centres. Each
+            pin shows the name, city, and address when tapped.
           </p>
         </StepCard>
 
         <StepCard step={2} title="Get directions" description="One tap to Google Maps">
           <p>
-            Tap any exam centre pin, then tap <span className="font-medium">Directions</span>{" "}
-            in the popup. This opens Google Maps pre-set to that location so you can
-            navigate from your current position.
+            Tap any exam centre pin, then tap{" "}
+            <span className="font-medium">Directions</span> in the popup. This opens
+            Google Maps pre-set to that location so you can navigate from your current
+            position.
           </p>
         </StepCard>
 
@@ -64,8 +69,8 @@ export default function ExamCentresPage() {
             navigation to check future months.
           </p>
           <p className="text-xs text-muted-foreground">
-            Dates are sourced from the College Board and verified as of June 2026.
-            Always confirm with your school or test centre before planning travel.
+            Dates are sourced from the College Board and verified as of June 2026. Always
+            confirm with your school or test centre before planning travel.
           </p>
         </StepCard>
       </div>
@@ -76,8 +81,8 @@ export default function ExamCentresPage() {
         className="mt-4"
       >
         <p>
-          If you know of a SAT or foreign language exam centre that is not on
-          the map, or an existing entry has moved or closed, please report it.
+          If you know of a SAT or foreign language exam centre that is not on the map, or
+          an existing entry has moved or closed, please report it.
         </p>
         <p>
           We are also expanding SAT coverage country by country. See the{" "}

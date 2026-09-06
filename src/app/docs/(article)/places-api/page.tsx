@@ -63,8 +63,7 @@ const FILTERS: { name: string; type: string; notes: string }[] = [
   {
     name: "limit",
     type: "positive integer",
-    notes:
-      `Default ${PLACES_API_LIMITS.defaultLimit}; values above the hard maximum of ${PLACES_API_LIMITS.maxLimit} are clamped, never dumped.`,
+    notes: `Default ${PLACES_API_LIMITS.defaultLimit}; values above the hard maximum of ${PLACES_API_LIMITS.maxLimit} are clamped, never dumped.`,
   },
   {
     name: "offset",
@@ -78,9 +77,11 @@ export default function PlacesApiPage() {
     <div className="space-y-6">
       <p className="text-foreground/80">
         Every place StudyMap renders is crowdsourced and committed to{" "}
-        <code className="rounded bg-muted px-1.5 py-0.5 font-mono">data/places/*.json</code>{" "}
-        — one file per category. The API below exposes that dataset read-only,
-        so anything can be built on top of it without cloning the repo.
+        <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+          data/places/*.json
+        </code>{" "}
+        — one file per category. The API below exposes that dataset read-only, so anything
+        can be built on top of it without cloning the repo.
       </p>
 
       <Card>
@@ -107,8 +108,8 @@ curl "https://studyymap.com/api/places?category=library&limit=50&offset=100"`}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
               Access-Control-Allow-Origin: *
             </code>
-            ), so browser code can call it directly. Responses are cached for 6
-            hours (the dataset changes a few times a week at most) via{" "}
+            ), so browser code can call it directly. Responses are cached for 6 hours (the
+            dataset changes a few times a week at most) via{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
               Cache-Control
             </code>{" "}
@@ -121,8 +122,8 @@ curl "https://studyymap.com/api/places?category=library&limit=50&offset=100"`}
         <CardHeader>
           <CardTitle>Query parameters</CardTitle>
           <CardDescription>
-            All optional; every value is validated, and invalid values are a
-            400 with a message - never silently ignored.
+            All optional; every value is validated, and invalid values are a 400 with a
+            message - never silently ignored.
           </CardDescription>
         </CardHeader>
         <CardContent>
@@ -158,9 +159,9 @@ curl "https://studyymap.com/api/places?category=library&limit=50&offset=100"`}
         <CardContent className="space-y-3">
           <CodeBlock lang="json" code={RESPONSE_EXAMPLE} />
           <p className="text-sm text-foreground/80">
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">total</code>{" "}
-            is the number of matches before pagination, so consumers know the
-            full result set size. The canonical record shape lives in{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">total</code> is the
+            number of matches before pagination, so consumers know the full result set
+            size. The canonical record shape lives in{" "}
             <Link
               href="https://github.com/StudentSuite/StudyMap/blob/main/data/places.schema.json"
               className="font-medium text-primary hover:underline"
@@ -184,23 +185,30 @@ curl "https://studyymap.com/api/places?category=library&limit=50&offset=100"`}
         <CardContent className="space-y-3">
           <CodeBlock lang="json" code={ERROR_EXAMPLE} />
           <p className="text-sm text-foreground/80">
-            400 cases: an unknown <code className="rounded bg-muted px-1.5 py-0.5 font-mono">category</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code>{" "}
-            (no country data in the schema yet), a non-integer{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">limit</code>{" "}
-            or <code className="rounded bg-muted px-1.5 py-0.5 font-mono">offset</code>, or
-            a repeated parameter. A <code className="rounded bg-muted px-1.5 py-0.5 font-mono">city</code>{" "}
-            with no places is an empty result, not an error.
+            400 cases: an unknown{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">category</code>,{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code> (no
+            country data in the schema yet), a non-integer{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">limit</code> or{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">offset</code>, or a
+            repeated parameter. A{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">city</code> with no
+            places is an empty result, not an error.
           </p>
         </CardContent>
       </Card>
 
       <CalloutCard title="No API key, no write access">
-        This endpoint is read-only and deliberately unauthenticated - the
-        dataset is public by design. To add or correct a place, open a pull
-        request against <code className="rounded bg-muted px-1.5 py-0.5 font-mono">data/places/*.json</code>{" "}
+        This endpoint is read-only and deliberately unauthenticated - the dataset is
+        public by design. To add or correct a place, open a pull request against{" "}
+        <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
+          data/places/*.json
+        </code>{" "}
         following the{" "}
-        <Link href="/docs/contributing" className="font-medium text-primary hover:underline">
+        <Link
+          href="/docs/contributing"
+          className="font-medium text-primary hover:underline"
+        >
           contributing guide
         </Link>
         .

@@ -49,35 +49,35 @@ export default function ChangelogPage() {
         so this page never drifts from the real history.
       </p>
       <div className="space-y-4">
-          {releases.map((release) => (
-            <Card key={release.version}>
-              <CardHeader>
-                <div className="flex flex-wrap items-center gap-2">
-                  <CardTitle>v{release.version}</CardTitle>
-                  <Badge variant="outline" className="text-xs text-muted-foreground">
-                    {release.date}
-                  </Badge>
+        {releases.map((release) => (
+          <Card key={release.version}>
+            <CardHeader>
+              <div className="flex flex-wrap items-center gap-2">
+                <CardTitle>v{release.version}</CardTitle>
+                <Badge variant="outline" className="text-xs text-muted-foreground">
+                  {release.date}
+                </Badge>
+              </div>
+              <CardDescription className="sr-only">
+                Changes in version {release.version}
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              {release.sections.map((section) => (
+                <div key={section.heading}>
+                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    {section.heading}
+                  </p>
+                  <ul className="ml-4 mt-2 list-disc space-y-1.5 text-sm text-foreground/80">
+                    {section.items.map((item, i) => (
+                      <li key={i}>{renderItem(item)}</li>
+                    ))}
+                  </ul>
                 </div>
-                <CardDescription className="sr-only">
-                  Changes in version {release.version}
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                {release.sections.map((section) => (
-                  <div key={section.heading}>
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
-                      {section.heading}
-                    </p>
-                    <ul className="ml-4 mt-2 list-disc space-y-1.5 text-sm text-foreground/80">
-                      {section.items.map((item, i) => (
-                        <li key={i}>{renderItem(item)}</li>
-                      ))}
-                    </ul>
-                  </div>
-                ))}
-              </CardContent>
-            </Card>
-          ))}
+              ))}
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </>
   );

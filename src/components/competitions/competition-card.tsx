@@ -68,10 +68,7 @@ export function CompetitionCard({
             />
           ) : (
             <span className="absolute inset-0 flex items-center justify-center">
-              <Trophy
-                className="size-10 text-muted-foreground/50"
-                aria-hidden="true"
-              />
+              <Trophy className="size-10 text-muted-foreground/50" aria-hidden="true" />
             </span>
           )}
         </a>
@@ -100,7 +97,9 @@ export function CompetitionCard({
         <DeadlineCountdown
           competition={competition}
           now={now}
-          className={cn(!isGrid && "sm:flex sm:items-baseline sm:justify-between sm:gap-4")}
+          className={cn(
+            !isGrid && "sm:flex sm:items-baseline sm:justify-between sm:gap-4",
+          )}
         />
       </div>
 

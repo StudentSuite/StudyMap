@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { BOARD_LABELS, EXAM_EVENTS, eventsByBoard, nextUpcomingEvent } from "@/lib/exam-dates";
+import {
+  BOARD_LABELS,
+  EXAM_EVENTS,
+  eventsByBoard,
+  nextUpcomingEvent,
+} from "@/lib/exam-dates";
 import type { ExamBoard } from "@/lib/exam-dates";
 
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;

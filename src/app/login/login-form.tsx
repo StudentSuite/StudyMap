@@ -41,9 +41,7 @@ export function LoginForm() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
   const [loading, setLoading] = React.useState(false);
-  const [dismissedErrorCode, setDismissedErrorCode] = React.useState<string | null>(
-    null,
-  );
+  const [dismissedErrorCode, setDismissedErrorCode] = React.useState<string | null>(null);
 
   // Belt-and-suspenders: also react to Supabase's own PASSWORD_RECOVERY
   // event in case a recovery session ever gets established on the client
@@ -66,9 +64,8 @@ export function LoginForm() {
       <div className="flex min-h-[calc(100dvh-3.5rem)] items-center justify-center px-4">
         <div className="w-full max-w-sm rounded-xl border bg-card p-6 text-center shadow-sm">
           <p className="text-sm text-muted-foreground">
-            Sign-in is not available on this deployment. StudyMap is running in
-            preview mode without accounts. The map and calendar work fully
-            without signing in.
+            Sign-in is not available on this deployment. StudyMap is running in preview
+            mode without accounts. The map and calendar work fully without signing in.
           </p>
           <Button asChild className="mt-4">
             <Link href="/map">Go to the map</Link>
@@ -253,9 +250,7 @@ export function LoginForm() {
                   <span className="w-full border-t" />
                 </div>
                 <div className="relative flex justify-center">
-                  <span className="bg-card px-2 text-xs text-muted-foreground">
-                    or
-                  </span>
+                  <span className="bg-card px-2 text-xs text-muted-foreground">or</span>
                 </div>
               </div>
             </>

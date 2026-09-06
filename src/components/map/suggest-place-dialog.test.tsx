@@ -59,7 +59,8 @@ describe("SuggestPlaceDialog submission", () => {
       "Enter a valid Google Maps link.",
     );
     expect(
-      (screen.getByRole("button", { name: "Open GitHub issue" }) as HTMLButtonElement).disabled,
+      (screen.getByRole("button", { name: "Open GitHub issue" }) as HTMLButtonElement)
+        .disabled,
     ).toBe(true);
   });
 
@@ -81,10 +82,14 @@ describe("SuggestPlaceDialog submission", () => {
       "https://maps.app.goo.gl/abc123",
     );
 
-    const fallback = screen.getByRole("link", { name: "Open GitHub here" }) as HTMLAnchorElement;
+    const fallback = screen.getByRole("link", {
+      name: "Open GitHub here",
+    }) as HTMLAnchorElement;
     expect(fallback.href).toContain("github.com/StudentSuite/StudyMap/issues/new?");
     expect(fallback.rel).toBe("noopener noreferrer");
-    expect(toastError).toHaveBeenCalledWith("Pop-up blocked. Your suggestion is still here.");
+    expect(toastError).toHaveBeenCalledWith(
+      "Pop-up blocked. Your suggestion is still here.",
+    );
   });
 
   it("severs opener before navigating a successful popup and closes the dialog", () => {
@@ -102,7 +107,9 @@ describe("SuggestPlaceDialog submission", () => {
 
     expect(opened.opener).toBeNull();
     expect(replace).toHaveBeenCalledOnce();
-    expect(replace.mock.calls[0]?.[0]).toContain("github.com/StudentSuite/StudyMap/issues/new?");
+    expect(replace.mock.calls[0]?.[0]).toContain(
+      "github.com/StudentSuite/StudyMap/issues/new?",
+    );
     expect(onOpenChange).toHaveBeenCalledWith(false);
   });
 });

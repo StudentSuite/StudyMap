@@ -2,7 +2,7 @@
 
 A crowdsourced map of student-important places across the Mumbai Metropolitan Region (Mumbai, Thane, Navi Mumbai). Open source, zero setup, free forever.
 
-**Live:** [studyymap.com](https://studyymap.com)  
+**Live:** [studyymap.com](https://studyymap.com)
 
 ---
 

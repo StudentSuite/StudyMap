@@ -115,18 +115,18 @@ that file for the schema itself rather than this one.
 
 Use [Conventional Commits](https://www.conventionalcommits.org/): `<type>: <short description>`.
 
-| Type | When to use |
-|------|-------------|
-| `feat` | New feature or place |
-| `fix` | Bug fix or incorrect data |
-| `chore` | Maintenance, deps, config |
+| Type       | When to use                          |
+| ---------- | ------------------------------------ |
+| `feat`     | New feature or place                 |
+| `fix`      | Bug fix or incorrect data            |
+| `chore`    | Maintenance, deps, config            |
 | `refactor` | Code restructure, no behavior change |
-| `docs` | Docs only |
-| `style` | Formatting, whitespace |
-| `test` | Adding or fixing tests |
-| `perf` | Performance improvement |
-| `ci` | CI/CD changes |
-| `revert` | Reverts a previous commit |
+| `docs`     | Docs only                            |
+| `style`    | Formatting, whitespace               |
+| `test`     | Adding or fixing tests               |
+| `perf`     | Performance improvement              |
+| `ci`       | CI/CD changes                        |
+| `revert`   | Reverts a previous commit            |
 
 Optional scope in parens: `feat(calendar): add today label`. One logical change per commit.
 

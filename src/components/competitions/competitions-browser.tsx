@@ -214,9 +214,14 @@ export function CompetitionsBrowser({
         </div>
         <div className="flex items-center gap-3">
           <p className="text-sm font-medium tabular-nums text-muted-foreground">
-            <span className="text-foreground">{sorted.length}</span> of {competitions.length}
+            <span className="text-foreground">{sorted.length}</span> of{" "}
+            {competitions.length}
           </p>
-          <ViewToggle value={viewMode} onChange={setViewMode} className="ml-auto sm:ml-0" />
+          <ViewToggle
+            value={viewMode}
+            onChange={setViewMode}
+            className="ml-auto sm:ml-0"
+          />
         </div>
       </div>
 

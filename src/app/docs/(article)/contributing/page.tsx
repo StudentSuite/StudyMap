@@ -32,7 +32,10 @@ export default function ContributingPage() {
     <>
       <DocsProse className="mb-6">
         <p className="text-sm">
-          This page covers the public map, which every visitor sees. If you just want to save a place for yourself instead, sign in and use &quot;My places&quot; on the map - those are private to your account and never go through this review process.
+          This page covers the public map, which every visitor sees. If you just want to
+          save a place for yourself instead, sign in and use &quot;My places&quot; on the
+          map - those are private to your account and never go through this review
+          process.
         </p>
       </DocsProse>
       <div className="space-y-4">
@@ -57,8 +60,15 @@ export default function ContributingPage() {
             <ul className="ml-4 list-disc space-y-1">
               <li>Place name</li>
               <li>Full address</li>
-              <li>Type: SAT centre, foreign language exam centre, library, government office (passport office, RTO, post office), airport, or other place</li>
-              <li>City and country (any city worldwide is welcome; SAT and foreign language centres already span several countries, other categories currently have the most coverage in India)</li>
+              <li>
+                Type: SAT centre, foreign language exam centre, library, government office
+                (passport office, RTO, post office), airport, or other place
+              </li>
+              <li>
+                City and country (any city worldwide is welcome; SAT and foreign language
+                centres already span several countries, other categories currently have
+                the most coverage in India)
+              </li>
               <li>Google Maps link</li>
             </ul>
             <p className="text-xs text-muted-foreground">
@@ -96,14 +106,23 @@ export default function ContributingPage() {
               <li>
                 Append a new object at the end of the array, following the schema below.
               </li>
-              <li>Commit and open a pull request against{" "}<code className="rounded bg-muted px-1 py-0.5 font-mono">main</code>.</li>
+              <li>
+                Commit and open a pull request against{" "}
+                <code className="rounded bg-muted px-1 py-0.5 font-mono">main</code>.
+              </li>
             </ol>
 
             <CodeBlock code={SCHEMA_EXAMPLE} lang="json" className="mt-3" />
 
             <p className="text-xs text-muted-foreground mt-2">
-              ID format: a short city-code prefix (<code className="bg-muted px-1 rounded">mum</code>, <code className="bg-muted px-1 rounded">thn</code>, <code className="bg-muted px-1 rounded">nvm</code>, <code className="bg-muted px-1 rounded">blr</code>, and so on), then the type, then the next available number in that file.
-              Coordinates come straight from Google Maps, so there is no fixed range: SAT and foreign language centres span the globe.
+              ID format: a short city-code prefix (
+              <code className="bg-muted px-1 rounded">mum</code>,{" "}
+              <code className="bg-muted px-1 rounded">thn</code>,{" "}
+              <code className="bg-muted px-1 rounded">nvm</code>,{" "}
+              <code className="bg-muted px-1 rounded">blr</code>, and so on), then the
+              type, then the next available number in that file. Coordinates come straight
+              from Google Maps, so there is no fixed range: SAT and foreign language
+              centres span the globe.
             </p>
           </CardContent>
         </Card>
@@ -136,9 +155,8 @@ export default function ContributingPage() {
           </CardHeader>
           <CardContent className="space-y-3 text-sm text-foreground/80">
             <p>
-              We are adding SAT centres country by country. Several countries
-              already have open tracking issues (Germany, France, UK, UAE,
-              Australia, and more).
+              We are adding SAT centres country by country. Several countries already have
+              open tracking issues (Germany, France, UK, UAE, Australia, and more).
             </p>
             <ol className="ml-4 list-decimal space-y-2">
               <li>
@@ -151,22 +169,25 @@ export default function ContributingPage() {
                 >
                   open country requests
                 </a>
-                . If your country is listed, comment there or open a PR that
-                closes it. If not, open a new issue for it.
+                . If your country is listed, comment there or open a PR that closes it. If
+                not, open a new issue for it.
               </li>
               <li>
                 Add each centre to{" "}
                 <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
                   data/places/sat_centre.json
                 </code>{" "}
-                with <code className="rounded bg-muted px-1 font-mono">type</code>{" "}
-                set to <code className="rounded bg-muted px-1 font-mono">sat_centre</code>,
-                plus <code className="rounded bg-muted px-1 font-mono">exam: &quot;SAT&quot;</code>{" "}
-                and a <code className="rounded bg-muted px-1 font-mono">valid_till</code> date.
+                with <code className="rounded bg-muted px-1 font-mono">type</code> set to{" "}
+                <code className="rounded bg-muted px-1 font-mono">sat_centre</code>, plus{" "}
+                <code className="rounded bg-muted px-1 font-mono">
+                  exam: &quot;SAT&quot;
+                </code>{" "}
+                and a <code className="rounded bg-muted px-1 font-mono">valid_till</code>{" "}
+                date.
               </li>
               <li>
-                Use the real city name and coordinates from Google Maps. Centres
-                outside India are welcome and expected here.
+                Use the real city name and coordinates from Google Maps. Centres outside
+                India are welcome and expected here.
               </li>
             </ol>
           </CardContent>

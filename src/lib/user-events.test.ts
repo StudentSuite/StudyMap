@@ -62,7 +62,12 @@ describe("user-events", () => {
             select: () => ({
               single: () =>
                 Promise.resolve({
-                  data: { id: "e1", user_id: "u1", created_at: "2026-01-01T00:00:00.000Z", ...INPUT },
+                  data: {
+                    id: "e1",
+                    user_id: "u1",
+                    created_at: "2026-01-01T00:00:00.000Z",
+                    ...INPUT,
+                  },
                   error: null,
                 }),
             }),
@@ -108,7 +113,12 @@ describe("user-events", () => {
                 select: () => ({
                   single: () =>
                     Promise.resolve({
-                      data: { id: "e1", user_id: "u1", created_at: "2026-01-01T00:00:00.000Z", ...payload },
+                      data: {
+                        id: "e1",
+                        user_id: "u1",
+                        created_at: "2026-01-01T00:00:00.000Z",
+                        ...payload,
+                      },
                       error: null,
                     }),
                 }),
@@ -142,7 +152,9 @@ describe("user-events", () => {
   it("deleteUserEvent propagates a Supabase error", async () => {
     mockClient = {
       from: () => ({
-        delete: () => ({ eq: () => Promise.resolve({ error: new Error("delete failed") }) }),
+        delete: () => ({
+          eq: () => Promise.resolve({ error: new Error("delete failed") }),
+        }),
       }),
     };
     vi.resetModules();

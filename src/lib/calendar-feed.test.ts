@@ -24,9 +24,9 @@ describe("savedCompetitionIdsForCalendarToken", () => {
 
   it("is case-insensitive about the uuid's hex digits", async () => {
     mockClient = { rpc: () => Promise.resolve({ data: [], error: null }) };
-    expect(
-      await savedCompetitionIdsForCalendarToken(VALID_TOKEN.toUpperCase()),
-    ).toEqual([]);
+    expect(await savedCompetitionIdsForCalendarToken(VALID_TOKEN.toUpperCase())).toEqual(
+      [],
+    );
   });
 
   it("returns null when Supabase is not configured", async () => {

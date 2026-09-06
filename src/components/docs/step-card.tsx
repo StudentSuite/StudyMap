@@ -1,6 +1,12 @@
 import type { ReactNode } from "react";
 
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 interface StepCardProps {
   step: number;
@@ -30,7 +36,9 @@ export function StepCard({ step, title, description, children, isLast }: StepCar
           <CardTitle>{title}</CardTitle>
           {description && <CardDescription>{description}</CardDescription>}
         </CardHeader>
-        <CardContent className="space-y-3 text-sm text-foreground/80">{children}</CardContent>
+        <CardContent className="space-y-3 text-sm text-foreground/80">
+          {children}
+        </CardContent>
       </Card>
     </div>
   );

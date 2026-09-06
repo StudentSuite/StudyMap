@@ -55,9 +55,8 @@ export default function HomePage() {
               Built by students, for students.
             </h2>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Finding study spots and exam centres takes forever. StudyMap
-              consolidates what students actually need into one free,
-              open-source map.
+              Finding study spots and exam centres takes forever. StudyMap consolidates
+              what students actually need into one free, open-source map.
             </p>
           </div>
           <div className="flex shrink-0 gap-3">
@@ -107,8 +106,8 @@ export default function HomePage() {
               Open data, maintained by students.
             </h2>
             <p className="mt-2 max-w-xl text-sm leading-relaxed text-muted-foreground">
-              Every place is public, sourced, and free to reuse. Help keep it
-              accurate for the next student.
+              Every place is public, sourced, and free to reuse. Help keep it accurate for
+              the next student.
             </p>
           </div>
           <Button asChild size="sm" variant="outline">

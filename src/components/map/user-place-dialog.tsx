@@ -20,7 +20,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { humanizeCity, PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import {
+  humanizeCity,
+  PLACE_TYPE_LABELS,
+  PLACE_TYPES,
+  type PlaceType,
+} from "@/lib/types";
 import { getCities, getPlaces } from "@/lib/places";
 
 const datasetCities = getCities(getPlaces());
@@ -64,7 +69,7 @@ export function UserPlaceDialog({
   const [lastResetKey, setLastResetKey] = React.useState<string | null>(null);
   const [confirmingDelete, setConfirmingDelete] = React.useState(false);
 
-  const resetKey = open ? place?.id ?? "new" : null;
+  const resetKey = open ? (place?.id ?? "new") : null;
   if (resetKey !== lastResetKey) {
     setLastResetKey(resetKey);
     if (open) {
@@ -230,7 +235,9 @@ export function UserPlaceDialog({
                 aria-invalid={latError}
               />
               {latError && (
-                <p className="text-sm text-destructive">Latitude must be between -90 and 90.</p>
+                <p className="text-sm text-destructive">
+                  Latitude must be between -90 and 90.
+                </p>
               )}
             </div>
             <div className="grid gap-1.5">
@@ -244,7 +251,9 @@ export function UserPlaceDialog({
                 aria-invalid={lngError}
               />
               {lngError && (
-                <p className="text-sm text-destructive">Longitude must be between -180 and 180.</p>
+                <p className="text-sm text-destructive">
+                  Longitude must be between -180 and 180.
+                </p>
               )}
             </div>
           </div>

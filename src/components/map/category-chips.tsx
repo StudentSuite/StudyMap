@@ -52,7 +52,10 @@ export function CategoryChips({
             )}
             style={
               active
-                ? { backgroundColor: `color-mix(in oklab, ${color} 16%, transparent)`, boxShadow: `inset 0 0 0 1px ${color}` }
+                ? {
+                    backgroundColor: `color-mix(in oklab, ${color} 16%, transparent)`,
+                    boxShadow: `inset 0 0 0 1px ${color}`,
+                  }
                 : undefined
             }
           >

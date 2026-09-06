@@ -21,7 +21,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { humanizeCity, PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import {
+  humanizeCity,
+  PLACE_TYPE_LABELS,
+  PLACE_TYPES,
+  type PlaceType,
+} from "@/lib/types";
 import { getCities, getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
 
@@ -222,7 +227,11 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
               aria-describedby={showGmapsError ? "suggest-place-gmaps-error" : undefined}
             />
             {showGmapsError ? (
-              <p id="suggest-place-gmaps-error" role="alert" className="text-xs text-destructive">
+              <p
+                id="suggest-place-gmaps-error"
+                role="alert"
+                className="text-xs text-destructive"
+              >
                 Enter a valid Google Maps link.
               </p>
             ) : null}

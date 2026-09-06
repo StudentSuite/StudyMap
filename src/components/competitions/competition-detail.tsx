@@ -158,7 +158,10 @@ export function CompetitionDetail({
       </section>
 
       {competition.country_tracks && (
-        <CountryTrackList tracks={competition.country_tracks} defaultCountry={defaultCountry} />
+        <CountryTrackList
+          tracks={competition.country_tracks}
+          defaultCountry={defaultCountry}
+        />
       )}
 
       <section className="rounded-xl border border-border bg-muted/30 p-4 text-center">

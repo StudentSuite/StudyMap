@@ -70,7 +70,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/exam-centres",
     title: "Finding Exam Centres",
-    description: "Use the map to locate verified SAT centres and foreign language exam centres worldwide.",
+    description:
+      "Use the map to locate verified SAT centres and foreign language exam centres worldwide.",
     icon: MapPin,
     iconClassName: "text-marker-sat-centre",
     group: "Guides",
@@ -78,7 +79,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/map-controls",
     title: "Map Controls",
-    description: "Every way to zoom, pan, search, and filter the map, including keyboard equivalents.",
+    description:
+      "Every way to zoom, pan, search, and filter the map, including keyboard equivalents.",
     icon: MousePointerClick,
     iconClassName: "text-primary",
     group: "Guides",
@@ -104,7 +106,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/install",
     title: "Install & Offline Usage",
-    description: "Install StudyMap as an app and use it offline: what's cached and how to force a fresh load.",
+    description:
+      "Install StudyMap as an app and use it offline: what's cached and how to force a fresh load.",
     icon: Download,
     iconClassName: "text-primary",
     group: "Guides",
@@ -175,7 +178,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/architecture",
     title: "Architecture",
-    description: "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
+    description:
+      "A map of the codebase for new contributors: folder layout, data flow, and key modules.",
     icon: Layers,
     iconClassName: "text-primary",
     group: "Developers",
@@ -183,7 +187,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/places-api",
     title: "Places API",
-    description: "Read the crowdsourced places dataset programmatically: GET /api/places, filters, pagination, and errors.",
+    description:
+      "Read the crowdsourced places dataset programmatically: GET /api/places, filters, pagination, and errors.",
     icon: Database,
     iconClassName: "text-primary",
     group: "Developers",
@@ -191,7 +196,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/competitions-api",
     title: "Competitions API",
-    description: "Read the competitions dataset programmatically: GET /api/competitions, filters, pagination, and errors.",
+    description:
+      "Read the competitions dataset programmatically: GET /api/competitions, filters, pagination, and errors.",
     icon: Trophy,
     iconClassName: "text-primary",
     group: "Developers",
@@ -199,7 +205,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/self-hosting",
     title: "Self-Hosting Guide",
-    description: "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
+    description:
+      "Run StudyMap for your own city: fork, configure your region and dataset, and deploy.",
     icon: Server,
     iconClassName: "text-primary",
     group: "Developers",
@@ -207,7 +214,8 @@ export const docsNav: DocsNavEntry[] = [
   {
     href: "/docs/troubleshooting",
     title: "Troubleshooting",
-    description: "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
+    description:
+      "Common problems when running StudyMap locally or on a fork, and what actually causes them.",
     icon: Wrench,
     iconClassName: "text-primary",
     group: "Developers",

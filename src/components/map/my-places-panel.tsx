@@ -65,7 +65,12 @@ export function MyPlacesPanel({
 
       <div className="flex items-center justify-between">
         <p className="text-xs font-semibold text-foreground">My places</p>
-        <Button size="sm" variant="outline" onClick={onAddPlace} className="h-7 gap-1 px-2 text-xs">
+        <Button
+          size="sm"
+          variant="outline"
+          onClick={onAddPlace}
+          className="h-7 gap-1 px-2 text-xs"
+        >
           <Plus className="size-3.5" />
           Add
         </Button>
@@ -78,15 +83,30 @@ export function MyPlacesPanel({
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Home className="size-3.5 shrink-0" />
           <span className="flex-1 truncate">{home.label}</span>
-          <Button size="sm" variant="ghost" className="h-6 px-1.5 text-xs" onClick={onLocateHome}>
+          <Button
+            size="sm"
+            variant="ghost"
+            className="h-6 px-1.5 text-xs"
+            onClick={onLocateHome}
+          >
             Nearest to home
           </Button>
-          <Button size="icon-sm" variant="ghost" onClick={onEditHome} aria-label="Edit home location">
+          <Button
+            size="icon-sm"
+            variant="ghost"
+            onClick={onEditHome}
+            aria-label="Edit home location"
+          >
             <Pencil className="size-3.5" />
           </Button>
         </div>
       ) : (
-        <Button size="sm" variant="ghost" className="h-7 justify-start px-1.5 text-xs text-muted-foreground" onClick={onEditHome}>
+        <Button
+          size="sm"
+          variant="ghost"
+          className="h-7 justify-start px-1.5 text-xs text-muted-foreground"
+          onClick={onEditHome}
+        >
           <Home className="size-3.5" />
           Set home location
         </Button>
@@ -149,9 +169,14 @@ export function MyPlacesPanel({
               className="w-full rounded-lg border border-border p-3 text-left transition-colors hover:bg-muted/50"
             >
               <div className="flex items-center gap-2">
-                <p className="flex-1 truncate text-sm font-medium text-foreground">{place.name}</p>
+                <p className="flex-1 truncate text-sm font-medium text-foreground">
+                  {place.name}
+                </p>
                 {confirmDeleteId === place.id ? (
-                  <span className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
+                  <span
+                    className="flex items-center gap-1"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <Button
                       size="sm"
                       variant="ghost"
@@ -164,13 +189,19 @@ export function MyPlacesPanel({
                       size="sm"
                       variant="destructive"
                       className="h-6 px-1.5 text-xs"
-                      onClick={() => { onDeletePlace?.(place.id); setConfirmDeleteId(null); }}
+                      onClick={() => {
+                        onDeletePlace?.(place.id);
+                        setConfirmDeleteId(null);
+                      }}
                     >
                       Delete
                     </Button>
                   </span>
                 ) : (
-                  <span className="flex items-center gap-0.5" onClick={(e) => e.stopPropagation()}>
+                  <span
+                    className="flex items-center gap-0.5"
+                    onClick={(e) => e.stopPropagation()}
+                  >
                     <Button
                       size="icon-sm"
                       variant="ghost"

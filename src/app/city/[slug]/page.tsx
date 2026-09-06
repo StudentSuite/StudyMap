@@ -2,11 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import {
-  cityPageSlugs,
-  findCityPage,
-  placesByType,
-} from "@/lib/city-pages";
+import { cityPageSlugs, findCityPage, placesByType } from "@/lib/city-pages";
 import { getPlaces } from "@/lib/places";
 import { placeJsonLdScript } from "@/lib/jsonld";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
@@ -28,9 +24,7 @@ interface CityPageProps {
   params: Promise<{ slug: string }>;
 }
 
-export async function generateMetadata({
-  params,
-}: CityPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
   const { slug } = await params;
   const page = findCityPage(getPlaces(), slug);
   if (!page) return {};
@@ -65,9 +59,8 @@ export default async function CityPage({ params }: CityPageProps) {
         {name}
       </h1>
       <p className="mt-2 max-w-2xl text-muted-foreground">
-        {page.places.length} place{page.places.length === 1 ? "" : "s"} in{" "}
-        {name}, from the crowdsourced StudyMap dataset. Open one on the map to
-        see it in context.
+        {page.places.length} place{page.places.length === 1 ? "" : "s"} in {name}, from
+        the crowdsourced StudyMap dataset. Open one on the map to see it in context.
       </p>
 
       {page.places.length <= THIN_CITY_MAX_PLACES && (
@@ -75,9 +68,8 @@ export default async function CityPage({ params }: CityPageProps) {
           <CardContent>
             <p className="font-medium">{name} is just getting started.</p>
             <p className="mt-1 text-sm text-muted-foreground">
-              Know an exam centre, library, or study spot missing from this
-              list? Add it — it takes a couple of minutes and helps every
-              student searching for {name}.
+              Know an exam centre, library, or study spot missing from this list? Add it —
+              it takes a couple of minutes and helps every student searching for {name}.
             </p>
             <Button asChild className="mt-4">
               <Link href="/contribute">Add a place in {name}</Link>
@@ -107,9 +99,7 @@ export default async function CityPage({ params }: CityPageProps) {
                     </CardHeader>
                     <CardContent className="flex flex-wrap items-center gap-2">
                       {place.address && (
-                        <span className="text-muted-foreground">
-                          {place.address}
-                        </span>
+                        <span className="text-muted-foreground">{place.address}</span>
                       )}
                       <Link
                         href={`/map?place=${encodeURIComponent(place.id)}`}

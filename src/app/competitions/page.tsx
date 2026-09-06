@@ -37,9 +37,9 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
           Competitions
         </h1>
         <p className="mt-2 max-w-2xl text-base leading-relaxed text-muted-foreground">
-          {competitions.length} student competitions worldwide, from STEM olympiads to essay
-          contests to hackathons. Every deadline links back to its source, and country
-          qualifier tracks are called out where a real national pathway exists.
+          {competitions.length} student competitions worldwide, from STEM olympiads to
+          essay contests to hackathons. Every deadline links back to its source, and
+          country qualifier tracks are called out where a real national pathway exists.
         </p>
       </div>
 

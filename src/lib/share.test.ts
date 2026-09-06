@@ -1,6 +1,11 @@
 import { describe, expect, it } from "vitest";
 
-import { buildShareUrl, mapStateToSearch, parseMapState, type MapShareState } from "@/lib/share";
+import {
+  buildShareUrl,
+  mapStateToSearch,
+  parseMapState,
+  type MapShareState,
+} from "@/lib/share";
 
 const emptyState: MapShareState = {
   types: [],
@@ -112,7 +117,9 @@ describe("buildShareUrl", () => {
       types: ["library"],
       city: "mumbai",
     });
-    expect(url).toBe(`${window.location.origin}${window.location.pathname}?types=library&city=mumbai`);
+    expect(url).toBe(
+      `${window.location.origin}${window.location.pathname}?types=library&city=mumbai`,
+    );
   });
 
   it("includes the viewport when present", () => {

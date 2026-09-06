@@ -71,7 +71,12 @@ export function ResultsList({
           action={
             <div className="mt-1 flex flex-wrap justify-center gap-2">
               {emptyState.activeFilters.length > 0 && (
-                <Button type="button" size="sm" variant="outline" onClick={emptyState.onReset}>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="outline"
+                  onClick={emptyState.onReset}
+                >
                   <RotateCcw className="size-3.5" />
                   Clear filters
                 </Button>

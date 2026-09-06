@@ -73,10 +73,7 @@ export function cityPageSlugs(places: Place[]): { slug: string }[] {
  * sequences fall back to the raw value. Returns undefined — not an error —
  * for slugs outside the dataset, leaving 404 policy to the caller.
  */
-export function findCityPage(
-  places: Place[],
-  rawSlug: string,
-): CityPage | undefined {
+export function findCityPage(places: Place[], rawSlug: string): CityPage | undefined {
   let slug = rawSlug;
   try {
     slug = decodeURIComponent(rawSlug);
@@ -88,10 +85,10 @@ export function findCityPage(
 
 /** A city's places grouped by type, in the canonical PLACE_TYPES order. */
 export function placesByType(places: Place[]): [PlaceType, Place[]][] {
-  return (PLACE_TYPES.map(
-    (type): [PlaceType, Place[]] => [
+  return (
+    PLACE_TYPES.map((type): [PlaceType, Place[]] => [
       type,
       places.filter((place) => place.type === type),
-    ],
-  ) as [PlaceType, Place[]][]).filter(([, grouped]) => grouped.length > 0);
+    ]) as [PlaceType, Place[]][]
+  ).filter(([, grouped]) => grouped.length > 0);
 }

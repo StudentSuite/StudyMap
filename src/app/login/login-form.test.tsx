@@ -61,9 +61,7 @@ describe("LoginForm OAuth errors", () => {
       "Sign-in failed or was cancelled. Please try again.",
     );
 
-    fireEvent.click(
-      screen.getByRole("button", { name: "Dismiss sign-in error" }),
-    );
+    fireEvent.click(screen.getByRole("button", { name: "Dismiss sign-in error" }));
 
     expect(screen.queryByRole("alert")).toBeNull();
   });
@@ -78,9 +76,7 @@ describe("LoginForm OAuth errors", () => {
     expect(screen.getByRole("alert").textContent).toContain(
       "Sign-in failed. Please try again.",
     );
-    expect(screen.getByRole("alert").textContent).not.toContain(
-      "__proto__",
-    );
+    expect(screen.getByRole("alert").textContent).not.toContain("__proto__");
   });
 
   it("does not show an alert without an error code", () => {
@@ -166,7 +162,9 @@ describe("LoginForm password reset", () => {
     });
     fireEvent.click(screen.getByRole("button", { name: "Update password" }));
 
-    await waitFor(() => expect(updateUser).toHaveBeenCalledWith({ password: "a-new-password" }));
+    await waitFor(() =>
+      expect(updateUser).toHaveBeenCalledWith({ password: "a-new-password" }),
+    );
     await waitFor(() => expect(routerPush).toHaveBeenCalledWith("/map"));
     expect(routerRefresh).toHaveBeenCalled();
   });

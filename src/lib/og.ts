@@ -1,7 +1,11 @@
 import type { CityPage } from "@/lib/city-pages";
 import { placesByType } from "@/lib/city-pages";
 import { nextDate } from "@/lib/competitions";
-import { humanizeCity, PLACE_TYPE_LABELS, COMPETITION_CATEGORY_LABELS } from "@/lib/types";
+import {
+  humanizeCity,
+  PLACE_TYPE_LABELS,
+  COMPETITION_CATEGORY_LABELS,
+} from "@/lib/types";
 import type { Competition } from "@/lib/types";
 
 export interface OgCount {
@@ -30,9 +34,7 @@ export const MAX_OG_COUNT_ROWS = 4;
  */
 export function ogCitySummary(page: CityPage): OgCitySummary {
   const grouped = placesByType(page.places);
-  const bySize = grouped
-    .slice()
-    .sort((a, b) => b[1].length - a[1].length);
+  const bySize = grouped.slice().sort((a, b) => b[1].length - a[1].length);
   const shown = bySize.slice(0, MAX_OG_COUNT_ROWS);
   return {
     name: humanizeCity(page.city),

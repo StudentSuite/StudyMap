@@ -41,7 +41,10 @@ function formatIcsDate(iso: string): string {
 
 /** The current instant as a UTC "YYYYMMDDTHHMMSSZ" DTSTAMP value. */
 function formatIcsDateTimeUtc(date: Date): string {
-  return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+  return date
+    .toISOString()
+    .replace(/[-:]/g, "")
+    .replace(/\.\d{3}Z$/, "Z");
 }
 
 /**

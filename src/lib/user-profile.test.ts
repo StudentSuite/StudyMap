@@ -27,8 +27,7 @@ describe("user-profile", () => {
       auth: { getUser: () => Promise.resolve({ data: { user: { id: "u1" } } }) },
       from: () => ({
         select: () => ({
-          maybeSingle: () =>
-            Promise.resolve({ data: null, error: { code: "PGRST205" } }),
+          maybeSingle: () => Promise.resolve({ data: null, error: { code: "PGRST205" } }),
         }),
       }),
     };
@@ -158,7 +157,10 @@ describe("user-profile", () => {
           eq: () => ({
             select: () => ({
               single: () =>
-                Promise.resolve({ data: { calendar_token: payload.calendar_token }, error: null }),
+                Promise.resolve({
+                  data: { calendar_token: payload.calendar_token },
+                  error: null,
+                }),
             }),
           }),
         }),

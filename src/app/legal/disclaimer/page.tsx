@@ -9,8 +9,8 @@ export default function DisclaimerPage() {
     <LegalPage title="Disclaimer">
       <LegalSection heading="Information accuracy">
         <p>
-          StudyMap is built by students for students. While we try to keep
-          information accurate, places may have changed hours, moved, or closed.
+          StudyMap is built by students for students. While we try to keep information
+          accurate, places may have changed hours, moved, or closed.
         </p>
         <p>
           <strong className="font-semibold text-foreground">
@@ -31,15 +31,15 @@ export default function DisclaimerPage() {
 
       <LegalSection heading="Community contributions">
         <p>
-          Places are added by our community. We moderate but cannot check every
-          entry. Report issues and we will investigate.
+          Places are added by our community. We moderate but cannot check every entry.
+          Report issues and we will investigate.
         </p>
       </LegalSection>
 
       <LegalSection heading="Use at your own risk">
         <p>
-          StudyMap is a tool to help you find places. Make your own decisions and
-          stay safe.
+          StudyMap is a tool to help you find places. Make your own decisions and stay
+          safe.
         </p>
       </LegalSection>
     </LegalPage>

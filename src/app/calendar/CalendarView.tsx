@@ -378,7 +378,9 @@ export function CalendarView() {
           <div
             key={board}
             className={`flex items-center gap-1.5 text-sm ${
-              activeBoards.includes(board) ? "text-muted-foreground" : "text-muted-foreground/40"
+              activeBoards.includes(board)
+                ? "text-muted-foreground"
+                : "text-muted-foreground/40"
             }`}
           >
             <span

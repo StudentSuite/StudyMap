@@ -33,8 +33,8 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-lg text-sm leading-relaxed text-muted-foreground sm:text-base">
-            SAT centres, libraries, and the spots that actually matter.
-            Crowdsourced, open-source, free.
+            SAT centres, libraries, and the spots that actually matter. Crowdsourced,
+            open-source, free.
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-3">

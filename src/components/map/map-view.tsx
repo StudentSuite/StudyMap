@@ -155,7 +155,8 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
                   map.flyTo([lat, lng], expansionZoom, { duration: 0.5 });
                 },
                 keydown: (e) => {
-                  if (e.originalEvent.key !== "Enter" && e.originalEvent.key !== " ") return;
+                  if (e.originalEvent.key !== "Enter" && e.originalEvent.key !== " ")
+                    return;
                   e.originalEvent.preventDefault();
                   const expansionZoom = Math.min(
                     index.getClusterExpansionZoom(clusterId),
@@ -230,9 +231,7 @@ function BasemapUnavailable() {
         <p className="font-medium text-foreground">Basemap unavailable</p>
         <p>
           The site administrator needs to configure{" "}
-          <code className="font-mono text-foreground">
-            NEXT_PUBLIC_MAPTILER_KEY
-          </code>{" "}
+          <code className="font-mono text-foreground">NEXT_PUBLIC_MAPTILER_KEY</code>{" "}
           before the map can load.
         </p>
         <a
@@ -457,9 +456,7 @@ export default function MapView({
     return <BasemapUnavailable />;
   }
 
-  const focusPlace = focusId
-    ? places.find((place) => place.id === focusId)
-    : undefined;
+  const focusPlace = focusId ? places.find((place) => place.id === focusId) : undefined;
 
   // Same colorful MapTiler "streets" style in both themes — every dark-mode
   // map style (CARTO, MapTiler, Mapbox alike) is conventionally muted for
@@ -477,66 +474,66 @@ export default function MapView({
       }
       className="size-full"
     >
-    <MapContainer
-      center={center}
-      zoom={zoom}
-      scrollWheelZoom={false}
-      dragging={interactive}
-      doubleClickZoom={interactive}
-      touchZoom={interactive}
-      keyboard={interactive}
-      zoomControl={interactive}
-      attributionControl={interactive}
-      closePopupOnClick={false}
-      className="size-full"
-    >
-      <TileLayer
-        key={tileVariant}
-        attribution='&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
-        url={`https://api.maptiler.com/maps/${tileVariant}/256/{z}/{x}/{y}{r}.png?key=${mapTilerKey}`}
-        maxZoom={20}
-        keepBuffer={2}
-        updateWhenZooming={false}
-        detectRetina
-      />
+      <MapContainer
+        center={center}
+        zoom={zoom}
+        scrollWheelZoom={false}
+        dragging={interactive}
+        doubleClickZoom={interactive}
+        touchZoom={interactive}
+        keyboard={interactive}
+        zoomControl={interactive}
+        attributionControl={interactive}
+        closePopupOnClick={false}
+        className="size-full"
+      >
+        <TileLayer
+          key={tileVariant}
+          attribution='&copy; <a href="https://www.maptiler.com/copyright/" target="_blank">MapTiler</a> &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors'
+          url={`https://api.maptiler.com/maps/${tileVariant}/256/{z}/{x}/{y}{r}.png?key=${mapTilerKey}`}
+          maxZoom={20}
+          keepBuffer={2}
+          updateWhenZooming={false}
+          detectRetina
+        />
 
-      <MapResizeHandler />
-      <ClosePopupOnTrigger trigger={closePopupTrigger} />
-      {interactive && <ScrollZoomGuard />}
-      {interactive && onViewportChange && (
-        <ViewportReporter onViewportChange={onViewportChange} />
-      )}
-      {interactive && !userLocation && !focusPlace && !focusBounds && !initialViewport && (
-        <FitAllOnMount places={places} />
-      )}
+        <MapResizeHandler />
+        <ClosePopupOnTrigger trigger={closePopupTrigger} />
+        {interactive && <ScrollZoomGuard />}
+        {interactive && onViewportChange && (
+          <ViewportReporter onViewportChange={onViewportChange} />
+        )}
+        {interactive &&
+          !userLocation &&
+          !focusPlace &&
+          !focusBounds &&
+          !initialViewport && <FitAllOnMount places={places} />}
 
-      {userLocation && (
-        <FlyToUser lat={userLocation.lat} lng={userLocation.lng} />
-      )}
-      {focusPlace && (
-        <FlyToPlace id={focusPlace.id} lat={focusPlace.lat} lng={focusPlace.lng} />
-      )}
-      {!userLocation && !focusPlace && focusBounds && (
-        <FlyToBounds bounds={focusBounds} />
-      )}
+        {userLocation && <FlyToUser lat={userLocation.lat} lng={userLocation.lng} />}
+        {focusPlace && (
+          <FlyToPlace id={focusPlace.id} lat={focusPlace.lat} lng={focusPlace.lng} />
+        )}
+        {!userLocation && !focusPlace && focusBounds && (
+          <FlyToBounds bounds={focusBounds} />
+        )}
 
-      {userLocation && (
-        <CircleMarker
-          center={[userLocation.lat, userLocation.lng]}
-          radius={7}
-          pathOptions={{
-            color: "#ffffff",
-            weight: 2,
-            fillColor: "#2563eb",
-            fillOpacity: 1,
-          }}
-        >
-          <Tooltip>You are here</Tooltip>
-        </CircleMarker>
-      )}
+        {userLocation && (
+          <CircleMarker
+            center={[userLocation.lat, userLocation.lng]}
+            radius={7}
+            pathOptions={{
+              color: "#ffffff",
+              weight: 2,
+              fillColor: "#2563eb",
+              fillOpacity: 1,
+            }}
+          >
+            <Tooltip>You are here</Tooltip>
+          </CircleMarker>
+        )}
 
-      <ClusteredMarkers places={places} />
-    </MapContainer>
+        <ClusteredMarkers places={places} />
+      </MapContainer>
     </div>
   );
 }

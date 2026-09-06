@@ -46,9 +46,12 @@ export function parseAwesomeList(readme: string): AwesomeSection[] {
  * up here within a day, no redeploy of StudyMap required.
  */
 export async function fetchAwesomeList(repo: string): Promise<AwesomeSection[]> {
-  const res = await fetch(`https://raw.githubusercontent.com/StudentSuite/${repo}/main/README.md`, {
-    next: { revalidate: 86400 },
-  });
+  const res = await fetch(
+    `https://raw.githubusercontent.com/StudentSuite/${repo}/main/README.md`,
+    {
+      next: { revalidate: 86400 },
+    },
+  );
   if (!res.ok) {
     throw new Error(`Failed to fetch ${repo} README: ${res.status}`);
   }

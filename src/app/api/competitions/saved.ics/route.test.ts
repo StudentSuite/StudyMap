@@ -32,9 +32,7 @@ describe("GET /api/competitions/saved.ics (route handler)", () => {
       called = true;
       return Promise.resolve({ data: [], error: null });
     };
-    const response = await GET(
-      request("/api/competitions/saved.ics?token=not-a-uuid"),
-    );
+    const response = await GET(request("/api/competitions/saved.ics?token=not-a-uuid"));
     expect(response.status).toBe(404);
     expect(called).toBe(false);
   });

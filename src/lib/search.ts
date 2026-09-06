@@ -81,7 +81,9 @@ export function searchSite(
       ...competition.subjects,
     ),
   );
-  const docMatches = data.docs.filter((doc) => includesQuery(q, doc.title, doc.description));
+  const docMatches = data.docs.filter((doc) =>
+    includesQuery(q, doc.title, doc.description),
+  );
 
   const groups: SearchGroup[] = [
     {

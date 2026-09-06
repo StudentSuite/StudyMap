@@ -16,9 +16,7 @@ describe("MapView configuration", () => {
 
     render(<MapView places={[]} />);
 
-    expect(
-      screen.getByRole("status", { name: "Basemap unavailable" }),
-    ).toBeTruthy();
+    expect(screen.getByRole("status", { name: "Basemap unavailable" })).toBeTruthy();
     expect(screen.getByText("NEXT_PUBLIC_MAPTILER_KEY")).toBeTruthy();
     expect(
       screen

@@ -12,11 +12,7 @@ function requireClient() {
 }
 
 export type PersonalEventCategory =
-  | "deadline"
-  | "exam"
-  | "assignment"
-  | "reminder"
-  | "other";
+  "deadline" | "exam" | "assignment" | "reminder" | "other";
 
 export const PERSONAL_EVENT_CATEGORIES: {
   value: PersonalEventCategory;
@@ -56,9 +52,7 @@ export async function fetchUserEvents(): Promise<PersonalEvent[]> {
   return data ?? [];
 }
 
-export async function createUserEvent(
-  input: PersonalEventInput,
-): Promise<PersonalEvent> {
+export async function createUserEvent(input: PersonalEventInput): Promise<PersonalEvent> {
   const supabase = requireClient();
   const { data, error } = await supabase
     .from("user_events")

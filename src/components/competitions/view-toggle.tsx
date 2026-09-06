@@ -62,7 +62,10 @@ export function ViewToggle({ value, onChange, className }: ViewToggleProps) {
     <div
       role="group"
       aria-label="Layout"
-      className={cn("inline-flex items-center rounded-lg border border-border p-0.5", className)}
+      className={cn(
+        "inline-flex items-center rounded-lg border border-border p-0.5",
+        className,
+      )}
     >
       <button
         type="button"

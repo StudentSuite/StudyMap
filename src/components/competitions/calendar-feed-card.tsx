@@ -75,10 +75,10 @@ export function CalendarFeedCard() {
         <div className="min-w-0 flex-1">
           <p className="font-medium text-foreground">Subscribe from your calendar</p>
           <p className="mt-1 text-sm text-muted-foreground">
-            Add this link in Google Calendar (Settings &gt; Add calendar &gt; From
-            URL) or Apple Calendar (File &gt; New Calendar Subscription) and every
-            saved competition&apos;s dates show up there automatically. Estimated
-            dates are marked &quot;approximate&quot; in the event title.
+            Add this link in Google Calendar (Settings &gt; Add calendar &gt; From URL) or
+            Apple Calendar (File &gt; New Calendar Subscription) and every saved
+            competition&apos;s dates show up there automatically. Estimated dates are
+            marked &quot;approximate&quot; in the event title.
           </p>
 
           <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -106,8 +106,8 @@ export function CalendarFeedCard() {
           </div>
 
           <p className="mt-2 text-xs text-muted-foreground">
-            This link is a private credential, like a password - anyone with it can
-            see your saved competitions. Don&apos;t post it publicly.
+            This link is a private credential, like a password - anyone with it can see
+            your saved competitions. Don&apos;t post it publicly.
           </p>
 
           <div className="mt-3">

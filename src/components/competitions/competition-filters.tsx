@@ -93,7 +93,10 @@ export function CompetitionFiltersPanel({
           className="flex w-full items-center justify-between gap-2 px-4 py-3 text-sm font-medium text-foreground hover:bg-muted/30 transition-colors rounded-xl"
         >
           <span className="flex items-center gap-2">
-            <SlidersHorizontal className="size-4 text-muted-foreground" aria-hidden="true" />
+            <SlidersHorizontal
+              className="size-4 text-muted-foreground"
+              aria-hidden="true"
+            />
             <span>Filters</span>
             {count > 0 && (
               <span className="inline-flex size-5 items-center justify-center rounded-full bg-primary text-[11px] font-semibold text-primary-foreground">
@@ -110,7 +113,9 @@ export function CompetitionFiltersPanel({
 
       <CollapsiblePrimitive.Content className="space-y-4 border-t border-border px-4 py-4">
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Format</p>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Format
+          </p>
           <div
             className="flex flex-wrap gap-2"
             role="group"
@@ -153,7 +158,9 @@ export function CompetitionFiltersPanel({
 
         {regions.length > 0 && (
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Region</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+              Region
+            </p>
             <div
               className="flex flex-wrap gap-2"
               role="group"
@@ -173,7 +180,9 @@ export function CompetitionFiltersPanel({
         )}
 
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">Fee</p>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Fee
+          </p>
           <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by fee">
             <Pill
               pressed={filters.freeOnly}

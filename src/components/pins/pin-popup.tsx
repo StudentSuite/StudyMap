@@ -110,7 +110,10 @@ export function PinPopup({ place }: PinPopupProps) {
 
       {/* Footer badge */}
       <div className="border-t border-border/30 pt-2">
-        <p className="text-[11px] text-muted-foreground/75">Added by <span className="font-medium text-muted-foreground">{place.added_by}</span></p>
+        <p className="text-[11px] text-muted-foreground/75">
+          Added by{" "}
+          <span className="font-medium text-muted-foreground">{place.added_by}</span>
+        </p>
       </div>
     </div>
   );

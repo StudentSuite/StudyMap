@@ -18,8 +18,7 @@ const CORS_HEADERS = {
 } as const;
 
 const CACHE_HEADERS = {
-  "Cache-Control":
-    "public, max-age=3600, s-maxage=21600, stale-while-revalidate=86400",
+  "Cache-Control": "public, max-age=3600, s-maxage=21600, stale-while-revalidate=86400",
 } as const;
 
 export async function OPTIONS() {

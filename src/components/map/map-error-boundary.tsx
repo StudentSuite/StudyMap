@@ -31,10 +31,7 @@ export class MapErrorBoundary extends Component<Props, State> {
       return (
         <div className="flex size-full flex-col items-center justify-center gap-3 bg-muted text-sm text-muted-foreground">
           <p>Map failed to load.</p>
-          <Button
-            size="sm"
-            onClick={() => this.setState({ hasError: false })}
-          >
+          <Button size="sm" onClick={() => this.setState({ hasError: false })}>
             Retry
           </Button>
         </div>

@@ -59,15 +59,11 @@ describe("placeJsonLd", () => {
 
   it("URL-encodes the place id in the deep link", () => {
     const p = place({ id: "navi_mumbai-sat_centre-02" });
-    expect(placeJsonLd(p).url).toBe(
-      `${site.url}/map?place=navi_mumbai-sat_centre-02`,
-    );
+    expect(placeJsonLd(p).url).toBe(`${site.url}/map?place=navi_mumbai-sat_centre-02`);
   });
 
   it("uses the specific subtype when the record genuinely is one", () => {
-    expect(placeJsonLd(place({ type: "gov_offices" }))["@type"]).toBe(
-      "GovernmentOffice",
-    );
+    expect(placeJsonLd(place({ type: "gov_offices" }))["@type"]).toBe("GovernmentOffice");
     expect(placeJsonLd(place({ type: "airport" }))["@type"]).toBe("Airport");
     expect(placeJsonLd(place({ type: "sat_centre" }))["@type"]).toBe("Place");
   });
@@ -78,19 +74,15 @@ describe("placeJsonLd", () => {
   });
 
   it("omits geo when coordinates are missing instead of emitting nulls", () => {
-    const withoutLat = ({ ...place(), lat: undefined } as unknown) as Place;
+    const withoutLat = { ...place(), lat: undefined } as unknown as Place;
     expect(placeJsonLd(withoutLat)).not.toHaveProperty("geo");
-    const withoutLng = ({ ...place(), lng: undefined } as unknown) as Place;
+    const withoutLng = { ...place(), lng: undefined } as unknown as Place;
     expect(placeJsonLd(withoutLng)).not.toHaveProperty("geo");
   });
 
   it("omits geo when a coordinate is not a finite number", () => {
-    expect(placeJsonLd(place({ lat: NaN, lng: 72.8339 }))).not.toHaveProperty(
-      "geo",
-    );
-    expect(placeJsonLd(place({ lat: 18.9674, lng: Infinity }))).not.toHaveProperty(
-      "geo",
-    );
+    expect(placeJsonLd(place({ lat: NaN, lng: 72.8339 }))).not.toHaveProperty("geo");
+    expect(placeJsonLd(place({ lat: 18.9674, lng: Infinity }))).not.toHaveProperty("geo");
   });
 
   it("emits only real dataset fields — no invented values", () => {
@@ -162,7 +154,9 @@ function competition(overrides: Partial<Competition> = {}): Competition {
 
 describe("schemaOrgCompetitionType", () => {
   it("maps scholarship to EducationalOccupationalProgram", () => {
-    expect(schemaOrgCompetitionType("scholarship")).toBe("EducationalOccupationalProgram");
+    expect(schemaOrgCompetitionType("scholarship")).toBe(
+      "EducationalOccupationalProgram",
+    );
   });
 
   it("maps every other category to Event", () => {

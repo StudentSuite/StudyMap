@@ -39,10 +39,9 @@ export default function AboutPage() {
         Built by students, for students.
       </h1>
       <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-        Finding the right exam centre or a quiet place to study used to mean
-        digging through forums, group chats, and a dozen browser tabs. StudyMap
-        pulls all of it onto one free, open map so the next student does not have
-        to start from scratch.
+        Finding the right exam centre or a quiet place to study used to mean digging
+        through forums, group chats, and a dozen browser tabs. StudyMap pulls all of it
+        onto one free, open map so the next student does not have to start from scratch.
       </p>
 
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
@@ -63,12 +62,11 @@ export default function AboutPage() {
           Where the data comes from
         </h2>
         <p className="max-w-2xl text-sm leading-relaxed text-foreground/80">
-          StudyMap currently tracks {total} places across {PLACE_TYPES.length}{" "}
-          categories in cities worldwide. Each one is stored as
-          plain JSON in the public repository, with a name, location, category,
-          and a source link. Entries are added or corrected through pull requests
-          and issues, so the map gets more accurate every time a student helps
-          out.
+          StudyMap currently tracks {total} places across {PLACE_TYPES.length} categories
+          in cities worldwide. Each one is stored as plain JSON in the public repository,
+          with a name, location, category, and a source link. Entries are added or
+          corrected through pull requests and issues, so the map gets more accurate every
+          time a student helps out.
         </p>
       </section>
 
@@ -77,8 +75,8 @@ export default function AboutPage() {
           Who maintains it
         </h2>
         <p className="max-w-2xl text-sm leading-relaxed text-foreground/80">
-          StudyMap is maintained by StudentSuite, as an open-source
-          project. Questions, corrections, and ideas are always welcome at{" "}
+          StudyMap is maintained by StudentSuite, as an open-source project. Questions,
+          corrections, and ideas are always welcome at{" "}
           <a
             href="mailto:studentsuite3@gmail.com"
             className="font-medium text-primary hover:underline"

@@ -39,7 +39,9 @@ export function DocsIndexGrid() {
                     <h2 className="font-heading text-lg font-semibold text-foreground leading-snug">
                       {entry.title}
                     </h2>
-                    <p className="flex-1 text-sm text-muted-foreground">{entry.description}</p>
+                    <p className="flex-1 text-sm text-muted-foreground">
+                      {entry.description}
+                    </p>
                     <div className="flex flex-wrap items-center gap-2 text-xs text-muted-foreground">
                       <Badge variant="secondary">{entry.group}</Badge>
                       {date && <time>{date}</time>}

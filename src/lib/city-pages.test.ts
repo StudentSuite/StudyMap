@@ -1,11 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import {
-  cityPages,
-  cityPageSlugs,
-  cityToSlug,
-  placesByType,
-} from "@/lib/city-pages";
+import { cityPages, cityPageSlugs, cityToSlug, placesByType } from "@/lib/city-pages";
 import type { Place } from "@/lib/types";
 
 function place(id: string, city: string, type: Place["type"] = "library"): Place {

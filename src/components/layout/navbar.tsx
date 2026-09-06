@@ -57,8 +57,7 @@ export function Navbar() {
 
       const target = e.target as HTMLElement | null;
       const tag = target?.tagName;
-      const isTyping =
-        tag === "INPUT" || tag === "TEXTAREA" || target?.isContentEditable;
+      const isTyping = tag === "INPUT" || tag === "TEXTAREA" || target?.isContentEditable;
       if (isSlash && isTyping) return;
 
       e.preventDefault();
@@ -72,10 +71,13 @@ export function Navbar() {
   React.useEffect(() => {
     const supabase = createClient();
     if (!supabase) return;
-    supabase.auth.getUser().then(({ data }) => setLoggedIn(!!data.user)).catch(() => setLoggedIn(false));
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      (_, session) => setLoggedIn(!!session),
-    );
+    supabase.auth
+      .getUser()
+      .then(({ data }) => setLoggedIn(!!data.user))
+      .catch(() => setLoggedIn(false));
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_, session) => setLoggedIn(!!session));
     return () => subscription.unsubscribe();
   }, []);
 
@@ -94,9 +96,21 @@ export function Navbar() {
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-          <img src="/logo-light.svg" alt={site.name} width={180} height={34} className="h-7 w-auto dark:hidden" />
+          <img
+            src="/logo-light.svg"
+            alt={site.name}
+            width={180}
+            height={34}
+            className="h-7 w-auto dark:hidden"
+          />
           {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
-          <img src="/logo-dark.svg" alt={site.name} width={180} height={34} className="hidden h-7 w-auto dark:block" />
+          <img
+            src="/logo-dark.svg"
+            alt={site.name}
+            width={180}
+            height={34}
+            className="hidden h-7 w-auto dark:block"
+          />
         </Link>
 
         {/* Desktop nav: primary links + More dropdown */}
@@ -119,7 +133,8 @@ export function Navbar() {
               <button
                 className={cn(
                   "inline-flex items-center gap-1 rounded-md px-3 py-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground",
-                  secondaryNavLinks.some((l) => isActive(l.href)) && "bg-muted text-foreground",
+                  secondaryNavLinks.some((l) => isActive(l.href)) &&
+                    "bg-muted text-foreground",
                 )}
               >
                 More
@@ -166,7 +181,10 @@ export function Navbar() {
                   aria-label="Your account"
                   className="hidden md:inline-flex"
                 >
-                  <Link href="/account" aria-current={isActive("/account") ? "page" : undefined}>
+                  <Link
+                    href="/account"
+                    aria-current={isActive("/account") ? "page" : undefined}
+                  >
                     <UserRound className="size-4" />
                   </Link>
                 </Button>
@@ -197,7 +215,12 @@ export function Navbar() {
           {/* Mobile hamburger */}
           <Sheet open={open} onOpenChange={setOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="size-11 md:hidden" aria-label="Open menu">
+              <Button
+                variant="ghost"
+                size="icon"
+                className="size-11 md:hidden"
+                aria-label="Open menu"
+              >
                 <Menu className="size-5" />
               </Button>
             </SheetTrigger>
@@ -236,7 +259,10 @@ export function Navbar() {
                         Your account
                       </Link>
                       <button
-                        onClick={() => { setOpen(false); handleSignOut(); }}
+                        onClick={() => {
+                          setOpen(false);
+                          handleSignOut();
+                        }}
                         className="flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground text-left"
                       >
                         <LogOut className="size-4" />

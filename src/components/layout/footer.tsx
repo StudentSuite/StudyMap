@@ -29,7 +29,9 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-4">
           {/* About */}
           <div>
-            <p className="font-heading text-lg font-semibold text-foreground">{site.name}</p>
+            <p className="font-heading text-lg font-semibold text-foreground">
+              {site.name}
+            </p>
             <p className="mt-3 text-sm text-muted-foreground">
               Open-source student places map. Free &amp; forever.
             </p>

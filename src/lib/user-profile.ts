@@ -23,14 +23,7 @@ async function currentUserId(): Promise<string> {
 }
 
 export type OnboardingBoard =
-  | "IB"
-  | "IGCSE"
-  | "CBSE"
-  | "ICSE"
-  | "A-Levels"
-  | "AP"
-  | "State board"
-  | "Other";
+  "IB" | "IGCSE" | "CBSE" | "ICSE" | "A-Levels" | "AP" | "State board" | "Other";
 
 export const ONBOARDING_BOARDS: { value: OnboardingBoard; label: string }[] = [
   { value: "IB", label: "IB" },
@@ -65,12 +58,7 @@ export const ONBOARDING_COUNTRIES: { value: OnboardingCountry; label: string }[]
 ];
 
 export type OnboardingReferralSource =
-  | "GitHub"
-  | "Google"
-  | "Instagram"
-  | "Friend or school"
-  | "Reddit"
-  | "Other";
+  "GitHub" | "Google" | "Instagram" | "Friend or school" | "Reddit" | "Other";
 
 export const ONBOARDING_REFERRAL_SOURCES: {
   value: OnboardingReferralSource;
@@ -115,10 +103,7 @@ export interface UserProfileInput {
 
 export async function fetchUserProfile(): Promise<UserProfileRow | null> {
   const supabase = requireClient();
-  const { data, error } = await supabase
-    .from("user_profiles")
-    .select("*")
-    .maybeSingle();
+  const { data, error } = await supabase.from("user_profiles").select("*").maybeSingle();
   if (error) throw error;
   return data;
 }
@@ -150,9 +135,7 @@ export async function ensureProfileRow(): Promise<UserProfileRow> {
 }
 
 /** Persists one step's answer(s), merging into any existing row. */
-export async function saveProfileStep(
-  patch: UserProfileInput,
-): Promise<UserProfileRow> {
+export async function saveProfileStep(patch: UserProfileInput): Promise<UserProfileRow> {
   const supabase = requireClient();
   const user_id = await currentUserId();
   const { data, error } = await supabase

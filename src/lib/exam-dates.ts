@@ -102,7 +102,8 @@ export const EXAM_EVENTS: ExamEvent[] = [
     results: "Early January 2027",
     resultsEstimated: true,
     confirmed: false,
-    notes: "Window subject to IB confirmation. Results historically release in the first week of January.",
+    notes:
+      "Window subject to IB confirmation. Results historically release in the first week of January.",
     source: {
       label: "IBO: Diploma exam schedule",
       url: "https://ibo.org/programmes/diploma-programme/assessment-and-exams/exam-schedule/",
@@ -117,7 +118,8 @@ export const EXAM_EVENTS: ExamEvent[] = [
     results: "Early July 2027",
     resultsEstimated: true,
     confirmed: false,
-    notes: "No exams on 1 May. Schedule subject to IB confirmation. Results historically release around 6 July.",
+    notes:
+      "No exams on 1 May. Schedule subject to IB confirmation. Results historically release around 6 July.",
     source: {
       label: "IBO: Diploma exam schedule",
       url: "https://ibo.org/programmes/diploma-programme/assessment-and-exams/exam-schedule/",
@@ -149,7 +151,8 @@ export const EXAM_EVENTS: ExamEvent[] = [
     results: "Mid-January 2027",
     resultsEstimated: true,
     confirmed: false,
-    notes: "Exact paper dates publish in the official timetable. Certificates ship by end of March 2027.",
+    notes:
+      "Exact paper dates publish in the official timetable. Certificates ship by end of March 2027.",
     source: {
       label: "Cambridge International: exam series and results",
       url: "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-upper-secondary/cambridge-igcse/",

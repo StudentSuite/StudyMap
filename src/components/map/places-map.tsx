@@ -89,9 +89,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
   const [sortByDistance, setSortByDistance] = React.useState(false);
-  const [snap, setSnap] = React.useState<number | string | null>(
-    SHEET_SNAP_POINTS[0],
-  );
+  const [snap, setSnap] = React.useState<number | string | null>(SHEET_SNAP_POINTS[0]);
   // Sheet always open on mobile at peek snap; "closing" resets to peek, not hidden.
   const [sheetOpen, setSheetOpen] = React.useState(true);
   const hydrated = React.useRef(false);
@@ -112,7 +110,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const activeFilters = React.useMemo(() => {
     const labels: string[] = [];
     if (filters.types.length > 0) {
-      labels.push(`types: ${filters.types.map((type) => PLACE_TYPE_LABELS[type]).join(", ")}`);
+      labels.push(
+        `types: ${filters.types.map((type) => PLACE_TYPE_LABELS[type]).join(", ")}`,
+      );
     }
     if (filters.city) labels.push(`city: ${humanizeCity(filters.city)}`);
     if (filters.query.trim()) labels.push(`search: ${filters.query.trim()}`);
@@ -136,7 +136,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
   React.useEffect(() => {
     const supabase = createClient();
     if (!supabase) return; // self-host / preview mode: no auth, no private layer
-    supabase.auth.getUser().then(({ data }) => setUser(data.user)).catch(() => setUser(null));
+    supabase.auth
+      .getUser()
+      .then(({ data }) => setUser(data.user))
+      .catch(() => setUser(null));
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_, session) => setUser(session?.user ?? null));
@@ -158,7 +161,9 @@ export function PlacesMap({ places }: PlacesMapProps) {
             : "Couldn't load your saved places. Try reloading.",
         );
       });
-    fetchUserHome().then(setHome).catch(() => setHome(null));
+    fetchUserHome()
+      .then(setHome)
+      .catch(() => setHome(null));
   }, [user]);
 
   // Debounce the search query so filtering doesn't run on every keystroke.
@@ -198,9 +203,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
   );
 
   const typeCounts = React.useMemo(() => {
-    const counts = Object.fromEntries(
-      PLACE_TYPES.map((t) => [t, 0]),
-    ) as Record<PlaceType, number>;
+    const counts = Object.fromEntries(PLACE_TYPES.map((t) => [t, 0])) as Record<
+      PlaceType,
+      number
+    >;
     for (const place of visible) counts[place.type]++;
     return counts;
   }, [visible]);
@@ -459,12 +465,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
           )}
           {/* Full panel: visible when sheet above peek */}
           {snap !== SHEET_SNAP_POINTS[0] && (
-            <MapPanel
-              {...panelProps}
-              showSearch={false}
-              showNearMe={false}
-              scrollChips
-            />
+            <MapPanel {...panelProps} showSearch={false} showNearMe={false} scrollChips />
           )}
         </MapSheet>
       </div>

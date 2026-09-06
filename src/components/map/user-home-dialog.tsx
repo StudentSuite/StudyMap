@@ -89,7 +89,11 @@ export function UserHomeDialog({
     setSaving(true);
     setError(null);
     try {
-      const saved = await upsertUserHome({ label: label.trim(), lat: latNum, lng: lngNum });
+      const saved = await upsertUserHome({
+        label: label.trim(),
+        lat: latNum,
+        lng: lngNum,
+      });
       onSaved(saved);
       onOpenChange(false);
     } catch (err) {
@@ -155,7 +159,9 @@ export function UserHomeDialog({
                 aria-invalid={latError}
               />
               {latError && (
-                <p className="text-sm text-destructive">Latitude must be between -90 and 90.</p>
+                <p className="text-sm text-destructive">
+                  Latitude must be between -90 and 90.
+                </p>
               )}
             </div>
             <div className="grid gap-1.5">
@@ -169,7 +175,9 @@ export function UserHomeDialog({
                 aria-invalid={lngError}
               />
               {lngError && (
-                <p className="text-sm text-destructive">Longitude must be between -180 and 180.</p>
+                <p className="text-sm text-destructive">
+                  Longitude must be between -180 and 180.
+                </p>
               )}
             </div>
           </div>
@@ -193,7 +201,9 @@ export function UserHomeDialog({
           {home &&
             (confirmingDelete ? (
               <div className="flex items-center gap-2 sm:mr-auto">
-                <span className="text-sm text-muted-foreground">Remove home location?</span>
+                <span className="text-sm text-muted-foreground">
+                  Remove home location?
+                </span>
                 <Button
                   variant="outline"
                   size="sm"

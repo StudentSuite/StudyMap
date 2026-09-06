@@ -200,9 +200,9 @@ export function AccountView() {
     return (
       <InfoCard>
         <p className="text-sm text-muted-foreground">
-          Accounts are not available on this deployment. StudyMap is running in
-          preview mode without Supabase configured. The map and calendar work
-          fully without signing in.
+          Accounts are not available on this deployment. StudyMap is running in preview
+          mode without Supabase configured. The map and calendar work fully without
+          signing in.
         </p>
         <Button asChild className="mt-4">
           <Link href="/map">Go to the map</Link>
@@ -232,8 +232,8 @@ export function AccountView() {
     return (
       <InfoCard>
         <p className="text-sm text-muted-foreground">
-          Sign in to see your saved places, home location, and personal calendar
-          events in one place.
+          Sign in to see your saved places, home location, and personal calendar events in
+          one place.
         </p>
         <Button asChild className="mt-4">
           <Link href={`/login?next=${encodeURIComponent(pathname)}`}>Sign in</Link>
@@ -248,7 +248,12 @@ export function AccountView() {
         <p className="truncate text-sm text-muted-foreground">
           Signed in as <span className="font-medium text-foreground">{user.email}</span>
         </p>
-        <Button variant="outline" size="sm" onClick={handleSignOut} className="gap-1.5 shrink-0">
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={handleSignOut}
+          className="gap-1.5 shrink-0"
+        >
           <LogOut className="size-3.5" />
           Sign out
         </Button>
@@ -393,7 +398,10 @@ export function AccountView() {
               <span className="ml-1.5 text-muted-foreground">({events.length})</span>
             )}
           </h2>
-          <Link href="/calendar" className="text-xs font-medium text-primary hover:underline">
+          <Link
+            href="/calendar"
+            className="text-xs font-medium text-primary hover:underline"
+          >
             Add or edit on the calendar
           </Link>
         </div>
@@ -447,7 +455,9 @@ export function AccountView() {
                     </Button>
                   )}
                 </div>
-                <p className="mt-1 text-xs text-muted-foreground">{formatDate(ev.date)}</p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {formatDate(ev.date)}
+                </p>
               </div>
             ))
           )}
@@ -468,12 +478,17 @@ export function AccountView() {
 
         <div className="mt-3">
           {profile &&
-          (profile.graduation_year || profile.board || profile.field || profile.country) ? (
+          (profile.graduation_year ||
+            profile.board ||
+            profile.field ||
+            profile.country) ? (
             <dl className="grid gap-x-6 gap-y-2 rounded-lg border border-border p-3 text-xs sm:grid-cols-2">
               {profile.graduation_year && (
                 <div className="flex justify-between gap-2">
                   <dt className="text-muted-foreground">Graduating</dt>
-                  <dd className="font-medium text-foreground">{profile.graduation_year}</dd>
+                  <dd className="font-medium text-foreground">
+                    {profile.graduation_year}
+                  </dd>
                 </div>
               )}
               {profile.board && (

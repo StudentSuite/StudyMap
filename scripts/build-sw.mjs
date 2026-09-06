@@ -22,12 +22,8 @@ if (explicitBuildId === "") {
 const sourceRevision =
   process.env.VERCEL_GIT_COMMIT_SHA ?? process.env.GITHUB_SHA ?? "local";
 const buildId =
-  explicitBuildId ??
-  `${sourceRevision}-${Date.now().toString(36)}-${randomUUID()}`;
-const outputPath = resolve(
-  process.cwd(),
-  getOption("--output") ?? DEFAULT_OUTPUT_PATH,
-);
+  explicitBuildId ?? `${sourceRevision}-${Date.now().toString(36)}-${randomUUID()}`;
+const outputPath = resolve(process.cwd(), getOption("--output") ?? DEFAULT_OUTPUT_PATH);
 
 const template = await readFile(TEMPLATE_PATH, "utf8");
 const tokenCount = template.split(BUILD_ID_TOKEN).length - 1;

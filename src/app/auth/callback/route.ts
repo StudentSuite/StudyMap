@@ -9,8 +9,7 @@ import { isSupabaseConfigured } from "@/lib/supabase/config";
 // Always redirect to the canonical domain after OAuth so that arriving via
 // any auto-assigned Vercel URL (e.g. studymapp-student-suite.vercel.app)
 // doesn't leave the user stranded on the wrong domain.
-const SITE_URL =
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://studyymap.com";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://studyymap.com";
 
 /**
  * Where to send a just-signed-in user: `next` as-is, unless this is their
@@ -89,7 +88,9 @@ export async function GET(request: Request) {
         const separator = next.includes("?") ? "&" : "?";
         return NextResponse.redirect(`${SITE_URL}${next}${separator}type=recovery`);
       }
-      return NextResponse.redirect(`${SITE_URL}${await destinationAfterSignIn(supabase, next)}`);
+      return NextResponse.redirect(
+        `${SITE_URL}${await destinationAfterSignIn(supabase, next)}`,
+      );
     }
   }
 

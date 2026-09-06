@@ -21,12 +21,19 @@ interface AwesomeListBrowserProps {
  * language (filter, then scan), which matters once a list crosses ~100
  * entries (awesome-study-resources has 193).
  */
-export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListBrowserProps) {
+export function AwesomeListBrowser({
+  sections,
+  repoName,
+  repoUrl,
+}: AwesomeListBrowserProps) {
   const [query, setQuery] = useState("");
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const rows = useMemo(
-    () => sections.flatMap((section) => section.entries.map((entry) => ({ ...entry, section: section.title }))),
+    () =>
+      sections.flatMap((section) =>
+        section.entries.map((entry) => ({ ...entry, section: section.title })),
+      ),
     [sections],
   );
 
@@ -35,7 +42,9 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
     return rows.filter((row) => {
       if (activeSection && row.section !== activeSection) return false;
       if (!q) return true;
-      return row.name.toLowerCase().includes(q) || row.description.toLowerCase().includes(q);
+      return (
+        row.name.toLowerCase().includes(q) || row.description.toLowerCase().includes(q)
+      );
     });
   }, [rows, query, activeSection]);
 
@@ -106,7 +115,10 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
               <th scope="col" className="px-4 py-2.5 font-medium">
                 Description
               </th>
-              <th scope="col" className="hidden w-1/4 px-4 py-2.5 font-medium sm:table-cell">
+              <th
+                scope="col"
+                className="hidden w-1/4 px-4 py-2.5 font-medium sm:table-cell"
+              >
                 Section
               </th>
             </tr>
@@ -115,11 +127,18 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
             {filtered.map((row, index) => (
               <tr key={`${row.section}::${row.url}::${index}`} className="align-top">
                 <td className="break-words px-4 py-3 font-medium">
-                  <a href={row.url} target="_blank" rel="noreferrer" className="text-primary hover:underline">
+                  <a
+                    href={row.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-primary hover:underline"
+                  >
                     {row.name}
                   </a>
                 </td>
-                <td className="break-words px-4 py-3 text-foreground/80">{row.description}</td>
+                <td className="break-words px-4 py-3 text-foreground/80">
+                  {row.description}
+                </td>
                 <td className="hidden px-4 py-3 sm:table-cell">
                   <Badge variant="outline" className="h-auto whitespace-normal text-left">
                     {row.section}
@@ -138,10 +157,14 @@ export function AwesomeListBrowser({ sections, repoName, repoUrl }: AwesomeListB
         </table>
       </div>
 
-      <CalloutCard title="Want to add a resource?" description="This list lives in its own repo, not here">
+      <CalloutCard
+        title="Want to add a resource?"
+        description="This list lives in its own repo, not here"
+      >
         <p>
-          Suggestions and corrections go on the source repo, not StudyMap. Open a pull request
-          there and this page picks it up automatically, no StudyMap deploy needed.
+          Suggestions and corrections go on the source repo, not StudyMap. Open a pull
+          request there and this page picks it up automatically, no StudyMap deploy
+          needed.
         </p>
         <a
           href={repoUrl}

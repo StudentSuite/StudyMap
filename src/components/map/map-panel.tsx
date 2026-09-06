@@ -95,8 +95,7 @@ export function MapPanel({
 }: MapPanelProps) {
   const [suggestOpen, setSuggestOpen] = React.useState(false);
 
-  const dirty =
-    filters.types.length > 0 || !!filters.city || !!filters.query;
+  const dirty = filters.types.length > 0 || !!filters.city || !!filters.query;
 
   function toggleType(type: PlaceType) {
     onFiltersChange({
