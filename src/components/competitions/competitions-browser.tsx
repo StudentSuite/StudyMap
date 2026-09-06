@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import type { User } from "@supabase/supabase-js";
-import { Search } from "lucide-react";
+import { SearchX, Search } from "lucide-react";
 
 import { CompetitionFiltersPanel } from "@/components/competitions/competition-filters";
 import { CompetitionCard } from "@/components/competitions/competition-card";
@@ -12,6 +12,7 @@ import { activeFilterCount } from "@/components/competitions/filters";
 import { useViewMode, ViewToggle } from "@/components/competitions/view-toggle";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { EmptyState } from "@/components/ui/empty-state";
 import { fetchSaveCounts, fetchSavedCompetitionIds } from "@/lib/competition-saves";
 import { filterCompetitions, sortByNextDate, nextDate } from "@/lib/competitions";
 import { competitionFiltersToSearch } from "@/lib/competitions-share";
@@ -253,24 +254,25 @@ export function CompetitionsBrowser({
       />
 
       {sorted.length === 0 ? (
-        <div
-          role="status"
-          className="rounded-md border border-dashed border-border bg-muted/30 px-3 py-8 text-center"
-        >
-          <p className="text-sm text-muted-foreground">
-            {activeDescriptions.length > 0
+        <EmptyState
+          icon={SearchX}
+          title={
+            activeDescriptions.length > 0
               ? `No competitions match ${activeDescriptions.join(" · ")}.`
-              : "No competitions match."}
-          </p>
-          {activeFilterCount(filters) +
-            filters.categories.length +
-            (filters.query ? 1 : 0) >
-            0 && (
-            <Button variant="outline" size="sm" className="mt-3" onClick={clearAll}>
-              Clear filters
-            </Button>
-          )}
-        </div>
+              : "No competitions match."
+          }
+          description="Try a broader search or clear a filter to see more results."
+          action={
+            activeFilterCount(filters) +
+              filters.categories.length +
+              (filters.query ? 1 : 0) >
+              0 && (
+              <Button variant="outline" size="sm" className="mt-1" onClick={clearAll}>
+                Clear filters
+              </Button>
+            )
+          }
+        />
       ) : (
         <div
           className={

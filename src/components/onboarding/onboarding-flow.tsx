@@ -2,7 +2,9 @@
 
 import * as React from "react";
 import { useRouter } from "next/navigation";
+import { Loader2 } from "lucide-react";
 
+import { site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -179,7 +181,13 @@ export function OnboardingFlow({ next }: OnboardingFlowProps) {
 
   if (loading) {
     return (
-      <div className="py-16 text-center text-sm text-muted-foreground">Loading&hellip;</div>
+      <div className="flex flex-col items-center justify-center gap-4 py-20">
+        {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
+        <img src="/logo-light.svg" alt={site.name} width={140} height={26} className="h-6 w-auto dark:hidden" />
+        {/* eslint-disable-next-line @next/next/no-img-element -- static SVG wordmark, no optimization needed */}
+        <img src="/logo-dark.svg" alt={site.name} width={140} height={26} className="hidden h-6 w-auto dark:block" />
+        <Loader2 className="size-5 animate-spin text-muted-foreground" aria-hidden="true" />
+      </div>
     );
   }
 

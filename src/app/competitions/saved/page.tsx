@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { User } from "@supabase/supabase-js";
-import { Loader2 } from "lucide-react";
 
 import { fetchSaveCounts, fetchSavedCompetitionIds } from "@/lib/competition-saves";
 import { getCompetitions, sortByNextDate } from "@/lib/competitions";
@@ -13,6 +12,7 @@ import { CalendarFeedCard } from "@/components/competitions/calendar-feed-card";
 import { CompetitionCard } from "@/components/competitions/competition-card";
 import { Button } from "@/components/ui/button";
 import { PageContainer } from "@/components/layout/page-container";
+import { Skeleton } from "@/components/ui/skeleton";
 
 /**
  * `/competitions/saved`: the same card component as the browse grid,
@@ -84,12 +84,18 @@ export default function SavedCompetitionsPage() {
 
   if (user === undefined) {
     return (
-      <div className="flex min-h-[calc(100dvh-3.5rem)] items-center justify-center">
-        <Loader2
-          className="size-6 animate-spin text-muted-foreground"
-          aria-hidden="true"
-        />
-      </div>
+      <PageContainer width="content" className="max-w-6xl">
+        <div aria-hidden="true">
+          <Skeleton className="h-9 w-64" />
+          <Skeleton className="mt-3 h-4 w-96 max-w-full" />
+          <Skeleton className="mt-6 h-32 w-full rounded-xl" />
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {Array.from({ length: 3 }).map((_, i) => (
+              <Skeleton key={i} className="h-64 w-full rounded-xl" />
+            ))}
+          </div>
+        </div>
+      </PageContainer>
     );
   }
 

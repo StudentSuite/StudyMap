@@ -8,6 +8,7 @@ import { Home, LogOut, Trash2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Skeleton } from "@/components/ui/skeleton";
 import { COMPETITION_COUNTRY_LABELS, humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
@@ -211,7 +212,20 @@ export function AccountView() {
   }
 
   if (!authChecked) {
-    return null;
+    return (
+      <div className="mt-8 space-y-8" aria-hidden="true">
+        <Skeleton className="h-16 w-full rounded-xl" />
+        {Array.from({ length: 3 }).map((_, i) => (
+          <div key={i} className="space-y-3">
+            <div className="flex items-center justify-between">
+              <Skeleton className="h-4 w-32" />
+              <Skeleton className="h-3 w-24" />
+            </div>
+            <Skeleton className="h-14 w-full rounded-lg" />
+          </div>
+        ))}
+      </div>
+    );
   }
 
   if (!user) {

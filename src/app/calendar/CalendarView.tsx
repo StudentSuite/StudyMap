@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { User } from "@supabase/supabase-js";
-import { ChevronLeft, ChevronRight, Pencil, Plus } from "lucide-react";
+import { CalendarX2, ChevronLeft, ChevronRight, Pencil, Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { EmptyState } from "@/components/ui/empty-state";
 import {
   BOARD_LABELS,
   EXAM_EVENTS,
@@ -481,9 +482,12 @@ export function CalendarView() {
               {eventsError}
             </p>
           ) : personalEventsThisMonth.length === 0 ? (
-            <p className="rounded-lg border border-border py-6 text-center text-sm text-muted-foreground">
-              No personal events this month.
-            </p>
+            <EmptyState
+              icon={CalendarX2}
+              className="py-8"
+              title="No personal events this month."
+              description="Add one to keep track of what matters to you."
+            />
           ) : (
             personalEventsThisMonth.map((ev) => (
               <div key={ev.id} className="rounded-lg border border-border p-4">
@@ -519,9 +523,12 @@ export function CalendarView() {
       {/* Events list for this month */}
       <div className="mb-6">
         {events.length === 0 ? (
-          <p className="rounded-lg border border-border py-8 text-center text-sm text-muted-foreground">
-            No exams this month.
-          </p>
+          <EmptyState
+            icon={CalendarX2}
+            className="py-8"
+            title="No exams this month."
+            description="Switch the board filter above, or check another month."
+          />
         ) : (
           <div className="space-y-3">
             <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground">
@@ -603,11 +610,20 @@ export function CalendarView() {
           Competitions this month
         </p>
         {competitionEventsThisMonth.length === 0 ? (
-          <p className="rounded-lg border border-border py-8 text-center text-sm text-muted-foreground">
-            {showingSavedOnly
-              ? "No saved competitions this month."
-              : `No competitions this month for ${COMPETITION_COUNTRY_LABELS[competitionCountry]}.`}
-          </p>
+          <EmptyState
+            icon={CalendarX2}
+            className="py-8"
+            title={
+              showingSavedOnly
+                ? "No saved competitions this month."
+                : `No competitions this month for ${COMPETITION_COUNTRY_LABELS[competitionCountry]}.`
+            }
+            description={
+              showingSavedOnly
+                ? "Toggle to see all competitions, or check another month."
+                : "Try a different country or check another month."
+            }
+          />
         ) : (
           <div className="space-y-3">
             {competitionEventsThisMonth.map((ev: CompetitionEvent) => (
