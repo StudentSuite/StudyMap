@@ -135,5 +135,144 @@
     },
     "valid_till": "2027-04-01",
     "image": "/competitions/river-of-words.png"
+  },
+  {
+    "id": "adroit-prize",
+    "name": "The Adroit Prizes for Poetry and Prose",
+    "organizer": "The Adroit Journal",
+    "organizer_url": "https://theadroitjournal.org/prizes/",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "fiction"
+    ],
+    "description": "An annual award for secondary school and undergraduate students run by The Adroit Journal, with separate poetry and prose categories. Winners receive a cash reward and are published in the journal.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 24,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "USD 200 cash reward and publication for winners in poetry and prose.",
+    "official_url": "https://theadroitjournal.org/prizes/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open (estimated)",
+        "date": "2027-04-01",
+        "type": "registration_open",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://theadroitjournal.org/prizes/"
+      },
+      {
+        "label": "Submission deadline (estimated)",
+        "date": "2027-05-01",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://theadroitjournal.org/prizes/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-08-01",
+    "image": "/competitions/adroit-prize.png"
+  },
+  {
+    "id": "bennington-young-writers-awards",
+    "name": "Bennington Young Writers Awards",
+    "organizer": "Bennington College",
+    "organizer_url": "https://www.bennington.edu/young-writers-awards",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "fiction",
+      "creative nonfiction"
+    ],
+    "description": "An annual writing competition for high school students in grades 9 through 12 run by Bennington College, with categories in poetry, fiction and nonfiction. Entries are judged by the Bennington faculty and published authors.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes up to USD 2,000, with top winners published in a Bennington College online anthology.",
+    "official_url": "https://www.bennington.edu/young-writers-awards",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open",
+        "date": "2026-09-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.bennington.edu/young-writers-awards"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2026-11-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.bennington.edu/young-writers-awards"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-01-01",
+    "image": "/competitions/bennington-young-writers-awards.png"
+  },
+  {
+    "id": "write-the-world-competitions",
+    "name": "Write the World Monthly Writing Competitions",
+    "organizer": "Write the World",
+    "organizer_url": "https://writetheworld.org/competitions",
+    "category": "creative_writing",
+    "subjects": [
+      "creative writing"
+    ],
+    "description": "Free monthly writing competitions for teen writers aged 13 to 19 hosted by the nonprofit writing community Write the World. Each month features a different genre or theme with entries judged by guest judges, and winners receive cash prizes.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 100 for winners and USD 50 for runners up each month.",
+    "official_url": "https://writetheworld.org/competitions",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Next monthly competition deadline (estimated)",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://writetheworld.org/competitions"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-01",
+    "image": "/competitions/write-the-world-competitions.png"
   }
 ]

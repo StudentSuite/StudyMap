@@ -431,5 +431,62 @@
     },
     "valid_till": "2026-11-15",
     "image": "/competitions/tournament-of-the-towns.png"
+  },
+  {
+    "id": "mathworks-m3-challenge",
+    "name": "MathWorks Math Modeling Challenge (M3 Challenge)",
+    "organizer": "MathWorks and the Society for Industrial and Applied Mathematics (SIAM)",
+    "organizer_url": "https://m3challenge.siam.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "applied mathematics"
+    ],
+    "description": "A free mathematical modeling competition for US high school juniors and seniors. Teams of three to five students spend fourteen hours over a weekend crafting a mathematical model in response to a real world problem, then present their work to a panel of judges.",
+    "format": "hybrid",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Over USD 100,000 in scholarship prizes, with the top teams presenting their models in New York City.",
+    "official_url": "https://m3challenge.siam.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Challenge opens (estimated)",
+        "date": "2026-11-03",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://m3challenge.siam.org/"
+      },
+      {
+        "label": "Final entry deadline (estimated)",
+        "date": "2027-02-23",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://m3challenge.siam.org/"
+      },
+      {
+        "label": "Challenge weekend (estimated)",
+        "date": "2027-02-27",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://m3challenge.siam.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-04-01",
+    "image": "/competitions/mathworks-m3-challenge.png"
   }
 ]

@@ -257,5 +257,151 @@
     },
     "valid_till": "2027-04-01",
     "image": "/competitions/picoctf.png"
+  },
+  {
+    "id": "acsl",
+    "name": "American Computer Science League (ACSL)",
+    "organizer": "American Computer Science League",
+    "organizer_url": "https://www.acsl.org/",
+    "category": "coding",
+    "subjects": [
+      "computer science"
+    ],
+    "description": "A computer science contest for K-12 schools offering five divisions, with four online contests held during the season. Teams answer short answer questions and one programming problem per round, with top students invited to an online Finals competition.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "prize": "Team and individual awards each round, with medals and recognition at the Finals.",
+    "official_url": "https://www.acsl.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team registration deadline",
+        "date": "2026-12-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.acsl.org/Registration"
+      },
+      {
+        "label": "Finals",
+        "date": "2027-05-29",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.acsl.org/get-started/finals"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-07-01",
+    "image": "/competitions/acsl.png"
+  },
+  {
+    "id": "bebras-challenge",
+    "name": "Bebras Computing Challenge",
+    "organizer": "Bebras International, USA Bebras Challenge",
+    "organizer_url": "https://www.bebraschallenge.org/",
+    "category": "coding",
+    "subjects": [
+      "computational thinking",
+      "computer science"
+    ],
+    "description": "An international challenge that introduces informatics and computational thinking to students aged 6 to 18. Participants spend 45 minutes solving a set of short puzzles in one of six age categories, with no preparation required.",
+    "format": "online",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Certificates with achievement levels for participants and class reports for teachers.",
+    "official_url": "https://www.bebraschallenge.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Challenge window opens",
+        "date": "2026-11-09",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.bebraschallenge.org/"
+      },
+      {
+        "label": "Challenge window closes",
+        "date": "2026-11-20",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.bebraschallenge.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-15",
+    "image": "/competitions/bebras-challenge.png"
+  },
+  {
+    "id": "usaco",
+    "name": "USA Computing Olympiad (USACO)",
+    "organizer": "USA Computing Olympiad",
+    "organizer_url": "https://usaco.org/",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms"
+    ],
+    "description": "An online algorithmic programming contest held each season with three online contests and a final proctored US Open. Students in four divisions solve three problems per contest, and US finalists are invited to a summer training camp where the IOI team is chosen.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Promotion through the Bronze, Silver, Gold and Platinum divisions, and selection for the US IOI training camp.",
+    "official_url": "https://usaco.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "First online contest (estimated)",
+        "date": "2027-01-08",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://usaco.org/"
+      },
+      {
+        "label": "US Open (estimated)",
+        "date": "2027-03-27",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://usaco.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-05-01",
+    "image": "/competitions/usaco.png"
   }
 ]
