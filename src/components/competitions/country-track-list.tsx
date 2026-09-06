@@ -82,7 +82,7 @@ export function CountryTrackList({ tracks, defaultCountry }: CountryTrackListPro
               <span className="flex flex-wrap items-center gap-1.5 text-sm font-medium text-foreground">
                 {stage.name}
                 {stage.estimated && (
-                  <span className="rounded-full bg-amber-100 px-1.5 py-0.5 text-xs font-normal text-amber-900 dark:bg-amber-900/40 dark:text-amber-200">
+                  <span className="rounded-full bg-muted px-1.5 py-0.5 text-xs font-medium text-muted-foreground">
                     approximate
                   </span>
                 )}

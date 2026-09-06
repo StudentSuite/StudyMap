@@ -127,10 +127,8 @@ export function SaveButton({
       aria-pressed={saved}
       aria-label={saved ? "Unsave this competition" : "Save this competition"}
       className={cn(
-        "inline-flex items-center gap-1 rounded-full border px-2 py-1 text-xs font-medium transition-colors disabled:opacity-60",
-        saved
-          ? "border-primary bg-primary/10 text-primary"
-          : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
+        "inline-flex items-center gap-1 rounded-full px-1.5 py-1 text-xs font-medium transition-colors hover:bg-muted/60 disabled:opacity-60",
+        saved ? "text-primary" : "text-muted-foreground hover:text-foreground",
         className,
       )}
     >

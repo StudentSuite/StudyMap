@@ -131,7 +131,7 @@ export function DeadlineCountdown({
         {upcoming.label}
         {upcoming.estimated && (
           <span
-            className="rounded-full bg-amber-100 px-1.5 py-0.5 text-xs font-normal text-amber-900 dark:bg-amber-900/40 dark:text-amber-200"
+            className="rounded-full bg-muted px-1.5 py-0.5 text-xs font-medium text-muted-foreground"
             title="This date is our best estimate, not yet confirmed for this cycle"
           >
             approximate
