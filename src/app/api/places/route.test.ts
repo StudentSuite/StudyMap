@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 
+import { PLACES_API_LIMITS } from "@/lib/places-api";
 import { GET } from "./route";
 
 function request(path: string): Request {
@@ -34,9 +35,10 @@ describe("GET /api/places (route handler)", () => {
     const response = await GET(request("/api/places?limit=999999"));
     const body = await json(response);
     expect(body.limit).toBe(500);
-    // The whole dataset (328 places today) fits under the cap, so the clamp
-    // must still return every row rather than erroring or dropping data.
-    expect((body.data as unknown[]).length).toBe(body.total);
+    // The dataset now exceeds the 500-row pagination cap, so the response is
+    // a first page of 500 rows rather than the full dataset.
+    expect((body.data as unknown[]).length).toBe(PLACES_API_LIMITS.maxLimit);
+    expect(body.total).toBeGreaterThan(PLACES_API_LIMITS.maxLimit);
   });
 
   it("filters by category", async () => {
