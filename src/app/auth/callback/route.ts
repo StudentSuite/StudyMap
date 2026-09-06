@@ -74,8 +74,21 @@ export async function GET(request: Request) {
       },
     );
 
-    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    const { data, error } = await supabase.auth.exchangeCodeForSession(code);
     if (!error) {
+      // exchangeCodeForSession's return type doesn't declare `redirectType`,
+      // but the client library does set it at runtime - "recovery" for a
+      // password reset link, absent/null otherwise. A recovery session
+      // shouldn't run the first-run-onboarding check below (it's not a
+      // normal sign-in); instead flag it for the login form to pick up,
+      // since the code exchange happens here server-side and the login
+      // form itself never sees Supabase's own PASSWORD_RECOVERY event.
+      const redirectType = (data as { redirectType?: string | null } | null)
+        ?.redirectType;
+      if (redirectType === "recovery") {
+        const separator = next.includes("?") ? "&" : "?";
+        return NextResponse.redirect(`${SITE_URL}${next}${separator}type=recovery`);
+      }
       return NextResponse.redirect(`${SITE_URL}${await destinationAfterSignIn(supabase, next)}`);
     }
   }
