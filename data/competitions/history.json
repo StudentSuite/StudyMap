@@ -243,5 +243,53 @@
     },
     "valid_till": "2027-05-15",
     "image": "/competitions/we-the-students-essay-contest.png"
+  },
+  {
+    "id": "international-history-olympiad",
+    "name": "International History Olympiad",
+    "organizer": "International Academic Competitions (IAC)",
+    "organizer_url": "https://www.historyolympiad.com/",
+    "category": "history",
+    "subjects": [
+      "history"
+    ],
+    "description": "A biennial celebration of history held in odd numbered summers, attended by the best young history students from around the world. Students qualify through IAC History Bee and History Bowl tournaments or a qualifying exam, then compete in buzzer quiz rounds, exam based events and field trips across a week long Olympiad.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 1900,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals across events and divisions.",
+    "official_url": "https://www.historyolympiad.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (estimated)",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.historyolympiad.com/"
+      },
+      {
+        "label": "7th International History Olympiad, summer 2027 (estimated)",
+        "date": "2027-07-15",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.historyolympiad.com/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-08-15",
+    "image": "/competitions/international-history-olympiad.png"
   }
 ]

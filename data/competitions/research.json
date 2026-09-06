@@ -41,5 +41,166 @@
     },
     "valid_till": "2027-01-01",
     "image": "/competitions/regeneron-science-talent-search.png"
+  },
+  {
+    "id": "jshs",
+    "name": "Junior Science and Humanities Symposium (JSHS)",
+    "organizer": "Junior Science and Humanities Symposium, U.S. Department of Defense",
+    "organizer_url": "https://www.jshs.org/",
+    "category": "research",
+    "subjects": [
+      "science",
+      "technology",
+      "engineering",
+      "mathematics",
+      "research"
+    ],
+    "description": "A STEM research program sponsored by the U.S. Department of Defense for high school students in grades 9 to 12. Students present original research at regional symposia at universities across the country, with the top presenters advancing to the National Symposium to compete for scholarships.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarships and cash awards at regional and national level, totaling over USD 400,000 annually.",
+    "official_url": "https://www.jshs.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional symposia (dates vary by region)",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.jshs.org/"
+      },
+      {
+        "label": "National Symposium (estimated)",
+        "date": "2027-04-28",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.jshs.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-06-01",
+    "image": "/competitions/jshs.png"
+  },
+  {
+    "id": "genius-olympiad",
+    "name": "Genius Olympiad",
+    "organizer": "Terra Science and Education Foundation",
+    "organizer_url": "https://geniusolympiad.org/",
+    "category": "research",
+    "subjects": [
+      "science",
+      "environment",
+      "arts"
+    ],
+    "description": "An international competition focused on global environmental issues, open to students in six disciplines including science, art, creative writing, business, robotics and engineering. Entries are judged on originality and relevance to the environmental theme, with finalists invited to the Genius Olympiad on the campus of Rochester Institute of Technology.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals, with winners earning recognition and college scholarships.",
+    "official_url": "https://geniusolympiad.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Applications open (estimated)",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://geniusolympiad.org/"
+      },
+      {
+        "label": "Application deadline (estimated)",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://geniusolympiad.org/"
+      },
+      {
+        "label": "Genius Olympiad finals (Rochester, NY)",
+        "date": "2027-06-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://geniusolympiad.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-07-01",
+    "image": "/competitions/genius-olympiad.png"
+  },
+  {
+    "id": "mit-think",
+    "name": "MIT THINK Scholars Program",
+    "organizer": "MIT TechX",
+    "organizer_url": "https://think.mit.edu/",
+    "category": "research",
+    "subjects": [
+      "science",
+      "engineering",
+      "technology",
+      "research"
+    ],
+    "description": "A national research competition for high school students in grades 9 through 12 sponsored by MIT. Students propose an original STEM project, and winning teams receive a grant of up to USD 1,000, mentorship from MIT researchers and an expenses paid trip to MIT to present their proposal.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "An up to USD 1,000 project grant, mentorship from MIT researchers and an expenses paid trip to MIT.",
+    "official_url": "https://think.mit.edu/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Applications open (estimated)",
+        "date": "2026-11-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://think.mit.edu/"
+      },
+      {
+        "label": "Application deadline (estimated)",
+        "date": "2027-01-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://think.mit.edu/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-02-01",
+    "image": "/competitions/mit-think.png"
   }
 ]

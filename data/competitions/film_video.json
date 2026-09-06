@@ -39,5 +39,206 @@
     },
     "valid_till": "2027-08-01",
     "image": "/competitions/all-american-high-school-film-festival.png"
+  },
+  {
+    "id": "nffty",
+    "name": "National Film Festival for Talented Youth (NFFTY)",
+    "organizer": "NFFTY",
+    "organizer_url": "https://www.nffty.org/",
+    "category": "film_video",
+    "subjects": [
+      "film"
+    ],
+    "description": "The world's largest film festival for emerging filmmakers aged 24 and under, held each spring in Seattle, Washington. Filmmakers submit short films in narrative, documentary, animation, music video, experimental and episodic categories for screenings, workshops and jury awards.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 24,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 30,
+      "currency": "USD"
+    },
+    "prize": "Jury and audience awards across six categories, festival screening, and distribution and industry connections.",
+    "official_url": "https://www.nffty.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Early deadline",
+        "date": "2026-08-08",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.nffty.org/submit"
+      },
+      {
+        "label": "Final deadline",
+        "date": "2026-12-11",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.nffty.org/submit"
+      },
+      {
+        "label": "Festival in Seattle",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.nffty.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-02-01",
+    "image": "/competitions/nffty.png"
+  },
+  {
+    "id": "cineyouth",
+    "name": "CineYouth Festival",
+    "organizer": "Cinema/Chicago, Chicago International Film Festival",
+    "organizer_url": "https://www.chicagofilmfestival.com/cineyouth",
+    "category": "film_video",
+    "subjects": [
+      "film"
+    ],
+    "description": "The Chicago International Film Festival's annual festival celebrating filmmakers 22 and younger from around the world. Selected short films are screened in person in Chicago and streamed online, alongside workshops and live Q&As, with category winners showcased at the main festival.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 22,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "Category awards including the Rising Star Award; winning films screen at the Chicago International Film Festival.",
+    "official_url": "https://www.chicagofilmfestival.com/cineyouth",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open (estimated)",
+        "date": "2026-11-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.chicagofilmfestival.com/cineyouth"
+      },
+      {
+        "label": "Final deadline (estimated)",
+        "date": "2027-02-16",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.chicagofilmfestival.com/cineyouth"
+      },
+      {
+        "label": "Festival (estimated late April)",
+        "date": "2027-04-25",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.chicagofilmfestival.com/cineyouth"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-03-01",
+    "image": "/competitions/cineyouth.png"
+  },
+  {
+    "id": "directing-change-ca",
+    "name": "Directing Change Film Contest",
+    "organizer": "Youth Creating Change",
+    "organizer_url": "https://directingchangeca.org/",
+    "category": "film_video",
+    "subjects": [
+      "film"
+    ],
+    "description": "A California film contest where youth aged 12 to 25 create 30 or 60 second films about mental health, suicide prevention and related topics. Winning films are integrated into the state's prevention awareness campaign and may air on TV, online and in cinemas.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 25,
+    "participation": "individual_or_team",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes from USD 250 to USD 1,000 per category, plus statewide broadcast of winning films.",
+    "official_url": "https://directingchangeca.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://directingchangeca.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-04-15",
+    "image": "/competitions/directing-change-ca.png"
+  },
+  {
+    "id": "c-span-studentcam",
+    "name": "C-SPAN StudentCam",
+    "organizer": "C-SPAN",
+    "organizer_url": "https://www.studentcam.org/",
+    "category": "film_video",
+    "subjects": [
+      "film",
+      "civics"
+    ],
+    "description": "C-SPAN's annual national documentary competition for students in grades 6 to 12. Students create a 5 to 6 minute video documentary on the year's theme using C-SPAN footage, with 150 winning entries sharing USD 100,000 in cash prizes.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 100,000 in cash prizes including a USD 5,000 grand prize, across 150 winning entries.",
+    "official_url": "https://www.studentcam.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-01-20",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.studentcam.org/rules/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2027-03-17",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.studentcam.org/rules/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-04-01",
+    "image": "/competitions/c-span-studentcam.png"
   }
 ]

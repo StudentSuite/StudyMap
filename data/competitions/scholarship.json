@@ -43,5 +43,176 @@
     },
     "valid_till": "2027-03-01",
     "image": "/competitions/davidson-fellows-scholarship.png"
+  },
+  {
+    "id": "coca-cola-scholars",
+    "name": "Coca-Cola Scholars Program",
+    "organizer": "The Coca-Cola Scholars Foundation",
+    "organizer_url": "https://www.coca-colascholars.org/",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "leadership"
+    ],
+    "description": "A national scholarship for high school seniors who demonstrate academic excellence, leadership and community service. Scholars are selected through an online application and semifinalist and finalist review stages.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "A USD 20,000 college scholarship for 150 outstanding scholars each year.",
+    "official_url": "https://www.coca-colascholars.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application opens",
+        "date": "2026-08-03",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.coca-colascholars.org/"
+      },
+      {
+        "label": "Application deadline",
+        "date": "2026-09-30",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.coca-colascholars.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-11-01",
+    "image": "/competitions/coca-cola-scholars.png"
+  },
+  {
+    "id": "questbridge-national-college-match",
+    "name": "QuestBridge National College Match",
+    "organizer": "QuestBridge",
+    "organizer_url": "https://www.questbridge.org/",
+    "category": "scholarship",
+    "subjects": [
+      "academics"
+    ],
+    "description": "A college admissions and scholarship program that pairs high achieving, low income high school seniors with 55 partner colleges. Students rank up to 15 partner colleges and, if matched, receive a full four year scholarship covering tuition, housing and other expenses.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Full four year scholarship from a partner college, valued over USD 360,000.",
+    "official_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National College Match application deadline",
+        "date": "2026-10-01",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/apply/dates-and-deadlines"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-01",
+    "image": "/competitions/questbridge-national-college-match.png"
+  },
+  {
+    "id": "elks-mvs",
+    "name": "Elks National Foundation Most Valuable Student Scholarship",
+    "organizer": "Elks National Foundation",
+    "organizer_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "leadership"
+    ],
+    "description": "A national scholarship competition for graduating US high school seniors, judged on scholarship, leadership and financial need. The Elks National Foundation awards 500 four year scholarships, with male and female students competing in separate pools.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 1,000 to USD 7,500 per year for up to 500 four year scholarships.",
+    "official_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2026-11-12",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-12-15",
+    "image": "/competitions/elks-mvs.png"
+  },
+  {
+    "id": "gates-scholarship",
+    "name": "The Gates Scholarship",
+    "organizer": "The Gates Scholarship Foundation",
+    "organizer_url": "https://www.thegatesscholarship.org/",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "leadership"
+    ],
+    "description": "A highly selective, last dollar scholarship for outstanding minority high school seniors from low income households in the United States. It covers the full cost of attendance not already met by other financial aid and federal grants.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Full cost of attendance, last dollar scholarship for the 2027 cohort.",
+    "official_url": "https://www.thegatesscholarship.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline (estimated)",
+        "date": "2026-09-15",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://www.thegatesscholarship.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2026-10-15",
+    "image": "/competitions/gates-scholarship.png"
   }
 ]

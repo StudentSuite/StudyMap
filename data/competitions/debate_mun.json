@@ -164,5 +164,144 @@
     },
     "valid_till": "2027-06-01",
     "image": "/competitions/world-scholars-cup.png"
+  },
+  {
+    "id": "world-schools-debating-championship",
+    "name": "World Schools Debating Championships (WSDC)",
+    "organizer": "World Schools Debating Championships Council",
+    "organizer_url": "https://schoolsdebate.com/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "public speaking"
+    ],
+    "description": "The premier international debate championship for secondary school students, where national teams argue both sides of scaled motions in the World Schools format. Around 60 countries compete each year, debating topics from politics to science to philosophy.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "World champion title and team awards, plus top speaker awards.",
+    "official_url": "https://schoolsdebate.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "WSDC 2027 begins (Bulgaria, estimated)",
+        "date": "2027-07-27",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://schoolsdebate.com/"
+      },
+      {
+        "label": "WSDC 2027 concludes (estimated)",
+        "date": "2027-08-06",
+        "type": "results",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://schoolsdebate.com/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-09-01",
+    "image": "/competitions/world-schools-debating-championship.png"
+  },
+  {
+    "id": "widpsc",
+    "name": "World Individual Debating and Public Speaking Championships (WIDPSC)",
+    "organizer": "WIDPSC Host Committee",
+    "organizer_url": "https://widpsc2027.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "public speaking"
+    ],
+    "description": "The world's premier individual speech and debate championship for high school students, held since 1988. Competitors take part in parliamentary debate, interpretive reading, impromptu speaking and persuasive or after dinner speaking, with an overall world champion decided on combined results.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Medals and trophies in each event, and the overall world champion title.",
+    "official_url": "https://widpsc2027.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "WIDPSC 2027 begins in Shanghai",
+        "date": "2027-03-31",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://widpsc2027.org/"
+      },
+      {
+        "label": "Grand Finals and closing ceremony",
+        "date": "2027-04-06",
+        "type": "results",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://widpsc2027.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-06-01",
+    "image": "/competitions/widpsc.png"
+  },
+  {
+    "id": "european-youth-parliament",
+    "name": "European Youth Parliament (EYP)",
+    "organizer": "European Youth Parliament, Schwarzkopf Foundation Young Europe",
+    "organizer_url": "https://eyp.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "civics"
+    ],
+    "description": "A youth platform for debate and civic education that brings together young people aged 16 to 24 from 40 European countries. Delegates selected through national selection conferences debate pressing issues in committees and present shared resolutions at International Sessions.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 24,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Debate experience and a joint resolution adopted after committee work; no cash prize.",
+    "official_url": "https://eyp.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "106th International Session, Frankfurt am Main (estimated)",
+        "date": "2027-07-24",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://eyp.org/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-06"
+    },
+    "valid_till": "2027-11-01",
+    "image": "/competitions/european-youth-parliament.png"
   }
 ]
