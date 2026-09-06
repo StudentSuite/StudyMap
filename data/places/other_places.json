@@ -9,5 +9,16 @@
     "address": "Fort Campus, Fort, Mumbai 400032",
     "gmaps_link": "https://maps.google.com/?q=18.9279,72.8317",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "che-other_places-01",
+    "name": "Anna University (Guindy Campus, College of Engineering)",
+    "type": "other_places",
+    "city": "chennai",
+    "lat": 13.0136638,
+    "lng": 80.236502,
+    "address": "Sardar Patel Road, Guindy, Chennai 600025",
+    "gmaps_link": "https://maps.google.com/?q=13.0136638,80.236502",
+    "added_by": "yashkewlani"
   }
 ]

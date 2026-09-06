@@ -22,5 +22,53 @@
     "gmaps_link": "https://maps.google.com/?q=18.5384,73.8772",
     "added_by": "anaydhawan",
     "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "blr-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Bengaluru",
+    "type": "foreign_lang_exam_centre",
+    "city": "bangalore",
+    "lat": 12.9742008,
+    "lng": 77.5970447,
+    "address": "23, Prestige Takt, Kasturba Road, Bengaluru 560001",
+    "gmaps_link": "https://maps.google.com/?q=12.9742008,77.5970447",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "che-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Chennai",
+    "type": "foreign_lang_exam_centre",
+    "city": "chennai",
+    "lat": 13.0597354,
+    "lng": 80.2578777,
+    "address": "737 Anna Salai, Chennai 600002",
+    "gmaps_link": "https://maps.google.com/?q=13.0597354,80.2578777",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "kol-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Kolkata",
+    "type": "foreign_lang_exam_centre",
+    "city": "kolkata",
+    "lat": 22.5507515,
+    "lng": 88.3542505,
+    "address": "16 Camac Street, Kolkata 700017",
+    "gmaps_link": "https://maps.google.com/?q=22.5507515,88.3542505",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "ahm-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Ahmedabad",
+    "type": "foreign_lang_exam_centre",
+    "city": "ahmedabad",
+    "lat": 23.039716,
+    "lng": 72.529538,
+    "address": "Amrapali Lake View Tower, Opposite Vastrapur Lake, Vastrapur, Ahmedabad 380015",
+    "gmaps_link": "https://maps.google.com/?q=23.039716,72.529538",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

@@ -152,5 +152,148 @@
     "address": "Turbhe, Navi Mumbai 400705",
     "gmaps_link": "https://maps.google.com/?q=19.0760,73.0130",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "blr-gov_offices-01",
+    "name": "Passport Seva Kendra, Lalbagh Road",
+    "type": "gov_offices",
+    "city": "bangalore",
+    "lat": 12.9582751,
+    "lng": 77.5866433,
+    "address": "45, Lalbagh Road, Shanti Nagar, Bengaluru 560027",
+    "gmaps_link": "https://maps.google.com/?q=12.9582751,77.5866433",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "blr-gov_offices-02",
+    "name": "RTO Koramangala (Bangalore Central, KA-01)",
+    "type": "gov_offices",
+    "city": "bangalore",
+    "lat": 12.9308439,
+    "lng": 77.6226408,
+    "address": "BDA Complex, 3rd Block, Koramangala, Bengaluru 560034",
+    "gmaps_link": "https://maps.google.com/?q=12.9308439,77.6226408",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "blr-gov_offices-03",
+    "name": "Bangalore General Post Office",
+    "type": "gov_offices",
+    "city": "bangalore",
+    "lat": 12.9810065,
+    "lng": 77.5950443,
+    "address": "Raj Bhavan Road, Sampangirama Nagar, Bengaluru 560001",
+    "gmaps_link": "https://maps.google.com/?q=12.9810065,77.5950443",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "che-gov_offices-01",
+    "name": "Chennai General Post Office",
+    "type": "gov_offices",
+    "city": "chennai",
+    "lat": 13.0930674,
+    "lng": 80.2917553,
+    "address": "Rajaji Salai, Parry's Corner, Chennai 600001",
+    "gmaps_link": "https://maps.google.com/?q=13.0930674,80.2917553",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "che-gov_offices-02",
+    "name": "Passport Seva Kendra, Tambaram",
+    "type": "gov_offices",
+    "city": "chennai",
+    "lat": 12.9297073,
+    "lng": 80.1186637,
+    "address": "Claret Complex, 17/19 Duraisamy Reddy Street, Tambaram, Chennai 600059",
+    "gmaps_link": "https://maps.google.com/?q=12.9297073,80.1186637",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "hyd-gov_offices-01",
+    "name": "Hyderabad General Post Office",
+    "type": "gov_offices",
+    "city": "hyderabad",
+    "lat": 17.3879598,
+    "lng": 78.4764816,
+    "address": "Abids Road, Troop Bazaar, Hyderabad 500001",
+    "gmaps_link": "https://maps.google.com/?q=17.3879598,78.4764816",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "hyd-gov_offices-02",
+    "name": "Regional Passport Office, Hyderabad",
+    "type": "gov_offices",
+    "city": "hyderabad",
+    "lat": 17.4392959,
+    "lng": 78.4969759,
+    "address": "73, Red Cross Road, Shivaji Nagar, Secunderabad 500003",
+    "gmaps_link": "https://maps.google.com/?q=17.4392959,78.4969759",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kol-gov_offices-01",
+    "name": "Kolkata General Post Office",
+    "type": "gov_offices",
+    "city": "kolkata",
+    "lat": 22.5729578,
+    "lng": 88.3477532,
+    "address": "Netaji Subhas Road, BBD Bagh, Kolkata 700001",
+    "gmaps_link": "https://maps.google.com/?q=22.5729578,88.3477532",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kol-gov_offices-02",
+    "name": "RTO Kolkata (Beltala PVD, WB-01)",
+    "type": "gov_offices",
+    "city": "kolkata",
+    "lat": 22.529757,
+    "lng": 88.353685,
+    "address": "38, Beltala Road, Hazra, Kolkata 700020",
+    "gmaps_link": "https://maps.google.com/?q=22.529757,88.353685",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kol-gov_offices-03",
+    "name": "Passport Seva Kendra, Kolkata (Brabourne Road)",
+    "type": "gov_offices",
+    "city": "kolkata",
+    "lat": 22.5753491,
+    "lng": 88.3515836,
+    "address": "4 Brabourne Road, BBD Bagh, Kolkata 700001",
+    "gmaps_link": "https://maps.google.com/?q=22.5753491,88.3515836",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ahm-gov_offices-01",
+    "name": "Ahmedabad General Post Office",
+    "type": "gov_offices",
+    "city": "ahmedabad",
+    "lat": 23.0281,
+    "lng": 72.5902,
+    "address": "Salapas Road, Behind Relief Cinema, Ahmedabad 380001",
+    "gmaps_link": "https://maps.google.com/?q=23.0281,72.5902",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ahm-gov_offices-02",
+    "name": "RTO Subhash Bridge, Ahmedabad (GJ-01)",
+    "type": "gov_offices",
+    "city": "ahmedabad",
+    "lat": 23.0664532,
+    "lng": 72.5838669,
+    "address": "Near Subhash Bridge Circle, Shahibagh, Ahmedabad 380027",
+    "gmaps_link": "https://maps.google.com/?q=23.0664532,72.5838669",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ahm-gov_offices-03",
+    "name": "Passport Seva Kendra, Navrangpura",
+    "type": "gov_offices",
+    "city": "ahmedabad",
+    "lat": 23.0297208,
+    "lng": 72.5623337,
+    "address": "Aarya Arcade, Netaji Subhash Chandra Road, Navrangpura, Ahmedabad 380009",
+    "gmaps_link": "https://maps.google.com/?q=23.0297208,72.5623337",
+    "added_by": "yashkewlani"
   }
 ]

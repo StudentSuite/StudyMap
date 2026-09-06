@@ -294,5 +294,82 @@
   "address": "Adolf-Grimme-Ring 10, 14532 Kleinmachnow, Deutschland",
   "gmaps_link": "https://maps.google.com/?cid=ChIJR_4_wFlZqEcRH3brQxCh_nc",
   "added_by": "Yojeet(Circout-sudo)"
+},
+{
+  "id": "blr-library-01",
+  "name": "State Central Library, Cubbon Park",
+  "type": "library",
+  "city": "bangalore",
+  "lat": 12.974347,
+  "lng": 77.5905857,
+  "address": "Cubbon Park Road, Sampangi Rama Nagar, Bengaluru 560001",
+  "gmaps_link": "https://maps.google.com/?q=12.974347,77.5905857",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "che-library-01",
+  "name": "Connemara Public Library",
+  "type": "library",
+  "city": "chennai",
+  "lat": 13.070309,
+  "lng": 80.256851,
+  "address": "Museum Compound, Pantheon Road, Egmore, Chennai 600008",
+  "gmaps_link": "https://maps.google.com/?q=13.070309,80.256851",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "che-library-02",
+  "name": "Anna Centenary Library",
+  "type": "library",
+  "city": "chennai",
+  "lat": 13.0170261,
+  "lng": 80.2397834,
+  "address": "Gandhi Mandapam Road, Kotturpuram, Chennai 600085",
+  "gmaps_link": "https://maps.google.com/?q=13.0170261,80.2397834",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "hyd-library-01",
+  "name": "State Central Library, Afzalgunj",
+  "type": "library",
+  "city": "hyderabad",
+  "lat": 17.3742,
+  "lng": 78.4783,
+  "address": "Afzal Gunj, Hyderabad 500012",
+  "gmaps_link": "https://maps.google.com/?q=17.3742,78.4783",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "hyd-library-02",
+  "name": "Osmania University Library (Dr. B.R. Ambedkar Memorial Library)",
+  "type": "library",
+  "city": "hyderabad",
+  "lat": 17.4113238,
+  "lng": 78.5274316,
+  "address": "Osmania University Campus, Hyderabad 500007",
+  "gmaps_link": "https://maps.google.com/?q=17.4113238,78.5274316",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "kol-library-01",
+  "name": "National Library of India",
+  "type": "library",
+  "city": "kolkata",
+  "lat": 22.5325566,
+  "lng": 88.3334829,
+  "address": "Belvedere Road, Alipore, Kolkata 700027",
+  "gmaps_link": "https://maps.google.com/?q=22.5325566,88.3334829",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ahm-library-01",
+  "name": "Hazrat Pir Mohammad Shah Library",
+  "type": "library",
+  "city": "ahmedabad",
+  "lat": 23.0263,
+  "lng": 72.5865,
+  "address": "Pir Mohammad Shah Road, Kalupur, Ahmedabad 380001",
+  "gmaps_link": "https://maps.google.com/?q=23.0263,72.5865",
+  "added_by": "yashkewlani"
 }
 ]
