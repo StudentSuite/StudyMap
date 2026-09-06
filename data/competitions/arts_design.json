@@ -335,53 +335,5 @@
       "on": "2026-09-06"
     },
     "valid_till": "2027-05-01"
-  },
-  {
-    "id": "vans-custom-culture",
-    "name": "Vans Custom Culture",
-    "organizer": "Vans",
-    "organizer_url": "https://www.vans.com/",
-    "category": "arts_design",
-    "subjects": [
-      "visual art",
-      "design"
-    ],
-    "description": "A national high school art contest in which registered art classes customize blank canvas Vans shoes around a set of yearly themes. Public voting and internal judging narrow entries to a small group of finalists, and the winning school's art program receives a cash donation.",
-    "format": "hybrid",
-    "age_min": 14,
-    "age_max": 18,
-    "participation": "team",
-    "region": "US",
-    "fee": {
-      "amount": 0,
-      "currency": "USD"
-    },
-    "prize": "USD 50,000 donation to the winning school's art program.",
-    "official_url": "https://www.vans.com/custom-culture",
-    "cycle_year": 2027,
-    "dates": [
-      {
-        "label": "2026 winner announced",
-        "date": "2026-04-01",
-        "type": "results",
-        "timezone": "UTC-7",
-        "estimated": true,
-        "source_url": "https://www.prnewswire.com/news-releases/vans-celebrates-grand-prize-winner-and-runner-up-finalists-in-high-school-custom-culture-competition-301552999.html"
-      },
-      {
-        "label": "2027 registration opens (following the usual January pattern)",
-        "date": "2027-01-15",
-        "type": "registration_open",
-        "timezone": "UTC-8",
-        "estimated": true,
-        "source_url": "https://www.vans.com/custom-culture"
-      }
-    ],
-    "added_by": "yashkewlani",
-    "verified": {
-      "by": "yashkewlani",
-      "on": "2026-09-06"
-    },
-    "valid_till": "2026-12-15"
   }
 ]
