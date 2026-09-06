@@ -56,9 +56,16 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>(() => {
     if (typeof window === "undefined") return { types: [], city: null, query: "" };
     const state = parseMapState(window.location.search);
-    return { types: state.types, city: state.city, query: "" };
+    // "q" is a plain search-term param (distinct from the filter state
+    // mirrored via replaceState below): it's how the nav search's "see all
+    // places" link and any other direct link hand off a free-text query.
+    const q = new URLSearchParams(window.location.search).get("q") ?? "";
+    return { types: state.types, city: state.city, query: q };
   });
-  const [debouncedQuery, setDebouncedQuery] = React.useState("");
+  const [debouncedQuery, setDebouncedQuery] = React.useState(() => {
+    if (typeof window === "undefined") return "";
+    return new URLSearchParams(window.location.search).get("q") ?? "";
+  });
   const [focusId, setFocusId] = React.useState<string | null>(() => {
     if (typeof window === "undefined") return null;
     const id = parseMapState(window.location.search).placeId ?? null;

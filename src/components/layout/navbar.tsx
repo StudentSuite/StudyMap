@@ -1,9 +1,10 @@
 "use client";
 
 import * as React from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Menu, LogOut, LogIn, Search, UserRound, X } from "lucide-react";
+import { ChevronDown, Menu, LogOut, LogIn, Search, UserRound } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { navLinks, primaryNavLinks, secondaryNavLinks, site } from "@/lib/site";
@@ -19,16 +20,54 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { createClient } from "@/lib/supabase/client";
 import { isSupabaseConfigured } from "@/lib/supabase/config";
 
+// Lazily loaded: it pulls in the full places and competitions datasets to
+// search over, which don't belong in every page's initial JS bundle — only
+// fetched the first time someone actually opens search (see site-search.tsx).
+const SiteSearchDialog = dynamic(
+  () => import("@/components/layout/site-search").then((m) => m.SiteSearchDialog),
+  { ssr: false },
+);
+
 export function Navbar() {
   const pathname = usePathname();
   const router = useRouter();
   const [open, setOpen] = React.useState(false);
   const [loggedIn, setLoggedIn] = React.useState(false);
-  const [searchOpen, setSearchOpen] = React.useState(false);
-  const [searchQuery, setSearchQuery] = React.useState("");
-  const searchInputRef = React.useRef<HTMLInputElement>(null);
+  const [searchDialogOpen, setSearchDialogOpen] = React.useState(false);
+  // Separate from searchDialogOpen so the lazy SiteSearchDialog chunk (and
+  // the place/competition datasets it pulls in) is fetched once, the first
+  // time search opens, but stays mounted afterwards so later opens/closes
+  // keep their enter/exit animation instead of hard-cutting on unmount.
+  const [searchLoaded, setSearchLoaded] = React.useState(false);
 
   const authEnabled = isSupabaseConfigured();
+
+  function openSearch() {
+    setSearchLoaded(true);
+    setSearchDialogOpen(true);
+  }
+
+  // Global shortcuts: Cmd/Ctrl+K or "/" opens site search, from anywhere
+  // except while already typing in a text field.
+  React.useEffect(() => {
+    function onKeyDown(e: KeyboardEvent) {
+      const isMeta = (e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k";
+      const isSlash = e.key === "/" && !e.metaKey && !e.ctrlKey && !e.altKey;
+      if (!isMeta && !isSlash) return;
+
+      const target = e.target as HTMLElement | null;
+      const tag = target?.tagName;
+      const isTyping =
+        tag === "INPUT" || tag === "TEXTAREA" || target?.isContentEditable;
+      if (isSlash && isTyping) return;
+
+      e.preventDefault();
+      setOpen(false);
+      openSearch();
+    }
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
 
   React.useEffect(() => {
     const supabase = createClient();
@@ -49,20 +88,6 @@ export function Navbar() {
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
-
-  function handleSearch(e: React.FormEvent) {
-    e.preventDefault();
-    const q = searchQuery.trim();
-    if (!q) return;
-    router.push(`/map?q=${encodeURIComponent(q)}`);
-    setSearchOpen(false);
-    setSearchQuery("");
-  }
-
-  function openSearch() {
-    setSearchOpen(true);
-    requestAnimationFrame(() => searchInputRef.current?.focus());
-  }
 
   return (
     <header className="fixed top-0 inset-x-0 z-[1100] w-full border-b bg-background/95 backdrop-blur-sm supports-[backdrop-filter]:bg-background/80">
@@ -119,43 +144,15 @@ export function Navbar() {
 
         {/* Desktop search + actions */}
         <div className="ml-auto flex items-center gap-1">
-          {/* Expandable search */}
-          {searchOpen ? (
-            <form onSubmit={handleSearch} className="hidden items-center gap-1 md:flex">
-              <div className="relative">
-                <Search className="pointer-events-none absolute left-2 top-1/2 size-3.5 -translate-y-1/2 text-muted-foreground" />
-                <input
-                  ref={searchInputRef}
-                  type="search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  onBlur={() => { if (!searchQuery.trim()) setSearchOpen(false); }}
-                  placeholder="Search places..."
-                  className="h-8 w-48 rounded-md border border-input bg-background pl-7 pr-2 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
-                />
-              </div>
-              <Button
-                type="button"
-                variant="ghost"
-                size="icon"
-                className="size-8"
-                onClick={() => { setSearchOpen(false); setSearchQuery(""); }}
-                aria-label="Close search"
-              >
-                <X className="size-3.5" />
-              </Button>
-            </form>
-          ) : (
-            <Button
-              variant="ghost"
-              size="icon"
-              className="hidden md:inline-flex"
-              onClick={openSearch}
-              aria-label="Search"
-            >
-              <Search className="size-4" />
-            </Button>
-          )}
+          {/* Site search: opens the command-palette-style search dialog (issue #222). */}
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={openSearch}
+            aria-label="Search (Cmd/Ctrl+K)"
+          >
+            <Search className="size-4" />
+          </Button>
 
           <ThemeToggle />
           {authEnabled &&
@@ -207,23 +204,6 @@ export function Navbar() {
               <SheetTitle className="px-5 pt-6 font-heading text-lg font-semibold">
                 {site.name}
               </SheetTitle>
-
-              {/* Mobile search */}
-              <form
-                onSubmit={(e) => { e.preventDefault(); const q = searchQuery.trim(); if (q) { router.push(`/map?q=${encodeURIComponent(q)}`); setOpen(false); setSearchQuery(""); } }}
-                className="mx-3 mt-4"
-              >
-                <div className="relative">
-                  <Search className="pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-                  <input
-                    type="search"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search places..."
-                    className="h-10 w-full rounded-md border border-input bg-background pl-8 pr-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
-                  />
-                </div>
-              </form>
 
               <nav className="mt-4 flex flex-col gap-1 px-3">
                 {navLinks.map((link) => (
@@ -278,6 +258,10 @@ export function Navbar() {
           </Sheet>
         </div>
       </div>
+
+      {searchLoaded && (
+        <SiteSearchDialog open={searchDialogOpen} onOpenChange={setSearchDialogOpen} />
+      )}
     </header>
   );
 }
