@@ -85,7 +85,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [snap, setSnap] = React.useState<number | string | null>(
     SHEET_SNAP_POINTS[0],
   );
-  const [sheetOpen, setSheetOpen] = React.useState(false);
+  // Sheet always open on mobile at peek snap; "closing" resets to peek, not hidden.
+  const [sheetOpen, setSheetOpen] = React.useState(true);
   const hydrated = React.useRef(false);
 
   const [user, setUser] = React.useState<User | null>(null);
@@ -291,6 +292,22 @@ export function PlacesMap({ places }: PlacesMapProps) {
     setSavedPlaces((prev) => prev.filter((p) => p.id !== id));
   }
 
+  function handleSelectSavedPlace(place: UserPlaceRow) {
+    setFocusId(place.id);
+    setSnap(SHEET_SNAP_POINTS[0]); // collapse to peek
+  }
+
+  async function handleDeleteSavedPlace(id: string) {
+    try {
+      const { deleteUserPlace } = await import("@/lib/user-places");
+      await deleteUserPlace(id);
+      handlePlaceDeleted(id);
+      toast.success("Place deleted");
+    } catch {
+      toast.error("Couldn't delete this place. Try again.");
+    }
+  }
+
   function handleHomeSaved(saved: UserHome) {
     setHome(saved);
   }
@@ -304,13 +321,13 @@ export function PlacesMap({ places }: PlacesMapProps) {
   }
 
   function openSheet() {
-    setSnap(SHEET_SNAP_POINTS[0]);
+    setSnap(SHEET_SNAP_POINTS[1]); // half height
     setSheetOpen(true);
   }
 
   function selectPlace(place: Place) {
     setFocusId(place.id);
-    setSheetOpen(false); // collapse the mobile sheet so the pin is visible
+    setSnap(SHEET_SNAP_POINTS[0]); // collapse to peek so pin is visible
   }
 
   const panelProps = {
@@ -340,6 +357,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
           home,
           onAddPlace: openAddPlace,
           onEditPlace: openEditPlace,
+          onSelectPlace: handleSelectSavedPlace,
+          onDeletePlace: handleDeleteSavedPlace,
           onLocateHome: locateHome,
           onEditHome: () => setHomeDialogOpen(true),
         }
@@ -393,41 +412,53 @@ export function PlacesMap({ places }: PlacesMapProps) {
           </Button>
         </div>
 
-        {/* Mobile near-me FAB, lifted above the peek bar */}
+        {/* Mobile near-me FAB, above peek sheet */}
         <NearMeFab
           onLocated={onLocated}
-          className="absolute bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
+          className="absolute bottom-[calc(12vh+1rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
         />
 
-        {/* Mobile peek bar: always-visible results summary; tap to open sheet */}
-        <button
-          type="button"
-          onClick={openSheet}
-          aria-label="Open places and filters"
-          className="absolute inset-x-0 bottom-0 z-[1000] flex min-h-14 items-center justify-between border-t border-border bg-card px-4 py-3 text-left shadow-[0_-4px_16px_-8px_rgba(0,0,0,0.3)] lg:hidden"
-        >
-          <span className="text-sm font-semibold text-foreground">
-            {visible.length} {visible.length === 1 ? "place" : "places"} shown
-          </span>
-          <span className="flex items-center gap-1 text-sm text-muted-foreground">
-            {userLocation ? "Nearest" : "Browse"}
-            <ChevronUp className="size-5" />
-          </span>
-        </button>
-
-        {/* Mobile bottom sheet */}
+        {/* Mobile bottom sheet: always visible at peek, draggable to half/full */}
         <MapSheet
           open={sheetOpen}
-          onOpenChange={setSheetOpen}
+          onOpenChange={(open) => {
+            if (!open) {
+              // Reset to peek instead of fully hiding
+              setSnap(SHEET_SNAP_POINTS[0]);
+              setSheetOpen(true);
+            } else {
+              setSheetOpen(true);
+            }
+          }}
           snap={snap}
           onSnapChange={setSnap}
         >
-          <MapPanel
-            {...panelProps}
-            showSearch={false}
-            showNearMe={false}
-            scrollChips
-          />
+          {/* Peek summary: visible when sheet at peek height */}
+          {snap === SHEET_SNAP_POINTS[0] && (
+            <button
+              type="button"
+              onClick={openSheet}
+              className="flex w-full min-h-11 items-center justify-between text-left"
+              aria-label="Expand places and filters"
+            >
+              <span className="text-sm font-semibold text-foreground">
+                {visible.length} {visible.length === 1 ? "place" : "places"} shown
+              </span>
+              <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                {userLocation ? "Nearest" : "Browse"}
+                <ChevronUp className="size-5" />
+              </span>
+            </button>
+          )}
+          {/* Full panel: visible when sheet above peek */}
+          {snap !== SHEET_SNAP_POINTS[0] && (
+            <MapPanel
+              {...panelProps}
+              showSearch={false}
+              showNearMe={false}
+              scrollChips
+            />
+          )}
         </MapSheet>
       </div>
 

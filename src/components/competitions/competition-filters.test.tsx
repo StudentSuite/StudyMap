@@ -34,7 +34,7 @@ describe("CompetitionFiltersPanel", () => {
       />,
     );
 
-    expect(screen.getByRole("button", { name: /Filters/ }).textContent).toContain("(2)");
+    expect(screen.getByRole("button", { name: /Filters/ }).textContent).toContain("2");
   });
 
   it("toggles a pill on and off via onChange", () => {

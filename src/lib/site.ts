@@ -9,7 +9,22 @@ export const site = {
 
 export const navLinks = [
   { href: "/map", label: "Map" },
+  { href: "/competitions", label: "Competitions" },
   { href: "/calendar", label: "Calendar" },
+  { href: "/docs", label: "Docs" },
+  { href: "/about", label: "About" },
+  { href: "/contribute", label: "Contribute" },
+] as const;
+
+/** Links shown directly in the navbar (desktop). */
+export const primaryNavLinks = [
+  { href: "/map", label: "Map" },
+  { href: "/competitions", label: "Competitions" },
+  { href: "/calendar", label: "Calendar" },
+] as const;
+
+/** Links grouped under the "More" dropdown (desktop). */
+export const secondaryNavLinks = [
   { href: "/docs", label: "Docs" },
   { href: "/about", label: "About" },
   { href: "/contribute", label: "Contribute" },

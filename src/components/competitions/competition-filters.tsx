@@ -86,15 +86,20 @@ export function CompetitionFiltersPanel({
   }
 
   return (
-    <CollapsiblePrimitive.Root className="rounded-xl border border-border">
+    <CollapsiblePrimitive.Root className="rounded-xl border border-border bg-card/50">
       <CollapsiblePrimitive.Trigger asChild>
         <button
           type="button"
-          className="flex w-full items-center justify-between gap-2 px-4 py-2.5 text-sm font-medium text-foreground"
+          className="flex w-full items-center justify-between gap-2 px-4 py-3 text-sm font-medium text-foreground hover:bg-muted/30 transition-colors rounded-xl"
         >
           <span className="flex items-center gap-2">
-            <SlidersHorizontal className="size-4" aria-hidden="true" />
-            Filters{count > 0 && ` (${count})`}
+            <SlidersHorizontal className="size-4 text-muted-foreground" aria-hidden="true" />
+            <span>Filters</span>
+            {count > 0 && (
+              <span className="inline-flex size-5 items-center justify-center rounded-full bg-primary text-[11px] font-semibold text-primary-foreground">
+                {count}
+              </span>
+            )}
           </span>
           <ChevronDown
             className="size-4 text-muted-foreground transition-transform group-data-[state=open]:rotate-180"
@@ -105,7 +110,7 @@ export function CompetitionFiltersPanel({
 
       <CollapsiblePrimitive.Content className="space-y-4 border-t border-border px-4 py-4">
         <div>
-          <p className="mb-1.5 text-xs font-medium text-muted-foreground">Format</p>
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60">Format</p>
           <div
             className="flex flex-wrap gap-2"
             role="group"
@@ -124,7 +129,7 @@ export function CompetitionFiltersPanel({
         </div>
 
         <div>
-          <p className="mb-1.5 text-xs font-medium text-muted-foreground">
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60">
             Participation
           </p>
           <div
@@ -148,7 +153,7 @@ export function CompetitionFiltersPanel({
 
         {regions.length > 0 && (
           <div>
-            <p className="mb-1.5 text-xs font-medium text-muted-foreground">Region</p>
+            <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60">Region</p>
             <div
               className="flex flex-wrap gap-2"
               role="group"
@@ -168,7 +173,7 @@ export function CompetitionFiltersPanel({
         )}
 
         <div>
-          <p className="mb-1.5 text-xs font-medium text-muted-foreground">Fee</p>
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60">Fee</p>
           <div className="flex flex-wrap gap-2" role="group" aria-label="Filter by fee">
             <Pill
               pressed={filters.freeOnly}
@@ -180,7 +185,7 @@ export function CompetitionFiltersPanel({
         </div>
 
         <div>
-          <p className="mb-1.5 text-xs font-medium text-muted-foreground">
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60">
             Deadline window
           </p>
           <div
@@ -203,7 +208,7 @@ export function CompetitionFiltersPanel({
         <div className="max-w-[10rem]">
           <Label
             htmlFor="competition-age-filter"
-            className="mb-1.5 text-xs font-medium text-muted-foreground"
+            className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-foreground/60"
           >
             Age
           </Label>

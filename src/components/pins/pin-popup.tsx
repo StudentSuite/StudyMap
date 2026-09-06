@@ -1,6 +1,6 @@
 "use client";
 
-import { Link2, Navigation } from "lucide-react";
+import { ExternalLink, Link2, Navigation } from "lucide-react";
 import { toast } from "sonner";
 
 import type { Place } from "@/lib/types";
@@ -81,13 +81,22 @@ export function PinPopup({ place }: PinPopupProps) {
       {/* Actions */}
       <div className="flex items-center gap-2">
         <a
-          href={directionsUrl(place.lat, place.lng)}
+          href={place.gmaps_link || directionsUrl(place.lat, place.lng)}
           target="_blank"
           rel="noreferrer"
           className="popup-cta flex-1 inline-flex items-center justify-center gap-1.5 rounded-md px-3 py-2 text-xs font-medium text-white transition-colors"
         >
+          <ExternalLink className="size-3.5" />
+          Google Maps
+        </a>
+        <a
+          href={directionsUrl(place.lat, place.lng)}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={`Directions to ${place.name}`}
+          className="inline-flex items-center justify-center rounded-md border border-input bg-background px-2.5 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:bg-muted/80"
+        >
           <Navigation className="size-3.5" />
-          Directions
         </a>
         <button
           type="button"
@@ -96,7 +105,6 @@ export function PinPopup({ place }: PinPopupProps) {
           className="inline-flex items-center justify-center rounded-md border border-input bg-background px-2.5 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:bg-muted/80"
         >
           <Link2 className="size-3.5" />
-          <span className="ml-1 hidden sm:inline">Share</span>
         </button>
       </div>
 

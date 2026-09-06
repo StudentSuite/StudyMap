@@ -195,29 +195,31 @@ export function CompetitionsBrowser({
   const activeDescriptions = describeActiveFilters(filters);
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
+      {/* Search + count + view toggle */}
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="relative w-full sm:max-w-xs">
+        <div className="relative w-full sm:max-w-sm">
           <Search
-            className="pointer-events-none absolute top-1/2 left-2.5 size-4 -translate-y-1/2 text-muted-foreground"
+            className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground"
             aria-hidden="true"
           />
           <Input
             value={filters.query}
             onChange={(event) => updateFilters({ ...filters, query: event.target.value })}
             placeholder="Search competitions..."
-            className="h-9 pl-8"
+            className="h-10 pl-9 text-sm"
             aria-label="Search competitions"
           />
         </div>
         <div className="flex items-center gap-3">
-          <p className="text-sm text-muted-foreground">
-            {sorted.length} of {competitions.length} competitions
+          <p className="text-sm font-medium tabular-nums text-muted-foreground">
+            <span className="text-foreground">{sorted.length}</span> of {competitions.length}
           </p>
           <ViewToggle value={viewMode} onChange={setViewMode} className="ml-auto sm:ml-0" />
         </div>
       </div>
 
+      {/* Category chips: scrollable on mobile, wrap on desktop */}
       <div
         className="-mx-4 flex gap-2 overflow-x-auto px-4 pb-1 sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0"
         role="group"
@@ -232,10 +234,10 @@ export function CompetitionsBrowser({
               onClick={() => toggleCategory(category)}
               aria-pressed={pressed}
               className={cn(
-                "shrink-0 rounded-full border px-3 py-1 text-xs font-medium whitespace-nowrap transition-colors",
+                "shrink-0 rounded-full border px-3 py-1.5 text-xs font-medium whitespace-nowrap transition-all",
                 pressed
-                  ? "border-primary bg-primary/10 text-primary"
-                  : "border-border text-muted-foreground hover:border-primary/50 hover:text-foreground",
+                  ? "border-primary bg-primary/15 text-primary shadow-sm"
+                  : "border-border text-muted-foreground hover:border-foreground/20 hover:bg-muted/50 hover:text-foreground",
               )}
             >
               {COMPETITION_CATEGORY_LABELS[category]}
@@ -273,8 +275,8 @@ export function CompetitionsBrowser({
         <div
           className={
             viewMode === "grid"
-              ? "grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
-              : "flex flex-col gap-3"
+              ? "grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+              : "flex flex-col gap-4"
           }
         >
           {sorted.map((competition) => (

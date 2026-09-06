@@ -20,7 +20,10 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import { humanizeCity, PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import { getCities, getPlaces } from "@/lib/places";
+
+const datasetCities = getCities(getPlaces());
 import { isMissingTableError } from "@/lib/utils";
 import {
   createUserPlace,
@@ -206,7 +209,13 @@ export function UserPlaceDialog({
               onChange={(e) => setCity(e.target.value)}
               placeholder="Mumbai"
               maxLength={60}
+              list="user-place-city-options"
             />
+            <datalist id="user-place-city-options">
+              {datasetCities.map((c) => (
+                <option key={c} value={humanizeCity(c)} />
+              ))}
+            </datalist>
           </div>
 
           <div className="grid grid-cols-2 gap-3">

@@ -35,6 +35,8 @@ export interface MyPlacesProps {
   home: UserHome | null;
   onAddPlace: () => void;
   onEditPlace: (place: UserPlaceRow) => void;
+  onSelectPlace?: (place: UserPlaceRow) => void;
+  onDeletePlace?: (id: string) => void;
   onLocateHome: () => void;
   onEditHome: () => void;
 }

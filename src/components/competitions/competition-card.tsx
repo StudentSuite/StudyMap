@@ -1,10 +1,10 @@
 import Link from "next/link";
+import { Calendar, Clock, ExternalLink, MapPin, Users } from "lucide-react";
 
 import { DeadlineCountdown } from "@/components/competitions/deadline-countdown";
 import { SaveButton } from "@/components/competitions/save-button";
 import type { ViewMode } from "@/components/competitions/view-toggle";
 import { Badge } from "@/components/ui/badge";
-import { Card } from "@/components/ui/card";
 import {
   COMPETITION_CATEGORY_LABELS,
   COMPETITION_FORMAT_LABELS,
@@ -16,30 +16,12 @@ import { cn } from "@/lib/utils";
 
 interface CompetitionCardProps {
   competition: Competition;
-  /** Reference time, threaded down from the server so the deadline countdown hydrates safely. */
   now: Date;
-  /**
-   * Starting save state/count, when the caller already bulk-fetched them for
-   * many cards at once (see competitions-browser.tsx). Omit to let the save
-   * button fetch its own.
-   */
   initialSaved?: boolean;
   initialCount?: number;
-  /**
-   * "list" (default): full width, description clamped to 3 lines, countdown
-   * on the right. "grid": narrower cards in a row, description clamped to 2
-   * lines, countdown under the title, footer pinned to the bottom so cards
-   * in the same row stay equal height regardless of description length.
-   */
   variant?: ViewMode;
 }
 
-/**
- * A single competition: name, organizer, category chip, status/countdown, a
- * clamped description, and four scannable meta pills. One component for
- * both the list and grid layouts (a `variant` prop), not two that drift
- * apart - see #202.
- */
 export function CompetitionCard({
   competition,
   now,
@@ -48,65 +30,84 @@ export function CompetitionCard({
   variant = "list",
 }: CompetitionCardProps) {
   const isGrid = variant === "grid";
-
-  const description = (
-    <p className={cn("text-sm text-foreground/80", isGrid ? "line-clamp-2" : "line-clamp-3")}>
-      {competition.description}
-    </p>
-  );
+  const isFree = competition.fee.amount === 0;
 
   return (
-    <Card className={cn("gap-3 px-4", isGrid && "h-full")}>
-      <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <h3 className="truncate font-heading text-base font-semibold text-foreground">
+    <article
+      className={cn(
+        "group relative flex flex-col rounded-xl border border-border bg-card transition-all duration-200 hover:border-primary/30 hover:shadow-[0_4px_20px_-6px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_4px_20px_-6px_rgba(245,158,11,0.08)]",
+        isGrid ? "h-full p-4" : "p-4 sm:p-5",
+      )}
+    >
+      {/* Header: name, organizer, category */}
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0 flex-1">
+          <h3 className="font-heading text-base font-semibold leading-snug text-foreground">
             {competition.name}
           </h3>
-          <p className="truncate text-sm text-muted-foreground">{competition.organizer}</p>
+          <p className="mt-0.5 truncate text-sm text-muted-foreground">
+            {competition.organizer}
+          </p>
         </div>
-        <Badge variant="secondary" className="shrink-0">
+        <Badge
+          variant="secondary"
+          className="shrink-0 border border-border bg-secondary text-secondary-foreground"
+        >
           {COMPETITION_CATEGORY_LABELS[competition.category]}
         </Badge>
       </div>
 
-      {isGrid ? (
-        <>
-          <DeadlineCountdown competition={competition} now={now} />
-          {description}
-        </>
-      ) : (
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-          {description}
-          <DeadlineCountdown
-            competition={competition}
-            now={now}
-            className="shrink-0 sm:text-right"
-          />
-        </div>
-      )}
+      {/* Deadline countdown: prominent placement */}
+      <div className="mt-3 rounded-lg border border-border/60 bg-muted/40 px-3 py-2.5">
+        <DeadlineCountdown
+          competition={competition}
+          now={now}
+          className={cn(!isGrid && "sm:flex sm:items-baseline sm:justify-between sm:gap-4")}
+        />
+      </div>
 
-      <dl className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted-foreground">
-        <div className="flex items-center gap-1">
-          <dt className="font-medium text-foreground/70">Format</dt>
-          <dd>{COMPETITION_FORMAT_LABELS[competition.format]}</dd>
-        </div>
-        <div className="flex items-center gap-1">
-          <dt className="font-medium text-foreground/70">Age</dt>
-          <dd>
-            {competition.age_min}-{competition.age_max}
-          </dd>
-        </div>
-        <div className="flex items-center gap-1">
-          <dt className="font-medium text-foreground/70">Participation</dt>
-          <dd>{COMPETITION_PARTICIPATION_LABELS[competition.participation]}</dd>
-        </div>
-        <div className="flex items-center gap-1">
-          <dt className="font-medium text-foreground/70">Location</dt>
-          <dd>{humanizeRegion(competition.region)}</dd>
-        </div>
-      </dl>
+      {/* Description */}
+      <p
+        className={cn(
+          "mt-3 text-sm leading-relaxed text-foreground/80",
+          isGrid ? "line-clamp-2" : "line-clamp-3",
+        )}
+      >
+        {competition.description}
+      </p>
 
-      <div className={cn("flex items-center justify-between pt-1", isGrid && "mt-auto")}>
+      {/* Meta pills: structured, high-contrast */}
+      <div className="mt-3 flex flex-wrap gap-2">
+        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+          <Clock className="size-3" aria-hidden />
+          {COMPETITION_FORMAT_LABELS[competition.format]}
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+          <Calendar className="size-3" aria-hidden />
+          Age {competition.age_min}-{competition.age_max}
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+          <Users className="size-3" aria-hidden />
+          {COMPETITION_PARTICIPATION_LABELS[competition.participation]}
+        </span>
+        <span className="inline-flex items-center gap-1 rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+          <MapPin className="size-3" aria-hidden />
+          {humanizeRegion(competition.region)}
+        </span>
+        {isFree && (
+          <span className="inline-flex items-center rounded-md border border-success-border bg-success-bg px-2 py-1 text-xs font-medium text-success">
+            Free
+          </span>
+        )}
+        {!isFree && (
+          <span className="inline-flex items-center rounded-md border border-border/80 bg-muted/50 px-2 py-1 text-xs text-foreground/70">
+            {competition.fee.currency} {competition.fee.amount}
+          </span>
+        )}
+      </div>
+
+      {/* Footer: save + details */}
+      <div className={cn("mt-4 flex items-center justify-between border-t border-border/60 pt-3", isGrid && "mt-auto")}>
         <SaveButton
           competitionId={competition.id}
           initialSaved={initialSaved}
@@ -114,11 +115,12 @@ export function CompetitionCard({
         />
         <Link
           href={`/competitions/${competition.id}`}
-          className="text-sm font-medium text-primary hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-primary/80"
         >
           View details
+          <ExternalLink className="size-3.5" />
         </Link>
       </div>
-    </Card>
+    </article>
   );
 }

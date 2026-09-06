@@ -27,6 +27,13 @@ const sections = [
     cta: "Read the docs",
   },
   {
+    href: "/competitions",
+    label: "Competitions",
+    title: "Find your next challenge",
+    body: "Browse student competitions worldwide: STEM olympiads, essay contests, hackathons, and more. Filter by category, deadline, age, and region. Save the ones that matter.",
+    cta: "Browse competitions",
+  },
+  {
     href: "/contribute",
     label: "Contribute",
     title: "Add the places you know",

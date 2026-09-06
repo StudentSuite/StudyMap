@@ -1,6 +1,7 @@
 "use client";
 
-import { Home, Pencil, Plus, Search } from "lucide-react";
+import * as React from "react";
+import { Home, Pencil, Plus, Search, Trash2 } from "lucide-react";
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -27,6 +28,8 @@ interface MyPlacesPanelProps {
   home: UserHome | null;
   onAddPlace: () => void;
   onEditPlace: (place: UserPlaceRow) => void;
+  onSelectPlace?: (place: UserPlaceRow) => void;
+  onDeletePlace?: (id: string) => void;
   onLocateHome: () => void;
   onEditHome: () => void;
 }
@@ -43,9 +46,12 @@ export function MyPlacesPanel({
   home,
   onAddPlace,
   onEditPlace,
+  onSelectPlace,
+  onDeletePlace,
   onLocateHome,
   onEditHome,
 }: MyPlacesPanelProps) {
+  const [confirmDeleteId, setConfirmDeleteId] = React.useState<string | null>(null);
   const q = query.trim().toLowerCase();
   const filtered = savedPlaces.filter((p) => {
     if (city && p.city !== city) return false;
@@ -136,17 +142,56 @@ export function MyPlacesPanel({
           </p>
         ) : (
           filtered.map((place) => (
-            <div key={place.id} className="rounded-lg border border-border p-3">
+            <button
+              key={place.id}
+              type="button"
+              onClick={() => onSelectPlace?.(place)}
+              className="w-full rounded-lg border border-border p-3 text-left transition-colors hover:bg-muted/50"
+            >
               <div className="flex items-center gap-2">
                 <p className="flex-1 truncate text-sm font-medium text-foreground">{place.name}</p>
-                <Button
-                  size="icon-sm"
-                  variant="ghost"
-                  onClick={() => onEditPlace(place)}
-                  aria-label={`Edit ${place.name}`}
-                >
-                  <Pencil className="size-3.5" />
-                </Button>
+                {confirmDeleteId === place.id ? (
+                  <span className="flex items-center gap-1" onClick={(e) => e.stopPropagation()}>
+                    <Button
+                      size="sm"
+                      variant="ghost"
+                      className="h-6 px-1.5 text-xs"
+                      onClick={() => setConfirmDeleteId(null)}
+                    >
+                      Cancel
+                    </Button>
+                    <Button
+                      size="sm"
+                      variant="destructive"
+                      className="h-6 px-1.5 text-xs"
+                      onClick={() => { onDeletePlace?.(place.id); setConfirmDeleteId(null); }}
+                    >
+                      Delete
+                    </Button>
+                  </span>
+                ) : (
+                  <span className="flex items-center gap-0.5" onClick={(e) => e.stopPropagation()}>
+                    <Button
+                      size="icon-sm"
+                      variant="ghost"
+                      onClick={() => onEditPlace(place)}
+                      aria-label={`Edit ${place.name}`}
+                    >
+                      <Pencil className="size-3.5" />
+                    </Button>
+                    {onDeletePlace && (
+                      <Button
+                        size="icon-sm"
+                        variant="ghost"
+                        onClick={() => setConfirmDeleteId(place.id)}
+                        aria-label={`Delete ${place.name}`}
+                        className="text-muted-foreground hover:text-destructive"
+                      >
+                        <Trash2 className="size-3.5" />
+                      </Button>
+                    )}
+                  </span>
+                )}
               </div>
               <div className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-muted-foreground">
                 <Badge variant="outline" className="text-xs">
@@ -160,7 +205,7 @@ export function MyPlacesPanel({
               {place.note && (
                 <p className="mt-1 text-xs text-muted-foreground/80">{place.note}</p>
               )}
-            </div>
+            </button>
           ))
         )}
       </div>

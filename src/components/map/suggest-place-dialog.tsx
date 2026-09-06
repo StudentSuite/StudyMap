@@ -21,8 +21,11 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import { humanizeCity, PLACE_TYPE_LABELS, PLACE_TYPES, type PlaceType } from "@/lib/types";
+import { getCities, getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
+
+const datasetCities = getCities(getPlaces());
 
 interface SuggestPlaceDialogProps {
   open: boolean;
@@ -188,7 +191,13 @@ export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogPro
               onChange={(e) => setCity(e.target.value)}
               placeholder="Mumbai"
               maxLength={60}
+              list="suggest-place-city-options"
             />
+            <datalist id="suggest-place-city-options">
+              {datasetCities.map((c) => (
+                <option key={c} value={humanizeCity(c)} />
+              ))}
+            </datalist>
           </div>
 
           <div className="grid gap-1.5">

@@ -148,7 +148,7 @@ export function DeadlineCountdown({
         // change every second regardless of prefers-reduced-motion, but
         // nothing here animates that change, so reduced-motion users see a
         // plain re-render, not a flip/slide effect.
-        <p className="font-mono text-base tabular-nums" aria-live="off">
+        <p className="font-mono text-base font-medium tabular-nums text-foreground" aria-live="off">
           {formatDuration(msRemaining)}
         </p>
       )}

@@ -32,12 +32,16 @@ export default async function CompetitionsPage({ searchParams }: CompetitionsPag
 
   return (
     <PageContainer width="content" className="max-w-6xl">
-      <h1 className="font-heading text-3xl font-bold tracking-tight">Competitions</h1>
-      <p className="mt-2 max-w-2xl text-muted-foreground">
-        {competitions.length} student competitions worldwide, from STEM olympiads to essay
-        contests to hackathons. Every deadline links back to its source, and country
-        qualifier tracks are called out where a real national pathway exists.
-      </p>
+      <div className="border-b border-border pb-5">
+        <h1 className="font-heading text-3xl font-bold tracking-tight text-foreground">
+          Competitions
+        </h1>
+        <p className="mt-2 max-w-2xl text-[15px] leading-relaxed text-muted-foreground">
+          {competitions.length} student competitions worldwide, from STEM olympiads to essay
+          contests to hackathons. Every deadline links back to its source, and country
+          qualifier tracks are called out where a real national pathway exists.
+        </p>
+      </div>
 
       <div className="mt-6">
         <CompetitionsBrowser

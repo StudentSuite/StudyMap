@@ -1,6 +1,6 @@
 "use client";
 
-import { MapPinPlus, Navigation, RotateCcw } from "lucide-react";
+import { ExternalLink, MapPinPlus, Navigation, RotateCcw } from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
@@ -113,6 +113,18 @@ export function ResultsList({
                     {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
                   </span>
                 </button>
+                {place.gmaps_link && (
+                  <a
+                    href={place.gmaps_link}
+                    target="_blank"
+                    rel="noreferrer"
+                    onClick={(e) => e.stopPropagation()}
+                    aria-label={`Open ${place.name} in Google Maps`}
+                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                  >
+                    <ExternalLink className="size-4" />
+                  </a>
+                )}
                 <a
                   href={directionsUrl(place.lat, place.lng)}
                   target="_blank"

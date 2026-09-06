@@ -78,7 +78,7 @@ describe("CompetitionsBrowser", () => {
 
     expect(screen.getByText("Stem Competition")).toBeTruthy();
     expect(screen.getByText("Coding Competition")).toBeTruthy();
-    expect(screen.getByText("2 of 2 competitions")).toBeTruthy();
+    expect(screen.getByText((_, el) => el?.textContent === "2 of 2")).toBeTruthy();
   });
 
   it("filters by category chip and updates the URL", () => {
@@ -154,7 +154,7 @@ describe("CompetitionsBrowser", () => {
       'No competitions match search: "does not exist anywhere".',
     );
     fireEvent.click(screen.getByRole("button", { name: "Clear filters" }));
-    expect(screen.getByText("2 of 2 competitions")).toBeTruthy();
+    expect(screen.getByText((_, el) => el?.textContent === "2 of 2")).toBeTruthy();
   });
 
   it("seeds filter state from initialFilters, round-tripping through the URL", () => {

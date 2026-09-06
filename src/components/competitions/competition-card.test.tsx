@@ -55,7 +55,7 @@ describe("CompetitionCard", () => {
     expect(screen.getByText("Coding")).toBeTruthy();
     expect(screen.getByText(/A test competition description/)).toBeTruthy();
     expect(screen.getByText("Online")).toBeTruthy();
-    expect(screen.getByText("13-18")).toBeTruthy();
+    expect(screen.getByText(/13-18/)).toBeTruthy();
     expect(screen.getByText("Team")).toBeTruthy();
     expect(screen.getByText("United States")).toBeTruthy();
   });
