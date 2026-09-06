@@ -22,6 +22,14 @@ interface CompetitionCardProps {
   variant?: ViewMode;
 }
 
+function officialHostname(url: string): string | null {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return null;
+  }
+}
+
 export function CompetitionCard({
   competition,
   now,
@@ -31,6 +39,7 @@ export function CompetitionCard({
 }: CompetitionCardProps) {
   const isGrid = variant === "grid";
   const isFree = competition.fee.amount === 0;
+  const officialHost = isGrid ? officialHostname(competition.official_url) : null;
 
   return (
     <article
@@ -106,13 +115,27 @@ export function CompetitionCard({
         )}
       </div>
 
-      {/* Footer: save + details */}
+      {/* Footer: save (+ official site, grid only) + details */}
       <div className={cn("mt-4 flex items-center justify-between border-t border-border/60 pt-3", isGrid && "mt-auto")}>
-        <SaveButton
-          competitionId={competition.id}
-          initialSaved={initialSaved}
-          initialCount={initialCount}
-        />
+        <div className="flex min-w-0 items-center gap-3">
+          <SaveButton
+            competitionId={competition.id}
+            initialSaved={initialSaved}
+            initialCount={initialCount}
+          />
+          {officialHost && (
+            <a
+              href={competition.official_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-w-0 items-center gap-1 truncate text-xs text-muted-foreground transition-colors hover:text-foreground"
+              title={competition.official_url}
+            >
+              <ExternalLink className="size-3 shrink-0" aria-hidden />
+              <span className="truncate">{officialHost}</span>
+            </a>
+          )}
+        </div>
         <Link
           href={`/competitions/${competition.id}`}
           className="inline-flex items-center gap-1 text-sm font-medium text-primary transition-colors hover:text-primary/80"
