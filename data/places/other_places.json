@@ -460,5 +460,16 @@
     "address": "80 Daehak-ro, Buk-gu, Daegu, South Korea",
     "gmaps_link": "https://maps.google.com/?q=35.8905697,128.6108553",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "abj-other_places-01",
+    "name": "University of Abuja",
+    "type": "other_places",
+    "city": "abuja",
+    "lat": 8.9807832,
+    "lng": 7.1753396,
+    "address": "Federal Capital Territory, Abuja, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=8.9807832,7.1753396",
+    "added_by": "yashkewlani"
   }
 ]

@@ -442,5 +442,17 @@
     "gmaps_link": "https://maps.google.com/?q=20.2962317,85.8264588",
     "added_by": "yashkewlani",
     "exam": "IELTS"
+  },
+{
+    "id": "abj-foreign_lang_exam_centre-01",
+    "name": "British Council Abuja",
+    "type": "foreign_lang_exam_centre",
+    "city": "abuja",
+    "lat": 9.0845078,
+    "lng": 7.4906302,
+    "address": "3645 Ibrahim Babangida Way, Maitama, Abuja, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=9.0845078,7.4906302",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

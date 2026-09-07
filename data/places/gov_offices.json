@@ -1120,5 +1120,49 @@
     "address": "Eldoret 30100, Kenya",
     "gmaps_link": "https://maps.google.com/?q=0.5198329,35.2715481",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "abj-gov_offices-01",
+    "name": "Nigeria Immigration Service, Headquarters (Abuja)",
+    "type": "gov_offices",
+    "city": "abuja",
+    "lat": 8.9645483,
+    "lng": 7.2523568,
+    "address": "Bill Clinton Drive, Abuja, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=8.9645483,7.2523568",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "abd-gov_offices-01",
+    "name": "Aberdeen Town House (Aberdeen City Council)",
+    "type": "gov_offices",
+    "city": "aberdeen",
+    "lat": 57.1479809,
+    "lng": -2.0939533,
+    "address": "Castle Street, Aberdeen AB11 5BQ, UK",
+    "gmaps_link": "https://maps.google.com/?q=57.1479809,-2.0939533",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bri-gov_offices-01",
+    "name": "Bristol City Hall",
+    "type": "gov_offices",
+    "city": "bristol",
+    "lat": 51.4525381,
+    "lng": -2.6020632,
+    "address": "College Green, Bristol BS1 5TR, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.4525381,-2.6020632",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "gwj-gov_offices-01",
+    "name": "Gwangju Metropolitan City Hall",
+    "type": "gov_offices",
+    "city": "gwangju",
+    "lat": 35.1601047,
+    "lng": 126.850147,
+    "address": "111 Naebang-ro, Seo-gu, Gwangju, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.1601047,126.850147",
+    "added_by": "yashkewlani"
   }
 ]

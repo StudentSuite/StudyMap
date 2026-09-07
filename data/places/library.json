@@ -1131,5 +1131,49 @@
     "address": "Kitale-Cherangani Road, Eldoret 30100, Kenya",
     "gmaps_link": "https://maps.google.com/?q=0.5182383,35.2762003",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "abj-library-01",
+    "name": "National Library of Nigeria, Abuja",
+    "type": "library",
+    "city": "abuja",
+    "lat": 9.0511631,
+    "lng": 7.4832708,
+    "address": "Plot 274, Wole Olanipekun Street, Central Business District, Abuja, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=9.0511631,7.4832708",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "abd-library-01",
+    "name": "City of Aberdeen Central Library",
+    "type": "library",
+    "city": "aberdeen",
+    "lat": 57.1479629,
+    "lng": -2.1057537,
+    "address": "Rosemount Viaduct, Aberdeen AB25 1GW, UK",
+    "gmaps_link": "https://maps.google.com/?q=57.1479629,-2.1057537",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bri-library-01",
+    "name": "Bristol Central Library",
+    "type": "library",
+    "city": "bristol",
+    "lat": 51.4515328,
+    "lng": -2.603353,
+    "address": "Deanery Road, Bristol BS1 5AF, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.4515328,-2.603353",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "gwj-library-01",
+    "name": "Chonnam National University Library",
+    "type": "library",
+    "city": "gwangju",
+    "lat": 35.1769099,
+    "lng": 126.9068927,
+    "address": "77 Yongbong-ro, Buk-gu, Gwangju, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.1769099,126.9068927",
+    "added_by": "yashkewlani"
   }
 ]
