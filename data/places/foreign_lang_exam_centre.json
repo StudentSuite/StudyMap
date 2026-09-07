@@ -418,5 +418,17 @@
     "gmaps_link": "https://maps.google.com/?q=28.473784,77.0471827",
     "added_by": "yashkewlani",
     "exam": "IELTS"
+  },
+{
+    "id": "rnc-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Ranchi",
+    "type": "foreign_lang_exam_centre",
+    "city": "ranchi",
+    "lat": 23.3763871,
+    "lng": 85.318877,
+    "address": "Main Road, Ranchi, Jharkhand 834001, India",
+    "gmaps_link": "https://maps.google.com/?q=23.3763871,85.318877",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

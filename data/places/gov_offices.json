@@ -944,5 +944,49 @@
     "address": "Memorial Lane, Kanpur Cantonment, Kanpur, Uttar Pradesh 208004, India",
     "gmaps_link": "https://maps.google.com/?q=26.4512667,80.3727211",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "rnc-gov_offices-01",
+    "name": "Ranchi GPO (Head Post Office)",
+    "type": "gov_offices",
+    "city": "ranchi",
+    "lat": 23.3706308,
+    "lng": 85.3234752,
+    "address": "Sastri Market Main Road, Ranchi, Jharkhand 834001, India",
+    "gmaps_link": "https://maps.google.com/?q=23.3706308,85.3234752",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "trv-gov_offices-01",
+    "name": "Passport Seva Kendra, Neyyattinkara (Thiruvananthapuram)",
+    "type": "gov_offices",
+    "city": "trivandrum",
+    "lat": 8.3978538,
+    "lng": 77.0886406,
+    "address": "Kovalam - Poovar Road, Neyyattinkara, Thiruvananthapuram, Kerala 695121, India",
+    "gmaps_link": "https://maps.google.com/?q=8.3978538,77.0886406",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "vzg-gov_offices-01",
+    "name": "Passport Seva Kendra, Visakhapatnam",
+    "type": "gov_offices",
+    "city": "visakhapatnam",
+    "lat": 17.7434368,
+    "lng": 83.2609406,
+    "address": "Old NH16 Road, Kancharapalem, Visakhapatnam, Andhra Pradesh 530008, India",
+    "gmaps_link": "https://maps.google.com/?q=17.7434368,83.2609406",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "asr-gov_offices-01",
+    "name": "Passport Seva Kendra, Amritsar",
+    "type": "gov_offices",
+    "city": "amritsar",
+    "lat": 31.6449495,
+    "lng": 74.8770573,
+    "address": "Lawrence Road, Amritsar, Punjab 143001, India",
+    "gmaps_link": "https://maps.google.com/?q=31.6449495,74.8770573",
+    "added_by": "yashkewlani"
   }
 ]

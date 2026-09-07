@@ -394,5 +394,16 @@
     "address": "College Road, Jodhpur, Rajasthan 342011, India",
     "gmaps_link": "https://maps.google.com/?q=26.2708162,73.0348015",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "trv-other_places-01",
+    "name": "University of Kerala, Kariavattom Campus",
+    "type": "other_places",
+    "city": "trivandrum",
+    "lat": 8.5549422,
+    "lng": 76.8855036,
+    "address": "Kariavattom Campus, Thiruvananthapuram, Kerala 695581, India",
+    "gmaps_link": "https://maps.google.com/?q=8.5549422,76.8855036",
+    "added_by": "yashkewlani"
   }
 ]

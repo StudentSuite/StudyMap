@@ -955,5 +955,49 @@
     "address": "Nawabganj, NH34, Kanpur, Uttar Pradesh 208002, India",
     "gmaps_link": "https://maps.google.com/?q=26.5001306,80.2860199",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "rnc-library-01",
+    "name": "Ranchi University",
+    "type": "library",
+    "city": "ranchi",
+    "lat": 23.3718004,
+    "lng": 85.3242526,
+    "address": "Ranchi University Road, Ranchi, Jharkhand 834001, India",
+    "gmaps_link": "https://maps.google.com/?q=23.3718004,85.3242526",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "trv-library-01",
+    "name": "Trivandrum Public Library",
+    "type": "library",
+    "city": "trivandrum",
+    "lat": 8.5017399,
+    "lng": 76.9595706,
+    "address": "Vazhuthacaud, Thiruvananthapuram, Kerala 695001, India",
+    "gmaps_link": "https://maps.google.com/?q=8.5017399,76.9595706",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "vzg-library-01",
+    "name": "Andhra University Library",
+    "type": "library",
+    "city": "visakhapatnam",
+    "lat": 17.7305037,
+    "lng": 83.3227516,
+    "address": "Hostels Road, Andhra University North Campus, Visakhapatnam, Andhra Pradesh 530003, India",
+    "gmaps_link": "https://maps.google.com/?q=17.7305037,83.3227516",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "asr-library-01",
+    "name": "Central Public Library, Company Bagh",
+    "type": "library",
+    "city": "amritsar",
+    "lat": 31.6388204,
+    "lng": 74.8792493,
+    "address": "Company Bagh, Amritsar, Punjab 143001, India",
+    "gmaps_link": "https://maps.google.com/?q=31.6388204,74.8792493",
+    "added_by": "yashkewlani"
   }
 ]
