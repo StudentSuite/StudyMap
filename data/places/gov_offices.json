@@ -1032,5 +1032,49 @@
     "address": "Plaza de Gabriel Miro, Centro, Alicante 03001, Spain",
     "gmaps_link": "https://maps.google.com/?q=38.3430623,-0.4850544",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "hfd-gov_offices-01",
+    "name": "Hartford City Hall",
+    "type": "gov_offices",
+    "city": "hartford",
+    "lat": 41.762554,
+    "lng": -72.6734607,
+    "address": "550 Main Street, Hartford, CT 06103, USA",
+    "gmaps_link": "https://maps.google.com/?q=41.762554,-72.6734607",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bal-gov_offices-01",
+    "name": "Baltimore City Hall",
+    "type": "gov_offices",
+    "city": "baltimore",
+    "lat": 39.2908833,
+    "lng": -76.6107116,
+    "address": "100 Holliday Street, Baltimore, MD 21202, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.2908833,-76.6107116",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "phl-gov_offices-01",
+    "name": "Philadelphia Passport Agency (One Independence Mall)",
+    "type": "gov_offices",
+    "city": "philadelphia",
+    "lat": 39.949661,
+    "lng": -75.1516526,
+    "address": "615 Chestnut Street, Philadelphia, PA 19106, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.949661,-75.1516526",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "cmh-gov_offices-01",
+    "name": "Columbus City Hall",
+    "type": "gov_offices",
+    "city": "columbus",
+    "lat": 39.9625807,
+    "lng": -83.0034136,
+    "address": "90 W Broad St, Columbus, OH 43215, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.9625807,-83.0034136",
+    "added_by": "yashkewlani"
   }
 ]

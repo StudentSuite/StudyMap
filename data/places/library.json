@@ -1043,5 +1043,49 @@
     "address": "Carretera de San Vicente del Raspeig s/n, Alicante 03690, Spain",
     "gmaps_link": "https://maps.google.com/?q=38.3850684,-0.5146732",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "hfd-library-01",
+    "name": "Hartford Public Library",
+    "type": "library",
+    "city": "hartford",
+    "lat": 41.7619785,
+    "lng": -72.6739953,
+    "address": "500 Main Street, Hartford, CT 06103, USA",
+    "gmaps_link": "https://maps.google.com/?q=41.7619785,-72.6739953",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bal-library-01",
+    "name": "Enoch Pratt Free Library, Central Library",
+    "type": "library",
+    "city": "baltimore",
+    "lat": 39.2945237,
+    "lng": -76.6173559,
+    "address": "400 Cathedral Street, Baltimore, MD 21201, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.2945237,-76.6173559",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "phl-library-01",
+    "name": "Free Library of Philadelphia, Parkway Central Library",
+    "type": "library",
+    "city": "philadelphia",
+    "lat": 39.9595913,
+    "lng": -75.1710199,
+    "address": "1901 Vine Street, Philadelphia, PA 19103, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.9595913,-75.1710199",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "cmh-library-01",
+    "name": "Columbus Metropolitan Library, Main Library",
+    "type": "library",
+    "city": "columbus",
+    "lat": 39.961304,
+    "lng": -82.9894673,
+    "address": "96 South Grant Avenue, Columbus, OH 43215, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.961304,-82.9894673",
+    "added_by": "yashkewlani"
   }
 ]

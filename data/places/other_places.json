@@ -416,5 +416,27 @@
     "address": "Carrer de l'Alcalde Reig 9, Valencia 46023, Spain",
     "gmaps_link": "https://maps.google.com/?q=39.4604818,-0.3600927",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "hfd-other_places-01",
+    "name": "Trinity College, Hartford",
+    "type": "other_places",
+    "city": "hartford",
+    "lat": 41.7471549,
+    "lng": -72.6901199,
+    "address": "300 Summit Street, Hartford, CT 06106, USA",
+    "gmaps_link": "https://maps.google.com/?q=41.7471549,-72.6901199",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "phl-other_places-01",
+    "name": "University of Pennsylvania",
+    "type": "other_places",
+    "city": "philadelphia",
+    "lat": 39.9522148,
+    "lng": -75.1955729,
+    "address": "1 Washington Avenue, Philadelphia, PA 19104, USA",
+    "gmaps_link": "https://maps.google.com/?q=39.9522148,-75.1955729",
+    "added_by": "yashkewlani"
   }
 ]
