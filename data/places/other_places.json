@@ -119,5 +119,71 @@
   "address": "3rd Floor, Block B, The Woodstock Exchange, 66 Albert Road, Woodstock, Cape Town 7915, South Africa",
   "gmaps_link": "https://maps.google.com/?q=-33.9268834,18.4459570",
   "added_by": "yashkewlani"
+},
+{
+  "id": "cbe-other_places-01",
+  "name": "Alliance Francaise de Coimbatore",
+  "type": "other_places",
+  "city": "coimbatore",
+  "lat": 11.0243340,
+  "lng": 76.9447875,
+  "address": "34/2, Arunachalam 2nd Cross Street, near Saibaba Temple, Pudur, Coimbatore 641038",
+  "gmaps_link": "https://maps.google.com/?q=11.0243340,76.9447875",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ind-other_places-01",
+  "name": "Alliance Francaise de Indore",
+  "type": "other_places",
+  "city": "indore",
+  "lat": 22.7293734,
+  "lng": 75.8746224,
+  "address": "22/15 Yashwant Niwas Road, Indore",
+  "gmaps_link": "https://maps.google.com/?q=22.7293734,75.8746224",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bho-other_places-01",
+  "name": "Alliance Francaise de Bhopal",
+  "type": "other_places",
+  "city": "bhopal",
+  "lat": 23.1988318,
+  "lng": 77.4237838,
+  "address": "B-75, Shahpura, Bhopal 462016",
+  "gmaps_link": "https://maps.google.com/?q=23.1988318,77.4237838",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ngp-other_places-01",
+  "name": "Rashtrasant Tukadoji Maharaj Nagpur University",
+  "type": "other_places",
+  "city": "nagpur",
+  "lat": 21.1477175,
+  "lng": 79.0392433,
+  "address": "Amravati Road, Ravi Nagar, Nagpur 440033",
+  "gmaps_link": "https://maps.google.com/?q=21.1477175,79.0392433",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sur-other_places-01",
+  "name": "Veer Narmad South Gujarat University",
+  "type": "other_places",
+  "city": "surat",
+  "lat": 21.1562179,
+  "lng": 72.7899164,
+  "address": "Udhna Magdalla Road, Surat 395007",
+  "gmaps_link": "https://maps.google.com/?q=21.1562179,72.7899164",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "vij-other_places-01",
+  "name": "Andhra Loyola College",
+  "type": "other_places",
+  "city": "vijayawada",
+  "lat": 16.5107819,
+  "lng": 80.6607862,
+  "address": "Old NH16 Road, Bharathi Nagar, Patamata, Vijayawada 520008",
+  "gmaps_link": "https://maps.google.com/?q=16.5107819,80.6607862",
+  "added_by": "yashkewlani"
 }
 ]

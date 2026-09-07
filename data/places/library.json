@@ -536,5 +536,71 @@
   "address": "5 Queen Victoria Street, Cape Town 8001, South Africa",
   "gmaps_link": "https://maps.google.com/?q=-33.9252902,18.4185215",
   "added_by": "yashkewlani"
+},
+{
+  "id": "cbe-library-01",
+  "name": "District Central Library",
+  "type": "library",
+  "city": "coimbatore",
+  "lat": 11.0146284,
+  "lng": 76.9483148,
+  "address": "Cowley Brown Road, R.S. Puram, Coimbatore 641002",
+  "gmaps_link": "https://maps.google.com/?q=11.0146284,76.9483148",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ind-library-01",
+  "name": "Govt. Ahilya Central Library",
+  "type": "library",
+  "city": "indore",
+  "lat": 22.7255299,
+  "lng": 75.8714187,
+  "address": "Race Course Road, Indore City, Indore 452001",
+  "gmaps_link": "https://maps.google.com/?q=22.7255299,75.8714187",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bho-library-01",
+  "name": "Maulana Azad Central Library",
+  "type": "library",
+  "city": "bhopal",
+  "lat": 23.2574088,
+  "lng": 77.3974585,
+  "address": "Itwara Road, near Bharat Talkies Square, Peer Gate, Bhopal 462001",
+  "gmaps_link": "https://maps.google.com/?q=23.2574088,77.3974585",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ngp-library-01",
+  "name": "District Government Library",
+  "type": "library",
+  "city": "nagpur",
+  "lat": 21.1339435,
+  "lng": 79.0805662,
+  "address": "Police Station Road, Chhoti Dhantoli, Dhantoli, Nagpur 440012",
+  "gmaps_link": "https://maps.google.com/?q=21.1339435,79.0805662",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sur-library-01",
+  "name": "Kavi Narmad Central Library",
+  "type": "library",
+  "city": "surat",
+  "lat": 21.1779392,
+  "lng": 72.8036522,
+  "address": "Plot No M-9, Scheme No 5, Ghod Dod Road, Athwa, Surat 395001",
+  "gmaps_link": "https://maps.google.com/?q=21.1779392,72.8036522",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "vij-library-01",
+  "name": "Ram Mohan Library",
+  "type": "library",
+  "city": "vijayawada",
+  "lat": 16.4961567,
+  "lng": 80.6420206,
+  "address": "27-37-144 Bandar Road, Krishnalanka, Vijayawada 520002",
+  "gmaps_link": "https://maps.google.com/?q=16.4961567,80.6420206",
+  "added_by": "yashkewlani"
 }
 ]

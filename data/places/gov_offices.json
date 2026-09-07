@@ -515,5 +515,82 @@
   "address": "The Terraces, 8th Floor, 34 Bree Street, Cape Town 8001, South Africa",
   "gmaps_link": "https://maps.google.com/?q=-33.9184415,18.4206563",
   "added_by": "yashkewlani"
+},
+{
+  "id": "cbe-gov_offices-01",
+  "name": "Regional Passport Office, Coimbatore",
+  "type": "gov_offices",
+  "city": "coimbatore",
+  "lat": 11.0029826,
+  "lng": 76.9673786,
+  "address": "Corporation Commercial Complex, Avinashi Road, Coimbatore 641018",
+  "gmaps_link": "https://maps.google.com/?q=11.0029826,76.9673786",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ind-gov_offices-01",
+  "name": "Passport Seva Kendra, Indore",
+  "type": "gov_offices",
+  "city": "indore",
+  "lat": 22.7575834,
+  "lng": 75.9307149,
+  "address": "Apollo DB City, Nipania, Indore 452010",
+  "gmaps_link": "https://maps.google.com/?q=22.7575834,75.9307149",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bho-gov_offices-01",
+  "name": "Regional Passport Office, Bhopal",
+  "type": "gov_offices",
+  "city": "bhopal",
+  "lat": 23.2326167,
+  "lng": 77.4299055,
+  "address": "2nd Floor, Office Block, DB City Mall, Arera Hills, Bhopal 462011",
+  "gmaps_link": "https://maps.google.com/?q=23.2326167,77.4299055",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ngp-gov_offices-01",
+  "name": "Regional Passport Office, Nagpur",
+  "type": "gov_offices",
+  "city": "nagpur",
+  "lat": 21.1685242,
+  "lng": 79.0625411,
+  "address": "CGO Complex, B-Block, First Floor, Seminary Hills, Nagpur 440006",
+  "gmaps_link": "https://maps.google.com/?q=21.1685242,79.0625411",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sur-gov_offices-01",
+  "name": "Passport Seva Kendra, Surat",
+  "type": "gov_offices",
+  "city": "surat",
+  "lat": 21.1837985,
+  "lng": 72.8334943,
+  "address": "1st Floor, Union Trade Centre, Udhana Darwaja, Surat 395007",
+  "gmaps_link": "https://maps.google.com/?q=21.1837985,72.8334943",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "vij-gov_offices-01",
+  "name": "Passport Seva Kendra, Vijayawada",
+  "type": "gov_offices",
+  "city": "vijayawada",
+  "lat": 16.4995857,
+  "lng": 80.6489882,
+  "address": "Venkateswara Theatre Complex, MG Road, Vijayawada 520010",
+  "gmaps_link": "https://maps.google.com/?q=16.4995857,80.6489882",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "vij-gov_offices-02",
+  "name": "Regional Transport Office (RTO), Vijayawada",
+  "type": "gov_offices",
+  "city": "vijayawada",
+  "lat": 16.5041903,
+  "lng": 80.6418471,
+  "address": "Punammathota, Labbipet, Vijayawada 520010",
+  "gmaps_link": "https://maps.google.com/?q=16.5041903,80.6418471",
+  "added_by": "yashkewlani"
 }
 ]

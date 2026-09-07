@@ -142,5 +142,77 @@
   "gmaps_link": "https://maps.google.com/?q=30.0514974,31.2139664",
   "added_by": "yashkewlani",
   "exam": "IELTS"
+},
+{
+  "id": "cbe-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Test Centre, Coimbatore",
+  "type": "foreign_lang_exam_centre",
+  "city": "coimbatore",
+  "lat": 11.0333976,
+  "lng": 77.0320401,
+  "address": "1055/7, Gowtham Centre, Avinashi Road, Coimbatore",
+  "gmaps_link": "https://maps.google.com/?q=11.0333976,77.0320401",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "ind-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Test Centre, Indore",
+  "type": "foreign_lang_exam_centre",
+  "city": "indore",
+  "lat": 22.6948381,
+  "lng": 75.8539948,
+  "address": "Near Brilliant Convention Center, Vijay Nagar, Indore 452010",
+  "gmaps_link": "https://maps.google.com/?q=22.6948381,75.8539948",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "bho-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Test Centre, Bhopal",
+  "type": "foreign_lang_exam_centre",
+  "city": "bhopal",
+  "lat": 23.2360672,
+  "lng": 77.4336432,
+  "address": "Hall No. 203, Vijay Stambh, BDA Complex, MP Nagar Zone 1, Bhopal 462011",
+  "gmaps_link": "https://maps.google.com/?q=23.2360672,77.4336432",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "ngp-foreign_lang_exam_centre-01",
+  "name": "TOEFL Test Centre, Ramdeobaba University",
+  "type": "foreign_lang_exam_centre",
+  "city": "nagpur",
+  "lat": 21.1768645,
+  "lng": 79.0606934,
+  "address": "Shri Ramdeobaba University, Katol Road, Nagpur 440013",
+  "gmaps_link": "https://maps.google.com/?q=21.1768645,79.0606934",
+  "added_by": "yashkewlani",
+  "exam": "TOEFL"
+},
+{
+  "id": "sur-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Test Centre, Surat",
+  "type": "foreign_lang_exam_centre",
+  "city": "surat",
+  "lat": 21.1652097,
+  "lng": 72.7757537,
+  "address": "Solaris The Address, Dumas Road, Piplod, Surat 395008",
+  "gmaps_link": "https://maps.google.com/?q=21.1652097,72.7757537",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "vij-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Test Centre, Vijayawada",
+  "type": "foreign_lang_exam_centre",
+  "city": "vijayawada",
+  "lat": 16.500597,
+  "lng": 80.656369,
+  "address": "2nd Floor, Santhi Plaza, near Benz Circle, Vijayawada 520008",
+  "gmaps_link": "https://maps.google.com/?q=16.500597,80.656369",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
 }
 ]
