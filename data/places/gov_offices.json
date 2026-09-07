@@ -988,5 +988,49 @@
     "address": "Lawrence Road, Amritsar, Punjab 143001, India",
     "gmaps_link": "https://maps.google.com/?q=31.6449495,74.8770573",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "bbs-gov_offices-01",
+    "name": "Passport Seva Kendra, Bhubaneswar (Saheed Nagar)",
+    "type": "gov_offices",
+    "city": "bhubaneswar",
+    "lat": 20.2886824,
+    "lng": 85.8488154,
+    "address": "Saheed Nagar, Bhubaneswar, Odisha 751007, India",
+    "gmaps_link": "https://maps.google.com/?q=20.2886824,85.8488154",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "vlc-gov_offices-01",
+    "name": "Correos Valencia, Plaza del Ayuntamiento",
+    "type": "gov_offices",
+    "city": "valencia",
+    "lat": 39.4706473,
+    "lng": -0.3768264,
+    "address": "Plaza del Ayuntamiento, Valencia 46002, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.4706473,-0.3768264",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "sev-gov_offices-01",
+    "name": "Correos Sevilla, Casco Antiguo",
+    "type": "gov_offices",
+    "city": "sevilla",
+    "lat": 37.3898841,
+    "lng": -5.9913167,
+    "address": "Calle Angel Maria Camacho, Casco Antiguo, Sevilla 41004, Spain",
+    "gmaps_link": "https://maps.google.com/?q=37.3898841,-5.9913167",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "alc-gov_offices-01",
+    "name": "Correos Alicante, Centro",
+    "type": "gov_offices",
+    "city": "alicante",
+    "lat": 38.3430623,
+    "lng": -0.4850544,
+    "address": "Plaza de Gabriel Miro, Centro, Alicante 03001, Spain",
+    "gmaps_link": "https://maps.google.com/?q=38.3430623,-0.4850544",
+    "added_by": "yashkewlani"
   }
 ]

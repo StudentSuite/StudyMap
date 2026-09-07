@@ -999,5 +999,49 @@
     "address": "Company Bagh, Amritsar, Punjab 143001, India",
     "gmaps_link": "https://maps.google.com/?q=31.6388204,74.8792493",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "bbs-library-01",
+    "name": "State Library, Bhubaneswar",
+    "type": "library",
+    "city": "bhubaneswar",
+    "lat": 20.2753788,
+    "lng": 85.8337385,
+    "address": "Sachivalaya Marg, Bhubaneswar, Odisha 751000, India",
+    "gmaps_link": "https://maps.google.com/?q=20.2753788,85.8337385",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "vlc-library-01",
+    "name": "Biblioteca Publica de Valencia",
+    "type": "library",
+    "city": "valencia",
+    "lat": 39.4714563,
+    "lng": -0.3797861,
+    "address": "Avinguda de l'Oest, Ciutat Vella, Valencia 46001, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.4714563,-0.3797861",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "sev-library-01",
+    "name": "Universidad de Sevilla, Campus Ramon y Cajal",
+    "type": "library",
+    "city": "sevilla",
+    "lat": 37.3788317,
+    "lng": -5.9761817,
+    "address": "Calle Camilo Jose Cela, Nervion, Sevilla 41018, Spain",
+    "gmaps_link": "https://maps.google.com/?q=37.3788317,-5.9761817",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "alc-library-01",
+    "name": "Universitat d'Alacant, Campus de Sant Vicent",
+    "type": "library",
+    "city": "alicante",
+    "lat": 38.3850684,
+    "lng": -0.5146732,
+    "address": "Carretera de San Vicente del Raspeig s/n, Alicante 03690, Spain",
+    "gmaps_link": "https://maps.google.com/?q=38.3850684,-0.5146732",
+    "added_by": "yashkewlani"
   }
 ]

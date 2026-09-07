@@ -430,5 +430,17 @@
     "gmaps_link": "https://maps.google.com/?q=23.3763871,85.318877",
     "added_by": "yashkewlani",
     "exam": "IELTS"
+  },
+{
+    "id": "bbs-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Bhubaneswar (Jaydev Vihar)",
+    "type": "foreign_lang_exam_centre",
+    "city": "bhubaneswar",
+    "lat": 20.2962317,
+    "lng": 85.8264588,
+    "address": "Jaydev Vihar, Bhubaneswar, Odisha 751013, India",
+    "gmaps_link": "https://maps.google.com/?q=20.2962317,85.8264588",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

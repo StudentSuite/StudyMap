@@ -405,5 +405,16 @@
     "address": "Kariavattom Campus, Thiruvananthapuram, Kerala 695581, India",
     "gmaps_link": "https://maps.google.com/?q=8.5549422,76.8855036",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "vlc-other_places-01",
+    "name": "Universitat de Valencia",
+    "type": "other_places",
+    "city": "valencia",
+    "lat": 39.4604818,
+    "lng": -0.3600927,
+    "address": "Carrer de l'Alcalde Reig 9, Valencia 46023, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.4604818,-0.3600927",
+    "added_by": "yashkewlani"
   }
 ]
