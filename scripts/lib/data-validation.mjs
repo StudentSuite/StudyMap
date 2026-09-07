@@ -6,6 +6,21 @@
 
 const ISO_DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 
+/**
+ * True when `value` is a Google Maps link whose `q=` parameter is still the raw
+ * `<lat>,<lng>` placeholder from the record-shape template (see #229).
+ */
+export function isLatLngPlaceholderGmapsLink(value) {
+  if (typeof value !== "string") return false;
+  try {
+    const { searchParams } = new URL(value);
+    const q = searchParams.get("q");
+    return typeof q === "string" && q.trim() === "lat,lng";
+  } catch {
+    return false;
+  }
+}
+
 /** True when `value` is a "YYYY-MM-DD" string naming a real calendar date. */
 export function isRealIsoDate(value) {
   if (typeof value !== "string" || !ISO_DATE_RE.test(value)) return false;

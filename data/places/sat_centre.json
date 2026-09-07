@@ -3652,7 +3652,7 @@
     "exam": "SAT",
     "valid_till": "2026-11-07"
   },
-    {
+  {
     "id": "57137",
     "name": "WELLINGTON COLLEGE",
     "type": "sat_centre",
@@ -3660,7 +3660,7 @@
     "lat": 51.3624135,
     "lng": -0.8080941,
     "address": "DUKE'S RIDE",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.3624135,-0.8080941",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3673,7 +3673,7 @@
     "lat": 52.9133979,
     "lng": 1.105435,
     "address": "GRESHAM'S SCHOOL",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=52.9133979,1.105435",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3686,7 +3686,7 @@
     "lat": 50.845905,
     "lng": -0.3026392,
     "address": "LANCING COLLEGE",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=50.845905,-0.3026392",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3699,7 +3699,7 @@
     "lat": 51.529308,
     "lng": -0.4505667,
     "address": "108 VINE LANE",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.529308,-0.4505667",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3712,7 +3712,7 @@
     "lat": 51.7809367,
     "lng": -0.0307223,
     "address": "COLLEGE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.7809367,-0.0307223",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3725,7 +3725,7 @@
     "lat": 52.7343597,
     "lng": -2.739891,
     "address": "SHREWSBURY SCHOOL",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=52.7343597,-2.739891",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3738,7 +3738,7 @@
     "lat": 51.4545374,
     "lng": -2.6525262,
     "address": "32 COLLEGE ROAD CLIFTON",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.4545374,-2.6525262",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3751,7 +3751,7 @@
     "lat": 53.6055858,
     "lng": -2.9208933,
     "address": "SOUTHPORT ROAD",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=53.6055858,-2.9208933",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3764,7 +3764,7 @@
     "lat": 51.5567447,
     "lng": -0.2023618,
     "address": "FROGNAL",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.5567447,-0.2023618",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3777,7 +3777,7 @@
     "lat": 54.5126023,
     "lng": -6.0422466,
     "address": "25 CASTLE STREET",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=54.5126023,-6.0422466",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3790,7 +3790,7 @@
     "lat": 51.4087711,
     "lng": -3.488243,
     "address": "ST DONATS CASTLE",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.4087711,-3.488243",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3803,7 +3803,7 @@
     "lat": 57.1937119,
     "lng": -2.2042166,
     "address": "PITFODELS HOUSE",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=57.1937119,-2.2042166",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3816,7 +3816,7 @@
     "lat": 51.7431151,
     "lng": -2.2807025,
     "address": "BRISTOL ROAD",
-    "gmaps_link": "https://maps.google.com/?q=lat,lng",
+    "gmaps_link": "https://maps.google.com/?q=51.7431151,-2.2807025",
     "added_by": "Shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
