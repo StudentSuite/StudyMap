@@ -1076,5 +1076,49 @@
     "address": "90 W Broad St, Columbus, OH 43215, USA",
     "gmaps_link": "https://maps.google.com/?q=39.9625807,-83.0034136",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "icn-gov_offices-01",
+    "name": "Incheon City Hall (Metropolitan Government)",
+    "type": "gov_offices",
+    "city": "incheon",
+    "lat": 37.4572915,
+    "lng": 126.7020849,
+    "address": "Yesul-ro, Guwol-dong, Namdong-gu, Incheon, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4572915,126.7020849",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "dgu-gov_offices-01",
+    "name": "Daegu City Hall, Sangyeok Annex",
+    "type": "gov_offices",
+    "city": "daegu",
+    "lat": 35.8924637,
+    "lng": 128.6005003,
+    "address": "Daegusicheongbyeolgwan-ro, Buk-gu, Daegu, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.8924637,128.6005003",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "mba-gov_offices-01",
+    "name": "Huduma Centre, Mombasa",
+    "type": "gov_offices",
+    "city": "mombasa",
+    "lat": -4.0612587,
+    "lng": 39.672237,
+    "address": "Digo Road, Old Town, Mombasa 80100, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-4.0612587,39.672237",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "eld-gov_offices-01",
+    "name": "Huduma Centre, Eldoret",
+    "type": "gov_offices",
+    "city": "eldoret",
+    "lat": 0.5198329,
+    "lng": 35.2715481,
+    "address": "Eldoret 30100, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=0.5198329,35.2715481",
+    "added_by": "yashkewlani"
   }
 ]

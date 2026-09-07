@@ -438,5 +438,27 @@
     "address": "1 Washington Avenue, Philadelphia, PA 19104, USA",
     "gmaps_link": "https://maps.google.com/?q=39.9522148,-75.1955729",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "icn-other_places-01",
+    "name": "Incheon Catholic University, Songdo Global Campus",
+    "type": "other_places",
+    "city": "incheon",
+    "lat": 37.3721469,
+    "lng": 126.6624164,
+    "address": "Songdomunhwa-ro 120beon-gil, Yeonsu-gu, Incheon, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.3721469,126.6624164",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "dgu-other_places-01",
+    "name": "Kyungpook National University",
+    "type": "other_places",
+    "city": "daegu",
+    "lat": 35.8905697,
+    "lng": 128.6108553,
+    "address": "80 Daehak-ro, Buk-gu, Daegu, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.8905697,128.6108553",
+    "added_by": "yashkewlani"
   }
 ]

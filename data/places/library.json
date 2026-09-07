@@ -1087,5 +1087,49 @@
     "address": "96 South Grant Avenue, Columbus, OH 43215, USA",
     "gmaps_link": "https://maps.google.com/?q=39.961304,-82.9894673",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "icn-library-01",
+    "name": "Incheon National University Library",
+    "type": "library",
+    "city": "incheon",
+    "lat": 37.386116,
+    "lng": 126.6394474,
+    "address": "Songdo 4-dong, Yeonsu-gu, Incheon, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.386116,126.6394474",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "dgu-library-01",
+    "name": "Keimyung University Central Library",
+    "type": "library",
+    "city": "daegu",
+    "lat": 35.8567134,
+    "lng": 128.4849417,
+    "address": "Dalgubeol-daero, Dalseo-gu, Daegu, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.8567134,128.4849417",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "mba-library-01",
+    "name": "Kenya National Library Services, Mombasa",
+    "type": "library",
+    "city": "mombasa",
+    "lat": -4.0603112,
+    "lng": 39.6706545,
+    "address": "Msanifu Kombo Road, Mwembe Tayari, Mombasa 80100, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-4.0603112,39.6706545",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "eld-library-01",
+    "name": "Kenya National Library Service, Eldoret",
+    "type": "library",
+    "city": "eldoret",
+    "lat": 0.5182383,
+    "lng": 35.2762003,
+    "address": "Kitale-Cherangani Road, Eldoret 30100, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=0.5182383,35.2762003",
+    "added_by": "yashkewlani"
   }
 ]
