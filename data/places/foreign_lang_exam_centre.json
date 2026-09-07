@@ -214,5 +214,89 @@
   "gmaps_link": "https://maps.google.com/?q=16.500597,80.656369",
   "added_by": "yashkewlani",
   "exam": "IELTS"
+},
+{
+  "id": "auh-foreign_lang_exam_centre-01",
+  "name": "British Council Abu Dhabi IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "abu_dhabi",
+  "lat": 24.4513839,
+  "lng": 54.3379658,
+  "address": "Villa 16, Al Qasbah Street, Al Bateen, Abu Dhabi, UAE",
+  "gmaps_link": "https://maps.google.com/?q=24.4513839,54.3379658",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "shj-foreign_lang_exam_centre-01",
+  "name": "British Council Sharjah IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "sharjah",
+  "lat": 25.3450651,
+  "lng": 55.3924941,
+  "address": "4th Floor, Omran Tower, King Abdul Aziz Street, Al Qasimia, Sharjah, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.3450651,55.3924941",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "sel-foreign_lang_exam_centre-01",
+  "name": "British Council Seoul IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "seoul",
+  "lat": 37.5661683,
+  "lng": 126.9726202,
+  "address": "Paichai Jeongdong Building, Jeong-dong, Jung-gu, Seoul, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=37.5661683,126.9726202",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "bus-foreign_lang_exam_centre-01",
+  "name": "IDP IELTS Busan Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "busan",
+  "lat": 35.1549816,
+  "lng": 129.0625689,
+  "address": "4F Ssangyong Platinum Building, 70 Dongcheon-ro, Busanjin-gu, Busan 47294, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=35.1549816,129.0625689",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "man-foreign_lang_exam_centre-01",
+  "name": "British Council IELTS Test Centre, University of Manchester",
+  "type": "foreign_lang_exam_centre",
+  "city": "manchester",
+  "lat": 53.4640165,
+  "lng": -2.2335775,
+  "address": "Samuel Alexander Building, Oxford Road, Manchester M13 9PL, United Kingdom",
+  "gmaps_link": "https://maps.google.com/?q=53.4640165,-2.2335775",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "par-foreign_lang_exam_centre-01",
+  "name": "British Council Paris IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "paris",
+  "lat": 48.8603301,
+  "lng": 2.3150980,
+  "address": "9 Rue de Constantine, 75007 Paris, France",
+  "gmaps_link": "https://maps.google.com/?q=48.8603301,2.3150980",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "ber-foreign_lang_exam_centre-01",
+  "name": "Goethe-Institut Berlin Exam Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "berlin",
+  "lat": 52.5247869,
+  "lng": 13.4062226,
+  "address": "Neue Schoenhauser Strasse 20, 10178 Berlin, Deutschland",
+  "gmaps_link": "https://maps.google.com/?q=52.5247869,13.4062226",
+  "added_by": "yashkewlani",
+  "exam": "Goethe-Zertifikat (A1-C2)"
 }
 ]

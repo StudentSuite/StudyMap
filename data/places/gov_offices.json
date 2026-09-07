@@ -592,5 +592,82 @@
   "address": "Punammathota, Labbipet, Vijayawada 520010",
   "gmaps_link": "https://maps.google.com/?q=16.5041903,80.6418471",
   "added_by": "yashkewlani"
+},
+{
+  "id": "auh-gov_offices-01",
+  "name": "Embassy of India, Abu Dhabi",
+  "type": "gov_offices",
+  "city": "abu_dhabi",
+  "lat": 24.4551433,
+  "lng": 54.3572408,
+  "address": "Plot 10, Sector W-59/02, Diplomatic Area, Abu Dhabi, UAE",
+  "gmaps_link": "https://maps.google.com/?q=24.4551433,54.3572408",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "shj-gov_offices-01",
+  "name": "Indian Association Sharjah (Consular Services Point)",
+  "type": "gov_offices",
+  "city": "sharjah",
+  "lat": 25.3503846,
+  "lng": 55.3986672,
+  "address": "Al Qasimia, Sharjah, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.3503846,55.3986672",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sel-gov_offices-01",
+  "name": "Embassy of India, Seoul",
+  "type": "gov_offices",
+  "city": "seoul",
+  "lat": 37.5355425,
+  "lng": 127.0111334,
+  "address": "101 Hannam-dong, Dokseodang-ro, Yongsan-gu, Seoul 04419, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=37.5355425,127.0111334",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bus-gov_offices-01",
+  "name": "Busan Global Center (Foreigner Support Center)",
+  "type": "gov_offices",
+  "city": "busan",
+  "lat": 35.1797508,
+  "lng": 129.0765210,
+  "address": "Jungang-daero, Yeonje-gu, Busan, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=35.1797508,129.0765210",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "man-gov_offices-01",
+  "name": "HM Passport Office, Salford Quays",
+  "type": "gov_offices",
+  "city": "manchester",
+  "lat": 53.4762210,
+  "lng": -2.2972846,
+  "address": "Dallas Court, South Langworthy Road, Salford, Manchester M50 2GF, United Kingdom",
+  "gmaps_link": "https://maps.google.com/?q=53.4762210,-2.2972846",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "par-gov_offices-01",
+  "name": "Embassy of India, Paris",
+  "type": "gov_offices",
+  "city": "paris",
+  "lat": 48.8606137,
+  "lng": 2.2704486,
+  "address": "13-15 Rue Alfred Dehodencq, 75016 Paris, France",
+  "gmaps_link": "https://maps.google.com/?q=48.8606137,2.2704486",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ber-gov_offices-01",
+  "name": "Embassy of India, Berlin",
+  "type": "gov_offices",
+  "city": "berlin",
+  "lat": 52.5094048,
+  "lng": 13.3620546,
+  "address": "Tiergartenstrasse 17, 10785 Berlin, Deutschland",
+  "gmaps_link": "https://maps.google.com/?q=52.5094048,13.3620546",
+  "added_by": "yashkewlani"
 }
 ]

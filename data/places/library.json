@@ -602,5 +602,82 @@
   "address": "27-37-144 Bandar Road, Krishnalanka, Vijayawada 520002",
   "gmaps_link": "https://maps.google.com/?q=16.4961567,80.6420206",
   "added_by": "yashkewlani"
+},
+{
+  "id": "auh-library-01",
+  "name": "National Library and Archives, Cultural Foundation",
+  "type": "library",
+  "city": "abu_dhabi",
+  "lat": 24.4828003,
+  "lng": 54.3573683,
+  "address": "Sheikh Zayed 1st Street, Al Hosn, Abu Dhabi, UAE",
+  "gmaps_link": "https://maps.google.com/?q=24.4828003,54.3573683",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "shj-library-01",
+  "name": "Sharjah Public Library",
+  "type": "library",
+  "city": "sharjah",
+  "lat": 25.3541642,
+  "lng": 55.4280269,
+  "address": "Sheikh Mohammed bin Saqr Al Qasimi Street, Al Abar, Sharjah, UAE",
+  "gmaps_link": "https://maps.google.com/?q=25.3541642,55.4280269",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sel-library-01",
+  "name": "National Library of Korea",
+  "type": "library",
+  "city": "seoul",
+  "lat": 37.4979220,
+  "lng": 127.0044198,
+  "address": "201 Banpo-daero, Seocho-gu, Seoul 06579, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=37.4979220,127.0044198",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bus-library-01",
+  "name": "Busan Metropolitan Library",
+  "type": "library",
+  "city": "busan",
+  "lat": 35.1521000,
+  "lng": 128.9911000,
+  "address": "Sasang-ro 310beon-gil, Sasang-gu, Busan, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=35.1521000,128.9911000",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "man-library-01",
+  "name": "Manchester Central Library",
+  "type": "library",
+  "city": "manchester",
+  "lat": 53.4781312,
+  "lng": -2.2447096,
+  "address": "St Peter's Square, Manchester M2 5PD, United Kingdom",
+  "gmaps_link": "https://maps.google.com/?q=53.4781312,-2.2447096",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "par-library-01",
+  "name": "Bibliotheque publique d'information (BPI)",
+  "type": "library",
+  "city": "paris",
+  "lat": 48.8316688,
+  "lng": 2.3884764,
+  "address": "40 Avenue des Terroirs de France, 75012 Paris, France",
+  "gmaps_link": "https://maps.google.com/?q=48.8316688,2.3884764",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "ber-library-01",
+  "name": "Staatsbibliothek zu Berlin, Haus Potsdamer Strasse",
+  "type": "library",
+  "city": "berlin",
+  "lat": 52.5073702,
+  "lng": 13.3708411,
+  "address": "Potsdamer Strasse 33, 10785 Berlin, Deutschland",
+  "gmaps_link": "https://maps.google.com/?q=52.5073702,13.3708411",
+  "added_by": "yashkewlani"
 }
 ]

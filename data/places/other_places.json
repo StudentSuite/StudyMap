@@ -185,5 +185,49 @@
   "address": "Old NH16 Road, Bharathi Nagar, Patamata, Vijayawada 520008",
   "gmaps_link": "https://maps.google.com/?q=16.5107819,80.6607862",
   "added_by": "yashkewlani"
+},
+{
+  "id": "auh-other_places-01",
+  "name": "Hub71 (Startup and Innovation Hub)",
+  "type": "other_places",
+  "city": "abu_dhabi",
+  "lat": 24.5018342,
+  "lng": 54.3895956,
+  "address": "Al Maryah Island, Abu Dhabi, UAE",
+  "gmaps_link": "https://maps.google.com/?q=24.5018342,54.3895956",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "sel-other_places-01",
+  "name": "Seoul Global Center",
+  "type": "other_places",
+  "city": "seoul",
+  "lat": 37.5701745,
+  "lng": 126.9831831,
+  "address": "Near Jonggak Station Exit 6, Jongno-gu, Seoul, South Korea",
+  "gmaps_link": "https://maps.google.com/?q=37.5701745,126.9831831",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "man-other_places-01",
+  "name": "Alliance Francaise de Manchester",
+  "type": "other_places",
+  "city": "manchester",
+  "lat": 53.4765577,
+  "lng": -2.2413679,
+  "address": "125 Portland Street, Manchester M1 4QD, United Kingdom",
+  "gmaps_link": "https://maps.google.com/?q=53.4765577,-2.2413679",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "par-other_places-01",
+  "name": "Cite internationale universitaire de Paris",
+  "type": "other_places",
+  "city": "paris",
+  "lat": 48.8198927,
+  "lng": 2.3387264,
+  "address": "17 Boulevard Jourdan, 75014 Paris, France",
+  "gmaps_link": "https://maps.google.com/?q=48.8198927,2.3387264",
+  "added_by": "yashkewlani"
 }
 ]
