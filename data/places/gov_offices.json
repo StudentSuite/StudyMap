@@ -812,5 +812,49 @@
     "address": "Willi-Becker-Allee 7, 40227 Dusseldorf, Germany",
     "gmaps_link": "https://maps.google.com/?q=51.2177467,6.7953755",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "drb-gov_offices-01",
+    "name": "Department of Home Affairs, Durban",
+    "type": "gov_offices",
+    "city": "durban",
+    "lat": -29.8412477,
+    "lng": 31.0230314,
+    "address": "350 Umgeni Road, Stamford Hill, Durban 4023, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-29.8412477,31.0230314",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "blm-gov_offices-01",
+    "name": "Department of Home Affairs, Bloemfontein",
+    "type": "gov_offices",
+    "city": "bloemfontein",
+    "lat": -29.1693443,
+    "lng": 26.23549,
+    "address": "Mnigisa Street, Phahameng, Bloemfontein 9309, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-29.1693443,26.23549",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "cal-gov_offices-01",
+    "name": "Service Canada Centre & Passport Services, Calgary",
+    "type": "gov_offices",
+    "city": "calgary",
+    "lat": 51.0495897,
+    "lng": -114.0591946,
+    "address": "220 4 Avenue SE, Calgary, AB T2G 0E4, Canada",
+    "gmaps_link": "https://maps.google.com/?q=51.0495897,-114.0591946",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "van-gov_offices-01",
+    "name": "Service Canada Centre, Vancouver (Sinclair Centre)",
+    "type": "gov_offices",
+    "city": "vancouver",
+    "lat": 49.2858905,
+    "lng": -123.1138846,
+    "address": "757 West Hastings Street, Vancouver, BC V6C 1T2, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.2858905,-123.1138846",
+    "added_by": "yashkewlani"
   }
 ]

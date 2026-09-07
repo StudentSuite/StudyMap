@@ -328,5 +328,27 @@
     "address": "Basler Strasse 2, 79100 Freiburg im Breisgau, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.9883693,7.847633",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "cal-other_places-01",
+    "name": "University of Calgary",
+    "type": "other_places",
+    "city": "calgary",
+    "lat": 51.075054,
+    "lng": -114.138805,
+    "address": "2500 University Drive NW, Calgary, AB T2N 1N4, Canada",
+    "gmaps_link": "https://maps.google.com/?q=51.075054,-114.138805",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "van-other_places-01",
+    "name": "Simon Fraser University, Harbour Centre",
+    "type": "other_places",
+    "city": "vancouver",
+    "lat": 49.2845459,
+    "lng": -123.1116636,
+    "address": "515 West Hastings Street, Vancouver, BC V6B 4N5, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.2845459,-123.1116636",
+    "added_by": "yashkewlani"
   }
 ]

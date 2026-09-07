@@ -834,5 +834,49 @@
     "address": "Platz der Universitat 2, 79098 Freiburg im Breisgau, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.9941949,7.8449421",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "drb-library-01",
+    "name": "eThekwini Municipal Library (Durban City Hall)",
+    "type": "library",
+    "city": "durban",
+    "lat": -29.8578838,
+    "lng": 31.0265849,
+    "address": "Anton Lembede Street, Durban City Hall, Durban 4001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-29.8578838,31.0265849",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "blm-library-01",
+    "name": "Bloemfontein Public Library",
+    "type": "library",
+    "city": "bloemfontein",
+    "lat": -29.1153086,
+    "lng": 26.2203698,
+    "address": "Henry Street, Mangaung, Bloemfontein 9310, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-29.1153086,26.2203698",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "cal-library-01",
+    "name": "Calgary Central Library",
+    "type": "library",
+    "city": "calgary",
+    "lat": 51.0455213,
+    "lng": -114.0550679,
+    "address": "800 3 Street SE, Calgary, AB T2G 2E7, Canada",
+    "gmaps_link": "https://maps.google.com/?q=51.0455213,-114.0550679",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "van-library-01",
+    "name": "Vancouver Public Library, Central Branch",
+    "type": "library",
+    "city": "vancouver",
+    "lat": 49.279659,
+    "lng": -123.115614,
+    "address": "350 W Georgia St, Vancouver, BC V6B 6B1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.279659,-123.115614",
+    "added_by": "yashkewlani"
   }
 ]
