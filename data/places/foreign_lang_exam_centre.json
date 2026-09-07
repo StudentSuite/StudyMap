@@ -406,5 +406,17 @@
     "gmaps_link": "https://maps.google.com/?q=53.5498149,10.0086675",
     "added_by": "yashkewlani",
     "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+{
+    "id": "gur-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Gurugram",
+    "type": "foreign_lang_exam_centre",
+    "city": "gurugram",
+    "lat": 28.473784,
+    "lng": 77.0471827,
+    "address": "Sector 14, Gurugram, Haryana, India",
+    "gmaps_link": "https://maps.google.com/?q=28.473784,77.0471827",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

@@ -922,5 +922,38 @@
     "address": "Stanley Place, South Brisbane, QLD 4101, Australia",
     "gmaps_link": "https://maps.google.com/?q=-27.4711996,153.018136",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "cns-library-01",
+    "name": "Cairns City Library",
+    "type": "library",
+    "city": "cairns",
+    "lat": -16.9204088,
+    "lng": 145.7752835,
+    "address": "151 Abbott Street, Cairns City, QLD 4870, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-16.9204088,145.7752835",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "jdh-library-01",
+    "name": "Jai Narain Vyas University, Central Library",
+    "type": "library",
+    "city": "jodhpur",
+    "lat": 26.2443419,
+    "lng": 73.020222,
+    "address": "New Pali Road, Jodhpur, Rajasthan 342001, India",
+    "gmaps_link": "https://maps.google.com/?q=26.2443419,73.020222",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "knp-library-01",
+    "name": "Harcourt Butler Technical University, Central Library",
+    "type": "library",
+    "city": "kanpur",
+    "lat": 26.5001306,
+    "lng": 80.2860199,
+    "address": "Nawabganj, NH34, Kanpur, Uttar Pradesh 208002, India",
+    "gmaps_link": "https://maps.google.com/?q=26.5001306,80.2860199",
+    "added_by": "yashkewlani"
   }
 ]

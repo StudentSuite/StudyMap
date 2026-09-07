@@ -372,5 +372,27 @@
     "address": "Chancellors Place, St Lucia, Brisbane, QLD 4067, Australia",
     "gmaps_link": "https://maps.google.com/?q=-27.4981423,153.0111536",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "gur-other_places-01",
+    "name": "Gurugram University",
+    "type": "other_places",
+    "city": "gurugram",
+    "lat": 28.4238123,
+    "lng": 77.0655926,
+    "address": "Mayfield Garden, Sector 51, Gurugram, Haryana 122018, India",
+    "gmaps_link": "https://maps.google.com/?q=28.4238123,77.0655926",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "jdh-other_places-01",
+    "name": "MBM University (Engineering College), Jodhpur",
+    "type": "other_places",
+    "city": "jodhpur",
+    "lat": 26.2708162,
+    "lng": 73.0348015,
+    "address": "College Road, Jodhpur, Rajasthan 342011, India",
+    "gmaps_link": "https://maps.google.com/?q=26.2708162,73.0348015",
+    "added_by": "yashkewlani"
   }
 ]

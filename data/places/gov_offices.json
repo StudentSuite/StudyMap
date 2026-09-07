@@ -900,5 +900,49 @@
     "address": "261 Queen Street, Brisbane City, QLD 4000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-27.4680852,153.0283808",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "cns-gov_offices-01",
+    "name": "Australia Post, Cairns Post Shop",
+    "type": "gov_offices",
+    "city": "cairns",
+    "lat": -16.9270644,
+    "lng": 145.7783021,
+    "address": "Grafton Street, Cairns City, QLD 4870, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-16.9270644,145.7783021",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "gur-gov_offices-01",
+    "name": "Passport Seva Kendra, Gurugram",
+    "type": "gov_offices",
+    "city": "gurugram",
+    "lat": 28.4769607,
+    "lng": 77.0662688,
+    "address": "Mehrauli-Gurgaon Road, Sector 17, Gurugram, Haryana 122007, India",
+    "gmaps_link": "https://maps.google.com/?q=28.4769607,77.0662688",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "jdh-gov_offices-01",
+    "name": "Passport Seva Kendra, Jodhpur",
+    "type": "gov_offices",
+    "city": "jodhpur",
+    "lat": 26.2662275,
+    "lng": 73.0257132,
+    "address": "Residency Road, Jodhpur, Rajasthan 342001, India",
+    "gmaps_link": "https://maps.google.com/?q=26.2662275,73.0257132",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "knp-gov_offices-01",
+    "name": "Kanpur Cantonment Head Post Office",
+    "type": "gov_offices",
+    "city": "kanpur",
+    "lat": 26.4512667,
+    "lng": 80.3727211,
+    "address": "Memorial Lane, Kanpur Cantonment, Kanpur, Uttar Pradesh 208004, India",
+    "gmaps_link": "https://maps.google.com/?q=26.4512667,80.3727211",
+    "added_by": "yashkewlani"
   }
 ]
