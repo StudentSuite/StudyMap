@@ -350,5 +350,27 @@
     "address": "515 West Hastings Street, Vancouver, BC V6B 4N5, Canada",
     "gmaps_link": "https://maps.google.com/?q=49.2845459,-123.1116636",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "nyk-other_places-01",
+    "name": "York University, Keele Campus",
+    "type": "other_places",
+    "city": "north_york",
+    "lat": 43.7741755,
+    "lng": -79.504749,
+    "address": "4700 Keele Street, North York, Toronto, ON M3J 2N9, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.7741755,-79.504749",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bne-other_places-01",
+    "name": "University of Queensland, St Lucia Campus",
+    "type": "other_places",
+    "city": "brisbane",
+    "lat": -27.4981423,
+    "lng": 153.0111536,
+    "address": "Chancellors Place, St Lucia, Brisbane, QLD 4067, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-27.4981423,153.0111536",
+    "added_by": "yashkewlani"
   }
 ]

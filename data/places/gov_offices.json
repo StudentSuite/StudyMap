@@ -856,5 +856,49 @@
     "address": "757 West Hastings Street, Vancouver, BC V6C 1T2, Canada",
     "gmaps_link": "https://maps.google.com/?q=49.2858905,-123.1138846",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "mkh-gov_offices-01",
+    "name": "ServiceOntario, Markham",
+    "type": "gov_offices",
+    "city": "markham",
+    "lat": 43.8625689,
+    "lng": -79.3065745,
+    "address": "Highway 7, Unionville, Markham, ON L3R 1M0, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.8625689,-79.3065745",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "nyk-gov_offices-01",
+    "name": "Service Canada, North York",
+    "type": "gov_offices",
+    "city": "north_york",
+    "lat": 43.7563878,
+    "lng": -79.4724437,
+    "address": "Whitehorse Road, York University Heights, North York, Toronto, ON M3J 3A7, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.7563878,-79.4724437",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "cbr-gov_offices-01",
+    "name": "Australia Post, Canberra GPO (Alinga Street)",
+    "type": "gov_offices",
+    "city": "canberra",
+    "lat": -35.2780571,
+    "lng": 149.1281584,
+    "address": "Alinga Street, City, Canberra ACT 2601, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-35.2780571,149.1281584",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bne-gov_offices-01",
+    "name": "General Post Office, Brisbane",
+    "type": "gov_offices",
+    "city": "brisbane",
+    "lat": -27.4680852,
+    "lng": 153.0283808,
+    "address": "261 Queen Street, Brisbane City, QLD 4000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-27.4680852,153.0283808",
+    "added_by": "yashkewlani"
   }
 ]
