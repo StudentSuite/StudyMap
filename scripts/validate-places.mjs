@@ -26,7 +26,12 @@
 import { readFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
-import { Reporter, hasEmDash, isRealIsoDate } from "./lib/data-validation.mjs";
+import {
+  Reporter,
+  hasEmDash,
+  isLatLngPlaceholderGmapsLink,
+  isRealIsoDate,
+} from "./lib/data-validation.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(__dirname, "../data/places");
@@ -198,11 +203,18 @@ for (const file of files) {
     }
 
     // gmaps_link format
-    if (r.gmaps_link !== undefined && !GMAPS_RE.test(r.gmaps_link)) {
-      err(
-        loc,
-        `gmaps_link must be https://maps.google.com/?q=<lat>,<lng>, got "${r.gmaps_link}"`,
-      );
+    if (r.gmaps_link !== undefined) {
+      if (!GMAPS_RE.test(r.gmaps_link)) {
+        err(
+          loc,
+          `gmaps_link must be https://maps.google.com/?q=<lat>,<lng>, got "${r.gmaps_link}"`,
+        );
+      } else if (isLatLngPlaceholderGmapsLink(r.gmaps_link)) {
+        err(
+          loc,
+          `gmaps_link is still the literal "lat,lng" placeholder (see #229) — fill it with the record's coordinates`,
+        );
+      }
     }
 
     // No em dashes in any string field
