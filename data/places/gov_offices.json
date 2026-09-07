@@ -669,5 +669,82 @@
   "address": "Tiergartenstrasse 17, 10785 Berlin, Deutschland",
   "gmaps_link": "https://maps.google.com/?q=52.5094048,13.3620546",
   "added_by": "yashkewlani"
+},
+{
+  "id": "mad-gov_offices-01",
+  "name": "Embassy of India, Madrid",
+  "type": "gov_offices",
+  "city": "madrid",
+  "lat": 40.4666548,
+  "lng": -3.6743753,
+  "address": "Avenida de Pio XII 30-32, 28016 Madrid, Spain",
+  "gmaps_link": "https://maps.google.com/?q=40.4666548,-3.6743753",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bcn-gov_offices-01",
+  "name": "Consulate General of India, Barcelona",
+  "type": "gov_offices",
+  "city": "barcelona",
+  "lat": 41.3765103,
+  "lng": 2.1472299,
+  "address": "Torre Allianz, Carrer de Tarragona 103-115, 08014 Barcelona, Spain",
+  "gmaps_link": "https://maps.google.com/?q=41.3765103,2.1472299",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bos-gov_offices-01",
+  "name": "Consulate General of India, Boston",
+  "type": "gov_offices",
+  "city": "boston",
+  "lat": 42.3550474,
+  "lng": -71.0534160,
+  "address": "High Street Tower, 125 High Street, Boston, MA 02110, USA",
+  "gmaps_link": "https://maps.google.com/?q=42.3550474,-71.0534160",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "mtl-gov_offices-01",
+  "name": "Service Canada Centre, Passport Services (Downtown Montreal)",
+  "type": "gov_offices",
+  "city": "montreal",
+  "lat": 45.5066825,
+  "lng": -73.5626550,
+  "address": "200 Boulevard Rene-Levesque Ouest, Suite 103, Montreal, QC H2Z 1X4, Canada",
+  "gmaps_link": "https://maps.google.com/?q=45.5066825,-73.5626550",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lag-gov_offices-01",
+  "name": "Nigeria Immigration Service Passport Office, Ikeja",
+  "type": "gov_offices",
+  "city": "lagos",
+  "lat": 6.6179055,
+  "lng": 3.3559413,
+  "address": "5 Assbifi Road, Agidingbi, Ikeja, Lagos, Nigeria",
+  "gmaps_link": "https://maps.google.com/?q=6.6179055,3.3559413",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lag-gov_offices-02",
+  "name": "U.S. Consulate General, Lagos",
+  "type": "gov_offices",
+  "city": "lagos",
+  "lat": 6.4392250,
+  "lng": 3.4108164,
+  "address": "2 Walter Carrington Crescent, Victoria Island, Lagos, Nigeria",
+  "gmaps_link": "https://maps.google.com/?q=6.4392250,3.4108164",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jnb-gov_offices-01",
+  "name": "Consulate General of India, Johannesburg",
+  "type": "gov_offices",
+  "city": "johannesburg",
+  "lat": -26.1796541,
+  "lng": 28.0328498,
+  "address": "1 Eton Road, corner Jan Smuts Avenue, Parktown, Johannesburg 2193, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-26.1796541,28.0328498",
+  "added_by": "yashkewlani"
 }
 ]

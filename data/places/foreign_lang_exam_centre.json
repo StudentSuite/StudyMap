@@ -298,5 +298,77 @@
   "gmaps_link": "https://maps.google.com/?q=52.5247869,13.4062226",
   "added_by": "yashkewlani",
   "exam": "Goethe-Zertifikat (A1-C2)"
+},
+{
+  "id": "mad-foreign_lang_exam_centre-01",
+  "name": "British Council Madrid IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "madrid",
+  "lat": 40.4356224,
+  "lng": -3.6937744,
+  "address": "Paseo del General Martinez Campos 31, 28010 Madrid, Spain",
+  "gmaps_link": "https://maps.google.com/?q=40.4356224,-3.6937744",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "bcn-foreign_lang_exam_centre-01",
+  "name": "British Council Barcelona IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "barcelona",
+  "lat": 41.3974692,
+  "lng": 2.1415109,
+  "address": "Carrer d'Amigo 83, 08021 Barcelona, Spain",
+  "gmaps_link": "https://maps.google.com/?q=41.3974692,2.1415109",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "bos-foreign_lang_exam_centre-01",
+  "name": "ELS/IELTS Test Centre, Faneuil Hall",
+  "type": "foreign_lang_exam_centre",
+  "city": "boston",
+  "lat": 42.3600335,
+  "lng": -71.0562341,
+  "address": "1 Faneuil Hall Square, Boston, MA 02109, USA",
+  "gmaps_link": "https://maps.google.com/?q=42.3600335,-71.0562341",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "mtl-foreign_lang_exam_centre-01",
+  "name": "Canada College IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "montreal",
+  "lat": 45.5205579,
+  "lng": -73.5664322,
+  "address": "1001 Rue Sherbrooke Est, Montreal, QC H2L 1L3, Canada",
+  "gmaps_link": "https://maps.google.com/?q=45.5205579,-73.5664322",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "lag-foreign_lang_exam_centre-01",
+  "name": "British Council Ikoyi IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "lagos",
+  "lat": 6.4523431,
+  "lng": 3.4280523,
+  "address": "20 Thompson Avenue, Ikoyi, Lagos, Nigeria",
+  "gmaps_link": "https://maps.google.com/?q=6.4523431,3.4280523",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
+},
+{
+  "id": "jnb-foreign_lang_exam_centre-01",
+  "name": "British Council Johannesburg IELTS Test Centre",
+  "type": "foreign_lang_exam_centre",
+  "city": "johannesburg",
+  "lat": -26.1307582,
+  "lng": 28.0351276,
+  "address": "Dunkeld Corner, 275 Jan Smuts Avenue, Dunkeld West, Johannesburg 2196, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-26.1307582,28.0351276",
+  "added_by": "yashkewlani",
+  "exam": "IELTS"
 }
 ]

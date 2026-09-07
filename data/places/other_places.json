@@ -229,5 +229,71 @@
   "address": "17 Boulevard Jourdan, 75014 Paris, France",
   "gmaps_link": "https://maps.google.com/?q=48.8198927,2.3387264",
   "added_by": "yashkewlani"
+},
+{
+  "id": "mad-other_places-01",
+  "name": "Instituto Internacional",
+  "type": "other_places",
+  "city": "madrid",
+  "lat": 40.4342831,
+  "lng": -3.6910529,
+  "address": "Calle de Miguel Angel 8, 28071 Madrid, Spain",
+  "gmaps_link": "https://maps.google.com/?q=40.4342831,-3.6910529",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bcn-other_places-01",
+  "name": "Institut Francais de Barcelone",
+  "type": "other_places",
+  "city": "barcelona",
+  "lat": 41.3952971,
+  "lng": 2.1515237,
+  "address": "Carrer de Moia 8, 08036 Barcelona, Spain",
+  "gmaps_link": "https://maps.google.com/?q=41.3952971,2.1515237",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bos-other_places-01",
+  "name": "French Cultural Center / Alliance Francaise of Boston",
+  "type": "other_places",
+  "city": "boston",
+  "lat": 42.3541297,
+  "lng": -71.0747434,
+  "address": "53 Marlborough Street, Boston, MA 02116, USA",
+  "gmaps_link": "https://maps.google.com/?q=42.3541297,-71.0747434",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "mtl-other_places-01",
+  "name": "McGill International Student Services",
+  "type": "other_places",
+  "city": "montreal",
+  "lat": 45.5030020,
+  "lng": -73.5769991,
+  "address": "3600 McTavish Street, Montreal, QC H3A 0G3, Canada",
+  "gmaps_link": "https://maps.google.com/?q=45.5030020,-73.5769991",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lag-other_places-01",
+  "name": "Co-Creation Hub (CcHUB)",
+  "type": "other_places",
+  "city": "lagos",
+  "lat": 6.5068212,
+  "lng": 3.3754881,
+  "address": "294 Herbert Macaulay Way, Yaba, Lagos, Nigeria",
+  "gmaps_link": "https://maps.google.com/?q=6.5068212,3.3754881",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jnb-other_places-01",
+  "name": "Wits University International Students Office",
+  "type": "other_places",
+  "city": "johannesburg",
+  "lat": -26.1927876,
+  "lng": 28.0355509,
+  "address": "Solomon Mahlangu House, Jorissen Street, Braamfontein, Johannesburg, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-26.1927876,28.0355509",
+  "added_by": "yashkewlani"
 }
 ]

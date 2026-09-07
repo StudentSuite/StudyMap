@@ -679,5 +679,71 @@
   "address": "Potsdamer Strasse 33, 10785 Berlin, Deutschland",
   "gmaps_link": "https://maps.google.com/?q=52.5073702,13.3708411",
   "added_by": "yashkewlani"
+},
+{
+  "id": "mad-library-01",
+  "name": "Biblioteca Nacional de Espana",
+  "type": "library",
+  "city": "madrid",
+  "lat": 40.4237276,
+  "lng": -3.6899043,
+  "address": "Paseo de Recoletos 20-22, 28071 Madrid, Spain",
+  "gmaps_link": "https://maps.google.com/?q=40.4237276,-3.6899043",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bcn-library-01",
+  "name": "Biblioteca de Catalunya",
+  "type": "library",
+  "city": "barcelona",
+  "lat": 41.3809166,
+  "lng": 2.1705232,
+  "address": "Carrer de l'Hospital 56, 08001 Barcelona, Spain",
+  "gmaps_link": "https://maps.google.com/?q=41.3809166,2.1705232",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "bos-library-01",
+  "name": "Boston Public Library, Central Library",
+  "type": "library",
+  "city": "boston",
+  "lat": 42.3493298,
+  "lng": -71.0786547,
+  "address": "700 Boylston Street, Boston, MA 02116, USA",
+  "gmaps_link": "https://maps.google.com/?q=42.3493298,-71.0786547",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "mtl-library-01",
+  "name": "Grande Bibliotheque (BAnQ)",
+  "type": "library",
+  "city": "montreal",
+  "lat": 45.5153771,
+  "lng": -73.5622117,
+  "address": "475 Boulevard De Maisonneuve Est, Montreal, QC H2L 5C4, Canada",
+  "gmaps_link": "https://maps.google.com/?q=45.5153771,-73.5622117",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "lag-library-01",
+  "name": "National Library of Nigeria, Lagos State Branch",
+  "type": "library",
+  "city": "lagos",
+  "lat": 6.5051407,
+  "lng": 3.3778488,
+  "address": "227 Herbert Macaulay Way, Alagomeji, Yaba, Lagos, Nigeria",
+  "gmaps_link": "https://maps.google.com/?q=6.5051407,3.3778488",
+  "added_by": "yashkewlani"
+},
+{
+  "id": "jnb-library-01",
+  "name": "Johannesburg City Library",
+  "type": "library",
+  "city": "johannesburg",
+  "lat": -26.2023893,
+  "lng": 27.9919379,
+  "address": "Market Square, corner Market and Sauer Streets, Johannesburg 2001, South Africa",
+  "gmaps_link": "https://maps.google.com/?q=-26.2023893,27.9919379",
+  "added_by": "yashkewlani"
 }
 ]
