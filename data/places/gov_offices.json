@@ -779,5 +779,38 @@
     "type": "gov_offices",
     "gmaps_link": "https://maps.google.com/?q=38.4189973,27.1286316",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "bon-gov_offices-01",
+    "name": "Stadthaus Bonn (Buergeramt)",
+    "type": "gov_offices",
+    "city": "bonn",
+    "lat": 50.7370976,
+    "lng": 7.094617,
+    "address": "Berliner Platz 2, 53111 Bonn, Germany",
+    "gmaps_link": "https://maps.google.com/?q=50.7370976,7.094617",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bre-gov_offices-01",
+    "name": "Rathaus Bremen (City Hall)",
+    "type": "gov_offices",
+    "city": "bremen",
+    "lat": 53.0760668,
+    "lng": 8.8077376,
+    "address": "Am Markt 21, 28195 Bremen, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.0760668,8.8077376",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "dus-gov_offices-01",
+    "name": "Amt fur Einwohnerwesen Duesseldorf (Buergerbuero)",
+    "type": "gov_offices",
+    "city": "dusseldorf",
+    "lat": 51.2177467,
+    "lng": 6.7953755,
+    "address": "Willi-Becker-Allee 7, 40227 Dusseldorf, Germany",
+    "gmaps_link": "https://maps.google.com/?q=51.2177467,6.7953755",
+    "added_by": "yashkewlani"
   }
 ]

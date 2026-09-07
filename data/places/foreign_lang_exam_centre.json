@@ -394,5 +394,17 @@
     "type": "foreign_lang_exam_centre",
     "gmaps_link": "https://maps.google.com/?q=41.0338612,28.9781666",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "ham-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Hamburg",
+    "type": "foreign_lang_exam_centre",
+    "city": "hamburg",
+    "lat": 53.5498149,
+    "lng": 10.0086675,
+    "address": "Huhnerposten 1, 20097 Hamburg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.5498149,10.0086675",
+    "added_by": "yashkewlani",
+    "exam": "Goethe-Zertifikat (A1-C2)"
   }
 ]

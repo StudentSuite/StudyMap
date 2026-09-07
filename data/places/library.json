@@ -779,5 +779,60 @@
     "type": "library",
     "gmaps_link": "https://maps.google.com/?q=38.414575,27.1249157",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "bon-library-01",
+    "name": "Universitats- und Landesbibliothek Bonn",
+    "type": "library",
+    "city": "bonn",
+    "lat": 50.7314808,
+    "lng": 7.1086578,
+    "address": "Adenauerallee 39-41, 53113 Bonn, Germany",
+    "gmaps_link": "https://maps.google.com/?q=50.7314808,7.1086578",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "bre-library-01",
+    "name": "Staats- und Universitatsbibliothek Bremen",
+    "type": "library",
+    "city": "bremen",
+    "lat": 53.1082299,
+    "lng": 8.8539013,
+    "address": "Bibliothekstrasse 1, 28359 Bremen, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.1082299,8.8539013",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "ham-library-01",
+    "name": "Staats- und Universitatsbibliothek Hamburg Carl von Ossietzky",
+    "type": "library",
+    "city": "hamburg",
+    "lat": 53.5648112,
+    "lng": 9.9846188,
+    "address": "Von-Melle-Park 3, 20146 Hamburg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.5648112,9.9846188",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "dus-library-01",
+    "name": "Zentralbibliothek im KAP1",
+    "type": "library",
+    "city": "dusseldorf",
+    "lat": 51.2221174,
+    "lng": 6.7929365,
+    "address": "Konrad-Adenauer-Platz 1, 40210 Dusseldorf, Germany",
+    "gmaps_link": "https://maps.google.com/?q=51.2221174,6.7929365",
+    "added_by": "yashkewlani"
+  },
+{
+    "id": "frb-library-01",
+    "name": "Universitatsbibliothek Freiburg",
+    "type": "library",
+    "city": "freiburg",
+    "lat": 47.9941949,
+    "lng": 7.8449421,
+    "address": "Platz der Universitat 2, 79098 Freiburg im Breisgau, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.9941949,7.8449421",
+    "added_by": "yashkewlani"
   }
 ]

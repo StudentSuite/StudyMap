@@ -317,5 +317,16 @@
     "type": "other_places",
     "gmaps_link": "https://maps.google.com/?q=38.4592832,27.223755",
     "added_by": "yashkewlani"
+  },
+{
+    "id": "frb-other_places-01",
+    "name": "Studierendenwerk Freiburg",
+    "type": "other_places",
+    "city": "freiburg",
+    "lat": 47.9883693,
+    "lng": 7.847633,
+    "address": "Basler Strasse 2, 79100 Freiburg im Breisgau, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.9883693,7.847633",
+    "added_by": "yashkewlani"
   }
 ]
