@@ -85,6 +85,12 @@ export default function RootLayout({
       )}
     >
       <body className="flex min-h-full flex-col">
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-primary focus:px-4 focus:py-2 focus:text-primary-foreground focus:outline-none focus:ring-2 focus:ring-ring"
+        >
+          Skip to content
+        </a>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -92,7 +98,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex flex-1 flex-col pt-14">{children}</main>
+          <main id="main-content" className="flex flex-1 flex-col pt-14">
+            {children}
+          </main>
           <Footer />
           <Toaster richColors position="top-center" />
           <PwaRegister />
