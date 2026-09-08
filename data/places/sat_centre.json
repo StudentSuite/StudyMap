@@ -734,7 +734,7 @@
     "city": "vancouver",
     "lat": 49.2664546,
     "lng": -123.1995519,
-    "address": "",
+    "address": "4125 WEST 8TH AVENUE, WEST POINT GREY, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -747,7 +747,7 @@
     "city": "toronto",
     "lat": 43.6691521,
     "lng": -79.4008932,
-    "address": "",
+    "address": "186 ST GEORGE STREET, ANNEX, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -760,7 +760,7 @@
     "city": "westmount",
     "lat": 45.4861861,
     "lng": -73.5973938,
-    "address": "",
+    "address": "95 CHEMIN DE LA COTE-SAINT-ANTOINE, WESTMOUNT, MONTREAL",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -773,7 +773,7 @@
     "city": "markham",
     "lat": 43.8496817,
     "lng": -79.3678496,
-    "address": "",
+    "address": "7050 WOODBINE AVENUE, SUITE 300, MARKHAM",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -786,7 +786,7 @@
     "city": "north_york",
     "lat": 43.7474438,
     "lng": -79.3548278,
-    "address": "",
+    "address": "250 LESMILL ROAD, DON MILLS, NORTH YORK",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -799,7 +799,7 @@
     "city": "toronto",
     "lat": 43.7732526,
     "lng": -79.3376196,
-    "address": "",
+    "address": "285 EGLINTON AVENUE EAST, YONGE-EGLINTON, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -812,7 +812,7 @@
     "city": "toronto",
     "lat": 43.8147405,
     "lng": -79.3046955,
-    "address": "",
+    "address": "1051 McNICOLL AVENUE, SCARBOROUGH, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -825,7 +825,7 @@
     "city": "north_york",
     "lat": 43.7570589,
     "lng": -79.3527135,
-    "address": "",
+    "address": "150 LESMILL ROAD, DON MILLS, NORTH YORK",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -838,7 +838,7 @@
     "city": "toronto",
     "lat": 43.7102223,
     "lng": -79.496158,
-    "address": "",
+    "address": "200 RONSON DRIVE, SUITE 200, ETOBICOKE, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -851,7 +851,7 @@
     "city": "vancouver",
     "lat": 49.2153812,
     "lng": -123.1413546,
-    "address": "",
+    "address": "400-5750 OAK STREET, OAKRIDGE, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -864,7 +864,7 @@
     "city": "kamloops",
     "lat": 50.6975319,
     "lng": -120.3680798,
-    "address": "",
+    "address": "750 COTTONWOOD AVENUE, NORTH KAMLOOPS, KAMLOOPS",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -877,7 +877,7 @@
     "city": "toronto",
     "lat": 43.8231047,
     "lng": -79.3054447,
-    "address": "",
+    "address": "56 REDLEA AVENUE, KENNEDY & STEELES, SCARBOROUGH, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -890,7 +890,7 @@
     "city": "vancouver",
     "lat": 49.263407,
     "lng": -123.1381407,
-    "address": "",
+    "address": "200-1490 WEST BROADWAY, FAIRVIEW, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -903,7 +903,7 @@
     "city": "vancouver",
     "lat": 49.2825045,
     "lng": -123.0270265,
-    "address": "",
+    "address": "250 SKEENA STREET, HASTINGS-SUNRISE, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -916,7 +916,7 @@
     "city": "charlottetown",
     "lat": 46.2641552,
     "lng": -63.1627791,
-    "address": "",
+    "address": "50 KIRKDALE ROAD, WEST ROYALTY, CHARLOTTETOWN",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -929,7 +929,7 @@
     "city": "west_vancouver",
     "lat": 49.3604879,
     "lng": -123.1198006,
-    "address": "",
+    "address": "70 MORVEN DRIVE, BRITISH PROPERTIES, WEST VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -942,7 +942,7 @@
     "city": "montreal",
     "lat": 45.4709771,
     "lng": -73.6235071,
-    "address": "",
+    "address": "4090 AVENUE ROYAL, NOTRE-DAME-DE-GRACE, MONTREAL",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -955,7 +955,7 @@
     "city": "vancouver",
     "lat": 49.2633303,
     "lng": -123.1126367,
-    "address": "",
+    "address": "300-1215 WEST BROADWAY, MOUNT PLEASANT, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -968,7 +968,7 @@
     "city": "richmond",
     "lat": 49.1699296,
     "lng": -123.1413588,
-    "address": "",
+    "address": "7420 WESTMINSTER HIGHWAY, CITY CENTRE, RICHMOND",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -981,7 +981,7 @@
     "city": "richmond_hill",
     "lat": 43.8694221,
     "lng": -79.4127798,
-    "address": "",
+    "address": "2 EAST BEAVER CREEK ROAD, BUILDING 4, RICHMOND HILL",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -994,7 +994,7 @@
     "city": "vancouver",
     "lat": 49.3141556,
     "lng": -123.1008863,
-    "address": "",
+    "address": "210-750 HAMILTON STREET, DOWNTOWN, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1007,7 +1007,7 @@
     "city": "markham",
     "lat": 43.8251971,
     "lng": -79.3071683,
-    "address": "",
+    "address": "1001 DENISON STREET, SUITE 102, MARKHAM",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1020,7 +1020,7 @@
     "city": "vancouver",
     "lat": 49.2429397,
     "lng": -123.0556099,
-    "address": "",
+    "address": "2439 SAINT LAWRENCE STREET, RENFREW-COLLINGWOOD, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1033,7 +1033,7 @@
     "city": "vancouver",
     "lat": 49.2641592,
     "lng": -123.1238069,
-    "address": "",
+    "address": "896 WEST 8TH AVENUE, FAIRVIEW, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1046,7 +1046,7 @@
     "city": "vancouver",
     "lat": 49.2370679,
     "lng": -123.1218092,
-    "address": "",
+    "address": "5350 BAILLIE STREET, SOUTH CAMBIE, VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1059,7 +1059,7 @@
     "city": "markham",
     "lat": 43.825787,
     "lng": -79.318624,
-    "address": "",
+    "address": "7100 BIRCHMOUNT ROAD, MARKHAM",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1072,7 +1072,7 @@
     "city": "shawnigan_lake",
     "lat": 48.6593459,
     "lng": -123.6404242,
-    "address": "",
+    "address": "1975 RENFREW ROAD, SHAWNIGAN LAKE, BC",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1085,7 +1085,7 @@
     "city": "bridgewater",
     "lat": 44.3969581,
     "lng": -64.5447347,
-    "address": "",
+    "address": "1485 KING STREET, BRIDGEWATER, NS",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1098,7 +1098,7 @@
     "city": "london",
     "lat": 43.0323638,
     "lng": -81.1487638,
-    "address": "",
+    "address": "361-365 RICHMOND STREET, DOWNTOWN, LONDON, ONTARIO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1111,7 +1111,7 @@
     "city": "toronto",
     "lat": 43.7252286,
     "lng": -79.5146435,
-    "address": "",
+    "address": "5 QUEENSLEA AVENUE, TORONTO",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1124,7 +1124,7 @@
     "city": "west_vancouver",
     "lat": 49.3496231,
     "lng": -123.1938643,
-    "address": "",
+    "address": "2900 RODGERS CREEK LANE, WEST BAY, WEST VANCOUVER",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1137,7 +1137,7 @@
     "city": "north_york",
     "lat": 44.0051052,
     "lng": -79.4576821,
-    "address": "",
+    "address": "205 SPARKS AVENUE, NORTH YORK",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -1150,7 +1150,7 @@
     "city": "calgary",
     "lat": 51.1288836,
     "lng": -114.1435625,
-    "address": "",
+    "address": "33 EDGEVALLEY CIRCLE NW, EDGEMONT, CALGARY",
     "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
@@ -4658,26 +4658,34 @@
     "name": "HOLY CHILD COLLEGE",
     "type": "sat_centre",
     "city": "lagos",
-    "lat": 6.459928,
-    "lng": 3.390509,
+    "lat": 6.523452,
+    "lng": 3.381614,
     "address": "12 Ojo Street",
-    "gmaps_link": "https://maps.google.com/?q=6.459928,3.390509",
+    "gmaps_link": "https://maps.google.com/?q=6.523452,3.381614",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "85841",
     "name": "Apostolic Faith Secondary School",
     "type": "sat_centre",
     "city": "lagos",
-    "lat": 6.434344,
-    "lng": 3.409597,
+    "lat": 6.507383,
+    "lng": 3.352173,
     "address": "Apostolic Faith Secondary School",
-    "gmaps_link": "https://maps.google.com/?q=6.434344,3.409597",
+    "gmaps_link": "https://maps.google.com/?q=6.507383,3.352173",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "66826",
@@ -4736,26 +4744,34 @@
     "name": "NIGERIAN TURK INTL COLL",
     "type": "sat_centre",
     "city": "kaduna",
-    "lat": 10.51829,
-    "lng": 7.435986,
+    "lat": 10.524815,
+    "lng": 7.428508,
     "address": "Plot No C9 Block Ba, Gwagwalada Ave",
-    "gmaps_link": "https://maps.google.com/?q=10.51829,7.435986",
+    "gmaps_link": "https://maps.google.com/?q=10.524815,7.428508",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "79439",
     "name": "Career Builders Academy",
     "type": "sat_centre",
     "city": "ojo_lagos",
-    "lat": 6.459928,
-    "lng": 3.390509,
+    "lat": 6.514321,
+    "lng": 3.351782,
     "address": "2 Career Avenue Cele Bus Stop",
-    "gmaps_link": "https://maps.google.com/?q=6.459928,3.390509",
+    "gmaps_link": "https://maps.google.com/?q=6.514321,3.351782",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "66132",
@@ -4775,13 +4791,17 @@
     "name": "Supreme Education Foundation Schools",
     "type": "sat_centre",
     "city": "lagos",
-    "lat": 6.434344,
-    "lng": 3.409597,
+    "lat": 6.516385,
+    "lng": 3.349825,
     "address": "23 Emmanuel Keshi Road",
-    "gmaps_link": "https://maps.google.com/?q=6.434344,3.409597",
+    "gmaps_link": "https://maps.google.com/?q=6.516385,3.349825",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "66418",
@@ -4866,13 +4886,17 @@
     "name": "Charles Dale Memorial International",
     "type": "sat_centre",
     "city": "port_harcourt",
-    "lat": 4.811928,
-    "lng": 7.046236,
+    "lat": 4.918826,
+    "lng": 6.984304,
     "address": "12 Army Range Off Eneka Igwuruta",
-    "gmaps_link": "https://maps.google.com/?q=4.811928,7.046236",
+    "gmaps_link": "https://maps.google.com/?q=4.918826,6.984304",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "43290",
@@ -4931,26 +4955,34 @@
     "name": "Danbo International Schools - Kaduna",
     "type": "sat_centre",
     "city": "kaduna",
-    "lat": 10.51829,
-    "lng": 7.435986,
+    "lat": 10.498186,
+    "lng": 7.442109,
     "address": "28 Kubani Crescent",
-    "gmaps_link": "https://maps.google.com/?q=10.51829,7.435986",
+    "gmaps_link": "https://maps.google.com/?q=10.498186,7.442109",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "66443",
     "name": "Jesuit Memorial College",
     "type": "sat_centre",
     "city": "port_harcourt",
-    "lat": 4.811928,
-    "lng": 7.046236,
+    "lat": 4.926313,
+    "lng": 6.967164,
     "address": "60 Angels Memorial Road, Mbodo-Aluu",
-    "gmaps_link": "https://maps.google.com/?q=4.811928,7.046236",
+    "gmaps_link": "https://maps.google.com/?q=4.926313,6.967164",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "74562",
@@ -5002,20 +5034,28 @@
     "gmaps_link": "https://maps.google.com/?q=38.721901,35.487321",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "80682",
     "name": "TED Ozel Atakent Anad Lis Esenyurt",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.029364,
-    "lng": 28.951443,
+    "lat": 41.0331,
+    "lng": 28.676,
     "address": "Koza Mah 1640, Sok No 7 Esenyurt",
-    "gmaps_link": "https://maps.google.com/?q=41.029364,28.951443",
+    "gmaps_link": "https://maps.google.com/?q=41.0331,28.676",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59808",
@@ -5048,13 +5088,17 @@
     "name": "TED IZMIR OZEL ANADOLU LISESI",
     "type": "sat_centre",
     "city": "izmir",
-    "lat": 38.419254,
-    "lng": 27.128469,
+    "lat": 38.443738,
+    "lng": 27.151526,
     "address": "Maresal Fevzi Cakmak Cd",
-    "gmaps_link": "https://maps.google.com/?q=38.419254,27.128469",
+    "gmaps_link": "https://maps.google.com/?q=38.443738,27.151526",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59016",
@@ -5204,13 +5248,17 @@
     "name": "MILESTONE INTERNATIONAL SCHOOL",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.060953,
-    "lng": 29.036923,
+    "lat": 41.065696,
+    "lng": 28.838252,
     "address": "Milestone Uluslararasi Okulu",
-    "gmaps_link": "https://maps.google.com/?q=41.060953,29.036923",
+    "gmaps_link": "https://maps.google.com/?q=41.065696,28.838252",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "60311",
@@ -5269,13 +5317,17 @@
     "name": "ELITE ACADEMY- ISTANBUL",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.006381,
+    "lat": 41.005172,
     "lng": 28.975872,
     "address": "Zafer Mah Haramidere Yolu Cad No 19",
-    "gmaps_link": "https://maps.google.com/?q=41.006381,28.975872",
+    "gmaps_link": "https://maps.google.com/?q=41.005172,28.975872",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "15418",
@@ -5399,13 +5451,17 @@
     "name": "OZEL KAYSERI AKAR ANADOLU LISESI",
     "type": "sat_centre",
     "city": "kayseri",
-    "lat": 38.721901,
-    "lng": 35.487321,
+    "lat": 38.714925,
+    "lng": 35.401037,
     "address": "Tavlusun, 1855. Cad No 35",
-    "gmaps_link": "https://maps.google.com/?q=38.721901,35.487321",
+    "gmaps_link": "https://maps.google.com/?q=38.714925,35.401037",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59354",
@@ -5418,7 +5474,11 @@
     "gmaps_link": "https://maps.google.com/?q=39.774394,30.519116",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59329",
@@ -5438,13 +5498,17 @@
     "name": "ISTANBUL INTL COMMUNITY SCHOOL",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.006381,
-    "lng": 28.975872,
+    "lat": 41.081304,
+    "lng": 29.058304,
     "address": "Istanbul Int. Community School",
-    "gmaps_link": "https://maps.google.com/?q=41.006381,28.975872",
+    "gmaps_link": "https://maps.google.com/?q=41.081304,29.058304",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59963",
@@ -5464,26 +5528,17 @@
     "name": "ABDULLAH GUL UNIVERSITY",
     "type": "sat_centre",
     "city": "kayseri",
-    "lat": 38.721901,
-    "lng": 35.487321,
+    "lat": 38.681746,
+    "lng": 35.611791,
     "address": "Agu Sumer Campus",
-    "gmaps_link": "https://maps.google.com/?q=38.721901,35.487321",
+    "gmaps_link": "https://maps.google.com/?q=38.681746,35.611791",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
-  },
-  {
-    "id": "95890",
-    "name": "Ozel Akar IEKFL",
-    "type": "sat_centre",
-    "city": "kayseri",
-    "lat": 38.721901,
-    "lng": 35.487321,
-    "address": "Tavlusun 1855 Cad No 35",
-    "gmaps_link": "https://maps.google.com/?q=38.721901,35.487321",
-    "added_by": "shauryagangrade",
-    "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59925",
@@ -5529,26 +5584,34 @@
     "name": "OZEL OGUZKAAN KOLEJI",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.006381,
-    "lng": 28.975872,
+    "lat": 40.998901,
+    "lng": 28.875153,
     "address": "Kartaltepe Mah Incirli Cad No 84A",
-    "gmaps_link": "https://maps.google.com/?q=41.006381,28.975872",
+    "gmaps_link": "https://maps.google.com/?q=40.998901,28.875153",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59948",
     "name": "EYUBOGLU SCHOOLS",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.060953,
-    "lng": 29.036923,
+    "lat": 41.017272,
+    "lng": 29.087764,
     "address": "Dr. Rustem Eyuboglu Str",
-    "gmaps_link": "https://maps.google.com/?q=41.060953,29.036923",
+    "gmaps_link": "https://maps.google.com/?q=41.017272,29.087764",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "80011",
@@ -5568,13 +5631,17 @@
     "name": "IZMIR GELISIM HIGH SCHOOL",
     "type": "sat_centre",
     "city": "izmir",
-    "lat": 38.419254,
-    "lng": 27.128469,
+    "lat": 38.446101,
+    "lng": 27.131348,
     "address": "Telsiz Mevki Ulukent",
-    "gmaps_link": "https://maps.google.com/?q=38.419254,27.128469",
+    "gmaps_link": "https://maps.google.com/?q=38.446101,27.131348",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59912",
@@ -5594,13 +5661,17 @@
     "name": "MEV Koleji Ozel Izmir Bornova",
     "type": "sat_centre",
     "city": "izmir",
-    "lat": 38.419254,
-    "lng": 27.128469,
+    "lat": 38.437842,
+    "lng": 27.19975,
     "address": "Mev Koleji- Bornova",
-    "gmaps_link": "https://maps.google.com/?q=38.419254,27.128469",
+    "gmaps_link": "https://maps.google.com/?q=38.437842,27.19975",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "60752",
@@ -5724,26 +5795,34 @@
     "name": "HUDA INTERNATIONAL SCHOOL",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.060953,
-    "lng": 29.036923,
+    "lat": 41.104066,
+    "lng": 28.767287,
     "address": "Kayabasi, Ulubatli Hasan Cd No.9, D1",
-    "gmaps_link": "https://maps.google.com/?q=41.060953,29.036923",
+    "gmaps_link": "https://maps.google.com/?q=41.104066,28.767287",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59902",
     "name": "NESIBE AYDIN ANADOLU LISESI",
     "type": "sat_centre",
     "city": "ankara",
-    "lat": 39.920776,
-    "lng": 32.85405,
+    "lat": 39.50457,
+    "lng": 32.293333,
     "address": "Haymana Yolu 5.Km",
-    "gmaps_link": "https://maps.google.com/?q=39.920776,32.85405",
+    "gmaps_link": "https://maps.google.com/?q=39.50457,32.293333",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59288",
@@ -5802,13 +5881,17 @@
     "name": "ENKA SCHOOLS",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.060953,
-    "lng": 29.036923,
+    "lat": 41.113778,
+    "lng": 29.035852,
     "address": "Enka Hs - Sadi Gulcelik Spor Sitesi",
-    "gmaps_link": "https://maps.google.com/?q=41.060953,29.036923",
+    "gmaps_link": "https://maps.google.com/?q=41.113778,29.035852",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59427",
@@ -5828,13 +5911,17 @@
     "name": "Private Bilfen Uskudar Science HS",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.029364,
-    "lng": 28.951443,
+    "lat": 41.022,
+    "lng": 29.061,
     "address": "Professor Dr. Fahrettin Kerim Gokay",
-    "gmaps_link": "https://maps.google.com/?q=41.029364,28.951443",
+    "gmaps_link": "https://maps.google.com/?q=41.022,29.061",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59935",
@@ -5893,13 +5980,17 @@
     "name": "Ozel Atayurt Fen Lisesi",
     "type": "sat_centre",
     "city": "eskisehir",
-    "lat": 39.774394,
-    "lng": 30.519116,
+    "lat": 39.824123,
+    "lng": 30.416344,
     "address": "Yukari Sogutonu Mh",
-    "gmaps_link": "https://maps.google.com/?q=39.774394,30.519116",
+    "gmaps_link": "https://maps.google.com/?q=39.824123,30.416344",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59994",
@@ -5997,13 +6088,17 @@
     "name": "Ozel Ihsan Atakent Anadolu Lisesi",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.029364,
-    "lng": 28.951443,
+    "lat": 41.356576,
+    "lng": 28.682188,
     "address": "Atakent 4 Caddesi",
-    "gmaps_link": "https://maps.google.com/?q=41.029364,28.951443",
+    "gmaps_link": "https://maps.google.com/?q=41.356576,28.682188",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59945",
@@ -6062,13 +6157,17 @@
     "name": "Istanbul University Cerrahpasa",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.006381,
-    "lng": 28.975872,
+    "lat": 41.004893,
+    "lng": 28.939762,
     "address": "Esentepe Mah, 2364.Sk.",
-    "gmaps_link": "https://maps.google.com/?q=41.006381,28.975872",
+    "gmaps_link": "https://maps.google.com/?q=41.004893,28.939762",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59072",
@@ -6094,7 +6193,11 @@
     "gmaps_link": "https://maps.google.com/?q=36.886573,30.703024",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "51918",
@@ -6153,26 +6256,34 @@
     "name": "Ozel Antalya Toplum Koleji Anadolu",
     "type": "sat_centre",
     "city": "antalya",
-    "lat": 36.886573,
-    "lng": 30.703024,
+    "lat": 36.910493,
+    "lng": 30.6637,
     "address": "Altinkale Mah Palmiye Cad No 10",
-    "gmaps_link": "https://maps.google.com/?q=36.886573,30.703024",
+    "gmaps_link": "https://maps.google.com/?q=36.910493,30.6637",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59332",
     "name": "BISAL Forest Campus",
     "type": "sat_centre",
     "city": "istanbul",
-    "lat": 41.029364,
-    "lng": 28.951443,
+    "lat": 41.21125,
+    "lng": 28.992226,
     "address": "Uskumrukoy Mah.Kilyos Cad.No 238-1",
-    "gmaps_link": "https://maps.google.com/?q=41.029364,28.951443",
+    "gmaps_link": "https://maps.google.com/?q=41.21125,28.992226",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59590",
@@ -6192,13 +6303,17 @@
     "name": "TED ANKARA KOLEJI HS",
     "type": "sat_centre",
     "city": "ankara",
-    "lat": 39.920776,
-    "lng": 32.85405,
+    "lat": 39.929058,
+    "lng": 32.872524,
     "address": "Yumrubel Mevkii Taspinar Koyu 2800",
-    "gmaps_link": "https://maps.google.com/?q=39.920776,32.85405",
+    "gmaps_link": "https://maps.google.com/?q=39.929058,32.872524",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "59967",
@@ -6400,39 +6515,51 @@
     "name": "American Gulf School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.314665,
+    "lng": 55.420223,
     "address": "Al Rahmaniya Shaghrafah 4 Rahmanieh",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.314665,55.420223",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52069",
     "name": "SABIS INTL SCHOOL- YAS ISLAND",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.506971,
+    "lng": 54.599488,
     "address": "Plot 8, Ikhtisar Street, Yas Island",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.506971,54.599488",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52001",
     "name": "Manor Hall International School",
     "type": "sat_centre",
     "city": "al_ain_abu_dhabi",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.199916,
+    "lng": 55.721871,
     "address": "Al Rayhani",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.199916,55.721871",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52884",
@@ -6452,65 +6579,85 @@
     "name": "Al Wahda Private School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.306685,
+    "lng": 55.423826,
     "address": "Al Qarayen 3 Near Sharjah Airport",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.306685,55.423826",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52114",
     "name": "International Academic School- Dubai",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.186465,
+    "lng": 55.403335,
     "address": "Al Warqa 1",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.186465,55.403335",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52956",
     "name": "Al Shola American Private School",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.411547,
+    "lng": 55.479556,
     "address": "Sheikh Ammar Bin Humaid St",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.411547,55.479556",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52574",
     "name": "Ajman American Private School",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.401293,
+    "lng": 55.474985,
     "address": "Behind Gulf Medical Uni, Al Jurf 1",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.401293,55.474985",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "21579",
     "name": "Manthena American School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.308275,
+    "lng": 55.426412,
     "address": "School Zone - Muwaileh Commerical",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.308275,55.426412",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "92005",
@@ -6530,104 +6677,136 @@
     "name": "AL RESALAH SCH OF SCIENCE",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.246775,
+    "lng": 55.374498,
     "address": "#480 Majed Bin Saqar Al Qasemi St",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.246775,55.374498",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52514",
     "name": "Ignite School",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.189159,
+    "lng": 55.410428,
     "address": "414 Street",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.189159,55.410428",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52891",
     "name": "AMBASSADOR SCHOOL",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.246028,
+    "lng": 55.288128,
     "address": "41 A Street, Mankhool, Bur Dubai",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.246028,55.288128",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52893",
     "name": "Virginia American School",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.391521,
+    "lng": 54.563529,
     "address": "Shakhbout City Mfw-31",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.391521,54.563529",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "47904",
     "name": "Woodlem American Private School",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.409253,
+    "lng": 55.477027,
     "address": "Sheikh Ammar Bin Humaid St-Al Jerf2",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.409253,55.477027",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52870",
     "name": "AL DHAFRA PRIVATE SCHOOLS",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.3447,
+    "lng": 54.5486,
     "address": "Mohamed Bin Zayed City",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.3447,54.5486",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52890",
     "name": "THE WELLSPRING SCHOOL",
     "type": "sat_centre",
     "city": "ras_al_khaimah",
-    "lat": 25.773771,
-    "lng": 55.938232,
+    "lat": 25.77069,
+    "lng": 55.930249,
     "address": "34B St. Gate 12, Dafan Al Khor",
-    "gmaps_link": "https://maps.google.com/?q=25.773771,55.938232",
+    "gmaps_link": "https://maps.google.com/?q=25.77069,55.930249",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "86453",
     "name": "City American School",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.417199,
+    "lng": 55.493057,
     "address": "Sheikh Ammar Rd Al Tallah 2 Ajman",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.417199,55.493057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52807",
@@ -6647,156 +6826,204 @@
     "name": "AMERICAN INTERNATIONAL SCHOOL",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.283622,
+    "lng": 55.368981,
     "address": "Baghdad Rd (Behind Westminster Sch)",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.283622,55.368981",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52872",
     "name": "AL DHAFRA PRIVATE SCH-AL AIN",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.205143,
+    "lng": 55.745262,
     "address": "Khalid Bin Sultan St",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.205143,55.745262",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52059",
     "name": "Future International School",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.251808,
+    "lng": 55.758819,
     "address": "Al Salam Street",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.251808,55.758819",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52147",
     "name": "Emirates Natl Sch-Al Ain City Campus",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.246111,
+    "lng": 55.746572,
     "address": "Al Towaya",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.246111,55.746572",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "25598",
     "name": "International Academic School",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.394061,
+    "lng": 54.562106,
     "address": "Mfw 14 , 08Th St. Shakhbount",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.394061,54.562106",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "64241",
     "name": "Ain Al Khaleej Private School- AD",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.193836,
+    "lng": 55.712723,
     "address": "175 Jabr Street, Falaj Hazza",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.193836,55.712723",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52864",
     "name": "TARYAM AMERICAN PRIVATE SCHOOL",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.376237,
+    "lng": 55.447218,
     "address": "Majed Bin Saqar Alqasemi Street",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.376237,55.447218",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52532",
     "name": "Crown American Private School",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.413481,
+    "lng": 55.482145,
     "address": "Al Jarf Educational Zone Plot 0876",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.413481,55.482145",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "78916",
     "name": "Alitqan American School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.373081,
+    "lng": 55.443196,
     "address": "Building No 361, 364 St No 9 Al Azra",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.373081,55.443196",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52847",
     "name": "EMIRATES PRIVATE SCH",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.449109,
+    "lng": 54.388884,
     "address": "St 29, Muroor Rd, Al Zaafarana",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.449109,54.388884",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52827",
     "name": "Arab Unity School",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.244127,
+    "lng": 55.495772,
     "address": "3A St, Al Mizhar 1, Rashidiya",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.244127,55.495772",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52887",
     "name": "BEACONHOUSE AL KHALEEJ INTL SCHOOL",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.368537,
+    "lng": 55.442317,
     "address": "Azra Park",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.368537,55.442317",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52834",
@@ -6816,65 +7043,85 @@
     "name": "ABU DHABI INTL SCH",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.3332,
+    "lng": 54.5631,
     "address": "Mohamed Bin Zayed City",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.3332,54.5631",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52948",
     "name": "Ambassador School Sharjah",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.310389,
+    "lng": 55.424719,
     "address": "School Zone Muweilah Plot No 324",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.310389,55.424719",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52698",
     "name": "The intl school of choueifat-Ajman",
     "type": "sat_centre",
     "city": "ajman",
-    "lat": 25.332875,
-    "lng": 55.996007,
+    "lat": 25.428261,
+    "lng": 55.451376,
     "address": "Altallah 2, South Sector Ajman U A E",
-    "gmaps_link": "https://maps.google.com/?q=25.332875,55.996007",
+    "gmaps_link": "https://maps.google.com/?q=25.428261,55.451376",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52873",
     "name": "DUNECREST AMERICAN SCHOOL",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.155916,
+    "lng": 55.331985,
     "address": "Wadi Al Safa 3 Near Al Barari",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.155916,55.331985",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "84261",
     "name": "Ambassador International Academy",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.130353,
+    "lng": 55.322422,
     "address": "Al Khail, Plot 365-3942",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.130353,55.322422",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52875",
@@ -6894,91 +7141,119 @@
     "name": "SCHOOL OF RESEARCH AND SCIENCE",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.218086,
+    "lng": 55.371809,
     "address": "Alwarqa 4, Tripoli Street",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.218086,55.371809",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52878",
     "name": "INTL SCH OF CHOUEIFAT RAS AL KHAIMAH",
     "type": "sat_centre",
     "city": "ras_al_khaimah",
-    "lat": 25.773771,
-    "lng": 55.938232,
+    "lat": 25.798478,
+    "lng": 55.982425,
     "address": "Al Dhait North,Opposite To",
-    "gmaps_link": "https://maps.google.com/?q=25.773771,55.938232",
+    "gmaps_link": "https://maps.google.com/?q=25.798478,55.982425",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52323",
     "name": "Emirates American School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.324098,
+    "lng": 55.417575,
     "address": "Al Falah-6",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.324098,55.417575",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52845",
     "name": "ALZUHOUR SCHOOL",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.327614,
+    "lng": 55.424586,
     "address": "Muwailah Industrial Area 17",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.327614,55.424586",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52828",
     "name": "THE INTL SCH OF CHOUEIFAT",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.33958,
+    "lng": 55.4503,
     "address": "Road 331",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.33958,55.4503",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52804",
     "name": "AL NAHDA NATIONAL SCH - FOR BOYS",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.452831,
+    "lng": 54.39869,
     "address": "Airport Road Behind Tv Station",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.452831,54.39869",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52839",
     "name": "AL MAARIFA INTL PVT SCH",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.327419,
+    "lng": 55.37867,
     "address": "Al Istiqlal Str, Yarmouk Area",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.327419,55.37867",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52881",
@@ -6998,65 +7273,85 @@
     "name": "Masar Private School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.37361,
+    "lng": 55.434892,
     "address": "Al Azraa Street, Sharjah, Uae",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.37361,55.434892",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52945",
     "name": "Horizon Private School - Branch",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.424396,
+    "lng": 54.569167,
     "address": "Khalifa City A",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.424396,54.569167",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52868",
     "name": "GREENWOOD INTERNATIONAL SCHOOL",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.244115,
+    "lng": 55.418251,
     "address": "Muhaisnah 1-32 Street",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.244115,55.418251",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52149",
     "name": "Future International Academy",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.202897,
+    "lng": 55.787115,
     "address": "Al Sarooj, Al Ain",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.202897,55.787115",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52871",
     "name": "ELITE PRIVATE SCHOOL",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.34676,
+    "lng": 54.536464,
     "address": "Al Jazwah St, Mbz E9",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.34676,54.536464",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52824",
@@ -7076,13 +7371,17 @@
     "name": "Emirates Falcon Int'l Private School",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.197641,
+    "lng": 55.720543,
     "address": "249 Al Jabr St- Falaj Hazza",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.197641,55.720543",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52679",
@@ -7102,273 +7401,357 @@
     "name": "Al Maaref American School",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.272355,
+    "lng": 55.392723,
     "address": "Baghdad Street Al Qusais1",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.272355,55.392723",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "20629",
     "name": "SABIS International School Al Bateen",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.430779,
+    "lng": 54.464826,
     "address": "Ahmed Bin Gibran Al Sweidi Street",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.430779,54.464826",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52802",
     "name": "AMERICAN INTL SCH",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.452814,
+    "lng": 54.404533,
     "address": "Street 29 Junction Airport Rd",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.452814,54.404533",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52366",
     "name": "SABIS International School - Aljada",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.334675,
+    "lng": 55.445994,
     "address": "Muweileh Area, Madar Street Al Jada",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.334675,55.445994",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52814",
     "name": "ADNOC SCHOOLS",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.417073,
+    "lng": 54.514741,
     "address": "Sas Al Nakheel (Male Campus)",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.417073,54.514741",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52874",
     "name": "AL ITTIHAD NATIONAL PVT SCH AL AIN",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.18713,
+    "lng": 55.727019,
     "address": "Falaj Hazza, Al Ain",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.18713,55.727019",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52860",
     "name": "NEW ACADEMY SCH",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.255299,
+    "lng": 55.284751,
     "address": "Al Raffa Area",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.255299,55.284751",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52428",
     "name": "Sama American Private School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.374898,
+    "lng": 55.436235,
     "address": "Al Azra School Zone",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.374898,55.436235",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52808",
     "name": "AL SANAWBAR SCH",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.2164,
+    "lng": 55.7362,
     "address": "New Manaseer Area",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.2164,55.7362",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "46960",
     "name": "Applied Techn HS- Al Ain- Al Aqabiya",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.207936,
+    "lng": 55.739721,
     "address": "259 Tawan St Al Iqabiyyah",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.207936,55.739721",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52229",
     "name": "Al Durrah International School",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.306866,
+    "lng": 55.390636,
     "address": "Al Nahda Rd",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.306866,55.390636",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52506",
     "name": "Ajyal International school",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.445465,
+    "lng": 54.720525,
     "address": "Plot No. P-2 Sector 1-A New Al Falah",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.445465,54.720525",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "16684",
     "name": "Royal American School",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.323521,
+    "lng": 54.535177,
     "address": "Shabiya 12",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.323521,54.535177",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52849",
     "name": "UNIVERSAL AMERICAN SCH",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.22179,
+    "lng": 55.364983,
     "address": "Universal American School",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.22179,55.364983",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52866",
     "name": "AL RESALAH AMERICAN INTL SCH",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.350646,
+    "lng": 55.419844,
     "address": "Rahmania 6, Sharjah",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.350646,55.419844",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52840",
     "name": "INTL SCHOOL OF CHOUEIFAT",
     "type": "sat_centre",
     "city": "sharjah",
-    "lat": 25.269185,
-    "lng": 55.693481,
+    "lat": 25.358392,
+    "lng": 55.415318,
     "address": "Sharjah - United Arab Emirates",
-    "gmaps_link": "https://maps.google.com/?q=25.269185,55.693481",
+    "gmaps_link": "https://maps.google.com/?q=25.358392,55.415318",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52858",
     "name": "SHARJAH AMERICAN INTL SCH-DUBAI",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.10522,
+    "lng": 55.372141,
     "address": "Street 13",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.10522,55.372141",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52832",
     "name": "AL KHALEEJ INTL SCH",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.19608,
+    "lng": 55.3959,
     "address": "Al Warqaa 4",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.19608,55.3959",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52862",
     "name": "CAMBRIDGE INTERNATIONAL SCHOOL-DUBAI",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.235731,
+    "lng": 55.350693,
     "address": "Damascus St., Near Al Twar Library",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.235731,55.350693",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52852",
     "name": "PHILADELPHIA PRIVATE SCH",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.244572,
+    "lng": 55.278107,
     "address": "Intersection Beirut Halab St",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.244572,55.278107",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52805",
     "name": "INTL SCH OF CHOUEIFAT",
     "type": "sat_centre",
     "city": "al_ain",
-    "lat": 24.22487,
-    "lng": 55.745221,
+    "lat": 24.2139,
+    "lng": 55.7331,
     "address": "New Al Manaseer",
-    "gmaps_link": "https://maps.google.com/?q=24.22487,55.745221",
+    "gmaps_link": "https://maps.google.com/?q=24.2139,55.7331",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52876",
@@ -7388,52 +7771,68 @@
     "name": "GEMS MODERN ACADEMY",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 25.153727,
+    "lng": 55.37598,
     "address": "Nad Al Sheeba 3",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=25.153727,55.37598",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52879",
     "name": "WEST YAS ACADEMY",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.504804,
+    "lng": 54.591377,
     "address": "West Yas - Zone K - Yas Island",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.504804,54.591377",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52656",
     "name": "Summit International Schools",
     "type": "sat_centre",
     "city": "abu_dhabi",
-    "lat": 24.453835,
-    "lng": 54.377401,
+    "lat": 24.409476,
+    "lng": 54.598678,
     "address": "Sector 4 Street 19",
-    "gmaps_link": "https://maps.google.com/?q=24.453835,54.377401",
+    "gmaps_link": "https://maps.google.com/?q=24.409476,54.598678",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "52078",
     "name": "THE INTL SCH OF CHOUEIFAT-DIP BRANCH",
     "type": "sat_centre",
     "city": "dubai",
-    "lat": 25.074282,
-    "lng": 55.188562,
+    "lat": 24.977967,
+    "lng": 55.191192,
     "address": "Dubai Investments Park 1",
-    "gmaps_link": "https://maps.google.com/?q=25.074282,55.188562",
+    "gmaps_link": "https://maps.google.com/?q=24.977967,55.191192",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "51785",
@@ -7544,39 +7943,51 @@
     "name": "HPrep Academy",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.506349,
+    "lng": 127.055657,
     "address": "1F, 10-12, Seolleung-Ro 72-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.506349,127.055657",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65161",
     "name": "FAYSTON PREPARATORY SCHOOL",
     "type": "sat_centre",
     "city": "yongin",
-    "lat": 37.240574,
-    "lng": 127.178557,
+    "lat": 37.251575,
+    "lng": 127.198741,
     "address": "11, 358 Beon-Gil, Dongcheon-Ro",
-    "gmaps_link": "https://maps.google.com/?q=37.240574,127.178557",
+    "gmaps_link": "https://maps.google.com/?q=37.251575,127.198741",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65196",
     "name": "HANKUK ACAD OF FOREIGN STUDIES",
     "type": "sat_centre",
     "city": "yongin",
-    "lat": 37.240574,
-    "lng": 127.178557,
+    "lat": 37.240625,
+    "lng": 127.253252,
     "address": "50 Oedaero 54 Beongil",
-    "gmaps_link": "https://maps.google.com/?q=37.240574,127.178557",
+    "gmaps_link": "https://maps.google.com/?q=37.240625,127.253252",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65190",
@@ -7609,26 +8020,34 @@
     "name": "GYEONGGI ACAD OF FOREIGN LANGUAGES",
     "type": "sat_centre",
     "city": "gyeonggi_do",
-    "lat": 37.890116,
-    "lng": 126.953355,
+    "lat": 37.629385,
+    "lng": 127.068781,
     "address": "30, 105Th Gosan-Ro",
-    "gmaps_link": "https://maps.google.com/?q=37.890116,126.953355",
+    "gmaps_link": "https://maps.google.com/?q=37.629385,127.068781",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65219",
     "name": "Korea Science Academy of KAIST",
     "type": "sat_centre",
     "city": "busan",
-    "lat": 35.188502,
-    "lng": 128.944975,
+    "lat": 35.166045,
+    "lng": 129.025985,
     "address": "105-47, Baegyanggwanmun-Ro",
-    "gmaps_link": "https://maps.google.com/?q=35.188502,128.944975",
+    "gmaps_link": "https://maps.google.com/?q=35.166045,129.025985",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65338",
@@ -7648,13 +8067,17 @@
     "name": "BIS",
     "type": "sat_centre",
     "city": "seongnam_si",
-    "lat": 37.415691,
-    "lng": 127.098692,
+    "lat": 37.352949,
+    "lng": 127.105585,
     "address": "33 Jeongjail-Ro, Bundang-Gu",
-    "gmaps_link": "https://maps.google.com/?q=37.415691,127.098692",
+    "gmaps_link": "https://maps.google.com/?q=37.352949,127.105585",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65316",
@@ -7674,39 +8097,51 @@
     "name": "VALOR INTERNATIONAL SCHOLARS",
     "type": "sat_centre",
     "city": "gyeonggi_do",
-    "lat": 37.890116,
-    "lng": 126.953355,
+    "lat": 37.315884,
+    "lng": 127.480793,
     "address": "1 Seonggong-Gil, Bogae-Myeon",
-    "gmaps_link": "https://maps.google.com/?q=37.890116,126.953355",
+    "gmaps_link": "https://maps.google.com/?q=37.315884,127.480793",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65156",
     "name": "LIGHTHOUSE INTL SCH",
     "type": "sat_centre",
     "city": "goyang_si",
-    "lat": 37.701553,
-    "lng": 126.796762,
+    "lat": 37.704239,
+    "lng": 126.734566,
     "address": "34-55 Deogi-Ro 292Beon-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.701553,126.796762",
+    "gmaps_link": "https://maps.google.com/?q=37.704239,126.734566",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65062",
     "name": "Korea Christian International School",
     "type": "sat_centre",
     "city": "goyang_si",
-    "lat": 37.701553,
-    "lng": 126.796762,
+    "lat": 37.670833,
+    "lng": 126.785895,
     "address": "471 Gyeongui-Ro Ilsandong-Gu",
-    "gmaps_link": "https://maps.google.com/?q=37.701553,126.796762",
+    "gmaps_link": "https://maps.google.com/?q=37.670833,126.785895",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65184",
@@ -7726,52 +8161,68 @@
     "name": "Salt International School",
     "type": "sat_centre",
     "city": "seongnam_si",
-    "lat": 37.415691,
-    "lng": 127.098692,
+    "lat": 37.415111,
+    "lng": 127.151907,
     "address": "30, Dochon-Ro 8Beon-Gil, Jungwon-Gu",
-    "gmaps_link": "https://maps.google.com/?q=37.415691,127.098692",
+    "gmaps_link": "https://maps.google.com/?q=37.415111,127.151907",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "42636",
     "name": "YBM Language Inst Seomyeon Center",
     "type": "sat_centre",
     "city": "busan",
-    "lat": 35.188502,
-    "lng": 128.944975,
+    "lat": 35.155671,
+    "lng": 129.058735,
     "address": "703-1, Jungang-Daero",
-    "gmaps_link": "https://maps.google.com/?q=35.188502,128.944975",
+    "gmaps_link": "https://maps.google.com/?q=35.155671,129.058735",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65648",
     "name": "Mountain Cherry Academy",
     "type": "sat_centre",
     "city": "yongin",
-    "lat": 37.240574,
-    "lng": 127.178557,
+    "lat": 37.29512,
+    "lng": 127.12918,
     "address": "22, Eonnam-Ro 29Beon-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.240574,127.178557",
+    "gmaps_link": "https://maps.google.com/?q=37.29512,127.12918",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65321",
     "name": "SEOUL GLOBAL HS",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.59134,
+    "lng": 126.996053,
     "address": "40 Sungkyunkwan-Ro 13-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.59134,126.996053",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65182",
@@ -7791,26 +8242,34 @@
     "name": "Newton Academy",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.515117,
+    "lng": 127.027837,
     "address": "10, Nonhyeon-Ro 135-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.515117,127.027837",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65552",
     "name": "Seoul Scholars International",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.502392,
+    "lng": 127.065193,
     "address": "27, Dogok-Ro 99-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.502392,127.065193",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65317",
@@ -7843,13 +8302,17 @@
     "name": "CORNERSTONE COLLEGIATE ACAD OF SEOUL",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.497243,
+    "lng": 127.032018,
     "address": "44 Mabangro 2-Gil Seochu-Gu",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.497243,127.032018",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65134",
@@ -7869,26 +8332,34 @@
     "name": "Gangnam Edu Training Ctr-YBM the Biz",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.501464,
+    "lng": 127.027076,
     "address": "48, Teheran-Ro 1-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.501464,127.027076",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "65578",
     "name": "Vivian & Stanley Gangnam Intl Schola",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.503201,
+    "lng": 127.028812,
     "address": "79 Bongeunsa-Ro 18-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.503201,127.028812",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   },
   {
     "id": "25893",
@@ -7908,12 +8379,16 @@
     "name": "KOREAN-AMERICAN EDU COMMISSION",
     "type": "sat_centre",
     "city": "seoul",
-    "lat": 37.48689,
-    "lng": 126.98404,
+    "lat": 37.490825,
+    "lng": 126.913447,
     "address": "3F, 23 Baekbeom-Ro 28-Gil",
-    "gmaps_link": "https://maps.google.com/?q=37.48689,126.98404",
+    "gmaps_link": "https://maps.google.com/?q=37.490825,126.913447",
     "added_by": "shauryagangrade",
     "exam": "SAT",
-    "valid_till": "2026-11-07"
+    "valid_till": "2026-11-07",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-08"
+    }
   }
 ]
