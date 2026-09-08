@@ -1,7 +1,7 @@
 name: Verify a place
 description: Re-check an existing place on the map (address, entrance, open status). A smaller ask than adding a new place.
 title: "[verify] "
-labels: ["verification"]
+labels: ["data"]
 body:
   - type: markdown
     attributes:
