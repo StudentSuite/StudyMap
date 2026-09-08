@@ -394,5 +394,89 @@
     "exam": "TEF, TCF, DELF, DALF",
     "gmaps_link": "https://maps.google.com/?q=43.6688,-79.4052",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "ank-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Ankara",
+    "city": "ankara",
+    "lat": 39.9190176,
+    "lng": 32.8538149,
+    "address": "Ataturk Bulvari, Bakanliklar, Kizilay, Ankara, Turkey",
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "type": "foreign_lang_exam_centre",
+    "gmaps_link": "https://maps.google.com/?q=39.9190176,32.8538149",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ist-foreign_lang_exam_centre-01",
+    "name": "British Council Istanbul",
+    "city": "istanbul",
+    "lat": 41.0338612,
+    "lng": 28.9781666,
+    "address": "Istiklal Caddesi, Beyoglu, Istanbul 34433, Turkey",
+    "exam": "IELTS",
+    "type": "foreign_lang_exam_centre",
+    "gmaps_link": "https://maps.google.com/?q=41.0338612,28.9781666",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ham-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Hamburg",
+    "type": "foreign_lang_exam_centre",
+    "city": "hamburg",
+    "lat": 53.5498149,
+    "lng": 10.0086675,
+    "address": "Huhnerposten 1, 20097 Hamburg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.5498149,10.0086675",
+    "added_by": "yashkewlani",
+    "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "gur-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Gurugram",
+    "type": "foreign_lang_exam_centre",
+    "city": "gurugram",
+    "lat": 28.473784,
+    "lng": 77.0471827,
+    "address": "Sector 14, Gurugram, Haryana, India",
+    "gmaps_link": "https://maps.google.com/?q=28.473784,77.0471827",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "rnc-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Ranchi",
+    "type": "foreign_lang_exam_centre",
+    "city": "ranchi",
+    "lat": 23.3763871,
+    "lng": 85.318877,
+    "address": "Main Road, Ranchi, Jharkhand 834001, India",
+    "gmaps_link": "https://maps.google.com/?q=23.3763871,85.318877",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "bbs-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Bhubaneswar (Jaydev Vihar)",
+    "type": "foreign_lang_exam_centre",
+    "city": "bhubaneswar",
+    "lat": 20.2962317,
+    "lng": 85.8264588,
+    "address": "Jaydev Vihar, Bhubaneswar, Odisha 751013, India",
+    "gmaps_link": "https://maps.google.com/?q=20.2962317,85.8264588",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
+  },
+  {
+    "id": "abj-foreign_lang_exam_centre-01",
+    "name": "British Council Abuja",
+    "type": "foreign_lang_exam_centre",
+    "city": "abuja",
+    "lat": 9.0845078,
+    "lng": 7.4906302,
+    "address": "3645 Ibrahim Babangida Way, Maitama, Abuja, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=9.0845078,7.4906302",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]
