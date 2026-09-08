@@ -372,6 +372,30 @@
     "exam": "IELTS"
   },
   {
+    "id": "tor-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Toronto",
+    "type": "foreign_lang_exam_centre",
+    "city": "toronto",
+    "lat": 43.6473,
+    "lng": -79.3849,
+    "address": "100 University Ave, North Tower, 2nd Floor, Toronto, ON M5J 1V6, Canada",
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "gmaps_link": "https://maps.google.com/?q=43.6473,-79.3849",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "tor-foreign_lang_exam_centre-02",
+    "name": "Alliance Française de Toronto",
+    "type": "foreign_lang_exam_centre",
+    "city": "toronto",
+    "lat": 43.6688,
+    "lng": -79.4052,
+    "address": "24 Spadina Rd, Toronto, ON M5R 2S7, Canada",
+    "exam": "TEF, TCF, DELF, DALF",
+    "gmaps_link": "https://maps.google.com/?q=43.6688,-79.4052",
+    "added_by": "shauryagangrade"
+  },
+  {
     "id": "ank-foreign_lang_exam_centre-01",
     "name": "Goethe-Institut Ankara",
     "city": "ankara",
@@ -395,7 +419,7 @@
     "gmaps_link": "https://maps.google.com/?q=41.0338612,28.9781666",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "ham-foreign_lang_exam_centre-01",
     "name": "Goethe-Institut Hamburg",
     "type": "foreign_lang_exam_centre",
@@ -407,7 +431,7 @@
     "added_by": "yashkewlani",
     "exam": "Goethe-Zertifikat (A1-C2)"
   },
-{
+  {
     "id": "gur-foreign_lang_exam_centre-01",
     "name": "IDP IELTS Test Centre, Gurugram",
     "type": "foreign_lang_exam_centre",
@@ -419,7 +443,7 @@
     "added_by": "yashkewlani",
     "exam": "IELTS"
   },
-{
+  {
     "id": "rnc-foreign_lang_exam_centre-01",
     "name": "IDP IELTS Test Centre, Ranchi",
     "type": "foreign_lang_exam_centre",
@@ -431,7 +455,7 @@
     "added_by": "yashkewlani",
     "exam": "IELTS"
   },
-{
+  {
     "id": "bbs-foreign_lang_exam_centre-01",
     "name": "IDP IELTS Test Centre, Bhubaneswar (Jaydev Vihar)",
     "type": "foreign_lang_exam_centre",
@@ -443,7 +467,7 @@
     "added_by": "yashkewlani",
     "exam": "IELTS"
   },
-{
+  {
     "id": "abj-foreign_lang_exam_centre-01",
     "name": "British Council Abuja",
     "type": "foreign_lang_exam_centre",
