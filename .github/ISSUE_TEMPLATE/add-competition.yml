@@ -1,7 +1,7 @@
 name: Add a competition
 description: Suggest a student competition for the catalog. A citation and a quality check are required.
 title: "[competition] "
-labels: ["competition"]
+labels: ["data", "competitions"]
 body:
   - type: markdown
     attributes:

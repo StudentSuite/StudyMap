@@ -1,7 +1,7 @@
 name: Add a public place
 description: Suggest a student place for the map. A citation and a quality check are required.
 title: "[place] "
-labels: ["place"]
+labels: ["data"]
 body:
   - type: markdown
     attributes:
