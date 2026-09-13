@@ -240,5 +240,87 @@
     },
     "valid_till": "2027-04-01",
     "image": "/competitions/c-span-studentcam.png"
+  },
+  {
+    "id": "world-of-7-billion-student-video-contest",
+    "name": "World of 7 Billion Student Video Contest",
+    "organizer": "Population Connection",
+    "organizer_url": "https://www.worldof7billion.org/student-video-contest/",
+    "category": "film_video",
+    "subjects": [
+      "video production",
+      "science communication",
+      "sustainability"
+    ],
+    "description": "A student video contest in which participants create a short documentary or public service announcement on a yearly global-challenge prompt, from climate change to food insecurity. Submissions run 30-60 seconds and are judged on content, creativity and production quality.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes up to USD 1,000 across grade divisions.",
+    "official_url": "https://www.worldof7billion.org/student-video-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Video submission deadline",
+        "date": "2027-03-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.worldof7billion.org/student-video-contest/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "48-hour-film-project",
+    "name": "48 Hour Film Project (High School)",
+    "organizer": "48 Hour Film Project",
+    "organizer_url": "https://www.48hourfilm.com/",
+    "category": "film_video",
+    "subjects": [
+      "filmmaking",
+      "storytelling",
+      "teamwork"
+    ],
+    "description": "A timed filmmaking sprint where teams write, shoot and edit a short film over a single weekend. City events run their own high school category, and standout entries screen at the national showcase.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 175,
+      "currency": "USD"
+    },
+    "prize": "Screenings, awards and a shot at the annual National Best Film prize.",
+    "official_url": "https://www.48hourfilm.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Summer city events begin",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.48hourfilm.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-07-01"
   }
 ]

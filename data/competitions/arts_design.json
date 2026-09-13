@@ -341,5 +341,88 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/congressional-art-competition.png"
+  },
+  {
+    "id": "science-without-borders-challenge",
+    "name": "Science Without Borders Challenge",
+    "organizer": "Khaled bin Sultan Living Oceans Foundation",
+    "organizer_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge-2/",
+    "category": "arts_design",
+    "subjects": [
+      "art",
+      "science communication",
+      "ocean conservation"
+    ],
+    "description": "An international art competition built around a yearly ocean conservation theme. Students from 11-19 create original paintings or cover-style digital art, with prizes split into junior and senior divisions.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes up to USD 500 per division plus gallery features.",
+    "official_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge-2/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge-2/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "celebrating-art-contest",
+    "name": "Celebrating Art National Art Contest",
+    "organizer": "Celebrating Art",
+    "organizer_url": "https://www.celebratingart.com/",
+    "category": "arts_design",
+    "subjects": [
+      "visual arts",
+      "drawing",
+      "painting",
+      "digital art"
+    ],
+    "description": "A seasonal national art contest for students in grades K-12. Fifty student artists advance to the final judging each contest cycle and have their work published in the Celebrating Art anthology.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in the annual art book; medals and certificates for finalists.",
+    "official_url": "https://www.celebratingart.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Winter contest deadline",
+        "date": "2027-02-10",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.celebratingart.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-01"
   }
 ]

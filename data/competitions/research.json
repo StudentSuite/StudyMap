@@ -202,5 +202,103 @@
     },
     "valid_till": "2027-02-01",
     "image": "/competitions/mit-think.png"
+  },
+  {
+    "id": "broadcom-masters",
+    "name": "Broadcom MASTERS (Thermo Fisher Junior Innovators Challenge)",
+    "organizer": "Society for Science and Thermo Fisher Scientific",
+    "organizer_url": "https://www.societyforscience.org/thermo-fisher-jic/",
+    "category": "research",
+    "subjects": [
+      "science",
+      "engineering",
+      "research"
+    ],
+    "description": "A national science and engineering competition for middle school students who place at an affiliated fair. Top entries advance to a group of national finalists who gather in Washington DC to present estimates of their work and compete in hands on STEM challenges.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 14,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "A top award of USD 25,000 plus thousands in additional prizes.",
+    "official_url": "https://www.societyforscience.org/thermo-fisher-jic/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Affiliated fair results due",
+        "date": "2026-10-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.societyforscience.org/thermo-fisher-jic/"
+      },
+      {
+        "label": "National finals (Washington DC)",
+        "date": "2026-10-20",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.societyforscience.org/thermo-fisher-jic/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-11-15"
+  },
+  {
+    "id": "globe-virtual-science-fair",
+    "name": "GLOBE Virtual Science Fair",
+    "organizer": "GLOBE Program",
+    "organizer_url": "https://www.globe.gov/web/virtual-science-fair/",
+    "category": "research",
+    "subjects": [
+      "earth science",
+      "environmental research",
+      "data analysis"
+    ],
+    "description": "An annual online science fair for students 12-18 that asks teams to answer real environmental research questions using GLOBE data and their own protocols. Projects are judged by scientists and featured internationally.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Winning teams receive recognition, certificates and global publicity for their research.",
+    "official_url": "https://www.globe.gov/web/virtual-science-fair/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "GSF project submission opens",
+        "date": "2027-01-15",
+        "type": "registration_open",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.globe.gov/web/virtual-science-fair/"
+      },
+      {
+        "label": "GSF submission deadline",
+        "date": "2027-03-15",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.globe.gov/web/virtual-science-fair/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-04-15"
   }
 ]

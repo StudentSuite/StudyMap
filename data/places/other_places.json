@@ -471,5 +471,60 @@
     "address": "Federal Capital Territory, Abuja, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=8.9807832,7.1753396",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "sfo-other_places-01",
+    "name": "WeWork Mission District (coworking space)",
+    "type": "other_places",
+    "city": "san_francisco",
+    "lat": 37.7621,
+    "lng": -122.4188,
+    "address": "25 Taylor St, San Francisco, CA 94102, USA",
+    "gmaps_link": "https://maps.google.com/?q=37.7621,-122.4188",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "lhr-other_places-01",
+    "name": "The British Library",
+    "type": "other_places",
+    "city": "london",
+    "lat": 51.5299,
+    "lng": -0.1270,
+    "address": "96 Euston Rd, London NW1 2DB, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.5299,-0.1270",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "tyo-other_places-01",
+    "name": "Roppongi Hills Mori Art Museum",
+    "type": "other_places",
+    "city": "tokyo",
+    "lat": 35.6604,
+    "lng": 139.7292,
+    "address": "6-10-1 Roppongi, Minato-ku, Tokyo 106-6107, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.6604,139.7292",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "sin-other_places-02",
+    "name": "National Library of Singapore",
+    "type": "other_places",
+    "city": "singapore",
+    "lat": 1.2993,
+    "lng": 103.8454,
+    "address": "100 Victoria St, Singapore 178294",
+    "gmaps_link": "https://maps.google.com/?q=1.2993,103.8454",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "dxb-other_places-02",
+    "name": "Dubai International Financial Centre (DIFC)",
+    "type": "other_places",
+    "city": "dubai",
+    "lat": 25.2143,
+    "lng": 55.2756,
+    "address": "Gate Village, DIFC, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2143,55.2756",
+    "added_by": "yashkewlani"
   }
 ]

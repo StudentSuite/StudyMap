@@ -291,5 +291,94 @@
     },
     "valid_till": "2027-08-15",
     "image": "/competitions/international-history-olympiad.png"
+  },
+  {
+    "id": "dar-american-history-essay-contest",
+    "name": "DAR American History Essay Contest",
+    "organizer": "National Society Daughters of the American Revolution",
+    "organizer_url": "https://www.dar.org/national-society/scholarships/history-essay-contest",
+    "category": "history",
+    "subjects": [
+      "american history",
+      "essay writing"
+    ],
+    "description": "An annual essay contest organized by the Daughters of the American Revolution for students in grades five through eight. Each year carries a new historical theme; winners advance from chapter to state to national judging.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National winners and their teachers receive cash awards and certificates.",
+    "official_url": "https://www.dar.org/national-society/scholarships/history-essay-contest",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Essay submission deadline",
+        "date": "2026-12-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.dar.org/national-society/scholarships/history-essay-contest"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "national-history-challenge-australia",
+    "name": "National History Challenge (Australia)",
+    "organizer": "History Teachers' Association of Australia",
+    "organizer_url": "https://www.historychallenge.com.au/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "research",
+      "historical inquiry"
+    ],
+    "description": "An open research competition for Australian students from grade five to twelve. Entrants pick from a yearly theme and submit an essay, exhibition, multi-media piece or performance, with winners celebrated at each stage's state awards.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "AU",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "State and national cash awards and trophies.",
+    "official_url": "https://www.historychallenge.com.au/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National History Challenge opens",
+        "date": "2027-05-01",
+        "type": "registration_open",
+        "timezone": "UTC+11",
+        "estimated": true,
+        "source_url": "https://www.historychallenge.com.au/"
+      },
+      {
+        "label": "Entry deadline",
+        "date": "2027-08-31",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://www.historychallenge.com.au/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-09-15"
   }
 ]

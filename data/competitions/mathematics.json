@@ -488,5 +488,93 @@
     },
     "valid_till": "2027-04-01",
     "image": "/competitions/mathworks-m3-challenge.png"
+  },
+  {
+    "id": "amc10-12",
+    "name": "American Mathematics Competitions 10 and 12 (AMC 10/12)",
+    "organizer": "Mathematical Association of America",
+    "organizer_url": "https://amc.maa.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Two 25-question multiple choice exams that open the US pathway into the American mathematics olympiad ladder. The AMC 10 is for students in grade 10 and below, the AMC 12 for grade 12 and below, and strong scorers qualify for the American Invitational Mathematics Examination (AIME).",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 10,
+      "currency": "USD"
+    },
+    "prize": "Certificates of distinction; automatic AIME qualification for top scorers.",
+    "official_url": "https://amc.maa.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "AMC 10/12 A",
+        "date": "2026-11-11",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://amc.maa.org/"
+      },
+      {
+        "label": "AMC 10/12 B",
+        "date": "2026-11-17",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://amc.maa.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "kangaroo-math-competition",
+    "name": "International Kangaroo Mathematics Contest (IKMC)",
+    "organizer": "Association Kangourou sans Frontieres",
+    "organizer_url": "https://www.aksf.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "logic"
+    ],
+    "description": "The world's largest mathematics competition, run in over 80 countries for students from grade 1 to grade 12. Questions are playful multiple choice puzzles designed to stay accessible to a very wide ability range.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Award certificates and gifts for top national scorers.",
+    "official_url": "https://www.aksf.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Kangaroo contest day",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.aksf.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-04-01"
   }
 ]

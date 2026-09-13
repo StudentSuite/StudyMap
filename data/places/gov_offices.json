@@ -1186,5 +1186,49 @@
     "address": "Kemalpaşa Mah. Mimar Mehmet Ağa Cad. No:2, Fatih, İstanbul, Türkiye",
     "gmaps_link": "https://maps.google.com/?q=41.1142,28.9678",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "syd-gov_offices-01",
+    "name": "Sydney Town Hall",
+    "type": "gov_offices",
+    "city": "sydney",
+    "lat": -33.8731,
+    "lng": 151.2069,
+    "address": "483 George St, Sydney NSW 2000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.8731,151.2069",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "tyo-gov_offices-01",
+    "name": "Tokyo Metropolitan Government Building",
+    "type": "gov_offices",
+    "city": "tokyo",
+    "lat": 35.6896,
+    "lng": 139.6922,
+    "address": "2-8-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-8001, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.6896,139.6922",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ham-gov_offices-01",
+    "name": "Rathaus Hamburg (Hamburg City Hall)",
+    "type": "gov_offices",
+    "city": "hamburg",
+    "lat": 53.5503,
+    "lng": 9.9931,
+    "address": "Rathausmarkt 1, 20095 Hamburg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.5503,9.9931",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "vie-gov_offices-01",
+    "name": "Wiener Rathaus (Vienna City Hall)",
+    "type": "gov_offices",
+    "city": "vienna",
+    "lat": 48.21,
+    "lng": 16.3575,
+    "address": "Friedrich-Schmidt-Platz 1, 1010 Wien, Austria",
+    "gmaps_link": "https://maps.google.com/?q=48.2100,16.3575",
+    "added_by": "yashkewlani"
   }
 ]

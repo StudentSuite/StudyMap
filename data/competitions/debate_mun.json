@@ -303,5 +303,103 @@
     },
     "valid_till": "2027-11-01",
     "image": "/competitions/european-youth-parliament.png"
+  },
+  {
+    "id": "harvard-model-congress",
+    "name": "Harvard Model Congress",
+    "organizer": "Harvard Model Congress, Harvard University",
+    "organizer_url": "https://harvardmodelcongress.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "legislative debate",
+      "government simulation",
+      "public speaking"
+    ],
+    "description": "A government simulation run by Harvard undergraduates in which delegates assume the roles of US congressmen, senators, judges and journalists. High school students draft, amend and vote on legislation through parliamentary procedure across several committees.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Committee awards including Outstanding Delegate and Best Legislation.",
+    "official_url": "https://harvardmodelcongress.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "HMC Boston 2027 opens",
+        "date": "2027-01-18",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://harvardmodelcongress.org/"
+      },
+      {
+        "label": "HMC Boston 2027 closes",
+        "date": "2027-01-20",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://harvardmodelcongress.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-02-15"
+  },
+  {
+    "id": "mspdp-public-debate",
+    "name": "Middle School Public Debate Program (MSPDP)",
+    "organizer": "Middle School Public Debate Program",
+    "organizer_url": "https://www.middleschooldebate.com/",
+    "category": "debate_mun",
+    "subjects": [
+      "debate",
+      "argumentation",
+      "public speaking"
+    ],
+    "description": "The world's largest youth debate program, running competitions and leagues for middle school students in multiple countries. Debaters compete three to a team on policy, values and current affairs motions, aiming to qualify for a world championship.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Trophies and the chance to represent a region at the annual Youth Championships.",
+    "official_url": "https://www.middleschooldebate.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "League season begins",
+        "date": "2027-01-01",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.middleschooldebate.com/"
+      },
+      {
+        "label": "State championships",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://www.middleschooldebate.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-05-01"
   }
 ]

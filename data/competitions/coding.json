@@ -403,5 +403,95 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/usaco.png"
+  },
+  {
+    "id": "mit-battlecode",
+    "name": "MIT Battlecode",
+    "organizer": "Massachusetts Institute of Technology",
+    "organizer_url": "https://battlecode.org/",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "artificial intelligence",
+      "algorithms"
+    ],
+    "description": "A real time strategy artificial intelligence competition run by MIT students. Contestants write AI bots that command virtual armies, then squads battle head to head in automated tournaments. High school teams compete in a dedicated sprint tournament.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes for the top high school teams and an invitation to the MIT tournament wrap-up.",
+    "official_url": "https://battlecode.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Battlecode 2027 begins",
+        "date": "2027-01-12",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://battlecode.org/"
+      },
+      {
+        "label": "Final tournament",
+        "date": "2027-02-06",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://battlecode.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "lockheed-martin-codequest",
+    "name": "Lockheed Martin CodeQuest",
+    "organizer": "Lockheed Martin",
+    "organizer_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms",
+      "teamwork"
+    ],
+    "description": "An annual computing competition for middle and high school students, with regional and virtual rounds. Teams of up to four solve a batch of algorithmic and logic challenges while a mentor paces them through the day.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Awards and recognition for the first, second and third place teams in each division.",
+    "official_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "CodeQuest regional round",
+        "date": "2027-02-06",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-01"
   }
 ]

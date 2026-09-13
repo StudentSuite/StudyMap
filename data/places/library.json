@@ -1186,5 +1186,60 @@
     "address": "Beyazıt Mah. Çadırcılar Cd. No:4, Fatih, İstanbul, Türkiye",
     "gmaps_link": "https://maps.google.com/?q=41.0116,28.9657",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "nyc-library-03",
+    "name": "Brooklyn Public Library (Central Library)",
+    "type": "library",
+    "city": "new_york",
+    "lat": 40.6846,
+    "lng": -73.9691,
+    "address": "10 Grand Army Plaza, Brooklyn, NY 11238, USA",
+    "gmaps_link": "https://maps.google.com/?q=40.6846,-73.9691",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "lax-library-01",
+    "name": "Los Angeles Central Library",
+    "type": "library",
+    "city": "los_angeles",
+    "lat": 34.0524,
+    "lng": -118.2479,
+    "address": "630 W 5th St, Los Angeles, CA 90071, USA",
+    "gmaps_link": "https://maps.google.com/?q=34.0524,-118.2479",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ord-library-01",
+    "name": "University of Chicago Library (Regenstein)",
+    "type": "library",
+    "city": "chicago",
+    "lat": 41.7944,
+    "lng": -87.5965,
+    "address": "1100 E 57th St, Chicago, IL 60637, USA",
+    "gmaps_link": "https://maps.google.com/?q=41.7944,-87.5965",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "tyo-library-01",
+    "name": "National Diet Library (Tokyo Main Building)",
+    "type": "library",
+    "city": "tokyo",
+    "lat": 35.6825,
+    "lng": 139.7477,
+    "address": "1-10-1 Nagatacho, Chiyoda, Tokyo 100-8925, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.6825,139.7477",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "syd-library-01",
+    "name": "State Library of New South Wales",
+    "type": "library",
+    "city": "sydney",
+    "lat": -33.8672,
+    "lng": 151.2140,
+    "address": "Macquarie St, Sydney NSW 2000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.8672,151.2140",
+    "added_by": "yashkewlani"
   }
 ]

@@ -818,5 +818,97 @@
     },
     "valid_till": "2027-03-01",
     "image": "/competitions/international-biogeneius-challenge.png"
+  },
+  {
+    "id": "national-science-bowl",
+    "name": "National Science Bowl (NSB)",
+    "organizer": "U.S. Department of Energy",
+    "organizer_url": "https://science.osti.gov/wdts/nsb",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "chemistry",
+      "physics",
+      "earth science",
+      "mathematics"
+    ],
+    "description": "A fast-paced, buzzer led team science quiz run by the U.S. Department of Energy across divisions from middle school to the collegiate level. Regional tournaments feed into an all expenses paid National Finals in Washington DC.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Trophies, scholarships and prizes at the National Finals.",
+    "official_url": "https://science.osti.gov/wdts/nsb",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional competitions",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://science.osti.gov/wdts/nsb"
+      },
+      {
+        "label": "National Finals (Washington DC)",
+        "date": "2027-04-29",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://science.osti.gov/wdts/nsb"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "exploravision",
+    "name": "ExploraVision",
+    "organizer": "National Science Teaching Association and Toshiba",
+    "organizer_url": "https://www.exploravision.org/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "technology",
+      "futuristic thinking"
+    ],
+    "description": "A team competition asking students in grades K-12 to imagine the future of a current technology and research its likely evolution over the next twenty years. Teams submit a paper, web page and graphic presentation, and regional winners build physical prototypes for the national phase.",
+    "format": "hybrid",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Regional winners receive savings bonds; national winners get a trip and up to USD 10,000 in savings bonds.",
+    "official_url": "https://www.exploravision.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National submission deadline",
+        "date": "2027-02-03",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.exploravision.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-01"
   }
 ]

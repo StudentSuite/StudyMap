@@ -214,5 +214,87 @@
     },
     "valid_till": "2026-10-15",
     "image": "/competitions/gates-scholarship.png"
+  },
+  {
+    "id": "jack-kent-cooke-young-scholars",
+    "name": "Jack Kent Cooke Young Scholars Program",
+    "organizer": "Jack Kent Cooke Foundation",
+    "organizer_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "music",
+      "extracurricular excellence"
+    ],
+    "description": "A selective opportunity for high achieving students with financial need entering grade eight, covering summer school, internships, mentoring, school supplies and tuition support through high school. Selection considers academic record alongside financial need.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Up to USD 75,000 over five years plus programmatic support.",
+    "official_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2027-05-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ron-brown-scholar-program",
+    "name": "Ron Brown Scholar Program",
+    "organizer": "Ron Brown Scholar Fund",
+    "organizer_url": "https://www.ronbrown.org/capstones/scholar-program/",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "leadership",
+      "community service"
+    ],
+    "description": "A scholarship for academically gifted high school seniors who demonstrate community service, leadership and financial need. The program pairs each scholar with a mentor and an annual Capstone program alongside the award itself.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 40,000 scholarship paid over four years, plus mentoring and Capstone conferencing.",
+    "official_url": "https://www.ronbrown.org/capstones/scholar-program/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Scholarship application deadline",
+        "date": "2027-01-09",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.ronbrown.org/capstones/scholar-program/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-02-15"
   }
 ]

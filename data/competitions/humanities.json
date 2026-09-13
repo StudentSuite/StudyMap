@@ -255,5 +255,88 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/oxford-german-olympiad.png"
+  },
+  {
+    "id": "certamen-nlc",
+    "name": "National Latin Classical League Certamen",
+    "organizer": "National Junior Classical League",
+    "organizer_url": "https://www.njcl.org/",
+    "category": "humanities",
+    "subjects": [
+      "latin",
+      "classics",
+      "mythology",
+      "roman history"
+    ],
+    "description": "A fast-paced team quiz on Latin language, Roman history, mythology and classical culture, played in rounds at regional and national conventions. Certamen tournaments run in parallel to the National Latin Exam for students in the Junior Classical League.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Trophies and sweepstakes points at the national convention.",
+    "official_url": "https://www.njcl.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "NJCL National Convention",
+        "date": "2027-07-25",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.njcl.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-08-01"
+  },
+  {
+    "id": "le-grand-concours",
+    "name": "Le Grand Concours (National French Contest)",
+    "organizer": "American Association of Teachers of French",
+    "organizer_url": "https://www.frenchteachers.org/le-grand-concours",
+    "category": "humanities",
+    "subjects": [
+      "french language",
+      "reading comprehension",
+      "listening"
+    ],
+    "description": "The world's largest French language exam for students, administered in participating schools across the US. Students are placed in levels aligned to their study track and take a multiple choice test of reading and listening comprehension for a national ranking.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National medals and certificates awarded by score percentile.",
+    "official_url": "https://www.frenchteachers.org/le-grand-concours",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Grand Concours testing window",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.frenchteachers.org/le-grand-concours"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-04-01"
   }
 ]

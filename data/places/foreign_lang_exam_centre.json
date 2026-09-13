@@ -478,5 +478,41 @@
     "gmaps_link": "https://maps.google.com/?q=9.0845078,7.4906302",
     "added_by": "yashkewlani",
     "exam": "IELTS"
+  },
+  {
+    "id": "sfo-foreign_lang_exam_centre-01",
+    "name": "Alliance Française de San Francisco",
+    "type": "foreign_lang_exam_centre",
+    "city": "san_francisco",
+    "lat": 37.7755,
+    "lng": -122.4206,
+    "address": "1345 Bush St, San Francisco, CA 94109, USA",
+    "gmaps_link": "https://maps.google.com/?q=37.7755,-122.4206",
+    "added_by": "yashkewlani",
+    "exam": "DELF/DALF (French)"
+  },
+  {
+    "id": "prg-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Prag",
+    "type": "foreign_lang_exam_centre",
+    "city": "prague",
+    "lat": 50.0815,
+    "lng": 14.4149,
+    "address": "Masarykovo nábřeží 1748/32, 110 00 Praha 1, Czech Republic",
+    "gmaps_link": "https://maps.google.com/?q=50.0815,14.4149",
+    "added_by": "yashkewlani",
+    "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "syd-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Sydney",
+    "type": "foreign_lang_exam_centre",
+    "city": "sydney",
+    "lat": -33.8650,
+    "lng": 151.2094,
+    "address": "Level 6, 250 George St, Sydney NSW 2000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.8650,151.2094",
+    "added_by": "yashkewlani",
+    "exam": "IELTS"
   }
 ]

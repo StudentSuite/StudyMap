@@ -358,5 +358,94 @@
     },
     "valid_till": "2027-05-15",
     "image": "/competitions/signet-classics-student-scholarship-essay-contest.png"
+  },
+  {
+    "id": "nyt-student-editorial-contest",
+    "name": "New York Times Student Editorial Contest",
+    "organizer": "The New York Times Learning Network",
+    "organizer_url": "https://www.nytimes.com/spotlight/learning-network-contests",
+    "category": "essay_writing",
+    "subjects": [
+      "journalism",
+      "argumentative writing",
+      "op-ed writing"
+    ],
+    "description": "A free essay contest inviting students from 13-19 to write a 450-word editorial on a topic they care about, using evidence and argument. Winners are announced in batches across the school year and are published on the New York Times Learning Network.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Winning editorials are published on The New York Times Learning Network.",
+    "official_url": "https://www.nytimes.com/spotlight/learning-network-contests",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Editorial contest opens",
+        "date": "2027-01-06",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.nytimes.com/spotlight/learning-network-contests"
+      },
+      {
+        "label": "Editorial contest deadline",
+        "date": "2027-02-17",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.nytimes.com/spotlight/learning-network-contests"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-15"
+  },
+  {
+    "id": "una-usa-global-citizen-essay-contest",
+    "name": "UNA-USA Global Citizen Essay Contest",
+    "organizer": "United Nations Association of the USA",
+    "organizer_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/",
+    "category": "essay_writing",
+    "subjects": [
+      "international affairs",
+      "argumentative writing"
+    ],
+    "description": "An annual essay contest for middle and high school students writing on a current UN related international affairs topic. Entrants argue their position in around 2,000 words, and winners are honored at the UNA National Leadership Meeting.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash awards up to USD 2,500 plus an entry to the UNA National Leadership Meeting.",
+    "official_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Essay submission deadline",
+        "date": "2027-02-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-15"
   }
 ]

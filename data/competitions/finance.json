@@ -250,5 +250,95 @@
     },
     "valid_till": "2026-12-01",
     "image": "/competitions/stock-market-game.png"
+  },
+  {
+    "id": "ja-stock-market-challenge",
+    "name": "JA Stock Market Challenge",
+    "organizer": "Junior Achievement",
+    "organizer_url": "https://jausa.ja.org/programs/ja-in-the-classroom",
+    "category": "finance",
+    "subjects": [
+      "stock market",
+      "investing",
+      "financial literacy"
+    ],
+    "description": "A high-energy single-day trading game in which teams manage a synthetic portfolio in real time as a live market simulation runs. Teams decide how to allocate funds across sectors, buying and selling as prices move, to finish with the highest portfolio value.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Trophy and recognition for the team with the highest portfolio value.",
+    "official_url": "https://jausa.ja.org/programs/ja-in-the-classroom",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Major city challenge events",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://jausa.ja.org/programs/ja-in-the-classroom"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "fed-challenge-high-school",
+    "name": "Fed Challenge (High School)",
+    "organizer": "Federal Reserve System",
+    "organizer_url": "https://www.federalreserve.gov/education/fed-challenge.htm",
+    "category": "finance",
+    "subjects": [
+      "macroeconomics",
+      "monetary policy",
+      "public speaking"
+    ],
+    "description": "A Federal Reserve competition in which teams of high school students present a monetary policy recommendation to a panel of Fed judges, then field questions defending their analysis. Winning teams advance through district rounds to a national championship in Washington DC.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Recognition at each Federal Reserve district and a national championship trophy.",
+    "official_url": "https://www.federalreserve.gov/education/fed-challenge.htm",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "District competitions",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.federalreserve.gov/education/fed-challenge.htm"
+      },
+      {
+        "label": "National championship",
+        "date": "2027-04-25",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.federalreserve.gov/education/fed-challenge.htm"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-05-01"
   }
 ]

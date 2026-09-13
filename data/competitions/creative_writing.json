@@ -274,5 +274,87 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/write-the-world-competitions.png"
+  },
+  {
+    "id": "reedsy-short-story-contest",
+    "name": "Reedsy Short Story Contest",
+    "organizer": "Reedsy",
+    "organizer_url": "https://reedsy.com/writing-contest",
+    "category": "creative_writing",
+    "subjects": [
+      "fiction",
+      "short story",
+      "creative writing"
+    ],
+    "description": "A biweekly flash fiction contest with a fresh prompt every week. Writers submit a story of up to 1,000 words by the deadline for a chance at the top prize and a place in Reedsy's shortlist.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 250 for the winner; shortlisted authors are published on the Reedsy blog.",
+    "official_url": "https://reedsy.com/writing-contest",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Next contest deadline",
+        "date": "2027-01-10",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://reedsy.com/writing-contest"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "teen-ink-contests",
+    "name": "Teen Ink Monthly Writing Contests",
+    "organizer": "Teen Ink (The Young Authors Foundation)",
+    "organizer_url": "https://www.teenink.com/contests",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "fiction",
+      "non-fiction"
+    ],
+    "description": "Monthly themed contests open to teenagers, giving winners publication in Teen Ink magazine and its website. Each month features a different genre, such as poetry, fiction, nonfiction or photography.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in Teen Ink plus Amazon gift certificates.",
+    "official_url": "https://www.teenink.com/contests",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Monthly contest closes",
+        "date": "2027-01-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.teenink.com/contests"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-02-01"
   }
 ]

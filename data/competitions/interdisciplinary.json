@@ -425,5 +425,105 @@
     },
     "valid_till": "2027-01-01",
     "image": "/competitions/nasa-space-apps-challenge.png"
+  },
+  {
+    "id": "odyssey-of-the-mind",
+    "name": "Odyssey of the Mind",
+    "organizer": "Creative Competitions Inc.",
+    "organizer_url": "https://www.odysseyofthemind.com/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "creative problem solving",
+      "engineering",
+      "performance",
+      "teamwork"
+    ],
+    "description": "A creative problem solving competition in which teams choose from five open ended problems each season, spanning building, engineering, theatrical performance and improvisation. Teams present solutions at regional, state and world finals.",
+    "format": "in_person",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "World Finals invitations; awards for problem, style and spontaneous scores.",
+    "official_url": "https://www.odysseyofthemind.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Problem drop and season kickoff",
+        "date": "2027-01-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.odysseyofthemind.com/"
+      },
+      {
+        "label": "World Finals",
+        "date": "2027-05-26",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.odysseyofthemind.com/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "destination-imagination",
+    "name": "Destination Imagination (DI) Global Finals",
+    "organizer": "Destination Imagination Inc.",
+    "organizer_url": "https://www.destinationimagination.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "creative problem solving",
+      "engineering",
+      "storytelling",
+      "teamwork"
+    ],
+    "description": "A project based creative competition where teams solve one of six Challenge strands from technical to fine arts, presenting at regional and state qualifiers. Qualifying teams travel to Global Finals to compete against teams from the US and dozens of other countries.",
+    "format": "in_person",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Global Finals invitations, trophies and Ren Mar-land recognition awards.",
+    "official_url": "https://www.destinationimagination.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Challenge season begins",
+        "date": "2027-01-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.destinationimagination.org/"
+      },
+      {
+        "label": "DI Global Finals",
+        "date": "2027-05-25",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.destinationimagination.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-06-01"
   }
 ]

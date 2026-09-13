@@ -1219,5 +1219,38 @@
     "type": "airport",
     "gmaps_link": "https://maps.google.com/?q=36.9822,35.2805",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "syd-airport-01",
+    "name": "Sydney Kingsford Smith Airport",
+    "type": "airport",
+    "city": "sydney",
+    "lat": -33.9399,
+    "lng": 151.1753,
+    "address": "Mascot NSW 2020, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.9399,151.1753",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mel-airport-01",
+    "name": "Melbourne Airport",
+    "type": "airport",
+    "city": "melbourne",
+    "lat": -37.6733,
+    "lng": 144.8434,
+    "address": "Melbourne Airport VIC 3045, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-37.6733,144.8434",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mia-airport-01",
+    "name": "Miami International Airport",
+    "type": "airport",
+    "city": "miami",
+    "lat": 25.7959,
+    "lng": -80.2870,
+    "address": "Miami, FL 33122, USA",
+    "gmaps_link": "https://maps.google.com/?q=25.7959,-80.2870",
+    "added_by": "yashkewlani"
   }
 ]

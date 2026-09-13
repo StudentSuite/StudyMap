@@ -326,5 +326,103 @@
     },
     "valid_till": "2026-12-01",
     "image": "/competitions/ja-company-of-the-year.png"
+  },
+  {
+    "id": "sage-global",
+    "name": "Students for the Advancement of Global Entrepreneurship (SAGE) World Cup",
+    "organizer": "SAGE Global",
+    "organizer_url": "https://sageglobal.org/",
+    "category": "business",
+    "subjects": [
+      "social entrepreneurship",
+      "business pitch",
+      "sustainability"
+    ],
+    "description": "A worldwide social entrepreneurship competition in which teenage teams launch and run real businesses that address a societal need. National champions travel to the SAGE World Cup, an intensive multi-day event of pitching, judging and global networking.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "World Cup titles, prizes and the opportunity to pitch to international investors.",
+    "official_url": "https://sageglobal.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National programs begin",
+        "date": "2027-01-15",
+        "type": "registration_open",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://sageglobal.org/"
+      },
+      {
+        "label": "SAGE World Cup",
+        "date": "2027-08-01",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://sageglobal.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-09-01"
+  },
+  {
+    "id": "young-enterprise-company-programme",
+    "name": "Young Enterprise Company Programme",
+    "organizer": "Young Enterprise UK",
+    "organizer_url": "https://www.young-enterprise.org.uk/programmes/company-programme/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "business plan",
+      "teamwork"
+    ],
+    "description": "The UK's flagship student company programme, in which teams set up and run a real business over a year under the guidance of business mentors. Teams raise capital, trade, and compete regionally for a place at the national finals.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Trophies and recognition at the Company Programme national final.",
+    "official_url": "https://www.young-enterprise.org.uk/programmes/company-programme/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Company registration closes",
+        "date": "2027-01-31",
+        "type": "registration_close",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.young-enterprise.org.uk/programmes/company-programme/"
+      },
+      {
+        "label": "National finals",
+        "date": "2027-06-16",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.young-enterprise.org.uk/programmes/company-programme/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-13"
+    },
+    "valid_till": "2027-07-01"
   }
 ]
