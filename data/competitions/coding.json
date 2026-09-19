@@ -451,7 +451,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/mit-battlecode.png"
   },
   {
     "id": "lockheed-martin-codequest",
@@ -492,6 +493,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/lockheed-martin-codequest.png"
   }
 ]

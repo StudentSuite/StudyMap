@@ -314,7 +314,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/reedsy-short-story-contest.png"
   },
   {
     "id": "teen-ink-contests",
@@ -355,6 +356,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-02-01"
+    "valid_till": "2027-02-01",
+    "image": "/competitions/teen-ink-contests.png"
   }
 ]

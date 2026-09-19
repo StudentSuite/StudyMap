@@ -474,7 +474,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/odyssey-of-the-mind.png"
   },
   {
     "id": "destination-imagination",
@@ -524,6 +525,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/destination-imagination.png"
   }
 ]

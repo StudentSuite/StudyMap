@@ -406,7 +406,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-15"
+    "valid_till": "2027-03-15",
+    "image": "/competitions/nyt-student-editorial-contest.png"
   },
   {
     "id": "una-usa-global-citizen-essay-contest",
@@ -446,6 +447,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-15"
+    "valid_till": "2027-03-15",
+    "image": "/competitions/una-usa-global-citizen-essay-contest.png"
   }
 ]

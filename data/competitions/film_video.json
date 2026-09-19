@@ -280,7 +280,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/world-of-7-billion-student-video-contest.png"
   },
   {
     "id": "48-hour-film-project",
@@ -321,6 +322,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-07-01"
+    "valid_till": "2027-07-01",
+    "image": "/competitions/48-hour-film-project.png"
   }
 ]

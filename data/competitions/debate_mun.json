@@ -351,7 +351,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-02-15"
+    "valid_till": "2027-02-15",
+    "image": "/competitions/harvard-model-congress.png"
   },
   {
     "id": "mspdp-public-debate",
@@ -400,6 +401,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/mspdp-public-debate.png"
   }
 ]

@@ -254,7 +254,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-06-01"
+    "valid_till": "2027-06-01",
+    "image": "/competitions/jack-kent-cooke-young-scholars.png"
   },
   {
     "id": "ron-brown-scholar-program",
@@ -295,6 +296,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-02-15"
+    "valid_till": "2027-02-15",
+    "image": "/competitions/ron-brown-scholar-program.png"
   }
 ]
