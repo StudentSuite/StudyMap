@@ -495,5 +495,52 @@
     },
     "valid_till": "2027-03-01",
     "image": "/competitions/lockheed-martin-codequest.png"
+  },  {
+    "id": "apex-high-school-ai-championship",
+    "name": "Apex High School AI Championship",
+    "organizer": "Correlation One (Apex America Initiative)",
+    "organizer_url": "https://www.correlation-one.com/",
+    "category": "coding",
+    "subjects": [
+      "artificial intelligence",
+      "machine learning"
+    ],
+    "description": "A free national program from the Apex America Initiative in which US high school students learn AI fundamentals and then compete in scenario-based AI challenges against peers nationwide. Top performers share a pool of scholarships and prizes.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "50,000 dollars in scholarships and prizes across top performers.",
+    "official_url": "https://www.correlation-one.com/apex-america/high-school-championship",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Championship competition window",
+        "date": "2026-11-20",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.correlation-one.com/apex-america/high-school-championship"
+      },
+      {
+        "label": "Championship window closes",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.correlation-one.com/apex-america/partners"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-03-01"
   }
 ]

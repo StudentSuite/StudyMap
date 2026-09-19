@@ -1230,5 +1230,181 @@
     "address": "Friedrich-Schmidt-Platz 1, 1010 Wien, Austria",
     "gmaps_link": "https://maps.google.com/?q=48.2100,16.3575",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "waw-gov_offices-01",
+    "name": "Urząd Miasta Stołecznego Warszawy (Warsaw City Hall)",
+    "type": "gov_offices",
+    "city": "warsaw",
+    "lat": 52.2420649,
+    "lng": 21.0094023,
+    "address": "Plac Bankowy 3/5, 00-950 Warszawa, Poland",
+    "gmaps_link": "https://maps.google.com/?q=52.2420649,21.0094023",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "kkp-gov_offices-01",
+    "name": "Urząd Miasta Krakowa, Plac Wszystkich Świętych",
+    "type": "gov_offices",
+    "city": "krakow",
+    "lat": 50.0617571,
+    "lng": 19.9362311,
+    "address": "Plac Wszystkich Świętych 3-4, 31-004 Kraków, Poland",
+    "gmaps_link": "https://maps.google.com/?q=50.0617571,19.9362311",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "prg-gov_offices-01",
+    "name": "Magistrát hlavního města Prahy (Prague City Hall)",
+    "type": "gov_offices",
+    "city": "prague",
+    "lat": 50.0877113,
+    "lng": 14.4224391,
+    "address": "Mariánské náměstí 2, 110 00 Praha 1, Czech Republic",
+    "gmaps_link": "https://maps.google.com/?q=50.0877113,14.4224391",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bud-gov_offices-01",
+    "name": "Budapest Főváros Önkormányzata (Budapest City Hall)",
+    "type": "gov_offices",
+    "city": "budapest",
+    "lat": 47.4979188,
+    "lng": 19.0401793,
+    "address": "Városház utca 9-11, 1052 Budapest, Hungary",
+    "gmaps_link": "https://maps.google.com/?q=47.4979188,19.0401793",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "beg-gov_offices-01",
+    "name": "Bezirksamt Mitte von Berlin (Berlin-Mitte Borough Office)",
+    "type": "gov_offices",
+    "city": "berlin",
+    "lat": 52.5211686,
+    "lng": 13.3998313,
+    "address": "Karl-Marx-Allee 4, 10178 Berlin, Germany",
+    "gmaps_link": "https://maps.google.com/?q=52.5211686,13.3998313",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "tll-gov_offices-01",
+    "name": "Tallinna Linnavalitsus (Tallinn City Government)",
+    "type": "gov_offices",
+    "city": "tallinn",
+    "lat": 59.4370149,
+    "lng": 24.7535241,
+    "address": "Vabaduse väljak 7, 10146 Tallinn, Estonia",
+    "gmaps_link": "https://maps.google.com/?q=59.4370149,24.7535241",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "rig-gov_offices-01",
+    "name": "Rīgas dome (Riga City Council)",
+    "type": "gov_offices",
+    "city": "riga",
+    "lat": 56.9496484,
+    "lng": 24.1051861,
+    "address": "Rātslaukums 1, LV-1539 Rīga, Latvia",
+    "gmaps_link": "https://maps.google.com/?q=56.9496484,24.1051861",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "vno-gov_offices-01",
+    "name": "Vilniaus miesto savivaldybė (Vilnius City Municipality)",
+    "type": "gov_offices",
+    "city": "vilnius",
+    "lat": 54.6864016,
+    "lng": 25.2834678,
+    "address": "Konstitucijos pr. 3, 09601 Vilnius, Lithuania",
+    "gmaps_link": "https://maps.google.com/?q=54.6864016,25.2834678",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "kei-gov_offices-01",
+    "name": "Haryana Shehri Vikas Pradhikaran (HSVP), Gurugram Office",
+    "type": "gov_offices",
+    "city": "gurugram",
+    "lat": 28.4595481,
+    "lng": 77.0266383,
+    "address": "Sector 14, Gurugram, Haryana 122001, India",
+    "gmaps_link": "https://maps.google.com/?q=28.4595481,77.0266383",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "ccu-gov_offices-01",
+    "name": "Kolkata Municipal Corporation Headquarters",
+    "type": "gov_offices",
+    "city": "kolkata",
+    "lat": 22.5699784,
+    "lng": 88.3533059,
+    "address": "5 SN Banerjee Road, Kolkata 700013, India",
+    "gmaps_link": "https://maps.google.com/?q=22.5699784,88.3533059",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "maa-gov_offices-01",
+    "name": "Greater Chennai Corporation, Ripon Building",
+    "type": "gov_offices",
+    "city": "chennai",
+    "lat": 13.0800791,
+    "lng": 80.2747141,
+    "address": "VP Raman Salai, Park Town, Chennai 600003, India",
+    "gmaps_link": "https://maps.google.com/?q=13.0800791,80.2747141",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "pnq-gov_offices-01",
+    "name": "Pune Municipal Corporation Main Building",
+    "type": "gov_offices",
+    "city": "pune",
+    "lat": 18.5195294,
+    "lng": 73.8554208,
+    "address": "Shivajinagar, Pune 411005, India",
+    "gmaps_link": "https://maps.google.com/?q=18.5195294,73.8554208",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "nsk-gov_offices-01",
+    "name": "Nashik Municipal Corporation",
+    "type": "gov_offices",
+    "city": "nashik",
+    "lat": 19.9972519,
+    "lng": 73.7897422,
+    "address": "Trimbak Road, Nashik 422002, India",
+    "gmaps_link": "https://maps.google.com/?q=19.9972519,73.7897422",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bom-gov_offices-01",
+    "name": "Municipal Corporation of Greater Mumbai (BMC) Headquarters",
+    "type": "gov_offices",
+    "city": "mumbai",
+    "lat": 18.9412282,
+    "lng": 72.8355121,
+    "address": "Mahapalika Marg, Fort, Mumbai 400001, India",
+    "gmaps_link": "https://maps.google.com/?q=18.9412282,72.8355121",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "atq-gov_offices-01",
+    "name": "Municipal Corporation Amritsar (Town Hall)",
+    "type": "gov_offices",
+    "city": "amritsar",
+    "lat": 31.6333104,
+    "lng": 74.8728629,
+    "address": "Town Hall, Hall Bazar, Amritsar 143006, India",
+    "gmaps_link": "https://maps.google.com/?q=31.6333104,74.8728629",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "jai-gov_offices-02",
+    "name": "Jaipur Municipal Corporation Heritage, Kacheri Ghat",
+    "type": "gov_offices",
+    "city": "jaipur",
+    "lat": 26.9207104,
+    "lng": 75.8267392,
+    "address": "Kacheri Ghat, Gopalbari, Jaipur 302006, India",
+    "gmaps_link": "https://maps.google.com/?q=26.9207104,75.8267392",
+    "added_by": "shauryagangrade"
   }
 ]

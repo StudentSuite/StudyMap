@@ -911,5 +911,189 @@
       "on": "2026-09-13"
     },
     "valid_till": "2027-03-01"
+  },
+  {
+    "id": "american-rocketry-challenge",
+    "name": "American Rocketry Challenge",
+    "organizer": "American Institute of Aeronautics and Astronautics (AIA) and the National Association of Rocketry",
+    "organizer_url": "https://www.rocketrychallenge.org/",
+    "category": "stem",
+    "subjects": [
+      "aerospace engineering",
+      "rocketry"
+    ],
+    "description": "Teams of US students in grades 6-12 design, build, and fly a model rocket carrying two raw eggs to a target altitude and flight duration, scored on how close each qualification flight comes to the targets. The top 100 teams earn a place at the National Finals in Northern Virginia, which distributes 100,000 dollars in awards.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 195,
+      "currency": "USD"
+    },
+    "prize": "A share of 100,000 dollars in awards at the National Finals; the winning team represents the US at the International Rocketry Challenge.",
+    "official_url": "https://www.rocketrychallenge.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team registration closes",
+        "date": "2026-12-06",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.rocketrychallenge.org/faq/"
+      },
+      {
+        "label": "National Finals",
+        "date": "2027-05-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.rocketrychallenge.org/how-to-compete/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-15"
+  },
+  {
+    "id": "agu-bright-stars",
+    "name": "AGU Bright STaRS",
+    "organizer": "American Geophysical Union",
+    "organizer_url": "https://www.agu.org/",
+    "category": "stem",
+    "subjects": [
+      "earth science",
+      "space science"
+    ],
+    "description": "Middle and high school students present original Earth and space science research as posters in the Bright STaRS session at AGU's Annual Meeting each December, with feedback from attending scientists. Participation is arranged through a student's research program or school supervisor, who submits the abstract.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Presentation at the AGU Annual Meeting with complimentary conference registration; no cash prize.",
+    "official_url": "https://www.agu.org/students/brightstars",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Bright STaRS poster session at the AGU Annual Meeting",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://connect.agu.org/education/blogs/sunday-siomades/2026/05/25/education-section-newsletter-june-2026-edition"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "aapt-high-school-physics-photo-contest",
+    "name": "AAPT High School Physics Photo Contest",
+    "organizer": "American Association of Physics Teachers",
+    "organizer_url": "https://www.aapt.org/",
+    "category": "stem",
+    "subjects": [
+      "physics",
+      "photography"
+    ],
+    "description": "Students submit a photograph that captures a physics principle in everyday life together with a short essay explaining the science, judged in separate natural and contrived photo categories. Schools may enter up to 15 photos each year.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes and AAPT recognition for winning photos in each category.",
+    "official_url": "https://aapt.org/Programs/photocontest/index.cfm",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2027-03-02",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://aapt.org/Programs/photocontest/index.cfm"
+      },
+      {
+        "label": "Photo submission deadline",
+        "date": "2027-05-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://aapt.org/Programs/PhotoContest/details.cfm"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "national-young-astronomer-award",
+    "name": "National Young Astronomer Award (NYAA)",
+    "organizer": "Astronomical League",
+    "organizer_url": "https://www.astroleague.org/",
+    "category": "stem",
+    "subjects": [
+      "astronomy",
+      "research"
+    ],
+    "description": "A national award recognizing original astronomical research or observing programs by US students aged 14 to 19, judged by a panel of professional astronomers. Winners are honored at the League's ALCon national convention.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Telescope and expense-paid trip to ALCon for the first-place winner.",
+    "official_url": "https://www.astroleague.org/national-young-astronomer-award-2/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application package deadline",
+        "date": "2027-03-31",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.astroleague.org/national-young-astronomer-award-2/"
+      },
+      {
+        "label": "Winner announced at ALCon",
+        "date": "2027-07-01",
+        "type": "results",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.astroleague.org/astronomical-league-awards/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-01"
   }
 ]

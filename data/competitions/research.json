@@ -302,5 +302,117 @@
     },
     "valid_till": "2027-04-15",
     "image": "/competitions/globe-virtual-science-fair.png"
+  },
+  {
+    "id": "aan-neuroscience-research-prize",
+    "name": "AAN Neuroscience Research Prize",
+    "organizer": "American Academy of Neurology",
+    "organizer_url": "https://www.aan.com/",
+    "category": "research",
+    "subjects": [
+      "neuroscience",
+      "biology"
+    ],
+    "description": "A national research prize for US high school students who submit an original lab or field investigation on the brain or nervous system, co-sponsored with the Child Neurology Society. Finalists present their work at the American Academy of Neurology's annual meeting.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes and an expense-paid trip to the AAN Annual Meeting for winners.",
+    "official_url": "https://www.aan.com/research/neuroscience-research-prize",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Applications open",
+        "date": "2026-07-29",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.aan.com/research/neuroscience-research-prize"
+      },
+      {
+        "label": "Applications close",
+        "date": "2026-10-20",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.aan.com/research/neuroscience-research-prize"
+      },
+      {
+        "label": "Notifications sent",
+        "date": "2027-01-31",
+        "type": "results",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.aan.com/search/awards"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "ashg-dna-day-essay-contest",
+    "name": "ASHG DNA Day Essay Contest",
+    "organizer": "American Society of Human Genetics",
+    "organizer_url": "https://www.ashg.org/",
+    "category": "research",
+    "subjects": [
+      "genetics",
+      "biology"
+    ],
+    "description": "An annual essay contest for students in grades 9-12 worldwide on a human genetics topic, submitted through a teacher and judged by ASHG members over three rounds. Essays run to 750 words and must cite at least one quality reference.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes for the top three essays and a mini-grant for the winning teachers.",
+    "official_url": "https://www.ashg.org/dna-day/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission site opens",
+        "date": "2027-01-08",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.ashg.org/dna-day/"
+      },
+      {
+        "label": "Submission closes",
+        "date": "2027-03-04",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.ashg.org/dna-day/"
+      },
+      {
+        "label": "Results announced on DNA Day",
+        "date": "2027-04-25",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.ashg.org/publications-news/press-releases/ashg-announces-winners-of-the-2026-dna-day-essay-contest/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-05-04"
   }
 ]

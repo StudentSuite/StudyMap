@@ -340,5 +340,62 @@
     },
     "valid_till": "2027-04-01",
     "image": "/competitions/le-grand-concours.png"
+  },
+  {
+    "id": "american-philosophy-olympiad",
+    "name": "American Philosophy Olympiad",
+    "organizer": "American Philosophy Olympiad",
+    "organizer_url": "https://www.americanphilosophyolympiad.org/",
+    "category": "humanities",
+    "subjects": [
+      "philosophy",
+      "french",
+      "spanish"
+    ],
+    "description": "A pre-college philosophy writing contest for US high school students that selects the American delegation to the International Philosophy Olympiad. Entrants write philosophical essays on set topics, with the later stage written in French, Spanish, or German.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "The top essays represent the United States at the International Philosophy Olympiad.",
+    "official_url": "https://www.americanphilosophyolympiad.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest window",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.americanphilosophyolympiad.org/"
+      },
+      {
+        "label": "US delegation travels to the International Philosophy Olympiad",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.fisp.org/olympiad"
+      },
+      {
+        "label": "Top essays selected for the US team",
+        "date": "2027-04-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://blog.apaonline.org/2016/02/17/high-school-philosophy-contest/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-01"
   }
 ]

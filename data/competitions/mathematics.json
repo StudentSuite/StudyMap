@@ -576,5 +576,61 @@
       "on": "2026-09-13"
     },
     "valid_till": "2027-04-01"
+  },
+  {
+    "id": "bay-area-mathematical-olympiad",
+    "name": "Bay Area Mathematical Olympiad (BAMO)",
+    "organizer": "Bay Area Mathematical Olympiad / Berkeley Math Circle",
+    "organizer_url": "https://www.bamo.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "A free annual proof-based olympiad for Bay Area students, offered as a BAMO-8 and a BAMO-12 paper of five problems sat over four hours at participating schools and math circles. Papers are graded centrally and an awards ceremony follows in March.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes and book awards for top scorers in each division.",
+    "official_url": "https://www.bamo.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "BAMO exam at participating sites",
+        "date": "2026-02-25",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bamo.org/2025-12-19-bamo26/"
+      },
+      {
+        "label": "Awards ceremony",
+        "date": "2026-03-08",
+        "type": "ceremony",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bamo.org/2025-12-19-bamo26/"
+      },
+      {
+        "label": "Typical exam date for the next cycle",
+        "date": "2027-02-24",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.bamo.org/information/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-04-01"
   }
 ]

@@ -426,5 +426,85 @@
     },
     "valid_till": "2027-03-01",
     "image": "/competitions/celebrating-art-contest.png"
+  },
+  {
+    "id": "asa-data-visualization-poster-competition",
+    "name": "ASA Data Visualization Poster Competition",
+    "organizer": "American Statistical Association",
+    "organizer_url": "https://www.amstat.org/",
+    "category": "arts_design",
+    "subjects": [
+      "statistics",
+      "data visualization"
+    ],
+    "description": "An annual ASA competition in which K-12 students design a poster built around two or more related graphics that summarize a dataset, examine it from different angles, and answer specific questions. Entries are submitted digitally and judged against a published rubric.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Certificates and prizes for first-, second-, and third-place posters in each grade band.",
+    "official_url": "https://www.amstat.org/education/k-12-students/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Poster submission deadline",
+        "date": "2027-04-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.statisticsteacher.org/2026/02/09/spring-2026-announcements/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "asa-statistics-project-competition",
+    "name": "ASA Statistics Project Competition",
+    "organizer": "American Statistical Association",
+    "organizer_url": "https://www.amstat.org/",
+    "category": "arts_design",
+    "subjects": [
+      "statistics",
+      "research methods"
+    ],
+    "description": "The written-report companion to the ASA poster competition: students in grades 7-12 design and carry out their own statistical study, then present the question, method, analysis, and conclusions in a written report judged by statisticians.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Certificates and prizes for first-, second-, and third-place projects in each grade band.",
+    "official_url": "https://www.amstat.org/education/k-12-students/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Project report deadline",
+        "date": "2027-06-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.statisticsteacher.org/2026/02/09/spring-2026-announcements/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-08-01"
   }
 ]

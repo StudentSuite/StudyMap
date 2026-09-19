@@ -381,5 +381,46 @@
     },
     "valid_till": "2027-09-15",
     "image": "/competitions/national-history-challenge-australia.png"
+  },
+  {
+    "id": "al-neuharth-free-spirit-conference",
+    "name": "Al Neuharth Free Spirit and Journalism Conference",
+    "organizer": "Freedom Forum",
+    "organizer_url": "https://www.freedomforum.org/",
+    "category": "history",
+    "subjects": [
+      "journalism",
+      "media history",
+      "first amendment"
+    ],
+    "description": "An all-expenses-paid conference in Washington, DC for 51 high school juniors, one from each state plus DC, built around the First Amendment and newsroom visits with working journalists. Each Free Spirit scholar receives a 1,000 dollar college scholarship.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "A 1,000 dollar college scholarship and a fully funded five-day conference for 51 selected juniors.",
+    "official_url": "https://www.freedomforum.org/al-neuharth-free-spirit-and-journalism-conference/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline",
+        "date": "2027-03-07",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.freedomforum.org/al-neuharth-free-spirit-and-journalism-conference/faq/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-01"
   }
 ]

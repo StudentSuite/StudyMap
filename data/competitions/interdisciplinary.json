@@ -527,5 +527,103 @@
     },
     "valid_till": "2027-06-01",
     "image": "/competitions/destination-imagination.png"
+  },
+  {
+    "id": "ashrae-high-school-design-competition",
+    "name": "ASHRAE High School Design Competition",
+    "organizer": "ASHRAE (American Society of Heating, Refrigerating and Air-Conditioning Engineers)",
+    "organizer_url": "https://www.ashrae.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "engineering",
+      "hvac design",
+      "architecture"
+    ],
+    "description": "A free international competition in which teams of one to five students aged 13-18 design the HVAC system for an assigned building using 3D modeling tools, covering load calculations, equipment selection, and indoor air quality, judged by ASHRAE professionals.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes for the top three teams, awarded by ASHRAE.",
+    "official_url": "https://www.ashrae.org/communities/student-zone/competitions/ashrae-high-school-design-competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration closes",
+        "date": "2026-12-07",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ashrae.org/communities/student-zone/competitions/ashrae-high-school-design-competition"
+      },
+      {
+        "label": "Winners recognized at the ASHRAE Winter Conference",
+        "date": "2027-02-01",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.ashrae.org/communities/student-zone/competitions"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "aerial-drone-competition",
+    "name": "RECF Aerial Drone Competition",
+    "organizer": "Robotics Education & Competition (REC) Foundation",
+    "organizer_url": "https://recf.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "robotics",
+      "drone piloting",
+      "programming"
+    ],
+    "description": "A competition series for grades 5-12 in which teams of three to five students pilot and program drones through teamwork missions, autonomous flight, piloting skills, and documentation challenges at events run by the REC Foundation, culminating in regional championships.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "prize": "Qualification to regional championships and awards for top teams in each challenge area.",
+    "official_url": "https://recf.org/teams/competition/aerial-drone-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Mission 2027 season game reveal and team registration opens",
+        "date": "2026-08-11",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://kb.roboticseducation.org/hc/en-us/articles/41781250161687-2026-2027-RECF-Drone-Season-Updates"
+      },
+      {
+        "label": "Season registration fee applies from this season onward",
+        "date": "2026-08-11",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://recf.org/faq/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-03-01"
   }
 ]
