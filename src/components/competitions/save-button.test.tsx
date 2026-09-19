@@ -24,12 +24,10 @@ vi.mock("sonner", () => ({
 }));
 
 let mockUser: { id: string } | null = { id: "user-1" };
-let mockSupabaseClient: unknown = {
-  auth: {
-    getUser: () => Promise.resolve({ data: { user: mockUser } }),
-    onAuthStateChange: () => ({ data: { subscription: { unsubscribe: vi.fn() } } }),
-  },
-};
+// The component loads the user asynchronously; tests that interact with the
+// button must wait for this to resolve or the click lands before auth settles.
+let getUser = vi.fn();
+let mockSupabaseClient: unknown;
 vi.mock("@/lib/supabase/client", () => ({
   createClient: () => mockSupabaseClient,
 }));
@@ -44,9 +42,10 @@ afterEach(() => {
 describe("SaveButton", () => {
   beforeEach(() => {
     mockUser = { id: "user-1" };
+    getUser = vi.fn().mockResolvedValue({ data: { user: mockUser } });
     mockSupabaseClient = {
       auth: {
-        getUser: () => Promise.resolve({ data: { user: mockUser } }),
+        getUser,
         onAuthStateChange: () => ({ data: { subscription: { unsubscribe: vi.fn() } } }),
       },
     };
@@ -77,6 +76,8 @@ describe("SaveButton", () => {
   it("saves optimistically and calls saveCompetition", async () => {
     render(<SaveButton competitionId="c1" initialSaved={false} initialCount={2} />);
     const button = await screen.findByRole("button");
+    // Wait for the async auth load before asserting on optimistic state.
+    await waitFor(() => expect(getUser).toHaveBeenCalled());
 
     fireEvent.click(button);
 
@@ -87,6 +88,7 @@ describe("SaveButton", () => {
   it("unsaves and decrements the count", async () => {
     render(<SaveButton competitionId="c1" initialSaved={true} initialCount={4} />);
     const button = await screen.findByRole("button");
+    await waitFor(() => expect(getUser).toHaveBeenCalled());
 
     fireEvent.click(button);
 
@@ -99,6 +101,7 @@ describe("SaveButton", () => {
     saveCompetition.mockRejectedValue(new Error("network error"));
     render(<SaveButton competitionId="c1" initialSaved={false} initialCount={2} />);
     const button = await screen.findByRole("button");
+    await waitFor(() => expect(getUser).toHaveBeenCalled());
 
     fireEvent.click(button);
     expect(button.getAttribute("aria-pressed")).toBe("true");
@@ -107,16 +110,18 @@ describe("SaveButton", () => {
     expect(toastError).toHaveBeenCalled();
   });
 
-  it("prompts sign-in when clicked while signed out, without throwing", () => {
+  it("prompts sign-in when clicked while signed out, without throwing", async () => {
     mockUser = null;
+    getUser = vi.fn().mockResolvedValue({ data: { user: null } });
     mockSupabaseClient = {
       auth: {
-        getUser: () => Promise.resolve({ data: { user: null } }),
+        getUser,
         onAuthStateChange: () => ({ data: { subscription: { unsubscribe: vi.fn() } } }),
       },
     };
     render(<SaveButton competitionId="c1" initialSaved={false} initialCount={0} />);
     const button = screen.getByRole("button");
+    await waitFor(() => expect(getUser).toHaveBeenCalled());
 
     expect(() => fireEvent.click(button)).not.toThrow();
     expect(push).toHaveBeenCalledWith(expect.stringContaining("/login?next="));
