@@ -381,7 +381,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/science-without-borders-challenge.png"
   },
   {
     "id": "celebrating-art-contest",
@@ -423,6 +424,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/celebrating-art-contest.png"
   }
 ]

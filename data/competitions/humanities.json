@@ -296,7 +296,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-08-01"
+    "valid_till": "2027-08-01",
+    "image": "/competitions/certamen-nlc.png"
   },
   {
     "id": "le-grand-concours",
@@ -337,6 +338,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-04-01",
+    "image": "/competitions/le-grand-concours.png"
   }
 ]

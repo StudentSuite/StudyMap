@@ -290,7 +290,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-03-01",
+    "image": "/competitions/ja-stock-market-challenge.png"
   },
   {
     "id": "fed-challenge-high-school",
@@ -339,6 +340,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "image": "/competitions/fed-challenge-high-school.png"
   }
 ]

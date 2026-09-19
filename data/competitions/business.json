@@ -374,7 +374,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-09-01"
+    "valid_till": "2027-09-01",
+    "image": "/competitions/sage-global.png"
   },
   {
     "id": "young-enterprise-company-programme",
@@ -423,6 +424,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-07-01"
+    "valid_till": "2027-07-01",
+    "image": "/competitions/young-enterprise-company-programme.png"
   }
 ]

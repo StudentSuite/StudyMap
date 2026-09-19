@@ -250,7 +250,8 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-11-15"
+    "valid_till": "2027-11-15",
+    "image": "/competitions/broadcom-masters.png"
   },
   {
     "id": "globe-virtual-science-fair",
@@ -299,6 +300,7 @@
       "by": "yashkewlani",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-04-15"
+    "valid_till": "2027-04-15",
+    "image": "/competitions/globe-virtual-science-fair.png"
   }
 ]
