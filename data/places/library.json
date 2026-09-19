@@ -1241,5 +1241,170 @@
     "address": "Macquarie St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8672,151.2140",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "kkp-library-01",
+    "name": "Kraków Public Library (Biblioteka Krakowa)",
+    "type": "library",
+    "city": "krakow",
+    "lat": 50.0608951,
+    "lng": 19.9367002,
+    "address": "Rajska 1, 31-124 Kraków, Poland",
+    "gmaps_link": "https://maps.google.com/?q=50.0608951,19.9367002",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bts-library-01",
+    "name": "Slovak National Library",
+    "type": "library",
+    "city": "martin",
+    "lat": 49.0711356,
+    "lng": 18.9214033,
+    "address": "Cesta Mládeže 9, 036 01 Martin, Slovakia",
+    "gmaps_link": "https://maps.google.com/?q=49.0711356,18.9214033",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "brs-library-01",
+    "name": "Universitätsbibliothek Graz",
+    "type": "library",
+    "city": "graz",
+    "lat": 47.0758915,
+    "lng": 15.4119712,
+    "address": "Universitätsplatz 3, 8010 Graz, Austria",
+    "gmaps_link": "https://maps.google.com/?q=47.0758915,15.4119712",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "enc-library-01",
+    "name": "Bibliothèque Municipale de Lyon, Part-Dieu",
+    "type": "library",
+    "city": "lyon",
+    "lat": 45.7622371,
+    "lng": 4.8547672,
+    "address": "30 Boulevard Vivier Merle, 69003 Lyon, France",
+    "gmaps_link": "https://maps.google.com/?q=45.7622371,4.8547672",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "mxp-library-01",
+    "name": "Biblioteca Comunale Centrale di Palermo",
+    "type": "library",
+    "city": "palermo",
+    "lat": 38.1134811,
+    "lng": 13.3578682,
+    "address": "Via del Fante 4, 90139 Palermo PA, Italy",
+    "gmaps_link": "https://maps.google.com/?q=38.1134811,13.3578682",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bgy-library-01",
+    "name": "Biblioteca Civica di Bergamo",
+    "type": "library",
+    "city": "bergamo",
+    "lat": 45.6968855,
+    "lng": 9.6667322,
+    "address": "Piazza Vecchia 15, 24129 Bergamo BG, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.6968855,9.6667322",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bli-library-01",
+    "name": "Biblioteca degli Intronati",
+    "type": "library",
+    "city": "siena",
+    "lat": 43.3180492,
+    "lng": 11.3306101,
+    "address": "Banchi di Sotto 52, 53100 Siena SI, Italy",
+    "gmaps_link": "https://maps.google.com/?q=43.3180492,11.3306101",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "sob-library-01",
+    "name": "Bibliothèque Sainte-Geneviève",
+    "type": "library",
+    "city": "paris",
+    "lat": 48.8480432,
+    "lng": 2.3473223,
+    "address": "10 Place du Panthéon, 75005 Paris, France",
+    "gmaps_link": "https://maps.google.com/?q=48.8480432,2.3473223",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "prg-library-01",
+    "name": "Prague City Library (Městská knihovna v Praze)",
+    "type": "library",
+    "city": "prague",
+    "lat": 50.0881686,
+    "lng": 14.4193689,
+    "address": "Mariánské náměstí 1, 110 00 Praha 1, Czech Republic",
+    "gmaps_link": "https://maps.google.com/?q=50.0881686,14.4193689",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "ham-library-02",
+    "name": "Bücherhallen Hamburg, Zentralbibliothek",
+    "type": "library",
+    "city": "hamburg",
+    "lat": 53.5546135,
+    "lng": 9.9892424,
+    "address": "Hühnerposten 1, 20095 Hamburg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=53.5546135,9.9892424",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "waw-library-01",
+    "name": "University of Warsaw Library (BUW)",
+    "type": "library",
+    "city": "warsaw",
+    "lat": 52.2394262,
+    "lng": 21.0196128,
+    "address": "Dobra 56/66, 00-312 Warszawa, Poland",
+    "gmaps_link": "https://maps.google.com/?q=52.2394262,21.0196128",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "uio-library-01",
+    "name": "Deichman Bjørvika",
+    "type": "library",
+    "city": "oslo",
+    "lat": 59.9110131,
+    "lng": 10.7479834,
+    "address": "Anne-Cath. Vestlys plass 1, 0150 Oslo, Norway",
+    "gmaps_link": "https://maps.google.com/?q=59.9110131,10.7479834",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "hki-library-01",
+    "name": "Oodi Helsinki Central Library",
+    "type": "library",
+    "city": "helsinki",
+    "lat": 60.1737953,
+    "lng": 24.9410338,
+    "address": "Töölönlahdenkatu 4, 00100 Helsinki, Finland",
+    "gmaps_link": "https://maps.google.com/?q=60.1737953,24.9410338",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "vle-library-01",
+    "name": "Universitätsbibliothek der TU Wien",
+    "type": "library",
+    "city": "vienna",
+    "lat": 48.2014533,
+    "lng": 16.3714886,
+    "address": "Karlsplatz 13, 1040 Wien, Austria",
+    "gmaps_link": "https://maps.google.com/?q=48.2014533,16.3714886",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dbn-library-01",
+    "name": "eThekwini Central Library (City Hall)",
+    "type": "library",
+    "city": "durban",
+    "lat": -29.8587382,
+    "lng": 31.0218402,
+    "address": "City Hall, 231 Anton Lembede Street, Durban Central, Durban 4001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-29.8587382,31.0218402",
+    "added_by": "shauryagangrade"
   }
 ]

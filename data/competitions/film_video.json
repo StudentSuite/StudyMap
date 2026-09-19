@@ -324,5 +324,54 @@
     },
     "valid_till": "2027-07-01",
     "image": "/competitions/48-hour-film-project.png"
+  },
+  {
+    "id": "apa-topss-competition",
+    "name": "APA TOPSS Competition for High School Psychology Students",
+    "organizer": "American Psychological Association, Teachers of Psychology in Secondary Schools",
+    "organizer_url": "https://www.apa.org/ed/precollege/topss",
+    "category": "film_video",
+    "subjects": [
+      "psychology",
+      "video",
+      "science communication"
+    ],
+    "description": "An annual video competition from the APA's Teachers of Psychology in Secondary Schools in which students create a short film applying psychological science to a real-world topic set by the APA, judged on scientific accuracy and communication. Winners receive scholarships and national recognition.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarship awards and APA recognition for the top entries.",
+    "official_url": "https://www.apa.org/ed/precollege/topss/student-competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Video submission deadline",
+        "date": "2027-03-20",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.apa.org/ed/precollege/topss/student-competition"
+      },
+      {
+        "label": "2026 competition deadline reference",
+        "date": "2026-03-20",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.apa.org/ed/precollege/psychology-teacher-network/announcements-events"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-05-01"
   }
 ]

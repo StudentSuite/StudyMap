@@ -403,5 +403,102 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/mspdp-public-debate.png"
+  },
+  {
+    "id": "american-legion-national-oratorical-contest",
+    "name": "American Legion High School Oratorical Contest",
+    "organizer": "The American Legion",
+    "organizer_url": "https://www.legion.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "public speaking",
+      "constitutional law"
+    ],
+    "description": "A constitutional speech contest in which students deliver a prepared oration on the US Constitution plus assigned-topic speeches, advancing from post-level contests through district and state rounds to the national finals. The program awards over 200,000 dollars in scholarships each year.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "25,000 dollars for the national champion, 22,500 for second, 20,000 for third, plus earlier-round scholarships.",
+    "official_url": "https://www.legion.org/get-involved/scholarships/national-high-school-oratorical-contest-scholarship",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Finals",
+        "date": "2027-05-14",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.legion.org/get-involved/scholarships/national-high-school-oratorical-contest-scholarship"
+      },
+      {
+        "label": "National Finals livestream",
+        "date": "2027-05-16",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.legion.org/get-involved/youth-programs/oratorical-contest"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "academic-worldquest",
+    "name": "Academic WorldQuest",
+    "organizer": "World Affairs Councils of America",
+    "organizer_url": "https://worldaffairscouncils.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "international affairs",
+      "geography",
+      "current events"
+    ],
+    "description": "A team trivia competition on international politics, geography, economics, and world cultures, organized by local World Affairs Councils around a published study guide. Winning local teams are invited to the national championship in Washington, DC each spring.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National championship title and travel support for the winning team's trip to Washington DC.",
+    "official_url": "https://worldaffairscouncils.org/what-we-do/academic-worldquest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National competition in Washington DC",
+        "date": "2027-04-12",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://worldaffairscouncils.org/what-we-do/academic-worldquest/"
+      },
+      {
+        "label": "Local council contests completed",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.competitionsciences.org/competitions/academic-worldquest/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-06-01"
   }
 ]

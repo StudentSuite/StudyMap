@@ -449,5 +449,125 @@
     },
     "valid_till": "2027-03-15",
     "image": "/competitions/una-usa-global-citizen-essay-contest.png"
+  },
+  {
+    "id": "afsa-national-high-school-essay-contest",
+    "name": "AFSA National High School Essay Contest",
+    "organizer": "American Foreign Service Association",
+    "organizer_url": "https://afsa.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "diplomacy",
+      "international relations"
+    ],
+    "description": "An annual essay contest on US diplomacy run with the US Institute of Peace, open to students in grades 9-12 whose parents are not in the Foreign Service. Entries of 1,000 to 1,500 words argue a position on a diplomacy-themed prompt and must cite primary sources.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "2,500 dollars, a trip to Washington DC, and a Semester at Sea voyage for the winner; 1,250 dollars and an NSLC scholarship for the runner-up.",
+    "official_url": "https://afsa.org/essay-contest",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://afsa.org/rules-and-guidelines"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "ninth-circuit-civics-contest",
+    "name": "Ninth Circuit Civics Contest",
+    "organizer": "US Court of Appeals for the Ninth Circuit and district courts in the circuit",
+    "organizer_url": "https://www.ca9.uscourts.gov/",
+    "category": "essay_writing",
+    "subjects": [
+      "civics",
+      "constitutional law"
+    ],
+    "description": "An annual essay and video contest for high school students in the nine western states and Pacific islands of the Ninth Circuit, run by the federal courts around a constitutional theme. Local district contests feed a circuit-wide final judged by judges of the Ninth Circuit.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes up to 3,000 dollars at the circuit level, with additional district-level prizes.",
+    "official_url": "https://www.ca9.uscourts.gov/civicscontest/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Entry deadline",
+        "date": "2026-03-06",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.cacd.uscourts.gov/sites/default/files/documents/2026_9th_Circuit_Civics_Contest_Flyer.pdf"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "aaa-anthro-day-unessay-competition",
+    "name": "AAA Anthro Day UnEssay Competition",
+    "organizer": "American Anthropological Association",
+    "organizer_url": "https://americananthro.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "anthropology",
+      "creative writing"
+    ],
+    "description": "A creative-response competition marking Anthropology Day each February, with a division for K-12 students including a high school track. Instead of a traditional essay, entrants submit a multimodal piece such as a comic, podcast, video, or short written reflection on an anthropological theme.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication on the AAA website and a small gift-card prize for winners.",
+    "official_url": "https://americananthro.org/unessay-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (Anthropology Day)",
+        "date": "2027-02-18",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://americananthro.org/anthropology-day/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "verified": {
+      "by": "shauryagangrade",
+      "on": "2026-09-19"
+    },
+    "valid_till": "2027-04-01"
   }
 ]
