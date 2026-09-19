@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "Delegate awards including Best Delegate and Honorable Mention.",
-    "official_url": "https://www.harvardmun.org/",
+    "official_url": "https://www.harvardmun.org/about",
     "cycle_year": 2027,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.harvardmun.org/"
+        "source_url": "https://www.harvardmun.org/registration-1"
       },
       {
         "label": "HMUN 2027 closes",
@@ -37,7 +37,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.harvardmun.org/"
+        "source_url": "https://www.harvardmun.org/committee-list"
       }
     ],
     "added_by": "yashkewlani",
@@ -52,7 +52,7 @@
     "id": "nsda-national-tournament",
     "name": "National Speech & Debate Tournament",
     "organizer": "National Speech & Debate Association",
-    "organizer_url": "https://www.speechanddebate.org/nationals/",
+    "organizer_url": "https://www.speechanddebate.org/",
     "category": "debate_mun",
     "subjects": [
       "debate",
@@ -78,7 +78,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.speechanddebate.org/nationals/"
+        "source_url": "https://www.speechanddebate.org/district-tournaments/"
       },
       {
         "label": "National Tournament",
@@ -86,7 +86,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.speechanddebate.org/nationals/"
+        "source_url": "https://www.speechanddebate.org/nationals-history/"
       }
     ],
     "added_by": "yashkewlani",
@@ -186,7 +186,7 @@
       "currency": "USD"
     },
     "prize": "World champion title and team awards, plus top speaker awards.",
-    "official_url": "https://schoolsdebate.com/",
+    "official_url": "https://schoolsdebate.com/organisations/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -195,7 +195,7 @@
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://schoolsdebate.com/"
+        "source_url": "https://schoolsdebate.com/news/"
       },
       {
         "label": "WSDC 2027 concludes (estimated)",
@@ -203,7 +203,7 @@
         "type": "results",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://schoolsdebate.com/"
+        "source_url": "https://schoolsdebate.com/calendar/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -235,7 +235,7 @@
       "currency": "USD"
     },
     "prize": "Medals and trophies in each event, and the overall world champion title.",
-    "official_url": "https://widpsc2027.org/",
+    "official_url": "https://widpsc2027.org/schedule/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -244,7 +244,7 @@
         "type": "round",
         "timezone": "UTC+8",
         "estimated": false,
-        "source_url": "https://widpsc2027.org/"
+        "source_url": "https://widpsc2027.org/registration/"
       },
       {
         "label": "Grand Finals and closing ceremony",
@@ -252,7 +252,7 @@
         "type": "results",
         "timezone": "UTC+8",
         "estimated": false,
-        "source_url": "https://widpsc2027.org/"
+        "source_url": "https://widpsc2027.org/widpsc-history/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -284,7 +284,7 @@
       "currency": "USD"
     },
     "prize": "Debate experience and a joint resolution adopted after committee work; no cash prize.",
-    "official_url": "https://eyp.org/",
+    "official_url": "https://eyp.org/what-we-do/international-sessions/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -293,7 +293,7 @@
         "type": "round",
         "timezone": "UTC+2",
         "estimated": true,
-        "source_url": "https://eyp.org/"
+        "source_url": "https://eyp.org/get-involved/for-young-people/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -326,7 +326,7 @@
       "currency": "USD"
     },
     "prize": "Committee awards including Outstanding Delegate and Best Legislation.",
-    "official_url": "https://harvardmodelcongress.org/",
+    "official_url": "https://harvardmodelcongress.org/conference-schedule",
     "cycle_year": 2027,
     "dates": [
       {
@@ -335,7 +335,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://harvardmodelcongress.org/"
+        "source_url": "https://harvardmodelcongress.org/registration-details"
       },
       {
         "label": "HMC Boston 2027 closes",
@@ -343,7 +343,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://harvardmodelcongress.org/"
+        "source_url": "https://harvardmodelcongress.org/hmcfaqs"
       }
     ],
     "added_by": "yashkewlani",
@@ -357,7 +357,7 @@
     "id": "mspdp-public-debate",
     "name": "Middle School Public Debate Program (MSPDP)",
     "organizer": "Middle School Public Debate Program",
-    "organizer_url": "https://www.middleschooldebate.com/",
+    "organizer_url": "https://www.publicdebateprogram.org/",
     "category": "debate_mun",
     "subjects": [
       "debate",
@@ -375,7 +375,7 @@
       "currency": "USD"
     },
     "prize": "Trophies and the chance to represent a region at the annual Youth Championships.",
-    "official_url": "https://www.middleschooldebate.com/",
+    "official_url": "https://www.publicdebateprogram.org/middleschool-programdescription",
     "cycle_year": 2027,
     "dates": [
       {
@@ -384,7 +384,7 @@
         "type": "round",
         "timezone": "UTC-8",
         "estimated": true,
-        "source_url": "https://www.middleschooldebate.com/"
+        "source_url": "https://www.publicdebateprogram.org/about"
       },
       {
         "label": "State championships",
@@ -392,7 +392,7 @@
         "type": "round",
         "timezone": "UTC-7",
         "estimated": true,
-        "source_url": "https://www.middleschooldebate.com/"
+        "source_url": "https://www.publicdebateprogram.org/middleschool-leagues"
       }
     ],
     "added_by": "yashkewlani",

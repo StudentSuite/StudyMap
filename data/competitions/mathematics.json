@@ -19,7 +19,7 @@
       "currency": "USD"
     },
     "prize": "Individual, team and event awards; recognition among top US math programs.",
-    "official_url": "https://www.hmmt.org/",
+    "official_url": "https://www.hmmt.org/www/tournaments/novfeb",
     "cycle_year": 2026,
     "dates": [
       {
@@ -28,7 +28,7 @@
         "type": "registration_close",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.hmmt.org/"
+        "source_url": "https://www.hmmt.org/rg/deadlines"
       },
       {
         "label": "HMMT November (MIT)",
@@ -36,7 +36,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.hmmt.org/"
+        "source_url": "https://www.hmmt.org/www/tournaments/novfeb"
       },
       {
         "label": "HMMT February (Harvard)",
@@ -44,7 +44,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.hmmt.org/"
+        "source_url": "https://www.hmmt.org/www/tournaments/novfeb"
       }
     ],
     "added_by": "yashkewlani",
@@ -170,7 +170,7 @@
       "currency": "USD"
     },
     "prize": "USD 50,000 first prize, from a USD 100,000 total prize pool.",
-    "official_url": "https://mathprize.atfoundation.org/",
+    "official_url": "https://mathprize.atfoundation.org/apply",
     "cycle_year": 2026,
     "dates": [
       {
@@ -179,7 +179,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://mathprize.atfoundation.org/"
+        "source_url": "https://mathprize.atfoundation.org/experience/schedule"
       }
     ],
     "added_by": "yashkewlani",
@@ -194,7 +194,7 @@
     "id": "usamo",
     "name": "USA Mathematical Olympiad (USAMO)",
     "organizer": "Mathematical Association of America (MAA)",
-    "organizer_url": "https://maa.org/maa-invitational-competitions/",
+    "organizer_url": "https://maa.org/",
     "category": "mathematics",
     "subjects": [
       "mathematics",
@@ -215,12 +215,12 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "USAMO test date",
-        "date": "2027-03-24",
+        "label": "USAMO test date (day 1 of 2)",
+        "date": "2027-03-20",
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "http://web.archive.org/web/20260826221856/https://maa.org/maa-invitational-competitions/"
+        "source_url": "https://maa.org/wp-content/uploads/2026/08/2026-27-USAMO_USAJMO-Policies-1.pdf"
       }
     ],
     "added_by": "yashkewlani",
@@ -251,7 +251,7 @@
       "currency": "USD"
     },
     "prize": "Team and individual rankings across all competing sites; top scorers recognized nationally.",
-    "official_url": "https://arml3.com/",
+    "official_url": "https://arml3.com/arml-2026-registration-page/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -268,7 +268,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://arml3.com/"
+        "source_url": "https://arml3.com/arml-meet-results/"
       }
     ],
     "added_by": "yashkewlani",
@@ -355,7 +355,7 @@
       "currency": "USD"
     },
     "prize": "Team and individual rankings published online; no cash prize.",
-    "official_url": "https://purplecomet.org/",
+    "official_url": "https://purplecomet.org/information",
     "cycle_year": 2027,
     "dates": [
       {
@@ -364,7 +364,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://purplecomet.org/"
+        "source_url": "https://purplecomet.org/information"
       },
       {
         "label": "Contest window closes",
@@ -372,7 +372,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://purplecomet.org/"
+        "source_url": "https://purplecomet.org/answers"
       }
     ],
     "added_by": "yashkewlani",
@@ -404,7 +404,7 @@
       "currency": "USD"
     },
     "prize": "Diplomas of first, second and third degree by score; no cash prize.",
-    "official_url": "https://www.turgor.ru/en/",
+    "official_url": "https://www.turgor.ru/en/problems/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -413,7 +413,7 @@
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/"
+        "source_url": "https://www.turgor.ru/en/news/"
       },
       {
         "label": "Spring round (following the usual February to March pattern, local city dates vary)",
@@ -421,7 +421,7 @@
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/"
+        "source_url": "https://www.turgor.ru/en/problems/"
       }
     ],
     "added_by": "yashkewlani",
@@ -453,7 +453,7 @@
       "currency": "USD"
     },
     "prize": "Over USD 100,000 in scholarship prizes, with the top teams presenting their models in New York City.",
-    "official_url": "https://m3challenge.siam.org/",
+    "official_url": "https://m3challenge.siam.org/the-challenge/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -470,7 +470,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://m3challenge.siam.org/"
+        "source_url": "https://m3challenge.siam.org/the-challenge/rules-and-guidelines/"
       },
       {
         "label": "Challenge weekend (estimated)",
@@ -478,7 +478,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://m3challenge.siam.org/"
+        "source_url": "https://m3challenge.siam.org/the-challenge/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -493,7 +493,7 @@
     "id": "amc10-12",
     "name": "American Mathematics Competitions 10 and 12 (AMC 10/12)",
     "organizer": "Mathematical Association of America",
-    "organizer_url": "https://amc.maa.org/",
+    "organizer_url": "https://maa.org/",
     "category": "mathematics",
     "subjects": [
       "mathematics",
@@ -510,24 +510,24 @@
       "currency": "USD"
     },
     "prize": "Certificates of distinction; automatic AIME qualification for top scorers.",
-    "official_url": "https://amc.maa.org/",
+    "official_url": "https://maa.org/student-programs/amc/",
     "cycle_year": 2026,
     "dates": [
       {
         "label": "AMC 10/12 A",
-        "date": "2026-11-11",
+        "date": "2026-11-05",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://amc.maa.org/"
+        "estimated": false,
+        "source_url": "https://maa.org/student-programs/amc/"
       },
       {
         "label": "AMC 10/12 B",
-        "date": "2026-11-17",
+        "date": "2026-11-13",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://amc.maa.org/"
+        "estimated": false,
+        "source_url": "https://maa.org/maa-amc-registration-faq/"
       }
     ],
     "added_by": "yashkewlani",
@@ -558,7 +558,7 @@
       "currency": "USD"
     },
     "prize": "Award certificates and gifts for top national scorers.",
-    "official_url": "https://www.aksf.org/",
+    "official_url": "https://www.aksf.org/official.xhtml",
     "cycle_year": 2027,
     "dates": [
       {
@@ -566,8 +566,8 @@
         "date": "2027-03-18",
         "type": "round",
         "timezone": "UTC+1",
-        "estimated": true,
-        "source_url": "https://www.aksf.org/"
+        "estimated": false,
+        "source_url": "https://www.kangarooqatar.org/ikmc"
       }
     ],
     "added_by": "yashkewlani",

@@ -24,7 +24,7 @@ function validRecord(overrides: Record<string, unknown> = {}) {
     region: "international",
     fee: { amount: 0, currency: "USD" },
     prize: "A prize",
-    official_url: "https://example.com",
+    official_url: "https://example.org",
     cycle_year: 2026,
     dates: [
       {
@@ -237,6 +237,17 @@ describe("competitions validator", () => {
 
     expect(result.status).toBe(1);
     expect(result.stderr).toContain("contains an em dash");
+  });
+
+  it("fails when a record has fewer than 3 distinct source URLs", () => {
+    const result = runValidator({
+      // official_url collapses onto organizer_url, leaving only two pages.
+      "stem.json": [validRecord({ official_url: "https://example.com" })],
+    });
+
+    expect(result.status).toBe(1);
+    expect(result.stderr).toContain("at least 3 distinct source URLs");
+    expect(result.stderr).toContain("found 2");
   });
 
   it("fails on an unknown field not in the schema", () => {

@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "Scholarships and technology prizes.",
-    "official_url": "https://www.hsfilmfest.com/",
+    "official_url": "https://www.hsfilmfest.com/competitions",
     "cycle_year": 2027,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.hsfilmfest.com/"
+        "source_url": "https://www.hsfilmfest.com/faq"
       }
     ],
     "added_by": "yashkewlani",
@@ -77,7 +77,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://www.nffty.org/submit"
+        "source_url": "https://www.nffty.org/official-rules-guidelines"
       },
       {
         "label": "Festival in Seattle",
@@ -116,7 +116,7 @@
       "currency": "USD"
     },
     "prize": "Category awards including the Rising Star Award; winning films screen at the Chicago International Film Festival.",
-    "official_url": "https://www.chicagofilmfestival.com/cineyouth",
+    "official_url": "https://filmfreeway.com/CineYouthFestival",
     "cycle_year": 2027,
     "dates": [
       {
@@ -141,7 +141,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.chicagofilmfestival.com/cineyouth"
+        "source_url": "https://www.chicagofilmfestival.com/cineyouth/schedule/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -172,7 +172,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes from USD 250 to USD 1,000 per category, plus statewide broadcast of winning films.",
-    "official_url": "https://directingchangeca.org/",
+    "official_url": "https://directingchangeca.org/contest-rules/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -181,7 +181,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://directingchangeca.org/"
+        "source_url": "https://directingchangeca.org/get-started/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -230,7 +230,7 @@
         "type": "results",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.studentcam.org/rules/"
+        "source_url": "https://www.studentcam.org/past-winners/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -245,7 +245,7 @@
     "id": "world-of-7-billion-student-video-contest",
     "name": "World of 7 Billion Student Video Contest",
     "organizer": "Population Connection",
-    "organizer_url": "https://www.worldof7billion.org/student-video-contest/",
+    "organizer_url": "https://www.worldof8billion.org/",
     "category": "film_video",
     "subjects": [
       "video production",
@@ -263,16 +263,16 @@
       "currency": "USD"
     },
     "prize": "Cash prizes up to USD 1,000 across grade divisions.",
-    "official_url": "https://www.worldof7billion.org/student-video-contest/",
+    "official_url": "https://www.worldof8billion.org/video-contest/",
     "cycle_year": 2027,
     "dates": [
       {
         "label": "Video submission deadline",
-        "date": "2027-03-15",
+        "date": "2027-03-03",
         "type": "deadline",
         "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://www.worldof7billion.org/student-video-contest/"
+        "estimated": false,
+        "source_url": "https://www.worldof8billion.org/video-contest/rules-and-guidelines/"
       }
     ],
     "added_by": "yashkewlani",
@@ -304,7 +304,7 @@
       "currency": "USD"
     },
     "prize": "Screenings, awards and a shot at the annual National Best Film prize.",
-    "official_url": "https://www.48hourfilm.com/",
+    "official_url": "https://www.48hourfilm.com/rules",
     "cycle_year": 2027,
     "dates": [
       {
@@ -313,7 +313,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.48hourfilm.com/"
+        "source_url": "https://www.48hourfilm.com/about"
       }
     ],
     "added_by": "yashkewlani",

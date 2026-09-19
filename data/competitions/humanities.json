@@ -99,7 +99,7 @@
       "currency": "USD"
     },
     "prize": "Medals and certificates for high scorers.",
-    "official_url": "https://www.nle.org/",
+    "official_url": "https://www.nle.org/about-us",
     "cycle_year": 2027,
     "dates": [
       {
@@ -116,7 +116,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.nle.org/"
+        "source_url": "https://www.nle.org/alignment"
       }
     ],
     "added_by": "yashkewlani",
@@ -147,7 +147,7 @@
       "currency": "USD"
     },
     "prize": "Gold, silver and bronze medals plus honorable mentions.",
-    "official_url": "https://www.philosophy-olympiad.org/",
+    "official_url": "https://www.philosophy-olympiad.org/?page_id=1706",
     "cycle_year": 2027,
     "dates": [
       {
@@ -156,7 +156,7 @@
         "type": "round",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.philosophy-olympiad.org/"
+        "source_url": "https://www.philosophy-olympiad.org/?page_id=2"
       }
     ],
     "added_by": "shauryagangrade",
@@ -187,7 +187,7 @@
       "currency": "USD"
     },
     "prize": "Gold, silver and bronze medals for the top scorers.",
-    "official_url": "https://geoolympiad.org/",
+    "official_url": "https://geoolympiad.org/about/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -204,7 +204,7 @@
         "type": "results",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://geoolympiad.org/"
+        "source_url": "https://geoolympiad.org/guidelines/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -236,7 +236,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes and recognition at a prize giving ceremony at the Bodleian Library, Oxford.",
-    "official_url": "https://www.ogn.ox.ac.uk/",
+    "official_url": "https://www.ogn.ox.ac.uk/learners",
     "cycle_year": 2027,
     "dates": [
       {
@@ -245,7 +245,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.ogn.ox.ac.uk/"
+        "source_url": "https://www.ogn.ox.ac.uk/content/oxford-german-olympiad-2026-round-2"
       }
     ],
     "added_by": "shauryagangrade",
@@ -279,7 +279,7 @@
       "currency": "USD"
     },
     "prize": "Trophies and sweepstakes points at the national convention.",
-    "official_url": "https://www.njcl.org/",
+    "official_url": "https://aclclassics.org/njcl/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -288,7 +288,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.njcl.org/"
+        "source_url": "https://aclclassics.org/njcl/convention"
       }
     ],
     "added_by": "yashkewlani",
@@ -320,7 +320,7 @@
       "currency": "USD"
     },
     "prize": "National medals and certificates awarded by score percentile.",
-    "official_url": "https://www.frenchteachers.org/le-grand-concours",
+    "official_url": "https://www.frenchteachers.org/contests",
     "cycle_year": 2027,
     "dates": [
       {
@@ -329,7 +329,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.frenchteachers.org/le-grand-concours"
+        "source_url": "https://www.frenchteachers.org/nfc-teachers"
       }
     ],
     "added_by": "yashkewlani",

@@ -189,7 +189,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes for top finalists; recognition for qualifying rounds.",
-    "official_url": "https://www.facebook.com/codingcompetitions/hacker-cup",
+    "official_url": "https://www.facebook.com/hackercup/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -238,7 +238,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes for top eligible US middle and high school teams.",
-    "official_url": "https://picoctf.org/",
+    "official_url": "https://picoctf.org/competitions/2026-spring.html",
     "cycle_year": 2027,
     "dates": [
       {
@@ -247,7 +247,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://picoctf.org/"
+        "source_url": "https://picoctf.org/competitions/2026-spring-rules.html"
       }
     ],
     "added_by": "yashkewlani",
@@ -327,7 +327,7 @@
       "currency": "USD"
     },
     "prize": "Certificates with achievement levels for participants and class reports for teachers.",
-    "official_url": "https://www.bebraschallenge.org/",
+    "official_url": "https://www.bebraschallenge.org/registration/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -344,7 +344,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.bebraschallenge.org/"
+        "source_url": "https://www.bebraschallenge.org/examples/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -376,7 +376,7 @@
       "currency": "USD"
     },
     "prize": "Promotion through the Bronze, Silver, Gold and Platinum divisions, and selection for the US IOI training camp.",
-    "official_url": "https://usaco.org/",
+    "official_url": "https://usaco.org/index.php?page=contests",
     "cycle_year": 2027,
     "dates": [
       {
@@ -393,7 +393,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://usaco.org/"
+        "source_url": "https://usaco.org/index.php?page=history"
       }
     ],
     "added_by": "shauryagangrade",
@@ -426,7 +426,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes for the top high school teams and an invitation to the MIT tournament wrap-up.",
-    "official_url": "https://battlecode.org/",
+    "official_url": "https://battlecode.org/about.html",
     "cycle_year": 2027,
     "dates": [
       {
@@ -443,7 +443,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://battlecode.org/"
+        "source_url": "https://battlecode.org/past.html"
       }
     ],
     "added_by": "yashkewlani",
@@ -457,7 +457,7 @@
     "id": "lockheed-martin-codequest",
     "name": "Lockheed Martin CodeQuest",
     "organizer": "Lockheed Martin",
-    "organizer_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html",
+    "organizer_url": "https://www.lockheedmartin.com/",
     "category": "coding",
     "subjects": [
       "competitive programming",
@@ -475,7 +475,7 @@
       "currency": "USD"
     },
     "prize": "Awards and recognition for the first, second and third place teams in each division.",
-    "official_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html",
+    "official_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest.html",
     "cycle_year": 2027,
     "dates": [
       {
@@ -484,7 +484,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/community-outreach/education-and-careers/codequest.html"
+        "source_url": "https://www.lockheedmartin.com/en-us/who-we-are/communities/codequest/code-quest-past-quests.html"
       }
     ],
     "added_by": "yashkewlani",

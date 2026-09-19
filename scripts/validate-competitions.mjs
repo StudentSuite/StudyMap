@@ -23,6 +23,8 @@
  *   - country_tracks[].country is one of the 13 permitted codes and does not
  *     repeat within one record; each stage has a real calendar date and a
  *     well-formed source_url
+ *   - At least 3 distinct source URLs per record, counting organizer_url,
+ *     official_url, dates[].source_url, and country_tracks URLs (#268)
  *   - No em dashes in any string field
  *
  * Exits 0 when all files pass, 1 when any error is found.
@@ -296,6 +298,18 @@ for (const file of files) {
       }
     }
 
+    // At least 3 distinct source URLs per record. A competition that reuses
+    // the same page for organizer, official and source_url is only one link
+    // deep, so every record must point at 3 distinct pages somewhere across
+    // its URL fields (#268).
+    const distinct = collectDistinctUrls(r);
+    if (distinct.size < 3) {
+      err(
+        loc,
+        `record must have at least 3 distinct source URLs, found ${distinct.size} (${[...distinct].join(", ")})`,
+      );
+    }
+
     // cycle_year sanity
     if (r.cycle_year !== undefined && !Number.isInteger(r.cycle_year)) {
       err(loc, `cycle_year must be an integer, got ${JSON.stringify(r.cycle_year)}`);
@@ -343,6 +357,34 @@ for (const file of files) {
   console.log(
     `  ${status}   ${file} (${records.length} records, ${fileErrors} error(s))`,
   );
+}
+
+/**
+ * The set of distinct pages a record links to, normalized so that
+ * http/https, a leading "www.", default ports, trailing slashes and hash
+ * fragments do not count as separate links (#268). Different pathnames on
+ * the same site are distinct pages.
+ */
+function collectDistinctUrls(r) {
+  const hrefs = [r.organizer_url, r.official_url];
+  for (const d of r.dates ?? []) hrefs.push(d.source_url);
+  for (const ct of r.country_tracks ?? []) {
+    hrefs.push(ct.official_url);
+    for (const st of ct.stages ?? []) hrefs.push(st.source_url);
+  }
+
+  const seen = new Set();
+  for (const href of hrefs) {
+    try {
+      const { host, pathname, search } = new URL(href);
+      const key =
+        `${host.replace(/^www\./, "")}${pathname.replace(/\/$/, "")}${search}`.toLowerCase();
+      seen.add(key);
+    } catch {
+      // Not a well-formed URL; the individual field checks report it.
+    }
+  }
+  return seen;
 }
 
 function checkEmDashes(value, loc, path = "") {

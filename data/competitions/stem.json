@@ -30,7 +30,7 @@
         "type": "round",
         "timezone": "UTC+2",
         "estimated": true,
-        "source_url": "https://ijsoweb.org/"
+        "source_url": "https://ijsoweb.org/ijso-2026-bulgaria"
       }
     ],
     "country_tracks": [
@@ -179,7 +179,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://thebrainbee.org/"
+        "source_url": "https://www.thebrainbee.org/competition/"
       },
       {
         "label": "World Championship",
@@ -419,7 +419,7 @@
         "type": "round",
         "timezone": "UTC+7",
         "estimated": false,
-        "source_url": "https://ioaastrophysics.org/"
+        "source_url": "https://ioaastrophysics.org/current-ioaa/news"
       },
       {
         "label": "Results announced",
@@ -499,7 +499,7 @@
         "type": "ceremony",
         "timezone": "UTC-7",
         "estimated": false,
-        "source_url": "https://www.societyforscience.org/isef/"
+        "source_url": "https://www.societyforscience.org/isef/awards/"
       }
     ],
     "country_tracks": [
@@ -554,7 +554,7 @@
         "type": "registration_open",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.soinc.org/"
+        "source_url": "https://www.soinc.org/events/2027-division-b-events"
       },
       {
         "label": "National Tournament",
@@ -562,7 +562,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.soinc.org/"
+        "source_url": "https://www.soinc.org/play/past-tournament-results"
       }
     ],
     "added_by": "yashkewlani",
@@ -612,7 +612,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://wro-association.org/"
+        "source_url": "https://wro-association.org/competition/2026-season/"
       }
     ],
     "country_tracks": [
@@ -718,7 +718,7 @@
         "type": "round",
         "timezone": "UTC+8",
         "estimated": false,
-        "source_url": "https://ioai-official.org/singapore-2027/"
+        "source_url": "https://ioai-official.org/about/"
       }
     ],
     "added_by": "yashkewlani",
@@ -766,7 +766,7 @@
         "type": "round",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://eupho.ee/"
+        "source_url": "https://eupho.ee/rules/"
       }
     ],
     "added_by": "yashkewlani",
@@ -799,7 +799,7 @@
       "currency": "USD"
     },
     "prize": "Cash awards and recognition across three research tracks at the national final.",
-    "official_url": "https://biotechinstitute.org/biogeneius/",
+    "official_url": "https://biotechinstitute.org/about-us/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -808,7 +808,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://biotechinstitute.org/biogeneius/"
+        "source_url": "https://biotechinstitute.org/past-biogeneius-winners/"
       }
     ],
     "added_by": "yashkewlani",
@@ -852,7 +852,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://science.osti.gov/wdts/nsb"
+        "source_url": "https://science.osti.gov/wdts/nsb/Regional-Competitions"
       },
       {
         "label": "National Finals (Washington DC)",
@@ -860,7 +860,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://science.osti.gov/wdts/nsb"
+        "source_url": "https://science.osti.gov/wdts/nsb/Key-Dates"
       }
     ],
     "added_by": "yashkewlani",
@@ -892,7 +892,7 @@
       "currency": "USD"
     },
     "prize": "Regional winners receive savings bonds; national winners get a trip and up to USD 10,000 in savings bonds.",
-    "official_url": "https://www.exploravision.org/",
+    "official_url": "https://www.exploravision.org/rules-requirements/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -901,7 +901,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.exploravision.org/"
+        "source_url": "https://www.exploravision.org/for-teachers/"
       }
     ],
     "added_by": "yashkewlani",

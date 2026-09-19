@@ -22,7 +22,7 @@
       "currency": "USD"
     },
     "prize": "USD 250,000 top award; USD 3.1 million distributed annually.",
-    "official_url": "https://www.societyforscience.org/regeneron-sts/",
+    "official_url": "https://www.societyforscience.org/regeneron-sts/application-requirements/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -31,7 +31,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.societyforscience.org/regeneron-sts/"
+        "source_url": "https://www.societyforscience.org/regeneron-sts/official-rules/"
       }
     ],
     "added_by": "yashkewlani",
@@ -66,7 +66,7 @@
       "currency": "USD"
     },
     "prize": "Scholarships and cash awards at regional and national level, totaling over USD 400,000 annually.",
-    "official_url": "https://www.jshs.org/",
+    "official_url": "https://www.jshs.org/national-symposium/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -75,7 +75,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.jshs.org/"
+        "source_url": "https://www.jshs.org/regional-competitions/"
       },
       {
         "label": "National Symposium (estimated)",
@@ -83,7 +83,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.jshs.org/"
+        "source_url": "https://www.jshs.org/national-competition/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -116,7 +116,7 @@
       "currency": "USD"
     },
     "prize": "Gold, silver and bronze medals, with winners earning recognition and college scholarships.",
-    "official_url": "https://geniusolympiad.org/",
+    "official_url": "https://geniusolympiad.org/guides.html",
     "cycle_year": 2027,
     "dates": [
       {
@@ -125,7 +125,7 @@
         "type": "registration_open",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://geniusolympiad.org/"
+        "source_url": "https://geniusolympiad.org/disciplines.html"
       },
       {
         "label": "Application deadline (estimated)",
@@ -133,7 +133,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://geniusolympiad.org/"
+        "source_url": "https://geniusolympiad.org/global.html"
       },
       {
         "label": "Genius Olympiad finals (Rochester, NY)",
@@ -141,7 +141,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://geniusolympiad.org/"
+        "source_url": "https://geniusolympiad.org/live"
       }
     ],
     "added_by": "shauryagangrade",
@@ -175,7 +175,7 @@
       "currency": "USD"
     },
     "prize": "An up to USD 1,000 project grant, mentorship from MIT researchers and an expenses paid trip to MIT.",
-    "official_url": "https://think.mit.edu/",
+    "official_url": "https://think.mit.edu/static_files/THINK_Program_Guidelines_2026.pdf",
     "cycle_year": 2027,
     "dates": [
       {
@@ -192,7 +192,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://think.mit.edu/"
+        "source_url": "https://think.mit.edu/static_files/Results_2026.pdf"
       }
     ],
     "added_by": "shauryagangrade",
@@ -207,7 +207,7 @@
     "id": "broadcom-masters",
     "name": "Broadcom MASTERS (Thermo Fisher Junior Innovators Challenge)",
     "organizer": "Society for Science and Thermo Fisher Scientific",
-    "organizer_url": "https://www.societyforscience.org/thermo-fisher-jic/",
+    "organizer_url": "https://www.societyforscience.org/",
     "category": "research",
     "subjects": [
       "science",
@@ -234,7 +234,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.societyforscience.org/thermo-fisher-jic/"
+        "source_url": "https://www.societyforscience.org/isef/affiliated-fair-network/"
       },
       {
         "label": "National finals (Washington DC)",
@@ -242,7 +242,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.societyforscience.org/thermo-fisher-jic/"
+        "source_url": "https://www.societyforscience.org/competitions/"
       }
     ],
     "added_by": "yashkewlani",
@@ -256,7 +256,7 @@
     "id": "globe-virtual-science-fair",
     "name": "GLOBE Virtual Science Fair",
     "organizer": "GLOBE Program",
-    "organizer_url": "https://www.globe.gov/web/virtual-science-fair/",
+    "organizer_url": "https://www.globe.gov/",
     "category": "research",
     "subjects": [
       "earth science",
@@ -283,7 +283,7 @@
         "type": "registration_open",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.globe.gov/web/virtual-science-fair/"
+        "source_url": "https://www.globe.gov/about"
       },
       {
         "label": "GSF submission deadline",
@@ -291,7 +291,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.globe.gov/web/virtual-science-fair/"
+        "source_url": "https://www.globe.gov/about/impact"
       }
     ],
     "added_by": "yashkewlani",

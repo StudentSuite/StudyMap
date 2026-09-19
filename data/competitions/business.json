@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "Category winners are named Pete Conrad Scholars.",
-    "official_url": "https://conrad.spacecenter.org/the-challenge/",
+    "official_url": "https://conrad.spacecenter.org/about/past-winners/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "deadline",
         "timezone": "UTC-6",
         "estimated": false,
-        "source_url": "https://conrad.spacecenter.org/the-challenge/"
+        "source_url": "https://conrad.spacecenter.org/the-challenge/rules-and-regulations/"
       }
     ],
     "added_by": "yashkewlani",
@@ -44,7 +44,7 @@
     "id": "deca-icdc",
     "name": "DECA International Career Development Conference (ICDC)",
     "organizer": "DECA Inc.",
-    "organizer_url": "https://www.deca.org/conferences/icdc",
+    "organizer_url": "https://www.deca.org/",
     "category": "business",
     "subjects": [
       "marketing",
@@ -125,7 +125,7 @@
       "currency": "USD"
     },
     "prize": "USD 12,000 for first place in each track.",
-    "official_url": "https://diamondchallenge.org/",
+    "official_url": "https://diamondchallenge.org/competition/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -134,7 +134,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://diamondchallenge.org/"
+        "source_url": "https://diamondchallenge.org/resources/"
       }
     ],
     "added_by": "yashkewlani",
@@ -149,7 +149,7 @@
     "id": "nfte-world-series-of-innovation",
     "name": "NFTE World Series of Innovation",
     "organizer": "Network for Teaching Entrepreneurship (NFTE)",
-    "organizer_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/",
+    "organizer_url": "https://www.nfte.com/",
     "category": "business",
     "subjects": [
       "entrepreneurship",
@@ -166,7 +166,7 @@
       "currency": "USD"
     },
     "prize": "USD 300 to USD 1,500.",
-    "official_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/",
+    "official_url": "https://nfte.com/events/world-series-of-innovation/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -183,7 +183,7 @@
         "type": "results",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.nfte.com/entrepreneurship-competitions/world-series-of-innovation/"
+        "source_url": "https://nfte.com/big-ideas-start-here-nfte-launches-2026-2027-world-series-of-innovation-for-young-changemakers-ages-5-24/"
       }
     ],
     "added_by": "yashkewlani",
@@ -258,7 +258,7 @@
       "currency": "USD"
     },
     "prize": "National champion titles across dozens of career and technology competitive events.",
-    "official_url": "https://bpa.org/nlc_conference/2027-nlc/",
+    "official_url": "https://bpa.org/nlc_conference/amplify-your-impact/dates-and-deadlines/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -349,7 +349,7 @@
       "currency": "USD"
     },
     "prize": "World Cup titles, prizes and the opportunity to pitch to international investors.",
-    "official_url": "https://sageglobal.org/",
+    "official_url": "https://www.sageglobal.org/competition-overview",
     "cycle_year": 2027,
     "dates": [
       {
@@ -366,7 +366,7 @@
         "type": "round",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://sageglobal.org/"
+        "source_url": "https://www.sageglobal.org/world-cup"
       }
     ],
     "added_by": "yashkewlani",
@@ -380,7 +380,7 @@
     "id": "young-enterprise-company-programme",
     "name": "Young Enterprise Company Programme",
     "organizer": "Young Enterprise UK",
-    "organizer_url": "https://www.young-enterprise.org.uk/programmes/company-programme/",
+    "organizer_url": "https://www.young-enterprise.org.uk/",
     "category": "business",
     "subjects": [
       "entrepreneurship",
@@ -407,7 +407,7 @@
         "type": "registration_close",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.young-enterprise.org.uk/programmes/company-programme/"
+        "source_url": "https://www.young-enterprise.org.uk/contact/frequently-asked-questions"
       },
       {
         "label": "National finals",
