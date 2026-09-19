@@ -29,7 +29,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/"
+        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/faqs/"
       },
       {
         "label": "Winners announced",
@@ -37,7 +37,7 @@
         "type": "results",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/"
+        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/awards/"
       }
     ],
     "added_by": "yashkewlani",
@@ -52,7 +52,7 @@
     "id": "doodle-for-google",
     "name": "Doodle for Google",
     "organizer": "Google",
-    "organizer_url": "https://doodles.google.com/d4g/",
+    "organizer_url": "https://doodles.google/",
     "category": "arts_design",
     "subjects": [
       "visual art"
@@ -68,7 +68,7 @@
       "currency": "USD"
     },
     "prize": "USD 55,000 college scholarship and a USD 50,000 school technology package for the National Winner.",
-    "official_url": "https://doodles.google.com/d4g/",
+    "official_url": "https://doodles.google/doodle/doodle-for-google-2025-2026-us-winner",
     "cycle_year": 2026,
     "dates": [
       {
@@ -77,7 +77,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://doodles.google.com/d4g/"
+        "source_url": "https://doodles.google.com/intl/root/d4g/rules"
       },
       {
         "label": "Finalists notified by",
@@ -85,7 +85,7 @@
         "type": "results",
         "timezone": "UTC-7",
         "estimated": true,
-        "source_url": "https://doodles.google.com/d4g/"
+        "source_url": "https://doodles.google/"
       }
     ],
     "country_tracks": [
@@ -140,7 +140,7 @@
         "type": "registration_open",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.artandwriting.org/awards/"
+        "source_url": "https://www.artandwriting.org/awards/how-to-enter/"
       },
       {
         "label": "Latest regional deadline (following the usual early-January pattern)",
@@ -156,7 +156,7 @@
         "type": "results",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.artandwriting.org/awards/"
+        "source_url": "https://www.artandwriting.org/awards/how-to-enter/categories/"
       }
     ],
     "country_tracks": [
@@ -202,7 +202,7 @@
       "currency": "USD"
     },
     "prize": "National and World Contest awards; exact prizes vary by country.",
-    "official_url": "https://www.toyota-dreamcarart.com/",
+    "official_url": "https://www.toyota-dreamcarart.com/about/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -264,7 +264,7 @@
     "id": "youngarts-national-arts-competition",
     "name": "YoungArts National Arts Award",
     "organizer": "YoungArts",
-    "organizer_url": "https://youngarts.org/competition/",
+    "organizer_url": "https://youngarts.org/",
     "category": "arts_design",
     "subjects": [
       "visual art",
@@ -291,7 +291,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://youngarts.org/competition/"
+        "source_url": "https://youngarts.org/apply/"
       }
     ],
     "added_by": "yashkewlani",
@@ -331,7 +331,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.house.gov/educators-and-students/congressional-art-competition"
+        "source_url": "https://www.house.gov/sites/default/files/2026-02/2026%20Rules%20and%20Regulations%20for%20Congressional%20Offices.pdf"
       }
     ],
     "added_by": "yashkewlani",
@@ -346,7 +346,7 @@
     "id": "science-without-borders-challenge",
     "name": "Science Without Borders Challenge",
     "organizer": "Khaled bin Sultan Living Oceans Foundation",
-    "organizer_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge-2/",
+    "organizer_url": "https://www.livingoceansfoundation.org/",
     "category": "arts_design",
     "subjects": [
       "art",
@@ -364,7 +364,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes up to USD 500 per division plus gallery features.",
-    "official_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge-2/",
+    "official_url": "https://www.livingoceansfoundation.org/science-without-borders-challenge/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -406,7 +406,7 @@
       "currency": "USD"
     },
     "prize": "Publication in the annual art book; medals and certificates for finalists.",
-    "official_url": "https://www.celebratingart.com/",
+    "official_url": "https://www.celebratingart.com/enter-our-contest",
     "cycle_year": 2027,
     "dates": [
       {
@@ -415,7 +415,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.celebratingart.com/"
+        "source_url": "https://www.celebratingart.com/faq"
       }
     ],
     "added_by": "yashkewlani",

@@ -28,7 +28,7 @@
         "type": "deadline",
         "timezone": "UTC+1",
         "estimated": false,
-        "source_url": "https://foyleyoungpoets.org/"
+        "source_url": "https://foyleyoungpoets.org/rules/"
       },
       {
         "label": "Winners contacted",
@@ -36,7 +36,7 @@
         "type": "results",
         "timezone": "UTC+1",
         "estimated": true,
-        "source_url": "https://foyleyoungpoets.org/"
+        "source_url": "https://foyleyoungpoets.org/about/"
       }
     ],
     "added_by": "yashkewlani",
@@ -76,7 +76,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://rattle.com/page/poetryprize/"
+        "source_url": "https://rattle.com/page/submissions/"
       },
       {
         "label": "Winner and finalists announced",
@@ -84,7 +84,7 @@
         "type": "results",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://rattle.com/page/poetryprize/"
+        "source_url": "https://rattle.com/page/winners/"
       }
     ],
     "added_by": "yashkewlani",
@@ -99,7 +99,7 @@
     "id": "river-of-words",
     "name": "River of Words International Youth Poetry and Art Contest",
     "organizer": "Center for Environmental Literacy, Saint Mary's College of California",
-    "organizer_url": "https://www.stmarys-ca.edu/centers-institutes/center-environmental-literacy/river-of-words",
+    "organizer_url": "https://www.stmarys-ca.edu/",
     "category": "creative_writing",
     "subjects": [
       "poetry",
@@ -125,7 +125,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://www.stmarys-ca.edu/centers-institutes/center-environmental-literacy/river-of-words"
+        "source_url": "https://www.stmarys-ca.edu/river-words-rules-and-guidelines"
       }
     ],
     "added_by": "yashkewlani",
@@ -140,7 +140,7 @@
     "id": "adroit-prize",
     "name": "The Adroit Prizes for Poetry and Prose",
     "organizer": "The Adroit Journal",
-    "organizer_url": "https://theadroitjournal.org/prizes/",
+    "organizer_url": "https://theadroitjournal.org/",
     "category": "creative_writing",
     "subjects": [
       "poetry",
@@ -157,7 +157,7 @@
       "currency": "USD"
     },
     "prize": "USD 200 cash reward and publication for winners in poetry and prose.",
-    "official_url": "https://theadroitjournal.org/prizes/",
+    "official_url": "https://theadroitjournal.org/adroit-prizes/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -166,7 +166,7 @@
         "type": "registration_open",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://theadroitjournal.org/prizes/"
+        "source_url": "https://theadroitjournal.org/about/submissions/"
       },
       {
         "label": "Submission deadline (estimated)",
@@ -174,7 +174,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://theadroitjournal.org/prizes/"
+        "source_url": "https://theadroitjournal.org/adroit-prizes/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -189,7 +189,7 @@
     "id": "bennington-young-writers-awards",
     "name": "Bennington Young Writers Awards",
     "organizer": "Bennington College",
-    "organizer_url": "https://www.bennington.edu/young-writers-awards",
+    "organizer_url": "https://www.bennington.edu/",
     "category": "creative_writing",
     "subjects": [
       "poetry",
@@ -216,7 +216,7 @@
         "type": "registration_open",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.bennington.edu/young-writers-awards"
+        "source_url": "https://www.bennington.edu/events/young-writers-awards"
       },
       {
         "label": "Submission deadline",
@@ -224,7 +224,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.bennington.edu/young-writers-awards"
+        "source_url": "https://www.bennington.edu/events/young-writers-awards"
       }
     ],
     "added_by": "shauryagangrade",
@@ -239,7 +239,7 @@
     "id": "write-the-world-competitions",
     "name": "Write the World Monthly Writing Competitions",
     "organizer": "Write the World",
-    "organizer_url": "https://writetheworld.org/competitions",
+    "organizer_url": "https://writetheworld.org/",
     "category": "creative_writing",
     "subjects": [
       "creative writing"
@@ -264,7 +264,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://writetheworld.org/competitions"
+        "source_url": "https://writetheworld.org/faq"
       }
     ],
     "added_by": "shauryagangrade",
@@ -279,7 +279,7 @@
     "id": "reedsy-short-story-contest",
     "name": "Reedsy Short Story Contest",
     "organizer": "Reedsy",
-    "organizer_url": "https://reedsy.com/writing-contest",
+    "organizer_url": "https://reedsy.com/",
     "category": "creative_writing",
     "subjects": [
       "fiction",
@@ -306,7 +306,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://reedsy.com/writing-contest"
+        "source_url": "https://reedsy.com/creative-writing-prompts/"
       }
     ],
     "added_by": "yashkewlani",
@@ -338,7 +338,7 @@
       "currency": "USD"
     },
     "prize": "Publication in Teen Ink plus Amazon gift certificates.",
-    "official_url": "https://www.teenink.com/contests",
+    "official_url": "https://www.teenink.com/submission-guidelines",
     "cycle_year": 2027,
     "dates": [
       {
@@ -347,7 +347,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.teenink.com/contests"
+        "source_url": "https://www.teenink.com/about/faq"
       }
     ],
     "added_by": "yashkewlani",

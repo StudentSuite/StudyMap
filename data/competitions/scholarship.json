@@ -24,7 +24,7 @@
       "currency": "USD"
     },
     "prize": "USD 100,000, USD 50,000 or USD 25,000 scholarship.",
-    "official_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/",
+    "official_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/eligibility-and-application/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -33,7 +33,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/"
+        "source_url": "https://www.davidsongifted.org/gifted-programs/fellows-scholarship/scholarship-categories/"
       }
     ],
     "added_by": "yashkewlani",
@@ -48,7 +48,7 @@
     "id": "coca-cola-scholars",
     "name": "Coca-Cola Scholars Program",
     "organizer": "The Coca-Cola Scholars Foundation",
-    "organizer_url": "https://www.coca-colascholars.org/",
+    "organizer_url": "https://www.coca-colascholarsfoundation.org/",
     "category": "scholarship",
     "subjects": [
       "academics",
@@ -65,7 +65,7 @@
       "currency": "USD"
     },
     "prize": "A USD 20,000 college scholarship for 150 outstanding scholars each year.",
-    "official_url": "https://www.coca-colascholars.org/",
+    "official_url": "https://www.coca-colascholarsfoundation.org/apply/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -74,7 +74,7 @@
         "type": "registration_open",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.coca-colascholars.org/"
+        "source_url": "https://www.coca-colascholarsfoundation.org/"
       },
       {
         "label": "Application deadline",
@@ -82,7 +82,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.coca-colascholars.org/"
+        "source_url": "https://www.coca-colascholarsfoundation.org/about/faq"
       }
     ],
     "added_by": "shauryagangrade",
@@ -137,7 +137,7 @@
     "id": "elks-mvs",
     "name": "Elks National Foundation Most Valuable Student Scholarship",
     "organizer": "Elks National Foundation",
-    "organizer_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
+    "organizer_url": "https://www.elks.org/",
     "category": "scholarship",
     "subjects": [
       "academics",
@@ -163,7 +163,7 @@
         "type": "deadline",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://www.elks.org/scholars/scholarships/mvs.cfm"
+        "source_url": "https://www.elks.org/scholarweb/resources/MVSFAQ.cfm"
       }
     ],
     "added_by": "shauryagangrade",
@@ -195,7 +195,7 @@
       "currency": "USD"
     },
     "prize": "Full cost of attendance, last dollar scholarship for the 2027 cohort.",
-    "official_url": "https://www.thegatesscholarship.org/",
+    "official_url": "https://www.thegatesscholarship.org/about-gates",
     "cycle_year": 2027,
     "dates": [
       {
@@ -204,7 +204,7 @@
         "type": "deadline",
         "timezone": "UTC-7",
         "estimated": true,
-        "source_url": "https://www.thegatesscholarship.org/"
+        "source_url": "https://www.thegatesscholarship.org/help-center/student"
       }
     ],
     "added_by": "shauryagangrade",
@@ -237,7 +237,7 @@
       "currency": "USD"
     },
     "prize": "Up to USD 75,000 over five years plus programmatic support.",
-    "official_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/",
+    "official_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/how-to-apply/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -246,7 +246,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/"
+        "source_url": "https://www.jkcf.org/our-scholarships/young-scholars-program/faqs/"
       }
     ],
     "added_by": "yashkewlani",
@@ -260,7 +260,7 @@
     "id": "ron-brown-scholar-program",
     "name": "Ron Brown Scholar Program",
     "organizer": "Ron Brown Scholar Fund",
-    "organizer_url": "https://www.ronbrown.org/capstones/scholar-program/",
+    "organizer_url": "https://ronbrown.org/",
     "category": "scholarship",
     "subjects": [
       "academics",
@@ -287,7 +287,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.ronbrown.org/capstones/scholar-program/"
+        "source_url": "https://ronbrown.org/ron-brown-scholarship/"
       }
     ],
     "added_by": "yashkewlani",

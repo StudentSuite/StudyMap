@@ -3,7 +3,7 @@
     "id": "national-personal-finance-challenge",
     "name": "National Personal Finance Challenge",
     "organizer": "Council for Economic Education",
-    "organizer_url": "https://www.councilforeconed.org/programs/for-students/national-personal-finance-challenge/",
+    "organizer_url": "https://www.councilforeconed.org/",
     "category": "finance",
     "subjects": [
       "personal finance"
@@ -19,7 +19,7 @@
       "currency": "USD"
     },
     "prize": "National championship title and cash awards.",
-    "official_url": "https://www.councilforeconed.org/programs/for-students/national-personal-finance-challenge/",
+    "official_url": "https://npfc.councilforeconed.org/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -43,7 +43,7 @@
     "id": "new-york-fed-s-high-school-economics-essay",
     "name": "High School Fed Challenge",
     "organizer": "Federal Reserve Bank of New York",
-    "organizer_url": "https://www.newyorkfed.org/education",
+    "organizer_url": "https://www.newyorkfed.org/",
     "category": "finance",
     "subjects": [
       "economics",
@@ -60,7 +60,7 @@
       "currency": "USD"
     },
     "prize": "Publication in the Journal of Future Economists.",
-    "official_url": "https://www.newyorkfed.org/education",
+    "official_url": "https://www.newyorkfed.org/outreach-and-education/high-school/high-school-fed-challenge",
     "cycle_year": 2026,
     "dates": [
       {
@@ -84,7 +84,7 @@
     "id": "wharton-global-high-school-investment-competition",
     "name": "Wharton Global High School Investment Competition",
     "organizer": "Wharton Global Youth Program, University of Pennsylvania",
-    "organizer_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/",
+    "organizer_url": "https://globalyouth.wharton.upenn.edu/",
     "category": "finance",
     "subjects": [
       "investing",
@@ -110,7 +110,7 @@
         "type": "registration_close",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/"
+        "source_url": "https://globalyouth.wharton.upenn.edu/competitions/investment-competition/register-now/"
       }
     ],
     "added_by": "yashkewlani",
@@ -125,7 +125,7 @@
     "id": "wharton-high-school-data-science-competition",
     "name": "Wharton High School Data Science Competition",
     "organizer": "Wharton Sports Analytics and Business Initiative, University of Pennsylvania",
-    "organizer_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/",
+    "organizer_url": "https://wsb.wharton.upenn.edu/",
     "category": "finance",
     "subjects": [
       "data science",
@@ -151,7 +151,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/"
+        "source_url": "https://wsb.wharton.upenn.edu/wharton-data-competition/about/"
       }
     ],
     "added_by": "yashkewlani",
@@ -199,7 +199,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.councilforeconed.org/programs/for-students/national-economic-challenge/"
+        "source_url": "https://www.councilforeconed.org/programs/for-students/"
       }
     ],
     "added_by": "yashkewlani",
@@ -240,7 +240,7 @@
         "type": "registration_open",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.stockmarketgame.org/"
+        "source_url": "https://www.stockmarketgame.org/whats_new.html"
       }
     ],
     "added_by": "yashkewlani",
@@ -255,7 +255,7 @@
     "id": "ja-stock-market-challenge",
     "name": "JA Stock Market Challenge",
     "organizer": "Junior Achievement",
-    "organizer_url": "https://jausa.ja.org/programs/ja-in-the-classroom",
+    "organizer_url": "https://jausa.ja.org/",
     "category": "finance",
     "subjects": [
       "stock market",
@@ -273,7 +273,7 @@
       "currency": "USD"
     },
     "prize": "Trophy and recognition for the team with the highest portfolio value.",
-    "official_url": "https://jausa.ja.org/programs/ja-in-the-classroom",
+    "official_url": "https://jausa.ja.org/programs/ja-stock-market",
     "cycle_year": 2027,
     "dates": [
       {
@@ -282,7 +282,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://jausa.ja.org/programs/ja-in-the-classroom"
+        "source_url": "https://jausa.ja.org/events/opportunity/national-ja-stock-market-challenge"
       }
     ],
     "added_by": "yashkewlani",
@@ -323,7 +323,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.federalreserve.gov/education/fed-challenge.htm"
+        "source_url": "https://www.newyorkfed.org/outreach-and-education/high-school/high-school-fed-challenge"
       },
       {
         "label": "National championship",
@@ -331,7 +331,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.federalreserve.gov/education/fed-challenge.htm"
+        "source_url": "https://www.federalreserve.gov/"
       }
     ],
     "added_by": "yashkewlani",

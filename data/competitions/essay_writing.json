@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "Cash prizes up to USD 8,000 and an internship with The Crimson.",
-    "official_url": "https://www.essaycomp.org/",
+    "official_url": "https://www.essaycomp.org/what-is-hcgec",
     "cycle_year": 2026,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "registration_close",
         "timezone": "UTC",
         "estimated": false,
-        "source_url": "https://www.essaycomp.org/"
+        "source_url": "https://www.essaycomp.org/competition-structure-and-dates"
       },
       {
         "label": "Submission deadline",
@@ -37,7 +37,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.essaycomp.org/"
+        "source_url": "https://www.essaycomp.org/faq"
       },
       {
         "label": "Prizes must be claimed by",
@@ -45,7 +45,7 @@
         "type": "results",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.essaycomp.org/"
+        "source_url": "https://www.essaycomp.org/past-hcgec"
       }
     ],
     "added_by": "yashkewlani",
@@ -77,12 +77,12 @@
       "currency": "USD"
     },
     "prize": "USD 10,000 for the first-place essay.",
-    "official_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest",
+    "official_url": "https://www.jfklibrary.org/learn/education/profile-in-courage-essay-contest/for-student-participants",
     "cycle_year": 2027,
     "dates": [
       {
         "label": "Submission deadline",
-        "date": "2027-01-15",
+        "date": "2027-01-11",
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
@@ -101,7 +101,7 @@
     "id": "john-locke-global-essay-prize",
     "name": "John Locke Institute Global Essay Prize",
     "organizer": "John Locke Institute",
-    "organizer_url": "https://www.johnlockeinstitute.com/essay-competition",
+    "organizer_url": "https://www.johnlockeinstitute.com/",
     "category": "essay_writing",
     "subjects": [
       "philosophy",
@@ -120,7 +120,7 @@
       "currency": "USD"
     },
     "prize": "USD 5,000 scholarship for each category winner.",
-    "official_url": "https://www.johnlockeinstitute.com/essay-competition",
+    "official_url": "https://www.johnlockeinstitute.com/apply-now",
     "cycle_year": 2026,
     "dates": [
       {
@@ -129,7 +129,7 @@
         "type": "registration_close",
         "timezone": "UTC",
         "estimated": false,
-        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
+        "source_url": "https://essaycompetition.johnlocke.com/"
       },
       {
         "label": "Submission closes",
@@ -168,7 +168,7 @@
     "id": "the-politic-high-school-essay-competition",
     "name": "The Politic High School Essay Competition",
     "organizer": "The Politic, Yale University",
-    "organizer_url": "https://thepolitic.org/high-school-competition/",
+    "organizer_url": "https://thepolitic.org/",
     "category": "essay_writing",
     "subjects": [
       "journalism",
@@ -194,7 +194,7 @@
         "type": "registration_close",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://thepolitic.org/high-school-competition/"
+        "source_url": "https://docs.google.com/document/d/14m8YGCvzj8dpvE4noCbGVe9fRewQemR7Gl9ATuHn1Jo/edit?usp=sharing"
       },
       {
         "label": "Essay submission deadline",
@@ -210,7 +210,7 @@
         "type": "results",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://thepolitic.org/high-school-competition/"
+        "source_url": "https://thepolitic.org/columns/"
       }
     ],
     "added_by": "yashkewlani",
@@ -225,7 +225,7 @@
     "id": "ayn-rand-institute-essay-contests",
     "name": "Ayn Rand Institute Essay Contests",
     "organizer": "Ayn Rand Institute",
-    "organizer_url": "https://aynrand.org/",
+    "organizer_url": "https://aynrand.org/students/",
     "category": "essay_writing",
     "subjects": [
       "literature",
@@ -251,7 +251,7 @@
         "type": "deadline",
         "timezone": "UTC-7",
         "estimated": false,
-        "source_url": "https://aynrand.org/students/essay-contests"
+        "source_url": "https://aynrand.org/students/essay-contests/anthem-essay-contest"
       },
       {
         "label": "The Fountainhead contest deadline",
@@ -259,7 +259,7 @@
         "type": "deadline",
         "timezone": "UTC-7",
         "estimated": false,
-        "source_url": "https://aynrand.org/students/essay-contests"
+        "source_url": "https://aynrand.org/students/essay-contests/the-fountainhead-essay-contest"
       },
       {
         "label": "Atlas Shrugged contest deadline",
@@ -308,7 +308,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://pprize.princeton.edu/apply"
+        "source_url": "https://pprize.princeton.edu/faqs"
       }
     ],
     "added_by": "yashkewlani",
@@ -348,7 +348,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.penguinrandomhouse.com/signet-essay-contest/"
+        "source_url": "https://www.penguinrandomhouse.com/signet-essay-contest-winners"
       }
     ],
     "added_by": "yashkewlani",
@@ -381,7 +381,7 @@
       "currency": "USD"
     },
     "prize": "Winning editorials are published on The New York Times Learning Network.",
-    "official_url": "https://www.nytimes.com/spotlight/learning-network-contests",
+    "official_url": "https://www.nytimes.com/column/learning-contests",
     "cycle_year": 2027,
     "dates": [
       {
@@ -398,7 +398,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.nytimes.com/spotlight/learning-network-contests"
+        "source_url": "https://www.nytimes.com/2025/07/23/learning/our-2025-26-student-contest-calendar.html"
       }
     ],
     "added_by": "yashkewlani",
@@ -412,7 +412,7 @@
     "id": "una-usa-global-citizen-essay-contest",
     "name": "UNA-USA Global Citizen Essay Contest",
     "organizer": "United Nations Association of the USA",
-    "organizer_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/",
+    "organizer_url": "https://unausa.org/programs/students/",
     "category": "essay_writing",
     "subjects": [
       "international affairs",
@@ -429,7 +429,7 @@
       "currency": "USD"
     },
     "prize": "Cash awards up to USD 2,500 plus an entry to the UNA National Leadership Meeting.",
-    "official_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/",
+    "official_url": "https://www.unausa.org/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -438,7 +438,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.unausa.org/member-organizations/students-and-young-professionals/global-citizen-essay-contest/"
+        "source_url": "https://unausa.org/newsandstories/"
       }
     ],
     "added_by": "yashkewlani",

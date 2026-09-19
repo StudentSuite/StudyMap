@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "Publication in The Concord Review.",
-    "official_url": "https://tcr.org/",
+    "official_url": "https://tcr.org/submit",
     "cycle_year": 2026,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://tcr.org/"
+        "source_url": "https://tcr.org/NWB-FAQ"
       },
       {
         "label": "Spring issue deadline",
@@ -52,7 +52,7 @@
     "id": "national-history-bowl",
     "name": "National History Bowl",
     "organizer": "International Academic Competitions",
-    "organizer_url": "https://www.historybowl.com/",
+    "organizer_url": "https://www.iacompetitions.com/",
     "category": "history",
     "subjects": [
       "history"
@@ -85,7 +85,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.historybowl.com/"
+        "source_url": "https://www.iacompetitions.com/varsity-jv-nationals/"
       }
     ],
     "added_by": "yashkewlani",
@@ -167,7 +167,7 @@
     "id": "national-history-bee",
     "name": "National History Bee",
     "organizer": "International Academic Competitions",
-    "organizer_url": "https://www.historybowl.com/",
+    "organizer_url": "https://www.iacompetitions.com/",
     "category": "history",
     "subjects": [
       "history"
@@ -192,7 +192,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.historybowl.com/"
+        "source_url": "https://www.iacompetitions.com/varsity-jv-nationals/"
       }
     ],
     "added_by": "yashkewlani",
@@ -233,7 +233,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://billofrightsinstitute.org/we-the-students-essay-contest/"
+        "source_url": "https://billofrightsinstitute.org/essays/"
       }
     ],
     "added_by": "yashkewlani",
@@ -273,7 +273,7 @@
         "type": "registration_open",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.historyolympiad.com/"
+        "source_url": "https://www.historyolympiad.com/registration/"
       },
       {
         "label": "7th International History Olympiad, summer 2027 (estimated)",
@@ -281,7 +281,7 @@
         "type": "round",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://www.historyolympiad.com/"
+        "source_url": "https://www.historyolympiad.com/next-international-history-olympiad-to-be-held-in-summer-2027/"
       }
     ],
     "added_by": "shauryagangrade",
@@ -313,7 +313,7 @@
       "currency": "USD"
     },
     "prize": "National winners and their teachers receive cash awards and certificates.",
-    "official_url": "https://www.dar.org/national-society/scholarships/history-essay-contest",
+    "official_url": "https://www.dar.org/outreach/education/essay-contests",
     "cycle_year": 2027,
     "dates": [
       {
@@ -322,7 +322,7 @@
         "type": "deadline",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.dar.org/national-society/scholarships/history-essay-contest"
+        "source_url": "https://www.dar.org/national-society/education/education-resources"
       }
     ],
     "added_by": "yashkewlani",
@@ -336,7 +336,7 @@
     "id": "national-history-challenge-australia",
     "name": "National History Challenge (Australia)",
     "organizer": "History Teachers' Association of Australia",
-    "organizer_url": "https://www.historychallenge.com.au/",
+    "organizer_url": "https://historychallenge.org.au/",
     "category": "history",
     "subjects": [
       "history",
@@ -354,7 +354,7 @@
       "currency": "USD"
     },
     "prize": "State and national cash awards and trophies.",
-    "official_url": "https://www.historychallenge.com.au/",
+    "official_url": "https://historychallenge.org.au/contest-information",
     "cycle_year": 2027,
     "dates": [
       {
@@ -363,7 +363,7 @@
         "type": "registration_open",
         "timezone": "UTC+11",
         "estimated": true,
-        "source_url": "https://www.historychallenge.com.au/"
+        "source_url": "https://historychallenge.org.au/"
       },
       {
         "label": "Entry deadline",
@@ -371,7 +371,7 @@
         "type": "deadline",
         "timezone": "UTC+10",
         "estimated": true,
-        "source_url": "https://www.historychallenge.com.au/"
+        "source_url": "https://historychallenge.org.au/submit-your-entry"
       }
     ],
     "added_by": "yashkewlani",
