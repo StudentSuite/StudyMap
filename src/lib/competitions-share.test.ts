@@ -13,6 +13,7 @@ describe("competitionFiltersToSearch / parseCompetitionFilters round-trip", () =
   it("round-trips a fully populated state", () => {
     const state: CompetitionFilterState = {
       categories: ["stem", "coding"],
+      subjects: ["biology", "physics"],
       format: "online",
       participation: "team",
       region: "US",
@@ -23,6 +24,11 @@ describe("competitionFiltersToSearch / parseCompetitionFilters round-trip", () =
     };
     const search = competitionFiltersToSearch(state);
     expect(parseCompetitionFilters(search)).toEqual(state);
+  });
+
+  it("drops an unknown subject keyword when parsing", () => {
+    const parsed = parseCompetitionFilters("?subjects=biology,not_a_real_subject");
+    expect(parsed.subjects).toEqual(["biology"]);
   });
 
   it("round-trips the empty state as an empty query string", () => {

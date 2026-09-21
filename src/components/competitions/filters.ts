@@ -10,6 +10,8 @@ export type DeadlineWindow = "30" | "90" | "cycle";
 /** Active competitions filters, mirrored into the URL query for shareable links. */
 export interface CompetitionFilterState {
   categories: CompetitionCategory[];
+  /** Selected `COMPETITION_SUBJECT_FILTERS` keywords (see src/lib/types.ts). */
+  subjects: string[];
   format: CompetitionFormat | null;
   participation: CompetitionParticipation | null;
   region: string | null;
@@ -21,6 +23,7 @@ export interface CompetitionFilterState {
 
 export const EMPTY_COMPETITION_FILTERS: CompetitionFilterState = {
   categories: [],
+  subjects: [],
   format: null,
   participation: null,
   region: null,
@@ -33,6 +36,7 @@ export const EMPTY_COMPETITION_FILTERS: CompetitionFilterState = {
 /** Number of active filters shown in the panel (everything except category chips and search). */
 export function activeFilterCount(filters: CompetitionFilterState): number {
   let count = 0;
+  if (filters.subjects.length) count++;
   if (filters.format) count++;
   if (filters.participation) count++;
   if (filters.region) count++;

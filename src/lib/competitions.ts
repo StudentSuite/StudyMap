@@ -74,6 +74,9 @@ export function getCompetitions(): Competition[] {
 
 export interface CompetitionFilters {
   categories?: CompetitionCategory[];
+  /** COMPETITION_SUBJECT_FILTERS keywords; a competition matches if any
+   * selected keyword is a substring of any of its `subjects` tags. */
+  subjects?: string[];
   format?: CompetitionFormat;
   region?: string;
   participation?: CompetitionParticipation;
@@ -99,6 +102,13 @@ export function filterCompetitions(
       !filters.categories.includes(competition.category)
     ) {
       return false;
+    }
+    if (filters.subjects && filters.subjects.length > 0) {
+      const subjectsNorm = competition.subjects.map((s) => s.toLowerCase());
+      const matches = filters.subjects.some((keyword) =>
+        subjectsNorm.some((subject) => subject.includes(keyword.toLowerCase())),
+      );
+      if (!matches) return false;
     }
     if (filters.format && competition.format !== filters.format) {
       return false;

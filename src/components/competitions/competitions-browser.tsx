@@ -23,6 +23,7 @@ import {
   humanizeRegion,
   COMPETITION_FORMAT_LABELS,
   COMPETITION_PARTICIPATION_LABELS,
+  COMPETITION_SUBJECT_FILTERS,
 } from "@/lib/types";
 import type { Competition, CompetitionCategory } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -48,6 +49,13 @@ function describeActiveFilters(filters: CompetitionFilterState): string[] {
     parts.push(
       `categories: ${filters.categories.map((c) => COMPETITION_CATEGORY_LABELS[c]).join(", ")}`,
     );
+  }
+  if (filters.subjects.length) {
+    const labels = filters.subjects.map(
+      (keyword) =>
+        COMPETITION_SUBJECT_FILTERS.find((s) => s.keyword === keyword)?.label ?? keyword,
+    );
+    parts.push(`subjects: ${labels.join(", ")}`);
   }
   if (filters.format) parts.push(`format: ${COMPETITION_FORMAT_LABELS[filters.format]}`);
   if (filters.participation) {
@@ -143,6 +151,7 @@ export function CompetitionsBrowser({
   const filtered = useMemo(() => {
     const base = filterCompetitions(competitions, {
       categories: filters.categories.length ? filters.categories : undefined,
+      subjects: filters.subjects.length ? filters.subjects : undefined,
       format: filters.format ?? undefined,
       region: filters.region ?? undefined,
       participation: filters.participation ?? undefined,
@@ -183,6 +192,7 @@ export function CompetitionsBrowser({
   function clearAll() {
     updateFilters({
       categories: [],
+      subjects: [],
       format: null,
       participation: null,
       region: null,

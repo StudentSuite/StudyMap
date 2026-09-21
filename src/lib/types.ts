@@ -72,6 +72,35 @@ export const COMPETITION_CATEGORY_LABELS: Record<CompetitionCategory, string> = 
   interdisciplinary: "Interdisciplinary",
 };
 
+/**
+ * Curated subject filter chips for the competitions browser (see #ecfinder
+ * reference request) — `subjects` on a Competition record is free-form text,
+ * not an enum, so each chip matches by substring against a competition's
+ * `subjects` array rather than an exact tag. `keyword` is the lowercase
+ * substring tested; `label` is what the chip displays.
+ */
+export const COMPETITION_SUBJECT_FILTERS: { label: string; keyword: string }[] = [
+  { label: "Mathematics", keyword: "math" },
+  { label: "Physics", keyword: "physics" },
+  { label: "Chemistry", keyword: "chemistry" },
+  { label: "Biology", keyword: "biology" },
+  { label: "Marine science", keyword: "marine" },
+  { label: "Environmental science", keyword: "environmental" },
+  { label: "Earth science", keyword: "earth science" },
+  { label: "Computer science", keyword: "computer science" },
+  { label: "Coding", keyword: "coding" },
+  { label: "Robotics", keyword: "robotics" },
+  { label: "Engineering", keyword: "engineering" },
+  { label: "Business", keyword: "business" },
+  { label: "Economics", keyword: "economics" },
+  { label: "Finance", keyword: "finance" },
+  { label: "History", keyword: "history" },
+  { label: "Debate", keyword: "debate" },
+  { label: "Writing", keyword: "writing" },
+  { label: "Visual art", keyword: "visual art" },
+  { label: "Film", keyword: "film" },
+];
+
 export const COMPETITION_FORMATS = ["online", "in_person", "hybrid"] as const;
 
 export type CompetitionFormat = (typeof COMPETITION_FORMATS)[number];

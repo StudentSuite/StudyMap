@@ -67,6 +67,53 @@ describe("CompetitionFiltersPanel", () => {
     expect(onChange).toHaveBeenCalledWith(expect.objectContaining({ format: null }));
   });
 
+  it("adds a subject keyword to the (initially empty) selection on click", () => {
+    const onChange = vi.fn();
+    render(
+      <CompetitionFiltersPanel
+        filters={EMPTY_COMPETITION_FILTERS}
+        onChange={onChange}
+        regions={["US"]}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /Filters/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Biology" }));
+    expect(onChange).toHaveBeenCalledWith(
+      expect.objectContaining({ subjects: ["biology"] }),
+    );
+  });
+
+  it("removes a subject keyword already in the selection on click", () => {
+    const onChange = vi.fn();
+    render(
+      <CompetitionFiltersPanel
+        filters={{ ...EMPTY_COMPETITION_FILTERS, subjects: ["biology", "chemistry"] }}
+        onChange={onChange}
+        regions={["US"]}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: /Filters/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Biology" }));
+    expect(onChange).toHaveBeenCalledWith(
+      expect.objectContaining({ subjects: ["chemistry"] }),
+    );
+  });
+
+  it("counts an active subject selection in the filter count", () => {
+    const onChange = vi.fn();
+    render(
+      <CompetitionFiltersPanel
+        filters={{ ...EMPTY_COMPETITION_FILTERS, subjects: ["biology"] }}
+        onChange={onChange}
+        regions={["US"]}
+      />,
+    );
+
+    expect(screen.getByRole("button", { name: /Filters/ }).textContent).toContain("1");
+  });
+
   it("updates age from the number input", () => {
     const onChange = vi.fn();
     render(

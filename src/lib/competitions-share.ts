@@ -6,6 +6,7 @@ import {
   COMPETITION_CATEGORIES,
   COMPETITION_FORMATS,
   COMPETITION_PARTICIPATION_TYPES,
+  COMPETITION_SUBJECT_FILTERS,
 } from "@/lib/types";
 import type {
   CompetitionCategory,
@@ -14,6 +15,9 @@ import type {
 } from "@/lib/types";
 
 const CATEGORY_SET = new Set<string>(COMPETITION_CATEGORIES);
+const SUBJECT_KEYWORD_SET = new Set<string>(
+  COMPETITION_SUBJECT_FILTERS.map((s) => s.keyword),
+);
 const FORMAT_SET = new Set<string>(COMPETITION_FORMATS);
 const PARTICIPATION_SET = new Set<string>(COMPETITION_PARTICIPATION_TYPES);
 const DEADLINE_WINDOW_SET = new Set(["30", "90", "cycle"]);
@@ -45,6 +49,7 @@ export function parseCompetitionFilters(search: string): CompetitionFilterState 
       params.get("categories"),
       CATEGORY_SET,
     ) as CompetitionCategory[],
+    subjects: parseList(params.get("subjects"), SUBJECT_KEYWORD_SET),
     format: parseEnum<CompetitionFormat>(params.get("format"), FORMAT_SET),
     participation: parseEnum<CompetitionParticipation>(
       params.get("participation"),
@@ -65,6 +70,7 @@ export function parseCompetitionFilters(search: string): CompetitionFilterState 
 export function competitionFiltersToSearch(filters: CompetitionFilterState): string {
   const params = new URLSearchParams();
   if (filters.categories.length) params.set("categories", filters.categories.join(","));
+  if (filters.subjects.length) params.set("subjects", filters.subjects.join(","));
   if (filters.format) params.set("format", filters.format);
   if (filters.participation) params.set("participation", filters.participation);
   if (filters.region) params.set("region", filters.region);

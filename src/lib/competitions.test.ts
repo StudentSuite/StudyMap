@@ -91,6 +91,26 @@ describe("filterCompetitions", () => {
     expect(result.map((c) => c.id)).toEqual(["math-paid", "coding-team"]);
   });
 
+  it("filters by a single subject keyword, matched by substring", () => {
+    const result = filterCompetitions(FIXTURE, { subjects: ["bio"] });
+    expect(result.map((c) => c.id)).toEqual(["stem-free"]);
+  });
+
+  it("filters by multiple subject keywords with OR semantics", () => {
+    const result = filterCompetitions(FIXTURE, { subjects: ["biology", "mathematics"] });
+    expect(result.map((c) => c.id)).toEqual(["stem-free", "math-paid"]);
+  });
+
+  it("subject filter is case-insensitive", () => {
+    const result = filterCompetitions(FIXTURE, { subjects: ["BIOLOGY"] });
+    expect(result.map((c) => c.id)).toEqual(["stem-free"]);
+  });
+
+  it("subject filter matching nothing returns an empty array", () => {
+    const result = filterCompetitions(FIXTURE, { subjects: ["astrophysics"] });
+    expect(result).toEqual([]);
+  });
+
   it("filters by format", () => {
     const result = filterCompetitions(FIXTURE, { format: "in_person" });
     expect(result.map((c) => c.id)).toEqual(["math-paid"]);

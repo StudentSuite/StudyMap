@@ -15,6 +15,7 @@ import {
   COMPETITION_FORMATS,
   COMPETITION_PARTICIPATION_LABELS,
   COMPETITION_PARTICIPATION_TYPES,
+  COMPETITION_SUBJECT_FILTERS,
   humanizeRegion,
 } from "@/lib/types";
 import type { CompetitionFormat, CompetitionParticipation } from "@/lib/types";
@@ -85,6 +86,16 @@ export function CompetitionFiltersPanel({
     set(key, filters[key] === value ? (null as CompetitionFilterState[K]) : value);
   }
 
+  function toggleSubject(keyword: string) {
+    const active = filters.subjects.includes(keyword);
+    set(
+      "subjects",
+      active
+        ? filters.subjects.filter((s) => s !== keyword)
+        : [...filters.subjects, keyword],
+    );
+  }
+
   return (
     <CollapsiblePrimitive.Root className="rounded-xl bg-muted/30">
       <CollapsiblePrimitive.Trigger asChild>
@@ -112,6 +123,27 @@ export function CompetitionFiltersPanel({
       </CollapsiblePrimitive.Trigger>
 
       <CollapsiblePrimitive.Content className="space-y-4 border-t border-border px-4 py-4">
+        <div>
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+            Subject
+          </p>
+          <div
+            className="flex flex-wrap gap-2"
+            role="group"
+            aria-label="Filter by subject"
+          >
+            {COMPETITION_SUBJECT_FILTERS.map(({ label, keyword }) => (
+              <Pill
+                key={keyword}
+                pressed={filters.subjects.includes(keyword)}
+                onClick={() => toggleSubject(keyword)}
+              >
+                {label}
+              </Pill>
+            ))}
+          </div>
+        </div>
+
         <div>
           <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Format
