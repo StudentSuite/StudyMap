@@ -878,5 +878,27 @@
     "address": "Avenida Angelica, Higienopolis, Sao Paulo, SP 01238-000, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-23.5433644,-46.6566730",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "kob-other_places-01",
+    "name": "Kobe International Community Center",
+    "type": "other_places",
+    "city": "kobe",
+    "lat": 34.6661395,
+    "lng": 135.2130146,
+    "address": "Minatojima Nakamachi, Chuo Ward, Kobe, Hyogo 650-0045, Japan",
+    "gmaps_link": "https://maps.google.com/?q=34.6661395,135.2130146",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ngy-other_places-01",
+    "name": "Nagoya International Center",
+    "type": "other_places",
+    "city": "nagoya",
+    "lat": 35.1721135,
+    "lng": 136.8895707,
+    "address": "Nagono, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.1721135,136.8895707",
+    "added_by": "yashkewlani"
   }
 ]

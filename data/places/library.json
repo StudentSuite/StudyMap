@@ -1549,5 +1549,49 @@
     "address": "Rua Comandante Eugenio Lepper 60, Centro, Joinville, SC 89201-150, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-26.3022247,-48.8468223",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "ykh-library-01",
+    "name": "Yokohama Central Library",
+    "type": "library",
+    "city": "yokohama",
+    "lat": 35.447638,
+    "lng": 139.626706,
+    "address": "1-Chome Miyakawacho, Naka Ward, Yokohama, Kanagawa 231-0017, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.4476380,139.6267060",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kob-library-01",
+    "name": "Kobe City Central Library",
+    "type": "library",
+    "city": "kobe",
+    "lat": 34.6856938,
+    "lng": 135.1740129,
+    "address": "3-Chome Kusunokicho, Chuo Ward, Kobe, Hyogo 650-0017, Japan",
+    "gmaps_link": "https://maps.google.com/?q=34.6856938,135.1740129",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ngy-library-01",
+    "name": "Nagoya City Tsuruma Central Library",
+    "type": "library",
+    "city": "nagoya",
+    "lat": 35.1544409,
+    "lng": 136.9174367,
+    "address": "2-Chome Tsurumai, Showa Ward, Nagoya, Aichi 466-0064, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.1544409,136.9174367",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "sdi-library-01",
+    "name": "Sendai Mediatheque",
+    "type": "library",
+    "city": "sendai",
+    "lat": 38.2655142,
+    "lng": 140.8655467,
+    "address": "1 Kasugamachi, Aoba Ward, Sendai, Miyagi 980-0821, Japan",
+    "gmaps_link": "https://maps.google.com/?q=38.2655142,140.8655467",
+    "added_by": "yashkewlani"
   }
 ]

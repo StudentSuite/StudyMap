@@ -1538,5 +1538,49 @@
     "address": "Avenida Hermann August Lepper 10, Saguacu, Joinville, SC 89221-005, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-26.3009295,-48.8407070",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "ykh-gov_offices-01",
+    "name": "Tokyo Regional Immigration Bureau, Yokohama Branch",
+    "type": "gov_offices",
+    "city": "yokohama",
+    "lat": 35.3878098,
+    "lng": 139.6483393,
+    "address": "Shirahodai, Kanazawa Ward, Yokohama, Kanagawa 236-0002, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.3878098,139.6483393",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kob-gov_offices-01",
+    "name": "Osaka Regional Immigration Bureau, Kobe Branch",
+    "type": "gov_offices",
+    "city": "kobe",
+    "lat": 34.6867167,
+    "lng": 135.1945794,
+    "address": "Maemachi, Chuo Ward, Kobe, Hyogo 650-0036, Japan",
+    "gmaps_link": "https://maps.google.com/?q=34.6867167,135.1945794",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ngy-gov_offices-01",
+    "name": "Nagoya Regional Immigration Bureau",
+    "type": "gov_offices",
+    "city": "nagoya",
+    "lat": 35.1838493,
+    "lng": 136.9075195,
+    "address": "3-Chome Sannomaru, Naka Ward, Nagoya, Aichi 460-8508, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.1838493,136.9075195",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "sdi-gov_offices-01",
+    "name": "Sendai Immigration and Residency Services Office",
+    "type": "gov_offices",
+    "city": "sendai",
+    "lat": 38.2625983,
+    "lng": 140.8987564,
+    "address": "1-Chome Gorin, Miyagino Ward, Sendai, Miyagi 983-0842, Japan",
+    "gmaps_link": "https://maps.google.com/?q=38.2625983,140.8987564",
+    "added_by": "yashkewlani"
   }
 ]
