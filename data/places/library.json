@@ -1494,5 +1494,60 @@
     "address": "Praca Jose Mendes Junior 21, Funcionarios, Belo Horizonte, MG 30140-010, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-19.9328676,-43.9392609",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "ctba-library-01",
+    "name": "Biblioteca Publica do Parana",
+    "type": "library",
+    "city": "curitiba",
+    "lat": -25.4309908,
+    "lng": -49.2735081,
+    "address": "Rua Candido Lopes 133, Centro, Curitiba, PR 80020-901, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-25.4309908,-49.2735081",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "rec-library-01",
+    "name": "Biblioteca Central, Universidade Federal de Pernambuco (UFPE)",
+    "type": "library",
+    "city": "recife",
+    "lat": -8.0509191,
+    "lng": -34.9514489,
+    "address": "Avenida dos Reitores, Cidade Universitaria, Recife, PE 50740-570, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-8.0509191,-34.9514489",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cps-library-01",
+    "name": "Biblioteca Central Cesar Lattes, UNICAMP",
+    "type": "library",
+    "city": "campinas",
+    "lat": -22.822656,
+    "lng": -47.0627959,
+    "address": "Cidade Universitaria, Barao Geraldo, Campinas, SP 13083-886, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.8226560,-47.0627959",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "swt-library-01",
+    "name": "Somerset West Library",
+    "type": "library",
+    "city": "somerset_west",
+    "lat": -34.0838364,
+    "lng": 18.8491209,
+    "address": "Victoria Street, Somerset West, 7130, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-34.0838364,18.8491209",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "jvl-library-01",
+    "name": "Biblioteca Publica Municipal Prefeito Rolf Colin",
+    "type": "library",
+    "city": "joinville",
+    "lat": -26.3022247,
+    "lng": -48.8468223,
+    "address": "Rua Comandante Eugenio Lepper 60, Centro, Joinville, SC 89201-150, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-26.3022247,-48.8468223",
+    "added_by": "yashkewlani"
   }
 ]

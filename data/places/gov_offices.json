@@ -1483,5 +1483,60 @@
     "address": "SES Quadra 805, Lote 24, Asa Sul, Brasilia, DF 70452-901, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-15.8188918,-47.8879099",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "ctba-gov_offices-01",
+    "name": "Prefeitura Municipal de Curitiba",
+    "type": "gov_offices",
+    "city": "curitiba",
+    "lat": -25.4168479,
+    "lng": -49.2689557,
+    "address": "Avenida Candido de Abreu 817, Centro Civico, Curitiba, PR 80530-908, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-25.4168479,-49.2689557",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "rec-gov_offices-01",
+    "name": "Departamento de Policia Federal, Recife",
+    "type": "gov_offices",
+    "city": "recife",
+    "lat": -8.0599224,
+    "lng": -34.8731753,
+    "address": "Cais do Apolo 321, Bairro do Recife, Recife, PE 50030-230, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-8.0599224,-34.8731753",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cps-gov_offices-01",
+    "name": "Poupatempo Campinas",
+    "type": "gov_offices",
+    "city": "campinas",
+    "lat": -22.9326607,
+    "lng": -47.077706,
+    "address": "Rua Jacy Teixeira Camargo, Jardim Nova Europa, Campinas, SP 13050-913, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.9326607,-47.0777060",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "swt-gov_offices-01",
+    "name": "Department of Home Affairs, Somerset West",
+    "type": "gov_offices",
+    "city": "somerset_west",
+    "lat": -34.0839962,
+    "lng": 18.8509956,
+    "address": "Main Road, Somerset West, 7130, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-34.0839962,18.8509956",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "jvl-gov_offices-01",
+    "name": "Prefeitura Municipal de Joinville",
+    "type": "gov_offices",
+    "city": "joinville",
+    "lat": -26.3009295,
+    "lng": -48.840707,
+    "address": "Avenida Hermann August Lepper 10, Saguacu, Joinville, SC 89221-005, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-26.3009295,-48.8407070",
+    "added_by": "yashkewlani"
   }
 ]
