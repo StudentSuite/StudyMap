@@ -867,5 +867,16 @@
     "address": "Via del Carmine 14, 10122 Torino, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.0762239,7.6746079",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "sp-other_places-01",
+    "name": "Livraria Cultura, Conjunto Nacional",
+    "type": "other_places",
+    "city": "sao_paulo",
+    "lat": -23.5433644,
+    "lng": -46.656673,
+    "address": "Avenida Angelica, Higienopolis, Sao Paulo, SP 01238-000, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.5433644,-46.6566730",
+    "added_by": "yashkewlani"
   }
 ]

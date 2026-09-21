@@ -526,5 +526,29 @@
     "gmaps_link": "https://maps.google.com/?q=45.4658111,9.1935727",
     "added_by": "yashkewlani",
     "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "sp-foreign_lang_exam_centre-01",
+    "name": "Instituto Goethe Sao Paulo",
+    "type": "foreign_lang_exam_centre",
+    "city": "sao_paulo",
+    "lat": -23.5559808,
+    "lng": -46.6816712,
+    "address": "Rua Lisboa 974, Jardim Paulista, Sao Paulo, SP 05413-001, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.5559808,-46.6816712",
+    "added_by": "yashkewlani",
+    "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "rio-foreign_lang_exam_centre-01",
+    "name": "Alliance Francaise Rio de Janeiro",
+    "type": "foreign_lang_exam_centre",
+    "city": "rio_de_janeiro",
+    "lat": -22.9480586,
+    "lng": -43.1844316,
+    "address": "Rua Muniz Barreto 730, Botafogo, Rio de Janeiro, RJ 22251-090, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.9480586,-43.1844316",
+    "added_by": "yashkewlani",
+    "exam": "DELF/DALF"
   }
 ]

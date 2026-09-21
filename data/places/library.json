@@ -1450,5 +1450,49 @@
     "address": "Vicolo San Sebastiano, 37121 Verona, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.4411734,10.9994165",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "sp-library-01",
+    "name": "Biblioteca Mario de Andrade",
+    "type": "library",
+    "city": "sao_paulo",
+    "lat": -23.5473897,
+    "lng": -46.6421048,
+    "address": "Rua da Consolacao 94, Sao Paulo, SP 01302-000, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.5473897,-46.6421048",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "rio-library-01",
+    "name": "Biblioteca Nacional do Brasil",
+    "type": "library",
+    "city": "rio_de_janeiro",
+    "lat": -22.9097025,
+    "lng": -43.1753773,
+    "address": "Avenida Rio Branco 219, Centro, Rio de Janeiro, RJ 20040-008, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.9097025,-43.1753773",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bsb-library-01",
+    "name": "Biblioteca Nacional de Brasilia Leonel de Moura Brizola",
+    "type": "library",
+    "city": "brasilia",
+    "lat": -15.7967,
+    "lng": -47.880262,
+    "address": "SCTS, Setor Bancario Sul, Brasilia, DF 70070-150, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-15.7967000,-47.8802620",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bh-library-01",
+    "name": "Biblioteca Publica Estadual Luiz de Bessa",
+    "type": "library",
+    "city": "belo_horizonte",
+    "lat": -19.9328676,
+    "lng": -43.9392609,
+    "address": "Praca Jose Mendes Junior 21, Funcionarios, Belo Horizonte, MG 30140-010, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-19.9328676,-43.9392609",
+    "added_by": "yashkewlani"
   }
 ]

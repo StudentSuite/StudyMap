@@ -1450,5 +1450,38 @@
     "address": "Lungadige Galtarossa, 37121 Verona, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.4318994,10.9998219",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "sp-gov_offices-01",
+    "name": "Policia Federal Superintendencia Regional de Sao Paulo (Passport Office)",
+    "type": "gov_offices",
+    "city": "sao_paulo",
+    "lat": -23.5116852,
+    "lng": -46.7043326,
+    "address": "Rua Hugo D'Antola 95, Lapa, Sao Paulo, SP 05038-090, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.5116852,-46.7043326",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "rio-gov_offices-01",
+    "name": "Policia Federal Rio de Janeiro (Passport Office)",
+    "type": "gov_offices",
+    "city": "rio_de_janeiro",
+    "lat": -22.8101472,
+    "lng": -43.2522032,
+    "address": "Avenida Vinte de Janeiro, Galeao, Rio de Janeiro, RJ 21942-900, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.8101472,-43.2522032",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bsb-gov_offices-01",
+    "name": "Embassy of India, Brasilia",
+    "type": "gov_offices",
+    "city": "brasilia",
+    "lat": -15.8188918,
+    "lng": -47.8879099,
+    "address": "SES Quadra 805, Lote 24, Asa Sul, Brasilia, DF 70452-901, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-15.8188918,-47.8879099",
+    "added_by": "yashkewlani"
   }
 ]
