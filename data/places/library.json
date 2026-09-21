@@ -1237,7 +1237,7 @@
     "type": "library",
     "city": "sydney",
     "lat": -33.8672,
-    "lng": 151.2140,
+    "lng": 151.214,
     "address": "Macquarie St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8672,151.2140",
     "added_by": "yashkewlani"
@@ -1406,5 +1406,49 @@
     "address": "City Hall, 231 Anton Lembede Street, Durban Central, Durban 4001, South Africa",
     "gmaps_link": "https://maps.google.com/?q=-29.8587382,31.0218402",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "mil-library-01",
+    "name": "Biblioteca Nazionale Braidense",
+    "type": "library",
+    "city": "milan",
+    "lat": 45.4720978,
+    "lng": 9.1891088,
+    "address": "Via Brera 28, 20121 Milano, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4720978,9.1891088",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "trn-library-01",
+    "name": "Biblioteca Civica Centrale",
+    "type": "library",
+    "city": "torino",
+    "lat": 45.0745989,
+    "lng": 7.6735676,
+    "address": "Via della Cittadella, 10122 Torino, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.0745989,7.6735676",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "pad-library-01",
+    "name": "Biblioteca Universitaria di Padova",
+    "type": "library",
+    "city": "padua",
+    "lat": 45.4070616,
+    "lng": 11.8805174,
+    "address": "Via San Biagio 7, 35121 Padova, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4070616,11.8805174",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "vrn-library-01",
+    "name": "Biblioteca Civica di Verona",
+    "type": "library",
+    "city": "verona",
+    "lat": 45.4411734,
+    "lng": 10.9994165,
+    "address": "Vicolo San Sebastiano, 37121 Verona, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4411734,10.9994165",
+    "added_by": "yashkewlani"
   }
 ]

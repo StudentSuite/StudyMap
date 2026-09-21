@@ -508,11 +508,23 @@
     "name": "British Council IELTS Test Centre, Sydney",
     "type": "foreign_lang_exam_centre",
     "city": "sydney",
-    "lat": -33.8650,
+    "lat": -33.865,
     "lng": 151.2094,
     "address": "Level 6, 250 George St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8650,151.2094",
     "added_by": "yashkewlani",
     "exam": "IELTS"
+  },
+  {
+    "id": "mil-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Mailand",
+    "type": "foreign_lang_exam_centre",
+    "city": "milan",
+    "lat": 45.4658111,
+    "lng": 9.1935727,
+    "address": "Via San Paolo 10, 20121 Milano, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4658111,9.1935727",
+    "added_by": "yashkewlani",
+    "exam": "Goethe-Zertifikat (A1-C2)"
   }
 ]

@@ -318,7 +318,7 @@
     "gmaps_link": "https://maps.google.com/?q=38.4592832,27.223755",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "frb-other_places-01",
     "name": "Studierendenwerk Freiburg",
     "type": "other_places",
@@ -329,7 +329,7 @@
     "gmaps_link": "https://maps.google.com/?q=47.9883693,7.847633",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "cal-other_places-01",
     "name": "University of Calgary",
     "type": "other_places",
@@ -340,7 +340,7 @@
     "gmaps_link": "https://maps.google.com/?q=51.075054,-114.138805",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "van-other_places-01",
     "name": "Simon Fraser University, Harbour Centre",
     "type": "other_places",
@@ -351,7 +351,7 @@
     "gmaps_link": "https://maps.google.com/?q=49.2845459,-123.1116636",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "nyk-other_places-01",
     "name": "York University, Keele Campus",
     "type": "other_places",
@@ -362,7 +362,7 @@
     "gmaps_link": "https://maps.google.com/?q=43.7741755,-79.504749",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "bne-other_places-01",
     "name": "University of Queensland, St Lucia Campus",
     "type": "other_places",
@@ -373,7 +373,7 @@
     "gmaps_link": "https://maps.google.com/?q=-27.4981423,153.0111536",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "gur-other_places-01",
     "name": "Gurugram University",
     "type": "other_places",
@@ -384,7 +384,7 @@
     "gmaps_link": "https://maps.google.com/?q=28.4238123,77.0655926",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "jdh-other_places-01",
     "name": "MBM University (Engineering College), Jodhpur",
     "type": "other_places",
@@ -395,7 +395,7 @@
     "gmaps_link": "https://maps.google.com/?q=26.2708162,73.0348015",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "trv-other_places-01",
     "name": "University of Kerala, Kariavattom Campus",
     "type": "other_places",
@@ -406,7 +406,7 @@
     "gmaps_link": "https://maps.google.com/?q=8.5549422,76.8855036",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "vlc-other_places-01",
     "name": "Universitat de Valencia",
     "type": "other_places",
@@ -417,7 +417,7 @@
     "gmaps_link": "https://maps.google.com/?q=39.4604818,-0.3600927",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "hfd-other_places-01",
     "name": "Trinity College, Hartford",
     "type": "other_places",
@@ -428,7 +428,7 @@
     "gmaps_link": "https://maps.google.com/?q=41.7471549,-72.6901199",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "phl-other_places-01",
     "name": "University of Pennsylvania",
     "type": "other_places",
@@ -439,7 +439,7 @@
     "gmaps_link": "https://maps.google.com/?q=39.9522148,-75.1955729",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "icn-other_places-01",
     "name": "Incheon Catholic University, Songdo Global Campus",
     "type": "other_places",
@@ -450,7 +450,7 @@
     "gmaps_link": "https://maps.google.com/?q=37.3721469,126.6624164",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "dgu-other_places-01",
     "name": "Kyungpook National University",
     "type": "other_places",
@@ -461,7 +461,7 @@
     "gmaps_link": "https://maps.google.com/?q=35.8905697,128.6108553",
     "added_by": "yashkewlani"
   },
-{
+  {
     "id": "abj-other_places-01",
     "name": "University of Abuja",
     "type": "other_places",
@@ -489,7 +489,7 @@
     "type": "other_places",
     "city": "london",
     "lat": 51.5299,
-    "lng": -0.1270,
+    "lng": -0.127,
     "address": "96 Euston Rd, London NW1 2DB, UK",
     "gmaps_link": "https://maps.google.com/?q=51.5299,-0.1270",
     "added_by": "yashkewlani"
@@ -617,12 +617,12 @@
   },
   {
     "id": "muc-other_places-01",
-    "name": "LMU Munich, Hauptgeb\u00e4ude",
+    "name": "LMU Munich, Hauptgebäude",
     "type": "other_places",
     "city": "munich",
     "lat": 48.1506954,
     "lng": 11.5806256,
-    "address": "Geschwister-Scholl-Platz 1, 80539 M\u00fcnchen, Germany",
+    "address": "Geschwister-Scholl-Platz 1, 80539 München, Germany",
     "gmaps_link": "https://maps.google.com/?q=48.1506954,11.5806256",
     "added_by": "shauryagangrade"
   },
@@ -633,7 +633,7 @@
     "city": "mainz",
     "lat": 49.9920948,
     "lng": 8.2465107,
-    "address": "Saarstra\u00dfe 21, 55122 Mainz, Germany",
+    "address": "Saarstraße 21, 55122 Mainz, Germany",
     "gmaps_link": "https://maps.google.com/?q=49.9920948,8.2465107",
     "added_by": "shauryagangrade"
   },
@@ -672,12 +672,12 @@
   },
   {
     "id": "zqi-other_places-01",
-    "name": "University of Zurich, Hauptgeb\u00e4ude",
+    "name": "University of Zurich, Hauptgebäude",
     "type": "other_places",
     "city": "zurich",
     "lat": 47.3766172,
     "lng": 8.5491616,
-    "address": "R\u00e4mistrasse 71, 8006 Z\u00fcrich, Switzerland",
+    "address": "Rämistrasse 71, 8006 Zürich, Switzerland",
     "gmaps_link": "https://maps.google.com/?q=47.3766172,8.5491616",
     "added_by": "shauryagangrade"
   },
@@ -710,7 +710,7 @@
     "city": "copenhagen",
     "lat": 55.6802151,
     "lng": 12.5739523,
-    "address": "\u00d8ster Farimagsgade 5, 1353 K\u00f8benhavn K, Denmark",
+    "address": "Øster Farimagsgade 5, 1353 København K, Denmark",
     "gmaps_link": "https://maps.google.com/?q=55.6802151,12.5739523",
     "added_by": "shauryagangrade"
   },
@@ -721,18 +721,18 @@
     "city": "stockholm",
     "lat": 59.3654661,
     "lng": 18.0645179,
-    "address": "Albano Hus 3, Albanov\u00e4gen 12, 106 91 Stockholm, Sweden",
+    "address": "Albano Hus 3, Albanovägen 12, 106 91 Stockholm, Sweden",
     "gmaps_link": "https://maps.google.com/?q=59.3654661,18.0645179",
     "added_by": "shauryagangrade"
   },
   {
     "id": "bud-other_places-01",
-    "name": "E\u00f6tv\u00f6s Lor\u00e1nd University (ELTE), L\u00e1gym\u00e1nyos Campus",
+    "name": "Eötvös Loránd University (ELTE), Lágymányos Campus",
     "type": "other_places",
     "city": "budapest",
     "lat": 47.4752729,
     "lng": 19.0557962,
-    "address": "Egyetem t\u00e9r 1-3, 1053 Budapest, Hungary (central campus); L\u00e1gym\u00e1nyos: P\u00e1zm\u00e1ny P\u00e9ter s\u00e9t\u00e1ny 1/A, 1117 Budapest, Hungary",
+    "address": "Egyetem tér 1-3, 1053 Budapest, Hungary (central campus); Lágymányos: Pázmány Péter sétány 1/A, 1117 Budapest, Hungary",
     "gmaps_link": "https://maps.google.com/?q=47.4752729,19.0557962",
     "added_by": "shauryagangrade"
   },
@@ -743,7 +743,7 @@
     "city": "warsaw",
     "lat": 52.2404239,
     "lng": 21.0174242,
-    "address": "Krakowskie Przedmie\u015bcie 26/28, 00-927 Warszawa, Poland",
+    "address": "Krakowskie Przedmieście 26/28, 00-927 Warszawa, Poland",
     "gmaps_link": "https://maps.google.com/?q=52.2404239,21.0174242",
     "added_by": "shauryagangrade"
   },
@@ -754,7 +754,7 @@
     "city": "prague",
     "lat": 50.0872218,
     "lng": 14.4216689,
-    "address": "Ovocn\u00fd trh 3, 116 36 Praha 1, Czech Republic",
+    "address": "Ovocný trh 3, 116 36 Praha 1, Czech Republic",
     "gmaps_link": "https://maps.google.com/?q=50.0872218,14.4216689",
     "added_by": "shauryagangrade"
   },
@@ -782,7 +782,7 @@
   },
   {
     "id": "lgv-other_places-01",
-    "name": "Universit\u00e0 di Bologna, Biblioteca Universitaria di Bologna",
+    "name": "Università di Bologna, Biblioteca Universitaria di Bologna",
     "type": "other_places",
     "city": "bologna",
     "lat": 44.4964116,
@@ -793,12 +793,12 @@
   },
   {
     "id": "mvv-other_places-01",
-    "name": "Humboldt-Universit\u00e4t zu Berlin, Jacob-und-Wilhelm-Grimm-Zentrum",
+    "name": "Humboldt-Universität zu Berlin, Jacob-und-Wilhelm-Grimm-Zentrum",
     "type": "other_places",
     "city": "berlin",
     "lat": 52.5197045,
     "lng": 13.3935881,
-    "address": "Geschwister-Scholl-Stra\u00dfe 3, 10117 Berlin, Germany",
+    "address": "Geschwister-Scholl-Straße 3, 10117 Berlin, Germany",
     "gmaps_link": "https://maps.google.com/?q=52.5197045,13.3935881",
     "added_by": "shauryagangrade"
   },
@@ -815,12 +815,12 @@
   },
   {
     "id": "mty-other_places-01",
-    "name": "Tecnol\u00f3gico de Monterrey, Monterrey Campus Library (Biblioteca CEDDIE)",
+    "name": "Tecnológico de Monterrey, Monterrey Campus Library (Biblioteca CEDDIE)",
     "type": "other_places",
     "city": "monterrey",
     "lat": 25.6513693,
     "lng": -100.2897589,
-    "address": "Av. Eugenio Garza Sada 2501 Sur, Tecnol\u00f3gico, 64849 Monterrey, N.L., Mexico",
+    "address": "Av. Eugenio Garza Sada 2501 Sur, Tecnológico, 64849 Monterrey, N.L., Mexico",
     "gmaps_link": "https://maps.google.com/?q=25.6513693,-100.2897589",
     "added_by": "shauryagangrade"
   },
@@ -831,7 +831,7 @@
     "city": "graz",
     "lat": 47.0757771,
     "lng": 15.4129482,
-    "address": "Universit\u00e4tsplatz 3, 8010 Graz, Austria",
+    "address": "Universitätsplatz 3, 8010 Graz, Austria",
     "gmaps_link": "https://maps.google.com/?q=47.0757771,15.4129482",
     "added_by": "shauryagangrade"
   },
@@ -853,8 +853,19 @@
     "city": "vienna",
     "lat": 48.2109607,
     "lng": 16.3601756,
-    "address": "Universit\u00e4tsring 1, 1010 Wien, Austria",
+    "address": "Universitätsring 1, 1010 Wien, Austria",
     "gmaps_link": "https://maps.google.com/?q=48.2109607,16.3601756",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "trn-other_places-01",
+    "name": "Polo del '900",
+    "type": "other_places",
+    "city": "torino",
+    "lat": 45.0762239,
+    "lng": 7.6746079,
+    "address": "Via del Carmine 14, 10122 Torino, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.0762239,7.6746079",
+    "added_by": "yashkewlani"
   }
 ]

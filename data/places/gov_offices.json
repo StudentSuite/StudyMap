@@ -1406,5 +1406,49 @@
     "address": "Kacheri Ghat, Gopalbari, Jaipur 302006, India",
     "gmaps_link": "https://maps.google.com/?q=26.9207104,75.8267392",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "mil-gov_offices-01",
+    "name": "Consulate General of India, Milan",
+    "type": "gov_offices",
+    "city": "milan",
+    "lat": 45.481085,
+    "lng": 9.2000314,
+    "address": "Via Vittor Pisani 8, 20124 Milano, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4810850,9.2000314",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "trn-gov_offices-01",
+    "name": "Questura di Torino (Ufficio Passaporti)",
+    "type": "gov_offices",
+    "city": "torino",
+    "lat": 45.0705689,
+    "lng": 7.6669901,
+    "address": "Via Severino Grattoni, 10121 Torino, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.0705689,7.6669901",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "pad-gov_offices-01",
+    "name": "Questura di Padova (Ufficio Passaporti)",
+    "type": "gov_offices",
+    "city": "padua",
+    "lat": 45.4030605,
+    "lng": 11.8766271,
+    "address": "Piazzetta Giovanni Palatucci 5, 35123 Padova, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4030605,11.8766271",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "vrn-gov_offices-01",
+    "name": "Questura di Verona (Ufficio Passaporti)",
+    "type": "gov_offices",
+    "city": "verona",
+    "lat": 45.4318994,
+    "lng": 10.9998219,
+    "address": "Lungadige Galtarossa, 37121 Verona, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4318994,10.9998219",
+    "added_by": "yashkewlani"
   }
 ]
