@@ -1736,5 +1736,60 @@
     "address": "Calle Juan Alameda, Casco Antiguo, 29601 Marbella, Spain",
     "gmaps_link": "https://maps.google.com/?q=36.5134803,-4.8834134",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "hlg-library-01",
+    "name": "Ruislip Manor Library",
+    "type": "library",
+    "city": "hillingdon",
+    "lat": 51.5722969,
+    "lng": -0.4115158,
+    "address": "Dulverton Road, London Borough of Hillingdon, HA4 9AF, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.5722969,-0.4115158",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "htf-library-01",
+    "name": "Hertford Library",
+    "type": "library",
+    "city": "hertford",
+    "lat": 51.7969684,
+    "lng": -0.0786498,
+    "address": "Dolphin Yard, Folly Island, Hertford SG14 1DR, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.7969684,-0.0786498",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "lsb-library-01",
+    "name": "Lisburn City Library",
+    "type": "library",
+    "city": "lisburn",
+    "lat": 54.5101605,
+    "lng": -6.043272,
+    "address": "23 Linenhall Street, Hilden, Lisburn BT28 1FJ, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=54.5101605,-6.0432720",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "obu-library-01",
+    "name": "Stadtbucherei Oberursel",
+    "type": "library",
+    "city": "oberursel",
+    "lat": 50.2029806,
+    "lng": 8.5771898,
+    "address": "Eppsteiner Strasse 16-18, 61440 Oberursel (Taunus), Germany",
+    "gmaps_link": "https://maps.google.com/?q=50.2029806,8.5771898",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "stnb-library-01",
+    "name": "Stadtbucherei Starnberg",
+    "type": "library",
+    "city": "starnberg",
+    "lat": 47.9988547,
+    "lng": 11.3409725,
+    "address": "Hauptstrasse 10, 82319 Starnberg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.9988547,11.3409725",
+    "added_by": "yashkewlani"
   }
 ]

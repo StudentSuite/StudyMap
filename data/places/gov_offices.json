@@ -1714,5 +1714,60 @@
     "address": "Avenida Arias de Velasco, 29601 Marbella, Spain",
     "gmaps_link": "https://maps.google.com/?q=36.5168080,-4.8849743",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "hlg-gov_offices-01",
+    "name": "Hillingdon Civic Centre",
+    "type": "gov_offices",
+    "city": "hillingdon",
+    "lat": 51.5436846,
+    "lng": -0.4768893,
+    "address": "Hillingdon Road, Cowley, London Borough of Hillingdon UB8 9ZU, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.5436846,-0.4768893",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "htf-gov_offices-01",
+    "name": "Hertfordshire County Council",
+    "type": "gov_offices",
+    "city": "hertford",
+    "lat": 51.7911226,
+    "lng": -0.0821796,
+    "address": "Pegs Lane, Hertford SG13 8EJ, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=51.7911226,-0.0821796",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "lsb-gov_offices-01",
+    "name": "Lisburn and Castlereagh City Council",
+    "type": "gov_offices",
+    "city": "lisburn",
+    "lat": 54.5117403,
+    "lng": -6.0348085,
+    "address": "Lagan Valley Island, Lisburn BT27 4RL, United Kingdom",
+    "gmaps_link": "https://maps.google.com/?q=54.5117403,-6.0348085",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "obu-gov_offices-01",
+    "name": "Rathaus Oberursel",
+    "type": "gov_offices",
+    "city": "oberursel",
+    "lat": 50.2005574,
+    "lng": 8.5803656,
+    "address": "Rathausplatz 1, 61440 Oberursel (Taunus), Germany",
+    "gmaps_link": "https://maps.google.com/?q=50.2005574,8.5803656",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "stnb-gov_offices-01",
+    "name": "Landratsamt Starnberg",
+    "type": "gov_offices",
+    "city": "starnberg",
+    "lat": 47.9994843,
+    "lng": 11.3512911,
+    "address": "Strandbadstrasse 2, 82319 Starnberg, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.9994843,11.3512911",
+    "added_by": "yashkewlani"
   }
 ]
