@@ -1791,5 +1791,49 @@
     "address": "Hauptstrasse 10, 82319 Starnberg, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.9988547,11.3409725",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "blc-library-01",
+    "name": "Belconnen Library",
+    "type": "library",
+    "city": "belconnen",
+    "lat": -35.2385264,
+    "lng": 149.0693529,
+    "address": "Swanson Court, Belconnen ACT 2617, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-35.2385264,149.0693529",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "npa-library-01",
+    "name": "The King's School CLL Senior Library",
+    "type": "library",
+    "city": "north_parramatta",
+    "lat": -33.7851947,
+    "lng": 151.0256165,
+    "address": "87-129 Pennant Hills Road, North Parramatta NSW 2151, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.7851947,151.0256165",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "snm-library-01",
+    "name": "Bundang Library",
+    "type": "library",
+    "city": "seongnam_si",
+    "lat": 37.3583373,
+    "lng": 127.1164338,
+    "address": "Buljeong-ro, Jeongja-dong, Bundang-gu, Seongnam-si, Gyeonggi-do 13602, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.3583373,127.1164338",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "est-library-01",
+    "name": "Biblioteca Publica Maria Zambrano",
+    "type": "library",
+    "city": "estepona",
+    "lat": 36.4290809,
+    "lng": -5.1509387,
+    "address": "Calle de San Fernando, Barriada Islas Canarias, 29680 Estepona, Spain",
+    "gmaps_link": "https://maps.google.com/?q=36.4290809,-5.1509387",
+    "added_by": "yashkewlani"
   }
 ]

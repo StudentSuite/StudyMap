@@ -944,5 +944,27 @@
     "address": "Avinguda de Vicent Sos Baynat, 12071 Castello de la Plana, Spain",
     "gmaps_link": "https://maps.google.com/?q=39.9943120,-0.0713962",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "pmb-other_places-01",
+    "name": "Pymble Ladies College",
+    "type": "other_places",
+    "city": "pymble",
+    "lat": -33.7460852,
+    "lng": 151.1366461,
+    "address": "Avon Road, Pymble NSW 2073, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-33.7460852,151.1366461",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "yng-other_places-01",
+    "name": "Kyung Hee University Global Campus",
+    "type": "other_places",
+    "city": "yongin",
+    "lat": 37.2424001,
+    "lng": 127.0813337,
+    "address": "1732 Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do 17104, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.2424001,127.0813337",
+    "added_by": "yashkewlani"
   }
 ]

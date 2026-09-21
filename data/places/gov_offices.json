@@ -1769,5 +1769,49 @@
     "address": "Strandbadstrasse 2, 82319 Starnberg, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.9994843,11.3512911",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "blc-gov_offices-01",
+    "name": "Access Canberra, Belconnen",
+    "type": "gov_offices",
+    "city": "belconnen",
+    "lat": -35.2383808,
+    "lng": 149.0687594,
+    "address": "Swanson Court, Belconnen ACT 2617, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-35.2383808,149.0687594",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "yng-gov_offices-01",
+    "name": "Yongin City Hall",
+    "type": "gov_offices",
+    "city": "yongin",
+    "lat": 37.241063,
+    "lng": 127.1776328,
+    "address": "Geumhak-ro, Yeokbuk-dong, Cheoin-gu, Yongin-si, Gyeonggi-do 17020, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.2410630,127.1776328",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "snm-gov_offices-01",
+    "name": "Seongnam City Hall",
+    "type": "gov_offices",
+    "city": "seongnam_si",
+    "lat": 37.420094,
+    "lng": 127.1266095,
+    "address": "997 Seongnam-daero, Yeosu-dong, Jungwon-gu, Seongnam-si, Gyeonggi-do 13437, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4200940,127.1266095",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "est-gov_offices-01",
+    "name": "Ayuntamiento de Estepona",
+    "type": "gov_offices",
+    "city": "estepona",
+    "lat": 36.4247785,
+    "lng": -5.1498665,
+    "address": "Avenida Juan Carlos I 40, 29680 Estepona, Spain",
+    "gmaps_link": "https://maps.google.com/?q=36.4247785,-5.1498665",
+    "added_by": "yashkewlani"
   }
 ]
