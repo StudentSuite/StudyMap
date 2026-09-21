@@ -1648,5 +1648,49 @@
     "address": "Uludag Universitesi Kampusu, Gorukle, Nilufer, Bursa 16285, Turkey",
     "gmaps_link": "https://maps.google.com/?q=40.2389670,28.8697527",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "kys-library-01",
+    "name": "Talas Halk Kutuphanesi",
+    "type": "library",
+    "city": "kayseri",
+    "lat": 38.7131141,
+    "lng": 35.5513854,
+    "address": "Gul Sokak, Mevlana Mahallesi, Talas, Kayseri 38030, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.7131141,35.5513854",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ada-library-01",
+    "name": "Cukurova Universitesi Kutuphanesi",
+    "type": "library",
+    "city": "adana",
+    "lat": 37.0600196,
+    "lng": 35.3550451,
+    "address": "Mithat Ozsan Bulvari, Balcali Mahallesi, Saricam, Adana 01330, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0600196,35.3550451",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kam-library-01",
+    "name": "TNRL Kamloops Library",
+    "type": "library",
+    "city": "kamloops",
+    "lat": 50.6757135,
+    "lng": -120.3301247,
+    "address": "465 Victoria Street, Downtown Kamloops, BC V2C 2A9, Canada",
+    "gmaps_link": "https://maps.google.com/?q=50.6757135,-120.3301247",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cha-library-01",
+    "name": "Confederation Centre Public Library",
+    "type": "library",
+    "city": "charlottetown",
+    "lat": 46.2345399,
+    "lng": -63.1269015,
+    "address": "145 Richmond Street, Confederation Centre of the Arts, Charlottetown, PEI C1A 1J1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=46.2345399,-63.1269015",
+    "added_by": "yashkewlani"
   }
 ]

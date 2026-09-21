@@ -1626,5 +1626,49 @@
     "address": "Cikinti Sokak, Yahsibey Mahallesi, Osmangazi, Bursa 16020, Turkey",
     "gmaps_link": "https://maps.google.com/?q=40.1899042,29.0514735",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "kys-gov_offices-01",
+    "name": "Kayseri Valiligi",
+    "type": "gov_offices",
+    "city": "kayseri",
+    "lat": 38.7228513,
+    "lng": 35.4890906,
+    "address": "Hukumet Caddesi, Sahabiye Mahallesi, Kocasinan, Kayseri 38015, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.7228513,35.4890906",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "ada-gov_offices-01",
+    "name": "Adana Valiligi",
+    "type": "gov_offices",
+    "city": "adana",
+    "lat": 37.0003689,
+    "lng": 35.3131363,
+    "address": "Erdal Acet Caddesi, Doseme Mahallesi, Seyhan, Adana 01060, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0003689,35.3131363",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kam-gov_offices-01",
+    "name": "Service BC, Kamloops",
+    "type": "gov_offices",
+    "city": "kamloops",
+    "lat": 50.6704152,
+    "lng": -120.3312204,
+    "address": "250-455 Columbia Street, Lower Sahali, Kamloops, BC V2C 6K4, Canada",
+    "gmaps_link": "https://maps.google.com/?q=50.6704152,-120.3312204",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cha-gov_offices-01",
+    "name": "Service Canada, Charlottetown",
+    "type": "gov_offices",
+    "city": "charlottetown",
+    "lat": 46.237328,
+    "lng": -63.129501,
+    "address": "191 Great George Street, Downtown, Charlottetown, PEI C1A 4L3, Canada",
+    "gmaps_link": "https://maps.google.com/?q=46.2373280,-63.1295010",
+    "added_by": "yashkewlani"
   }
 ]

@@ -900,5 +900,27 @@
     "address": "Nagono, Nakamura Ward, Nagoya, Aichi 450-0002, Japan",
     "gmaps_link": "https://maps.google.com/?q=35.1721135,136.8895707",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "kys-other_places-01",
+    "name": "Erciyes Universitesi",
+    "type": "other_places",
+    "city": "kayseri",
+    "lat": 38.7073914,
+    "lng": 35.5337566,
+    "address": "Erciyes Universitesi Kampusu, Talas, Kayseri 38280, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.7073914,35.5337566",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "kam-other_places-01",
+    "name": "Thompson Rivers University",
+    "type": "other_places",
+    "city": "kamloops",
+    "lat": 50.6724455,
+    "lng": -120.3640266,
+    "address": "805 TRU Way, Upper Sahali, Kamloops, BC V2C 6G2, Canada",
+    "gmaps_link": "https://maps.google.com/?q=50.6724455,-120.3640266",
+    "added_by": "yashkewlani"
   }
 ]
