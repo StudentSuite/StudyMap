@@ -1095,5 +1095,1325 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "usa-biolympiad",
+    "name": "USA Biolympiad (USABO)",
+    "organizer": "Center for Excellence in Education (CEE)",
+    "organizer_url": "https://www.cee.org/",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "genetics",
+      "ecology"
+    ],
+    "description": "A national biology exam series for US high school students that narrows from an online Open Exam through a Semifinal Exam to National Finalists who compete in person at Harvard University. The top scorers there form the four-student team that represents the US at the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 125,
+      "currency": "USD"
+    },
+    "prize": "Advancement to National Finals at Harvard University; top scorers earn a place on the four-student US team for the International Biology Olympiad.",
+    "official_url": "https://usabo-trc.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School registration fee deadline",
+        "date": "2026-10-23",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.cee.org/registration-open-2027-usa-biolympiad"
+      },
+      {
+        "label": "Final student registration deadline",
+        "date": "2026-11-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://usabo-trc.org/"
+      },
+      {
+        "label": "National Finals (Harvard University, following the usual spring pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://usabo-trc.org/whats-new-2027-usabo"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "australian-biology-olympiad",
+    "name": "Australian Biology Olympiad (ABO)",
+    "organizer": "Australian Science Innovations",
+    "organizer_url": "https://asi.edu.au/",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "genetics",
+      "ecology"
+    ],
+    "description": "The national biology exam of the Australian Science Olympiads program, sat by students at their own school before top performers are invited to a residential Summer School at the Australian National University. Established in 1992, its strongest performers go on to trial for the Australian team at the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 22,
+      "currency": "AUD"
+    },
+    "prize": "Selection for the ANU Summer School and a chance to trial for Australia's International Biology Olympiad team.",
+    "official_url": "https://asi.edu.au/program/australian-science-olympiads/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "2026 Biology Olympiad exam",
+        "date": "2026-07-28",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://asi.edu.au/program/australian-science-olympiads/"
+      },
+      {
+        "label": "2027 Biology Olympiad exam (following the usual late-July pattern)",
+        "date": "2027-07-27",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://asi.edu.au/team-australia-2026-international-biology-olympiad/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "singapore-biology-olympiad",
+    "name": "Singapore Biology Olympiad (SBO)",
+    "organizer": "Singapore Institute of Biology (SIBiol) and Ministry of Education",
+    "organizer_url": "https://sibiol.org.sg/",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "molecular biology"
+    ],
+    "description": "An annual biology exam for junior college students in Singapore, run since 2000 through a theory paper followed by a practical test for shortlisted candidates. Top performers receive medals and may enter further training for Singapore's International Biology Olympiad team.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "SG",
+    "fee": {
+      "amount": 0,
+      "currency": "SGD"
+    },
+    "prize": "Gold, silver and bronze medals; top performers are considered for Singapore's IBO training squad.",
+    "official_url": "https://sibiol.org.sg/activities/biology-olympiads/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "SBO theory round (annual November exam)",
+        "date": "2026-11-06",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/sg-singapore-biology-olympiad-33.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "british-biology-olympiad",
+    "name": "British Biology Olympiad (BBO)",
+    "organizer": "Royal Society of Biology",
+    "organizer_url": "https://www.rsb.org.uk/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A two-paper multiple-choice biology exam open to final-year pre-university students across the UK, run through the UK Biology Competitions programme. Gold, silver and bronze certificates are awarded by score, and top performers are invited to UK team selection for the International Biology Olympiad.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Gold, silver, bronze, highly commended and commended e-certificates; top scorers are invited to UK team selection for the IBO.",
+    "official_url": "https://ukbiologycompetitions.org/british-biology-olympiad/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukbiologycompetitions.org/"
+      },
+      {
+        "label": "British Biology Olympiad exam window opens",
+        "date": "2027-01-15",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://ukbiologycompetitions.org/british-biology-olympiad/"
+      },
+      {
+        "label": "British Biology Olympiad exam window closes",
+        "date": "2027-01-22",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://ukbiologycompetitions.org/british-biology-olympiad/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "nz-international-biology-olympiad",
+    "name": "New Zealand International Biology Olympiad (NZIBO)",
+    "organizer": "New Zealand International Biology Olympiad Trust",
+    "organizer_url": "https://nzibo.org/",
+    "category": "stem",
+    "subjects": [
+      "biology",
+      "ecology"
+    ],
+    "description": "A three-stage programme for New Zealand secondary students that starts with a National Entrance Exam, continues through online tutorials for the top scorers, and ends with a practical training and selection camp. Graduates of the programme form New Zealand's team at the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "NZ",
+    "fee": {
+      "amount": 40,
+      "currency": "NZD"
+    },
+    "prize": "Advancement through the tutorial and camp stages toward a place on New Zealand's IBO team; NZIBO scholarships are available toward programme fees.",
+    "official_url": "https://nzibo.org/nzibo-programme/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-06-01",
+        "type": "registration_open",
+        "timezone": "UTC+12",
+        "estimated": false,
+        "source_url": "https://nzibo.org/"
+      },
+      {
+        "label": "Registration closes",
+        "date": "2026-08-10",
+        "type": "registration_close",
+        "timezone": "UTC+12",
+        "estimated": false,
+        "source_url": "https://nzibo.org/key-dates/"
+      },
+      {
+        "label": "National Entrance Exam",
+        "date": "2026-08-19",
+        "type": "round",
+        "timezone": "UTC+12",
+        "estimated": false,
+        "source_url": "https://nzibo.org/key-dates/"
+      },
+      {
+        "label": "Selection exam for Practical Training Camp",
+        "date": "2027-03-03",
+        "type": "round",
+        "timezone": "UTC+13",
+        "estimated": false,
+        "source_url": "https://nzibo.org/key-dates/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "canadian-biology-olympiad",
+    "name": "Canadian Biology Olympiad (CBO)",
+    "organizer": "Canadian Biology Olympiad",
+    "organizer_url": "https://www.canadianbiologyolympiad.ca/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A national online exam for Canadian secondary school students that combines theoretical and practical-style questions in the manner of the International Biology Olympiad. Top scorers attend a training camp at UBC Okanagan, and the strongest performers there are selected for Canada's IBO team.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "Invitation to the national training camp at UBC Okanagan; top performers represent Canada at the IBO.",
+    "official_url": "https://www.canadianbiologyolympiad.ca/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "CBO 2026 competition (most recent sitting)",
+        "date": "2026-04-09",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.canadianbiologyolympiad.ca/CBO2026_Competition-information.pdf"
+      },
+      {
+        "label": "CBO 2027 competition (following the usual April pattern)",
+        "date": "2027-04-08",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/ca-canadian-biology-olympiad-les-olympiades-canadiennes-de-biologie-84.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "national-biology-competition-canada",
+    "name": "National Biology Competition",
+    "organizer": "University of Toronto",
+    "organizer_url": "https://biocomp.utoronto.ca/history/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A 50-question multiple-choice exam run by the University of Toronto that lets grade 9-12 students anywhere test their biology knowledge against a Canadian and international field. Schools with at least five entrants receive team rankings, and top individual scorers and schools earn certificates and monetary awards.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 7,
+      "currency": "CAD"
+    },
+    "prize": "Certificates and monetary awards for top scorers; Certificates of Excellence for the top three Canadian and top three international schools.",
+    "official_url": "https://biocomp.utoronto.ca/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Seat registration window opens",
+        "date": "2026-03-02",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://biocomp.utoronto.ca/"
+      },
+      {
+        "label": "Student registration deadline",
+        "date": "2026-04-07",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://biocomp.utoronto.ca/results/"
+      },
+      {
+        "label": "Exam window",
+        "date": "2026-04-08",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://biocomp.utoronto.ca/"
+      },
+      {
+        "label": "2027 exam window (following the usual April pattern)",
+        "date": "2027-04-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://biocomp.utoronto.ca/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "genes-in-space",
+    "name": "Genes in Space",
+    "organizer": "miniPCR bio, Boeing, New England Biolabs and the ISS National Laboratory",
+    "organizer_url": "https://www.genesinspace.org/",
+    "category": "stem",
+    "subjects": [
+      "genetics",
+      "molecular biology",
+      "biotechnology"
+    ],
+    "description": "A US contest that asks students in grades 7 through 12 to design a DNA experiment that solves a real problem in space exploration, with no prior lab experience required. The winning team's experiment is carried out in orbit by astronauts aboard the International Space Station using miniPCR biotechnology.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "The winning experiment is flown to and run on the International Space Station; finalists' schools receive a DNA Discovery System valued at USD 950.",
+    "official_url": "https://www.genesinspace.org/us-contest/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Applications open",
+        "date": "2026-01-05",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.genesinspace.org/us-contest/"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2026-04-10",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.genesinspace.org/us-contest/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2026-07-01",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://issnationallab.org/partner/genes-in-space/"
+      },
+      {
+        "label": "Winning 2026 experiment launches to the ISS (following the announced 2027 launch window)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.genesinspace.org/us-contest/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "indian-national-biology-olympiad",
+    "name": "Indian National Biology Olympiad (INBO)",
+    "organizer": "Homi Bhabha Centre for Science Education (HBCSE) and Indian Association of Physics Teachers (IAPT)",
+    "organizer_url": "https://www.ibo-info.org/en/countries/nbo/in-indian-national-biology-olympiad-inbo-62.html",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "The second of three stages India uses to select its International Biology Olympiad team, open to students who clear the National Standard Examination in Biology. Roughly 300 students who pass INBO are narrowed further at an Orientation cum Selection Camp at HBCSE Mumbai to choose the four-student national team.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 300,
+      "currency": "INR"
+    },
+    "prize": "Advancement to the Orientation cum Selection Camp; selection for India's four-student IBO team.",
+    "official_url": "https://olympiads.hbcse.tifr.res.in/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Standard Examination in Biology (NSEB)",
+        "date": "2026-11-22",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Indian National Biology Olympiad (INBO)",
+        "date": "2027-01-31",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-15"
+  },
+  {
+    "id": "national-biology-bee",
+    "name": "National Biology Bee",
+    "organizer": "International Academic Competitions (IAC)",
+    "organizer_url": "https://www.iacompetitions.com/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A buzzer-based quiz tournament for US students split into Junior Varsity (grades 9-10) and Varsity (grades 11-12) divisions. Students must first pass a National Qualifying Exam before advancing to the National Championships, an online tournament of preliminary and playoff rounds.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 70,
+      "currency": "USD"
+    },
+    "prize": "Champion titles in the Varsity and Junior Varsity divisions and national recognition through IAC.",
+    "official_url": "https://www.iacompetitions.com/biologybee/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Qualifying Exam window",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://iacompetitionsasia.com/biology-bee/"
+      },
+      {
+        "label": "National Championships",
+        "date": "2027-05-27",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.iacompetitions.com/biologybee/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-06-15"
+  },
+  {
+    "id": "usnco",
+    "name": "U.S. National Chemistry Olympiad (USNCO)",
+    "organizer": "American Chemical Society",
+    "organizer_url": "https://www.acs.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A three-round US chemistry competition run through local ACS sections, moving from a Local Exam to a National Exam and finally a Study Camp for the top scorers. The four highest-performing Study Camp students form the US team for the International Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 60,
+      "currency": "USD"
+    },
+    "prize": "Advancement to the national Study Camp; selection for the four-student US team at IChO.",
+    "official_url": "https://www.acs.org/education/olympiad.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Local Exam window (following the usual late-February to March pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "http://newyorkacs.online/olympiad/"
+      },
+      {
+        "label": "National Exam window (following the usual mid-April pattern)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.acs.org/education/olympiad.html"
+      },
+      {
+        "label": "Study Camp (following the usual early-June pattern)",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.acs.org/education/olympiad.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "uk-chemistry-olympiad",
+    "name": "UK Chemistry Olympiad (UKChO)",
+    "organizer": "Royal Society of Chemistry",
+    "organizer_url": "https://www.rsc.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "The Royal Society of Chemistry's flagship exam for post-16 students, opening with a two-hour written Round One paper sat at more than a thousand schools. Top scorers advance to a residential Round Two at the University of Nottingham, from which the four-student UK team for the International Chemistry Olympiad is chosen.",
+    "format": "hybrid",
+    "age_min": 16,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Gold, silver and bronze certificates by score band; Round Two finalists compete for a place on the UK's IChO team.",
+    "official_url": "https://edu.rsc.org/enrichment/uk-chemistry-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-09-16",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://edu.rsc.org/rsc-education-news/uk-team-wins-gold-and-silver-at-the-2026-international-chemistry-olympiad/4024004.article"
+      },
+      {
+        "label": "Round One exam (2027, following the usual late-January pattern)",
+        "date": "2027-01-27",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://edu.rsc.org/enrichment/uk-chemistry-olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "rsc-schools-analyst-competition",
+    "name": "Schools' Analyst Competition",
+    "organizer": "Royal Society of Chemistry",
+    "organizer_url": "https://www.rsc.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry",
+      "analytical chemistry"
+    ],
+    "description": "A practical analytical chemistry competition run by the Royal Society of Chemistry's Analytical Division for teams of three Year 12 (or equivalent) students in the UK and Ireland. Teams receive a kit of forensic or cosmetic science themed challenges, from titrations to chromatographic separations, to complete at their own school.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 17,
+    "participation": "team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Certificates for winning teams; regional winners receive additional prizes and advance toward UK-wide recognition.",
+    "official_url": "https://www.rsc.org/events/find-an-event/schools-analyst-competition-2026",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-02-27",
+        "type": "registration_close",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.rsc.org/membership-and-community/connect-with-others/through-interests/divisions/analytical/news/2021/09-september/schools-analyst-competition/"
+      },
+      {
+        "label": "Competition kits delivered and event window opens",
+        "date": "2026-04-13",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.rsc.org/events/find-an-event/schools-analyst-competition-2026"
+      },
+      {
+        "label": "UK results submission deadline",
+        "date": "2026-06-19",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.rsc.org/events/find-an-event/schools-analyst-competition-2026"
+      },
+      {
+        "label": "Schools' Analyst Competition 2027 (following the usual spring pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.rsc.org/events/find-an-event/schools-analyst-competition-2026"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "canadian-chemistry-olympiad",
+    "name": "Canadian Chemistry Olympiad (CCO)",
+    "organizer": "Chemical Institute of Canada",
+    "organizer_url": "https://www.cheminst.ca/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A training and exam programme for Canadian high school students with advanced chemistry interest, built around monthly problem sets and a take-home exam each March. Top performers are invited to a residential training camp, from which Canada's four-student team for the International Chemistry Olympiad is chosen.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "Invitation to the national training camp; selection for Canada's four-student IChO team.",
+    "official_url": "https://cco-occ.ca/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2026-2027 training programme registration opens",
+        "date": "2026-09-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://cco-occ.utschools.ca/?p=1"
+      },
+      {
+        "label": "Take-home exam (following the usual March pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://cco-occ.ca/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "canadian-chemistry-contest",
+    "name": "Canadian Chemistry Contest (CCC)",
+    "organizer": "Chemical Institute of Canada",
+    "organizer_url": "https://www.cheminst.ca/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "An in-school multiple-choice and short-essay chemistry exam aimed at Canada's top chemistry students, roughly the top ten percent of secondary and CEGEP students under 20. It is written under teacher supervision and, unlike the Canadian Chemistry Olympiad, does not lead to international team selection, serving instead as a broader annual benchmark of chemistry achievement.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "Certificates and national ranking recognition from the Chemical Institute of Canada.",
+    "official_url": "https://www.cheminst.ca/discover/canadian-chemistry-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-12-29",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cheminst.ca/discover/canadian-chemistry-contest/"
+      },
+      {
+        "label": "Contest date",
+        "date": "2027-01-19",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cco-occ.ca/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "australian-chemistry-olympiad-program",
+    "name": "Australian Chemistry Olympiad Program (ACOP)",
+    "organizer": "Australian Science Innovations",
+    "organizer_url": "https://asi.edu.au/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "The chemistry stream of the Australian Science Olympiads, sat by students at their own school before top performers attend a residential Summer School at the Australian National University. Strong performers there go on to trial for the Australian team at the International Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 22,
+      "currency": "AUD"
+    },
+    "prize": "Selection for the ANU Summer School and a chance to trial for Australia's IChO team.",
+    "official_url": "https://asi.edu.au/program/australian-science-olympiads/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "2026 Chemistry Olympiad exam",
+        "date": "2026-07-30",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://asi.edu.au/program/australian-science-olympiads/"
+      },
+      {
+        "label": "2027 Chemistry Olympiad exam (following the usual late-July pattern)",
+        "date": "2027-07-29",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://asi.edu.au/team-australia-2026-international-chemistry-olympiad/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "you-be-the-chemist-challenge",
+    "name": "You Be The Chemist Challenge",
+    "organizer": "Chemical Educational Foundation",
+    "organizer_url": "https://www.chemed.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry",
+      "sustainability"
+    ],
+    "description": "A free team competition for US students in grades 5 through 8 that pairs timed chemistry knowledge questions with a video challenge pitching a sustainability-focused start-up idea. Teams advance from Regional Challenges through State Challenges to a National Challenge in Houston, Texas.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarship awards for top teams at the National Challenge in Houston, Texas.",
+    "official_url": "https://www.chemed.org/programs/challenge/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional Challenges (following the usual winter pattern)",
+        "date": "2027-01-15",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://abc13.com/post/you-be-the-chemist-challenge-stem-students-scholarships-careers/13854963/"
+      },
+      {
+        "label": "National Challenge (Houston, TX, following the usual spring pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.chemed.org/programs/challenge/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "nz-chemistry-olympiad",
+    "name": "New Zealand Chemistry Olympiad (NZChO)",
+    "organizer": "New Zealand Institute of Chemistry",
+    "organizer_url": "https://nzic.org.nz/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "An in-school chemistry assessment run by a volunteer committee of New Zealand secondary and tertiary teachers, open to any Year 12 student or below. Results are used to invite a training group of top scorers, who study extension modules over summer ahead of team selection for the International Chemistry Olympiad.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "NZ",
+    "fee": {
+      "amount": 40,
+      "currency": "NZD"
+    },
+    "prize": "Invitation to the NZChO training group; registration fees are donated to education charities.",
+    "official_url": "https://nzic.org.nz/resources_open.php",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-09-08",
+        "type": "registration_close",
+        "timezone": "UTC+12",
+        "estimated": false,
+        "source_url": "https://help.educationperfect.com/en/articles/14792848-2026-nz-chemistry-olympiad-faq"
+      },
+      {
+        "label": "Exam window",
+        "date": "2026-09-14",
+        "type": "round",
+        "timezone": "UTC+12",
+        "estimated": false,
+        "source_url": "https://help.educationperfect.com/en/articles/14792848-2026-nz-chemistry-olympiad-faq"
+      },
+      {
+        "label": "2027 exam window (following the usual September pattern)",
+        "date": "2027-09-13",
+        "type": "round",
+        "timezone": "UTC+12",
+        "estimated": true,
+        "source_url": "https://help.educationperfect.com/en/articles/14792848-2026-nz-chemistry-olympiad-faq"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-08-01"
+  },
+  {
+    "id": "singapore-junior-chemistry-olympiad",
+    "name": "Singapore Junior Chemistry Olympiad (SJChO)",
+    "organizer": "Singapore National Institute of Chemistry",
+    "organizer_url": "https://snic.org.sg/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "An annual two-round chemistry competition for upper secondary students in Singapore, drawing more than 2,000 entrants from over 80 schools each year. It complements the senior Singapore Chemistry Olympiad by giving younger students an early taste of olympiad-style chemistry problem solving.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "SG",
+    "fee": {
+      "amount": 0,
+      "currency": "SGD"
+    },
+    "prize": "Medals and certificates by score band; strong performers are encouraged toward the senior Singapore Chemistry Olympiad.",
+    "official_url": "https://snic.org.sg/index.php/event/sjcho",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-03-31",
+        "type": "registration_close",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://snic.org.sg/index.php/event/sjcho/sjcho-important-dates"
+      },
+      {
+        "label": "Round 1",
+        "date": "2026-05-20",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://snic.org.sg/index.php/event/sjcho/sjcho-important-dates"
+      },
+      {
+        "label": "Round 2",
+        "date": "2026-07-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://snic.org.sg/index.php/event/sjcho/sjcho-important-dates"
+      },
+      {
+        "label": "2027 Round 1 (following the usual pattern)",
+        "date": "2027-05-19",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://snic.org.sg/index.php/event/sjcho/sjcho-important-dates"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "indian-national-chemistry-olympiad",
+    "name": "Indian National Chemistry Olympiad (INChO)",
+    "organizer": "Homi Bhabha Centre for Science Education (HBCSE) and Indian Association of Physics Teachers (IAPT)",
+    "organizer_url": "https://www.iapt.org.in/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "The second of three stages India uses to select its International Chemistry Olympiad team, open to students who clear the National Standard Examination in Chemistry. Roughly 300 qualifiers sit INChO, and the strongest performers are invited to an Orientation cum Selection Camp at HBCSE Mumbai to choose the four-student national team.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 300,
+      "currency": "INR"
+    },
+    "prize": "Advancement to the Orientation cum Selection Camp; selection for India's four-student IChO team.",
+    "official_url": "https://olympiads.hbcse.tifr.res.in/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Standard Examination in Chemistry (NSEC)",
+        "date": "2026-11-22",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Indian National Chemistry Olympiad (INChO)",
+        "date": "2027-01-30",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-15"
+  },
+  {
+    "id": "irish-chemistry-olympiad",
+    "name": "Chemistry Olympiad Ireland",
+    "organizer": "Institute of Chemistry of Ireland and Irish Science Teachers' Association",
+    "organizer_url": "https://www.chemistryireland.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A two-round chemistry exam open to final-year secondary students across Ireland and Northern Ireland, with Round One sat at assessment centres including DCU, UCC, QUB and TUS. Top scorers from Round One advance to an in-person Round Two at Dublin City University, from which Ireland's team for the International Chemistry Olympiad is chosen.",
+    "format": "in_person",
+    "age_min": 17,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Advancement to Round Two at Dublin City University; selection for Ireland's IChO team.",
+    "official_url": "https://ista.ie/irish-chemistry-olympiad/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Round 1 (DCU, UCC, QUB and TUS assessment centres)",
+        "date": "2026-02-21",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://ista.ie/registration-for-2026-chemistry-olympiad-ireland-competition"
+      },
+      {
+        "label": "Round 2 (Dublin City University)",
+        "date": "2026-04-09",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ista.ie/registration-for-2026-chemistry-olympiad-ireland-competition"
+      },
+      {
+        "label": "Chemistry Olympiad Ireland 2027 Round 1 (following the usual February pattern)",
+        "date": "2027-02-20",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://ista.ie/registration-for-2026-chemistry-olympiad-ireland-competition"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "national-ocean-sciences-bowl",
+    "name": "National Ocean Sciences Bowl (NOSB)",
+    "organizer": "Center for Ocean Leadership (UCAR)",
+    "organizer_url": "https://nosb.org/",
+    "category": "stem",
+    "subjects": [
+      "marine science",
+      "oceanography",
+      "marine biology"
+    ],
+    "description": "A quiz bowl for teams of four or five US high schoolers covering ocean biology, chemistry, geology, physics and policy through lockout-buzzer and team-challenge rounds. About 25 regional bowls each year qualify teams for the National Finals, with a scored virtual poster round piloted alongside the buzzer competition in 2027.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 300,
+      "currency": "USD"
+    },
+    "prize": "Regional bowl trophies; National Finals recognition and scholarships for top teams.",
+    "official_url": "https://nosb.org/rules/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional registration opens",
+        "date": "2026-10-05",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nosb.org/"
+      },
+      {
+        "label": "Virtual Sponge Bowl regional",
+        "date": "2027-03-20",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nosb.org/rules/"
+      },
+      {
+        "label": "National Finals (following the usual spring pattern)",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://nosb.org/finals-competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "mate-rov-competition",
+    "name": "MATE ROV Competition",
+    "organizer": "Marine Advanced Technology Education (MATE) Center and Marine Technology Society",
+    "organizer_url": "https://materovcompetition.org/",
+    "category": "stem",
+    "subjects": [
+      "marine science",
+      "marine engineering",
+      "robotics"
+    ],
+    "description": "An underwater robotics competition in which student teams design, build and pilot a remotely operated vehicle through marine-workplace missions, then present an engineering notebook, poster and oral presentation to judges. Teams progress through the SCOUT, NAVIGATOR and RANGER classes at regional events toward the international World Championship.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 250,
+      "currency": "USD"
+    },
+    "prize": "Class awards and technical achievement prizes at regional events; qualification to the World Championship.",
+    "official_url": "https://materovcompetition.org/world-championship",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Northern Gulf Coast regional (Dauphin Island Sea Lab)",
+        "date": "2027-04-23",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.disl.edu/dhp/competitions/mate/"
+      },
+      {
+        "label": "World Championship (Federal Way, Washington)",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://materovcompetition.org/world-championship"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "seaperch-challenge",
+    "name": "SeaPerch Challenge",
+    "organizer": "RoboNation, sponsored by the Office of Naval Research",
+    "organizer_url": "https://robonation.org/programs/seaperch/",
+    "category": "stem",
+    "subjects": [
+      "marine engineering",
+      "robotics",
+      "marine science"
+    ],
+    "description": "A program in which elementary, middle and high school teams build an underwater remotely operated vehicle from a SeaPerch kit and compete in local and regional challenges built around a yearly marine engineering theme. Teams that place well regionally earn an invitation to the International SeaPerch Challenge.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Regional challenge awards; qualification to the International SeaPerch Challenge.",
+    "official_url": "https://seaperch.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "International SeaPerch Challenge (College Park, MD)",
+        "date": "2026-05-30",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://seaperch.org/2026-challenge/"
+      },
+      {
+        "label": "International SeaPerch Challenge 2027 (following the usual late-May pattern)",
+        "date": "2027-05-29",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://seaperch.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "marine-science-scholarship-competition",
+    "name": "Marine Science Scholarship Competition",
+    "organizer": "American Salvage Association and North American Marine Environment Protection Association",
+    "organizer_url": "https://namepa.net/",
+    "category": "stem",
+    "subjects": [
+      "marine science",
+      "ocean engineering"
+    ],
+    "description": "A research paper competition open to US high school and undergraduate students who have entered a science or engineering fair project in a marine-related field such as marine environmental care, ocean engineering or underwater robotics. A technical committee of maritime professionals reviews a project abstract and paper, and winners present their work at NAMEPA's Annual Conference in New York.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 500 first place, USD 250 second place and USD 100 third place, plus sponsored travel to NAMEPA's Annual Conference in New York.",
+    "official_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submission window opens",
+        "date": "2026-04-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2026-10-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html"
+      },
+      {
+        "label": "Awards presented at NAMEPA Annual Conference (New York)",
+        "date": "2026-10-29",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://namepa.net/science-awards/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-21"
+    },
+    "valid_till": "2026-11-15"
   }
 ]
