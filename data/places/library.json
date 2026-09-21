@@ -1593,5 +1593,60 @@
     "address": "1 Kasugamachi, Aoba Ward, Sendai, Miyagi 980-0821, Japan",
     "gmaps_link": "https://maps.google.com/?q=38.2655142,140.8655467",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "esk-library-01",
+    "name": "Eskisehir Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "eskisehir",
+    "lat": 39.7712518,
+    "lng": 30.5157646,
+    "address": "Resadiye Caddesi 16, Arifiye Mahallesi, Odunpazari, Eskisehir 26010, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.7712518,30.5157646",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "atl-library-01",
+    "name": "Antalya Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "antalya",
+    "lat": 36.8978803,
+    "lng": 30.6931608,
+    "address": "Sokullu Caddesi, Ucgen Mahallesi, Muratpasa, Antalya 07386, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8978803,30.6931608",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "atl-library-02",
+    "name": "Akdeniz Universitesi Merkez Kutuphanesi",
+    "type": "library",
+    "city": "antalya",
+    "lat": 36.8938473,
+    "lng": 30.6508866,
+    "address": "Akdeniz Universitesi Kampusu, Dumlupinar Bulvari, Konyaalti, Antalya 07070, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8938473,30.6508866",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bky-library-01",
+    "name": "IBB Baruthane Kutuphane, Bakirkoy",
+    "type": "library",
+    "city": "bakirkoy_istanbul",
+    "lat": 40.9755004,
+    "lng": 28.860091,
+    "address": "Rauf Orbay Caddesi, Atakoy, Bakirkoy, Istanbul 34158, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.9755004,28.8600910",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "brsa-library-01",
+    "name": "Bursa Uludag Universitesi Merkez Kutuphanesi",
+    "type": "library",
+    "city": "bursa",
+    "lat": 40.238967,
+    "lng": 28.8697527,
+    "address": "Uludag Universitesi Kampusu, Gorukle, Nilufer, Bursa 16285, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.2389670,28.8697527",
+    "added_by": "yashkewlani"
   }
 ]

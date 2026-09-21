@@ -1582,5 +1582,49 @@
     "address": "1-Chome Gorin, Miyagino Ward, Sendai, Miyagi 983-0842, Japan",
     "gmaps_link": "https://maps.google.com/?q=38.2625983,140.8987564",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "esk-gov_offices-01",
+    "name": "Eskisehir Valiligi",
+    "type": "gov_offices",
+    "city": "eskisehir",
+    "lat": 39.770618,
+    "lng": 30.5181134,
+    "address": "Inhisar Sokak, Arifiye Mahallesi, Odunpazari, Eskisehir 26010, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.7706180,30.5181134",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "atl-gov_offices-01",
+    "name": "Antalya Il Goc Idaresi (Provincial Migration Directorate)",
+    "type": "gov_offices",
+    "city": "antalya",
+    "lat": 36.9009074,
+    "lng": 30.6682758,
+    "address": "Gazi Bulvari 2, Bayindir Mahallesi, Muratpasa, Antalya 07030, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.9009074,30.6682758",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bky-gov_offices-01",
+    "name": "Bakirkoy Kaymakamligi",
+    "type": "gov_offices",
+    "city": "bakirkoy_istanbul",
+    "lat": 40.9782253,
+    "lng": 28.8253346,
+    "address": "Basin Ekspress Yolu, Yesilkoy Mahallesi, Bakirkoy, Istanbul 34149, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.9782253,28.8253346",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "brsa-gov_offices-01",
+    "name": "Osmangazi Kaymakamligi, Bursa",
+    "type": "gov_offices",
+    "city": "bursa",
+    "lat": 40.1899042,
+    "lng": 29.0514735,
+    "address": "Cikinti Sokak, Yahsibey Mahallesi, Osmangazi, Bursa 16020, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.1899042,29.0514735",
+    "added_by": "yashkewlani"
   }
 ]

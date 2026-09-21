@@ -550,5 +550,17 @@
     "gmaps_link": "https://maps.google.com/?q=-22.9480586,-43.1844316",
     "added_by": "yashkewlani",
     "exam": "DELF/DALF"
+  },
+  {
+    "id": "esk-foreign_lang_exam_centre-01",
+    "name": "Anadolu Universitesi TOMER (Turkish Language Centre)",
+    "type": "foreign_lang_exam_centre",
+    "city": "eskisehir",
+    "lat": 39.7918989,
+    "lng": 30.5005231,
+    "address": "Anadolu Universitesi Kampusu, Tepebasi, Eskisehir 26200, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.7918989,30.5005231",
+    "added_by": "yashkewlani",
+    "exam": "TOMER Turkish Proficiency Certificate"
   }
 ]
