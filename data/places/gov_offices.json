@@ -1813,5 +1813,60 @@
     "address": "Avenida Juan Carlos I 40, 29680 Estepona, Spain",
     "gmaps_link": "https://maps.google.com/?q=36.4247785,-5.1498665",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "mnz-gov_offices-01",
+    "name": "Municipio di Monza",
+    "type": "gov_offices",
+    "city": "monza",
+    "lat": 45.5843671,
+    "lng": 9.2736226,
+    "address": "Piazza Trento e Trieste, 20900 Monza, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.5843671,9.2736226",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "tri-gov_offices-01",
+    "name": "Questura di Trieste",
+    "type": "gov_offices",
+    "city": "trieste",
+    "lat": 45.6495405,
+    "lng": 13.7711782,
+    "address": "Via del Teatro Romano, 34121 Trieste, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.6495405,13.7711782",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "sta-gov_offices-01",
+    "name": "Paco Municipal de Santo Andre",
+    "type": "gov_offices",
+    "city": "santo_andre",
+    "lat": -23.6573836,
+    "lng": -46.5326441,
+    "address": "Viaduto Acisa, Centro, Santo Andre, SP 09015-000, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.6573836,-46.5326441",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "trs-gov_offices-01",
+    "name": "Palacio de Karnak (Piaui State Government Palace)",
+    "type": "gov_offices",
+    "city": "teresina",
+    "lat": -5.0911908,
+    "lng": -42.8115824,
+    "address": "Avenida Antonino Freire 1450, Centro, Teresina, PI 64001-040, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0911908,-42.8115824",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "aro-gov_offices-01",
+    "name": "Municipio di Arona",
+    "type": "gov_offices",
+    "city": "arona",
+    "lat": 45.7605462,
+    "lng": 8.5596567,
+    "address": "Via San Carlo 2, 28041 Arona, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.7605462,8.5596567",
+    "added_by": "yashkewlani"
   }
 ]

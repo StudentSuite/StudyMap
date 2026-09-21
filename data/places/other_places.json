@@ -966,5 +966,16 @@
     "address": "1732 Deogyeong-daero, Giheung-gu, Yongin-si, Gyeonggi-do 17104, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.2424001,127.0813337",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "mnz-other_places-01",
+    "name": "Universita degli Studi di Milano-Bicocca, Facolta di Medicina e Chirurgia",
+    "type": "other_places",
+    "city": "monza",
+    "lat": 45.6038939,
+    "lng": 9.2613173,
+    "address": "Via Cadore 48, 20900 Monza, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.6038939,9.2613173",
+    "added_by": "yashkewlani"
   }
 ]

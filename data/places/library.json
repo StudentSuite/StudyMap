@@ -1835,5 +1835,49 @@
     "address": "Calle de San Fernando, Barriada Islas Canarias, 29680 Estepona, Spain",
     "gmaps_link": "https://maps.google.com/?q=36.4290809,-5.1509387",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "tri-library-01",
+    "name": "Biblioteca Civica Attilio Hortis",
+    "type": "library",
+    "city": "trieste",
+    "lat": 45.6468861,
+    "lng": 13.7677761,
+    "address": "Via della Madonna del Mare 13, 34124 Trieste, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.6468861,13.7677761",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "sta-library-01",
+    "name": "Biblioteca Nair Lacerda",
+    "type": "library",
+    "city": "santo_andre",
+    "lat": -23.6568867,
+    "lng": -46.5324207,
+    "address": "Praca IV Centenario, Centro, Santo Andre, SP 09015-080, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.6568867,-46.5324207",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "trs-library-01",
+    "name": "Biblioteca Publica Estadual Desembargador Cromwell de Carvalho",
+    "type": "library",
+    "city": "teresina",
+    "lat": -5.0879694,
+    "lng": -42.809889,
+    "address": "Rua Coelho Rodrigues, Centro, Teresina, PI 64002-470, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0879694,-42.8098890",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "aro-library-01",
+    "name": "Biblioteca Civica Senatore Carlo Torelli",
+    "type": "library",
+    "city": "arona",
+    "lat": 45.7613165,
+    "lng": 8.5605349,
+    "address": "Piazza San Graziano 3, 28041 Arona, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.7613165,8.5605349",
+    "added_by": "yashkewlani"
   }
 ]
