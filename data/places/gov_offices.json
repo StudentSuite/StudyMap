@@ -1670,5 +1670,49 @@
     "address": "191 Great George Street, Downtown, Charlottetown, PEI C1A 4L3, Canada",
     "gmaps_link": "https://maps.google.com/?q=46.2373280,-63.1295010",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "iba-gov_offices-01",
+    "name": "Oyo State Secretariat",
+    "type": "gov_offices",
+    "city": "ibadan",
+    "lat": 7.4083416,
+    "lng": 3.9100546,
+    "address": "Parliament Road, Ibadan North, Oyo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.4083416,3.9100546",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bdx-gov_offices-01",
+    "name": "Prefecture de la Gironde",
+    "type": "gov_offices",
+    "city": "bordeaux",
+    "lat": 44.8373522,
+    "lng": -0.5866557,
+    "address": "Rue du Corps Franc Pommies, 33000 Bordeaux, France",
+    "gmaps_link": "https://maps.google.com/?q=44.8373522,-0.5866557",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cst-gov_offices-01",
+    "name": "Ajuntament de Castello de la Plana",
+    "type": "gov_offices",
+    "city": "castellon",
+    "lat": 39.9860508,
+    "lng": -0.0378819,
+    "address": "Placa Major, 12001 Castello de la Plana, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.9860508,-0.0378819",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mbl-gov_offices-01",
+    "name": "Comisaria de Policia Nacional de Marbella",
+    "type": "gov_offices",
+    "city": "marbella_malaga",
+    "lat": 36.516808,
+    "lng": -4.8849743,
+    "address": "Avenida Arias de Velasco, 29601 Marbella, Spain",
+    "gmaps_link": "https://maps.google.com/?q=36.5168080,-4.8849743",
+    "added_by": "yashkewlani"
   }
 ]

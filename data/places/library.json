@@ -1692,5 +1692,49 @@
     "address": "145 Richmond Street, Confederation Centre of the Arts, Charlottetown, PEI C1A 1J1, Canada",
     "gmaps_link": "https://maps.google.com/?q=46.2345399,-63.1269015",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "iba-library-01",
+    "name": "Kenneth Dike Library, University of Ibadan",
+    "type": "library",
+    "city": "ibadan",
+    "lat": 7.4466435,
+    "lng": 3.8961044,
+    "address": "Cross Road, University of Ibadan, Ibadan North, Oyo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.4466435,3.8961044",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "bdx-library-01",
+    "name": "Bibliotheque Meriadeck",
+    "type": "library",
+    "city": "bordeaux",
+    "lat": 44.8353054,
+    "lng": -0.5868838,
+    "address": "85 Cours du Marechal Juin, 33000 Bordeaux, France",
+    "gmaps_link": "https://maps.google.com/?q=44.8353054,-0.5868838",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cst-library-01",
+    "name": "Biblioteca Rafalafena",
+    "type": "library",
+    "city": "castellon",
+    "lat": 39.988549,
+    "lng": -0.0308492,
+    "address": "Carrer de Benicarlo, 12003 Castello de la Plana, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.9885490,-0.0308492",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "mbl-library-01",
+    "name": "Biblioteca Central Fernando Alcala",
+    "type": "library",
+    "city": "marbella_malaga",
+    "lat": 36.5134803,
+    "lng": -4.8834134,
+    "address": "Calle Juan Alameda, Casco Antiguo, 29601 Marbella, Spain",
+    "gmaps_link": "https://maps.google.com/?q=36.5134803,-4.8834134",
+    "added_by": "yashkewlani"
   }
 ]

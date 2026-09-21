@@ -922,5 +922,27 @@
     "address": "805 TRU Way, Upper Sahali, Kamloops, BC V2C 6G2, Canada",
     "gmaps_link": "https://maps.google.com/?q=50.6724455,-120.3640266",
     "added_by": "yashkewlani"
+  },
+  {
+    "id": "bdx-other_places-01",
+    "name": "Universite de Bordeaux, Domaine du Haut-Carre",
+    "type": "other_places",
+    "city": "bordeaux",
+    "lat": 44.8096516,
+    "lng": -0.5974013,
+    "address": "Rue Pierre Noailles, Talence, 33400 Bordeaux, France",
+    "gmaps_link": "https://maps.google.com/?q=44.8096516,-0.5974013",
+    "added_by": "yashkewlani"
+  },
+  {
+    "id": "cst-other_places-01",
+    "name": "Universitat Jaume I",
+    "type": "other_places",
+    "city": "castellon",
+    "lat": 39.994312,
+    "lng": -0.0713962,
+    "address": "Avinguda de Vicent Sos Baynat, 12071 Castello de la Plana, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.9943120,-0.0713962",
+    "added_by": "yashkewlani"
   }
 ]
