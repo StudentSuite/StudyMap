@@ -48,6 +48,12 @@ export async function GET(request: Request) {
   const { searchParams } = new URL(request.url);
   const code = searchParams.get("code");
   const next = safeNext(searchParams.get("next"));
+  // Explicit, first-party recovery marker set by the "forgot password" form
+  // (see login-form.tsx) on its `redirectTo`, checked alongside Supabase's
+  // own `redirectType` below. Two independent signals rather than relying
+  // solely on the SDK's return value, which the library itself notes isn't
+  // even part of the client's declared return type.
+  const flow = searchParams.get("flow");
 
   // No Supabase configured (self-host / preview mode): nothing to exchange.
   if (!isSupabaseConfigured()) {
@@ -74,23 +80,37 @@ export async function GET(request: Request) {
     );
 
     const { data, error } = await supabase.auth.exchangeCodeForSession(code);
+    // exchangeCodeForSession's return type doesn't declare `redirectType`,
+    // but the client library does set it at runtime - "recovery" for a
+    // password reset link, absent/null otherwise. Combined with the
+    // first-party `flow` marker above so recovery is never misdetected as
+    // a normal sign-in on account of an SDK quirk.
+    const redirectType = (data as { redirectType?: string | null } | null)?.redirectType;
+    const isRecovery = flow === "recovery" || redirectType === "recovery";
+
     if (!error) {
-      // exchangeCodeForSession's return type doesn't declare `redirectType`,
-      // but the client library does set it at runtime - "recovery" for a
-      // password reset link, absent/null otherwise. A recovery session
-      // shouldn't run the first-run-onboarding check below (it's not a
-      // normal sign-in); instead flag it for the login form to pick up,
-      // since the code exchange happens here server-side and the login
-      // form itself never sees Supabase's own PASSWORD_RECOVERY event.
-      const redirectType = (data as { redirectType?: string | null } | null)
-        ?.redirectType;
-      if (redirectType === "recovery") {
+      if (isRecovery) {
+        // A recovery session shouldn't run the first-run-onboarding check
+        // below (it's not a normal sign-in); instead flag it for the login
+        // form to pick up, since the code exchange happens here
+        // server-side and the login form itself never sees Supabase's own
+        // PASSWORD_RECOVERY event.
         const separator = next.includes("?") ? "&" : "?";
         return NextResponse.redirect(`${SITE_URL}${next}${separator}type=recovery`);
       }
       return NextResponse.redirect(
         `${SITE_URL}${await destinationAfterSignIn(supabase, next)}`,
       );
+    }
+
+    // Exchange failed: for a recovery link, this is almost always an
+    // expired or already-used link, or one opened in a different browser
+    // than the one that requested the reset (the PKCE code verifier lives
+    // in that browser's cookies). Route to a recovery-specific message with
+    // an immediate way to request a new link - the generic "sign-in
+    // failed" message makes no sense to someone who was never signing in.
+    if (isRecovery) {
+      return NextResponse.redirect(`${SITE_URL}/login?error=recovery_link_invalid`);
     }
   }
 

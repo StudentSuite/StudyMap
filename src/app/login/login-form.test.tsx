@@ -40,17 +40,23 @@ vi.mock("@/lib/supabase/client", () => ({
   }),
 }));
 
+const fetchMock = vi.fn();
+
 beforeEach(() => {
   searchParamsGet.mockImplementation((name: string) =>
     name === "error" ? "auth_error" : null,
   );
   resetPasswordForEmail.mockResolvedValue({ error: null });
   updateUser.mockResolvedValue({ error: null });
+  fetchMock.mockReset();
+  fetchMock.mockResolvedValue(new Response(JSON.stringify({ ok: true })));
+  vi.stubGlobal("fetch", fetchMock);
 });
 
 afterEach(() => {
   cleanup();
   vi.clearAllMocks();
+  vi.unstubAllGlobals();
 });
 
 describe("LoginForm OAuth errors", () => {
@@ -112,8 +118,55 @@ describe("LoginForm password reset", () => {
     await waitFor(() => expect(resetPasswordForEmail).toHaveBeenCalledTimes(1));
     const [email, options] = resetPasswordForEmail.mock.calls[0];
     expect(email).toBe("student@example.com");
-    expect(options.redirectTo).toMatch(/\/auth\/callback\?next=%2Flogin$/);
+    expect(options.redirectTo).toMatch(/\/auth\/callback\?next=%2Flogin&flow=recovery$/);
     expect(toastSuccess).toHaveBeenCalled();
+  });
+
+  it("checks the rate limit before requesting a reset link", async () => {
+    render(<LoginForm />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Forgot password?" }));
+    fireEvent.change(screen.getByLabelText("Email"), {
+      target: { value: "student@example.com" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Send reset link" }));
+
+    await waitFor(() => expect(resetPasswordForEmail).toHaveBeenCalledTimes(1));
+    expect(fetchMock).toHaveBeenCalledWith(
+      "/api/auth/forgot-password",
+      expect.objectContaining({ method: "POST" }),
+    );
+    const [, options] = fetchMock.mock.calls[0];
+    expect(JSON.parse(options.body as string)).toEqual({ email: "student@example.com" });
+  });
+
+  it("blocks the reset request and shows a toast when rate limited", async () => {
+    fetchMock.mockResolvedValue(new Response(JSON.stringify({ ok: false })));
+    render(<LoginForm />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Forgot password?" }));
+    fireEvent.change(screen.getByLabelText("Email"), {
+      target: { value: "student@example.com" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Send reset link" }));
+
+    await waitFor(() =>
+      expect(toastError).toHaveBeenCalledWith(expect.stringContaining("too many times")),
+    );
+    expect(resetPasswordForEmail).not.toHaveBeenCalled();
+  });
+
+  it("fails open and still sends the reset link when the rate-limit check errors", async () => {
+    fetchMock.mockRejectedValue(new Error("network down"));
+    render(<LoginForm />);
+
+    fireEvent.click(screen.getByRole("button", { name: "Forgot password?" }));
+    fireEvent.change(screen.getByLabelText("Email"), {
+      target: { value: "student@example.com" },
+    });
+    fireEvent.click(screen.getByRole("button", { name: "Send reset link" }));
+
+    await waitFor(() => expect(resetPasswordForEmail).toHaveBeenCalledTimes(1));
   });
 
   it("shows an error toast when the reset request fails", async () => {
@@ -127,6 +180,20 @@ describe("LoginForm password reset", () => {
     fireEvent.click(screen.getByRole("button", { name: "Send reset link" }));
 
     await waitFor(() => expect(toastError).toHaveBeenCalledWith("rate limited"));
+  });
+
+  it("lands on the forgot-password form with a clear message for an expired/invalid recovery link", () => {
+    searchParamsGet.mockImplementation((name: string) =>
+      name === "error" ? "recovery_link_invalid" : null,
+    );
+
+    render(<LoginForm />);
+
+    expect(screen.getByText("Reset your password")).toBeTruthy();
+    expect(screen.getByRole("alert").textContent).toContain(
+      "This password reset link is invalid or has expired.",
+    );
+    expect(screen.getByLabelText("Email")).toBeTruthy();
   });
 
   it("can go back to sign-in from the forgot-password form", () => {

@@ -16,6 +16,10 @@ import { Label } from "@/components/ui/label";
 
 const AUTH_ERROR_MESSAGES = new Map([
   ["auth_error", "Sign-in failed or was cancelled. Please try again."],
+  [
+    "recovery_link_invalid",
+    "This password reset link is invalid or has expired. Request a new one below.",
+  ],
 ]);
 
 const DEFAULT_AUTH_ERROR_MESSAGE = "Sign-in failed. Please try again.";
@@ -35,8 +39,16 @@ export function LoginForm() {
 
   const supabase = createClient();
 
+  // A failed/expired recovery link should land the user straight back on
+  // the "forgot password" form (with the error message above explaining
+  // why) rather than on plain sign-in, so requesting a new link is the very
+  // next thing they can do.
   const [mode, setMode] = React.useState<"signin" | "signup" | "forgot" | "reset">(
-    isRecoveryLink ? "reset" : "signin",
+    isRecoveryLink
+      ? "reset"
+      : errorCode === "recovery_link_invalid"
+        ? "forgot"
+        : "signin",
   );
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
@@ -128,13 +140,41 @@ export function LoginForm() {
     e.preventDefault();
     setLoading(true);
 
+    // Rate-limit gate (at most a handful of requests per email per couple
+    // of weeks - see the migration for the exact policy): checked and
+    // recorded server-side, since a client-only limit is trivially reset by
+    // clearing local state. This never sends the email itself - only the
+    // client-side resetPasswordForEmail call below can, because Supabase's
+    // PKCE recovery flow needs the code verifier stored in *this* browser,
+    // not the server. Fails open on any network hiccup so an outage here
+    // never blocks a legitimate reset.
+    try {
+      const res = await fetch("/api/auth/forgot-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      const { ok } = (await res.json()) as { ok: boolean };
+      if (!ok) {
+        toast.error(
+          "You've requested a password reset too many times recently. Please try again in a couple of weeks, or contact support if you're locked out.",
+        );
+        setLoading(false);
+        return;
+      }
+    } catch {
+      // Network/parse failure: fail open, see comment above.
+    }
+
     // Reuses the same /auth/callback redirect convention as Google OAuth
-    // above. The callback route detects the recovery-typed code exchange
-    // and appends `type=recovery` so this form knows to switch to the
-    // update-password state once the user lands back here.
+    // above, plus an explicit `flow=recovery` marker the callback route
+    // uses (alongside Supabase's own signal) to reliably detect a recovery
+    // code exchange. The callback route then appends `type=recovery` so
+    // this form knows to switch to the update-password state once the user
+    // lands back here.
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? site.url;
     const { error } = await client.auth.resetPasswordForEmail(email, {
-      redirectTo: `${siteUrl}/auth/callback?next=${encodeURIComponent("/login")}`,
+      redirectTo: `${siteUrl}/auth/callback?next=${encodeURIComponent("/login")}&flow=recovery`,
     });
     if (error) {
       toast.error(error.message);
