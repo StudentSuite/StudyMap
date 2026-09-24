@@ -3857,5 +3857,475 @@
       "on": "2026-09-24"
     },
     "valid_till": "2026-12-15"
+  },
+  {
+    "id": "german-physics-olympiad",
+    "name": "German Physics Olympiad (IPhO Selection)",
+    "organizer": "Leibniz Institute for Science and Mathematics Education (IPN), Kiel",
+    "organizer_url": "https://www.leibniz-ipn.de/en/research/projects/ipho",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Germany's multi round selection process for the International Physics Olympiad, run by the IPN in Kiel for the Federal Ministry of Education and Research. An extended home assignment round each spring and summer narrows the field before a school based exam in autumn and further rounds that choose the five students who form the German IPhO team.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "DE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Advancement through the round structure to represent Germany at the International Physics Olympiad.",
+    "official_url": "https://www.scienceolympiaden.de/ipho/internationale-physik-olympiade-wettbewerb/information-aktuelle-runde-1",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 home assignments (following the usual April to September pattern)",
+        "date": "2026-04-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.scienceolympiaden.de/ipho/internationale-physik-olympiade-wettbewerb/information-aktuelle-runde-1"
+      },
+      {
+        "label": "Round 2 school based exam (following the usual November pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "japan-physics-olympiad",
+    "name": "Japan Physics Olympiad (Physics Challenge)",
+    "organizer": "Committee of Japan Physics Olympiad",
+    "organizer_url": "https://www.jst.go.jp/report/2023/240214_e.html",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Japan's domestic physics tournament for students under 20 who have not yet entered university, run to select the national team for the International Physics Olympiad. Applicants sit theoretical and experimental exams over two days, and five representatives are chosen from more than a thousand entrants.",
+    "format": "hybrid",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "JP",
+    "fee": {
+      "amount": 0,
+      "currency": "JPY"
+    },
+    "prize": "Selection as one of five Japanese representatives at the International Physics Olympiad.",
+    "official_url": "https://ipho-unofficial.org/countries/JPN/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physics Challenge national contest (following the usual autumn pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.jst.go.jp/report/2023/240214_e.html"
+      },
+      {
+        "label": "IPhO (following the usual July pattern Japan's team competes)",
+        "date": "2027-07-04",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "chinese-physics-olympiad",
+    "name": "Chinese Physics Olympiad (CPhO)",
+    "organizer": "Chinese Physical Society, supervised by the China Association for Science and Technology",
+    "organizer_url": "https://phoxiv.org/olympiads/cpho-f",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "China's national physics competition for high school students, run through a preliminary contest, a semi final and a final. Strong performers at the final continue to a confidential team selection test covering advanced topics such as analytical mechanics and quantum mechanics, which chooses China's International Physics Olympiad team.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "CN",
+    "fee": {
+      "amount": 0,
+      "currency": "CNY"
+    },
+    "prize": "Advancement through the preliminary, semi final and final rounds; selection for China's IPhO team.",
+    "official_url": "https://phoxiv.org/olympiads/cpho-f",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Preliminary contest (following the usual autumn pattern)",
+        "date": "2026-09-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://baike.baidu.com/en/item/Chinese%20Physics%20Olympiad/947222"
+      },
+      {
+        "label": "Final round (following the usual winter pattern)",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "korean-physics-olympiad",
+    "name": "Korean Physics Olympiad (KPhO)",
+    "organizer": "Korean Physical Society",
+    "organizer_url": "https://en.wikipedia.org/wiki/Korean_Physics_Olympiad",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "A physics programme for Korean middle and high school students run by the Korean Physical Society's Physics Olympiad Committee. Students progress through general physics communication training courses to a winter school, from which Korea's International Physics Olympiad team is selected.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "KR",
+    "fee": {
+      "amount": 0,
+      "currency": "KRW"
+    },
+    "prize": "Invitation to the winter school; national representative selection for the IPhO.",
+    "official_url": "https://ipho-unofficial.org/countries/KOR/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Winter school and national representative selection (following the usual winter pattern)",
+        "date": "2027-01-10",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://ipho-unofficial.org/countries/KOR/"
+      },
+      {
+        "label": "IPhO (following the usual July pattern Korea's team competes)",
+        "date": "2027-07-04",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.korea.net/NewsFocus/Society/view?articleId=218142"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "physics-bowl",
+    "name": "PhysicsBowl",
+    "organizer": "American Association of Physics Teachers (AAPT)",
+    "organizer_url": "https://aapt.org/programs/physicsbowl/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "A proctored 40 question, 45 minute multiple choice physics exam for US high school students, split into a Division I paper for first year physics students and a Division II paper for second year students. Schools administer the exam on a single day within a set window, and top scorers and schools receive certificates and prizes.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Certificates and prizes for top individual scorers and top scoring schools in each division.",
+    "official_url": "https://www.aapt.org/Programs/PhysicsBowl/index.cfm",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Exam window (following the usual mid-March to early-April pattern)",
+        "date": "2027-03-17",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.aapt.org/Programs/PhysicsBowl/index.cfm"
+      },
+      {
+        "label": "Exam window closes (following the usual pattern)",
+        "date": "2027-04-02",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.aapt.org/Programs/PhysicsBowl/currentexam.cfm"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "mexican-physics-olympiad",
+    "name": "Mexican National Physics Olympiad (Olimpiada Nacional de Fisica)",
+    "organizer": "Sociedad Mexicana de Fisica",
+    "organizer_url": "https://smf.mx/programas/olimpiada-nacional-de-fisica/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Mexico's national physics competition, run by the Sociedad Mexicana de Fisica and typically held during the second or third week of November. Trainees who place highly attend further training, and five students accompanied by two or three team leaders represent Mexico at the International Physics Olympiad.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "MX",
+    "fee": {
+      "amount": 0,
+      "currency": "MXN"
+    },
+    "prize": "Advancement to national training; selection as one of Mexico's five IPhO representatives.",
+    "official_url": "https://smf.mx/programas/onf-3/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "National round (following the usual mid to late November pattern)",
+        "date": "2026-11-16",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://smf.mx/programas/olimpiada-nacional-de-fisica/"
+      },
+      {
+        "label": "IPhO 2027 (following the usual July pattern Mexico's team competes)",
+        "date": "2027-07-04",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "singapore-physics-olympiad",
+    "name": "Singapore Physics Olympiad (SPhO)",
+    "organizer": "Institute of Physics Singapore (IPS) and NUS Department of Physics",
+    "organizer_url": "https://ipssingapore.org/events/SPhO.html",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Singapore's senior physics competition for junior college and integrated programme Year 5 to 6 students, following the same syllabus as the International Physics Olympiad. Top awardees enter the Singapore Physics Olympiad Training programme, from which the team for the Asian Physics Olympiad and ultimately the IPhO is chosen.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "SG",
+    "fee": {
+      "amount": 0,
+      "currency": "SGD"
+    },
+    "prize": "Advancement to Singapore Physics Olympiad Training; selection for Singapore's APhO and IPhO teams.",
+    "official_url": "https://ipssingapore.org/events/SPhO.html",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Experimental round (National University of Singapore, following the usual November pattern)",
+        "date": "2026-11-19",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://singaporephysics.wordpress.com/"
+      },
+      {
+        "label": "SPOT training programme (following the usual December to March pattern)",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://eclatinstitute.sg/blog/Singapore-Physics-Olympiad-SPhO"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "thailand-physics-olympiad",
+    "name": "Thailand Physics Olympiad (TPhO)",
+    "organizer": "Promotion of Academic Olympiad and Development of Science Education Foundation (POSN), with the Institute for the Promotion of Teaching Science and Technology (IPST)",
+    "organizer_url": "https://www.posn.or.th/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Thailand's physics talent programme, run through POSN regional centers before a national competition and IPST training camps choose the students who represent Thailand at the International Physics Olympiad. The programme mirrors POSN's parallel biology and chemistry olympiad pathways.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "TH",
+    "fee": {
+      "amount": 0,
+      "currency": "THB"
+    },
+    "prize": "Advancement through regional centers and training camps; selection for Thailand's IPhO team.",
+    "official_url": "https://www.posn.or.th/en/projects/academic-olympiad/pho/about/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application period opens (following the usual July pattern)",
+        "date": "2027-07-01",
+        "type": "registration_open",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://www.posn.or.th/en/projects/academic-olympiad/pho/about/"
+      },
+      {
+        "label": "National Academic Olympiad Competition (following the usual pattern)",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "polish-physics-olympiad",
+    "name": "Polish Physics Olympiad (Olimpiada Fizyczna)",
+    "organizer": "Polskie Towarzystwo Fizyczne (Polish Physical Society)",
+    "organizer_url": "https://www.ptf.net.pl/sdf/zasoby/konkursy",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Poland's national physics competition, run by the Polish Physical Society through three stages of theoretical and experimental problems. The competition has run for more than seventy years, and its top finishers form the team that represents Poland at the International Physics Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "PL",
+    "fee": {
+      "amount": 0,
+      "currency": "PLN"
+    },
+    "prize": "Advancement through three stages; top finishers represent Poland at the IPhO.",
+    "official_url": "https://www.kgof.edu.pl/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Stage I solutions deadline (following the usual October pattern)",
+        "date": "2026-10-09",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.kgof.edu.pl/"
+      },
+      {
+        "label": "Stage III (following the usual April pattern)",
+        "date": "2027-04-11",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "vietnam-physics-olympiad",
+    "name": "Vietnam Physics Olympiad selection",
+    "organizer": "Ministry of Education and Training, Vietnam",
+    "organizer_url": "https://vietnamnet.vn/en/vietnam-wins-four-golds-at-2026-international-physics-olympiad-2535177.html",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Vietnam's national selection process for the International Physics Olympiad, run by the Ministry of Education and Training through regional and national exams. The programme produced Vietnam's strongest ever IPhO result in 2026, with all five team members winning medals including four golds.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "VN",
+    "fee": {
+      "amount": 0,
+      "currency": "VND"
+    },
+    "prize": "Advancement through regional and national exams; selection for Vietnam's five student IPhO team.",
+    "official_url": "https://en.vietnamplus.vn/vietnam-ranks-among-top-seven-teams-at-2026-international-physics-olympiad-post348299.vnp",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional and provincial rounds (following the usual autumn pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      },
+      {
+        "label": "National selection exam (following the usual spring pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://english.vov.vn/en/society/vietnam-breaks-into-top-7-at-international-physics-olympiad-for-first-time-post1314426.vov"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
   }
 ]
