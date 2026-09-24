@@ -96,7 +96,7 @@
     "lng": 72.8784,
     "address": "Andheri East, Mumbai 400069",
     "gmaps_link": "https://maps.google.com/?q=19.1177,72.8784",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "mum-internet_cafe-08",
@@ -107,7 +107,7 @@
     "lng": 72.8567,
     "address": "Borivali West, Mumbai 400092",
     "gmaps_link": "https://maps.google.com/?q=19.2307,72.8567",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "mum-internet_cafe-09",
@@ -118,7 +118,7 @@
     "lng": 72.9069,
     "address": "Ghatkopar West, Mumbai 400086",
     "gmaps_link": "https://maps.google.com/?q=19.0862,72.9069",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "mum-internet_cafe-10",
@@ -129,7 +129,7 @@
     "lng": 72.8797,
     "address": "Kurla West, Mumbai 400070",
     "gmaps_link": "https://maps.google.com/?q=19.0726,72.8797",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "mum-internet_cafe-11",
@@ -140,7 +140,7 @@
     "lng": 72.8484,
     "address": "Malad West, Mumbai 400064",
     "gmaps_link": "https://maps.google.com/?q=19.1868,72.8484",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "thn-internet_cafe-03",
@@ -151,7 +151,7 @@
     "lng": 72.9788794,
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.2183,72.9781",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "thn-internet_cafe-04",
@@ -162,7 +162,7 @@
     "lng": 72.97,
     "address": "Thane West, Thane 400601",
     "gmaps_link": "https://maps.google.com/?q=19.2250,72.9700",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "thn-internet_cafe-05",
@@ -173,7 +173,7 @@
     "lng": 73.086,
     "address": "Dombivali East, Thane 421201",
     "gmaps_link": "https://maps.google.com/?q=19.2139,73.0860",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "nvm-internet_cafe-03",
@@ -184,7 +184,7 @@
     "lng": 73.0737,
     "address": "Sector 20, Kharghar, Navi Mumbai 410210",
     "gmaps_link": "https://maps.google.com/?q=19.0474,73.0737",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "nvm-internet_cafe-04",
@@ -195,7 +195,7 @@
     "lng": 73.11,
     "address": "Panvel, Navi Mumbai 410206",
     "gmaps_link": "https://maps.google.com/?q=18.9894,73.1100",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   },
   {
     "id": "nvm-internet_cafe-05",
@@ -206,6 +206,6 @@
     "lng": 73.0304,
     "address": "CBD Belapur, Navi Mumbai 400614",
     "gmaps_link": "https://maps.google.com/?q=19.0218,73.0304",
-    "added_by": "yashkewlani"
+    "added_by": "yakew7"
   }
 ]
