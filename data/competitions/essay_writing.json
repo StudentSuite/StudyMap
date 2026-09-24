@@ -569,5 +569,54 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-04-01"
+  },
+  {
+    "id": "jasna-essay-contest",
+    "name": "JASNA Essay Contest",
+    "organizer": "Jane Austen Society of North America",
+    "organizer_url": "https://jasna.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "literature",
+      "literary analysis",
+      "english literature"
+    ],
+    "description": "An annual essay contest asking students to closely analyze a set aspect of Jane Austen's novels, judged separately in high school, undergraduate and graduate divisions. Entrants write a properly cited literary analysis essay rather than a personal or persuasive piece, and JASNA membership is not required to enter.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "1,000 dollar scholarship plus conference lodging for first place in each division, with 500 and 250 dollar scholarships for second and third.",
+    "official_url": "https://jasna.org/programs/essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest topic announced (following the usual November pattern, estimated)",
+        "date": "2026-11-15",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://jasna.org/programs/essay-contest/"
+      },
+      {
+        "label": "Submission deadline (following the usual June 1 pattern, estimated)",
+        "date": "2027-06-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://jasna.org/programs/essay-contest/submission/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-07-01"
   }
 ]

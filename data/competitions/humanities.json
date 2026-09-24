@@ -397,5 +397,511 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "international-english-olympiad-sof",
+    "name": "International English Olympiad (IEO)",
+    "organizer": "Science Olympiad Foundation",
+    "organizer_url": "https://sofworld.org/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "english language",
+      "reading comprehension"
+    ],
+    "description": "A school-level English olympiad run by the Science Olympiad Foundation for students in classes 1 to 12, testing grammar, vocabulary, comprehension and everyday usage through a multiple-choice paper. The top scorers from Level 1 qualify for a harder Level 2 round and are ranked internationally, zonally and by school.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 170,
+      "currency": "INR"
+    },
+    "prize": "Cash awards, medals and certificates for the top three international rank holders, plus zonal and school-level recognition for other high scorers.",
+    "official_url": "https://sofworld.org/ieo",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Level 1 exam, first sitting",
+        "date": "2026-09-30",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://sofworld.org/exam-schedule"
+      },
+      {
+        "label": "Level 1 exam, final sitting",
+        "date": "2026-11-17",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://sofworld.org/exam-schedule"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "icas-english",
+    "name": "ICAS English",
+    "organizer": "ICAS Assessments (Janison)",
+    "organizer_url": "https://www.icasassessments.com/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "reading comprehension",
+      "critical thinking"
+    ],
+    "description": "An annual English literacy assessment sat in participating schools across more than 20 countries, testing reading comprehension, vocabulary, text structure and critical thinking at a level beyond the standard classroom curriculum. Students from Year 2 to Year 12 receive an individual result band rather than competing head to head.",
+    "format": "in_person",
+    "age_min": 7,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 57.75,
+      "currency": "AUD"
+    },
+    "prize": "Certificates for all participants, with medals and certificates awarded to students who reach the High Distinction band.",
+    "official_url": "https://www.icasassessments.com/products-icas/subjects/english/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close (following the usual late-July pattern, estimated)",
+        "date": "2027-07-26",
+        "type": "registration_close",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://www.icasassessments.com/icas-dates/"
+      },
+      {
+        "label": "English test window (following the usual mid-August pattern, estimated)",
+        "date": "2027-08-09",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://www.icasassessments.com/icas-dates/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-09-01"
+  },
+  {
+    "id": "the-big-challenge-english-contest",
+    "name": "The Big Challenge",
+    "organizer": "The Big Challenge",
+    "organizer_url": "https://www.thebigchallenge.com/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "english language",
+      "vocabulary"
+    ],
+    "description": "A national English-language contest for French students from CM1 through the final year of vocational school, sat as a single 45-minute quiz on grammar, vocabulary and culture. Every participant receives a small reward regardless of score, and the exam can be taken on paper or online.",
+    "format": "hybrid",
+    "age_min": 9,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "FR",
+    "fee": {
+      "amount": 4.5,
+      "currency": "EUR"
+    },
+    "prize": "Diplomas and small rewards for every participant, with additional prizes for the highest scorers in each grade level.",
+    "official_url": "https://www.thebigchallenge.com/fr/professeur/concours/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-08-25",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.thebigchallenge.com/fr/knowledgebase/le-jeu-concours/l-inscription"
+      },
+      {
+        "label": "Registration deadline",
+        "date": "2027-02-27",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.thebigchallenge.com/fr/knowledgebase/le-jeu-concours/l-inscription"
+      },
+      {
+        "label": "Classic exam day",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.thebigchallenge.com/fr/professeur/concours/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "esu-national-shakespeare-competition",
+    "name": "ESU National Shakespeare Competition",
+    "organizer": "English-Speaking Union",
+    "organizer_url": "https://www.esuus.org/",
+    "category": "humanities",
+    "subjects": [
+      "english literature",
+      "shakespeare",
+      "performance"
+    ],
+    "description": "A three-round performance competition in which US high schoolers memorize and perform a Shakespearean monologue and sonnet, advancing from their own school through an ESU branch heat to the national final in New York City. Around 15,000 students from roughly 750 schools take part each year.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "A three-week summer conservatory place at the British American Drama Academy in Oxford for first place, a Shakespeare theatre camp for second, and 1,000 dollars for third.",
+    "official_url": "https://www.esuus.org/what-we-do/shakespeare-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Branch registration deadline",
+        "date": "2026-10-30",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.esuus.org/wp-content/uploads/2025/08/2026-ESU-NSC-Student-Handbook.pdf"
+      },
+      {
+        "label": "School registration deadline",
+        "date": "2027-01-15",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.esuus.org/wp-content/uploads/2025/08/2026-ESU-NSC-Student-Handbook.pdf"
+      },
+      {
+        "label": "Branch winners announced",
+        "date": "2027-03-08",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.esuus.org/wp-content/uploads/2025/08/2026-ESU-NSC-Student-Handbook.pdf"
+      },
+      {
+        "label": "National finals weekend in New York City",
+        "date": "2027-04-24",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.esuus.org/what-we-do/shakespeare-competition/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-15"
+  },
+  {
+    "id": "poetry-out-loud",
+    "name": "Poetry Out Loud",
+    "organizer": "National Endowment for the Arts and the Poetry Foundation",
+    "organizer_url": "https://www.arts.gov/",
+    "category": "humanities",
+    "subjects": [
+      "english literature",
+      "poetry",
+      "performance"
+    ],
+    "description": "A recitation competition in which US high schoolers memorize and perform published poems for judges rather than writing original work, progressing from the classroom to school, state and national competitions. State champions travel to Washington DC for the national semifinals and finals each spring.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "20,000 dollars for the National Champion, with prizes down to 1,000 dollars for the next six finalists and smaller awards at the state level.",
+    "official_url": "https://poetryoutloud.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "State finals (by mid-March, estimated)",
+        "date": "2027-03-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://poetryoutloud.org/key-dates/"
+      },
+      {
+        "label": "National semifinals",
+        "date": "2027-04-27",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://poetryoutloud.org/key-dates/"
+      },
+      {
+        "label": "National finals",
+        "date": "2027-04-28",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://poetryoutloud.org/key-dates/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-15"
+  },
+  {
+    "id": "scripps-national-spelling-bee",
+    "name": "Scripps National Spelling Bee",
+    "organizer": "The E.W. Scripps Company",
+    "organizer_url": "https://spellingbee.com/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "spelling",
+      "vocabulary"
+    ],
+    "description": "A spelling competition for students who have not passed eighth grade or turned 15 by the eligibility cutoff, run through local and regional bees that feed into a televised national finals. Spellers work through rounds of oral spelling and vocabulary questions until a single champion remains.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 15,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 199,
+      "currency": "USD"
+    },
+    "prize": "50,000 dollars cash plus a commemorative medal and the Scripps Cup for the National Champion.",
+    "official_url": "https://spellingbee.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School enrollment opens",
+        "date": "2026-08-18",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://spellingbee.com/enrollment"
+      },
+      {
+        "label": "School enrollment closes",
+        "date": "2027-01-29",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://spellingbee.com/enrollment"
+      },
+      {
+        "label": "National finals",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://spellingbee.com/faq/when-scripps-national-spelling-bee"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-07-01"
+  },
+  {
+    "id": "wordmasters-challenge",
+    "name": "WordMasters Challenge",
+    "organizer": "WordMasters Challenge",
+    "organizer_url": "https://www.wordmasterschallenge.com/about",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "vocabulary",
+      "verbal reasoning"
+    ],
+    "description": "A vocabulary and verbal reasoning competition for grades 3 to 8, in which registered classes complete three 20-minute analogy tests through the school year after studying a custom word list. Teams choose a Blue or Gold division based on reading level and are scored on their top ten individual results per meet.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 14,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 110,
+      "currency": "USD"
+    },
+    "prize": "A champion medal and ten recognition certificates awarded to the top scoring team at each grade level.",
+    "official_url": "https://www.wordmasterschallenge.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Meet 1 testing window",
+        "date": "2026-11-09",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.wordmasterschallenge.com/challenge-schedule"
+      },
+      {
+        "label": "Meet 2 testing window",
+        "date": "2027-01-25",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.wordmasterschallenge.com/challenge-schedule"
+      },
+      {
+        "label": "Meet 3 testing window",
+        "date": "2027-03-29",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.wordmasterschallenge.com/challenge-schedule"
+      },
+      {
+        "label": "Enrollment deadline (following the usual October 1 pattern, estimated)",
+        "date": "2026-10-01",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.wordmasterschallenge.com/enroll"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "north-american-school-scrabble-championship",
+    "name": "North American School Scrabble Championship",
+    "organizer": "North American Scrabble Players Association (NASPA)",
+    "organizer_url": "https://scrabbleplayers.org/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "vocabulary",
+      "word games"
+    ],
+    "description": "An annual Scrabble tournament for students in the United States and Canada, with two-player teams competing through eighth grade and an individual high school division added in 2017. Games are played with digital timers under official tournament rules at a single weekend event.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "prize": "1,000 dollars for the winning team or player, out of a total prize pool of around 5,000 dollars.",
+    "official_url": "https://www.northamericanschoolscrabble.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Championship weekend",
+        "date": "2027-04-10",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.northamericanschoolscrabble.com/"
+      },
+      {
+        "label": "Team and player registration opens (following the usual winter pattern, estimated)",
+        "date": "2027-01-15",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.northamericanschoolscrabble.com/kids"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "silverzone-ioel",
+    "name": "International Olympiad of English Language (iOEL)",
+    "organizer": "SilverZone Foundation",
+    "organizer_url": "https://www.silverzone.org/",
+    "category": "humanities",
+    "subjects": [
+      "english",
+      "english language",
+      "grammar",
+      "vocabulary"
+    ],
+    "description": "A school-administered English olympiad for classes 1 to 12 run by the SilverZone Foundation, testing grammar, vocabulary and reading comprehension through a multiple-choice paper. Students register through their school, and the top rank holders in each class win cash prizes.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 150,
+      "currency": "INR"
+    },
+    "prize": "10,000 rupees for the first-ranked student in each class and 7,500 rupees for the runner-up, with certificates for lower ranks.",
+    "official_url": "https://www.silverzone.org/ioel",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-08-31",
+        "type": "registration_close",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://school.careers360.com/exams/ioel"
+      },
+      {
+        "label": "Level 1 exam, first sitting",
+        "date": "2026-10-21",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://school.careers360.com/exams/ioel"
+      },
+      {
+        "label": "Level 1 exam, final sitting",
+        "date": "2026-12-10",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://school.careers360.com/exams/ioel"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-20"
   }
 ]
