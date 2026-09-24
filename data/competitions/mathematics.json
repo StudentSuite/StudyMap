@@ -47,9 +47,9 @@
         "source_url": "https://www.hmmt.org/www/tournaments/novfeb"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-05"
     },
     "valid_till": "2027-03-01",
@@ -142,9 +142,9 @@
         ]
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-05"
     },
     "valid_till": "2027-03-05",
@@ -182,9 +182,9 @@
         "source_url": "https://mathprize.atfoundation.org/experience/schedule"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-05"
     },
     "valid_till": "2026-11-01",
@@ -223,9 +223,9 @@
         "source_url": "https://maa.org/wp-content/uploads/2026/08/2026-27-USAMO_USAJMO-Policies-1.pdf"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-05"
     },
     "valid_till": "2027-04-01",
@@ -271,9 +271,9 @@
         "source_url": "https://arml3.com/arml-meet-results/"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-06"
     },
     "valid_till": "2026-12-01",
@@ -327,9 +327,9 @@
         "source_url": "https://www.mathcounts.org/programs/national-competition-schedule-glance"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-06"
     },
     "valid_till": "2027-06-01",
@@ -375,9 +375,9 @@
         "source_url": "https://purplecomet.org/answers"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-06"
     },
     "valid_till": "2027-05-01",
@@ -424,9 +424,9 @@
         "source_url": "https://www.turgor.ru/en/problems/"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-06"
     },
     "valid_till": "2026-11-15",
@@ -530,9 +530,9 @@
         "source_url": "https://maa.org/maa-amc-registration-faq/"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-13"
     },
     "valid_till": "2027-01-01"
@@ -570,9 +570,9 @@
         "source_url": "https://www.kangarooqatar.org/ikmc"
       }
     ],
-    "added_by": "yashkewlani",
+    "added_by": "yakew7",
     "verified": {
-      "by": "yashkewlani",
+      "by": "yakew7",
       "on": "2026-09-13"
     },
     "valid_till": "2027-04-01"
@@ -632,5 +632,496 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-04-01"
+  },
+  {
+    "id": "european-girls-mathematical-olympiad",
+    "name": "European Girls' Mathematical Olympiad (EGMO)",
+    "organizer": "EGMO Board",
+    "organizer_url": "https://www.egmo.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The European Girls' Mathematical Olympiad brings together national teams of up to four female secondary school students from Europe and invited countries elsewhere. Contestants sit two exams of three proof-based problems each over two days, and several countries use the results toward selecting their IMO team.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals for top individual scorers.",
+    "official_url": "https://www.egmo.org/egmos/egmo16/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "EGMO 2027 opens (Sibenik, Croatia)",
+        "date": "2027-04-11",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.egmo.org/egmos/egmo16/"
+      },
+      {
+        "label": "EGMO 2027 closes",
+        "date": "2027-04-17",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://cms.math.ca/competitions/egmo/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "pan-african-mathematics-olympiad",
+    "name": "Pan African Mathematics Olympiad (PAMO)",
+    "organizer": "African Mathematical Union, Pan African Mathematics Olympiads Commission",
+    "organizer_url": "https://www.africanmathunion.org/pamo",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The Pan African Mathematics Olympiad is the African Mathematical Union's annual olympiad for secondary school students under 20, hosted each year in a different African country. National teams of up to six students sit two papers of three proof-based problems over four and a half hours each.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals for top individual scorers.",
+    "official_url": "https://www.pamoofficial.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "PAMO 2027 opens (Kigali, Rwanda)",
+        "date": "2027-05-04",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.pamoofficial.org/"
+      },
+      {
+        "label": "PAMO 2027 closes",
+        "date": "2027-05-12",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.africanmathunion.org/amu--pamoc"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ukmt-senior-mathematical-challenge",
+    "name": "UKMT Senior Mathematical Challenge (SMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "The Senior Mathematical Challenge is the United Kingdom Mathematics Trust's first round olympiad feeder for students in Year 13 and below. Entrants sit a 90 minute paper of 22 multiple choice questions plus three digit answer questions, and the highest scorers are invited to sit the British Mathematical Olympiad.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Gold, silver and bronze certificates by score band; top scorers qualify for the British Mathematical Olympiad.",
+    "official_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2026-10-07",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge"
+      },
+      {
+        "label": "Senior Mathematical Challenge sitting",
+        "date": "2026-10-07",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-11-01"
+  },
+  {
+    "id": "pumac",
+    "name": "Princeton University Mathematics Competition (PUMaC)",
+    "organizer": "Princeton University Math Club",
+    "organizer_url": "https://pumac.princeton.edu/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The Princeton University Mathematics Competition is a one day tournament run by Princeton undergraduates for high school students, held on campus each November. Teams of up to eight compete across subject tests, a team round and a proof-based power round, and individual entrants may also register.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "Individual and team awards across subject tests, the team round and the power round.",
+    "official_url": "https://pumac.princeton.edu/registration-info",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-10-11",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://pumac.princeton.edu/coaches/register/"
+      },
+      {
+        "label": "PUMaC competition day (Princeton, NJ)",
+        "date": "2026-11-21",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://pumac.princeton.edu/registration-info"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "berkeley-math-tournament",
+    "name": "Berkeley Math Tournament (BMT)",
+    "organizer": "Berkeley Math Tournament (UC Berkeley students)",
+    "organizer_url": "https://berkeley.mt/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The Berkeley Math Tournament is a student-run tournament held each fall at UC Berkeley for students in grade 12 and below, with an online sitting in December for students who cannot travel. Teams of up to six work through a proof-based power round, an individual round and a live guts round.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "Individual and team awards across the power, individual and guts rounds.",
+    "official_url": "https://berkeley.mt/events/bmt-2026/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Phase 2 registration closes",
+        "date": "2026-10-18",
+        "type": "registration_close",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://berkeley.mt/events/bmt-2026/"
+      },
+      {
+        "label": "BMT 2026 (UC Berkeley, in person)",
+        "date": "2026-11-14",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://berkeley.mt/news/bmt-2026-date-set/"
+      },
+      {
+        "label": "BMT 2026 Online",
+        "date": "2026-12-05",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://berkeley.mt/events/bmt-2026/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "usamts",
+    "name": "USA Mathematical Talent Search (USAMTS)",
+    "organizer": "Art of Problem Solving Initiative",
+    "organizer_url": "https://www.usamts.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The USA Mathematical Talent Search is a free, untimed olympiad for US middle and high school students who write up full proofs over roughly a month per round across three rounds each year. Submissions are graded individually with written feedback, and strong scorers can use USAMTS results toward AIME qualification.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Math books, T-shirts and Wolfram software subscriptions for top scorers; results can count toward AIME qualification.",
+    "official_url": "https://www.usamts.org/contest/problems/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 submission deadline",
+        "date": "2026-10-13",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.usamts.org/contest/problems/"
+      },
+      {
+        "label": "Round 2 submission deadline (following the typical early December pattern)",
+        "date": "2026-12-07",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.usamts.org/about/sponsors/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-20"
+  },
+  {
+    "id": "asian-pacific-mathematics-olympiad",
+    "name": "Asian Pacific Mathematics Olympiad (APMO)",
+    "organizer": "APMO Committee",
+    "organizer_url": "https://www.apmo-official.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The Asian Pacific Mathematics Olympiad is a proof-based olympiad in which participating countries across Asia, Oceania and the Americas administer the same five-problem paper to their own students on a fixed day in March, under local supervision. Students must be under 20 and not yet enrolled at university, and each country submits its top ten papers for the shared international ranking.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver and bronze medals across the combined international ranking.",
+    "official_url": "https://www.apmo-official.org/regulations",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "APMO 2027, Americas sitting (following the fixed second-Monday-of-March rule)",
+        "date": "2027-03-08",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.apmo-official.org/regulations"
+      },
+      {
+        "label": "APMO 2027, Asia-Pacific sitting (following the fixed second-Tuesday-of-March rule)",
+        "date": "2027-03-09",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://cms.math.ca/competitions/apmo/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "duke-math-meet",
+    "name": "Duke Math Meet (DMM)",
+    "organizer": "Duke University Mathematics Union",
+    "organizer_url": "https://sites.math.duke.edu/dumu/mathmeet/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The Duke Math Meet is a regional high school tournament run each November by the Duke University Mathematics Union. Teams of six work through a power round, a team round, paired individual questions and a relay round on the Duke campus.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Individual and team awards across the power, team, individual and relay rounds.",
+    "official_url": "https://www.dukemathmeet.org/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-10-25",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.dukemathmeet.org/registration"
+      },
+      {
+        "label": "Duke Math Meet 2026",
+        "date": "2026-11-07",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.dukemathmeet.org/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "caltech-math-meet",
+    "name": "Caltech Math Meet (CMM)",
+    "organizer": "Caltech Math Meet (Caltech students)",
+    "organizer_url": "https://www.caltechmathmeet.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The Caltech Math Meet, formerly known as the Caltech Harvey Mudd Math Competition, is a one day high school tournament run by Caltech students each January. Teams compete in a team round, a guts round and an individual round, and individual entrants are also accepted.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 20,
+      "currency": "USD"
+    },
+    "prize": "Individual and team awards across the team, guts and individual rounds.",
+    "official_url": "https://www.caltechmathmeet.org/registration",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline",
+        "date": "2026-11-13",
+        "type": "registration_close",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.caltechmathmeet.org/registration"
+      },
+      {
+        "label": "Caltech Math Meet 2027 (Caltech campus)",
+        "date": "2027-01-30",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.caltechmathmeet.org/scheduling"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-02-15"
+  },
+  {
+    "id": "philippine-mathematical-olympiad",
+    "name": "Philippine Mathematical Olympiad (PMO)",
+    "organizer": "Mathematical Society of the Philippines",
+    "organizer_url": "https://home.pmo.ph/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "The Philippine Mathematical Olympiad is the Mathematical Society of the Philippines' national contest for secondary school students, run through a qualifying stage, an area stage and a national stage across the school year. Top national finalists attend a summer training camp from which the country's IMO team is chosen.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "PH",
+    "fee": {
+      "amount": 150,
+      "currency": "PHP"
+    },
+    "prize": "Medals and certificates for top scorers; national finalists attend the Mathematical Olympiad Summer Camp.",
+    "official_url": "https://pmo.ph/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Qualifying stage",
+        "date": "2026-10-17",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://home.pmo.ph/contest-guidelines/"
+      },
+      {
+        "label": "Area stage",
+        "date": "2026-12-12",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://home.pmo.ph/contest-guidelines/"
+      },
+      {
+        "label": "National stage",
+        "date": "2027-02-27",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://pmo.ph/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-03-15"
   }
 ]
