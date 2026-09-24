@@ -2909,5 +2909,475 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-01-01"
+  },
+  {
+    "id": "german-chemistry-olympiad",
+    "name": "German Chemistry Olympiad (IChO Selection)",
+    "organizer": "Leibniz Institute for Science and Mathematics Education (IPN), Kiel",
+    "organizer_url": "https://www.leibniz-ipn.de/en/research/projects/icho",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Germany's four round selection process for the International Chemistry Olympiad, run by the IPN in Kiel for the Federal Ministry of Education and Research. More than a thousand students enter the opening round each year, narrowing through theoretical and laboratory based rounds to the four students who form the German IChO team.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "DE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Advancement through four rounds to represent Germany at the International Chemistry Olympiad.",
+    "official_url": "https://www.scienceolympiaden.de/icho",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 opens (following the usual autumn pattern)",
+        "date": "2026-09-01",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.scienceolympiaden.de/icho"
+      },
+      {
+        "label": "Round 4 national final selection (Kiel, following the usual May pattern)",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Chemistry_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "japan-chemistry-grand-prix",
+    "name": "Japan Chemistry Grand Prix",
+    "organizer": "Chemical Society of Japan",
+    "organizer_url": "https://www.chemistry.or.jp/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A free nationwide chemistry contest for Japanese middle and high school students, run by the Chemical Society of Japan. A first round multiple choice exam each July narrows the field to around eighty students for a second round camp with written and experimental components, and top scorers are tracked toward Japan's International Chemistry Olympiad team.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "JP",
+    "fee": {
+      "amount": 0,
+      "currency": "JPY"
+    },
+    "prize": "Awards for the top five finishers; strongest performers are tracked toward Japan's IChO team.",
+    "official_url": "https://www.chemistry-grand-prix.jp/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "First round exam (following the usual July pattern)",
+        "date": "2027-07-18",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.chemistry-grand-prix.jp/"
+      },
+      {
+        "label": "Second round camp (following the usual summer pattern)",
+        "date": "2027-08-19",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.icho-official.org/results/country_info.php?country=Japan"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "korean-chemistry-olympiad",
+    "name": "Korean Chemistry Olympiad (KChO)",
+    "organizer": "Korean Chemical Society",
+    "organizer_url": "https://en.wikipedia.org/wiki/Korean_Chemical_Society",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "A national chemistry programme for Korean high school students run by the Korean Chemical Society since 1991, combining a summer school and a winter school with entrance and selection exams. The top four finishers form Korea's team for the International Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "KR",
+    "fee": {
+      "amount": 0,
+      "currency": "KRW"
+    },
+    "prize": "Invitation to KChO summer and winter schools; the top four finishers represent Korea at the IChO.",
+    "official_url": "https://en.wikipedia.org/wiki/Korean_Chemistry_Olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Summer school (following the usual July to August pattern)",
+        "date": "2026-07-15",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/Korean_Chemistry_Olympiad"
+      },
+      {
+        "label": "Winter school and final selection (following the usual winter pattern)",
+        "date": "2027-01-10",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.icho-official.org/results/country_info.php?country=Korea,+Republic+of"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "brazilian-chemistry-olympiad",
+    "name": "Brazilian Chemistry Olympiad (Olimpiada Brasileira de Quimica)",
+    "organizer": "Associacao Brasileira de Quimica (ABQ), with the Federal University of Ceara and the Federal University of Piaui",
+    "organizer_url": "https://obquimica.org/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Brazil's national chemistry competition, run in two divisions for students in different years of secondary school. State level rounds feed into a national theory exam, and a further advanced course and evaluation choose the delegation that represents Brazil at the International Chemistry Olympiad and the Ibero-American Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "BR",
+    "fee": {
+      "amount": 0,
+      "currency": "BRL"
+    },
+    "prize": "Medals by phase; top finishers advance to the Advanced Chemistry Course and IChO delegation selection.",
+    "official_url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Phase II (following the usual October pattern, per the Parana state schedule)",
+        "date": "2026-10-23",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://obquimica.org/"
+      },
+      {
+        "label": "Phase III national theory exam (following the usual November pattern)",
+        "date": "2026-11-14",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://obquimica.org/perguntas-frequentes"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "mexican-chemistry-olympiad",
+    "name": "Mexican National Chemistry Olympiad (Olimpiada Nacional de Quimica)",
+    "organizer": "Academia Mexicana de Ciencias, with UNAM's Faculty of Chemistry and the Mexican Chemical Society",
+    "organizer_url": "https://amc.edu.mx/amc/index.php?option=com_content&view=article&id=84&Itemid=80",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Mexico's national chemistry competition, moving from free individual registration through state level rounds to a national round that selects Mexico's delegation for the International Chemistry Olympiad and the Ibero-American Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "MX",
+    "fee": {
+      "amount": 0,
+      "currency": "MXN"
+    },
+    "prize": "Advancement through state and national rounds; top scorers represent Mexico at IChO and the Ibero-American Chemistry Olympiad.",
+    "official_url": "https://amc.edu.mx/amc/index.php?option=com_content&view=article&id=84&Itemid=320",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "State level round (Puebla, 2026 example date)",
+        "date": "2026-09-26",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.buap.mx/content/xxxvi-olimpiada-estatal-de-qu%C3%ADmica"
+      },
+      {
+        "label": "National round (following the usual December pattern)",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://amc.edu.mx/amc/index.php?option=com_content&view=article&id=84&Itemid=80"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "polish-chemistry-olympiad",
+    "name": "Polish Chemistry Olympiad (Olimpiada Chemiczna)",
+    "organizer": "Polskie Towarzystwo Chemiczne (Polish Chemical Society)",
+    "organizer_url": "https://www.olchem.edu.pl/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Poland's national chemistry competition, run through three stages that combine theoretical problem sets with laboratory practicals. Finalists are exempted from Poland's extended chemistry exam, and the top four students represent Poland at the International Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "PL",
+    "fee": {
+      "amount": 0,
+      "currency": "PLN"
+    },
+    "prize": "Exemption from university entrance exams for finalists; the top four represent Poland at the IChO.",
+    "official_url": "https://www.olchem.edu.pl/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "73rd Olympiad registration opens",
+        "date": "2026-09-07",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://en.wikipedia.org/wiki/International_Chemistry_Olympiad"
+      },
+      {
+        "label": "IChO (following the usual July pattern Poland's team competes)",
+        "date": "2027-07-01",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.olchem.edu.pl/icho/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "turkish-chemistry-olympiad",
+    "name": "Turkish Chemistry Olympiad (TUBITAK Science Olympiads)",
+    "organizer": "The Scientific and Technological Research Council of Turkey (TUBITAK)",
+    "organizer_url": "https://bilimolimpiyatlari.tubitak.gov.tr/en",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Turkey's national chemistry talent programme, part of the TUBITAK Science Olympiads. Students who place highly in the first and second stage exams attend a summer camp and team selection exam, and the strongest performers represent Turkey at the International Chemistry Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "TR",
+    "fee": {
+      "amount": 0,
+      "currency": "TRY"
+    },
+    "prize": "University entrance exam coefficient benefits and TUBITAK undergraduate scholarship eligibility; top performers represent Turkey at the IChO.",
+    "official_url": "https://bilimolimpiyatlari.tubitak.gov.tr/en",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "First stage exam (following the usual autumn pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Chemistry_Olympiad"
+      },
+      {
+        "label": "IChO (following the usual July pattern Turkey's team competes)",
+        "date": "2027-07-01",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://icho2020.tubitak.gov.tr/turkey.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "vietnam-chemistry-olympiad",
+    "name": "Vietnam Chemistry Olympiad selection",
+    "organizer": "Ministry of Education and Training, Vietnam, with training led by the University of Science, Vietnam National University Hanoi",
+    "organizer_url": "https://hus.vnu.edu.vn/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Vietnam's national selection process for the International Chemistry Olympiad, combining regional and national selection exams organized by the Ministry of Education and Training. Vietnamese teams trained through this process have placed among the highest scoring delegations at recent IChO competitions, winning four gold medals in both 2025 and 2026.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "VN",
+    "fee": {
+      "amount": 0,
+      "currency": "VND"
+    },
+    "prize": "Advancement through regional and national selection exams; selection for Vietnam's IChO team.",
+    "official_url": "https://hus.vnu.edu.vn/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional and provincial rounds (following the usual autumn pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://en.vietnamplus.vn/vietnamese-students-perform-impressively-at-intl-chemistry-biology-olympiads-post348558.vnp"
+      },
+      {
+        "label": "National selection exam (following the usual spring pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://en.nhandan.vn/viet-nam-wins-four-golds-at-2026-international-chemistry-olympiad-post164516.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "singapore-chemistry-olympiad",
+    "name": "Singapore Chemistry Olympiad (SChO)",
+    "organizer": "Singapore National Institute of Chemistry, NUS Department of Chemistry and Ministry of Education",
+    "organizer_url": "https://snic.org.sg/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Singapore's senior chemistry competition for JC1 students, used as the first round of selection for Singapore's International Chemistry Olympiad team. About 150 students sit a theory only exam, and roughly 25 advance to a training programme that narrows to the four students who represent Singapore at IChO.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "SG",
+    "fee": {
+      "amount": 0,
+      "currency": "SGD"
+    },
+    "prize": "Advancement to the IChO training programme; the top four finishers represent Singapore at the IChO.",
+    "official_url": "https://chemistry.nus.edu.sg/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Theory Round 2 (following the usual November pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://chemistry.nus.edu.sg/wp-content/uploads/sites/3/2025/11/2025-SChO-Theory-Round-2-Namelist-and-Instructions.pdf"
+      },
+      {
+        "label": "IChO training programme (following the usual February to June pattern)",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://olympiadsguru.wordpress.com/singapore-chemistry-olympiad/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "thailand-chemistry-olympiad",
+    "name": "Thailand Chemistry Olympiad (TChO)",
+    "organizer": "Promotion of Academic Olympiad and Development of Science Education Foundation (POSN), with the Institute for the Promotion of Teaching Science and Technology (IPST)",
+    "organizer_url": "https://www.posn.or.th/",
+    "category": "stem",
+    "subjects": [
+      "chemistry"
+    ],
+    "description": "Thailand's chemistry talent programme, run through POSN regional centers before a national competition and IPST training camps choose the four student team for the International Chemistry Olympiad. Around 100 students from 14 centers compete at the national round each year.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "TH",
+    "fee": {
+      "amount": 0,
+      "currency": "THB"
+    },
+    "prize": "Advancement through regional centers and training camps; selection for Thailand's IChO team.",
+    "official_url": "https://www.posn.or.th/en/projects/academic-olympiad/cho/about/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application period opens (following the usual July pattern)",
+        "date": "2027-07-01",
+        "type": "registration_open",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://www.posn.or.th/en/projects/academic-olympiad/cho/about/"
+      },
+      {
+        "label": "National Academic Olympiad Competition (following the usual mid-May pattern)",
+        "date": "2027-05-13",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://eng.kku.ac.th/17852"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
   }
 ]
