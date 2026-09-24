@@ -3379,5 +3379,483 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "usa-national-brain-bee",
+    "name": "USA National Brain Bee",
+    "organizer": "USA Brain Bee, in partnership with the Society for Neuroscience",
+    "organizer_url": "https://usabrainbee.com/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "The United States' three tier neuroscience quiz competition for teens, moving from local city Brain Bees to a National Championship. The national champion represents the US at the International Brain Bee World Championship, and the Society for Neuroscience arranges a laboratory internship for national and international winners.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Advancement to the International Brain Bee World Championship; a laboratory internship arranged by the Society for Neuroscience.",
+    "official_url": "https://usabrainbee.com/the-championship/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Local city Brain Bee competitions (following the usual winter to spring pattern)",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://usabrainbee.com/"
+      },
+      {
+        "label": "National Championship (following the usual spring pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.sfn.org/brainbee"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "australian-brain-bee-challenge",
+    "name": "Australia and New Zealand Brain Bee Challenge (ABBC)",
+    "organizer": "Australasian Neuroscience Society",
+    "organizer_url": "https://ans.org.au/meetings-events/australia-brain-bee-challenge",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "A free annual neuroscience quiz for Year 10 students in Australia and Year 11 students in New Zealand, run online through Education Perfect. Top scorers advance toward a national final, and the strongest Australian performer represents the country at the International Brain Bee World Championship.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 0,
+      "currency": "AUD"
+    },
+    "prize": "Advancement toward the national final; the top performer represents Australia at the IBB World Championship.",
+    "official_url": "https://hsl.educationperfect.com/brain-bee-challenge-2026",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 assessment window opens (following the usual March pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+11",
+        "estimated": true,
+        "source_url": "https://hsl.educationperfect.com/brain-bee-challenge-2026"
+      },
+      {
+        "label": "Round 1 assessment window closes (following the usual March pattern)",
+        "date": "2027-03-31",
+        "type": "deadline",
+        "timezone": "UTC+11",
+        "estimated": true,
+        "source_url": "https://help.educationperfect.com/article/677-brain-bee"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "uk-brain-bee",
+    "name": "UK Brain Bee",
+    "organizer": "UK Brain Bee, hosted at Imperial College London",
+    "organizer_url": "https://www.ukbrainbee.com/about-ukbrainbee",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "The United Kingdom's pathway into the International Brain Bee, run through regional heats that feed a national final. The UK's national champion goes on to represent the country at the International Brain Bee World Championship.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Advancement to the UK national final; the champion represents the UK at the IBB World Championship.",
+    "official_url": "https://www.ukbrainbee.com/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional heats (following the usual winter pattern)",
+        "date": "2027-01-15",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.ukbrainbee.com/about-ukbrainbee"
+      },
+      {
+        "label": "UK national final (following the usual spring pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.thebrainbee.org/countries/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "canadian-national-brain-bee",
+    "name": "Canadian National Brain Bee",
+    "organizer": "Canadian Association for Neuroscience",
+    "organizer_url": "https://brainbee.ca/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "Canada's neuroscience quiz competition for high school students, moving from local Brain Bees through a virtual national phase to a Final Showdown held at the Canadian Association for Neuroscience's annual conference. Canada's national champion advances to the International Brain Bee World Championship.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "Advancement to the Final Showdown; Canada's champion represents the country at the IBB World Championship.",
+    "official_url": "https://brainbee.ca/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "National Brain Bee first phase (virtual)",
+        "date": "2026-04-24",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://brainbee.ca/"
+      },
+      {
+        "label": "Final National Showdown (Montreal, CAN annual conference)",
+        "date": "2026-05-18",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://can-acn.org/can-connection-summer-2025/"
+      },
+      {
+        "label": "2027 National Brain Bee first phase (following the usual April pattern)",
+        "date": "2027-04-23",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://brainbee.ca/local-bees/vancouver/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "china-brain-bee",
+    "name": "China Brain Bee",
+    "organizer": "China Brain Bee national committee",
+    "organizer_url": "https://en.brainbee.org.cn/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "China's pathway into the International Brain Bee, running regional rounds and a national final that selects the students who represent China at the World Championship. Chinese competitors have placed among the top finishers at recent World Championships.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "CN",
+    "fee": {
+      "amount": 0,
+      "currency": "CNY"
+    },
+    "prize": "Advancement through regional rounds; selection to represent China at the IBB World Championship.",
+    "official_url": "https://en.brainbee.org.cn/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional rounds (following the usual winter pattern)",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://www.thebrainbee.org/countries/"
+      },
+      {
+        "label": "National final (following the usual spring pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Brain_Bee"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "german-neuroscience-olympiad",
+    "name": "German Neuroscience Olympiad (Deutsche Neurowissenschaften-Olympiade)",
+    "organizer": "Deutsche Neurowissenschaften-Olympiade e.V.",
+    "organizer_url": "https://neurowissenschaften-olympiade.de/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "A German neuroscience quiz competition for students in grades 8 through 13, conducted in English at city level before a national final. It runs independently of the International Brain Bee, giving German students a home grown route into competitive neuroscience.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "DE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Recognition at the national final; top participants gain contact with neuroscience research groups.",
+    "official_url": "https://portal.neurowissenschaften-olympiade.de/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional competitions (following the usual March pattern)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://portal.neurowissenschaften-olympiade.de/civicrm/event/info?reset=1&id=24"
+      },
+      {
+        "label": "National final (following the usual March pattern)",
+        "date": "2027-03-20",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://mpinb.mpg.de/en/press/teachers-and-students/dno-2025-german-neuroscience-olympiad.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "brazilian-brain-bee",
+    "name": "Brazilian Brain Bee (Olimpiada Brasileira de Neurociencias)",
+    "organizer": "Olimpiada Brasileira de Neurociencias (OBN) committee",
+    "organizer_url": "https://brazilianbrainbee.org/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "Brazil's scientific olympiad in neuroscience for basic education students, moving from local stages to a national stage that chooses Brazil's representative at the International Brain Bee. It aims to build early interest in neuroscience research across Brazilian schools.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "BR",
+    "fee": {
+      "amount": 0,
+      "currency": "BRL"
+    },
+    "prize": "Selection as Brazilian champion; advancement to the International Brain Bee.",
+    "official_url": "https://brazilianbrainbee.org/como-participar/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Local stage competitions (following the usual autumn pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://brazilianbrainbee.org/"
+      },
+      {
+        "label": "National stage (following the usual pattern)",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://brazilianbrainbee.org/historico/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "nigeria-brain-bee",
+    "name": "Nigeria Brain Bee",
+    "organizer": "Bingham University, with IBRO and the Dana Foundation",
+    "organizer_url": "https://ibro.org/event/nigeria-brain-bee-and-brain-awareness-program-2026/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "A hybrid neuroscience competition and public brain health awareness program held at Bingham University in Nigeria, funded through IBRO Brain Awareness Week grants and the Dana Foundation. It combines a student quiz component with outreach addressing stigma around brain health.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "NG",
+    "fee": {
+      "amount": 0,
+      "currency": "NGN"
+    },
+    "prize": "Recognition at the event; participation in IBRO and Dana Foundation supported brain awareness activities.",
+    "official_url": "https://neurosciencenigeria.org",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Nigeria Brain Bee and Brain Awareness Program 2026",
+        "date": "2026-05-13",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ibro.org/event/nigeria-brain-bee-and-brain-awareness-program-2026/"
+      },
+      {
+        "label": "2027 edition (following the usual May pattern)",
+        "date": "2027-05-13",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://ibro.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-01"
+  },
+  {
+    "id": "singapore-brain-bee-challenge",
+    "name": "Singapore Brain Bee Challenge",
+    "organizer": "Singapore Neuroscience Association (SNA)",
+    "organizer_url": "https://neuroscience.sg/brain-bee",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "Singapore's national neuroscience competition for pre-university students aged 14 to 19, run by the Singapore Neuroscience Association as the country's coordinator for the International Brain Bee. It aims to build scientific curiosity and critical thinking about the brain among junior college and equivalent students.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "SG",
+    "fee": {
+      "amount": 0,
+      "currency": "SGD"
+    },
+    "prize": "Recognition as national champion; advancement toward the IBB World Championship.",
+    "official_url": "https://neuroscience.sg/brain-bee",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Singapore Brain Bee Challenge 2026",
+        "date": "2026-06-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://medicine.nus.edu.sg/news/nus-medicine-organises-singapore-brain-bee-challenge-2026-to-spark-passion-in-neuroscience/"
+      },
+      {
+        "label": "Advancement to IBB World Championship (following the usual pattern)",
+        "date": "2027-11-01",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://www.thebrainbee.org/countries/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "france-brain-bee",
+    "name": "France Brain Bee",
+    "organizer": "Paris Brain Institute",
+    "organizer_url": "https://parisbraininstitute.org/olympiads-france-brain-bee",
+    "category": "stem",
+    "subjects": [
+      "neuroscience"
+    ],
+    "description": "France's neuroscience olympiad for high school students, organized in English by the Paris Brain Institute since 2019. Top performers from the French round advance toward the International Brain Bee World Championship.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "FR",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Recognition as French champion; advancement toward the IBB World Championship.",
+    "official_url": "https://parisbraininstitute.org/olympiads-france-brain-bee",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "French round (following the usual pattern reported in past editions)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://parisbraininstitute.org/news/looking-back-2026-neuroscience-olympiad-france-brain-bee"
+      },
+      {
+        "label": "Advancement to IBB World Championship (following the usual pattern)",
+        "date": "2027-11-01",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.thebrainbee.org/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
   }
 ]
