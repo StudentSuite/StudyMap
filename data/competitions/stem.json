@@ -2415,5 +2415,499 @@
       "on": "2026-09-21"
     },
     "valid_till": "2026-11-15"
+  },
+  {
+    "id": "german-biology-olympiad",
+    "name": "German Biology Olympiad (IBO Selection)",
+    "organizer": "Leibniz Institute for Science and Mathematics Education (IPN), Kiel",
+    "organizer_url": "https://www.leibniz-ipn.de/en/research/projects/ibo",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "Germany's four round selection process for the International Biology Olympiad, run by the IPN in Kiel on behalf of the Federal Ministry of Education and Research. Thousands of students sit a school based opening round, narrowing through three further rounds to the four students who form the German IBO team.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "DE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Advancement through four rounds to represent Germany at the International Biology Olympiad.",
+    "official_url": "https://www.scienceolympiaden.de/ibo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 registration opens (following the usual April pattern)",
+        "date": "2026-04-01",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.scienceolympiaden.de/ibo/ibo-internationale-biologie-olympiade/termine/termine-ibo-2026/1-runde-2026"
+      },
+      {
+        "label": "Round 1 submission deadline (following the usual late-September pattern)",
+        "date": "2026-09-25",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.scienceolympiaden.de/ibo/ibo-internationale-biologie-olympiade/termine/termine-ibo-2026/1-runde-2026"
+      },
+      {
+        "label": "Round 4 national final selection (Kiel, following the usual May pattern)",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.scienceolympiaden.de/ibo/ibo-internationale-biologie-olympiade/termine"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "japan-biology-olympiad",
+    "name": "Japan Biology Olympiad (JBO)",
+    "organizer": "International Biology Olympiad Japan Committee",
+    "organizer_url": "https://www.jbo-info.jp/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A national biology exam for Japanese students under 20 who have not yet entered university, run since 2005 as Japan's selection process for the International Biology Olympiad. A preliminary written round narrows the field to a multi day final round, after which a further representative selection test chooses the four student national team.",
+    "format": "hybrid",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "JP",
+    "fee": {
+      "amount": 2000,
+      "currency": "JPY"
+    },
+    "prize": "Advancement to the final round and representative selection test; selection for Japan's four student IBO team.",
+    "official_url": "https://www.jbo-info.jp/jbo/jbo2026.html",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Preliminary round",
+        "date": "2026-07-12",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.jbo-info.jp/jbo/jbo2026.html"
+      },
+      {
+        "label": "Final round (Osaka)",
+        "date": "2026-08-18",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.jbo-info.jp/jbo/jbo2026.html"
+      },
+      {
+        "label": "Representative selection test",
+        "date": "2027-03-15",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/jp-japan-biology-olympiad-committee-58.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "china-national-biology-olympiad",
+    "name": "China National Biology Olympiad (CNBO)",
+    "organizer": "Committee for China National Biology Olympiad, under the China Association for Science and Technology",
+    "organizer_url": "https://www.cyscc.org/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A multi round biology competition for grade 10 and 11 students across China, moving from theoretical multiple choice rounds to a third round combining theory and practical laboratory work. Around 40,000 students sit the opening round each year, and the strongest performers are tracked toward China's team for the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "CN",
+    "fee": {
+      "amount": 0,
+      "currency": "CNY"
+    },
+    "prize": "Advancement through national rounds; top performers are tracked toward China's IBO team.",
+    "official_url": "https://www.cyscc.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline (2026 cycle)",
+        "date": "2026-03-31",
+        "type": "registration_close",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "http://www.botany.org.cn/swxjs/swxls/202604/t20260427_835390.html"
+      },
+      {
+        "label": "National League exam (2026 cycle)",
+        "date": "2026-05-10",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "http://www.botany.org.cn/swxjs/swxls/202604/t20260427_835390.html"
+      },
+      {
+        "label": "National League exam (2027 cycle, following the usual mid-May pattern)",
+        "date": "2027-05-09",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/cn-china-national-biology-olympiad-cnbo-83.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-02-01"
+  },
+  {
+    "id": "korean-biology-olympiad",
+    "name": "Korean Biology Olympiad (KBO)",
+    "organizer": "Korea Foundation for the Advancement of Science and Creativity",
+    "organizer_url": "http://kbo.bioedu.kr",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A year long biology programme for Korean high school students combining distance learning modules with three selection tests held in August, December and February. The third selection test adds a practical exam, and finalists attend a week of university based training before Korea's four student International Biology Olympiad team is chosen.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "KR",
+    "fee": {
+      "amount": 0,
+      "currency": "KRW"
+    },
+    "prize": "University based training camp invitation; selection for Korea's four student IBO team.",
+    "official_url": "http://kbo.bioedu.kr",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "First selection test (following the usual August pattern)",
+        "date": "2026-08-15",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/kr-korean-biology-olympiad-55.html"
+      },
+      {
+        "label": "Third selection test with practical exam (following the usual February pattern)",
+        "date": "2027-02-15",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/Korean_Biology_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "vietnam-biology-olympiad",
+    "name": "Vietnam Biology Olympiad (VBO)",
+    "organizer": "Quality Control Department, Ministry of Education and Training, Vietnam",
+    "organizer_url": "https://hcmus.edu.vn/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A three round national biology competition run since 1994, starting with regional and provincial rounds each autumn before national rounds in early and mid spring. About 5,000 students from 63 provinces enter the first round, and the strongest performers are trained toward Vietnam's team for the International Biology Olympiad.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "VN",
+    "fee": {
+      "amount": 0,
+      "currency": "VND"
+    },
+    "prize": "Advancement through provincial and national rounds; selection for Vietnam's IBO team.",
+    "official_url": "https://www.ibo-info.org/en/countries/nbo/vn-vbo-10.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1, regional and provincial rounds (following the usual October to November pattern)",
+        "date": "2026-11-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/vn-vbo-10.html"
+      },
+      {
+        "label": "Round 3 national round (following the usual March to April pattern)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://english.hnue.edu.vn/News/Events/p/vietnamese-biology-team-ready-to-compete-at-the-international-biology-olympiad-ibo-2025-379"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "israel-national-biology-olympiad",
+    "name": "Israel National Biology Olympiad (INBO)",
+    "organizer": "Tel Aviv University, in cooperation with Israel's Ministry of Education",
+    "organizer_url": "https://noar.tau.ac.il/ist_bio",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A four round biology competition for Israeli students in grades 10 through 12, moving from an online school based round through four regional academic centers to a final two day competition at Tel Aviv University. The programme selects and trains Israel's team for the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IL",
+    "fee": {
+      "amount": 0,
+      "currency": "ILS"
+    },
+    "prize": "Advancement through four rounds to the Tel Aviv University final; selection for Israel's IBO team.",
+    "official_url": "https://noar.tau.ac.il/ist_bio",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1, online school round (following the usual winter pattern)",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/il-israel-95.html"
+      },
+      {
+        "label": "Final round (Tel Aviv University, following the usual spring pattern)",
+        "date": "2027-03-15",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://en.wikipedia.org/wiki/International_Biology_Olympiad"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-15"
+  },
+  {
+    "id": "polish-biology-olympiad",
+    "name": "Polish Biology Olympiad (Olimpiada Biologiczna)",
+    "organizer": "Stowarzyszenie Przyszlosc w Biologii (Future in Biology Association)",
+    "organizer_url": "https://www.olimpbiol.pl/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "Poland's national biology competition, running since 1970 through three rounds that include an independent research project and a final stage of practical exams and an oral project defense at the University of Warsaw. The top four finishers represent Poland at the International Biology Olympiad, which Poland will host in Warsaw in 2027.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "PL",
+    "fee": {
+      "amount": 0,
+      "currency": "PLN"
+    },
+    "prize": "Advancement through three rounds; the top four finishers form Poland's IBO team.",
+    "official_url": "https://www.olimpbiol.pl/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "56th Olympiad registration deadline",
+        "date": "2026-09-30",
+        "type": "registration_close",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/pl-polish-biology-olympiad-38.html"
+      },
+      {
+        "label": "IBO 2027 (Warsaw, hosted by Poland)",
+        "date": "2027-07-18",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.olimpbiol.pl/2026/08/03/ibo-2026/"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-01"
+  },
+  {
+    "id": "mexican-biology-olympiad",
+    "name": "Mexican National Biology Olympiad (Olimpiada Nacional de Biologia)",
+    "organizer": "Academia Mexicana de Ciencias",
+    "organizer_url": "https://www.amc.mx/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "Mexico's national biology competition, running since 1991 through a state level round held at state universities and a national round bringing together the top six students from each of the 31 states. The national round combines a theoretical and a practical exam, and its top four scorers form Mexico's team for the International Biology Olympiad.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "MX",
+    "fee": {
+      "amount": 0,
+      "currency": "MXN"
+    },
+    "prize": "Advancement to the national round; the top four scorers represent Mexico at the IBO.",
+    "official_url": "https://amc.mx/olimpiadanacionaldebiologia/index-2.html",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "State level round (following the usual late-October pattern)",
+        "date": "2026-10-25",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/mx-olimpiada-nacional-de-biologia-48.html"
+      },
+      {
+        "label": "National round (following the usual late-November pattern)",
+        "date": "2026-11-25",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/mx-olimpiada-nacional-de-biologia-48.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2026-12-15"
+  },
+  {
+    "id": "thailand-biology-olympiad",
+    "name": "Thailand Biology Olympiad (TBO)",
+    "organizer": "Promotion of Academic Olympiad and Development of Science Education Foundation (POSN), with the Institute for the Promotion of Teaching Science and Technology (IPST)",
+    "organizer_url": "https://www.posn.or.th/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "Thailand's biology talent programme, run through 13 regional POSN centers before a national selection exam and an IPST training camp choose the four student team for the International Biology Olympiad. Selection includes both a written exam and hands on laboratory training over two camps.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "TH",
+    "fee": {
+      "amount": 0,
+      "currency": "THB"
+    },
+    "prize": "Advancement through regional centers and training camps; selection for Thailand's IBO team.",
+    "official_url": "https://www.posn.or.th/en/projects/academic-olympiad/bo/about/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application period opens (following the usual July pattern)",
+        "date": "2027-07-01",
+        "type": "registration_open",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://www.posn.or.th/en/projects/academic-olympiad/bo/about/"
+      },
+      {
+        "label": "Selection exam (following the usual August pattern)",
+        "date": "2027-08-15",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/th-thai-biology-olympiad-23.html"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "iranian-biology-olympiad",
+    "name": "Iranian Biology Olympiad (IrBO)",
+    "organizer": "National Center for Development of Gifted Students and Young Scholars",
+    "organizer_url": "https://en.wikipedia.org/wiki/Iranian_Biology_Olympiad",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A four round biology competition open to Iranian students studying experimental sciences, run by Iran's National Center for Development of Gifted Students and Young Scholars. The rounds move from a multiple choice exam through true or false and mixed theoretical and practical assessments, and the final round selects the four student team for the International Biology Olympiad.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IR",
+    "fee": {
+      "amount": 0,
+      "currency": "IRR"
+    },
+    "prize": "Advancement through four rounds; selection for Iran's four student IBO team.",
+    "official_url": "https://www.ibo-info.org/en/countries/nbo/ir-iranian-biology-olympiad-irbo-63.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1, multiple choice exam (following the usual February pattern)",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC+3:30",
+        "estimated": true,
+        "source_url": "https://www.ibo-info.org/en/countries/nbo/ir-iranian-biology-olympiad-irbo-63.html"
+      },
+      {
+        "label": "Iran team competes at IBO (following the usual July pattern, per national press coverage)",
+        "date": "2027-07-18",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.tehrantimes.com/news/528329/Iran-shines-at-intl-biology-chemistry-Olympiads"
+      }
+    ],
+    "added_by": "yashkewlani",
+    "verified": {
+      "by": "yashkewlani",
+      "on": "2026-09-24"
+    },
+    "valid_till": "2027-01-01"
   }
 ]
