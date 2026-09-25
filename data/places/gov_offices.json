@@ -2242,5 +2242,16 @@
     "address": "Oke-Mosan, Abeokuta, Ogun State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=7.1356421,3.3363436",
     "added_by": "yakew7"
+  },
+  {
+    "id": "vant-gov_offices-01",
+    "name": "PTT Van Basmudurlugu",
+    "type": "gov_offices",
+    "city": "van",
+    "lat": 38.5076665,
+    "lng": 43.3648657,
+    "address": "Selimbey Mahallesi, Iskele Caddesi, 65040 Tusba, Van, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.5076665,43.3648657",
+    "added_by": "yakew7"
   }
 ]

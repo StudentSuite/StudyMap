@@ -1043,5 +1043,38 @@
     "address": "950 Route des Colles, 06410 Biot, France",
     "gmaps_link": "https://maps.google.com/?q=43.6148950,7.0744063",
     "added_by": "yakew7"
+  },
+  {
+    "id": "erz-other_places-01",
+    "name": "Ataturk Universitesi campus",
+    "type": "other_places",
+    "city": "erzurum",
+    "lat": 39.9024928,
+    "lng": 41.2427694,
+    "address": "Ataturk Universitesi Kampusu, Yakutiye, Erzurum, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9024928,41.2427694",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mrs-other_places-01",
+    "name": "Mersin Universitesi, Ciftlikkoy Kampusu",
+    "type": "other_places",
+    "city": "mersin",
+    "lat": 36.787903,
+    "lng": 34.524982,
+    "address": "Ciftlikkoy Kampusu, Yenisehir, 33343 Mersin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.7879030,34.5249820",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mns-other_places-01",
+    "name": "Bahcesehir Koleji Manisa Kampusu",
+    "type": "other_places",
+    "city": "manisa",
+    "lat": 38.6491528,
+    "lng": 27.3453013,
+    "address": "Muradiye Mahallesi, Yunusemre, Manisa, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.6491528,27.3453013",
+    "added_by": "yakew7"
   }
 ]

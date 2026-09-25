@@ -622,5 +622,65 @@
     "gmaps_link": "https://maps.google.com/?q=45.4702620,9.1942238",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "erz-foreign_lang_exam_centre-02",
+    "name": "British Council, Ataturk Universitesi",
+    "type": "foreign_lang_exam_centre",
+    "city": "erzurum",
+    "lat": 39.9024928,
+    "lng": 41.2427694,
+    "address": "Ataturk Universitesi Kampusu, Yakutiye, Erzurum, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9024928,41.2427694",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "diy-foreign_lang_exam_centre-01",
+    "name": "British Council, Bahcesehir Koleji Hevsel Kampusu",
+    "type": "foreign_lang_exam_centre",
+    "city": "diyarbakir",
+    "lat": 37.92205,
+    "lng": 40.2451883,
+    "address": "Hevsel Kampusu, Yeni Mardin Yolu Caddesi, Sur, Diyarbakir, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.9220500,40.2451883",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "vant-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Turkey - Van",
+    "type": "foreign_lang_exam_centre",
+    "city": "van",
+    "lat": 38.504913,
+    "lng": 43.3955928,
+    "address": "Vali Mithatbey Mahallesi, Ipekyolu, Van, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.5049130,43.3955928",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "mrs-foreign_lang_exam_centre-02",
+    "name": "British Council, Evrim Dil Kurslari",
+    "type": "foreign_lang_exam_centre",
+    "city": "mersin",
+    "lat": 36.9159195,
+    "lng": 34.8920445,
+    "address": "Sehitmustafa Mahallesi, Tarsus, Mersin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.9159195,34.8920445",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "mns-foreign_lang_exam_centre-02",
+    "name": "British Council, Bahcesehir Koleji Manisa Kampusu",
+    "type": "foreign_lang_exam_centre",
+    "city": "manisa",
+    "lat": 38.6491528,
+    "lng": 27.3453013,
+    "address": "Muradiye Mahallesi, Yunusemre, Manisa, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.6491528,27.3453013",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

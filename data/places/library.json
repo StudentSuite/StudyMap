@@ -2264,5 +2264,16 @@
     "address": "Kuto, Abeokuta, Ogun State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=7.1610000,3.3480000",
     "added_by": "yakew7"
+  },
+  {
+    "id": "vant-library-01",
+    "name": "Van Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "van",
+    "lat": 38.4979661,
+    "lng": 43.3990493,
+    "address": "Milli Egemenlik Caddesi, Serefiye Mahallesi, Ipekyolu, 65100 Van, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.4979661,43.3990493",
+    "added_by": "yakew7"
   }
 ]
