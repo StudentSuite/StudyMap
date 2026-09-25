@@ -2132,5 +2132,60 @@
     "address": "Maweni area, Malindi town, Kilifi County, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-3.2236236,40.1298620",
     "added_by": "yakew7"
+  },
+  {
+    "id": "alb-gov_offices-01",
+    "name": "Ayuntamiento de Alcobendas",
+    "type": "gov_offices",
+    "city": "alcobendas",
+    "lat": 40.547455,
+    "lng": -3.6418693,
+    "address": "Plaza Mayor 1, 28100 Alcobendas, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.5474550,-3.6418693",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poz-gov_offices-01",
+    "name": "Ayuntamiento de Pozuelo de Alarcon",
+    "type": "gov_offices",
+    "city": "pozuelo_de_alarcon",
+    "lat": 40.4344207,
+    "lng": -3.8138168,
+    "address": "Plaza Mayor 1, 28223 Pozuelo de Alarcon, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.4344207,-3.8138168",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mnc-gov_offices-01",
+    "name": "Ajuntament de Manacor",
+    "type": "gov_offices",
+    "city": "manacor",
+    "lat": 39.5691526,
+    "lng": 3.2076493,
+    "address": "Carrer del Convent, 07500 Manacor, Illes Balears, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.5691526,3.2076493",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lpa-gov_offices-01",
+    "name": "Correos, Las Palmas de Gran Canaria",
+    "type": "gov_offices",
+    "city": "las_palmas_de_gran_cana",
+    "lat": 28.1064375,
+    "lng": -15.4201189,
+    "address": "Avenida Primero de Mayo 62, 35002 Las Palmas de Gran Canaria, Spain",
+    "gmaps_link": "https://maps.google.com/?q=28.1064375,-15.4201189",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "snr-gov_offices-01",
+    "name": "Ayuntamiento de San Roque",
+    "type": "gov_offices",
+    "city": "san_roque",
+    "lat": 36.2104798,
+    "lng": -5.391614,
+    "address": "Plaza de las Constituciones, 11360 San Roque, Cadiz, Spain",
+    "gmaps_link": "https://maps.google.com/?q=36.2104798,-5.3916140",
+    "added_by": "yakew7"
   }
 ]

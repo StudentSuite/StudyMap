@@ -2165,5 +2165,60 @@
     "address": "Malindi town, Kilifi County, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-3.2236236,40.1298620",
     "added_by": "yakew7"
+  },
+  {
+    "id": "alb-library-01",
+    "name": "Biblioteca Publica Municipal Central Pablo Iglesias",
+    "type": "library",
+    "city": "alcobendas",
+    "lat": 40.5442339,
+    "lng": -3.645781,
+    "address": "Paseo de la Chopera 59, 28100 Alcobendas, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.5442339,-3.6457810",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poz-library-01",
+    "name": "Biblioteca Municipal Miguel de Cervantes",
+    "type": "library",
+    "city": "pozuelo_de_alarcon",
+    "lat": 40.4338466,
+    "lng": -3.8139085,
+    "address": "Calle Antonio Becerril, 28223 Pozuelo de Alarcon, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.4338466,-3.8139085",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mnc-library-01",
+    "name": "Biblioteca Municipal de Manacor",
+    "type": "library",
+    "city": "manacor",
+    "lat": 39.5691463,
+    "lng": 3.2074775,
+    "address": "Placa del Convent, 07500 Manacor, Illes Balears, Spain",
+    "gmaps_link": "https://maps.google.com/?q=39.5691463,3.2074775",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lpa-library-01",
+    "name": "Biblioteca Publica del Estado / Biblioteca Insular, Las Palmas",
+    "type": "library",
+    "city": "las_palmas_de_gran_cana",
+    "lat": 28.102408,
+    "lng": -15.4158921,
+    "address": "Calle Muro 4, Triana, 35002 Las Palmas de Gran Canaria, Spain",
+    "gmaps_link": "https://maps.google.com/?q=28.1024080,-15.4158921",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lrj-library-01",
+    "name": "Biblioteca Municipal Viera y Clavijo, Los Realejos",
+    "type": "library",
+    "city": "los_realejos",
+    "lat": 28.3816256,
+    "lng": -16.5839772,
+    "address": "Los Realejos, Santa Cruz de Tenerife, Spain",
+    "gmaps_link": "https://maps.google.com/?q=28.3816256,-16.5839772",
+    "added_by": "yakew7"
   }
 ]
