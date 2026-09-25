@@ -2374,5 +2374,49 @@
     "address": "Kepeci Mahallesi, 1217 Sokak No:31, 32300 Isparta, Turkey",
     "gmaps_link": "https://maps.google.com/?q=37.7659569,30.5596894",
     "added_by": "yakew7"
+  },
+  {
+    "id": "osg-library-01",
+    "name": "National Library of Nigeria, Osun State Branch",
+    "type": "library",
+    "city": "osogbo",
+    "lat": 7.7583223,
+    "lng": 4.5750447,
+    "address": "New Ikiru Road, Omo West, Osogbo, Osun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.7583223,4.5750447",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cme-library-01",
+    "name": "Biblioteca Municipal de Camarma de Esteruelas",
+    "type": "library",
+    "city": "camarma_de_esteruelas",
+    "lat": 40.5499692,
+    "lng": -3.3778111,
+    "address": "Calle La Soledad 37, 28816 Camarma de Esteruelas, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.5499692,-3.3778111",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "brg-library-01",
+    "name": "Biblioteca Municipal de Berango",
+    "type": "library",
+    "city": "berango",
+    "lat": 43.3588045,
+    "lng": -2.998193,
+    "address": "Simon Otxandategi 64, 48640 Berango, Bizkaia, Spain",
+    "gmaps_link": "https://maps.google.com/?q=43.3588045,-2.9981930",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "osh-library-01",
+    "name": "Crimmd Library",
+    "type": "library",
+    "city": "oshodi",
+    "lat": 6.5590367,
+    "lng": 3.2982637,
+    "address": "138 Ejigbo-Idimu Road, Ejigbo, Oshodi-Isolo, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.5590367,3.2982637",
+    "added_by": "yakew7"
   }
 ]

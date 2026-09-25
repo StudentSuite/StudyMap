@@ -2286,5 +2286,49 @@
     "address": "69 Gwanmun-ro, Jungang-dong, Gwacheon-si, Gyeonggi-do, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.4292215,126.9875944",
     "added_by": "yakew7"
+  },
+  {
+    "id": "osg-gov_offices-01",
+    "name": "Osun State Government Secretariat",
+    "type": "gov_offices",
+    "city": "osogbo",
+    "lat": 7.7281409,
+    "lng": 4.5169223,
+    "address": "Gbongan-Osogbo Road, Abeere, Osogbo, Osun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.7281409,4.5169223",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cme-gov_offices-01",
+    "name": "Ayuntamiento de Camarma de Esteruelas",
+    "type": "gov_offices",
+    "city": "camarma_de_esteruelas",
+    "lat": 40.5490864,
+    "lng": -3.3786985,
+    "address": "Calle de Daganzo 2, 28816 Camarma de Esteruelas, Madrid, Spain",
+    "gmaps_link": "https://maps.google.com/?q=40.5490864,-3.3786985",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "brg-gov_offices-01",
+    "name": "Ayuntamiento de Berango",
+    "type": "gov_offices",
+    "city": "berango",
+    "lat": 43.3635888,
+    "lng": -2.9969227,
+    "address": "Plaza Elexalde 3, 48640 Berango, Bizkaia, Spain",
+    "gmaps_link": "https://maps.google.com/?q=43.3635888,-2.9969227",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "yem-gov_offices-01",
+    "name": "Yesilyurt Belediyesi (Municipality)",
+    "type": "gov_offices",
+    "city": "yesilyurt_malatya",
+    "lat": 38.343376,
+    "lng": 38.2738589,
+    "address": "Turgut Ozal Mahallesi, Gulumser Caddesi No:2, 44080 Yesilyurt, Malatya, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.3433760,38.2738589",
+    "added_by": "yakew7"
   }
 ]

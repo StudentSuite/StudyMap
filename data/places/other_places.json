@@ -1362,5 +1362,27 @@
     "address": "Cunur Mahallesi, Suleyman Demirel Caddesi, 32260 Isparta, Turkey",
     "gmaps_link": "https://maps.google.com/?q=37.8216167,30.5365366",
     "added_by": "yakew7"
+  },
+  {
+    "id": "osg-other_places-01",
+    "name": "National Open University of Nigeria, Osogbo Study Centre",
+    "type": "other_places",
+    "city": "osogbo",
+    "lat": 7.7515505,
+    "lng": 4.5682575,
+    "address": "Osogbo-Ilesa Road, Osogbo, Osun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.7515505,4.5682575",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "srl-other_places-01",
+    "name": "National Theatre, Nigeria",
+    "type": "other_places",
+    "city": "surulere",
+    "lat": 6.4746109,
+    "lng": 3.3687333,
+    "address": "Iganmu, Surulere, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4746109,3.3687333",
+    "added_by": "yakew7"
   }
 ]
