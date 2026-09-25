@@ -3793,5 +3793,60 @@
     "address": "227 Main Street, East Haven, CT 06512",
     "gmaps_link": "https://maps.google.com/?q=41.2777552,-72.8702648",
     "added_by": "yakew7"
+  },
+  {
+    "id": "simsbury-library-01",
+    "name": "Simsbury Public Library",
+    "type": "library",
+    "city": "simsbury",
+    "lat": 41.8727195,
+    "lng": -72.8035186,
+    "address": "725 Hopmeadow Street, Simsbury, CT 06070",
+    "gmaps_link": "https://maps.google.com/?q=41.8727195,-72.8035186",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "westport-library-01",
+    "name": "The Westport Library",
+    "type": "library",
+    "city": "westport",
+    "lat": 41.1396873,
+    "lng": -73.3612903,
+    "address": "20 Jesup Road, Westport, CT 06880",
+    "gmaps_link": "https://maps.google.com/?q=41.1396873,-73.3612903",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chicopee-library-01",
+    "name": "Chicopee Public Library",
+    "type": "library",
+    "city": "chicopee",
+    "lat": 42.1483985,
+    "lng": -72.5995191,
+    "address": "449 Front Street, Chicopee, MA 01020",
+    "gmaps_link": "https://maps.google.com/?q=42.1483985,-72.5995191",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newbedfd-library-01",
+    "name": "Wilks Branch Library, New Bedford Free Public Library",
+    "type": "library",
+    "city": "new_bedford",
+    "lat": 41.6733566,
+    "lng": -70.924623,
+    "address": "1911 Acushnet Avenue, New Bedford, MA 02746",
+    "gmaps_link": "https://maps.google.com/?q=41.6733566,-70.924623",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "westspfd-library-01",
+    "name": "West Springfield Public Library",
+    "type": "library",
+    "city": "west_springfield",
+    "lat": 42.1052166,
+    "lng": -72.6222694,
+    "address": "200 Park Street, West Springfield, MA 01089",
+    "gmaps_link": "https://maps.google.com/?q=42.1052166,-72.6222694",
+    "added_by": "yakew7"
   }
 ]

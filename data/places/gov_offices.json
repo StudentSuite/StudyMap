@@ -3870,5 +3870,60 @@
     "address": "250 Main Street, East Haven, CT 06512",
     "gmaps_link": "https://maps.google.com/?q=41.2775532,-72.8716918",
     "added_by": "yakew7"
+  },
+  {
+    "id": "simsbury-gov_offices-01",
+    "name": "Simsbury Post Office",
+    "type": "gov_offices",
+    "city": "simsbury",
+    "lat": 41.8803708,
+    "lng": -72.7995749,
+    "address": "Pent Road, Simsbury, CT 06070",
+    "gmaps_link": "https://maps.google.com/?q=41.8803708,-72.7995749",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "westport-gov_offices-01",
+    "name": "Westport Town Hall",
+    "type": "gov_offices",
+    "city": "westport",
+    "lat": 41.1450981,
+    "lng": -73.3599425,
+    "address": "110 Myrtle Avenue, Westport, CT 06880",
+    "gmaps_link": "https://maps.google.com/?q=41.1450981,-73.3599425",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chicopee-gov_offices-01",
+    "name": "Chicopee Post Office, Chicopee Center Station",
+    "type": "gov_offices",
+    "city": "chicopee",
+    "lat": 42.1457447,
+    "lng": -72.6085591,
+    "address": "100 Center Street, Chicopee, MA 01013",
+    "gmaps_link": "https://maps.google.com/?q=42.1457447,-72.6085591",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newbedfd-gov_offices-01",
+    "name": "New Bedford Post Office",
+    "type": "gov_offices",
+    "city": "new_bedford",
+    "lat": 41.6364573,
+    "lng": -70.9276383,
+    "address": "695 Pleasant Street, New Bedford, MA 02740",
+    "gmaps_link": "https://maps.google.com/?q=41.6364573,-70.9276383",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "westspfd-gov_offices-01",
+    "name": "West Springfield Town Hall",
+    "type": "gov_offices",
+    "city": "west_springfield",
+    "lat": 42.105928,
+    "lng": -72.6233464,
+    "address": "Central Street, West Springfield, MA 01089",
+    "gmaps_link": "https://maps.google.com/?q=42.105928,-72.6233464",
+    "added_by": "yakew7"
   }
 ]
