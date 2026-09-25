@@ -1868,5 +1868,38 @@
     "address": "Via San Carlo 2, 28041 Arona, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.7605462,8.5596567",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aan-gov_offices-01",
+    "name": "Al Ain Customer Happiness Center (ICP)",
+    "type": "gov_offices",
+    "city": "al_ain",
+    "lat": 24.2574865,
+    "lng": 55.7306714,
+    "address": "Al Jimi Street, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2574865,55.7306714",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ajm-gov_offices-01",
+    "name": "Ajman Municipality and Planning Department",
+    "type": "gov_offices",
+    "city": "ajman",
+    "lat": 25.4076041,
+    "lng": 55.4449488,
+    "address": "Masfoot Road, Al Bustan, Ajman, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.4076041,55.4449488",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "fjr-gov_offices-01",
+    "name": "Emirates Post - Fujairah Central Post Office",
+    "type": "gov_offices",
+    "city": "fujairah",
+    "lat": 25.1184347,
+    "lng": 56.3396668,
+    "address": "Sheikh Mohammed bin Hamad Al Sharqi Street, Fujairah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.1184347,56.3396668",
+    "added_by": "yakew7"
   }
 ]

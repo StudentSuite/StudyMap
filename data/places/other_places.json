@@ -977,5 +977,27 @@
     "address": "Via Cadore 48, 20900 Monza, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.6038939,9.2613173",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aan-other_places-01",
+    "name": "Al Ain University, Al Ain Campus",
+    "type": "other_places",
+    "city": "al_ain",
+    "lat": 24.2394169,
+    "lng": 55.7408993,
+    "address": "Al Jimi, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2394169,55.7408993",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rkt-other_places-01",
+    "name": "RAKEZ Compass Coworking Centre",
+    "type": "other_places",
+    "city": "ras_al_khaimah",
+    "lat": 25.6649983,
+    "lng": 55.7862928,
+    "address": "Al Hamra Industrial Zone, Ras Al Khaimah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.6649983,55.7862928",
+    "added_by": "yakew7"
   }
 ]

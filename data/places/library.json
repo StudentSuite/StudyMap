@@ -1879,5 +1879,38 @@
     "address": "Piazza San Graziano 3, 28041 Arona, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.7613165,8.5605349",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aan-library-01",
+    "name": "Zayed Central Library",
+    "type": "library",
+    "city": "al_ain",
+    "lat": 24.2333566,
+    "lng": 55.7539078,
+    "address": "Al Mutarad, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2333566,55.7539078",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rkt-library-01",
+    "name": "Ras Al Khaimah Public Library",
+    "type": "library",
+    "city": "ras_al_khaimah",
+    "lat": 25.7900056,
+    "lng": 55.9595958,
+    "address": "Suhaim, Ras Al Khaimah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.7900056,55.9595958",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "fjr-library-01",
+    "name": "Fujairah Public Library",
+    "type": "library",
+    "city": "fujairah",
+    "lat": 25.1324597,
+    "lng": 56.356459,
+    "address": "Corniche area, Fujairah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.1324597,56.3564590",
+    "added_by": "yakew7"
   }
 ]

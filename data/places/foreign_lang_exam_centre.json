@@ -562,5 +562,29 @@
     "gmaps_link": "https://maps.google.com/?q=39.7918989,30.5005231",
     "added_by": "yakew7",
     "exam": "TOMER Turkish Proficiency Certificate"
+  },
+  {
+    "id": "aan-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Al Ain University",
+    "type": "foreign_lang_exam_centre",
+    "city": "al_ain",
+    "lat": 24.2394169,
+    "lng": 55.7408993,
+    "address": "Al Ain University, Al Jimi, Al Ain, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2394169,55.7408993",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "ajm-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Ajman (Meccademia Education Institute)",
+    "type": "foreign_lang_exam_centre",
+    "city": "ajman",
+    "lat": 25.3969159,
+    "lng": 55.4472268,
+    "address": "Al Rashidiya 2, Ajman, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.3969159,55.4472268",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
