@@ -1967,5 +1967,60 @@
     "address": "Market Road, Ogui, Enugu, Enugu State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.4358189,7.4906423",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bjv-library-01",
+    "name": "Bodrum Cevat Sakir Halk Kutuphanesi",
+    "type": "library",
+    "city": "bodrum",
+    "lat": 37.0392359,
+    "lng": 27.4363244,
+    "address": "Cevat Sakir Caddesi, Carsi Mahallesi, 48400 Bodrum, Mugla, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0392359,27.4363244",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mrs-library-01",
+    "name": "Mersin Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "mersin",
+    "lat": 36.7999144,
+    "lng": 34.6325077,
+    "address": "Uray Caddesi, Cami Serif Mahallesi, 33050 Mersin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.7999144,34.6325077",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mns-library-01",
+    "name": "Manisa Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "manisa",
+    "lat": 38.6196872,
+    "lng": 27.4335583,
+    "address": "Anafartalar Mahallesi, Halil Erdogan Caddesi No:7, 45020 Sehzadeler, Manisa, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.6196872,27.4335583",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vas-library-01",
+    "name": "Sems-i Sivasi Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "sivas",
+    "lat": 39.7456134,
+    "lng": 37.0110548,
+    "address": "Inonu Bulvari No:29, Ortulupinar Mahallesi, Sivas, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.7456134,37.0110548",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erz-library-01",
+    "name": "Erzurum Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "erzurum",
+    "lat": 39.9010205,
+    "lng": 41.2748763,
+    "address": "Ali Ravi Caddesi No:38, Yakutiye, Erzurum, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9010205,41.2748763",
+    "added_by": "yakew7"
   }
 ]

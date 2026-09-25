@@ -1945,5 +1945,60 @@
     "address": "10 Station Road, Port Harcourt, Rivers State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=4.7636391,7.0163189",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mrs-gov_offices-01",
+    "name": "PTT Mersin Merkez Mudurlugu",
+    "type": "gov_offices",
+    "city": "mersin",
+    "lat": 36.7983689,
+    "lng": 34.6302263,
+    "address": "Cami Serif Mahallesi, Akdeniz, Mersin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.7983689,34.6302263",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bjv-gov_offices-01",
+    "name": "Bodrum PTT Merkez Mudurlugu",
+    "type": "gov_offices",
+    "city": "bodrum",
+    "lat": 37.0346629,
+    "lng": 27.4327171,
+    "address": "Carsi Mahallesi, Bodrum, Mugla, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0346629,27.4327171",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mns-gov_offices-01",
+    "name": "Manisa Il Nufus Mudurlugu",
+    "type": "gov_offices",
+    "city": "manisa",
+    "lat": 38.618252,
+    "lng": 27.4294793,
+    "address": "Peker Mahallesi, Cumhuriyet Caddesi No:15, 45020 Sehzadeler, Manisa, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.6182520,27.4294793",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vas-gov_offices-01",
+    "name": "Sivas Il Nufus ve Vatandaslik Mudurlugu",
+    "type": "gov_offices",
+    "city": "sivas",
+    "lat": 39.7558552,
+    "lng": 37.0179217,
+    "address": "Akdegirmen Mahallesi, Sehit Omer Halisdemir Caddesi No:4, Sivas, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.7558552,37.0179217",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erz-gov_offices-01",
+    "name": "Erzurum Il Goc Idaresi Mudurlugu",
+    "type": "gov_offices",
+    "city": "erzurum",
+    "lat": 39.9046667,
+    "lng": 41.2812995,
+    "address": "Rabia Ana Mahallesi, Kale Caddesi No:4, Yakutiye, Erzurum, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9046667,41.2812995",
+    "added_by": "yakew7"
   }
 ]
