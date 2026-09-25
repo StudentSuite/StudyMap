@@ -2187,5 +2187,60 @@
     "address": "Plaza de las Constituciones, 11360 San Roque, Cadiz, Spain",
     "gmaps_link": "https://maps.google.com/?q=36.2104798,-5.3916140",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bio-gov_offices-01",
+    "name": "Mairie de Biot",
+    "type": "gov_offices",
+    "city": "biot",
+    "lat": 43.6331367,
+    "lng": 7.0695802,
+    "address": "8-10 Route de Valbonne, 06410 Biot, France",
+    "gmaps_link": "https://maps.google.com/?q=43.6331367,7.0695802",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lyn-gov_offices-01",
+    "name": "Mairie de quartier de Luynes",
+    "type": "gov_offices",
+    "city": "luynes",
+    "lat": 43.4849735,
+    "lng": 5.4185693,
+    "address": "Place de la Liberation, 13080 Luynes, Aix-en-Provence, France",
+    "gmaps_link": "https://maps.google.com/?q=43.4849735,5.4185693",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mcq-gov_offices-01",
+    "name": "Hotel de ville de Marcq-en-Baroeul",
+    "type": "gov_offices",
+    "city": "marcq_en_baroeul",
+    "lat": 50.6734588,
+    "lng": 3.0939955,
+    "address": "103 Avenue du Marechal Foch, 59700 Marcq-en-Baroeul, France",
+    "gmaps_link": "https://maps.google.com/?q=50.6734588,3.0939955",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bnc-gov_offices-01",
+    "name": "NIPOST Head Office, Benin City",
+    "type": "gov_offices",
+    "city": "benin_city",
+    "lat": 6.3180525,
+    "lng": 5.6072623,
+    "address": "Airport Road, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.3180525,5.6072623",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "abk-gov_offices-01",
+    "name": "Nigeria Immigration Service, Ogun State Passport Office",
+    "type": "gov_offices",
+    "city": "abeokuta",
+    "lat": 7.1356421,
+    "lng": 3.3363436,
+    "address": "Oke-Mosan, Abeokuta, Ogun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.1356421,3.3363436",
+    "added_by": "yakew7"
   }
 ]

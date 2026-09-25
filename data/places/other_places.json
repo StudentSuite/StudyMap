@@ -1032,5 +1032,16 @@
     "address": "Via Roberto Sarfatti 25, 20136 Milano, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.4489149,9.1893943",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bio-other_places-01",
+    "name": "Spaces Sophia-Antipolis (coworking)",
+    "type": "other_places",
+    "city": "biot",
+    "lat": 43.614895,
+    "lng": 7.0744063,
+    "address": "950 Route des Colles, 06410 Biot, France",
+    "gmaps_link": "https://maps.google.com/?q=43.6148950,7.0744063",
+    "added_by": "yakew7"
   }
 ]

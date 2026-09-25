@@ -2220,5 +2220,49 @@
     "address": "Los Realejos, Santa Cruz de Tenerife, Spain",
     "gmaps_link": "https://maps.google.com/?q=28.3816256,-16.5839772",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bly-library-01",
+    "name": "Mediatheque Jean Matte",
+    "type": "library",
+    "city": "baillargues",
+    "lat": 43.658275,
+    "lng": 4.0111685,
+    "address": "240 Rue des Ecoles, 34670 Baillargues, France",
+    "gmaps_link": "https://maps.google.com/?q=43.6582750,4.0111685",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mcq-library-01",
+    "name": "Mediatheque La Corderie",
+    "type": "library",
+    "city": "marcq_en_baroeul",
+    "lat": 50.6784058,
+    "lng": 3.0933355,
+    "address": "56 Rue Albert Bailly, 59700 Marcq-en-Baroeul, France",
+    "gmaps_link": "https://maps.google.com/?q=50.6784058,3.0933355",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bnc-library-01",
+    "name": "Edo State Library Board",
+    "type": "library",
+    "city": "benin_city",
+    "lat": 6.3190443,
+    "lng": 5.6216973,
+    "address": "Central Road, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.3190443,5.6216973",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "abk-library-01",
+    "name": "Simeon Adebo Library (Ogun State Library Board HQ)",
+    "type": "library",
+    "city": "abeokuta",
+    "lat": 7.161,
+    "lng": 3.348,
+    "address": "Kuto, Abeokuta, Ogun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.1610000,3.3480000",
+    "added_by": "yakew7"
   }
 ]
