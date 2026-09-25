@@ -2539,5 +2539,60 @@
     "address": "Lagos State University, Lagos-Badagry Expressway, Ojo, Lagos, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.4737891,3.1994722",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aba-library-01",
+    "name": "Aba Library (Abia State Library Board branch)",
+    "type": "library",
+    "city": "aba",
+    "lat": 5.1031815,
+    "lng": 7.3584604,
+    "address": "207 Market Road, adjacent New Era Hospital, Aba, Abia State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.1031815,7.3584604",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "avu-library-01",
+    "name": "Imo State Library",
+    "type": "library",
+    "city": "avu_owerri",
+    "lat": 5.4999122,
+    "lng": 7.0362397,
+    "address": "Okigwe Road, near Okigwe Road roundabout, Owerri, Imo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.4999122,7.0362397",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "trk-library-01",
+    "name": "Kano State Library Board, Murtala Mohammed Library Complex",
+    "type": "library",
+    "city": "tarauni",
+    "lat": 12.0090164,
+    "lng": 8.5788276,
+    "address": "Ahmadu Bello Way, Nassarawa GRA, Kano, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=12.0090164,8.5788276",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "osn-library-01",
+    "name": "National Library of Nigeria, Osun State Branch",
+    "type": "library",
+    "city": "osun_state",
+    "lat": 7.7583223,
+    "lng": 4.5750447,
+    "address": "New Ikirun Road, Osogbo, Osun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.7583223,4.5750447",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "acu-library-01",
+    "name": "Abia State University Library",
+    "type": "library",
+    "city": "achara_uturu",
+    "lat": 5.8238654,
+    "lng": 7.3940074,
+    "address": "Abia State University, Uturu, Isuikwuato, Abia State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.8238654,7.3940074",
+    "added_by": "yakew7"
   }
 ]

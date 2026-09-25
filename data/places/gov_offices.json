@@ -2495,5 +2495,49 @@
     "address": "Shendam Road, Lafia, Nasarawa State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=8.4960459,8.5147636",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aba-gov_offices-01",
+    "name": "Aba North Local Government Secretariat",
+    "type": "gov_offices",
+    "city": "aba",
+    "lat": 5.1128008,
+    "lng": 7.3651376,
+    "address": "Eziama Uratta, Aba North, Aba, Abia State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.1128008,7.3651376",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "avu-gov_offices-01",
+    "name": "Imo State Secretariat",
+    "type": "gov_offices",
+    "city": "avu_owerri",
+    "lat": 5.4799006,
+    "lng": 7.0219827,
+    "address": "Evan Enwerem Avenue, Owerri, Imo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.4799006,7.0219827",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "trk-gov_offices-01",
+    "name": "Tarauni Local Government Secretariat",
+    "type": "gov_offices",
+    "city": "tarauni",
+    "lat": 11.9563778,
+    "lng": 8.5737499,
+    "address": "Kauyen Alu, Unguwa Uku, Tarauni, Kano, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=11.9563778,8.5737499",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "osn-gov_offices-01",
+    "name": "Osun State Secretariat, Bola Ige House",
+    "type": "gov_offices",
+    "city": "osun_state",
+    "lat": 7.7254604,
+    "lng": 4.5056498,
+    "address": "Km 5, Gbongan-Ibadan Road, Abere, Osogbo, Osun State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=7.7254604,4.5056498",
+    "added_by": "yakew7"
   }
 ]

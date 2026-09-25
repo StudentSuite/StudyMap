@@ -874,5 +874,17 @@
     "gmaps_link": "https://maps.google.com/?q=6.3149345,5.6138916",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "trk-foreign_lang_exam_centre-01",
+    "name": "IDP/MOD Education IELTS Test Venue, Kano",
+    "type": "foreign_lang_exam_centre",
+    "city": "tarauni",
+    "lat": 11.9948775,
+    "lng": 8.5501061,
+    "address": "1 Hospital Road, off Race Course Road, Nassarawa GRA, Kano, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=11.9948775,8.5501061",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
