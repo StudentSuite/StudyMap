@@ -2671,5 +2671,49 @@
     "address": "75 Munye-ro, Hoengseong-eup, Hoengseong-gun, Gangwon-do, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.4859911,127.9720590",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ymt-library-01",
+    "name": "Yomitan Village Library",
+    "type": "library",
+    "city": "yomitan",
+    "lat": 26.402979,
+    "lng": 127.7286386,
+    "address": "37 Namihira, Yomitan Village, Nakagami District, Okinawa, Japan",
+    "gmaps_link": "https://maps.google.com/?q=26.4029790,127.7286386",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erd-library-01",
+    "name": "Erode District Central Library",
+    "type": "library",
+    "city": "erode",
+    "lat": 11.351958,
+    "lng": 77.719393,
+    "address": "Veerabadra Street, VOC Park premises, Erode, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=11.3519580,77.7193930",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erd-library-02",
+    "name": "Chikkaiah Government Arts and Science College Library",
+    "type": "library",
+    "city": "erode",
+    "lat": 11.3306483,
+    "lng": 77.7276519,
+    "address": "Erode 638004, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=11.3306483,77.7276519",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdk-library-01",
+    "name": "Kodaikanal International School Library",
+    "type": "library",
+    "city": "kodaikanal",
+    "lat": 10.2349612,
+    "lng": 77.4909132,
+    "address": "Seven Roads Junction, Kodaikanal, Dindigul, Tamil Nadu 624101, India",
+    "gmaps_link": "https://maps.google.com/?q=10.2349612,77.4909132",
+    "added_by": "yakew7"
   }
 ]

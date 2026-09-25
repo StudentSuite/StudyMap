@@ -2649,5 +2649,71 @@
     "address": "15 Taegi-ro, Hoengseong-eup, Hoengseong-gun, Gangwon-do, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.4924107,127.9943753",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ymt-gov_offices-01",
+    "name": "Yomitan Village Office",
+    "type": "gov_offices",
+    "city": "yomitan",
+    "lat": 26.4052853,
+    "lng": 127.7514267,
+    "address": "2901-1 Zakimi, Yomitan Village, Nakagami District, Okinawa, Japan",
+    "gmaps_link": "https://maps.google.com/?q=26.4052853,127.7514267",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ymt-gov_offices-02",
+    "name": "Yomitan Post Office",
+    "type": "gov_offices",
+    "city": "yomitan",
+    "lat": 26.4077717,
+    "lng": 127.7328939,
+    "address": "2 Koshiho, Yomitan Village, Nakagami District, Okinawa, Japan",
+    "gmaps_link": "https://maps.google.com/?q=26.4077717,127.7328939",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erd-gov_offices-01",
+    "name": "Erode Regional Transport Office (RTO)",
+    "type": "gov_offices",
+    "city": "erode",
+    "lat": 11.3226566,
+    "lng": 77.7375707,
+    "address": "SH 84, Nanjailakkapuram, Erode, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=11.3226566,77.7375707",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "erd-gov_offices-02",
+    "name": "Erode City Municipal Corporation",
+    "type": "gov_offices",
+    "city": "erode",
+    "lat": 11.3395583,
+    "lng": 77.7217749,
+    "address": "Brough Road, Erode 638001, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=11.3395583,77.7217749",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdk-gov_offices-01",
+    "name": "Kodaikanal Municipality Office",
+    "type": "gov_offices",
+    "city": "kodaikanal",
+    "lat": 10.2321413,
+    "lng": 77.4906973,
+    "address": "Lake Road, Kodaikanal 624101, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=10.2321413,77.4906973",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdk-gov_offices-02",
+    "name": "District Forest Office, Kodaikanal",
+    "type": "gov_offices",
+    "city": "kodaikanal",
+    "lat": 10.2383515,
+    "lng": 77.4953973,
+    "address": "Kodai Ghat Road, Kodaikanal 624101, Tamil Nadu, India",
+    "gmaps_link": "https://maps.google.com/?q=10.2383515,77.4953973",
+    "added_by": "yakew7"
   }
 ]
