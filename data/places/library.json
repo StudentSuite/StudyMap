@@ -3683,5 +3683,60 @@
     "address": "9421 Frederick Road, Ellicott City, MD 21042",
     "gmaps_link": "https://maps.google.com/?q=39.2728214,-76.8393418",
     "added_by": "yakew7"
+  },
+  {
+    "id": "owingsml-library-01",
+    "name": "Baltimore County Public Library, Owings Mills Branch",
+    "type": "library",
+    "city": "owings_mills",
+    "lat": 39.4069691,
+    "lng": -76.7820759,
+    "address": "10302 Grand Central Avenue, Owings Mills, MD 21117",
+    "gmaps_link": "https://maps.google.com/?q=39.4069691,-76.7820759",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "timonium-library-01",
+    "name": "Baltimore County Public Library, Cockeysville Branch",
+    "type": "library",
+    "city": "timonium",
+    "lat": 39.4602532,
+    "lng": -76.6291584,
+    "address": "9833 Greenside Drive, Cockeysville, MD 21030",
+    "gmaps_link": "https://maps.google.com/?q=39.4602532,-76.6291584",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "westminstr-library-01",
+    "name": "Carroll County Public Library, Westminster Branch",
+    "type": "library",
+    "city": "westminster",
+    "lat": 39.5742293,
+    "lng": -76.9956876,
+    "address": "50 East Main Street, Westminster, MD 21157",
+    "gmaps_link": "https://maps.google.com/?q=39.5742293,-76.9956876",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ballstnsp-library-01",
+    "name": "Ballston Spa Public Library",
+    "type": "library",
+    "city": "ballston_spa",
+    "lat": 43.0017322,
+    "lng": -73.8489926,
+    "address": "Memorial Path, Ballston Spa, NY 12020",
+    "gmaps_link": "https://maps.google.com/?q=43.0017322,-73.8489926",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "easthamp-library-01",
+    "name": "East Hampton Library",
+    "type": "library",
+    "city": "east_hampton",
+    "lat": 40.9580991,
+    "lng": -72.1912692,
+    "address": "Main Street, East Hampton, NY 11937",
+    "gmaps_link": "https://maps.google.com/?q=40.9580991,-72.1912692",
+    "added_by": "yakew7"
   }
 ]
