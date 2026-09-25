@@ -3848,5 +3848,16 @@
     "address": "200 Park Street, West Springfield, MA 01089",
     "gmaps_link": "https://maps.google.com/?q=42.1052166,-72.6222694",
     "added_by": "yakew7"
+  },
+  {
+    "id": "barringtn-library-01",
+    "name": "Barrington Public Library",
+    "type": "library",
+    "city": "barrington",
+    "lat": 41.7404816,
+    "lng": -71.3072655,
+    "address": "281 County Road, Barrington, RI 02806",
+    "gmaps_link": "https://maps.google.com/?q=41.7404816,-71.3072655",
+    "added_by": "yakew7"
   }
 ]

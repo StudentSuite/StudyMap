@@ -3925,5 +3925,27 @@
     "address": "Central Street, West Springfield, MA 01089",
     "gmaps_link": "https://maps.google.com/?q=42.105928,-72.6233464",
     "added_by": "yakew7"
+  },
+  {
+    "id": "plymtmtg-gov_offices-01",
+    "name": "Plymouth Meeting Post Office",
+    "type": "gov_offices",
+    "city": "plymouth_meeting",
+    "lat": 40.1011713,
+    "lng": -75.2763695,
+    "address": "East Germantown Pike, Plymouth Meeting, PA 19444",
+    "gmaps_link": "https://maps.google.com/?q=40.1011713,-75.2763695",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "barringtn-gov_offices-01",
+    "name": "Barrington Town Hall",
+    "type": "gov_offices",
+    "city": "barrington",
+    "lat": 41.7410021,
+    "lng": -71.3077693,
+    "address": "283 County Road, Barrington, RI 02806",
+    "gmaps_link": "https://maps.google.com/?q=41.7410021,-71.3077693",
+    "added_by": "yakew7"
   }
 ]
