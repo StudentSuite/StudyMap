@@ -2462,5 +2462,49 @@
     "address": "Cumhuriyet Mahallesi, Avni Anil Sokak No:5, Yahya Kemal Beyatli Kultur Merkezi, Suleymanpasa, Tekirdag, Turkey",
     "gmaps_link": "https://maps.google.com/?q=40.9791264,27.5312341",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mrp-library-01",
+    "name": "Antalya Tekelioglu Provincial Public Library",
+    "type": "library",
+    "city": "muratpasa_antalya",
+    "lat": 36.8958317,
+    "lng": 30.6956122,
+    "address": "Ucgen Mahallesi, 96. Sokak No:54, Muratpasa, Antalya, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8958317,30.6956122",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "shk-library-01",
+    "name": "Sehitkamil Bilgi Yili District Public Library",
+    "type": "library",
+    "city": "sehitkamil_gaziantep",
+    "lat": 37.0924773,
+    "lng": 37.3766938,
+    "address": "8 Subat Mahallesi, 82005 Nolu Cadde No:1, Sehitkamil, Gaziantep, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0924773,37.3766938",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hty-library-01",
+    "name": "Hatay Cemil Meric Provincial Public Library",
+    "type": "library",
+    "city": "hatay",
+    "lat": 36.2026246,
+    "lng": 36.1426333,
+    "address": "Cumhuriyet Mahallesi, Adnan Menderes Caddesi No:13/A, Antakya, Hatay, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.2026246,36.1426333",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mrm-library-01",
+    "name": "Marmaris District Public Library",
+    "type": "library",
+    "city": "marmaris_mugla",
+    "lat": 36.8522547,
+    "lng": 28.2742661,
+    "address": "Kemeralti Mahallesi, Mustafa Muglali Caddesi, 112. Sokak, Marmaris, Mugla, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8522547,28.2742661",
+    "added_by": "yakew7"
   }
 ]

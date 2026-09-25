@@ -838,5 +838,17 @@
     "gmaps_link": "https://maps.google.com/?q=39.9133494,32.8578531",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "mrp-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Antalya, Remel Plaza",
+    "type": "foreign_lang_exam_centre",
+    "city": "muratpasa_antalya",
+    "lat": 36.8992302,
+    "lng": 30.7091218,
+    "address": "Etiler Mahallesi, 834. Sokak No:9, Remel Plaza, Muratpasa, Antalya, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8992302,30.7091218",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

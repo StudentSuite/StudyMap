@@ -2385,5 +2385,60 @@
     "address": "Istasyon Mahallesi, Akasya Caddesi No:5/A, Etimesgut, Ankara, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.9463536,32.6693468",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mrp-gov_offices-01",
+    "name": "Muratpasa District Governor's Office (Kaymakamlik)",
+    "type": "gov_offices",
+    "city": "muratpasa_antalya",
+    "lat": 36.8869023,
+    "lng": 30.7101962,
+    "address": "Sinan Mahallesi, Ali Cetinkaya Caddesi, 1250 Sokak No:12/4, Muratpasa, Antalya, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8869023,30.7101962",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "shk-gov_offices-01",
+    "name": "PTT Sehitkamil Posta Dagitim Merkezi (Post Office)",
+    "type": "gov_offices",
+    "city": "sehitkamil_gaziantep",
+    "lat": 37.07655,
+    "lng": 37.366562,
+    "address": "Mucahitler Mahallesi, Maresal Fevzi Cakmak Bulvari No:106, Sehitkamil, Gaziantep, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.0765500,37.3665620",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hty-gov_offices-01",
+    "name": "PTT Antakya Post Office",
+    "type": "gov_offices",
+    "city": "hatay",
+    "lat": 36.2200717,
+    "lng": 36.1722687,
+    "address": "Kucukdalyan Mahallesi, Mahmut Yarim Caddesi, Antakya, Hatay, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.2200717,36.1722687",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mrm-gov_offices-01",
+    "name": "Marmaris District Governor's Office (Kaymakamlik)",
+    "type": "gov_offices",
+    "city": "marmaris_mugla",
+    "lat": 36.8543835,
+    "lng": 28.276239,
+    "address": "Hukumet Konagi, Tepe Mahallesi, Kordon Caddesi, 51. Sokak No:2, Marmaris, Mugla, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.8543835,28.2762390",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "blk-gov_offices-01",
+    "name": "Balikesir Governorship (Valilik)",
+    "type": "gov_offices",
+    "city": "balikesir",
+    "lat": 39.6465029,
+    "lng": 27.8832305,
+    "address": "Eski Kuyumcular Mahallesi, Hukumet Caddesi No:2, Karesi, Balikesir, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.6465029,27.8832305",
+    "added_by": "yakew7"
   }
 ]
