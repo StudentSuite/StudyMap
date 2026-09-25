@@ -3430,5 +3430,60 @@
     "address": "4 North Center Street, Canton, PA 17724",
     "gmaps_link": "https://maps.google.com/?q=41.6542688,-76.8514819",
     "added_by": "yakew7"
+  },
+  {
+    "id": "midd-gov_offices-01",
+    "name": "Middletown Township Municipal Building",
+    "type": "gov_offices",
+    "city": "middletown",
+    "lat": 40.3980328,
+    "lng": -74.1240509,
+    "address": "1 Kings Highway, Middletown Township, NJ 07748",
+    "gmaps_link": "https://maps.google.com/?q=40.3980328,-74.1240509",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "warr-gov_offices-01",
+    "name": "Warren Township Municipal Building",
+    "type": "gov_offices",
+    "city": "warren",
+    "lat": 40.6205486,
+    "lng": -74.4858494,
+    "address": "46 Mountain Boulevard, Warren, NJ 07059",
+    "gmaps_link": "https://maps.google.com/?q=40.6205486,-74.4858494",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newt-gov_offices-01",
+    "name": "Newton Town Municipal Building",
+    "type": "gov_offices",
+    "city": "newton",
+    "lat": 41.0582503,
+    "lng": -74.749739,
+    "address": "39 Trinity Street, Newton, NJ 07860",
+    "gmaps_link": "https://maps.google.com/?q=41.0582503,-74.749739",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ches-gov_offices-01",
+    "name": "Chester Township Municipal Offices",
+    "type": "gov_offices",
+    "city": "chester",
+    "lat": 40.7785122,
+    "lng": -74.7229099,
+    "address": "1 Parker Road, Chester Township, NJ 07930",
+    "gmaps_link": "https://maps.google.com/?q=40.7785122,-74.7229099",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wind-gov_offices-01",
+    "name": "Windsor Town Hall",
+    "type": "gov_offices",
+    "city": "windsor",
+    "lat": 41.850397,
+    "lng": -72.6433107,
+    "address": "275 Broad Street, Windsor, CT 06095",
+    "gmaps_link": "https://maps.google.com/?q=41.850397,-72.6433107",
+    "added_by": "yakew7"
   }
 ]

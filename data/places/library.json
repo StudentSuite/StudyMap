@@ -3353,5 +3353,60 @@
     "address": "14 North Center Street, Canton, PA 17724",
     "gmaps_link": "https://maps.google.com/?q=41.6543575,-76.8514963",
     "added_by": "yakew7"
+  },
+  {
+    "id": "midd-library-01",
+    "name": "Middletown Township Public Library",
+    "type": "library",
+    "city": "middletown",
+    "lat": 40.4040994,
+    "lng": -74.1087965,
+    "address": "55 New Monmouth Road, Middletown, NJ 07748",
+    "gmaps_link": "https://maps.google.com/?q=40.4040994,-74.1087965",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "warr-library-01",
+    "name": "Warren Township Branch Library",
+    "type": "library",
+    "city": "warren",
+    "lat": 40.618493,
+    "lng": -74.490653,
+    "address": "42 Mountain Boulevard, Warren, NJ 07059",
+    "gmaps_link": "https://maps.google.com/?q=40.618493,-74.490653",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newt-library-01",
+    "name": "Sussex County Library, Dennis Branch",
+    "type": "library",
+    "city": "newton",
+    "lat": 41.05536,
+    "lng": -74.754875,
+    "address": "101 Main Street, Newton, NJ 07860",
+    "gmaps_link": "https://maps.google.com/?q=41.05536,-74.754875",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ches-library-01",
+    "name": "Chester Public Library",
+    "type": "library",
+    "city": "chester",
+    "lat": 40.7814877,
+    "lng": -74.7066507,
+    "address": "250 West Main Street, Chester, NJ 07930",
+    "gmaps_link": "https://maps.google.com/?q=40.7814877,-74.7066507",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wind-library-01",
+    "name": "Windsor Public Library",
+    "type": "library",
+    "city": "windsor",
+    "lat": 41.8488735,
+    "lng": -72.6442353,
+    "address": "323 Broad Street, Windsor, CT 06095",
+    "gmaps_link": "https://maps.google.com/?q=41.8488735,-72.6442353",
+    "added_by": "yakew7"
   }
 ]
