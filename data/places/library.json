@@ -2330,5 +2330,49 @@
     "address": "Swamp Road, Warri South, Delta State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=5.5154993,5.7458736",
     "added_by": "yakew7"
+  },
+  {
+    "id": "gwc-library-01",
+    "name": "Gwacheon Information Science Library",
+    "type": "library",
+    "city": "gwacheon_city",
+    "lat": 37.4187228,
+    "lng": 126.9896678,
+    "address": "24 Jungang-ro, Buri-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4187228,126.9896678",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "swp-library-01",
+    "name": "Seogwipo Library",
+    "type": "library",
+    "city": "seogwipo_si",
+    "lat": 33.2535899,
+    "lng": 126.5676365,
+    "address": "11 Donghong-ro, Seogwipo-si, Jeju-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=33.2535899,126.5676365",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ynu-library-01",
+    "name": "Yeonsu Library",
+    "type": "library",
+    "city": "yeonsu_gu",
+    "lat": 37.3723071,
+    "lng": 126.6801415,
+    "address": "Songdogwahak-ro, Yeonsu-gu, Incheon, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.3723071,126.6801415",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "isp-library-01",
+    "name": "Isparta Halil Hamit Pasa Il Halk Kutuphanesi",
+    "type": "library",
+    "city": "isparta",
+    "lat": 37.7659569,
+    "lng": 30.5596894,
+    "address": "Kepeci Mahallesi, 1217 Sokak No:31, 32300 Isparta, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.7659569,30.5596894",
+    "added_by": "yakew7"
   }
 ]

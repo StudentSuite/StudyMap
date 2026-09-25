@@ -2275,5 +2275,16 @@
     "address": "3-3-1 Hon-cho, Higashikurume-shi, Tokyo 203-8555, Japan",
     "gmaps_link": "https://maps.google.com/?q=35.7580280,139.5298110",
     "added_by": "yakew7"
+  },
+  {
+    "id": "gwc-gov_offices-01",
+    "name": "Gwacheon City Hall",
+    "type": "gov_offices",
+    "city": "gwacheon_city",
+    "lat": 37.4292215,
+    "lng": 126.9875944,
+    "address": "69 Gwanmun-ro, Jungang-dong, Gwacheon-si, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4292215,126.9875944",
+    "added_by": "yakew7"
   }
 ]

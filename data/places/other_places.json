@@ -1318,5 +1318,49 @@
     "address": "Enugu-Onitsha Expressway, Awka, Anambra State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.2477085,7.1167289",
     "added_by": "yakew7"
+  },
+  {
+    "id": "swp-other_places-01",
+    "name": "Branksome Hall Asia",
+    "type": "other_places",
+    "city": "seogwipo_si",
+    "lat": 33.2908981,
+    "lng": 126.2887808,
+    "address": "234 Global edu-ro, Daejeong-eup, Seogwipo-si, Jeju-do 63644, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=33.2908981,126.2887808",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cln-other_places-01",
+    "name": "Clyde Grammar",
+    "type": "other_places",
+    "city": "clyde_north",
+    "lat": -38.1062032,
+    "lng": 145.3787362,
+    "address": "110 Smiths Lane, Clyde North, VIC 3978, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-38.1062032,145.3787362",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "don-other_places-01",
+    "name": "Noosa Pengari Steiner School",
+    "type": "other_places",
+    "city": "doonan",
+    "lat": -26.452046,
+    "lng": 153.0277901,
+    "address": "86 Nyell Road, Doonan, QLD 4562, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-26.4520460,153.0277901",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "isp-other_places-01",
+    "name": "Suleyman Demirel Universitesi, Cunur Campus",
+    "type": "other_places",
+    "city": "isparta",
+    "lat": 37.8216167,
+    "lng": 30.5365366,
+    "address": "Cunur Mahallesi, Suleyman Demirel Caddesi, 32260 Isparta, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.8216167,30.5365366",
+    "added_by": "yakew7"
   }
 ]

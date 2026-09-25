@@ -814,5 +814,17 @@
     "gmaps_link": "https://maps.google.com/?q=38.4314642,27.1374017",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "ynu-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS South Korea, Incheon Songdo IGC",
+    "type": "foreign_lang_exam_centre",
+    "city": "yeonsu_gu",
+    "lat": 37.3756356,
+    "lng": 126.6665221,
+    "address": "119 Songdomunhwa-ro, Yeonsu-gu, Incheon, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.3756356,126.6665221",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
