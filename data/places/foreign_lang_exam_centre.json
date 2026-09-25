@@ -826,5 +826,17 @@
     "gmaps_link": "https://maps.google.com/?q=37.3756356,126.6665221",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "ankr-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Divan Ankara Hotel",
+    "type": "foreign_lang_exam_centre",
+    "city": "ankara_turkey",
+    "lat": 39.9133494,
+    "lng": 32.8578531,
+    "address": "Guniz Sokak No:42, Kavaklidere, Cankaya, Ankara, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9133494,32.8578531",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

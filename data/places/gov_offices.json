@@ -2330,5 +2330,60 @@
     "address": "Turgut Ozal Mahallesi, Gulumser Caddesi No:2, 44080 Yesilyurt, Malatya, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.3433760,38.2738589",
     "added_by": "yakew7"
+  },
+  {
+    "id": "usk-gov_offices-01",
+    "name": "PTT Uskudar Post Office Branch",
+    "type": "gov_offices",
+    "city": "uskudar_istanbul",
+    "lat": 41.0224939,
+    "lng": 29.0117051,
+    "address": "Aziz Mahmut Hudayi Mahallesi, Acik Turbe Sokak No:1, Uskudar, Istanbul, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=41.0224939,29.0117051",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bsh-gov_offices-01",
+    "name": "PTT Basaksehir Post Office Branch",
+    "type": "gov_offices",
+    "city": "basaksehir",
+    "lat": 41.0717089,
+    "lng": 28.6882551,
+    "address": "Posta Caddesi, Bahcesehir 2. Kisim Mahallesi, Basaksehir, Istanbul, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=41.0717089,28.6882551",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ankr-gov_offices-01",
+    "name": "Cankaya District Governor's Office (Kaymakamlik)",
+    "type": "gov_offices",
+    "city": "ankara_turkey",
+    "lat": 39.9192463,
+    "lng": 32.851051,
+    "address": "Namik Kemal Mahallesi, Kumrular Caddesi No:1, Cankaya, Ankara, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9192463,32.8510510",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tkg-gov_offices-01",
+    "name": "PTT Tekirdag Central Post Office",
+    "type": "gov_offices",
+    "city": "tekirdag",
+    "lat": 40.9787396,
+    "lng": 27.5158432,
+    "address": "Hukumet Caddesi No:20, Suleymanpasa, Tekirdag, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.9787396,27.5158432",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "etg-gov_offices-01",
+    "name": "Etimesgut District Governor's Office (Kaymakamlik)",
+    "type": "gov_offices",
+    "city": "etimesgut",
+    "lat": 39.9463536,
+    "lng": 32.6693468,
+    "address": "Istasyon Mahallesi, Akasya Caddesi No:5/A, Etimesgut, Ankara, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.9463536,32.6693468",
+    "added_by": "yakew7"
   }
 ]

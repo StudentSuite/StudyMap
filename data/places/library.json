@@ -2418,5 +2418,49 @@
     "address": "138 Ejigbo-Idimu Road, Ejigbo, Oshodi-Isolo, Lagos, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.5590367,3.2982637",
     "added_by": "yakew7"
+  },
+  {
+    "id": "usk-library-01",
+    "name": "Uskudar Semsipasa District Public Library",
+    "type": "library",
+    "city": "uskudar_istanbul",
+    "lat": 41.0236072,
+    "lng": 29.0184136,
+    "address": "Mimar Sinan Mahallesi, Harem Yolu No:6, Uskudar, Istanbul, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=41.0236072,29.0184136",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bsh-library-01",
+    "name": "Basaksehir Haci Bektas Veli Library",
+    "type": "library",
+    "city": "basaksehir",
+    "lat": 41.0664773,
+    "lng": 28.6780738,
+    "address": "Bahcesehir 2. Kisim Mahallesi, Bogazkoy 3. Cadde No:7A, Basaksehir, Istanbul, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=41.0664773,28.6780738",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ankr-library-01",
+    "name": "Cankaya Sevgi Yili District Public Library",
+    "type": "library",
+    "city": "ankara_turkey",
+    "lat": 39.8468817,
+    "lng": 32.8326276,
+    "address": "Or-An Mahallesi, Rasih Kaplan Sokak No:19, Cankaya, Ankara, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=39.8468817,32.8326276",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tkg-library-01",
+    "name": "Tekirdag Namik Kemal Provincial Public Library",
+    "type": "library",
+    "city": "tekirdag",
+    "lat": 40.9791264,
+    "lng": 27.5312341,
+    "address": "Cumhuriyet Mahallesi, Avni Anil Sokak No:5, Yahya Kemal Beyatli Kultur Merkezi, Suleymanpasa, Tekirdag, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=40.9791264,27.5312341",
+    "added_by": "yakew7"
   }
 ]
