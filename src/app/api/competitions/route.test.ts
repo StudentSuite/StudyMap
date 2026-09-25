@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import { GET } from "./route";
 import { getCompetitions } from "@/lib/competitions";
+import { COMPETITIONS_API_LIMITS } from "@/lib/competitions-api";
 
 function request(path: string): Request {
   return new Request(`http://localhost${path}`);
@@ -148,8 +149,12 @@ describe("GET /api/competitions (route handler)", () => {
   it("clamps a huge limit instead of dumping everything", async () => {
     const response = await GET(request("/api/competitions?limit=999999"));
     const body = await json(response);
-    expect(body.limit).toBe(200);
-    expect((body.data as unknown[]).length).toBe(body.total);
+    expect(body.limit).toBe(COMPETITIONS_API_LIMITS.maxLimit);
+    // The dataset now exceeds the cap, so the response is a first page
+    // rather than the full dataset - same situation as the places API
+    // (see 5a7789b), not a regression.
+    expect((body.data as unknown[]).length).toBe(COMPETITIONS_API_LIMITS.maxLimit);
+    expect(body.total).toBeGreaterThan(COMPETITIONS_API_LIMITS.maxLimit);
   });
 
   it("returns 400 for a malformed limit", async () => {
