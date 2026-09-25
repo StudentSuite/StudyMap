@@ -3650,5 +3650,60 @@
     "address": "1675 Camp Hill Bypass, Camp Hill, PA 17011",
     "gmaps_link": "https://maps.google.com/?q=40.2501103,-76.9165006",
     "added_by": "yakew7"
+  },
+  {
+    "id": "coaltwp-gov_offices-01",
+    "name": "Coal Township Municipal Building",
+    "type": "gov_offices",
+    "city": "coal_township",
+    "lat": 40.7886999,
+    "lng": -76.5653387,
+    "address": "805 West Lynn Street, Coal Township, PA 17866",
+    "gmaps_link": "https://maps.google.com/?q=40.7886999,-76.5653387",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "emmaus-gov_offices-01",
+    "name": "Emmaus Post Office",
+    "type": "gov_offices",
+    "city": "emmaus",
+    "lat": 40.5359032,
+    "lng": -75.4942571,
+    "address": "101 North 5th Street, Emmaus, PA 18049",
+    "gmaps_link": "https://maps.google.com/?q=40.5359032,-75.4942571",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lansdwn-gov_offices-01",
+    "name": "Lansdowne Borough Hall",
+    "type": "gov_offices",
+    "city": "lansdowne",
+    "lat": 39.9381711,
+    "lng": -75.2717209,
+    "address": "12 East Baltimore Avenue, Lansdowne, PA 19050",
+    "gmaps_link": "https://maps.google.com/?q=39.9381711,-75.2717209",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newtwnsq-gov_offices-01",
+    "name": "Newtown Square Post Office",
+    "type": "gov_offices",
+    "city": "newtown_square",
+    "lat": 39.9851228,
+    "lng": -75.3976499,
+    "address": "3576 West Chester Pike, Newtown Square, PA 19073",
+    "gmaps_link": "https://maps.google.com/?q=39.9851228,-75.3976499",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pottsvl-gov_offices-01",
+    "name": "Pottsville City Hall",
+    "type": "gov_offices",
+    "city": "pottsville",
+    "lat": 40.6878404,
+    "lng": -76.1973437,
+    "address": "401 North Centre Street, Pottsville, PA 17901",
+    "gmaps_link": "https://maps.google.com/?q=40.6878404,-76.1973437",
+    "added_by": "yakew7"
   }
 ]

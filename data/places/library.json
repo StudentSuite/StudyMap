@@ -3573,5 +3573,60 @@
     "address": "100 North 19th Street, Camp Hill, PA 17011",
     "gmaps_link": "https://maps.google.com/?q=40.2416817,-76.9169875",
     "added_by": "yakew7"
+  },
+  {
+    "id": "coaltwp-library-01",
+    "name": "Shamokin-Coal Township Public Library",
+    "type": "library",
+    "city": "coal_township",
+    "lat": 40.7917808,
+    "lng": -76.5535374,
+    "address": "210 East Independence Street, Shamokin, PA 17872",
+    "gmaps_link": "https://maps.google.com/?q=40.7917808,-76.5535374",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "emmaus-library-01",
+    "name": "Emmaus Public Library",
+    "type": "library",
+    "city": "emmaus",
+    "lat": 40.5412586,
+    "lng": -75.4867789,
+    "address": "11 East Main Street, Emmaus, PA 18049",
+    "gmaps_link": "https://maps.google.com/?q=40.5412586,-75.4867789",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lansdwn-library-01",
+    "name": "Lansdowne Library",
+    "type": "library",
+    "city": "lansdowne",
+    "lat": 39.9365105,
+    "lng": -75.2715874,
+    "address": "55 South Lansdowne Avenue, Lansdowne, PA 19050",
+    "gmaps_link": "https://maps.google.com/?q=39.9365105,-75.2715874",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "newtwnsq-library-01",
+    "name": "Newtown Public Library",
+    "type": "library",
+    "city": "newtown_square",
+    "lat": 39.9814435,
+    "lng": -75.4057088,
+    "address": "201 Bishop Hollow Road, Newtown Square, PA 19073",
+    "gmaps_link": "https://maps.google.com/?q=39.9814435,-75.4057088",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pottsvl-library-01",
+    "name": "Pottsville Free Public Library",
+    "type": "library",
+    "city": "pottsville",
+    "lat": 40.6849238,
+    "lng": -76.1968941,
+    "address": "North 3rd Street, Pottsville, PA 17901",
+    "gmaps_link": "https://maps.google.com/?q=40.6849238,-76.1968941",
+    "added_by": "yakew7"
   }
 ]
