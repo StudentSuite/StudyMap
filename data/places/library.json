@@ -3408,5 +3408,60 @@
     "address": "323 Broad Street, Windsor, CT 06095",
     "gmaps_link": "https://maps.google.com/?q=41.8488735,-72.6442353",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bwns-library-01",
+    "name": "Margaret Hennigar Public Library",
+    "type": "library",
+    "city": "bridgewater",
+    "lat": 44.3857391,
+    "lng": -64.5340104,
+    "address": "135 North Park Street, Bridgewater, NS B4V 3K1",
+    "gmaps_link": "https://maps.google.com/?q=44.3857391,-64.5340104",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hilton-library-01",
+    "name": "Hilton Library",
+    "type": "library",
+    "city": "hilton",
+    "lat": -29.5552625,
+    "lng": 30.300583,
+    "address": "38 Hilton Avenue, Hilton, KwaZulu-Natal 3245",
+    "gmaps_link": "https://maps.google.com/?q=-29.5552625,30.300583",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "stonehse-library-01",
+    "name": "Stonehouse Library",
+    "type": "library",
+    "city": "stonehouse",
+    "lat": 51.7459406,
+    "lng": -2.2821883,
+    "address": "1 Queens Road, Stonehouse, Gloucestershire GL10 2QA",
+    "gmaps_link": "https://maps.google.com/?q=51.7459406,-2.2821883",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "carliia-library-01",
+    "name": "Carlisle Public Library",
+    "type": "library",
+    "city": "carlisle",
+    "lat": 41.4987854,
+    "lng": -93.4875119,
+    "address": "135 School Street, Carlisle, IA 50047",
+    "gmaps_link": "https://maps.google.com/?q=41.4987854,-93.4875119",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "baskrdg-library-01",
+    "name": "Bernards Township Library",
+    "type": "library",
+    "city": "basking_ridge",
+    "lat": 40.705851,
+    "lng": -74.5476383,
+    "address": "32 South Maple Avenue, Basking Ridge, NJ 07920",
+    "gmaps_link": "https://maps.google.com/?q=40.705851,-74.5476383",
+    "added_by": "yakew7"
   }
 ]

@@ -3485,5 +3485,60 @@
     "address": "275 Broad Street, Windsor, CT 06095",
     "gmaps_link": "https://maps.google.com/?q=41.850397,-72.6433107",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bwns-gov_offices-01",
+    "name": "Bridgewater Post Office",
+    "type": "gov_offices",
+    "city": "bridgewater",
+    "lat": 44.3706218,
+    "lng": -64.5258495,
+    "address": "215 Dominion Street, Bridgewater, NS B4V 2G0",
+    "gmaps_link": "https://maps.google.com/?q=44.3706218,-64.5258495",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hilton-gov_offices-01",
+    "name": "Hilton Police Station",
+    "type": "gov_offices",
+    "city": "hilton",
+    "lat": -29.5650747,
+    "lng": 30.2958643,
+    "address": "Dennis Shepstone Drive, Winterskloof, Hilton, KwaZulu-Natal 3245",
+    "gmaps_link": "https://maps.google.com/?q=-29.5650747,30.2958643",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "stonehse-gov_offices-01",
+    "name": "Stonehouse Post Office",
+    "type": "gov_offices",
+    "city": "stonehouse",
+    "lat": 51.7468235,
+    "lng": -2.2832555,
+    "address": "26 High Street, Stonehouse, Gloucestershire GL10 2NA",
+    "gmaps_link": "https://maps.google.com/?q=51.7468235,-2.2832555",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "carliia-gov_offices-01",
+    "name": "Carlisle Post Office",
+    "type": "gov_offices",
+    "city": "carlisle",
+    "lat": 41.497535,
+    "lng": -93.4863796,
+    "address": "200 South 1st Street, Carlisle, IA 50047",
+    "gmaps_link": "https://maps.google.com/?q=41.497535,-93.4863796",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "baskrdg-gov_offices-01",
+    "name": "Bernards Township Municipal Building",
+    "type": "gov_offices",
+    "city": "basking_ridge",
+    "lat": 40.6983706,
+    "lng": -74.5455762,
+    "address": "1 Collyer Lane, Basking Ridge, NJ 07920",
+    "gmaps_link": "https://maps.google.com/?q=40.6983706,-74.5455762",
+    "added_by": "yakew7"
   }
 ]
