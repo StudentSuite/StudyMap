@@ -2000,5 +2000,60 @@
     "address": "Rabia Ana Mahallesi, Kale Caddesi No:4, Yakutiye, Erzurum, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.9046667,41.2812995",
     "added_by": "yakew7"
+  },
+  {
+    "id": "for-gov_offices-01",
+    "name": "Correios AC Central de Fortaleza",
+    "type": "gov_offices",
+    "city": "fortaleza",
+    "lat": -3.7250608,
+    "lng": -38.5261261,
+    "address": "Rua Senador Alencar 38, Centro, 60030-970 Fortaleza, CE, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-3.7250608,-38.5261261",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ptk-gov_offices-01",
+    "name": "Pyeongtaek Immigration Office",
+    "type": "gov_offices",
+    "city": "pyeongtaek",
+    "lat": 37.0681345,
+    "lng": 127.0611716,
+    "address": "Teukguro 27beon-gil, Seojeong-dong, Songtan, Pyeongtaek-si, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.0681345,127.0611716",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "goy-gov_offices-01",
+    "name": "Goyang City Hall",
+    "type": "gov_offices",
+    "city": "goyang_si",
+    "lat": 37.658378,
+    "lng": 126.8319401,
+    "address": "10 Goyangsicheong-ro, Juggyo-dong, Deogyang-gu, Goyang-si, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.6583780,126.8319401",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ldb-gov_offices-01",
+    "name": "Prefeitura Municipal de Londrina",
+    "type": "gov_offices",
+    "city": "londrina",
+    "lat": -23.3382212,
+    "lng": -51.1482406,
+    "address": "Avenida Duque de Caxias 635, 86015-901 Londrina, PR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.3382212,-51.1482406",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "jeo-gov_offices-01",
+    "name": "Jeonju City Hall",
+    "type": "gov_offices",
+    "city": "jeonju",
+    "lat": 35.8152816,
+    "lng": 127.1548496,
+    "address": "213 Girin-daero, Wansan-gu, Jeonju-si, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.8152816,127.1548496",
+    "added_by": "yakew7"
   }
 ]

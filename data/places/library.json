@@ -2022,5 +2022,60 @@
     "address": "Ali Ravi Caddesi No:38, Yakutiye, Erzurum, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.9010205,41.2748763",
     "added_by": "yakew7"
+  },
+  {
+    "id": "jeo-library-01",
+    "name": "Kkotsim, Jeonju Municipal Library",
+    "type": "library",
+    "city": "jeonju",
+    "lat": 35.8173833,
+    "lng": 127.1226488,
+    "address": "Junghwasan-dong, Wansan-gu, Jeonju, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=35.8173833,127.1226488",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ptk-library-01",
+    "name": "Pyeongtaek City Library",
+    "type": "library",
+    "city": "pyeongtaek",
+    "lat": 36.9950443,
+    "lng": 127.0965339,
+    "address": "Bijeon-ro, Bijeon-dong, Pyeongtaek-si, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=36.9950443,127.0965339",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "goy-library-01",
+    "name": "Goyang City Ilsan Library",
+    "type": "library",
+    "city": "goyang_si",
+    "lat": 37.684932,
+    "lng": 126.7644818,
+    "address": "586-65 Goyang-daero, Ilsan-dong, Ilsanseo-gu, Goyang-si, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.6849320,126.7644818",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "for-library-01",
+    "name": "Biblioteca Publica Governador Menezes Pimentel",
+    "type": "library",
+    "city": "fortaleza",
+    "lat": -3.7228493,
+    "lng": -38.5206381,
+    "address": "Avenida Presidente Castelo Branco 255, Centro, 60010-000 Fortaleza, CE, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-3.7228493,-38.5206381",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ldb-library-01",
+    "name": "Biblioteca Publica Municipal de Londrina (BPML)",
+    "type": "library",
+    "city": "londrina",
+    "lat": -23.3126282,
+    "lng": -51.1586968,
+    "address": "Avenida Rio de Janeiro 413, Centro, 86010-150 Londrina, PR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.3126282,-51.1586968",
+    "added_by": "yakew7"
   }
 ]
