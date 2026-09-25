@@ -3463,5 +3463,60 @@
     "address": "32 South Maple Avenue, Basking Ridge, NJ 07920",
     "gmaps_link": "https://maps.google.com/?q=40.705851,-74.5476383",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bridgtn-library-01",
+    "name": "Bridgeton Public Library",
+    "type": "library",
+    "city": "bridgeton",
+    "lat": 39.428737,
+    "lng": -75.231938,
+    "address": "150 East Commerce Street, Bridgeton, NJ 08302",
+    "gmaps_link": "https://maps.google.com/?q=39.428737,-75.231938",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "camdennj-library-01",
+    "name": "Camden Free Public Library",
+    "type": "library",
+    "city": "camden",
+    "lat": 39.9438521,
+    "lng": -75.1223077,
+    "address": "Federal Street, Camden, NJ 08103",
+    "gmaps_link": "https://maps.google.com/?q=39.9438521,-75.1223077",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "haddon-library-01",
+    "name": "Haddonfield Public Library",
+    "type": "library",
+    "city": "haddonfield",
+    "lat": 39.8990606,
+    "lng": -75.0347291,
+    "address": "Tanner Street, Haddonfield, NJ 08033",
+    "gmaps_link": "https://maps.google.com/?q=39.8990606,-75.0347291",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "holmdel-library-01",
+    "name": "Holmdel Library and Learning Center",
+    "type": "library",
+    "city": "holmdel",
+    "lat": 40.3646676,
+    "lng": -74.1663898,
+    "address": "101 Crawfords Corner Road, Holmdel Township, NJ 07733",
+    "gmaps_link": "https://maps.google.com/?q=40.3646676,-74.1663898",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "longbrch-library-01",
+    "name": "Long Branch Free Public Library",
+    "type": "library",
+    "city": "long_branch",
+    "lat": 40.3034702,
+    "lng": -73.992606,
+    "address": "328 Broadway, Long Branch, NJ 07740",
+    "gmaps_link": "https://maps.google.com/?q=40.3034702,-73.992606",
+    "added_by": "yakew7"
   }
 ]

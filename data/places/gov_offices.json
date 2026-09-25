@@ -3540,5 +3540,60 @@
     "address": "1 Collyer Lane, Basking Ridge, NJ 07920",
     "gmaps_link": "https://maps.google.com/?q=40.6983706,-74.5455762",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bridgtn-gov_offices-01",
+    "name": "Bridgeton Post Office",
+    "type": "gov_offices",
+    "city": "bridgeton",
+    "lat": 39.4278256,
+    "lng": -75.2406359,
+    "address": "102 West Broad Street, Bridgeton, NJ 08302",
+    "gmaps_link": "https://maps.google.com/?q=39.4278256,-75.2406359",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "camdennj-gov_offices-01",
+    "name": "Camden City Hall",
+    "type": "gov_offices",
+    "city": "camden",
+    "lat": 39.94484,
+    "lng": -75.1199618,
+    "address": "520 Market Street, Camden, NJ 08102",
+    "gmaps_link": "https://maps.google.com/?q=39.94484,-75.1199618",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "haddon-gov_offices-01",
+    "name": "Haddonfield Post Office",
+    "type": "gov_offices",
+    "city": "haddonfield",
+    "lat": 39.8976584,
+    "lng": -75.0306004,
+    "address": "South Haddon Avenue, Haddonfield, NJ 08033",
+    "gmaps_link": "https://maps.google.com/?q=39.8976584,-75.0306004",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "holmdel-gov_offices-01",
+    "name": "Holmdel Post Office",
+    "type": "gov_offices",
+    "city": "holmdel",
+    "lat": 40.3844512,
+    "lng": -74.1859009,
+    "address": "10 Crawfords Corner Road, Holmdel Township, NJ 07733",
+    "gmaps_link": "https://maps.google.com/?q=40.3844512,-74.1859009",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "longbrch-gov_offices-01",
+    "name": "Long Branch Post Office",
+    "type": "gov_offices",
+    "city": "long_branch",
+    "lat": 40.3024379,
+    "lng": -73.9877794,
+    "address": "Van Dyke Place, Long Branch, NJ 07740",
+    "gmaps_link": "https://maps.google.com/?q=40.3024379,-73.9877794",
+    "added_by": "yakew7"
   }
 ]
