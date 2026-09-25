@@ -2924,5 +2924,71 @@
     "address": "900 Clifton Avenue, Clifton, NJ 07013",
     "gmaps_link": "https://maps.google.com/?q=40.8664528,-74.1604017",
     "added_by": "yakew7"
+  },
+  {
+    "id": "wwn-gov_offices-01",
+    "name": "West Windsor Municipal Complex",
+    "type": "gov_offices",
+    "city": "west_windsor",
+    "lat": 40.3048191,
+    "lng": -74.6329676,
+    "address": "271 Clarksville Road, West Windsor, NJ 08550",
+    "gmaps_link": "https://maps.google.com/?q=40.3048191,-74.6329676",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hgt-gov_offices-01",
+    "name": "Hightstown Borough Hall",
+    "type": "gov_offices",
+    "city": "hightstown",
+    "lat": 40.2718704,
+    "lng": -74.52255,
+    "address": "156 Bank Street, Hightstown, NJ 08520",
+    "gmaps_link": "https://maps.google.com/?q=40.2718704,-74.5225500",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nbr-gov_offices-01",
+    "name": "New Brunswick City Hall",
+    "type": "gov_offices",
+    "city": "new_brunswick",
+    "lat": 40.4938981,
+    "lng": -74.4456506,
+    "address": "78 Bayard Street, New Brunswick, NJ 08903",
+    "gmaps_link": "https://maps.google.com/?q=40.4938981,-74.4456506",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nbr-gov_offices-02",
+    "name": "New Brunswick Main Post Office",
+    "type": "gov_offices",
+    "city": "new_brunswick",
+    "lat": 40.4938682,
+    "lng": -74.4468932,
+    "address": "86 Bayard Street, New Brunswick, NJ 08901",
+    "gmaps_link": "https://maps.google.com/?q=40.4938682,-74.4468932",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mdc-gov_offices-01",
+    "name": "Madison Town Offices",
+    "type": "gov_offices",
+    "city": "madison",
+    "lat": 41.2966029,
+    "lng": -72.5746212,
+    "address": "8 Campus Drive, Madison, CT 06443",
+    "gmaps_link": "https://maps.google.com/?q=41.2966029,-72.5746212",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "edo-gov_offices-01",
+    "name": "US Post Office, Edison Ohio",
+    "type": "gov_offices",
+    "city": "edison",
+    "lat": 40.5578617,
+    "lng": -82.8627402,
+    "address": "101 North Boundary Street, Edison, OH 43320",
+    "gmaps_link": "https://maps.google.com/?q=40.5578617,-82.8627402",
+    "added_by": "yakew7"
   }
 ]

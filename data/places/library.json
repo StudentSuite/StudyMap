@@ -2891,5 +2891,49 @@
     "address": "292 Piaget Avenue, Clifton, NJ 07011",
     "gmaps_link": "https://maps.google.com/?q=40.8799568,-74.1475790",
     "added_by": "yakew7"
+  },
+  {
+    "id": "wwn-library-01",
+    "name": "Mercer County Library, West Windsor Branch",
+    "type": "library",
+    "city": "west_windsor",
+    "lat": 40.30709,
+    "lng": -74.6338149,
+    "address": "333 North Post Road, Princeton Junction, NJ 08550",
+    "gmaps_link": "https://maps.google.com/?q=40.3070900,-74.6338149",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hgt-library-01",
+    "name": "Hightstown Memorial Library",
+    "type": "library",
+    "city": "hightstown",
+    "lat": 40.2701603,
+    "lng": -74.5215578,
+    "address": "114 Franklin Street, Hightstown, NJ 08520",
+    "gmaps_link": "https://maps.google.com/?q=40.2701603,-74.5215578",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nbr-library-01",
+    "name": "New Brunswick Free Public Library",
+    "type": "library",
+    "city": "new_brunswick",
+    "lat": 40.4913782,
+    "lng": -74.4455497,
+    "address": "60 Livingston Avenue, New Brunswick, NJ 08901",
+    "gmaps_link": "https://maps.google.com/?q=40.4913782,-74.4455497",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mdc-library-01",
+    "name": "E.C. Scranton Memorial Library",
+    "type": "library",
+    "city": "madison",
+    "lat": 41.2800199,
+    "lng": -72.5940795,
+    "address": "801 Boston Post Road, Madison, CT 06443",
+    "gmaps_link": "https://maps.google.com/?q=41.2800199,-72.5940795",
+    "added_by": "yakew7"
   }
 ]
