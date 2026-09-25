@@ -3738,5 +3738,60 @@
     "address": "Main Street, East Hampton, NY 11937",
     "gmaps_link": "https://maps.google.com/?q=40.9580991,-72.1912692",
     "added_by": "yakew7"
+  },
+  {
+    "id": "endicott-library-01",
+    "name": "George F. Johnson Memorial Library",
+    "type": "library",
+    "city": "endicott",
+    "lat": 42.0987824,
+    "lng": -76.0507969,
+    "address": "1001 Park Street, Endicott, NY 13760",
+    "gmaps_link": "https://maps.google.com/?q=42.0987824,-76.0507969",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "manhasset-library-01",
+    "name": "Manhasset Public Library",
+    "type": "library",
+    "city": "manhasset",
+    "lat": 40.7934889,
+    "lng": -73.6947583,
+    "address": "30 Onderdonk Avenue, Manhasset, NY 11030",
+    "gmaps_link": "https://maps.google.com/?q=40.7934889,-73.6947583",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vestal-library-01",
+    "name": "Vestal Public Library",
+    "type": "library",
+    "city": "vestal",
+    "lat": 42.0873463,
+    "lng": -76.0456175,
+    "address": "320 Vestal Parkway East, Vestal, NY 13850",
+    "gmaps_link": "https://maps.google.com/?q=42.0873463,-76.0456175",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "branford-library-01",
+    "name": "James Blackstone Memorial Library",
+    "type": "library",
+    "city": "branford",
+    "lat": 41.2802584,
+    "lng": -72.8147258,
+    "address": "758 Main Street, Branford, CT 06405",
+    "gmaps_link": "https://maps.google.com/?q=41.2802584,-72.8147258",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "easthavn-library-01",
+    "name": "Hagaman Memorial Library",
+    "type": "library",
+    "city": "east_haven",
+    "lat": 41.2777552,
+    "lng": -72.8702648,
+    "address": "227 Main Street, East Haven, CT 06512",
+    "gmaps_link": "https://maps.google.com/?q=41.2777552,-72.8702648",
+    "added_by": "yakew7"
   }
 ]

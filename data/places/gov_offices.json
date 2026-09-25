@@ -3815,5 +3815,60 @@
     "address": "12 Gay Road, East Hampton, NY 11937",
     "gmaps_link": "https://maps.google.com/?q=40.9651923,-72.1819041",
     "added_by": "yakew7"
+  },
+  {
+    "id": "endicott-gov_offices-01",
+    "name": "Endicott Post Office",
+    "type": "gov_offices",
+    "city": "endicott",
+    "lat": 42.100375,
+    "lng": -76.0483326,
+    "address": "200 Washington Avenue, Endicott, NY 13760",
+    "gmaps_link": "https://maps.google.com/?q=42.100375,-76.0483326",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "manhasset-gov_offices-01",
+    "name": "Manhasset Post Office",
+    "type": "gov_offices",
+    "city": "manhasset",
+    "lat": 40.7975553,
+    "lng": -73.6989463,
+    "address": "28 Maple Place, Manhasset, NY 11030",
+    "gmaps_link": "https://maps.google.com/?q=40.7975553,-73.6989463",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vestal-gov_offices-01",
+    "name": "Vestal Post Office",
+    "type": "gov_offices",
+    "city": "vestal",
+    "lat": 42.0942871,
+    "lng": -76.002929,
+    "address": "117 Rano Boulevard, Vestal, NY 13850",
+    "gmaps_link": "https://maps.google.com/?q=42.0942871,-76.002929",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "branford-gov_offices-01",
+    "name": "Branford Post Office",
+    "type": "gov_offices",
+    "city": "branford",
+    "lat": 41.2831195,
+    "lng": -72.812762,
+    "address": "35 Park Place, Branford, CT 06405",
+    "gmaps_link": "https://maps.google.com/?q=41.2831195,-72.812762",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "easthavn-gov_offices-01",
+    "name": "East Haven Town Hall",
+    "type": "gov_offices",
+    "city": "east_haven",
+    "lat": 41.2775532,
+    "lng": -72.8716918,
+    "address": "250 Main Street, East Haven, CT 06512",
+    "gmaps_link": "https://maps.google.com/?q=41.2775532,-72.8716918",
+    "added_by": "yakew7"
   }
 ]
