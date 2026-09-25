@@ -2297,5 +2297,38 @@
     "address": "Corner Park and Kingsway Avenue, Brakpan, Gauteng 1541, South Africa",
     "gmaps_link": "https://maps.google.com/?q=-26.2404663,28.3575323",
     "added_by": "yakew7"
+  },
+  {
+    "id": "wva-library-01",
+    "name": "West Vancouver Memorial Library",
+    "type": "library",
+    "city": "west_vancouver",
+    "lat": 49.3288283,
+    "lng": -123.1657725,
+    "address": "1950 Marine Drive, West Vancouver, BC V7V 1J8, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.3288283,-123.1657725",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wmt-library-01",
+    "name": "Bibliotheque Publique de Westmount (Westmount Public Library)",
+    "type": "library",
+    "city": "westmount",
+    "lat": 45.4812822,
+    "lng": -73.5990817,
+    "address": "4574 Rue Sherbrooke Ouest, Westmount, QC H3Z 1G1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=45.4812822,-73.5990817",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wrr-library-01",
+    "name": "Delta State Library, Warri",
+    "type": "library",
+    "city": "warri",
+    "lat": 5.5154993,
+    "lng": 5.7458736,
+    "address": "Swamp Road, Warri South, Delta State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.5154993,5.7458736",
+    "added_by": "yakew7"
   }
 ]

@@ -1274,5 +1274,49 @@
     "address": "Al Mualla Street, Umm Al Quwain, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.5716637,55.5525931",
     "added_by": "yakew7"
+  },
+  {
+    "id": "shl-other_places-01",
+    "name": "Shawnigan Lake School",
+    "type": "other_places",
+    "city": "shawnigan_lake",
+    "lat": 48.6558661,
+    "lng": -123.638364,
+    "address": "1975 Renfrew Road, Shawnigan Lake, BC V0R 2W1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=48.6558661,-123.6383640",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hct-other_places-01",
+    "name": "Harrow International School Appi Japan",
+    "type": "other_places",
+    "city": "hachimantai_city",
+    "lat": 40.0139672,
+    "lng": 141.0030945,
+    "address": "Hachimantai-shi, Iwate 028-7306, Japan",
+    "gmaps_link": "https://maps.google.com/?q=40.0139672,141.0030945",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wrr-other_places-01",
+    "name": "Federal University of Petroleum Resources (FUPRE)",
+    "type": "other_places",
+    "city": "warri",
+    "lat": 5.5555007,
+    "lng": 5.7850099,
+    "address": "FUPRE Road, Ugbomro, Effurun, Warri, Delta State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=5.5555007,5.7850099",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "awk-other_places-01",
+    "name": "Nnamdi Azikiwe University, Awka Campus",
+    "type": "other_places",
+    "city": "awka",
+    "lat": 6.2477085,
+    "lng": 7.1167289,
+    "address": "Enugu-Onitsha Expressway, Awka, Anambra State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.2477085,7.1167289",
+    "added_by": "yakew7"
   }
 ]

@@ -790,5 +790,29 @@
     "gmaps_link": "https://maps.google.com/?q=25.5856050,55.5760450",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "awk-foreign_lang_exam_centre-01",
+    "name": "IELTS Test Centre, Trig Point Hotel Awka",
+    "type": "foreign_lang_exam_centre",
+    "city": "awka",
+    "lat": 6.218947,
+    "lng": 7.0774372,
+    "address": "20 Nibo Road, Amawbia, Awka, Anambra State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.2189470,7.0774372",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "kon-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Konak",
+    "type": "foreign_lang_exam_centre",
+    "city": "konak",
+    "lat": 38.4314642,
+    "lng": 27.1374017,
+    "address": "Kultur Mahallesi, Cumhuriyet Bulvari, Konak, Izmir, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=38.4314642,27.1374017",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
