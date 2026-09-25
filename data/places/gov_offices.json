@@ -2055,5 +2055,60 @@
     "address": "213 Girin-daero, Wansan-gu, Jeonju-si, South Korea",
     "gmaps_link": "https://maps.google.com/?q=35.8152816,127.1548496",
     "added_by": "yakew7"
+  },
+  {
+    "id": "pri-gov_offices-01",
+    "name": "Palmer Square Post Office",
+    "type": "gov_offices",
+    "city": "princeton",
+    "lat": 40.3520067,
+    "lng": -74.6502276,
+    "address": "259 Nassau Street, Princeton, NJ 08542",
+    "gmaps_link": "https://maps.google.com/?q=40.3520067,-74.6502276",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ttn-gov_offices-01",
+    "name": "Trenton City Hall",
+    "type": "gov_offices",
+    "city": "trenton",
+    "lat": 40.2203428,
+    "lng": -74.7588988,
+    "address": "319 East State Street, Trenton, NJ 08608",
+    "gmaps_link": "https://maps.google.com/?q=40.2203428,-74.7588988",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "stm-gov_offices-01",
+    "name": "Stamford Government Center",
+    "type": "gov_offices",
+    "city": "stamford",
+    "lat": 41.0514654,
+    "lng": -73.5427298,
+    "address": "888 Washington Boulevard, Stamford, CT 06901",
+    "gmaps_link": "https://maps.google.com/?q=41.0514654,-73.5427298",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "jsc-gov_offices-01",
+    "name": "Jersey City City Hall",
+    "type": "gov_offices",
+    "city": "jersey_city",
+    "lat": 40.7177511,
+    "lng": -74.0430879,
+    "address": "280 Grove Street, Jersey City, NJ 07302",
+    "gmaps_link": "https://maps.google.com/?q=40.7177511,-74.0430879",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ith-gov_offices-01",
+    "name": "Ithaca Downtown Post Office",
+    "type": "gov_offices",
+    "city": "ithaca",
+    "lat": 42.4411231,
+    "lng": -76.4963792,
+    "address": "213 North Tioga Street, Ithaca, NY 14850",
+    "gmaps_link": "https://maps.google.com/?q=42.4411231,-76.4963792",
+    "added_by": "yakew7"
   }
 ]

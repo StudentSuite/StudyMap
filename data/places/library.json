@@ -2077,5 +2077,60 @@
     "address": "Avenida Rio de Janeiro 413, Centro, 86010-150 Londrina, PR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-23.3126282,-51.1586968",
     "added_by": "yakew7"
+  },
+  {
+    "id": "pri-library-01",
+    "name": "Princeton Public Library",
+    "type": "library",
+    "city": "princeton",
+    "lat": 40.3517225,
+    "lng": -74.6603032,
+    "address": "65 Witherspoon Street, Princeton, NJ 08542",
+    "gmaps_link": "https://maps.google.com/?q=40.3517225,-74.6603032",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ttn-library-01",
+    "name": "Trenton Free Public Library",
+    "type": "library",
+    "city": "trenton",
+    "lat": 40.2220073,
+    "lng": -74.7638468,
+    "address": "120 Academy Street, Trenton, NJ 08608",
+    "gmaps_link": "https://maps.google.com/?q=40.2220073,-74.7638468",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "stm-library-01",
+    "name": "Ferguson Library, Main Library (DiMattia Building)",
+    "type": "library",
+    "city": "stamford",
+    "lat": 41.0557293,
+    "lng": -73.5391624,
+    "address": "1 Public Library Plaza, Stamford, CT 06904",
+    "gmaps_link": "https://maps.google.com/?q=41.0557293,-73.5391624",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "jsc-library-01",
+    "name": "Jersey City Free Public Library, Priscilla Gardner Main Library",
+    "type": "library",
+    "city": "jersey_city",
+    "lat": 40.718699,
+    "lng": -74.047645,
+    "address": "472 Jersey Avenue, Jersey City, NJ 07302",
+    "gmaps_link": "https://maps.google.com/?q=40.7186990,-74.0476450",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ith-library-01",
+    "name": "Tompkins County Public Library",
+    "type": "library",
+    "city": "ithaca",
+    "lat": 42.4381633,
+    "lng": -76.4983205,
+    "address": "101 East Green Street, Ithaca, NY 14850",
+    "gmaps_link": "https://maps.google.com/?q=42.4381633,-76.4983205",
+    "added_by": "yakew7"
   }
 ]
