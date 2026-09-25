@@ -2836,5 +2836,60 @@
     "address": "Avenida Paulo Gama 110, Campus Centro, Porto Alegre, RS, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-30.0333150,-51.2199440",
     "added_by": "yakew7"
+  },
+  {
+    "id": "byn-library-01",
+    "name": "Free Public Library of Bayonne",
+    "type": "library",
+    "city": "bayonne",
+    "lat": 40.6717222,
+    "lng": -74.1156567,
+    "address": "697 Avenue C, Bayonne, NJ 07002",
+    "gmaps_link": "https://maps.google.com/?q=40.6717222,-74.1156567",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "eli-library-01",
+    "name": "Elizabeth Public Library, Main Library",
+    "type": "library",
+    "city": "elizabeth",
+    "lat": 40.6615776,
+    "lng": -74.2156989,
+    "address": "11 South Broad Street, Elizabeth, NJ 07202",
+    "gmaps_link": "https://maps.google.com/?q=40.6615776,-74.2156989",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lnd-library-01",
+    "name": "Linden Public Library",
+    "type": "library",
+    "city": "linden",
+    "lat": 40.6341924,
+    "lng": -74.2582671,
+    "address": "31 E Henry Street, Linden, NJ 07036",
+    "gmaps_link": "https://maps.google.com/?q=40.6341924,-74.2582671",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rah-library-01",
+    "name": "Rahway Public Library",
+    "type": "library",
+    "city": "rahway",
+    "lat": 40.6047094,
+    "lng": -74.2742865,
+    "address": "2 City Hall Plaza, Rahway, NJ 07065",
+    "gmaps_link": "https://maps.google.com/?q=40.6047094,-74.2742865",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "clf-library-01",
+    "name": "Clifton Public Library, Main Memorial Library",
+    "type": "library",
+    "city": "clifton",
+    "lat": 40.8799568,
+    "lng": -74.147579,
+    "address": "292 Piaget Avenue, Clifton, NJ 07011",
+    "gmaps_link": "https://maps.google.com/?q=40.8799568,-74.1475790",
+    "added_by": "yakew7"
   }
 ]

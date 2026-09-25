@@ -2869,5 +2869,60 @@
     "address": "Rua General Joao Manoel 157, Centro Historico, Porto Alegre, RS, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-30.0299751,-51.2338300",
     "added_by": "yakew7"
+  },
+  {
+    "id": "byn-gov_offices-01",
+    "name": "Bayonne City Hall",
+    "type": "gov_offices",
+    "city": "bayonne",
+    "lat": 40.668925,
+    "lng": -74.117198,
+    "address": "630 Avenue C, Bayonne, NJ 07002",
+    "gmaps_link": "https://maps.google.com/?q=40.6689250,-74.1171980",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "eli-gov_offices-01",
+    "name": "Elizabeth City Hall",
+    "type": "gov_offices",
+    "city": "elizabeth",
+    "lat": 40.662984,
+    "lng": -74.211643,
+    "address": "50 Winfield Scott Plaza, Elizabeth, NJ 07201",
+    "gmaps_link": "https://maps.google.com/?q=40.6629840,-74.2116430",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lnd-gov_offices-01",
+    "name": "Linden City Hall",
+    "type": "gov_offices",
+    "city": "linden",
+    "lat": 40.6315653,
+    "lng": -74.2553402,
+    "address": "301 North Wood Avenue, Linden, NJ 07036",
+    "gmaps_link": "https://maps.google.com/?q=40.6315653,-74.2553402",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rah-gov_offices-01",
+    "name": "Rahway Post Office",
+    "type": "gov_offices",
+    "city": "rahway",
+    "lat": 40.6049821,
+    "lng": -74.2753087,
+    "address": "123 E Milton Avenue, Rahway, NJ 07065",
+    "gmaps_link": "https://maps.google.com/?q=40.6049821,-74.2753087",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "clf-gov_offices-01",
+    "name": "Clifton City Hall",
+    "type": "gov_offices",
+    "city": "clifton",
+    "lat": 40.8664528,
+    "lng": -74.1604017,
+    "address": "900 Clifton Avenue, Clifton, NJ 07013",
+    "gmaps_link": "https://maps.google.com/?q=40.8664528,-74.1604017",
+    "added_by": "yakew7"
   }
 ]
