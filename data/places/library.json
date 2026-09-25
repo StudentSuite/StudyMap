@@ -3309,5 +3309,49 @@
     "address": "461 Valley Road, Wayne, NJ 07470",
     "gmaps_link": "https://maps.google.com/?q=40.9285631,-74.2320131",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ddhm-library-01",
+    "name": "Dedham Public Library",
+    "type": "library",
+    "city": "dedham",
+    "lat": 42.247822,
+    "lng": -71.176152,
+    "address": "43 Church Street, Dedham, MA 02026",
+    "gmaps_link": "https://maps.google.com/?q=42.247822,-71.176152",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lex-library-01",
+    "name": "Cary Memorial Library",
+    "type": "library",
+    "city": "lexington",
+    "lat": 42.4481092,
+    "lng": -71.2297028,
+    "address": "1874 Massachusetts Avenue, Lexington, MA 02420",
+    "gmaps_link": "https://maps.google.com/?q=42.4481092,-71.2297028",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east-library-01",
+    "name": "Easton Area Public Library",
+    "type": "library",
+    "city": "easton",
+    "lat": 40.692139,
+    "lng": -75.213655,
+    "address": "515 Church Street, Easton, PA 18042",
+    "gmaps_link": "https://maps.google.com/?q=40.692139,-75.213655",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cant-library-01",
+    "name": "Green Free Library",
+    "type": "library",
+    "city": "canton",
+    "lat": 41.6543575,
+    "lng": -76.8514963,
+    "address": "14 North Center Street, Canton, PA 17724",
+    "gmaps_link": "https://maps.google.com/?q=41.6543575,-76.8514963",
+    "added_by": "yakew7"
   }
 ]

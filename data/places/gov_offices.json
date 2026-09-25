@@ -3364,5 +3364,71 @@
     "address": "475 Valley Road, Wayne, NJ 07470",
     "gmaps_link": "https://maps.google.com/?q=40.9290839,-74.2314483",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ddhm-gov_offices-01",
+    "name": "Dedham Town Hall (Ames Building)",
+    "type": "gov_offices",
+    "city": "dedham",
+    "lat": 42.2456421,
+    "lng": -71.1742412,
+    "address": "450 Washington Street, Dedham, MA 02026",
+    "gmaps_link": "https://maps.google.com/?q=42.2456421,-71.1742412",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lex-gov_offices-01",
+    "name": "Lexington Town Office Building",
+    "type": "gov_offices",
+    "city": "lexington",
+    "lat": 42.4470065,
+    "lng": -71.2245646,
+    "address": "1625 Massachusetts Avenue, Lexington, MA 02420",
+    "gmaps_link": "https://maps.google.com/?q=42.4470065,-71.2245646",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "holl-gov_offices-01",
+    "name": "Northampton Township Fire Department, Station 73 (Holland)",
+    "type": "gov_offices",
+    "city": "holland",
+    "lat": 40.1728871,
+    "lng": -74.9926688,
+    "address": "451 East Holland Road, Holland, PA 18966",
+    "gmaps_link": "https://maps.google.com/?q=40.1728871,-74.9926688",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east-gov_offices-01",
+    "name": "Easton City Hall",
+    "type": "gov_offices",
+    "city": "easton",
+    "lat": 40.688873,
+    "lng": -75.2091471,
+    "address": "123 South Third Street, Easton, PA 18042",
+    "gmaps_link": "https://maps.google.com/?q=40.688873,-75.2091471",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "east-gov_offices-02",
+    "name": "Northampton County Courthouse",
+    "type": "gov_offices",
+    "city": "easton",
+    "lat": 40.686965,
+    "lng": -75.2174179,
+    "address": "669 Washington Street, Easton, PA 18042",
+    "gmaps_link": "https://maps.google.com/?q=40.686965,-75.2174179",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cant-gov_offices-01",
+    "name": "Canton Borough Municipal Building",
+    "type": "gov_offices",
+    "city": "canton",
+    "lat": 41.6542688,
+    "lng": -76.8514819,
+    "address": "4 North Center Street, Canton, PA 17724",
+    "gmaps_link": "https://maps.google.com/?q=41.6542688,-76.8514819",
+    "added_by": "yakew7"
   }
 ]
