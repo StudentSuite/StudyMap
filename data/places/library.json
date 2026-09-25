@@ -3144,5 +3144,60 @@
     "address": "1 Atkinson Street, Richmond Hill, ON L4C 1V1, Canada",
     "gmaps_link": "https://maps.google.com/?q=43.8694408,-79.4370637",
     "added_by": "yakew7"
+  },
+  {
+    "id": "erdm-library-01",
+    "name": "Erdemli District Public Library",
+    "type": "library",
+    "city": "erdemli_mersin",
+    "lat": 36.6104491,
+    "lng": 34.3160684,
+    "address": "Alata Mahallesi, Erdemli, Mersin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=36.6104491,34.3160684",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "soke-library-01",
+    "name": "Soke Haci Halil Pasa District Public Library",
+    "type": "library",
+    "city": "soke",
+    "lat": 37.7529441,
+    "lng": 27.4040946,
+    "address": "Konak Mahallesi Kocacesme Sokak No: 13, Soke, Aydin, Turkey",
+    "gmaps_link": "https://maps.google.com/?q=37.7529441,27.4040946",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "holt-library-01",
+    "name": "Holt Library",
+    "type": "library",
+    "city": "holt",
+    "lat": 52.9060496,
+    "lng": 1.0913678,
+    "address": "Wansbeck House, 9 Church Street, Holt, Norfolk NR25 6BB, UK",
+    "gmaps_link": "https://maps.google.com/?q=52.9060496,1.0913678",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lanc-library-01",
+    "name": "Lancing Library",
+    "type": "library",
+    "city": "lancing",
+    "lat": 50.8282497,
+    "lng": -0.3246336,
+    "address": "Penstone Park, Lancing, West Sussex BN15 9DL, UK",
+    "gmaps_link": "https://maps.google.com/?q=50.8282497,-0.3246336",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bkln-library-01",
+    "name": "Brooklyn Public Library, Central Library",
+    "type": "library",
+    "city": "brooklyn",
+    "lat": 40.6745742,
+    "lng": -73.9704286,
+    "address": "10 Grand Army Plaza, Brooklyn, NY 11238",
+    "gmaps_link": "https://maps.google.com/?q=40.6745742,-73.9704286",
+    "added_by": "yakew7"
   }
 ]
