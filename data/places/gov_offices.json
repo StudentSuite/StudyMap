@@ -2759,5 +2759,71 @@
     "address": "147 Beirut Street, Al Twar 5, Dubai, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.2569096,55.3875849",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bgn-gov_offices-01",
+    "name": "Poste Italiane, Bagnoli",
+    "type": "gov_offices",
+    "city": "bagnoli",
+    "lat": 40.817105,
+    "lng": 14.1702672,
+    "address": "Via Ascanio 28, 80124 Bagnoli, Napoli, Italy",
+    "gmaps_link": "https://maps.google.com/?q=40.8171050,14.1702672",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bgn-gov_offices-02",
+    "name": "Municipalita 10 Anagrafe, Fuorigrotta office",
+    "type": "gov_offices",
+    "city": "bagnoli",
+    "lat": 40.8277154,
+    "lng": 14.1968253,
+    "address": "Via Benedetto Cariteo 51, Fuorigrotta, Napoli, Italy",
+    "gmaps_link": "https://maps.google.com/?q=40.8277154,14.1968253",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chr-gov_offices-01",
+    "name": "Comune di Chieri (Anagrafe)",
+    "type": "gov_offices",
+    "city": "chieri",
+    "lat": 45.0131181,
+    "lng": 7.8210992,
+    "address": "Via Palazzo di Citta 10, 10023 Chieri, Torino, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.0131181,7.8210992",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dui-gov_offices-01",
+    "name": "Comune di Duino Aurisina",
+    "type": "gov_offices",
+    "city": "duino",
+    "lat": 45.7539714,
+    "lng": 13.6593332,
+    "address": "Via Aurisina Cave 25, 34011 Duino Aurisina, Trieste, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.7539714,13.6593332",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdn-gov_offices-01",
+    "name": "Rathaus Kandern (Town Hall)",
+    "type": "gov_offices",
+    "city": "kandern",
+    "lat": 47.7138171,
+    "lng": 7.6638169,
+    "address": "Waldeckstrasse 39, 79400 Kandern, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.7138171,7.6638169",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdn-gov_offices-02",
+    "name": "Deutsche Post Filiale, Kandern",
+    "type": "gov_offices",
+    "city": "kandern",
+    "lat": 47.7147201,
+    "lng": 7.6608865,
+    "address": "Marktplatz 13, 79400 Kandern, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.7147201,7.6608865",
+    "added_by": "yakew7"
   }
 ]

@@ -2748,5 +2748,49 @@
     "address": "Damascus Street, Al Twar 1, Dubai, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.2622071,55.3738150",
     "added_by": "yakew7"
+  },
+  {
+    "id": "bgn-library-01",
+    "name": "Biblioteca Giancarlo Mazzacurati",
+    "type": "library",
+    "city": "bagnoli",
+    "lat": 40.8179714,
+    "lng": 14.1677212,
+    "address": "Via Acate 65, Bagnoli, Napoli, Italy",
+    "gmaps_link": "https://maps.google.com/?q=40.8179714,14.1677212",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chr-library-01",
+    "name": "Biblioteca Civica Nicolo e Paola Francone",
+    "type": "library",
+    "city": "chieri",
+    "lat": 45.0151847,
+    "lng": 7.8193808,
+    "address": "Via Vittorio Emanuele II 1, 10023 Chieri, Torino, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.0151847,7.8193808",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dui-library-01",
+    "name": "Biblioteca Comunale di Duino Aurisina",
+    "type": "library",
+    "city": "duino",
+    "lat": 45.7504341,
+    "lng": 13.6708659,
+    "address": "Piazza San Rocco 104, Aurisina, Duino Aurisina, Trieste, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.7504341,13.6708659",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kdn-library-01",
+    "name": "Stadtbucherei Kandern",
+    "type": "library",
+    "city": "kandern",
+    "lat": 47.7145838,
+    "lng": 7.6625589,
+    "address": "Hauptstrasse 28, 79400 Kandern, Germany",
+    "gmaps_link": "https://maps.google.com/?q=47.7145838,7.6625589",
+    "added_by": "yakew7"
   }
 ]
