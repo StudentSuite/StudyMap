@@ -2132,5 +2132,38 @@
     "address": "101 East Green Street, Ithaca, NY 14850",
     "gmaps_link": "https://maps.google.com/?q=42.4381633,-76.4983205",
     "added_by": "yakew7"
+  },
+  {
+    "id": "flr-library-01",
+    "name": "Biblioteca Nazionale Centrale di Firenze",
+    "type": "library",
+    "city": "firenze",
+    "lat": 43.7671606,
+    "lng": 11.2622291,
+    "address": "Piazza dei Cavalleggeri 1, 50122 Firenze, Italy",
+    "gmaps_link": "https://maps.google.com/?q=43.7671606,11.2622291",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rom-library-01",
+    "name": "Biblioteca Nazionale Centrale di Roma",
+    "type": "library",
+    "city": "rome",
+    "lat": 41.9079074,
+    "lng": 12.5046199,
+    "address": "Via Castro Pretorio 105, 00185 Roma, Italy",
+    "gmaps_link": "https://maps.google.com/?q=41.9079074,12.5046199",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "myd-library-01",
+    "name": "Malindi KNLS Public Library",
+    "type": "library",
+    "city": "malindi",
+    "lat": -3.2236236,
+    "lng": 40.129862,
+    "address": "Malindi town, Kilifi County, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-3.2236236,40.1298620",
+    "added_by": "yakew7"
   }
 ]

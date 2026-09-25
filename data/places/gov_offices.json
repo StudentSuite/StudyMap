@@ -2110,5 +2110,27 @@
     "address": "213 North Tioga Street, Ithaca, NY 14850",
     "gmaps_link": "https://maps.google.com/?q=42.4411231,-76.4963792",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mlo-gov_offices-01",
+    "name": "Posta Kenya, Molo Post Office",
+    "type": "gov_offices",
+    "city": "molo",
+    "lat": -0.2454951,
+    "lng": 35.7322357,
+    "address": "Molo town, Nakuru County, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-0.2454951,35.7322357",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "myd-gov_offices-01",
+    "name": "Malindi Sub-County Administration Office",
+    "type": "gov_offices",
+    "city": "malindi",
+    "lat": -3.2236236,
+    "lng": 40.129862,
+    "address": "Maweni area, Malindi town, Kilifi County, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-3.2236236,40.1298620",
+    "added_by": "yakew7"
   }
 ]

@@ -1010,5 +1010,27 @@
     "address": "Independence Layout, Enugu, Enugu State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.4232558,7.5043338",
     "added_by": "yakew7"
+  },
+  {
+    "id": "rom-other_places-01",
+    "name": "Sapienza University of Rome",
+    "type": "other_places",
+    "city": "rome",
+    "lat": 41.901462,
+    "lng": 12.515295,
+    "address": "Piazzale Aldo Moro 5, 00185 Roma, Italy",
+    "gmaps_link": "https://maps.google.com/?q=41.9014620,12.5152950",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mxp-other_places-01",
+    "name": "Universita Commerciale Luigi Bocconi",
+    "type": "other_places",
+    "city": "milano",
+    "lat": 45.4489149,
+    "lng": 9.1893943,
+    "address": "Via Roberto Sarfatti 25, 20136 Milano, Italy",
+    "gmaps_link": "https://maps.google.com/?q=45.4489149,9.1893943",
+    "added_by": "yakew7"
   }
 ]
