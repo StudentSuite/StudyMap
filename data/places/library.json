@@ -2990,5 +2990,60 @@
     "address": "500 East High Street, Pottstown, PA 19464",
     "gmaps_link": "https://maps.google.com/?q=40.2443734,-75.6418541",
     "added_by": "yakew7"
+  },
+  {
+    "id": "wpl-library-01",
+    "name": "White Plains Public Library",
+    "type": "library",
+    "city": "white_plains",
+    "lat": 41.0303466,
+    "lng": -73.769955,
+    "address": "100 Martine Avenue, White Plains, NY 10601",
+    "gmaps_link": "https://maps.google.com/?q=41.0303466,-73.7699550",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chp-library-01",
+    "name": "Chappaqua Library",
+    "type": "library",
+    "city": "chappaqua",
+    "lat": 41.1550855,
+    "lng": -73.7731683,
+    "address": "195 South Greeley Avenue, Chappaqua, NY 10514",
+    "gmaps_link": "https://maps.google.com/?q=41.1550855,-73.7731683",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mhp-library-01",
+    "name": "Mahopac Public Library",
+    "type": "library",
+    "city": "mahopac",
+    "lat": 41.3712985,
+    "lng": -73.7390641,
+    "address": "668 Route 6, Mahopac, NY 10541",
+    "gmaps_link": "https://maps.google.com/?q=41.3712985,-73.7390641",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sbk-library-01",
+    "name": "Frank Melville Jr. Memorial Library, Stony Brook University",
+    "type": "library",
+    "city": "stony_brook",
+    "lat": 40.9090809,
+    "lng": -73.1205518,
+    "address": "100 Nicolls Road, Stony Brook, NY 11794",
+    "gmaps_link": "https://maps.google.com/?q=40.9090809,-73.1205518",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nhv-library-01",
+    "name": "New Haven Free Public Library",
+    "type": "library",
+    "city": "new_haven",
+    "lat": 41.3090074,
+    "lng": -72.9247662,
+    "address": "133 Elm Street, New Haven, CT 06510",
+    "gmaps_link": "https://maps.google.com/?q=41.3090074,-72.9247662",
+    "added_by": "yakew7"
   }
 ]

@@ -3045,5 +3045,60 @@
     "address": "100 East High Street, Pottstown, PA 19464",
     "gmaps_link": "https://maps.google.com/?q=40.2456183,-75.6522463",
     "added_by": "yakew7"
+  },
+  {
+    "id": "wpl-gov_offices-01",
+    "name": "White Plains City Hall",
+    "type": "gov_offices",
+    "city": "white_plains",
+    "lat": 41.0333593,
+    "lng": -73.7655073,
+    "address": "255 Main Street, White Plains, NY 10601",
+    "gmaps_link": "https://maps.google.com/?q=41.0333593,-73.7655073",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chp-gov_offices-01",
+    "name": "New Castle Town Hall",
+    "type": "gov_offices",
+    "city": "chappaqua",
+    "lat": 41.1554813,
+    "lng": -73.7746168,
+    "address": "200 South Greeley Avenue, Chappaqua, NY 10514",
+    "gmaps_link": "https://maps.google.com/?q=41.1554813,-73.7746168",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mhp-gov_offices-01",
+    "name": "Carmel Town Hall",
+    "type": "gov_offices",
+    "city": "mahopac",
+    "lat": 41.3774684,
+    "lng": -73.7236069,
+    "address": "60 McAlpin Avenue, Mahopac, NY 10541",
+    "gmaps_link": "https://maps.google.com/?q=41.3774684,-73.7236069",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sbk-gov_offices-01",
+    "name": "Stony Brook Post Office",
+    "type": "gov_offices",
+    "city": "stony_brook",
+    "lat": 40.9164466,
+    "lng": -73.1463029,
+    "address": "129 Main Street, Stony Brook, NY 11790",
+    "gmaps_link": "https://maps.google.com/?q=40.9164466,-73.1463029",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nhv-gov_offices-01",
+    "name": "New Haven City Hall",
+    "type": "gov_offices",
+    "city": "new_haven",
+    "lat": 41.307378,
+    "lng": -72.9243304,
+    "address": "165 Church Street, New Haven, CT 06510",
+    "gmaps_link": "https://maps.google.com/?q=41.3073780,-72.9243304",
+    "added_by": "yakew7"
   }
 ]
