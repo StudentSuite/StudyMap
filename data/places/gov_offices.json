@@ -2539,5 +2539,60 @@
     "address": "Km 5, Gbongan-Ibadan Road, Abere, Osogbo, Osun State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=7.7254604,4.5056498",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ctn-gov_offices-01",
+    "name": "Department of Home Affairs, Cape Town",
+    "type": "gov_offices",
+    "city": "capetown",
+    "lat": -33.9276579,
+    "lng": 18.4221182,
+    "address": "56 Barrack Street, Cape Town 8001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-33.9276579,18.4221182",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ctn-gov_offices-02",
+    "name": "Cape Town City Hall",
+    "type": "gov_offices",
+    "city": "capetown",
+    "lat": -33.9253797,
+    "lng": 18.4236671,
+    "address": "Darling Street, Cape Town 8001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-33.9253797,18.4236671",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nrb-gov_offices-01",
+    "name": "State Department for Immigration Services, Nyayo House",
+    "type": "gov_offices",
+    "city": "nairobi_kenya",
+    "lat": -1.2871174,
+    "lng": 36.818105,
+    "address": "Nyayo House, Uhuru Highway, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.2871174,36.8181050",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nrb-gov_offices-02",
+    "name": "Nairobi City Hall",
+    "type": "gov_offices",
+    "city": "nairobi_kenya",
+    "lat": -1.287355,
+    "lng": 36.8213136,
+    "address": "City Hall Way, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.2873550,36.8213136",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nrb-gov_offices-03",
+    "name": "Huduma Centre GPO",
+    "type": "gov_offices",
+    "city": "nairobi_kenya",
+    "lat": -1.2860599,
+    "lng": 36.8190472,
+    "address": "Teleposta Building, Kenyatta Avenue, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.2860599,36.8190472",
+    "added_by": "yakew7"
   }
 ]

@@ -886,5 +886,41 @@
     "gmaps_link": "https://maps.google.com/?q=11.9948775,8.5501061",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "ctn-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Fountains Hotel",
+    "type": "foreign_lang_exam_centre",
+    "city": "capetown",
+    "lat": -33.9196895,
+    "lng": 18.424738,
+    "address": "1 St George's Mall, Cape Town City Centre, Cape Town 8001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-33.9196895,18.4247380",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "nrb-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Upper Hill",
+    "type": "foreign_lang_exam_centre",
+    "city": "nairobi_kenya",
+    "lat": -1.3009143,
+    "lng": 36.821681,
+    "address": "Upper Hill Road, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.3009143,36.8216810",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "nrb-foreign_lang_exam_centre-02",
+    "name": "IDP IELTS Kenya, Euro Towers",
+    "type": "foreign_lang_exam_centre",
+    "city": "nairobi_kenya",
+    "lat": -1.26542,
+    "lng": 36.8066763,
+    "address": "2nd Floor, Euro Towers, Muthithi Road, Westlands, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.2654200,36.8066763",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

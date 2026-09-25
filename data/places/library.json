@@ -2594,5 +2594,27 @@
     "address": "Abia State University, Uturu, Isuikwuato, Abia State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=5.8238654,7.3940074",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ctn-library-01",
+    "name": "Cape Town Central Library",
+    "type": "library",
+    "city": "capetown",
+    "lat": -33.9259878,
+    "lng": 18.4246189,
+    "address": "Darling Street, Cape Town City Centre, Cape Town 8001, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-33.9259878,18.4246189",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nrb-library-01",
+    "name": "McMillan Memorial Library",
+    "type": "library",
+    "city": "nairobi_kenya",
+    "lat": -1.2837776,
+    "lng": 36.8212239,
+    "address": "Banda Street, Nairobi Central Business District, Nairobi, Kenya",
+    "gmaps_link": "https://maps.google.com/?q=-1.2837776,36.8212239",
+    "added_by": "yakew7"
   }
 ]
