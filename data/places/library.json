@@ -3045,5 +3045,60 @@
     "address": "133 Elm Street, New Haven, CT 06510",
     "gmaps_link": "https://maps.google.com/?q=41.3090074,-72.9247662",
     "added_by": "yakew7"
+  },
+  {
+    "id": "gld-library-01",
+    "name": "Guilford Free Library",
+    "type": "library",
+    "city": "guilford",
+    "lat": 41.2840047,
+    "lng": -72.6807882,
+    "address": "67 Park Street, Guilford, CT 06437",
+    "gmaps_link": "https://maps.google.com/?q=41.2840047,-72.6807882",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bkl-library-01",
+    "name": "Public Library of Brookline, Brookline Village Main Branch",
+    "type": "library",
+    "city": "brookline",
+    "lat": 42.3346378,
+    "lng": -71.1213843,
+    "address": "361 Washington Street, Brookline, MA 02445",
+    "gmaps_link": "https://maps.google.com/?q=42.3346378,-71.1213843",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ntk-library-01",
+    "name": "Morse Institute Library",
+    "type": "library",
+    "city": "natick",
+    "lat": 42.2846114,
+    "lng": -71.345821,
+    "address": "14 East Central Street, Natick, MA 01760",
+    "gmaps_link": "https://maps.google.com/?q=42.2846114,-71.3458210",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "frm-library-01",
+    "name": "Framingham Public Library",
+    "type": "library",
+    "city": "framingham",
+    "lat": 42.2819343,
+    "lng": -71.4167413,
+    "address": "49 Lexington Street, Framingham, MA 01702",
+    "gmaps_link": "https://maps.google.com/?q=42.2819343,-71.4167413",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "prv-library-01",
+    "name": "Providence Public Library",
+    "type": "library",
+    "city": "providence",
+    "lat": 41.8219795,
+    "lng": -71.4170904,
+    "address": "150 Empire Street, Providence, RI 02903",
+    "gmaps_link": "https://maps.google.com/?q=41.8219795,-71.4170904",
+    "added_by": "yakew7"
   }
 ]

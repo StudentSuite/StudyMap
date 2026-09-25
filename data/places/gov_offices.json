@@ -3100,5 +3100,60 @@
     "address": "165 Church Street, New Haven, CT 06510",
     "gmaps_link": "https://maps.google.com/?q=41.3073780,-72.9243304",
     "added_by": "yakew7"
+  },
+  {
+    "id": "gld-gov_offices-01",
+    "name": "Guilford Town Hall",
+    "type": "gov_offices",
+    "city": "guilford",
+    "lat": 41.2829672,
+    "lng": -72.6806583,
+    "address": "31 Park Street, Guilford, CT 06437",
+    "gmaps_link": "https://maps.google.com/?q=41.2829672,-72.6806583",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bkl-gov_offices-01",
+    "name": "Brookline Town Hall",
+    "type": "gov_offices",
+    "city": "brookline",
+    "lat": 42.3340201,
+    "lng": -71.1206388,
+    "address": "333 Washington Street, Brookline, MA 02445",
+    "gmaps_link": "https://maps.google.com/?q=42.3340201,-71.1206388",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ntk-gov_offices-01",
+    "name": "Natick Town Hall",
+    "type": "gov_offices",
+    "city": "natick",
+    "lat": 42.2837002,
+    "lng": -71.3458503,
+    "address": "13 East Central Street, Natick, MA 01760",
+    "gmaps_link": "https://maps.google.com/?q=42.2837002,-71.3458503",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "frm-gov_offices-01",
+    "name": "Framingham City Hall (Memorial Building)",
+    "type": "gov_offices",
+    "city": "framingham",
+    "lat": 42.2797659,
+    "lng": -71.4169975,
+    "address": "150 Concord Street, Framingham, MA 01702",
+    "gmaps_link": "https://maps.google.com/?q=42.2797659,-71.4169975",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "prv-gov_offices-01",
+    "name": "Providence City Hall",
+    "type": "gov_offices",
+    "city": "providence",
+    "lat": 41.8240345,
+    "lng": -71.4129047,
+    "address": "25 Dorrance Street, Providence, RI 02903",
+    "gmaps_link": "https://maps.google.com/?q=41.8240345,-71.4129047",
+    "added_by": "yakew7"
   }
 ]
