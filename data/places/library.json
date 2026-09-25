@@ -2506,5 +2506,38 @@
     "address": "Kemeralti Mahallesi, Mustafa Muglali Caddesi, 112. Sokak, Marmaris, Mugla, Turkey",
     "gmaps_link": "https://maps.google.com/?q=36.8522547,28.2742661",
     "added_by": "yakew7"
+  },
+  {
+    "id": "lgs-library-01",
+    "name": "Lagos State Library Board, Ikeja Secretariat Library",
+    "type": "library",
+    "city": "lagos_state",
+    "lat": 6.5916971,
+    "lng": 3.3436904,
+    "address": "Old Secretariat, Oba Akinjobi Street, Alausa, Ikeja, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.5916971,3.3436904",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bce-library-01",
+    "name": "John Harris Library, University of Benin",
+    "type": "library",
+    "city": "benin_city_edo_state",
+    "lat": 6.4039391,
+    "lng": 5.6247314,
+    "address": "University of Benin, Ugbowo Campus, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4039391,5.6247314",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ojo-library-01",
+    "name": "Babajide Olusola Sanwo-Olu Library Complex, Lagos State University",
+    "type": "library",
+    "city": "ojo_lagos",
+    "lat": 6.4737891,
+    "lng": 3.1994722,
+    "address": "Lagos State University, Lagos-Badagry Expressway, Ojo, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4737891,3.1994722",
+    "added_by": "yakew7"
   }
 ]

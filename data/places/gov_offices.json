@@ -2440,5 +2440,60 @@
     "address": "Eski Kuyumcular Mahallesi, Hukumet Caddesi No:2, Karesi, Balikesir, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.6465029,27.8832305",
     "added_by": "yakew7"
+  },
+  {
+    "id": "lgs-gov_offices-01",
+    "name": "Nigeria Immigration Service Passport Office, Ikeja",
+    "type": "gov_offices",
+    "city": "lagos_state",
+    "lat": 6.6179055,
+    "lng": 3.3559413,
+    "address": "5 Assbifi Road, Agidingbi, Ikeja, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.6179055,3.3559413",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bce-gov_offices-01",
+    "name": "Nigeria Immigration Service Command Headquarters, Ikpoba Hill",
+    "type": "gov_offices",
+    "city": "benin_city_edo_state",
+    "lat": 6.3532732,
+    "lng": 5.6275319,
+    "address": "Ikpoba Hill, near New Benin, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.3532732,5.6275319",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ben-gov_offices-01",
+    "name": "Edo State House of Assembly, Chief Anthony Enahoro Complex",
+    "type": "gov_offices",
+    "city": "benin",
+    "lat": 6.3330586,
+    "lng": 5.6221058,
+    "address": "Ring Road, Oka, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.3330586,5.6221058",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ojo-gov_offices-01",
+    "name": "Ojo Local Government Secretariat",
+    "type": "gov_offices",
+    "city": "ojo_lagos",
+    "lat": 6.4624975,
+    "lng": 3.1657099,
+    "address": "Olojo Drive, Ojo, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4624975,3.1657099",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "nsw-gov_offices-01",
+    "name": "Nasarawa State Government House",
+    "type": "gov_offices",
+    "city": "nasarawa_state",
+    "lat": 8.4960459,
+    "lng": 8.5147636,
+    "address": "Shendam Road, Lafia, Nasarawa State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=8.4960459,8.5147636",
+    "added_by": "yakew7"
   }
 ]

@@ -850,5 +850,29 @@
     "gmaps_link": "https://maps.google.com/?q=36.8992302,30.7091218",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "lgs-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Classique Event Center",
+    "type": "foreign_lang_exam_centre",
+    "city": "lagos_state",
+    "lat": 6.5992618,
+    "lng": 3.3659932,
+    "address": "7A Kudirat Abiola Way, Oregun, Ikeja, Lagos, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.5992618,3.3659932",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "ben-foreign_lang_exam_centre-01",
+    "name": "MOD Education Nigeria Benin, IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "benin",
+    "lat": 6.3149345,
+    "lng": 5.6138916,
+    "address": "76 Boundary Road, off Airport Road, Ikpokpan Junction, Benin City, Edo State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.3149345,5.6138916",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
