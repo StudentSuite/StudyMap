@@ -2594,5 +2594,60 @@
     "address": "Teleposta Building, Kenyatta Avenue, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.2860599,36.8190472",
     "added_by": "yakew7"
+  },
+  {
+    "id": "cbd-gov_offices-01",
+    "name": "Chungcheongbuk-do Provincial Government",
+    "type": "gov_offices",
+    "city": "chungbuk_do",
+    "lat": 36.640068,
+    "lng": 127.4902838,
+    "address": "82 Sangdang-ro, Sangdang-gu, Cheongju, Chungcheongbuk-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=36.6400680,127.4902838",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gyd-gov_offices-01",
+    "name": "Gyeonggi Provincial Government",
+    "type": "gov_offices",
+    "city": "gyeonggi_do",
+    "lat": 37.2889375,
+    "lng": 127.0537447,
+    "address": "30 Docheong-ro, Yeongtong-gu, Suwon, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.2889375,127.0537447",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gyd-gov_offices-02",
+    "name": "Suwon City Hall",
+    "type": "gov_offices",
+    "city": "gyeonggi_do",
+    "lat": 37.2616466,
+    "lng": 127.0318618,
+    "address": "241 Hyowon-ro, Paldal-gu, Suwon, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.2616466,127.0318618",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gpy-gov_offices-01",
+    "name": "Gapyeong County Office",
+    "type": "gov_offices",
+    "city": "gapyeong_gun",
+    "lat": 37.8248492,
+    "lng": 127.5126096,
+    "address": "181 Seokbong-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.8248492,127.5126096",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hsg-gov_offices-01",
+    "name": "Hoengseong County Office",
+    "type": "gov_offices",
+    "city": "hoengseong",
+    "lat": 37.4924107,
+    "lng": 127.9943753,
+    "address": "15 Taegi-ro, Hoengseong-eup, Hoengseong-gun, Gangwon-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4924107,127.9943753",
+    "added_by": "yakew7"
   }
 ]

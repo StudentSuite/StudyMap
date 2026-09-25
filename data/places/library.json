@@ -2616,5 +2616,60 @@
     "address": "Banda Street, Nairobi Central Business District, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.2837776,36.8212239",
     "added_by": "yakew7"
+  },
+  {
+    "id": "cbd-library-01",
+    "name": "Chungcheongbuk-do Educational Library",
+    "type": "library",
+    "city": "chungbuk_do",
+    "lat": 36.6332672,
+    "lng": 127.4772574,
+    "address": "19 Chungnyeol-ro, Seowon-gu, Cheongju, Chungcheongbuk-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=36.6332672,127.4772574",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cbd-library-02",
+    "name": "Chungbuk National University Library",
+    "type": "library",
+    "city": "chungbuk_do",
+    "lat": 36.6289831,
+    "lng": 127.375766,
+    "address": "Gaesin-dong, Heungdeok-gu, Cheongju, Chungcheongbuk-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=36.6289831,127.3757660",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gyd-library-01",
+    "name": "Gyeonggi Provincial Library",
+    "type": "library",
+    "city": "gyeonggi_do",
+    "lat": 37.2877049,
+    "lng": 127.0525207,
+    "address": "40 Docheong-ro, Yeongtong-gu, Suwon, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.2877049,127.0525207",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gpy-library-01",
+    "name": "Hanseokbong Library",
+    "type": "library",
+    "city": "gapyeong_gun",
+    "lat": 37.8272329,
+    "lng": 127.5079377,
+    "address": "187 Munhwa-ro, Gapyeong-eup, Gapyeong-gun, Gyeonggi-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.8272329,127.5079377",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hsg-library-01",
+    "name": "Hoengseong Public Library",
+    "type": "library",
+    "city": "hoengseong",
+    "lat": 37.4859911,
+    "lng": 127.972059,
+    "address": "75 Munye-ro, Hoengseong-eup, Hoengseong-gun, Gangwon-do, South Korea",
+    "gmaps_link": "https://maps.google.com/?q=37.4859911,127.9720590",
+    "added_by": "yakew7"
   }
 ]
