@@ -3199,5 +3199,60 @@
     "address": "10 Grand Army Plaza, Brooklyn, NY 11238",
     "gmaps_link": "https://maps.google.com/?q=40.6745742,-73.9704286",
     "added_by": "yakew7"
+  },
+  {
+    "id": "sgdn-library-01",
+    "name": "Queens Public Library, Laurelton Branch",
+    "type": "library",
+    "city": "springfield_gardens",
+    "lat": 40.6769092,
+    "lng": -73.7456115,
+    "address": "134-26 225th Street, Springfield Gardens, NY 11413",
+    "gmaps_link": "https://maps.google.com/?q=40.6769092,-73.7456115",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "albny-library-01",
+    "name": "Albany Public Library, Washington Avenue Branch",
+    "type": "library",
+    "city": "albany",
+    "lat": 42.6567021,
+    "lng": -73.7620883,
+    "address": "161 Washington Avenue, Albany, NY 12210",
+    "gmaps_link": "https://maps.google.com/?q=42.6567021,-73.7620883",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "troy-library-01",
+    "name": "Troy Public Library",
+    "type": "library",
+    "city": "troy",
+    "lat": 42.7279633,
+    "lng": -73.6919577,
+    "address": "100 Second Street, Troy, NY 12180",
+    "gmaps_link": "https://maps.google.com/?q=42.7279633,-73.6919577",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pitt-library-01",
+    "name": "Berkshire Athenaeum",
+    "type": "library",
+    "city": "pittsfield",
+    "lat": 42.4477397,
+    "lng": -73.2515288,
+    "address": "1 Wendell Avenue, Pittsfield, MA 01201",
+    "gmaps_link": "https://maps.google.com/?q=42.4477397,-73.2515288",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "amh-library-01",
+    "name": "Jones Library",
+    "type": "library",
+    "city": "amherst",
+    "lat": 42.3762426,
+    "lng": -72.5208921,
+    "address": "43 Amity Street, Amherst, MA 01002",
+    "gmaps_link": "https://maps.google.com/?q=42.3762426,-72.5208921",
+    "added_by": "yakew7"
   }
 ]

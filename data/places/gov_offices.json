@@ -3254,5 +3254,60 @@
     "address": "209 Joralemon Street, Brooklyn, NY 11201",
     "gmaps_link": "https://maps.google.com/?q=40.6927731,-73.9903041",
     "added_by": "yakew7"
+  },
+  {
+    "id": "sgdn-gov_offices-01",
+    "name": "Springfield Gardens Post Office",
+    "type": "gov_offices",
+    "city": "springfield_gardens",
+    "lat": 40.6772834,
+    "lng": -73.7437378,
+    "address": "21810 Merrick Boulevard, Springfield Gardens, NY 11413",
+    "gmaps_link": "https://maps.google.com/?q=40.6772834,-73.7437378",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "albny-gov_offices-01",
+    "name": "Albany City Hall",
+    "type": "gov_offices",
+    "city": "albany",
+    "lat": 42.6517563,
+    "lng": -73.7545035,
+    "address": "24 Eagle Street, Albany, NY 12207",
+    "gmaps_link": "https://maps.google.com/?q=42.6517563,-73.7545035",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "troy-gov_offices-01",
+    "name": "Troy City Hall (Hedley Building)",
+    "type": "gov_offices",
+    "city": "troy",
+    "lat": 42.737524,
+    "lng": -73.6870614,
+    "address": "433 River Street, Troy, NY 12180",
+    "gmaps_link": "https://maps.google.com/?q=42.737524,-73.6870614",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pitt-gov_offices-01",
+    "name": "Pittsfield City Hall",
+    "type": "gov_offices",
+    "city": "pittsfield",
+    "lat": 42.4497629,
+    "lng": -73.251883,
+    "address": "70 Allen Street, Pittsfield, MA 01201",
+    "gmaps_link": "https://maps.google.com/?q=42.4497629,-73.251883",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "amh-gov_offices-01",
+    "name": "Amherst Town Hall",
+    "type": "gov_offices",
+    "city": "amherst",
+    "lat": 42.3754636,
+    "lng": -72.5187146,
+    "address": "4 Boltwood Avenue, Amherst, MA 01002",
+    "gmaps_link": "https://maps.google.com/?q=42.3754636,-72.5187146",
+    "added_by": "yakew7"
   }
 ]
