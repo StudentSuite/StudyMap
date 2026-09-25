@@ -1183,7 +1183,7 @@
     "city": "istanbul",
     "lat": 41.1142,
     "lng": 28.9678,
-    "address": "Kemalpaşa Mah. Mimar Mehmet Ağa Cad. No:2, Fatih, İstanbul, Türkiye",
+    "address": "Kemalpa\u015fa Mah. Mimar Mehmet A\u011fa Cad. No:2, Fatih, \u0130stanbul, T\u00fcrkiye",
     "gmaps_link": "https://maps.google.com/?q=41.1142,28.9678",
     "added_by": "shauryagangrade"
   },
@@ -1233,7 +1233,7 @@
   },
   {
     "id": "waw-gov_offices-01",
-    "name": "Urząd Miasta Stołecznego Warszawy (Warsaw City Hall)",
+    "name": "Urz\u0105d Miasta Sto\u0142ecznego Warszawy (Warsaw City Hall)",
     "type": "gov_offices",
     "city": "warsaw",
     "lat": 52.2420649,
@@ -1244,34 +1244,34 @@
   },
   {
     "id": "kkp-gov_offices-01",
-    "name": "Urząd Miasta Krakowa, Plac Wszystkich Świętych",
+    "name": "Urz\u0105d Miasta Krakowa, Plac Wszystkich \u015awi\u0119tych",
     "type": "gov_offices",
     "city": "krakow",
     "lat": 50.0617571,
     "lng": 19.9362311,
-    "address": "Plac Wszystkich Świętych 3-4, 31-004 Kraków, Poland",
+    "address": "Plac Wszystkich \u015awi\u0119tych 3-4, 31-004 Krak\u00f3w, Poland",
     "gmaps_link": "https://maps.google.com/?q=50.0617571,19.9362311",
     "added_by": "shauryagangrade"
   },
   {
     "id": "prg-gov_offices-01",
-    "name": "Magistrát hlavního města Prahy (Prague City Hall)",
+    "name": "Magistr\u00e1t hlavn\u00edho m\u011bsta Prahy (Prague City Hall)",
     "type": "gov_offices",
     "city": "prague",
     "lat": 50.0877113,
     "lng": 14.4224391,
-    "address": "Mariánské náměstí 2, 110 00 Praha 1, Czech Republic",
+    "address": "Mari\u00e1nsk\u00e9 n\u00e1m\u011bst\u00ed 2, 110 00 Praha 1, Czech Republic",
     "gmaps_link": "https://maps.google.com/?q=50.0877113,14.4224391",
     "added_by": "shauryagangrade"
   },
   {
     "id": "bud-gov_offices-01",
-    "name": "Budapest Főváros Önkormányzata (Budapest City Hall)",
+    "name": "Budapest F\u0151v\u00e1ros \u00d6nkorm\u00e1nyzata (Budapest City Hall)",
     "type": "gov_offices",
     "city": "budapest",
     "lat": 47.4979188,
     "lng": 19.0401793,
-    "address": "Városház utca 9-11, 1052 Budapest, Hungary",
+    "address": "V\u00e1rosh\u00e1z utca 9-11, 1052 Budapest, Hungary",
     "gmaps_link": "https://maps.google.com/?q=47.4979188,19.0401793",
     "added_by": "shauryagangrade"
   },
@@ -1293,24 +1293,24 @@
     "city": "tallinn",
     "lat": 59.4370149,
     "lng": 24.7535241,
-    "address": "Vabaduse väljak 7, 10146 Tallinn, Estonia",
+    "address": "Vabaduse v\u00e4ljak 7, 10146 Tallinn, Estonia",
     "gmaps_link": "https://maps.google.com/?q=59.4370149,24.7535241",
     "added_by": "shauryagangrade"
   },
   {
     "id": "rig-gov_offices-01",
-    "name": "Rīgas dome (Riga City Council)",
+    "name": "R\u012bgas dome (Riga City Council)",
     "type": "gov_offices",
     "city": "riga",
     "lat": 56.9496484,
     "lng": 24.1051861,
-    "address": "Rātslaukums 1, LV-1539 Rīga, Latvia",
+    "address": "R\u0101tslaukums 1, LV-1539 R\u012bga, Latvia",
     "gmaps_link": "https://maps.google.com/?q=56.9496484,24.1051861",
     "added_by": "shauryagangrade"
   },
   {
     "id": "vno-gov_offices-01",
-    "name": "Vilniaus miesto savivaldybė (Vilnius City Municipality)",
+    "name": "Vilniaus miesto savivaldyb\u0117 (Vilnius City Municipality)",
     "type": "gov_offices",
     "city": "vilnius",
     "lat": 54.6864016,
@@ -3154,6 +3154,50 @@
     "lng": -71.4129047,
     "address": "25 Dorrance Street, Providence, RI 02903",
     "gmaps_link": "https://maps.google.com/?q=41.8240345,-71.4129047",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "koto-gov_offices-01",
+    "name": "Koto City Office (Koto Ward Office)",
+    "type": "gov_offices",
+    "city": "koto",
+    "lat": 35.6726469,
+    "lng": 139.8173038,
+    "address": "4-11-28 Toyo, Koto City, Tokyo 135-8383, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.6726469,139.8173038",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "shmk-gov_offices-01",
+    "name": "General Directorate of Civil Defence, Al Shamkha Centre",
+    "type": "gov_offices",
+    "city": "al_shamkah",
+    "lat": 24.3911922,
+    "lng": 54.7214521,
+    "address": "Al Daahi Street, Al Shamkha, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.3911922,54.7214521",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rmd-gov_offices-01",
+    "name": "Richmond City Hall",
+    "type": "gov_offices",
+    "city": "richmond",
+    "lat": 49.1633551,
+    "lng": -123.1373802,
+    "address": "6911 No. 3 Road, Richmond, BC V6Y 2C1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.1633551,-123.1373802",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rmh-gov_offices-01",
+    "name": "Richmond Hill Municipal Offices",
+    "type": "gov_offices",
+    "city": "richmond_hill",
+    "lat": 43.8468863,
+    "lng": -79.3793335,
+    "address": "225 East Beaver Creek Road, Richmond Hill, ON L4B 3P4, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.8468863,-79.3793335",
     "added_by": "yakew7"
   }
 ]

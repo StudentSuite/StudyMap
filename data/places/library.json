@@ -265,12 +265,12 @@
   },
   {
     "id": "xiamen-library-01",
-    "name": "厦门图书馆集美新城馆东南门",
+    "name": "\u53a6\u95e8\u56fe\u4e66\u9986\u96c6\u7f8e\u65b0\u57ce\u9986\u4e1c\u5357\u95e8",
     "type": "library",
     "city": "xiamen",
     "lat": 24.59441,
     "lng": 118.05789,
-    "address": "福建省厦门市集美区诚毅中路380号",
+    "address": "\u798f\u5efa\u7701\u53a6\u95e8\u5e02\u96c6\u7f8e\u533a\u8bda\u6bc5\u4e2d\u8def380\u53f7",
     "gmaps_link": "https://maps.google.com/?q=24.59441,118.05789",
     "added_by": "Yojeet(Circout-sudo)"
   },
@@ -281,7 +281,7 @@
     "city": "stahnsdorf",
     "lat": 52.3813222,
     "lng": 13.2122294,
-    "address": "Annastraße 3, 14532 Stahnsdorf, Deutschland",
+    "address": "Annastra\u00dfe 3, 14532 Stahnsdorf, Deutschland",
     "gmaps_link": "https://maps.google.com/?cid=ChIJ0UL6dKheqEcRmgDyIeIO00c",
     "added_by": "Yojeet(Circout-sudo)"
   },
@@ -1178,12 +1178,12 @@
   },
   {
     "id": "ist-library-02",
-    "name": "Beyazıt State Library",
+    "name": "Beyaz\u0131t State Library",
     "type": "library",
     "city": "istanbul",
     "lat": 41.0116,
     "lng": 28.9657,
-    "address": "Beyazıt Mah. Çadırcılar Cd. No:4, Fatih, İstanbul, Türkiye",
+    "address": "Beyaz\u0131t Mah. \u00c7ad\u0131rc\u0131lar Cd. No:4, Fatih, \u0130stanbul, T\u00fcrkiye",
     "gmaps_link": "https://maps.google.com/?q=41.0116,28.9657",
     "added_by": "shauryagangrade"
   },
@@ -1244,12 +1244,12 @@
   },
   {
     "id": "kkp-library-01",
-    "name": "Kraków Public Library (Biblioteka Krakowa)",
+    "name": "Krak\u00f3w Public Library (Biblioteka Krakowa)",
     "type": "library",
     "city": "krakow",
     "lat": 50.0608951,
     "lng": 19.9367002,
-    "address": "Rajska 1, 31-124 Kraków, Poland",
+    "address": "Rajska 1, 31-124 Krak\u00f3w, Poland",
     "gmaps_link": "https://maps.google.com/?q=50.0608951,19.9367002",
     "added_by": "shauryagangrade"
   },
@@ -1260,24 +1260,24 @@
     "city": "martin",
     "lat": 49.0711356,
     "lng": 18.9214033,
-    "address": "Cesta Mládeže 9, 036 01 Martin, Slovakia",
+    "address": "Cesta Ml\u00e1de\u017ee 9, 036 01 Martin, Slovakia",
     "gmaps_link": "https://maps.google.com/?q=49.0711356,18.9214033",
     "added_by": "shauryagangrade"
   },
   {
     "id": "brs-library-01",
-    "name": "Universitätsbibliothek Graz",
+    "name": "Universit\u00e4tsbibliothek Graz",
     "type": "library",
     "city": "graz",
     "lat": 47.0758915,
     "lng": 15.4119712,
-    "address": "Universitätsplatz 3, 8010 Graz, Austria",
+    "address": "Universit\u00e4tsplatz 3, 8010 Graz, Austria",
     "gmaps_link": "https://maps.google.com/?q=47.0758915,15.4119712",
     "added_by": "shauryagangrade"
   },
   {
     "id": "enc-library-01",
-    "name": "Bibliothèque Municipale de Lyon, Part-Dieu",
+    "name": "Biblioth\u00e8que Municipale de Lyon, Part-Dieu",
     "type": "library",
     "city": "lyon",
     "lat": 45.7622371,
@@ -1321,34 +1321,34 @@
   },
   {
     "id": "sob-library-01",
-    "name": "Bibliothèque Sainte-Geneviève",
+    "name": "Biblioth\u00e8que Sainte-Genevi\u00e8ve",
     "type": "library",
     "city": "paris",
     "lat": 48.8480432,
     "lng": 2.3473223,
-    "address": "10 Place du Panthéon, 75005 Paris, France",
+    "address": "10 Place du Panth\u00e9on, 75005 Paris, France",
     "gmaps_link": "https://maps.google.com/?q=48.8480432,2.3473223",
     "added_by": "shauryagangrade"
   },
   {
     "id": "prg-library-01",
-    "name": "Prague City Library (Městská knihovna v Praze)",
+    "name": "Prague City Library (M\u011bstsk\u00e1 knihovna v Praze)",
     "type": "library",
     "city": "prague",
     "lat": 50.0881686,
     "lng": 14.4193689,
-    "address": "Mariánské náměstí 1, 110 00 Praha 1, Czech Republic",
+    "address": "Mari\u00e1nsk\u00e9 n\u00e1m\u011bst\u00ed 1, 110 00 Praha 1, Czech Republic",
     "gmaps_link": "https://maps.google.com/?q=50.0881686,14.4193689",
     "added_by": "shauryagangrade"
   },
   {
     "id": "ham-library-02",
-    "name": "Bücherhallen Hamburg, Zentralbibliothek",
+    "name": "B\u00fccherhallen Hamburg, Zentralbibliothek",
     "type": "library",
     "city": "hamburg",
     "lat": 53.5546135,
     "lng": 9.9892424,
-    "address": "Hühnerposten 1, 20095 Hamburg, Germany",
+    "address": "H\u00fchnerposten 1, 20095 Hamburg, Germany",
     "gmaps_link": "https://maps.google.com/?q=53.5546135,9.9892424",
     "added_by": "shauryagangrade"
   },
@@ -1365,7 +1365,7 @@
   },
   {
     "id": "uio-library-01",
-    "name": "Deichman Bjørvika",
+    "name": "Deichman Bj\u00f8rvika",
     "type": "library",
     "city": "oslo",
     "lat": 59.9110131,
@@ -1381,13 +1381,13 @@
     "city": "helsinki",
     "lat": 60.1737953,
     "lng": 24.9410338,
-    "address": "Töölönlahdenkatu 4, 00100 Helsinki, Finland",
+    "address": "T\u00f6\u00f6l\u00f6nlahdenkatu 4, 00100 Helsinki, Finland",
     "gmaps_link": "https://maps.google.com/?q=60.1737953,24.9410338",
     "added_by": "shauryagangrade"
   },
   {
     "id": "vle-library-01",
-    "name": "Universitätsbibliothek der TU Wien",
+    "name": "Universit\u00e4tsbibliothek der TU Wien",
     "type": "library",
     "city": "vienna",
     "lat": 48.2014533,
@@ -3099,6 +3099,50 @@
     "lng": -71.4170904,
     "address": "150 Empire Street, Providence, RI 02903",
     "gmaps_link": "https://maps.google.com/?q=41.8219795,-71.4170904",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "koto-library-01",
+    "name": "Koto City Library, Toyo Branch",
+    "type": "library",
+    "city": "koto",
+    "lat": 35.6672068,
+    "lng": 139.8171107,
+    "address": "2-3-6 Toyo, Koto City, Tokyo 135-0016, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.6672068,139.8171107",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rmd-library-01",
+    "name": "Richmond Public Library, Brighouse (Main) Branch",
+    "type": "library",
+    "city": "richmond",
+    "lat": 49.1640755,
+    "lng": -123.141337,
+    "address": "100-7700 Minoru Gate, Richmond, BC V6Y 1R8, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.1640755,-123.1413370",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rmd-library-02",
+    "name": "Richmond Public Library, Steveston Branch",
+    "type": "library",
+    "city": "richmond",
+    "lat": 49.1255099,
+    "lng": -123.1786496,
+    "address": "4111 Moncton Street, Richmond, BC V7E 3A8, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.1255099,-123.1786496",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rmh-library-01",
+    "name": "Richmond Hill Public Library, Central Branch",
+    "type": "library",
+    "city": "richmond_hill",
+    "lat": 43.8694408,
+    "lng": -79.4370637,
+    "address": "1 Atkinson Street, Richmond Hill, ON L4C 1V1, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.8694408,-79.4370637",
     "added_by": "yakew7"
   }
 ]

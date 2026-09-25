@@ -385,7 +385,7 @@
   },
   {
     "id": "tor-foreign_lang_exam_centre-02",
-    "name": "Alliance Française de Toronto",
+    "name": "Alliance Fran\u00e7aise de Toronto",
     "type": "foreign_lang_exam_centre",
     "city": "toronto",
     "lat": 43.6688,
@@ -481,7 +481,7 @@
   },
   {
     "id": "sfo-foreign_lang_exam_centre-01",
-    "name": "Alliance Française de San Francisco",
+    "name": "Alliance Fran\u00e7aise de San Francisco",
     "type": "foreign_lang_exam_centre",
     "city": "san_francisco",
     "lat": 37.7755,
@@ -498,7 +498,7 @@
     "city": "prague",
     "lat": 50.0815,
     "lng": 14.4149,
-    "address": "Masarykovo nábřeží 1748/32, 110 00 Praha 1, Czech Republic",
+    "address": "Masarykovo n\u00e1b\u0159e\u017e\u00ed 1748/32, 110 00 Praha 1, Czech Republic",
     "gmaps_link": "https://maps.google.com/?q=50.0815,14.4149",
     "added_by": "yakew7",
     "exam": "Goethe-Zertifikat (A1-C2)"
@@ -762,7 +762,7 @@
     "city": "curitiba_parana",
     "lat": -25.4497214,
     "lng": -49.2656236,
-    "address": "Rua Chile 1678, Rebouças, Curitiba, PR, Brazil",
+    "address": "Rua Chile 1678, Rebou\u00e7as, Curitiba, PR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-25.4497214,-49.2656236",
     "added_by": "yakew7",
     "exam": "TOEFL"
@@ -980,6 +980,30 @@
     "lng": -51.1515464,
     "address": "Avenida Sertorio 5310, Jardim Lindoia, Porto Alegre, RS, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-29.9976847,-51.1515464",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "rmd-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Inlingua Victoria College of Languages and Careers",
+    "type": "foreign_lang_exam_centre",
+    "city": "richmond",
+    "lat": 49.1745088,
+    "lng": -123.0735219,
+    "address": "Bld. 5, 110-13571 Commerce Parkway, Richmond, BC V6V 2R2, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.1745088,-123.0735219",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "rmh-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Brown Academy",
+    "type": "foreign_lang_exam_centre",
+    "city": "richmond_hill",
+    "lat": 43.8452627,
+    "lng": -79.379242,
+    "address": "Unit 201, 650 Highway 7 East, Richmond Hill, ON L4B 2N7, Canada",
+    "gmaps_link": "https://maps.google.com/?q=43.8452627,-79.379242",
     "added_by": "yakew7",
     "exam": "IELTS"
   }
