@@ -2935,5 +2935,60 @@
     "address": "801 Boston Post Road, Madison, CT 06443",
     "gmaps_link": "https://maps.google.com/?q=41.2800199,-72.5940795",
     "added_by": "yakew7"
+  },
+  {
+    "id": "arl-library-01",
+    "name": "Robbins Library",
+    "type": "library",
+    "city": "allentown",
+    "lat": 42.4156475,
+    "lng": -71.1551278,
+    "address": "700 Massachusetts Avenue, Arlington, MA 02174",
+    "gmaps_link": "https://maps.google.com/?q=42.4156475,-71.1551278",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bns-library-01",
+    "name": "Bensalem Library (Bucks County Free Library)",
+    "type": "library",
+    "city": "bensalem",
+    "lat": 40.1069231,
+    "lng": -74.9391913,
+    "address": "3700 Hulmeville Road, Bensalem, PA 19020",
+    "gmaps_link": "https://maps.google.com/?q=40.1069231,-74.9391913",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dyt-library-01",
+    "name": "Bucks County Public Library, Doylestown",
+    "type": "library",
+    "city": "doylestown",
+    "lat": 40.3081587,
+    "lng": -75.1254669,
+    "address": "150 South Pine Street, Doylestown, PA 18901",
+    "gmaps_link": "https://maps.google.com/?q=40.3081587,-75.1254669",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lgh-library-01",
+    "name": "Historic Langhorne Library",
+    "type": "library",
+    "city": "langhorne",
+    "lat": 40.1757487,
+    "lng": -74.922165,
+    "address": "160 W Maple Avenue, Langhorne, PA 19047",
+    "gmaps_link": "https://maps.google.com/?q=40.1757487,-74.9221650",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pts-library-01",
+    "name": "Pottstown Regional Public Library",
+    "type": "library",
+    "city": "pottstown",
+    "lat": 40.2443734,
+    "lng": -75.6418541,
+    "address": "500 East High Street, Pottstown, PA 19464",
+    "gmaps_link": "https://maps.google.com/?q=40.2443734,-75.6418541",
+    "added_by": "yakew7"
   }
 ]

@@ -2990,5 +2990,60 @@
     "address": "101 North Boundary Street, Edison, OH 43320",
     "gmaps_link": "https://maps.google.com/?q=40.5578617,-82.8627402",
     "added_by": "yakew7"
+  },
+  {
+    "id": "arl-gov_offices-01",
+    "name": "Arlington Town Hall",
+    "type": "gov_offices",
+    "city": "allentown",
+    "lat": 42.4157309,
+    "lng": -71.1564026,
+    "address": "730 Massachusetts Avenue, Arlington, MA 02174",
+    "gmaps_link": "https://maps.google.com/?q=42.4157309,-71.1564026",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bns-gov_offices-01",
+    "name": "Bensalem Township Municipal Building",
+    "type": "gov_offices",
+    "city": "bensalem",
+    "lat": 40.1086943,
+    "lng": -74.943466,
+    "address": "2400 Byberry Road, Bensalem, PA 19020",
+    "gmaps_link": "https://maps.google.com/?q=40.1086943,-74.9434660",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "dyt-gov_offices-01",
+    "name": "Doylestown Borough Hall",
+    "type": "gov_offices",
+    "city": "doylestown",
+    "lat": 40.3150134,
+    "lng": -75.132645,
+    "address": "10 Doyle Street, Doylestown, PA 18901",
+    "gmaps_link": "https://maps.google.com/?q=40.3150134,-75.1326450",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lgh-gov_offices-01",
+    "name": "Langhorne Borough Hall",
+    "type": "gov_offices",
+    "city": "langhorne",
+    "lat": 40.1761619,
+    "lng": -74.9197364,
+    "address": "114 E Maple Avenue, Langhorne, PA 19047",
+    "gmaps_link": "https://maps.google.com/?q=40.1761619,-74.9197364",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pts-gov_offices-01",
+    "name": "Pottstown Borough Hall",
+    "type": "gov_offices",
+    "city": "pottstown",
+    "lat": 40.2456183,
+    "lng": -75.6522463,
+    "address": "100 East High Street, Pottstown, PA 19464",
+    "gmaps_link": "https://maps.google.com/?q=40.2456183,-75.6522463",
+    "added_by": "yakew7"
   }
 ]
