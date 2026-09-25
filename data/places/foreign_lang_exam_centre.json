@@ -778,5 +778,17 @@
     "gmaps_link": "https://maps.google.com/?q=2.8315680,-60.6755466",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "uaq-foreign_lang_exam_centre-01",
+    "name": "IDP Education, International Academic Center IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "umm_al_quwain",
+    "lat": 25.585605,
+    "lng": 55.576045,
+    "address": "Al Shmookh Center, Ittihad Street, Umm Al Quwain, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.5856050,55.5760450",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

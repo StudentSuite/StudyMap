@@ -2286,5 +2286,16 @@
     "address": "Market Walk, Salisbury SP1 1BL, UK",
     "gmaps_link": "https://maps.google.com/?q=51.0697191,-1.7974215",
     "added_by": "yakew7"
+  },
+  {
+    "id": "brk-library-01",
+    "name": "Brakpan Library",
+    "type": "library",
+    "city": "brakpan",
+    "lat": -26.2404663,
+    "lng": 28.3575323,
+    "address": "Corner Park and Kingsway Avenue, Brakpan, Gauteng 1541, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-26.2404663,28.3575323",
+    "added_by": "yakew7"
   }
 ]

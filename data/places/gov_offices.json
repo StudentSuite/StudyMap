@@ -2253,5 +2253,16 @@
     "address": "Selimbey Mahallesi, Iskele Caddesi, 65040 Tusba, Van, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.5076665,43.3648657",
     "added_by": "yakew7"
+  },
+  {
+    "id": "uaq-gov_offices-01",
+    "name": "Umm Al Quwain Municipality",
+    "type": "gov_offices",
+    "city": "umm_al_quwain",
+    "lat": 25.5817319,
+    "lng": 55.5742012,
+    "address": "Corniche Road, Old Town, Umm Al Quwain, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.5817319,55.5742012",
+    "added_by": "yakew7"
   }
 ]

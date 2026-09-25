@@ -1197,5 +1197,82 @@
     "address": "Avenida Capitao Ene Garcez 2413, Aeroporto, 69310-000 Boa Vista, RR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=2.8329953,-60.6951556",
     "added_by": "yakew7"
+  },
+  {
+    "id": "khc-other_places-01",
+    "name": "Abu Dhabi University, Khalifa City Campus",
+    "type": "other_places",
+    "city": "khalifa_city",
+    "lat": 24.3665244,
+    "lng": 54.5647253,
+    "address": "Khalifa City A, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.3665244,54.5647253",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "klb-other_places-01",
+    "name": "University of Kalba (UKB)",
+    "type": "other_places",
+    "city": "kalba",
+    "lat": 25.023912,
+    "lng": 56.3535807,
+    "address": "Kalba, Sharjah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.0239120,56.3535807",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "klb-other_places-02",
+    "name": "American School of Kalba",
+    "type": "other_places",
+    "city": "kalba",
+    "lat": 25.0990937,
+    "lng": 56.3580697,
+    "address": "Rugaylat Road, Kalba, Sharjah, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.0990937,56.3580697",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rwy-other_places-01",
+    "name": "Higher Colleges of Technology, Ruwais Campus",
+    "type": "other_places",
+    "city": "ruwais",
+    "lat": 24.1697648,
+    "lng": 52.628207,
+    "address": "Ruwais, Al Dhafra Region, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.1697648,52.6282070",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "shk-other_places-01",
+    "name": "Al Ittihad National Private School, Shakhbout City",
+    "type": "other_places",
+    "city": "shakhbout_city",
+    "lat": 24.3916703,
+    "lng": 54.6463712,
+    "address": "Al Ihsan Street, Shakhbout City, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.3916703,54.6463712",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "hdw-other_places-01",
+    "name": "African Leadership Academy",
+    "type": "other_places",
+    "city": "honeydew",
+    "lat": -26.0788389,
+    "lng": 27.9253018,
+    "address": "1050 Printech Avenue, Honeydew, Johannesburg 2170, South Africa",
+    "gmaps_link": "https://maps.google.com/?q=-26.0788389,27.9253018",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "uaq-other_places-01",
+    "name": "Umm Al Quwain University",
+    "type": "other_places",
+    "city": "umm_al_quwain",
+    "lat": 25.5716637,
+    "lng": 55.5525931,
+    "address": "Al Mualla Street, Umm Al Quwain, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.5716637,55.5525931",
+    "added_by": "yakew7"
   }
 ]
