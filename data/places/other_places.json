@@ -1131,5 +1131,71 @@
     "address": "St Donat's, Llantwit Major, Vale of Glamorgan CF61 1WF, UK",
     "gmaps_link": "https://maps.google.com/?q=51.4059198,-3.5304994",
     "added_by": "yakew7"
+  },
+  {
+    "id": "cpq-other_places-01",
+    "name": "PUC Campinas, Campus I",
+    "type": "other_places",
+    "city": "campinas_sp",
+    "lat": -22.8373885,
+    "lng": -47.0407327,
+    "address": "Rua Professor Doutor Euryclides de Jesus Zerbini 1516, Campinas, SP, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.8373885,-47.0407327",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "cur-other_places-01",
+    "name": "UFPR, Predio Historico",
+    "type": "other_places",
+    "city": "curitiba_parana",
+    "lat": -25.4286986,
+    "lng": -49.2664753,
+    "address": "Praca Santos Andrade, Centro, Curitiba, PR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-25.4286986,-49.2664753",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pcb-other_places-01",
+    "name": "Trinova Space Coworking",
+    "type": "other_places",
+    "city": "piracicaba",
+    "lat": -22.7354512,
+    "lng": -47.6485038,
+    "address": "Avenida Independencia 546, Piracicaba, SP, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.7354512,-47.6485038",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vlh-other_places-01",
+    "name": "Smart CEO Coworking Valinhos",
+    "type": "other_places",
+    "city": "valinhos",
+    "lat": -22.9851044,
+    "lng": -47.0129753,
+    "address": "Rua Dr. Eraldo Aurelio Franzese 62, Jardim Paiquere, 13271-608 Valinhos, SP, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.9851044,-47.0129753",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vnh-other_places-01",
+    "name": "Smart CEO Coworking Vinhedo",
+    "type": "other_places",
+    "city": "vinhedo",
+    "lat": -23.0289415,
+    "lng": -46.9852629,
+    "address": "Avenida Benedito Storani 310, Vila Thereza, Vinhedo, SP, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-23.0289415,-46.9852629",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "boa-other_places-01",
+    "name": "Universidade Federal de Roraima, Campus Paricarana",
+    "type": "other_places",
+    "city": "boa_vista",
+    "lat": 2.8329953,
+    "lng": -60.6951556,
+    "address": "Avenida Capitao Ene Garcez 2413, Aeroporto, 69310-000 Boa Vista, RR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=2.8329953,-60.6951556",
+    "added_by": "yakew7"
   }
 ]

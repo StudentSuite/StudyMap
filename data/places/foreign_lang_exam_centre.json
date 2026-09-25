@@ -730,5 +730,53 @@
     "gmaps_link": "https://maps.google.com/?q=52.7078194,-2.7574842",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "cpq-foreign_lang_exam_centre-01",
+    "name": "Cultura Inglesa Campinas IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "campinas_sp",
+    "lat": -22.8943767,
+    "lng": -47.0556279,
+    "address": "Rua Doutor Antonio da Costa Carvalho 480, Cambui, 13024-050 Campinas, SP, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-22.8943767,-47.0556279",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "cur-foreign_lang_exam_centre-01",
+    "name": "Cultura Inglesa Curitiba IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "curitiba_parana",
+    "lat": -25.429232,
+    "lng": -49.260018,
+    "address": "Rua General Carneiro 777, Centro, Curitiba, PR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-25.4292320,-49.2600180",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "cur-foreign_lang_exam_centre-02",
+    "name": "Canovas Test Center - UniCuritiba (TOEFL)",
+    "type": "foreign_lang_exam_centre",
+    "city": "curitiba_parana",
+    "lat": -25.4497214,
+    "lng": -49.2656236,
+    "address": "Rua Chile 1678, Rebouças, Curitiba, PR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-25.4497214,-49.2656236",
+    "added_by": "yakew7",
+    "exam": "TOEFL"
+  },
+  {
+    "id": "boa-foreign_lang_exam_centre-01",
+    "name": "British Council - Cultura Inglesa Boa Vista IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "boa_vista",
+    "lat": 2.831568,
+    "lng": -60.6755466,
+    "address": "Rua Major Manoel Correa 545, Sao Francisco, 69305-100 Boa Vista, RR, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=2.8315680,-60.6755466",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
