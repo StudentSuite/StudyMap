@@ -3705,5 +3705,60 @@
     "address": "401 North Centre Street, Pottsville, PA 17901",
     "gmaps_link": "https://maps.google.com/?q=40.6878404,-76.1973437",
     "added_by": "yakew7"
+  },
+  {
+    "id": "scranton-gov_offices-01",
+    "name": "Scranton Post Office, Downtown Station",
+    "type": "gov_offices",
+    "city": "scranton",
+    "lat": 41.4092266,
+    "lng": -75.6629925,
+    "address": "Linden Street, Scranton, PA 18510",
+    "gmaps_link": "https://maps.google.com/?q=41.4092266,-75.6629925",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wyomissg-gov_offices-01",
+    "name": "Wyomissing Post Office",
+    "type": "gov_offices",
+    "city": "wyomissing",
+    "lat": 40.3350018,
+    "lng": -75.9611057,
+    "address": "1021 Penn Avenue, Wyomissing, PA 19610",
+    "gmaps_link": "https://maps.google.com/?q=40.3350018,-75.9611057",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "annapolis-gov_offices-01",
+    "name": "Annapolis Post Office",
+    "type": "gov_offices",
+    "city": "annapolis",
+    "lat": 38.9789464,
+    "lng": -76.4932281,
+    "address": "1 Church Circle, Annapolis, MD 21401",
+    "gmaps_link": "https://maps.google.com/?q=38.9789464,-76.4932281",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "elkton-gov_offices-01",
+    "name": "Elkton Post Office",
+    "type": "gov_offices",
+    "city": "elkton",
+    "lat": 39.6071513,
+    "lng": -75.8326146,
+    "address": "137 West Main Street, Elkton, MD 21921",
+    "gmaps_link": "https://maps.google.com/?q=39.6071513,-75.8326146",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ellictcty-gov_offices-01",
+    "name": "Ellicott City Post Office",
+    "type": "gov_offices",
+    "city": "ellicott_city",
+    "lat": 39.2780932,
+    "lng": -76.8131862,
+    "address": "Ellicott Center Drive, Ellicott City, MD 21043",
+    "gmaps_link": "https://maps.google.com/?q=39.2780932,-76.8131862",
+    "added_by": "yakew7"
   }
 ]

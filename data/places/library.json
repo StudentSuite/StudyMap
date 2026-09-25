@@ -3628,5 +3628,60 @@
     "address": "North 3rd Street, Pottsville, PA 17901",
     "gmaps_link": "https://maps.google.com/?q=40.6849238,-76.1968941",
     "added_by": "yakew7"
+  },
+  {
+    "id": "scranton-library-01",
+    "name": "Albright Memorial Library",
+    "type": "library",
+    "city": "scranton",
+    "lat": 41.4110551,
+    "lng": -75.6596225,
+    "address": "500 Vine Street, Scranton, PA 18509",
+    "gmaps_link": "https://maps.google.com/?q=41.4110551,-75.6596225",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wyomissg-library-01",
+    "name": "Wyomissing Public Library",
+    "type": "library",
+    "city": "wyomissing",
+    "lat": 40.3346672,
+    "lng": -75.9581857,
+    "address": "9 Reading Boulevard, Wyomissing, PA 19610",
+    "gmaps_link": "https://maps.google.com/?q=40.3346672,-75.9581857",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "annapolis-library-01",
+    "name": "Michael E. Busch Annapolis Library",
+    "type": "library",
+    "city": "annapolis",
+    "lat": 38.9787522,
+    "lng": -76.5155436,
+    "address": "1410 West Street, Annapolis, MD 21401",
+    "gmaps_link": "https://maps.google.com/?q=38.9787522,-76.5155436",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "elkton-library-01",
+    "name": "Cecil County Public Library, Elkton Central Library",
+    "type": "library",
+    "city": "elkton",
+    "lat": 39.6186577,
+    "lng": -75.837405,
+    "address": "301 Newark Avenue, Elkton, MD 21921",
+    "gmaps_link": "https://maps.google.com/?q=39.6186577,-75.837405",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ellictcty-library-01",
+    "name": "Howard County Library, Miller Branch",
+    "type": "library",
+    "city": "ellicott_city",
+    "lat": 39.2728214,
+    "lng": -76.8393418,
+    "address": "9421 Frederick Road, Ellicott City, MD 21042",
+    "gmaps_link": "https://maps.google.com/?q=39.2728214,-76.8393418",
+    "added_by": "yakew7"
   }
 ]
