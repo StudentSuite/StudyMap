@@ -3309,5 +3309,60 @@
     "address": "4 Boltwood Avenue, Amherst, MA 01002",
     "gmaps_link": "https://maps.google.com/?q=42.3754636,-72.5187146",
     "added_by": "yakew7"
+  },
+  {
+    "id": "west-gov_offices-01",
+    "name": "Westerly Town Hall",
+    "type": "gov_offices",
+    "city": "westerly",
+    "lat": 41.3767024,
+    "lng": -71.8297084,
+    "address": "45 Broad Street, Westerly, RI 02891",
+    "gmaps_link": "https://maps.google.com/?q=41.3767024,-71.8297084",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "farm-gov_offices-01",
+    "name": "Farmington Town Hall",
+    "type": "gov_offices",
+    "city": "farmington",
+    "lat": 41.7483692,
+    "lng": -72.8670743,
+    "address": "1 Monteith Drive, Farmington, CT 06032",
+    "gmaps_link": "https://maps.google.com/?q=41.7483692,-72.8670743",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "col-gov_offices-01",
+    "name": "Columbia Association Headquarters",
+    "type": "gov_offices",
+    "city": "columbia",
+    "lat": 39.2155265,
+    "lng": -76.8560656,
+    "address": "10221 Wincopin Circle, Columbia, MD 21044",
+    "gmaps_link": "https://maps.google.com/?q=39.2155265,-76.8560656",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "edg-gov_offices-01",
+    "name": "Anne Arundel County Police, Southern District Station",
+    "type": "gov_offices",
+    "city": "edgewater",
+    "lat": 38.9294638,
+    "lng": -76.560603,
+    "address": "35 Stepneys Lane, Edgewater, MD 21037",
+    "gmaps_link": "https://maps.google.com/?q=38.9294638,-76.560603",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wyn-gov_offices-01",
+    "name": "Township of Wayne Municipal Building",
+    "type": "gov_offices",
+    "city": "wayne",
+    "lat": 40.9290839,
+    "lng": -74.2314483,
+    "address": "475 Valley Road, Wayne, NJ 07470",
+    "gmaps_link": "https://maps.google.com/?q=40.9290839,-74.2314483",
+    "added_by": "yakew7"
   }
 ]

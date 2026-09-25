@@ -3254,5 +3254,60 @@
     "address": "43 Amity Street, Amherst, MA 01002",
     "gmaps_link": "https://maps.google.com/?q=42.3762426,-72.5208921",
     "added_by": "yakew7"
+  },
+  {
+    "id": "west-library-01",
+    "name": "Westerly Public Library",
+    "type": "library",
+    "city": "westerly",
+    "lat": 41.3774203,
+    "lng": -71.829661,
+    "address": "44 Broad Street, Westerly, RI 02891",
+    "gmaps_link": "https://maps.google.com/?q=41.3774203,-71.829661",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "farm-library-01",
+    "name": "Farmington Libraries, Main Library",
+    "type": "library",
+    "city": "farmington",
+    "lat": 41.7497698,
+    "lng": -72.8681981,
+    "address": "6 Monteith Drive, Farmington, CT 06032",
+    "gmaps_link": "https://maps.google.com/?q=41.7497698,-72.8681981",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "col-library-01",
+    "name": "Howard County Library System, Central Branch",
+    "type": "library",
+    "city": "columbia",
+    "lat": 39.2112016,
+    "lng": -76.8584103,
+    "address": "10375 Little Patuxent Parkway, Columbia, MD 21044",
+    "gmaps_link": "https://maps.google.com/?q=39.2112016,-76.8584103",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "edg-library-01",
+    "name": "Edgewater Community Library",
+    "type": "library",
+    "city": "edgewater",
+    "lat": 38.9302906,
+    "lng": -76.5579718,
+    "address": "25 Stepneys Lane, Edgewater, MD 21037",
+    "gmaps_link": "https://maps.google.com/?q=38.9302906,-76.5579718",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "wyn-library-01",
+    "name": "Wayne Public Library",
+    "type": "library",
+    "city": "wayne",
+    "lat": 40.9285631,
+    "lng": -74.2320131,
+    "address": "461 Valley Road, Wayne, NJ 07470",
+    "gmaps_link": "https://maps.google.com/?q=40.9285631,-74.2320131",
+    "added_by": "yakew7"
   }
 ]
