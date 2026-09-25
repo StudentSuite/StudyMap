@@ -682,5 +682,53 @@
     "gmaps_link": "https://maps.google.com/?q=38.6491528,27.3453013",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "bfd-foreign_lang_exam_centre-01",
+    "name": "IHTA Bedford IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "bedford",
+    "lat": 52.1467836,
+    "lng": -0.4424621,
+    "address": "Haylands Way, Bedford MK41 9BX, UK",
+    "gmaps_link": "https://maps.google.com/?q=52.1467836,-0.4424621",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "rdg-foreign_lang_exam_centre-01",
+    "name": "University of Reading IELTS Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "reading",
+    "lat": 51.439925,
+    "lng": -0.9565278,
+    "address": "Whiteknights Campus, Reading RG6 6AA, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.4399250,-0.9565278",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "yrk-foreign_lang_exam_centre-01",
+    "name": "Melton College IELTS Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "york",
+    "lat": 53.9541212,
+    "lng": -1.1040431,
+    "address": "137 Holgate Road, York YO24 4DH, UK",
+    "gmaps_link": "https://maps.google.com/?q=53.9541212,-1.1040431",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "sbr-foreign_lang_exam_centre-01",
+    "name": "Severnvale Academy IELTS Centre (Bangor University)",
+    "type": "foreign_lang_exam_centre",
+    "city": "shrewsbury",
+    "lat": 52.7078194,
+    "lng": -2.7574842,
+    "address": "25 Claremont Hill, Shrewsbury SY1 1RD, UK",
+    "gmaps_link": "https://maps.google.com/?q=52.7078194,-2.7574842",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

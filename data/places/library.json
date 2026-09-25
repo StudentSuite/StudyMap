@@ -2275,5 +2275,16 @@
     "address": "Milli Egemenlik Caddesi, Serefiye Mahallesi, Ipekyolu, 65100 Van, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.4979661,43.3990493",
     "added_by": "yakew7"
+  },
+  {
+    "id": "sal-library-01",
+    "name": "Salisbury Library",
+    "type": "library",
+    "city": "salisbury",
+    "lat": 51.0697191,
+    "lng": -1.7974215,
+    "address": "Market Walk, Salisbury SP1 1BL, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.0697191,-1.7974215",
+    "added_by": "yakew7"
   }
 ]

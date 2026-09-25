@@ -1076,5 +1076,60 @@
     "address": "Muradiye Mahallesi, Yunusemre, Manisa, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.6491528,27.3453013",
     "added_by": "yakew7"
+  },
+  {
+    "id": "rdg-other_places-01",
+    "name": "University of Reading, Whiteknights Campus",
+    "type": "other_places",
+    "city": "reading",
+    "lat": 51.439925,
+    "lng": -0.9565278,
+    "address": "Whiteknights Campus, Reading RG6 6AA, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.4399250,-0.9565278",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "crw-other_places-01",
+    "name": "Wellington College",
+    "type": "other_places",
+    "city": "crowthorne",
+    "lat": 51.3624135,
+    "lng": -0.8080941,
+    "address": "Duke's Ride, Crowthorne, Berkshire RG45 7PU, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.3624135,-0.8080941",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sou-other_places-01",
+    "name": "Southport Arts Centre",
+    "type": "other_places",
+    "city": "southport",
+    "lat": 53.64726,
+    "lng": -3.0059168,
+    "address": "Cambridge Arcade, Southport PR8 1EN, UK",
+    "gmaps_link": "https://maps.google.com/?q=53.6472600,-3.0059168",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "orm-other_places-01",
+    "name": "Edge Hill University, Ormskirk Campus",
+    "type": "other_places",
+    "city": "ormskirk",
+    "lat": 53.5579427,
+    "lng": -2.8739057,
+    "address": "St Helens Road, Ormskirk, Lancashire L39 4QP, UK",
+    "gmaps_link": "https://maps.google.com/?q=53.5579427,-2.8739057",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "llm-other_places-01",
+    "name": "UWC Atlantic College, St Donat's Castle",
+    "type": "other_places",
+    "city": "llantwit_major",
+    "lat": 51.4059198,
+    "lng": -3.5304994,
+    "address": "St Donat's, Llantwit Major, Vale of Glamorgan CF61 1WF, UK",
+    "gmaps_link": "https://maps.google.com/?q=51.4059198,-3.5304994",
+    "added_by": "yakew7"
   }
 ]
