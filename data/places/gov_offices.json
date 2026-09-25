@@ -3595,5 +3595,60 @@
     "address": "Van Dyke Place, Long Branch, NJ 07740",
     "gmaps_link": "https://maps.google.com/?q=40.3024379,-73.9877794",
     "added_by": "yakew7"
+  },
+  {
+    "id": "moorestn-gov_offices-01",
+    "name": "Moorestown Post Office",
+    "type": "gov_offices",
+    "city": "moorestown",
+    "lat": 39.9671211,
+    "lng": -74.9435387,
+    "address": "200 Chester Avenue, Moorestown Township, NJ 08057",
+    "gmaps_link": "https://maps.google.com/?q=39.9671211,-74.9435387",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "paramus-gov_offices-01",
+    "name": "Paramus Post Office",
+    "type": "gov_offices",
+    "city": "paramus",
+    "lat": 40.9492463,
+    "lng": -74.0693164,
+    "address": "Mack Drive, Paramus, NJ 07652",
+    "gmaps_link": "https://maps.google.com/?q=40.9492463,-74.0693164",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "teaneck-gov_offices-01",
+    "name": "Teaneck Post Office",
+    "type": "gov_offices",
+    "city": "teaneck",
+    "lat": 40.886703,
+    "lng": -74.0192094,
+    "address": "751 Palisade Avenue, Teaneck Township, NJ 07666",
+    "gmaps_link": "https://maps.google.com/?q=40.886703,-74.0192094",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tomsriv-gov_offices-01",
+    "name": "Toms River Township Municipal Building",
+    "type": "gov_offices",
+    "city": "toms_river",
+    "lat": 39.9531861,
+    "lng": -74.1966266,
+    "address": "33 Washington Street, Toms River, NJ 08753",
+    "gmaps_link": "https://maps.google.com/?q=39.9531861,-74.1966266",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "camphill-gov_offices-01",
+    "name": "Camp Hill Post Office",
+    "type": "gov_offices",
+    "city": "camp_hill",
+    "lat": 40.2501103,
+    "lng": -76.9165006,
+    "address": "1675 Camp Hill Bypass, Camp Hill, PA 17011",
+    "gmaps_link": "https://maps.google.com/?q=40.2501103,-76.9165006",
+    "added_by": "yakew7"
   }
 ]

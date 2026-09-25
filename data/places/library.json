@@ -3518,5 +3518,60 @@
     "address": "328 Broadway, Long Branch, NJ 07740",
     "gmaps_link": "https://maps.google.com/?q=40.3034702,-73.992606",
     "added_by": "yakew7"
+  },
+  {
+    "id": "moorestn-library-01",
+    "name": "Moorestown Library",
+    "type": "library",
+    "city": "moorestown",
+    "lat": 39.9647455,
+    "lng": -74.9502447,
+    "address": "West 3rd Street, Moorestown Township, NJ 08057",
+    "gmaps_link": "https://maps.google.com/?q=39.9647455,-74.9502447",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "paramus-library-01",
+    "name": "Paramus Public Library",
+    "type": "library",
+    "city": "paramus",
+    "lat": 40.9263889,
+    "lng": -74.0605556,
+    "address": "116 East Century Road, Paramus, NJ 07652",
+    "gmaps_link": "https://maps.google.com/?q=40.9263889,-74.0605556",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "teaneck-library-01",
+    "name": "Teaneck Library",
+    "type": "library",
+    "city": "teaneck",
+    "lat": 40.8856324,
+    "lng": -74.0068953,
+    "address": "Teaneck Road, Teaneck Township, NJ 07666",
+    "gmaps_link": "https://maps.google.com/?q=40.8856324,-74.0068953",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tomsriv-library-01",
+    "name": "Ocean County Library, Toms River Branch",
+    "type": "library",
+    "city": "toms_river",
+    "lat": 39.9523743,
+    "lng": -74.1957371,
+    "address": "101 Washington Street, Toms River, NJ 08753",
+    "gmaps_link": "https://maps.google.com/?q=39.9523743,-74.1957371",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "camphill-library-01",
+    "name": "Cleve J. Fredricksen Library",
+    "type": "library",
+    "city": "camp_hill",
+    "lat": 40.2416817,
+    "lng": -76.9169875,
+    "address": "100 North 19th Street, Camp Hill, PA 17011",
+    "gmaps_link": "https://maps.google.com/?q=40.2416817,-76.9169875",
+    "added_by": "yakew7"
   }
 ]
