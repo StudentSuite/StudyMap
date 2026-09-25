@@ -1901,5 +1901,49 @@
     "address": "Sheikh Mohammed bin Hamad Al Sharqi Street, Fujairah, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.1184347,56.3396668",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ilr-gov_offices-01",
+    "name": "Nigeria Immigration Service, Kwara State Passport Office",
+    "type": "gov_offices",
+    "city": "ilorin",
+    "lat": 8.4781009,
+    "lng": 4.5674094,
+    "address": "GRA, Ilorin, Kwara State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=8.4781009,4.5674094",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "jos-gov_offices-01",
+    "name": "Nigeria Immigration Service, Plateau State Passport Office",
+    "type": "gov_offices",
+    "city": "jos",
+    "lat": 9.8975991,
+    "lng": 8.8713528,
+    "address": "Federal Secretariat, Tudun Wada, Jos, Plateau State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=9.8975991,8.8713528",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kad-gov_offices-01",
+    "name": "Nigeria Immigration Service, Kaduna Passport Office",
+    "type": "gov_offices",
+    "city": "kaduna",
+    "lat": 10.5208599,
+    "lng": 7.4396888,
+    "address": "Independence Way, Kaduna, Kaduna State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=10.5208599,7.4396888",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "phc-gov_offices-01",
+    "name": "NIPOST Port Harcourt Head Post Office",
+    "type": "gov_offices",
+    "city": "port_harcourt",
+    "lat": 4.7636391,
+    "lng": 7.0163189,
+    "address": "10 Station Road, Port Harcourt, Rivers State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=4.7636391,7.0163189",
+    "added_by": "yakew7"
   }
 ]

@@ -999,5 +999,16 @@
     "address": "Al Hamra Industrial Zone, Ras Al Khaimah, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.6649983,55.7862928",
     "added_by": "yakew7"
+  },
+  {
+    "id": "enu-other_places-01",
+    "name": "University of Nigeria, Enugu Campus (UNEC)",
+    "type": "other_places",
+    "city": "enugu",
+    "lat": 6.4232558,
+    "lng": 7.5043338,
+    "address": "Independence Layout, Enugu, Enugu State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4232558,7.5043338",
+    "added_by": "yakew7"
   }
 ]

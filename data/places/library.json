@@ -1912,5 +1912,60 @@
     "address": "Corniche area, Fujairah, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.1324597,56.3564590",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ilr-library-01",
+    "name": "Kwara State Library Complex",
+    "type": "library",
+    "city": "ilorin",
+    "lat": 8.4858195,
+    "lng": 4.5659712,
+    "address": "Sulu Gambari Road, Ilorin, Kwara State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=8.4858195,4.5659712",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "jos-library-01",
+    "name": "Plateau State Library Board",
+    "type": "library",
+    "city": "jos",
+    "lat": 9.9252744,
+    "lng": 8.8823698,
+    "address": "Tafawa Balewa Street, Jos, Plateau State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=9.9252744,8.8823698",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kad-library-01",
+    "name": "Kaduna State Library Board",
+    "type": "library",
+    "city": "kaduna",
+    "lat": 10.5194184,
+    "lng": 7.4360132,
+    "address": "Bida Road, Kaduna, Kaduna State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=10.5194184,7.4360132",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "phc-library-01",
+    "name": "Rivers State Library",
+    "type": "library",
+    "city": "port_harcourt",
+    "lat": 4.7789892,
+    "lng": 7.0124991,
+    "address": "Bernard Carr Street, Old GRA, Port Harcourt, Rivers State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=4.7789892,7.0124991",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "enu-library-01",
+    "name": "Enugu State Library Board",
+    "type": "library",
+    "city": "enugu",
+    "lat": 6.4358189,
+    "lng": 7.4906423,
+    "address": "Market Road, Ogui, Enugu, Enugu State, Nigeria",
+    "gmaps_link": "https://maps.google.com/?q=6.4358189,7.4906423",
+    "added_by": "yakew7"
   }
 ]
