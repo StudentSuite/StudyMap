@@ -2792,5 +2792,49 @@
     "address": "Hauptstrasse 28, 79400 Kandern, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.7145838,7.6625589",
     "added_by": "yakew7"
+  },
+  {
+    "id": "pia-library-01",
+    "name": "Biblioteca Publica Estadual Desembargador Cromwell de Carvalho",
+    "type": "library",
+    "city": "piaui",
+    "lat": -5.0873515,
+    "lng": -42.8100592,
+    "address": "Praca Demostenes Avelino 1788, Centro, Teresina, Piaui, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0873515,-42.8100592",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pia-library-02",
+    "name": "Biblioteca Central, Universidade Federal do Piaui (UFPI)",
+    "type": "library",
+    "city": "piaui",
+    "lat": -5.0475886,
+    "lng": -42.779568,
+    "address": "Campus Universitario Ministro Petronio Portella, Ininga, Teresina, Piaui, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0475886,-42.7795680",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poa-library-01",
+    "name": "Biblioteca Publica do Estado do Rio Grande do Sul",
+    "type": "library",
+    "city": "porto_alegre_rs",
+    "lat": -30.0314099,
+    "lng": -51.2298343,
+    "address": "Rua Riachuelo 1190, Centro Historico, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-30.0314099,-51.2298343",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poa-library-02",
+    "name": "Biblioteca Central Irmao Jose Otao, UFRGS",
+    "type": "library",
+    "city": "porto_alegre_rs",
+    "lat": -30.033315,
+    "lng": -51.219944,
+    "address": "Avenida Paulo Gama 110, Campus Centro, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-30.0333150,-51.2199440",
+    "added_by": "yakew7"
   }
 ]

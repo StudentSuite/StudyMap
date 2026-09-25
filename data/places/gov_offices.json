@@ -2825,5 +2825,49 @@
     "address": "Marktplatz 13, 79400 Kandern, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.7147201,7.6608865",
     "added_by": "yakew7"
+  },
+  {
+    "id": "pia-gov_offices-01",
+    "name": "Correios, AC Central de Teresina",
+    "type": "gov_offices",
+    "city": "piaui",
+    "lat": -5.0909428,
+    "lng": -42.8120676,
+    "address": "Avenida Antonino Freire 1407, Centro, Teresina, Piaui, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0909428,-42.8120676",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "pia-gov_offices-02",
+    "name": "Prefeitura Municipal de Teresina, Palacio da Cidade",
+    "type": "gov_offices",
+    "city": "piaui",
+    "lat": -5.0904008,
+    "lng": -42.8168673,
+    "address": "Praca Marechal Deodoro da Fonseca 860, Centro, Teresina, Piaui, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-5.0904008,-42.8168673",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poa-gov_offices-01",
+    "name": "Correios, Agencia Central de Porto Alegre",
+    "type": "gov_offices",
+    "city": "porto_alegre_rs",
+    "lat": -30.027862,
+    "lng": -51.2308077,
+    "address": "Rua Siqueira Campos 1100, Centro Historico, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-30.0278620,-51.2308077",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "poa-gov_offices-02",
+    "name": "Prefeitura Municipal de Porto Alegre (Edificio Habitasul)",
+    "type": "gov_offices",
+    "city": "porto_alegre_rs",
+    "lat": -30.0299751,
+    "lng": -51.23383,
+    "address": "Rua General Joao Manoel 157, Centro Historico, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-30.0299751,-51.2338300",
+    "added_by": "yakew7"
   }
 ]

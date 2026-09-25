@@ -958,5 +958,29 @@
     "gmaps_link": "https://maps.google.com/?q=25.2659919,55.3137713",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "poa-foreign_lang_exam_centre-01",
+    "name": "North American School IELTS Test Centre",
+    "type": "foreign_lang_exam_centre",
+    "city": "porto_alegre_rs",
+    "lat": -30.0390215,
+    "lng": -51.1712146,
+    "address": "Rua Joao Bastian 277, Tres Figueiras, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-30.0390215,-51.1712146",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "poa-foreign_lang_exam_centre-02",
+    "name": "British Council IELTS Test Centre, UNINTER",
+    "type": "foreign_lang_exam_centre",
+    "city": "porto_alegre_rs",
+    "lat": -29.9976847,
+    "lng": -51.1515464,
+    "address": "Avenida Sertorio 5310, Jardim Lindoia, Porto Alegre, RS, Brazil",
+    "gmaps_link": "https://maps.google.com/?q=-29.9976847,-51.1515464",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]
