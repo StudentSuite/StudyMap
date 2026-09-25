@@ -922,5 +922,41 @@
     "gmaps_link": "https://maps.google.com/?q=-1.2654200,36.8066763",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "aln-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Al Ain University",
+    "type": "foreign_lang_exam_centre",
+    "city": "al_ain_abu_dhabi",
+    "lat": 24.2394169,
+    "lng": 55.7408993,
+    "address": "Al Ain University, Al Jimi, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2394169,55.7408993",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "alg-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Valley of Experts Training Institute",
+    "type": "foreign_lang_exam_centre",
+    "city": "al_garhoud",
+    "lat": 25.2494824,
+    "lng": 55.3399801,
+    "address": "Al Garhoud Community Center, Al Garhoud, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2494824,55.3399801",
+    "added_by": "yakew7",
+    "exam": "IELTS"
+  },
+  {
+    "id": "alt-foreign_lang_exam_centre-01",
+    "name": "British Council IELTS Test Centre, Polyskills Institute",
+    "type": "foreign_lang_exam_centre",
+    "city": "alain",
+    "lat": 25.2659919,
+    "lng": 55.3137713,
+    "address": "Al Ghurair Investment Corporate Office, opposite Union Metro Station, Deira, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2659919,55.3137713",
+    "added_by": "yakew7",
+    "exam": "IELTS"
   }
 ]

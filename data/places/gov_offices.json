@@ -2715,5 +2715,49 @@
     "address": "Kodai Ghat Road, Kodaikanal 624101, Tamil Nadu, India",
     "gmaps_link": "https://maps.google.com/?q=10.2383515,77.4953973",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aln-gov_offices-01",
+    "name": "Al Ain Municipality",
+    "type": "gov_offices",
+    "city": "al_ain_abu_dhabi",
+    "lat": 24.2509558,
+    "lng": 55.7355308,
+    "address": "455 Al Baladiyyah Street, Al Jimi, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2509558,55.7355308",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "aln-gov_offices-02",
+    "name": "Al Ain Central Post Office",
+    "type": "gov_offices",
+    "city": "al_ain_abu_dhabi",
+    "lat": 24.2132121,
+    "lng": 55.7598867,
+    "address": "Hessa Bint Mohammed Street, Al Jahili, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2132121,55.7598867",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "alg-gov_offices-01",
+    "name": "Emirates Post, Al Garhoud",
+    "type": "gov_offices",
+    "city": "al_garhoud",
+    "lat": 25.2316926,
+    "lng": 55.3555292,
+    "address": "Marrakech Street, Al Garhoud, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2316926,55.3555292",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "alt-gov_offices-01",
+    "name": "Al Qusais Police Station",
+    "type": "gov_offices",
+    "city": "alain",
+    "lat": 25.2569096,
+    "lng": 55.3875849,
+    "address": "147 Beirut Street, Al Twar 5, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2569096,55.3875849",
+    "added_by": "yakew7"
   }
 ]

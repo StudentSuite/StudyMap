@@ -2715,5 +2715,38 @@
     "address": "Seven Roads Junction, Kodaikanal, Dindigul, Tamil Nadu 624101, India",
     "gmaps_link": "https://maps.google.com/?q=10.2349612,77.4909132",
     "added_by": "yakew7"
+  },
+  {
+    "id": "aln-library-01",
+    "name": "Zayed Central Library",
+    "type": "library",
+    "city": "al_ain_abu_dhabi",
+    "lat": 24.2159922,
+    "lng": 55.7514736,
+    "address": "Mohammed Bin Khalifa Street, Al Jahili, Al Ain, Abu Dhabi, UAE",
+    "gmaps_link": "https://maps.google.com/?q=24.2159922,55.7514736",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "alg-library-01",
+    "name": "Al Rashidiya Public Library",
+    "type": "library",
+    "city": "al_garhoud",
+    "lat": 25.2227966,
+    "lng": 55.3942477,
+    "address": "39 44th Street, Al Rashidiya, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2227966,55.3942477",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "alt-library-01",
+    "name": "Al Twar Library",
+    "type": "library",
+    "city": "alain",
+    "lat": 25.2622071,
+    "lng": 55.373815,
+    "address": "Damascus Street, Al Twar 1, Dubai, UAE",
+    "gmaps_link": "https://maps.google.com/?q=25.2622071,55.3738150",
+    "added_by": "yakew7"
   }
 ]
