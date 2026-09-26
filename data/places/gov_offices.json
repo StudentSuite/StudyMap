@@ -4244,5 +4244,27 @@
     "address": "2101 O Neil Avenue, Cheyenne, Wyoming, 82001",
     "gmaps_link": "https://maps.google.com/?q=41.1355509,-104.8222081",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "victoria-gov_offices-01",
+    "name": "Victoria City Hall",
+    "type": "gov_offices",
+    "city": "victoria",
+    "lat": 48.4283168,
+    "lng": -123.3652775,
+    "address": "1 Centennial Square, Victoria, British Columbia, V8W 1P6",
+    "gmaps_link": "https://maps.google.com/?q=48.4283168,-123.3652775",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "regina-gov_offices-01",
+    "name": "Regina City Hall",
+    "type": "gov_offices",
+    "city": "regina",
+    "lat": 50.4480824,
+    "lng": -104.6158602,
+    "address": "2476 Victoria Avenue, Regina, Saskatchewan, S4P 3C8",
+    "gmaps_link": "https://maps.google.com/?q=50.4480824,-104.6158602",
+    "added_by": "shauryagangrade"
   }
 ]

@@ -1670,5 +1670,49 @@
     "address": "Lower Hill Drive, Accra, Greater Accra Region, GD-110-6313",
     "gmaps_link": "https://maps.google.com/?q=5.6465979,-0.188004",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "kampala-other_places-01",
+    "name": "Makerere University",
+    "type": "other_places",
+    "city": "kampala",
+    "lat": 0.335151,
+    "lng": 32.5682342,
+    "address": "Makerere Hill Road, Kampala Capital City, Central Region",
+    "gmaps_link": "https://maps.google.com/?q=0.335151,32.5682342",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dar_es_salaam-other_places-01",
+    "name": "University of Dar es Salaam",
+    "type": "other_places",
+    "city": "dar_es_salaam",
+    "lat": -6.7800162,
+    "lng": 39.2052106,
+    "address": "Chief Kunambi Street, Dar es Salaam, Coastal Zone, 14112",
+    "gmaps_link": "https://maps.google.com/?q=-6.7800162,39.2052106",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "colombo-other_places-01",
+    "name": "University of Colombo",
+    "type": "other_places",
+    "city": "colombo",
+    "lat": 6.9010965,
+    "lng": 79.8604345,
+    "address": "Queen's Road, Colombo, Western Province, 00400",
+    "gmaps_link": "https://maps.google.com/?q=6.9010965,79.8604345",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "kuala_lumpur-other_places-01",
+    "name": "Universiti Malaya",
+    "type": "other_places",
+    "city": "kuala_lumpur",
+    "lat": 3.1257602,
+    "lng": 101.6558796,
+    "address": "Jalan 16/2, Kuala Lumpur, 50603",
+    "gmaps_link": "https://maps.google.com/?q=3.1257602,101.6558796",
+    "added_by": "shauryagangrade"
   }
 ]

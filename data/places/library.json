@@ -4156,5 +4156,49 @@
     "address": "15 Sir Marcus Fernando Mawatha, Colombo, Western Province, 00700",
     "gmaps_link": "https://maps.google.com/?q=6.9124409,79.8589825",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "rochester-library-01",
+    "name": "Rundel Memorial Library",
+    "type": "library",
+    "city": "rochester",
+    "lat": 43.1541225,
+    "lng": -77.6083526,
+    "address": "115 South Avenue, City of Rochester, New York, 14604",
+    "gmaps_link": "https://maps.google.com/?q=43.1541225,-77.6083526",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "fort_worth-library-01",
+    "name": "Fort Worth Public Library - Clifford Crossing",
+    "type": "library",
+    "city": "fort_worth",
+    "lat": 32.7660975,
+    "lng": -97.4796455,
+    "address": "Clifford Street, Fort Worth, Texas, 76108",
+    "gmaps_link": "https://maps.google.com/?q=32.7660975,-97.4796455",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "detroit-library-01",
+    "name": "Detroit Public Library",
+    "type": "library",
+    "city": "detroit",
+    "lat": 42.3584407,
+    "lng": -83.0667416,
+    "address": "Putnam Street, Detroit, Michigan, 48202",
+    "gmaps_link": "https://maps.google.com/?q=42.3584407,-83.0667416",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cleveland-library-01",
+    "name": "Main Branch Cleveland Public Library",
+    "type": "library",
+    "city": "cleveland",
+    "lat": 41.5013303,
+    "lng": -81.6914472,
+    "address": "Superior Avenue East, Cleveland, Ohio, 44114",
+    "gmaps_link": "https://maps.google.com/?q=41.5013303,-81.6914472",
+    "added_by": "shauryagangrade"
   }
 ]
