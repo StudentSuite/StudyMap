@@ -4057,5 +4057,38 @@
     "address": "100 South Houston Street, Dallas, Texas, 75202",
     "gmaps_link": "https://maps.google.com/?q=32.7786089,-96.8073166",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "houston-gov_offices-01",
+    "name": "Harris County Civil Courthouse",
+    "type": "gov_offices",
+    "city": "houston",
+    "lat": 29.7607796,
+    "lng": -95.3573743,
+    "address": "Congress Street, Houston, Texas, 77002",
+    "gmaps_link": "https://maps.google.com/?q=29.7607796,-95.3573743",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "atlanta-gov_offices-01",
+    "name": "Fulton County Courthouse",
+    "type": "gov_offices",
+    "city": "atlanta",
+    "lat": 33.7499951,
+    "lng": -84.3907337,
+    "address": "Mitchell Street Southwest, Atlanta, Georgia, 30303",
+    "gmaps_link": "https://maps.google.com/?q=33.7499951,-84.3907337",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "fort_worth-gov_offices-01",
+    "name": "Tarrant County Courthouse",
+    "type": "gov_offices",
+    "city": "fort_worth",
+    "lat": 32.7574794,
+    "lng": -97.3331906,
+    "address": "100 East Weatherford Street, Fort Worth, Texas, 76102",
+    "gmaps_link": "https://maps.google.com/?q=32.7574794,-97.3331906",
+    "added_by": "shauryagangrade"
   }
 ]

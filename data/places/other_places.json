@@ -1494,5 +1494,38 @@
     "address": "6823 Saint Charles Avenue, New Orleans, Louisiana, 70118",
     "gmaps_link": "https://maps.google.com/?q=29.9412196,-90.1201009",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "buffalo-other_places-01",
+    "name": "University at Buffalo",
+    "type": "other_places",
+    "city": "buffalo",
+    "lat": 42.9002153,
+    "lng": -78.869362,
+    "address": "955 Main Street, Buffalo, New York, 14203",
+    "gmaps_link": "https://maps.google.com/?q=42.9002153,-78.869362",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "toledo-other_places-01",
+    "name": "The University of Toledo",
+    "type": "other_places",
+    "city": "toledo",
+    "lat": 41.6583953,
+    "lng": -83.6147907,
+    "address": "2801 Fairlawn Avenue, Toledo, Ohio, 43606",
+    "gmaps_link": "https://maps.google.com/?q=41.6583953,-83.6147907",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "boise-other_places-01",
+    "name": "Boise State University",
+    "type": "other_places",
+    "city": "boise",
+    "lat": 43.6032821,
+    "lng": -116.1994141,
+    "address": "South Orchard Street, Boise, Idaho, 83705",
+    "gmaps_link": "https://maps.google.com/?q=43.6032821,-116.1994141",
+    "added_by": "shauryagangrade"
   }
 ]

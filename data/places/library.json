@@ -3969,5 +3969,49 @@
     "address": "4415 Natural Bridge Avenue, Saint Louis, Missouri, 63115",
     "gmaps_link": "https://maps.google.com/?q=38.6703907,-90.2368244",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "salt_lake_city-library-01",
+    "name": "Salt Lake City Public Library",
+    "type": "library",
+    "city": "salt_lake_city",
+    "lat": 40.7597728,
+    "lng": -111.8846995,
+    "address": "210 400 South, Salt Lake City, Utah, 84111",
+    "gmaps_link": "https://maps.google.com/?q=40.7597728,-111.8846995",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "new_orleans-library-01",
+    "name": "New Orleans Public Library - Norman Mayer Branch",
+    "type": "library",
+    "city": "new_orleans",
+    "lat": 29.9975837,
+    "lng": -90.0615364,
+    "address": "2098 Foy Street, New Orleans, Louisiana, 70122",
+    "gmaps_link": "https://maps.google.com/?q=29.9975837,-90.0615364",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "sacramento-library-01",
+    "name": "Sacramento Central Public Library",
+    "type": "library",
+    "city": "sacramento",
+    "lat": 38.581631,
+    "lng": -121.495193,
+    "address": "828 I Street, Sacramento, California, 95814",
+    "gmaps_link": "https://maps.google.com/?q=38.581631,-121.495193",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "toledo-library-01",
+    "name": "Toledo-Lucas County Public Library (Main Branch)",
+    "type": "library",
+    "city": "toledo",
+    "lat": 41.6546894,
+    "lng": -83.5403337,
+    "address": "325 Madison Avenue, Toledo, Ohio, 43610",
+    "gmaps_link": "https://maps.google.com/?q=41.6546894,-83.5403337",
+    "added_by": "shauryagangrade"
   }
 ]
