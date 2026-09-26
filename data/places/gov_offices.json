@@ -4200,5 +4200,49 @@
     "address": "500 West Markham Street, Little Rock, Arkansas, 72201",
     "gmaps_link": "https://maps.google.com/?q=34.7493669,-92.2753213",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "oklahoma_city-gov_offices-01",
+    "name": "Oklahoma City City Hall",
+    "type": "gov_offices",
+    "city": "oklahoma_city",
+    "lat": 35.4688843,
+    "lng": -97.5207356,
+    "address": "Couch Drive, Oklahoma City, Oklahoma, 73103",
+    "gmaps_link": "https://maps.google.com/?q=35.4688843,-97.5207356",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "wichita-gov_offices-01",
+    "name": "Wichita City Hall",
+    "type": "gov_offices",
+    "city": "wichita",
+    "lat": 37.692845,
+    "lng": -97.339287,
+    "address": "West Central Avenue, Wichita, Kansas, 67202",
+    "gmaps_link": "https://maps.google.com/?q=37.692845,-97.339287",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "des_moines-gov_offices-01",
+    "name": "Des Moines City Hall",
+    "type": "gov_offices",
+    "city": "des_moines",
+    "lat": 41.589092,
+    "lng": -93.6165655,
+    "address": "400 Robert D. Ray Drive, Des Moines, Iowa, 50309",
+    "gmaps_link": "https://maps.google.com/?q=41.589092,-93.6165655",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cheyenne-gov_offices-01",
+    "name": "Cheyenne City Hall",
+    "type": "gov_offices",
+    "city": "cheyenne",
+    "lat": 41.1355509,
+    "lng": -104.8222081,
+    "address": "2101 O Neil Avenue, Cheyenne, Wyoming, 82001",
+    "gmaps_link": "https://maps.google.com/?q=41.1355509,-104.8222081",
+    "added_by": "shauryagangrade"
   }
 ]

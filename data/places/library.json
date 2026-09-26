@@ -4123,5 +4123,38 @@
     "address": "Millennium Plain, Norwich, England, NR2 1AW",
     "gmaps_link": "https://maps.google.com/?q=52.6277308,1.2909467",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "nottingham-library-01",
+    "name": "Nottingham Central Library",
+    "type": "library",
+    "city": "nottingham",
+    "lat": 52.9495689,
+    "lng": -1.1479728,
+    "address": "1 & 3-11 Collin Street, City of Nottingham, England, NG1 7FH",
+    "gmaps_link": "https://maps.google.com/?q=52.9495689,-1.1479728",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "hong_kong-library-01",
+    "name": "Hong Kong Central Library",
+    "type": "library",
+    "city": "hong_kong",
+    "lat": 22.2799275,
+    "lng": 114.189617,
+    "address": "66 \u5927\u5751\u9053\u5929\u6a4b Tai Hang Road Flyover, \u9999\u6e2f Hong Kong, \u9999\u6e2f Hong Kong",
+    "gmaps_link": "https://maps.google.com/?q=22.2799275,114.189617",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "colombo-library-01",
+    "name": "Colombo Public Library",
+    "type": "library",
+    "city": "colombo",
+    "lat": 6.9124409,
+    "lng": 79.8589825,
+    "address": "15 Sir Marcus Fernando Mawatha, Colombo, Western Province, 00700",
+    "gmaps_link": "https://maps.google.com/?q=6.9124409,79.8589825",
+    "added_by": "shauryagangrade"
   }
 ]

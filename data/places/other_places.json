@@ -1637,5 +1637,38 @@
     "address": "Kent Street, Perth, Western Australia, 6102",
     "gmaps_link": "https://maps.google.com/?q=-32.0057296,115.8928862",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "adelaide-other_places-01",
+    "name": "University of Adelaide",
+    "type": "other_places",
+    "city": "adelaide",
+    "lat": -34.9189226,
+    "lng": 138.6042367,
+    "address": "North Terrace, Adelaide, South Australia, 5000",
+    "gmaps_link": "https://maps.google.com/?q=-34.9189226,138.6042367",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "darwin-other_places-01",
+    "name": "Charles Darwin University",
+    "type": "other_places",
+    "city": "darwin",
+    "lat": -12.3713737,
+    "lng": 130.8684834,
+    "address": "Casuarina Bike Path, Darwin, 0810",
+    "gmaps_link": "https://maps.google.com/?q=-12.3713737,130.8684834",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "accra-other_places-01",
+    "name": "University of Ghana",
+    "type": "other_places",
+    "city": "accra",
+    "lat": 5.6465979,
+    "lng": -0.188004,
+    "address": "Lower Hill Drive, Accra, Greater Accra Region, GD-110-6313",
+    "gmaps_link": "https://maps.google.com/?q=5.6465979,-0.188004",
+    "added_by": "shauryagangrade"
   }
 ]
