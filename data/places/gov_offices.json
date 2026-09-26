@@ -4024,5 +4024,38 @@
     "address": "Norfolk Gardens, Bradford, England, BD1 9SH",
     "gmaps_link": "https://maps.google.com/?q=53.7924378,-1.7533923",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "portland-gov_offices-01",
+    "name": "Multnomah County Courthouse",
+    "type": "gov_offices",
+    "city": "portland",
+    "lat": 45.5138946,
+    "lng": -122.6751473,
+    "address": "1200 Southwest 1st Avenue, Portland, Oregon, 97204",
+    "gmaps_link": "https://maps.google.com/?q=45.5138946,-122.6751473",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "seattle-gov_offices-01",
+    "name": "King County Courthouse",
+    "type": "gov_offices",
+    "city": "seattle",
+    "lat": 47.6026438,
+    "lng": -122.3305269,
+    "address": "516 3rd Avenue, Seattle, Washington, 98104",
+    "gmaps_link": "https://maps.google.com/?q=47.6026438,-122.3305269",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dallas-gov_offices-01",
+    "name": "Dallas County Courthouse",
+    "type": "gov_offices",
+    "city": "dallas",
+    "lat": 32.7786089,
+    "lng": -96.8073166,
+    "address": "100 South Houston Street, Dallas, Texas, 75202",
+    "gmaps_link": "https://maps.google.com/?q=32.7786089,-96.8073166",
+    "added_by": "shauryagangrade"
   }
 ]

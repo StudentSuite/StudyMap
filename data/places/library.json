@@ -3936,5 +3936,38 @@
     "address": "101 West Flagler Street, Miami, Florida, 33130",
     "gmaps_link": "https://maps.google.com/?q=25.7745503,-80.1973379",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "nashville-library-01",
+    "name": "Main Branch Nashville Public Library",
+    "type": "library",
+    "city": "nashville",
+    "lat": 36.1619138,
+    "lng": -86.7820904,
+    "address": "615 Church Street, Nashville, Tennessee, 37219",
+    "gmaps_link": "https://maps.google.com/?q=36.1619138,-86.7820904",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "kansas_city-library-01",
+    "name": "Kansas City Public Library: Plaza Branch",
+    "type": "library",
+    "city": "kansas_city",
+    "lat": 39.0394399,
+    "lng": -94.586515,
+    "address": "4801 Main Street, Kansas City, Missouri, 64112",
+    "gmaps_link": "https://maps.google.com/?q=39.0394399,-94.586515",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "st_louis-library-01",
+    "name": "Saint Louis Public Library Julia Davis Branch",
+    "type": "library",
+    "city": "st_louis",
+    "lat": 38.6703907,
+    "lng": -90.2368244,
+    "address": "4415 Natural Bridge Avenue, Saint Louis, Missouri, 63115",
+    "gmaps_link": "https://maps.google.com/?q=38.6703907,-90.2368244",
+    "added_by": "shauryagangrade"
   }
 ]

@@ -1450,5 +1450,49 @@
     "address": "4800 Calhoun Road, Houston, Texas, 77004",
     "gmaps_link": "https://maps.google.com/?q=29.7207902,-95.3440627",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "nashville-other_places-01",
+    "name": "Vanderbilt University",
+    "type": "other_places",
+    "city": "nashville",
+    "lat": 36.1438011,
+    "lng": -86.8028189,
+    "address": "2201 West End Avenue, Nashville, Tennessee, 37235",
+    "gmaps_link": "https://maps.google.com/?q=36.1438011,-86.8028189",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "st_louis-other_places-01",
+    "name": "Washington University in St. Louis",
+    "type": "other_places",
+    "city": "st_louis",
+    "lat": 38.6472402,
+    "lng": -90.3084017,
+    "address": "1 Brookings Drive, Saint Louis, Missouri, 63130",
+    "gmaps_link": "https://maps.google.com/?q=38.6472402,-90.3084017",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "salt_lake_city-other_places-01",
+    "name": "University of Utah",
+    "type": "other_places",
+    "city": "salt_lake_city",
+    "lat": 40.7628137,
+    "lng": -111.8368719,
+    "address": "201 Presidents Circle, Salt Lake City, Utah, 84112",
+    "gmaps_link": "https://maps.google.com/?q=40.7628137,-111.8368719",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "new_orleans-other_places-01",
+    "name": "Tulane University",
+    "type": "other_places",
+    "city": "new_orleans",
+    "lat": 29.9412196,
+    "lng": -90.1201009,
+    "address": "6823 Saint Charles Avenue, New Orleans, Louisiana, 70118",
+    "gmaps_link": "https://maps.google.com/?q=29.9412196,-90.1201009",
+    "added_by": "shauryagangrade"
   }
 ]
