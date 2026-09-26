@@ -3859,5 +3859,49 @@
     "address": "281 County Road, Barrington, RI 02806",
     "gmaps_link": "https://maps.google.com/?q=41.7404816,-71.3072655",
     "added_by": "yakew7"
+  },
+  {
+    "id": "austin-library-01",
+    "name": "Austin Public Library - Ruiz Branch",
+    "type": "library",
+    "city": "austin",
+    "lat": 30.2298445,
+    "lng": -97.7070896,
+    "address": "1600 Grove Boulevard, Austin, Texas, 78741",
+    "gmaps_link": "https://maps.google.com/?q=30.2298445,-97.7070896",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "denver-library-01",
+    "name": "Denver Public Library",
+    "type": "library",
+    "city": "denver",
+    "lat": 39.6826014,
+    "lng": -105.0258787,
+    "address": "1890 South Grove Street, Denver, Colorado, 80219",
+    "gmaps_link": "https://maps.google.com/?q=39.6826014,-105.0258787",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "seattle-library-01",
+    "name": "The Seattle Public Library - Central Library",
+    "type": "library",
+    "city": "seattle",
+    "lat": 47.6067142,
+    "lng": -122.3326983,
+    "address": "1000 4th Avenue, Seattle, Washington, 98104",
+    "gmaps_link": "https://maps.google.com/?q=47.6067142,-122.3326983",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "san_diego-library-01",
+    "name": "Otay Mesa Branch San Diego Public Library",
+    "type": "library",
+    "city": "san_diego",
+    "lat": 32.5767195,
+    "lng": -117.0680151,
+    "address": "3003 Coronado Avenue, San Diego, California, 92154",
+    "gmaps_link": "https://maps.google.com/?q=32.5767195,-117.0680151",
+    "added_by": "shauryagangrade"
   }
 ]

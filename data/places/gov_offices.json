@@ -3947,5 +3947,38 @@
     "address": "283 County Road, Barrington, RI 02806",
     "gmaps_link": "https://maps.google.com/?q=41.7410021,-71.3077693",
     "added_by": "yakew7"
+  },
+  {
+    "id": "belfast-gov_offices-01",
+    "name": "Belfast City Hall",
+    "type": "gov_offices",
+    "city": "belfast",
+    "lat": 54.5964356,
+    "lng": -5.9295068,
+    "address": "Donegall Square South, Belfast City District, Northern Ireland / Tuaisceart \u00c9ireann, BT1 5GS",
+    "gmaps_link": "https://maps.google.com/?q=54.5964356,-5.9295068",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cardiff-gov_offices-01",
+    "name": "Cardiff City Hall",
+    "type": "gov_offices",
+    "city": "cardiff",
+    "lat": 51.4852714,
+    "lng": -3.1787919,
+    "address": "Gorsedd Gardens Road, Cardiff, Cymru / Wales, CF10 3ND",
+    "gmaps_link": "https://maps.google.com/?q=51.4852714,-3.1787919",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "glasgow-gov_offices-01",
+    "name": "Glasgow City Chambers",
+    "type": "gov_offices",
+    "city": "glasgow",
+    "lat": 55.8609898,
+    "lng": -4.2487742,
+    "address": "80 George Square, Glasgow, Alba / Scotland, G2 1DU",
+    "gmaps_link": "https://maps.google.com/?q=55.8609898,-4.2487742",
+    "added_by": "shauryagangrade"
   }
 ]

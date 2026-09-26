@@ -1384,5 +1384,38 @@
     "address": "Iganmu, Surulere, Lagos, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.4746109,3.3687333",
     "added_by": "yakew7"
+  },
+  {
+    "id": "austin-other_places-01",
+    "name": "University of Texas at Austin",
+    "type": "other_places",
+    "city": "austin",
+    "lat": 30.2851494,
+    "lng": -97.7339352,
+    "address": "Austin, Texas, 78712",
+    "gmaps_link": "https://maps.google.com/?q=30.2851494,-97.7339352",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "seattle-other_places-01",
+    "name": "University of Washington",
+    "type": "other_places",
+    "city": "seattle",
+    "lat": 47.6554303,
+    "lng": -122.3001692,
+    "address": "1410 Northeast Campus Parkway, Seattle, Washington, 98195",
+    "gmaps_link": "https://maps.google.com/?q=47.6554303,-122.3001692",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "denver-other_places-01",
+    "name": "University of Denver",
+    "type": "other_places",
+    "city": "denver",
+    "lat": 39.6766157,
+    "lng": -104.9623745,
+    "address": "2199 South University Boulevard, Denver, Colorado, 80208",
+    "gmaps_link": "https://maps.google.com/?q=39.6766157,-104.9623745",
+    "added_by": "shauryagangrade"
   }
 ]
