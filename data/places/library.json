@@ -4046,5 +4046,38 @@
     "address": "715 South Capitol Boulevard, Boise, Idaho, 83702",
     "gmaps_link": "https://maps.google.com/?q=43.610476,-116.2078379",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "honolulu-library-01",
+    "name": "Hawaii State Library",
+    "type": "library",
+    "city": "honolulu",
+    "lat": 21.3058982,
+    "lng": -157.8573928,
+    "address": "478 South King Street, East Honolulu, Hawaii, 96813",
+    "gmaps_link": "https://maps.google.com/?q=21.3058982,-157.8573928",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "edmonton-library-01",
+    "name": "Edmonton Public Library",
+    "type": "library",
+    "city": "edmonton",
+    "lat": 53.4075646,
+    "lng": -113.5387658,
+    "address": "2873 119A Street SW, Edmonton, Alberta, T6W 3R3",
+    "gmaps_link": "https://maps.google.com/?q=53.4075646,-113.5387658",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "leeds-library-01",
+    "name": "Leeds Central Library",
+    "type": "library",
+    "city": "leeds",
+    "lat": 53.8001556,
+    "lng": -1.5486909,
+    "address": "Calverley Street, Leeds, England, LS1 3AB",
+    "gmaps_link": "https://maps.google.com/?q=53.8001556,-1.5486909",
+    "added_by": "shauryagangrade"
   }
 ]

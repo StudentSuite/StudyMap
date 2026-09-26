@@ -1560,5 +1560,49 @@
     "address": "87 Avenue NW, Edmonton, Alberta, T6G 2C5",
     "gmaps_link": "https://maps.google.com/?q=53.52682,-113.5244937",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "winnipeg-other_places-01",
+    "name": "University of Manitoba",
+    "type": "other_places",
+    "city": "winnipeg",
+    "lat": 49.9042395,
+    "lng": -97.1617229,
+    "address": "Logan Avenue, Winnipeg, Manitoba, R3A 0P1",
+    "gmaps_link": "https://maps.google.com/?q=49.9042395,-97.1617229",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "ottawa-other_places-01",
+    "name": "University of Ottawa",
+    "type": "other_places",
+    "city": "ottawa",
+    "lat": 45.4225271,
+    "lng": -75.6833904,
+    "address": "75 Laurier Avenue East, Ottawa, Ontario, K1N 6N5",
+    "gmaps_link": "https://maps.google.com/?q=45.4225271,-75.6833904",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "auckland-other_places-01",
+    "name": "University of Auckland, Waipapa Taumata Rau",
+    "type": "other_places",
+    "city": "auckland",
+    "lat": -36.8660955,
+    "lng": 174.7737331,
+    "address": "Oaklands Road, Albert-Eden, Auckland, 1024",
+    "gmaps_link": "https://maps.google.com/?q=-36.8660955,174.7737331",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "wellington-other_places-01",
+    "name": "Victoria University of Wellington, Kelburn Campus",
+    "type": "other_places",
+    "city": "wellington",
+    "lat": -41.2898792,
+    "lng": 174.7683802,
+    "address": "Glasgow Street, Wellington, Wellington, 6040",
+    "gmaps_link": "https://maps.google.com/?q=-41.2898792,174.7683802",
+    "added_by": "shauryagangrade"
   }
 ]

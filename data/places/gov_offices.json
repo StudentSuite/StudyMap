@@ -4134,5 +4134,38 @@
     "address": "1 South Sierra Street, Reno, Nevada, 89501",
     "gmaps_link": "https://maps.google.com/?q=39.5238168,-119.8140344",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "milwaukee-gov_offices-01",
+    "name": "Milwaukee City Hall",
+    "type": "gov_offices",
+    "city": "milwaukee",
+    "lat": 43.0417052,
+    "lng": -87.9097516,
+    "address": "200 East Wells Street, Milwaukee, Wisconsin, 53202",
+    "gmaps_link": "https://maps.google.com/?q=43.0417052,-87.9097516",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "tucson-gov_offices-01",
+    "name": "Tucson City Hall",
+    "type": "gov_offices",
+    "city": "tucson",
+    "lat": 32.2226209,
+    "lng": -110.9747738,
+    "address": "West Pennington Street, Tucson, Arizona, 85701",
+    "gmaps_link": "https://maps.google.com/?q=32.2226209,-110.9747738",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "las_vegas-gov_offices-01",
+    "name": "Las Vegas City Hall",
+    "type": "gov_offices",
+    "city": "las_vegas",
+    "lat": 36.1672954,
+    "lng": -115.1484965,
+    "address": "495 South Main Street, Las Vegas, Nevada, 89101",
+    "gmaps_link": "https://maps.google.com/?q=36.1672954,-115.1484965",
+    "added_by": "shauryagangrade"
   }
 ]
