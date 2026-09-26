@@ -1714,5 +1714,60 @@
     "address": "Jalan 16/2, Kuala Lumpur, 50603",
     "gmaps_link": "https://maps.google.com/?q=3.1257602,101.6558796",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "quezon_city-other_places-01",
+    "name": "University of the Philippines Diliman",
+    "type": "other_places",
+    "city": "quezon_city",
+    "lat": 14.650376,
+    "lng": 121.0676426,
+    "address": "Capitol Hills Drive, Quezon City, Metro Manila, 1101",
+    "gmaps_link": "https://maps.google.com/?q=14.650376,121.0676426",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "manila-other_places-01",
+    "name": "Ateneo de Manila University",
+    "type": "other_places",
+    "city": "manila",
+    "lat": 14.6398984,
+    "lng": 121.0781952,
+    "address": "Katipunan Avenue, Quezon City, Metro Manila, 1108",
+    "gmaps_link": "https://maps.google.com/?q=14.6398984,121.0781952",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "hong_kong-other_places-01",
+    "name": "The University of Hong Kong",
+    "type": "other_places",
+    "city": "hong_kong",
+    "lat": 22.2828768,
+    "lng": 114.1378586,
+    "address": "列堤頓道 Lyttelton Road, 香港 Hong Kong, 香港 Hong Kong",
+    "gmaps_link": "https://maps.google.com/?q=22.2828768,114.1378586",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dakar-other_places-01",
+    "name": "Universite Cheikh Anta Diop",
+    "type": "other_places",
+    "city": "dakar",
+    "lat": 14.6872494,
+    "lng": -17.4644464,
+    "address": "Rue FN-35, Dakar, Région de Dakar, 10700",
+    "gmaps_link": "https://maps.google.com/?q=14.6872494,-17.4644464",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "lima-other_places-01",
+    "name": "Universidad Nacional Mayor de San Marcos",
+    "type": "other_places",
+    "city": "lima",
+    "lat": -11.9546373,
+    "lng": -76.987467,
+    "address": "Calle Oeste, San Juan de Lurigancho, Lima, 15423",
+    "gmaps_link": "https://maps.google.com/?q=-11.9546373,-76.987467",
+    "added_by": "shauryagangrade"
   }
 ]

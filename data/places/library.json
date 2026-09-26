@@ -4200,5 +4200,60 @@
     "address": "Superior Avenue East, Cleveland, Ohio, 44114",
     "gmaps_link": "https://maps.google.com/?q=41.5013303,-81.6914472",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "memphis-library-01",
+    "name": "Whitehaven Branch Memphis Public Library",
+    "type": "library",
+    "city": "memphis",
+    "lat": 35.0360615,
+    "lng": -90.0069517,
+    "address": "4120 Millbranch Road, Memphis, Tennessee, 38116",
+    "gmaps_link": "https://maps.google.com/?q=35.0360615,-90.0069517",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "spokane-library-01",
+    "name": "Spokane Public Library - Shadle Park",
+    "type": "library",
+    "city": "spokane",
+    "lat": 47.7002453,
+    "lng": -117.4423036,
+    "address": "2111 West Wellesley Avenue, Spokane, Washington, 99205",
+    "gmaps_link": "https://maps.google.com/?q=47.7002453,-117.4423036",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "tacoma-library-01",
+    "name": "Main Branch Tacoma Public Library",
+    "type": "library",
+    "city": "tacoma",
+    "lat": 47.2523845,
+    "lng": -122.4447979,
+    "address": "1102 Tacoma Avenue South, Tacoma, Washington, 98402",
+    "gmaps_link": "https://maps.google.com/?q=47.2523845,-122.4447979",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "portland_me-library-01",
+    "name": "Portland Public Library - Main Branch",
+    "type": "library",
+    "city": "portland_me",
+    "lat": 43.658006,
+    "lng": -70.2595221,
+    "address": "5 Monument Square, Portland, Maine, 04101",
+    "gmaps_link": "https://maps.google.com/?q=43.658006,-70.2595221",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "manchester_nh-library-01",
+    "name": "Manchester City Library",
+    "type": "library",
+    "city": "manchester_nh",
+    "lat": 42.9922901,
+    "lng": -71.4588697,
+    "address": "405 Pine Street, Manchester, New Hampshire, 03104",
+    "gmaps_link": "https://maps.google.com/?q=42.9922901,-71.4588697",
+    "added_by": "shauryagangrade"
   }
 ]
