@@ -603,27 +603,43 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Mission 2027 season game reveal and team registration opens",
-        "date": "2026-08-11",
+        "label": "Mission 2027 season opens for team registration",
+        "date": "2026-06-01",
         "type": "registration_open",
         "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://kb.roboticseducation.org/hc/en-us/articles/41781250161687-2026-2027-RECF-Drone-Season-Updates"
+        "estimated": true,
+        "source_url": "https://recf.org/teams/competition/aerial-drone-competition/"
       },
       {
-        "label": "Season registration fee applies from this season onward",
+        "label": "Mission 2027 competition rules released",
         "date": "2026-08-11",
-        "type": "registration_close",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://recf.org/teams/competition/aerial-drone-competition/"
+      },
+      {
+        "label": "Local qualifying events begin",
+        "date": "2026-10-01",
+        "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://recf.org/faq/"
+        "source_url": "https://recf.org/teams/competition/aerial-drone-competition/"
+      },
+      {
+        "label": "RECF World Championship",
+        "date": "2027-04-25",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://recf.org/recf-world-championship/"
       }
     ],
     "added_by": "shauryagangrade",
     "verified": {
       "by": "shauryagangrade",
-      "on": "2026-09-19"
+      "on": "2026-09-26"
     },
-    "valid_till": "2027-03-01"
+    "valid_till": "2027-01-15"
   }
 ]

@@ -68,31 +68,39 @@
     },
     "prize": "USD 15,000 winner, ten USD 500 finalists, and a USD 5,000 Readers' Choice Award.",
     "official_url": "https://rattle.com/page/poetryprize/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Submission deadline",
-        "date": "2026-07-15",
+        "date": "2027-07-15",
         "type": "deadline",
         "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://rattle.com/page/submissions/"
+        "estimated": true,
+        "source_url": "https://rattle.com/page/poetryprize/"
       },
       {
         "label": "Winner and finalists announced",
-        "date": "2026-09-15",
+        "date": "2027-09-15",
         "type": "results",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://rattle.com/page/winners/"
+      },
+      {
+        "label": "Readers' Choice Award announced",
+        "date": "2028-02-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://rattle.com/page/rppguidelines/"
       }
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-05"
+      "by": "shauryagangrade",
+      "on": "2026-09-26"
     },
-    "valid_till": "2026-10-01",
+    "valid_till": "2027-04-01",
     "image": "/competitions/rattle-poetry-prize.png"
   },
   {

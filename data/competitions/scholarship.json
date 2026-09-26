@@ -199,20 +199,44 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Application deadline (estimated)",
+        "label": "Application opens",
+        "date": "2026-07-15",
+        "type": "registration_open",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.thegatesscholarship.org/scholarship"
+      },
+      {
+        "label": "Application deadline",
         "date": "2026-09-15",
         "type": "deadline",
         "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.thegatesscholarship.org/scholarship"
+      },
+      {
+        "label": "Semifinalist phase begins",
+        "date": "2026-12-01",
+        "type": "round",
+        "timezone": "UTC-8",
         "estimated": true,
-        "source_url": "https://www.thegatesscholarship.org/help-center/student"
+        "source_url": "https://www.thegatesscholarship.org/scholarship"
+      },
+      {
+        "label": "Selection",
+        "date": "2027-04-30",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://www.thegatesscholarship.org/scholarship"
       }
     ],
     "added_by": "shauryagangrade",
     "verified": {
       "by": "shauryagangrade",
-      "on": "2026-09-06"
+      "on": "2026-09-26"
     },
-    "valid_till": "2026-10-15",
+    "valid_till": "2026-12-15",
     "image": "/competitions/gates-scholarship.png"
   },
   {

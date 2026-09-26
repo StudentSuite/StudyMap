@@ -186,39 +186,39 @@
     },
     "prize": "First, second and third place cash prizes, plus publication in The Politic.",
     "official_url": "https://thepolitic.org/high-school-competition/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Regular registration closes",
-        "date": "2026-08-14",
+        "date": "2027-08-13",
         "type": "registration_close",
         "timezone": "UTC-5",
-        "estimated": false,
-        "source_url": "https://docs.google.com/document/d/14m8YGCvzj8dpvE4noCbGVe9fRewQemR7Gl9ATuHn1Jo/edit?usp=sharing"
+        "estimated": true,
+        "source_url": "https://thepolitic.org/high-school-competition/"
       },
       {
         "label": "Essay submission deadline",
-        "date": "2026-08-21",
+        "date": "2027-08-20",
         "type": "deadline",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://thepolitic.org/high-school-competition/"
       },
       {
         "label": "Winners announced",
-        "date": "2026-09-11",
+        "date": "2027-09-10",
         "type": "results",
         "timezone": "UTC-5",
-        "estimated": false,
-        "source_url": "https://thepolitic.org/columns/"
+        "estimated": true,
+        "source_url": "https://drive.google.com/file/d/1RN3bcGfAIbaBEhK9XHdrFdU0Vyo_dpRY/view?usp=sharing"
       }
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-05"
+      "by": "shauryagangrade",
+      "on": "2026-09-26"
     },
-    "valid_till": "2026-10-01",
+    "valid_till": "2026-11-01",
     "image": "/competitions/the-politic-high-school-essay-competition.png"
   },
   {
@@ -512,23 +512,31 @@
     },
     "prize": "Cash prizes up to 3,000 dollars at the circuit level, with additional district-level prizes.",
     "official_url": "https://www.ca9.uscourts.gov/civicscontest/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Entry deadline",
-        "date": "2026-03-06",
-        "type": "deadline",
+        "label": "2026 circuit winners announced",
+        "date": "2026-05-29",
+        "type": "results",
         "timezone": "UTC-8",
         "estimated": false,
-        "source_url": "https://www.cacd.uscourts.gov/sites/default/files/documents/2026_9th_Circuit_Civics_Contest_Flyer.pdf"
+        "source_url": "https://www.ca9.uscourts.gov/news/2026-ninth-circuit-civics-contest-winners-announced/"
+      },
+      {
+        "label": "Entry deadline",
+        "date": "2027-03-05",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.ca9.uscourts.gov/civicscontest/"
       }
     ],
     "added_by": "shauryagangrade",
     "verified": {
       "by": "shauryagangrade",
-      "on": "2026-09-19"
+      "on": "2026-09-26"
     },
-    "valid_till": "2027-04-01"
+    "valid_till": "2027-01-15"
   },
   {
     "id": "aaa-anthro-day-unessay-competition",
