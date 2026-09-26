@@ -4013,5 +4013,38 @@
     "address": "325 Madison Avenue, Toledo, Ohio, 43610",
     "gmaps_link": "https://maps.google.com/?q=41.6546894,-83.5403337",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "akron-library-01",
+    "name": "Akron-Summit County Public Library",
+    "type": "library",
+    "city": "akron",
+    "lat": 41.0832438,
+    "lng": -81.5168984,
+    "address": "60 South High Street, Akron, Ohio, 44326",
+    "gmaps_link": "https://maps.google.com/?q=41.0832438,-81.5168984",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dayton-library-01",
+    "name": "Dayton Metro Library",
+    "type": "library",
+    "city": "dayton",
+    "lat": 39.7607084,
+    "lng": -84.1876656,
+    "address": "215 East 3rd Street, Dayton, Ohio, 45402",
+    "gmaps_link": "https://maps.google.com/?q=39.7607084,-84.1876656",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "boise-library-01",
+    "name": "Boise Public Library",
+    "type": "library",
+    "city": "boise",
+    "lat": 43.610476,
+    "lng": -116.2078379,
+    "address": "715 South Capitol Boulevard, Boise, Idaho, 83702",
+    "gmaps_link": "https://maps.google.com/?q=43.610476,-116.2078379",
+    "added_by": "shauryagangrade"
   }
 ]

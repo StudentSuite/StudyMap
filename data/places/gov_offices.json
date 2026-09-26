@@ -4090,5 +4090,49 @@
     "address": "100 East Weatherford Street, Fort Worth, Texas, 76102",
     "gmaps_link": "https://maps.google.com/?q=32.7574794,-97.3331906",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "phoenix-gov_offices-01",
+    "name": "Maricopa County Superior Court Complex",
+    "type": "gov_offices",
+    "city": "phoenix",
+    "lat": 33.4465521,
+    "lng": -112.0765217,
+    "address": "101 West Jefferson Street, Phoenix, Arizona, 85003",
+    "gmaps_link": "https://maps.google.com/?q=33.4465521,-112.0765217",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cleveland-gov_offices-01",
+    "name": "Cuyahoga County Criminal Court",
+    "type": "gov_offices",
+    "city": "cleveland",
+    "lat": 41.5033953,
+    "lng": -81.6970171,
+    "address": "Lakeside Avenue East, Cleveland, Ohio, 44114",
+    "gmaps_link": "https://maps.google.com/?q=41.5033953,-81.6970171",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "memphis-gov_offices-01",
+    "name": "Shelby County Court House",
+    "type": "gov_offices",
+    "city": "memphis",
+    "lat": 35.1482629,
+    "lng": -90.0492173,
+    "address": "140 Adams Avenue, Memphis, Tennessee, 38103",
+    "gmaps_link": "https://maps.google.com/?q=35.1482629,-90.0492173",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "reno-gov_offices-01",
+    "name": "Washoe County Courthouse",
+    "type": "gov_offices",
+    "city": "reno",
+    "lat": 39.5238168,
+    "lng": -119.8140344,
+    "address": "1 South Sierra Street, Reno, Nevada, 89501",
+    "gmaps_link": "https://maps.google.com/?q=39.5238168,-119.8140344",
+    "added_by": "shauryagangrade"
   }
 ]

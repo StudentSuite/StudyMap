@@ -1527,5 +1527,38 @@
     "address": "South Orchard Street, Boise, Idaho, 83705",
     "gmaps_link": "https://maps.google.com/?q=43.6032821,-116.1994141",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "reno-other_places-01",
+    "name": "University of Nevada, Reno",
+    "type": "other_places",
+    "city": "reno",
+    "lat": 39.5442688,
+    "lng": -119.8163105,
+    "address": "1664 North Virginia Street, Reno, Nevada, 89557",
+    "gmaps_link": "https://maps.google.com/?q=39.5442688,-119.8163105",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "anchorage-other_places-01",
+    "name": "University of Alaska Anchorage",
+    "type": "other_places",
+    "city": "anchorage",
+    "lat": 61.190379,
+    "lng": -149.8223254,
+    "address": "3211 Providence Drive, Anchorage, Alaska, 99508",
+    "gmaps_link": "https://maps.google.com/?q=61.190379,-149.8223254",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "edmonton-other_places-01",
+    "name": "University of Alberta",
+    "type": "other_places",
+    "city": "edmonton",
+    "lat": 53.52682,
+    "lng": -113.5244937,
+    "address": "87 Avenue NW, Edmonton, Alberta, T6G 2C5",
+    "gmaps_link": "https://maps.google.com/?q=53.52682,-113.5244937",
+    "added_by": "shauryagangrade"
   }
 ]
