@@ -4167,5 +4167,38 @@
     "address": "495 South Main Street, Las Vegas, Nevada, 89101",
     "gmaps_link": "https://maps.google.com/?q=36.1672954,-115.1484965",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "charleston_sc-gov_offices-01",
+    "name": "Charleston City Hall",
+    "type": "gov_offices",
+    "city": "charleston_sc",
+    "lat": 32.7767305,
+    "lng": -79.930806,
+    "address": "80 Broad Street, Charleston, South Carolina, 29401",
+    "gmaps_link": "https://maps.google.com/?q=32.7767305,-79.930806",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "birmingham_al-gov_offices-01",
+    "name": "Birmingham City Hall",
+    "type": "gov_offices",
+    "city": "birmingham_al",
+    "lat": 33.5204054,
+    "lng": -86.8111044,
+    "address": "710 19th Street North, Birmingham, Alabama, 35234",
+    "gmaps_link": "https://maps.google.com/?q=33.5204054,-86.8111044",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "little_rock-gov_offices-01",
+    "name": "Little Rock City Hall",
+    "type": "gov_offices",
+    "city": "little_rock",
+    "lat": 34.7493669,
+    "lng": -92.2753213,
+    "address": "500 West Markham Street, Little Rock, Arkansas, 72201",
+    "gmaps_link": "https://maps.google.com/?q=34.7493669,-92.2753213",
+    "added_by": "shauryagangrade"
   }
 ]

@@ -1604,5 +1604,38 @@
     "address": "Glasgow Street, Wellington, Wellington, 6040",
     "gmaps_link": "https://maps.google.com/?q=-41.2898792,174.7683802",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dunedin-other_places-01",
+    "name": "University of Otago",
+    "type": "other_places",
+    "city": "dunedin",
+    "lat": -45.86495,
+    "lng": 170.5138755,
+    "address": "Cumberland Street, Dunedin, Otago, 9016",
+    "gmaps_link": "https://maps.google.com/?q=-45.86495,170.5138755",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "hobart-other_places-01",
+    "name": "University of Tasmania",
+    "type": "other_places",
+    "city": "hobart",
+    "lat": -42.906822,
+    "lng": 147.3218083,
+    "address": "Proctors Road, Hobart, Tasmania, 7005",
+    "gmaps_link": "https://maps.google.com/?q=-42.906822,147.3218083",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "perth-other_places-01",
+    "name": "Curtin University (Bentley Campus)",
+    "type": "other_places",
+    "city": "perth",
+    "lat": -32.0057296,
+    "lng": 115.8928862,
+    "address": "Kent Street, Perth, Western Australia, 6102",
+    "gmaps_link": "https://maps.google.com/?q=-32.0057296,115.8928862",
+    "added_by": "shauryagangrade"
   }
 ]

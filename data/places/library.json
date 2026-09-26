@@ -4079,5 +4079,49 @@
     "address": "Calverley Street, Leeds, England, LS1 3AB",
     "gmaps_link": "https://maps.google.com/?q=53.8001556,-1.5486909",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cardiff-library-01",
+    "name": "Cardiff Central Library",
+    "type": "library",
+    "city": "cardiff",
+    "lat": 51.477871,
+    "lng": -3.1753601,
+    "address": "Mill Lane, Cardiff, Cymru / Wales, CF10 1FL",
+    "gmaps_link": "https://maps.google.com/?q=51.477871,-3.1753601",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "belfast-library-01",
+    "name": "Belfast Central Library",
+    "type": "library",
+    "city": "belfast",
+    "lat": 54.603048,
+    "lng": -5.9314325,
+    "address": "Kent Street, Ravenhill, Northern Ireland / Tuaisceart \u00c9ireann, BT1 2JA",
+    "gmaps_link": "https://maps.google.com/?q=54.603048,-5.9314325",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "cambridge-library-01",
+    "name": "Cambridge University Library",
+    "type": "library",
+    "city": "cambridge",
+    "lat": 52.2050721,
+    "lng": 0.1077249,
+    "address": "West Road, Cambridge, England, CB3 9DR",
+    "gmaps_link": "https://maps.google.com/?q=52.2050721,0.1077249",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "norwich-library-01",
+    "name": "Norfolk and Norwich Millennium Library",
+    "type": "library",
+    "city": "norwich",
+    "lat": 52.6277308,
+    "lng": 1.2909467,
+    "address": "Millennium Plain, Norwich, England, NR2 1AW",
+    "gmaps_link": "https://maps.google.com/?q=52.6277308,1.2909467",
+    "added_by": "shauryagangrade"
   }
 ]
