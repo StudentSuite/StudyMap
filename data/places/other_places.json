@@ -1417,5 +1417,38 @@
     "address": "2199 South University Boulevard, Denver, Colorado, 80208",
     "gmaps_link": "https://maps.google.com/?q=39.6766157,-104.9623745",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "portland-other_places-01",
+    "name": "Portland State University",
+    "type": "other_places",
+    "city": "portland",
+    "lat": 45.5118121,
+    "lng": -122.686121,
+    "address": "1825 Southwest Broadway, Portland, Oregon, 97201",
+    "gmaps_link": "https://maps.google.com/?q=45.5118121,-122.686121",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "san_diego-other_places-01",
+    "name": "San Diego State University",
+    "type": "other_places",
+    "city": "san_diego",
+    "lat": 32.7761529,
+    "lng": -117.0733037,
+    "address": "1 Campanile Mall, San Diego, California, 92182",
+    "gmaps_link": "https://maps.google.com/?q=32.7761529,-117.0733037",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "houston-other_places-01",
+    "name": "University of Houston",
+    "type": "other_places",
+    "city": "houston",
+    "lat": 29.7207902,
+    "lng": -95.3440627,
+    "address": "4800 Calhoun Road, Houston, Texas, 77004",
+    "gmaps_link": "https://maps.google.com/?q=29.7207902,-95.3440627",
+    "added_by": "shauryagangrade"
   }
 ]

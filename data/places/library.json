@@ -3903,5 +3903,38 @@
     "address": "3003 Coronado Avenue, San Diego, California, 92154",
     "gmaps_link": "https://maps.google.com/?q=32.5767195,-117.0680151",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "dallas-library-01",
+    "name": "Dallas Public Library Lochwood Branch",
+    "type": "library",
+    "city": "dallas",
+    "lat": 32.848412,
+    "lng": -96.6882685,
+    "address": "11221 Lochwood Boulevard, Dallas, Texas, 75218",
+    "gmaps_link": "https://maps.google.com/?q=32.848412,-96.6882685",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "atlanta-library-01",
+    "name": "Atlanta Central Library",
+    "type": "library",
+    "city": "atlanta",
+    "lat": 33.7577445,
+    "lng": -84.3884598,
+    "address": "1;ONE Margaret Mitchell Square, Atlanta, Georgia, 30303",
+    "gmaps_link": "https://maps.google.com/?q=33.7577445,-84.3884598",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "miami-library-01",
+    "name": "Miami-Dade County Public Library - Main Branch",
+    "type": "library",
+    "city": "miami",
+    "lat": 25.7745503,
+    "lng": -80.1973379,
+    "address": "101 West Flagler Street, Miami, Florida, 33130",
+    "gmaps_link": "https://maps.google.com/?q=25.7745503,-80.1973379",
+    "added_by": "shauryagangrade"
   }
 ]

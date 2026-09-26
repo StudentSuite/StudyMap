@@ -3980,5 +3980,49 @@
     "address": "80 George Square, Glasgow, Alba / Scotland, G2 1DU",
     "gmaps_link": "https://maps.google.com/?q=55.8609898,-4.2487742",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "leeds-gov_offices-01",
+    "name": "Leeds Civic Hall",
+    "type": "gov_offices",
+    "city": "leeds",
+    "lat": 53.8022966,
+    "lng": -1.5484727,
+    "address": "Calverley Street, Leeds, England, LS1 1UR",
+    "gmaps_link": "https://maps.google.com/?q=53.8022966,-1.5484727",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "sheffield-gov_offices-01",
+    "name": "Sheffield Town Hall",
+    "type": "gov_offices",
+    "city": "sheffield",
+    "lat": 53.3803683,
+    "lng": -1.4697009,
+    "address": "Norfolk Street, Sheffield, England, S1 2LG",
+    "gmaps_link": "https://maps.google.com/?q=53.3803683,-1.4697009",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "liverpool-gov_offices-01",
+    "name": "Liverpool Town Hall",
+    "type": "gov_offices",
+    "city": "liverpool",
+    "lat": 53.407123,
+    "lng": -2.9916078,
+    "address": "High Street, Liverpool, England, L2 3SW",
+    "gmaps_link": "https://maps.google.com/?q=53.407123,-2.9916078",
+    "added_by": "shauryagangrade"
+  },
+  {
+    "id": "bradford-gov_offices-01",
+    "name": "Bradford City Hall",
+    "type": "gov_offices",
+    "city": "bradford",
+    "lat": 53.7924378,
+    "lng": -1.7533923,
+    "address": "Norfolk Gardens, Bradford, England, BD1 9SH",
+    "gmaps_link": "https://maps.google.com/?q=53.7924378,-1.7533923",
+    "added_by": "shauryagangrade"
   }
 ]
