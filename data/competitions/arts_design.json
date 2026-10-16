@@ -506,5 +506,46 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-08-01"
+  },
+  {
+    "id": "isac-international-junior-music-competition",
+    "name": "3rd ISAC International Junior Music Competition (2027)",
+    "organizer": "Ise-Shima Art Company Co., Ltd.",
+    "organizer_url": "https://en.iseshimaart.com/",
+    "category": "arts_design",
+    "subjects": [
+      "music",
+      "instrumental performance",
+      "solo voice"
+    ],
+    "description": "Musicians aged 3 to 17 worldwide submit one uninterrupted performance video lasting 30 seconds to 10 minutes, on any instrument or in solo voice. The entry fee is JPY 5,000 per performance through 17 January 2027, rising to JPY 7,000 from 18 January; an optional written jury report costs another JPY 3,000. Entry requires prior parent or guardian consent and an application by that person or an authorised teacher.",
+    "format": "online",
+    "age_min": 3,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 5000,
+      "currency": "JPY"
+    },
+    "prize": "Every valid entry receives Gold, Silver, Bronze or an Encouragement Prize; Gold, Silver and Bronze include mailed paper certificates, and Encouragement includes a PDF certificate. No cash prizes.",
+    "official_url": "https://en.iseshimaart.com/competition-for-youngmusicians",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application and payment deadline at 23:59 GMT",
+        "date": "2027-01-31",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.iseshimaart.com/_files/ugd/06233c_7047604dd8224c05b504add7857eea97.pdf"
+      }
+    ],
+    "added_by": "kobayashisumio-hub",
+    "verified": {
+      "by": "kobayashisumio-hub",
+      "on": "2026-10-05"
+    },
+    "valid_till": "2027-02-01"
   }
 ]
