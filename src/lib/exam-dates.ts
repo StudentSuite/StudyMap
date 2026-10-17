@@ -73,6 +73,7 @@ export const EXAM_EVENTS: ExamEvent[] = [
     examEnd: "2026-10-03",
     results: "2026-10-16",
     confirmed: true,
+    archived: true,
     source: {
       label: "College Board: SAT dates and deadlines",
       url: "https://satsuite.collegeboard.org/sat/dates-deadlines",
