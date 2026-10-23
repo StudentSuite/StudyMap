@@ -77,6 +77,14 @@ function pinIcon(color: string): L.DivIcon {
   });
 }
 
+/** True when the visitor has asked for reduced motion. Guarded for SSR and jsdom. */
+function prefersReducedMotion(): boolean {
+  if (typeof window === "undefined" || typeof window.matchMedia !== "function") {
+    return false;
+  }
+  return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+}
+
 function boundsToBbox(bounds: L.LatLngBounds): [number, number, number, number] {
   return [bounds.getWest(), bounds.getSouth(), bounds.getEast(), bounds.getNorth()];
 }
@@ -152,7 +160,10 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
                     index.getClusterExpansionZoom(clusterId),
                     18,
                   );
-                  map.flyTo([lat, lng], expansionZoom, { duration: 0.5 });
+                  map.flyTo([lat, lng], expansionZoom, {
+                    duration: 0.5,
+                    animate: !prefersReducedMotion(),
+                  });
                 },
                 keydown: (e) => {
                   if (e.originalEvent.key !== "Enter" && e.originalEvent.key !== " ")
@@ -162,7 +173,10 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
                     index.getClusterExpansionZoom(clusterId),
                     18,
                   );
-                  map.flyTo([lat, lng], expansionZoom, { duration: 0.5 });
+                  map.flyTo([lat, lng], expansionZoom, {
+                    duration: 0.5,
+                    animate: !prefersReducedMotion(),
+                  });
                 },
               }}
             />
@@ -263,7 +277,7 @@ function ClosePopupOnTrigger({ trigger }: { trigger: number }) {
 function FlyToUser({ lat, lng }: { lat: number; lng: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo([lat, lng], 14, { duration: 1 });
+    map.flyTo([lat, lng], 14, { duration: 1, animate: !prefersReducedMotion() });
   }, [map, lat, lng]);
   return null;
 }
@@ -272,7 +286,7 @@ function FlyToUser({ lat, lng }: { lat: number; lng: number }) {
 function FlyToPlace({ id, lat, lng }: { id: string; lat: number; lng: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo([lat, lng], 15, { duration: 1 });
+    map.flyTo([lat, lng], 15, { duration: 1, animate: !prefersReducedMotion() });
   }, [map, id, lat, lng]);
   return null;
 }
@@ -307,7 +321,12 @@ function FlyToBounds({ bounds }: { bounds: Bounds }) {
         [bounds.minLat, bounds.minLng],
         [bounds.maxLat, bounds.maxLng],
       ],
-      { padding: [48, 48], duration: 1, maxZoom: 15 },
+      {
+        padding: [48, 48],
+        duration: 1,
+        maxZoom: 15,
+        animate: !prefersReducedMotion(),
+      },
     );
   }, [map, bounds]);
   return null;
@@ -458,6 +477,7 @@ export default function MapView({
   }
 
   const focusPlace = focusId ? places.find((place) => place.id === focusId) : undefined;
+  const reduceMotion = prefersReducedMotion();
 
   // Same colorful MapTiler "streets" style in both themes — every dark-mode
   // map style (CARTO, MapTiler, Mapbox alike) is conventionally muted for
@@ -486,6 +506,9 @@ export default function MapView({
         zoomControl={interactive}
         attributionControl={interactive}
         closePopupOnClick={false}
+        zoomAnimation={!reduceMotion}
+        fadeAnimation={!reduceMotion}
+        markerZoomAnimation={!reduceMotion}
         className="size-full"
       >
         <TileLayer
