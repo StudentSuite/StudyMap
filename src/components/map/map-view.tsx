@@ -175,6 +175,7 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
           <Marker
             key={place.id}
             position={[lat, lng]}
+            title={`${place.name}, ${PLACE_TYPE_LABELS[place.type]}`}
             icon={pinIcon(PLACE_TYPE_COLORS[place.type])}
             eventHandlers={{
               click: (e) => {
