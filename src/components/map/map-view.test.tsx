@@ -84,6 +84,8 @@ describe("MapView configuration", () => {
       />,
     );
 
-    expect(screen.getByRole("button", { name: /Heathrow Airport, Airport/ })).toBeTruthy();
+    expect(
+      screen.getByRole("button", { name: /Heathrow Airport, Airport/ }),
+    ).toBeTruthy();
   });
 });
