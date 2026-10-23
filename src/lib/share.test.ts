@@ -10,6 +10,7 @@ import {
 const emptyState: MapShareState = {
   types: [],
   city: null,
+  query: "",
   placeId: null,
   lat: null,
   lng: null,
@@ -21,6 +22,7 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
     const state: MapShareState = {
       types: ["library", "sat_centre"],
       city: "mumbai",
+      query: "library",
       placeId: "mum-library-01",
       lat: 19.076,
       lng: 72.8777,
@@ -33,6 +35,27 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
   it("round-trips an empty state as an empty query string", () => {
     expect(mapStateToSearch(emptyState)).toBe("");
     expect(parseMapState("")).toEqual(emptyState);
+  });
+
+  it("reads a query supplied by a direct map link", () => {
+    expect(parseMapState("?q=library")).toEqual({
+      ...emptyState,
+      query: "library",
+    });
+  });
+
+  it.each(["", "library", "C++ & books #1? 50%", "図書館 café", "  library  ", "   "])(
+    "round-trips the search query %j without changing its text",
+    (query) => {
+      const search = mapStateToSearch({ ...emptyState, query });
+      expect(new URLSearchParams(search).get("q")).toBe(query || null);
+      expect(parseMapState(search)).toEqual({ ...emptyState, query });
+    },
+  );
+
+  it("treats an explicitly empty query like an absent query", () => {
+    expect(parseMapState("?q=")).toEqual(emptyState);
+    expect(mapStateToSearch(parseMapState("?q="))).toBe("");
   });
 
   it("drops unknown place types when parsing", () => {
@@ -111,6 +134,13 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
 });
 
 describe("buildShareUrl", () => {
+  it("includes an encoded search query in the copied link", () => {
+    const query = "C++ & 図書館";
+    const url = new URL(buildShareUrl({ ...emptyState, query }));
+    expect(url.searchParams.get("q")).toBe(query);
+    expect(parseMapState(url.search).query).toBe(query);
+  });
+
   it("builds an absolute URL from the current origin and pathname", () => {
     const url = buildShareUrl({
       ...emptyState,

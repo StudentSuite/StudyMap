@@ -27,6 +27,7 @@ export function PinPopup({ place }: PinPopupProps) {
     const url = buildShareUrl({
       types: [],
       city: null,
+      query: "",
       placeId: place.id,
       lat: place.lat,
       lng: place.lng,

@@ -56,15 +56,11 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>(() => {
     if (typeof window === "undefined") return { types: [], city: null, query: "" };
     const state = parseMapState(window.location.search);
-    // "q" is a plain search-term param (distinct from the filter state
-    // mirrored via replaceState below): it's how the nav search's "see all
-    // places" link and any other direct link hand off a free-text query.
-    const q = new URLSearchParams(window.location.search).get("q") ?? "";
-    return { types: state.types, city: state.city, query: q };
+    return { types: state.types, city: state.city, query: state.query };
   });
   const [debouncedQuery, setDebouncedQuery] = React.useState(() => {
     if (typeof window === "undefined") return "";
-    return new URLSearchParams(window.location.search).get("q") ?? "";
+    return parseMapState(window.location.search).query;
   });
   const [focusId, setFocusId] = React.useState<string | null>(() => {
     if (typeof window === "undefined") return null;
@@ -184,13 +180,14 @@ export function PlacesMap({ places }: PlacesMapProps) {
     const search = mapStateToSearch({
       types: filters.types,
       city: filters.city,
+      query: debouncedQuery,
       placeId: focusId,
       lat: viewport?.lat ?? null,
       lng: viewport?.lng ?? null,
       zoom: viewport?.zoom ?? null,
     });
     window.history.replaceState(null, "", `${window.location.pathname}${search}`);
-  }, [filters, focusId, viewport]);
+  }, [filters.types, filters.city, debouncedQuery, focusId, viewport]);
 
   const visible = React.useMemo(
     () =>
@@ -263,6 +260,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     const url = buildShareUrl({
       types: filters.types,
       city: filters.city,
+      query: debouncedQuery,
       placeId: focusId,
       lat: viewport?.lat ?? null,
       lng: viewport?.lng ?? null,

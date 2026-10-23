@@ -4,6 +4,7 @@ import type { City, PlaceType } from "@/lib/types";
 export interface MapShareState {
   types: PlaceType[];
   city: City | null;
+  query: string;
   placeId: string | null;
   /** Optional viewport: map center coordinates and zoom level. */
   lat: number | null;
@@ -42,6 +43,7 @@ export function parseMapState(search: string): MapShareState {
   return {
     types: parseList(params.get("types"), TYPE_SET) as PlaceType[],
     city,
+    query: params.get("q") ?? "",
     placeId: params.get("place"),
     lat: hasViewport ? lat : null,
     lng: hasViewport ? lng : null,
@@ -54,6 +56,7 @@ export function mapStateToSearch(state: MapShareState): string {
   const params = new URLSearchParams();
   if (state.types.length) params.set("types", state.types.join(","));
   if (state.city) params.set("city", state.city);
+  if (state.query) params.set("q", state.query);
   if (state.placeId) params.set("place", state.placeId);
   if (state.lat !== null && state.lng !== null) {
     params.set("lat", String(state.lat));
