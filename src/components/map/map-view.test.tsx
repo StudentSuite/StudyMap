@@ -3,6 +3,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import MapView from "@/components/map/map-view";
 
+const { flyTo } = vi.hoisted(() => ({ flyTo: vi.fn() }));
+
 vi.mock("react-leaflet", async () => {
   const React = await import("react");
   const map = {
@@ -15,6 +17,7 @@ vi.mock("react-leaflet", async () => {
     getZoom: () => 18,
     getContainer: () => document.createElement("div"),
     fitBounds: vi.fn(),
+    flyTo,
     scrollWheelZoom: { disable: vi.fn(), enable: vi.fn(), enabled: () => false },
     on: vi.fn(),
     off: vi.fn(),
@@ -87,5 +90,31 @@ describe("MapView configuration", () => {
     expect(
       screen.getByRole("button", { name: /Heathrow Airport, Airport/ }),
     ).toBeTruthy();
+  });
+
+  it("flies to the user without animation when prefers-reduced-motion is set", () => {
+    vi.stubEnv("NEXT_PUBLIC_MAPTILER_KEY", "test-key");
+    vi.stubGlobal(
+      "ResizeObserver",
+      class {
+        observe() {}
+        disconnect() {}
+      },
+    );
+    vi.stubGlobal("matchMedia", (query: string) => ({
+      matches: query === "(prefers-reduced-motion: reduce)",
+      media: query,
+      addEventListener: () => undefined,
+      removeEventListener: () => undefined,
+    }));
+    flyTo.mockClear();
+
+    render(<MapView places={[]} userLocation={{ lat: 19.2, lng: 72.9 }} />);
+
+    expect(flyTo).toHaveBeenCalledWith(
+      [19.2, 72.9],
+      14,
+      expect.objectContaining({ animate: false }),
+    );
   });
 });
