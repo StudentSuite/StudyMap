@@ -92,3 +92,39 @@ export function placesByType(places: Place[]): [PlaceType, Place[]][] {
     ]) as [PlaceType, Place[]][]
   ).filter(([, grouped]) => grouped.length > 0);
 }
+
+/** Lower-case singular and plural nouns for each place type, used in sentences. */
+const PLACE_TYPE_NOUNS: Record<PlaceType, [singular: string, plural: string]> = {
+  library: ["library", "libraries"],
+  other_places: ["other place", "other places"],
+  airport: ["airport", "airports"],
+  sat_centre: ["SAT centre", "SAT centres"],
+  foreign_lang_exam_centre: [
+    "foreign language exam centre",
+    "foreign language exam centres",
+  ],
+  gov_offices: ["government office", "government offices"],
+};
+
+function joinWithAnd(parts: string[]): string {
+  if (parts.length <= 1) return parts.join("");
+  return `${parts.slice(0, -1).join(", ")} and ${parts[parts.length - 1]}`;
+}
+
+/**
+ * The meta description for a city page, built from what the city actually
+ * has: the total plus a count for each type present, and nothing for the
+ * types it lacks. A one-place city reads in the singular.
+ */
+export function cityMetaDescription(name: string, places: Place[]): string {
+  const counts = placesByType(places).map(([type, grouped]) => {
+    const [singular, plural] = PLACE_TYPE_NOUNS[type];
+    return `${grouped.length} ${grouped.length === 1 ? singular : plural}`;
+  });
+  const total = places.length;
+  const summary =
+    counts.length <= 1
+      ? (counts[0] ?? "no places yet")
+      : `${total} places (${joinWithAnd(counts)})`;
+  return `Student-important places in ${name}: ${summary}, on the crowdsourced StudyMap.`;
+}
