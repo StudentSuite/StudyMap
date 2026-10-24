@@ -31,6 +31,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- City page meta descriptions are built from what the city actually has, so a city with one library no longer says "1 exam centre", and a city with several types lists a count for each (#290).
+- The service worker no longer caches 404 or 500 pages, session-only routes (`/account`, `/login`, `/onboarding`, `/auth/*`, `/api/*`) or the one-time auth callback URL. Visited pages live in their own capped `studymap-pages-*` cache, so a bad response cannot overwrite a good cached copy and the precached shell is never evicted (#298).
+- The README quick start and `.env.example` now say the map needs a free MapTiler key and that the Supabase variables are optional, and the data walkthrough validates with `npm run validate`, the same check CI runs (#300).
 - Production builds no longer fail at random on `next/font/google`. The three typefaces (Inter, Space Grotesk, JetBrains Mono) are now self-hosted as variable `.woff2` latin subsets under `assets/fonts` and loaded with `next/font/local`, so `next build` never contacts Google Fonts. Google intermittently returns extensionless `/l/font?kit=…&skey=…` URLs that Next.js cannot resolve (vercel/next.js#99114), which broke the Turbopack build with `Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'` even with no font-related change in the commit.
 
 ## [2.4.0] - 2026-07-28
