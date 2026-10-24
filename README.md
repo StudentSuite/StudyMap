@@ -34,10 +34,11 @@ Search for a place, filter by category, and open a result to focus the map:
 
 ```bash
 npm install
+cp .env.example .env.local   # then set NEXT_PUBLIC_MAPTILER_KEY
 npm run dev
 ```
 
-Open http://localhost:3000. No environment variables needed; the map reads place data via `studymap.config.ts`, which imports it from `data/places/`.
+Open http://localhost:3000. The map needs a free MapTiler key: create one at [cloud.maptiler.com](https://cloud.maptiler.com/account/keys/) and put it in `.env.local` as `NEXT_PUBLIC_MAPTILER_KEY`, otherwise the map page shows "Basemap unavailable". The Supabase variables are optional and only needed for sign-in and saved places. The map reads place data via `studymap.config.ts`, which imports it from `data/places/`.
 
 ## Data schema
 
