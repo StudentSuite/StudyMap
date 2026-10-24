@@ -5,10 +5,17 @@ const VERSION = __STUDYMAP_BUILD_ID__;
 const APP_CACHE = `studymap-app-${VERSION}`;
 const TILE_CACHE = `studymap-tiles-${VERSION}`;
 const TILE_LIMIT = 300;
+// Pages a visitor has opened live in their own cache, apart from APP_CACHE, so
+// trimming them can never evict the precached "/", "/map" and "/offline".
+const PAGES_CACHE = `studymap-pages-${VERSION}`;
+const PAGES_LIMIT = 50;
+// Routes that only make sense for a signed-in session, plus the one-time auth
+// callback URL: never written to the cache.
+const UNCACHEABLE_PAGE_PATHS = ["/account", "/login", "/onboarding", "/auth", "/api"];
 const PRECACHE = ["/", "/map", "/offline", "/manifest.webmanifest"];
-const STUDYMAP_CACHE_PREFIXES = ["studymap-app-", "studymap-tiles-"];
+const STUDYMAP_CACHE_PREFIXES = ["studymap-app-", "studymap-tiles-", "studymap-pages-"];
 const LEGACY_CACHE_NAMES = new Set(["app-studymap-v1", "tiles-studymap-v1"]);
-const ACTIVE_CACHES = new Set([APP_CACHE, TILE_CACHE]);
+const ACTIVE_CACHES = new Set([APP_CACHE, TILE_CACHE, PAGES_CACHE]);
 
 function isStudyMapCache(name) {
   return (
@@ -67,6 +74,29 @@ function cacheTile(request, response) {
   return update;
 }
 
+// Same idea for visited pages: serialized writes, then a trim to PAGES_LIMIT.
+let pageMutationQueue = Promise.resolve();
+
+function cachePage(request, response) {
+  const update = pageMutationQueue.then(async () => {
+    const cache = await caches.open(PAGES_CACHE);
+    await cache.put(request, response);
+    await trimCache(PAGES_CACHE, PAGES_LIMIT);
+  });
+
+  pageMutationQueue = update.catch(() => {});
+  return update;
+}
+
+// Only a good, same-origin page response is worth keeping, and never one that
+// belongs to a session (account, login, onboarding, auth callback) or the API.
+function isCacheablePage(url, response) {
+  if (!response.ok || response.type !== "basic") return false;
+  return !UNCACHEABLE_PAGE_PATHS.some(
+    (path) => url.pathname === path || url.pathname.startsWith(path + "/"),
+  );
+}
+
 self.addEventListener("fetch", (event) => {
   const { request } = event;
   if (request.method !== "GET") return;
@@ -120,14 +150,23 @@ self.addEventListener("fetch", (event) => {
   if (request.mode === "navigate") {
     event.respondWith(
       (async () => {
-        const cache = await caches.open(APP_CACHE);
         try {
           const res = await fetch(request);
-          cache.put(request, res.clone());
+          if (isCacheablePage(url, res)) {
+            event.waitUntil(
+              cachePage(request, res.clone()).catch((err) =>
+                console.warn("[SW] Page cache update failed:", err),
+              ),
+            );
+          }
           return res;
         } catch {
-          const cached = await cache.match(request);
-          if (cached) return cached;
+          const pages = await caches.open(PAGES_CACHE);
+          const visited = await pages.match(request);
+          if (visited) return visited;
+          const cache = await caches.open(APP_CACHE);
+          const precached = await cache.match(request);
+          if (precached) return precached;
           const home = await cache.match("/");
           if (home) return home;
           const offline = await cache.match("/offline");

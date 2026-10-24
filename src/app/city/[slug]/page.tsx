@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { cityPageSlugs, findCityPage, placesByType } from "@/lib/city-pages";
+import {
+  cityMetaDescription,
+  cityPageSlugs,
+  findCityPage,
+  placesByType,
+} from "@/lib/city-pages";
 import { getPlaces } from "@/lib/places";
 import { placeJsonLdScript } from "@/lib/jsonld";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
@@ -31,7 +36,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   const name = humanizeCity(page.city);
   return {
     title: `${name} — student places`,
-    description: `Student-important places in ${name}: ${page.places.length} exam centre${page.places.length === 1 ? "" : "s"}, ${page.places.length === 1 ? "library" : "libraries"} and more, on the crowdsourced StudyMap.`,
+    description: cityMetaDescription(name, page.places),
   };
 }
 

@@ -81,8 +81,10 @@ Open `data/places/library.json` and append before the closing `]`:
 #### Step 5 - validate
 
 ```bash
-node -e "const d = require('./data/places/library.json'); console.log('Total:', d.length); const ids = d.map(e=>e.id); console.log('Dups:', ids.filter((id,i)=>ids.indexOf(id)!==i).length||'none');"
+npm run validate
 ```
+
+This is the same check CI runs. The last line should be `Validation passed`.
 
 #### Step 6 - confirm the pin appears
 
