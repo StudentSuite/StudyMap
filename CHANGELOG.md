@@ -29,6 +29,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - The "Best viewed at 75% browser zoom" pill, now that the sidebar density problem it was working around is fixed.
 
+### Fixed
+
+- Production builds no longer fail at random on `next/font/google`. The three typefaces (Inter, Space Grotesk, JetBrains Mono) are now self-hosted as variable `.woff2` latin subsets under `assets/fonts` and loaded with `next/font/local`, so `next build` never contacts Google Fonts. Google intermittently returns extensionless `/l/font?kit=…&skey=…` URLs that Next.js cannot resolve (vercel/next.js#99114), which broke the Turbopack build with `Module not found: Can't resolve '@vercel/turbopack-next/internal/font/google/font'` even with no font-related change in the commit.
+
 ## [2.4.0] - 2026-07-28
 
 ### Added

@@ -198,7 +198,7 @@ Pure TypeScript modules. No JSX, no React imports. Each file has a single respon
 | `share.ts`                                 | URL state encode/decode for shareable filtered map links                                             |
 | `site.ts`                                  | Site name, tagline, repo URL, nav link list                                                          |
 | `exam-dates.ts`                            | `EXAM_EVENTS` array with SAT/IB/IGCSE session data                                                   |
-| `fonts.ts`                                 | next/font setup (Inter, Space Grotesk, JetBrains Mono)                                               |
+| `fonts.ts`                                 | self-hosted `next/font/local` + bundled latin .woff2 subsets (Inter, Space Grotesk, JetBrains Mono)  |
 | `utils.ts`                                 | `cn()` — clsx + tailwind-merge helper; `isMissingTableError()` — detects an unrun Supabase migration |
 | `user-places.ts`                           | CRUD for saved places + home location (`user_places`, `user_home` tables)                            |
 | `user-events.ts`                           | CRUD for personal calendar events (`user_events` table)                                              |
