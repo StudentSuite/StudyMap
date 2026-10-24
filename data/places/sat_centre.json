@@ -735,7 +735,7 @@
     "lat": 49.2664546,
     "lng": -123.1995519,
     "address": "4125 WEST 8TH AVENUE, WEST POINT GREY, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2664546,-123.1995519",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -748,7 +748,7 @@
     "lat": 43.6691521,
     "lng": -79.4008932,
     "address": "186 ST GEORGE STREET, ANNEX, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.6691521,-79.4008932",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -761,7 +761,7 @@
     "lat": 45.4861861,
     "lng": -73.5973938,
     "address": "95 CHEMIN DE LA COTE-SAINT-ANTOINE, WESTMOUNT, MONTREAL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=45.4861861,-73.5973938",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -774,7 +774,7 @@
     "lat": 43.8496817,
     "lng": -79.3678496,
     "address": "7050 WOODBINE AVENUE, SUITE 300, MARKHAM",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.8496817,-79.3678496",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -787,7 +787,7 @@
     "lat": 43.7474438,
     "lng": -79.3548278,
     "address": "250 LESMILL ROAD, DON MILLS, NORTH YORK",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.7474438,-79.3548278",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -800,7 +800,7 @@
     "lat": 43.7732526,
     "lng": -79.3376196,
     "address": "285 EGLINTON AVENUE EAST, YONGE-EGLINTON, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.7732526,-79.3376196",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -813,7 +813,7 @@
     "lat": 43.8147405,
     "lng": -79.3046955,
     "address": "1051 McNICOLL AVENUE, SCARBOROUGH, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.8147405,-79.3046955",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -826,7 +826,7 @@
     "lat": 43.7570589,
     "lng": -79.3527135,
     "address": "150 LESMILL ROAD, DON MILLS, NORTH YORK",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.7570589,-79.3527135",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -839,7 +839,7 @@
     "lat": 43.7102223,
     "lng": -79.496158,
     "address": "200 RONSON DRIVE, SUITE 200, ETOBICOKE, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.7102223,-79.496158",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -852,7 +852,7 @@
     "lat": 49.2153812,
     "lng": -123.1413546,
     "address": "400-5750 OAK STREET, OAKRIDGE, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2153812,-123.1413546",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -865,7 +865,7 @@
     "lat": 50.6975319,
     "lng": -120.3680798,
     "address": "750 COTTONWOOD AVENUE, NORTH KAMLOOPS, KAMLOOPS",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=50.6975319,-120.3680798",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -878,7 +878,7 @@
     "lat": 43.8231047,
     "lng": -79.3054447,
     "address": "56 REDLEA AVENUE, KENNEDY & STEELES, SCARBOROUGH, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.8231047,-79.3054447",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -891,7 +891,7 @@
     "lat": 49.263407,
     "lng": -123.1381407,
     "address": "200-1490 WEST BROADWAY, FAIRVIEW, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.263407,-123.1381407",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -904,7 +904,7 @@
     "lat": 49.2825045,
     "lng": -123.0270265,
     "address": "250 SKEENA STREET, HASTINGS-SUNRISE, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2825045,-123.0270265",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -917,7 +917,7 @@
     "lat": 46.2641552,
     "lng": -63.1627791,
     "address": "50 KIRKDALE ROAD, WEST ROYALTY, CHARLOTTETOWN",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=46.2641552,-63.1627791",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -930,7 +930,7 @@
     "lat": 49.3604879,
     "lng": -123.1198006,
     "address": "70 MORVEN DRIVE, BRITISH PROPERTIES, WEST VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.3604879,-123.1198006",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -943,7 +943,7 @@
     "lat": 45.4709771,
     "lng": -73.6235071,
     "address": "4090 AVENUE ROYAL, NOTRE-DAME-DE-GRACE, MONTREAL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=45.4709771,-73.6235071",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -956,7 +956,7 @@
     "lat": 49.2633303,
     "lng": -123.1126367,
     "address": "300-1215 WEST BROADWAY, MOUNT PLEASANT, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2633303,-123.1126367",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -969,7 +969,7 @@
     "lat": 49.1699296,
     "lng": -123.1413588,
     "address": "7420 WESTMINSTER HIGHWAY, CITY CENTRE, RICHMOND",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.1699296,-123.1413588",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -982,7 +982,7 @@
     "lat": 43.8694221,
     "lng": -79.4127798,
     "address": "2 EAST BEAVER CREEK ROAD, BUILDING 4, RICHMOND HILL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.8694221,-79.4127798",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -995,7 +995,7 @@
     "lat": 49.3141556,
     "lng": -123.1008863,
     "address": "210-750 HAMILTON STREET, DOWNTOWN, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.3141556,-123.1008863",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1008,7 +1008,7 @@
     "lat": 43.8251971,
     "lng": -79.3071683,
     "address": "1001 DENISON STREET, SUITE 102, MARKHAM",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.8251971,-79.3071683",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1021,7 +1021,7 @@
     "lat": 49.2429397,
     "lng": -123.0556099,
     "address": "2439 SAINT LAWRENCE STREET, RENFREW-COLLINGWOOD, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2429397,-123.0556099",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1034,7 +1034,7 @@
     "lat": 49.2641592,
     "lng": -123.1238069,
     "address": "896 WEST 8TH AVENUE, FAIRVIEW, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2641592,-123.1238069",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1047,7 +1047,7 @@
     "lat": 49.2370679,
     "lng": -123.1218092,
     "address": "5350 BAILLIE STREET, SOUTH CAMBIE, VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.2370679,-123.1218092",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1060,7 +1060,7 @@
     "lat": 43.825787,
     "lng": -79.318624,
     "address": "7100 BIRCHMOUNT ROAD, MARKHAM",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.825787,-79.318624",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1073,7 +1073,7 @@
     "lat": 48.6593459,
     "lng": -123.6404242,
     "address": "1975 RENFREW ROAD, SHAWNIGAN LAKE, BC",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=48.6593459,-123.6404242",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1086,7 +1086,7 @@
     "lat": 44.3969581,
     "lng": -64.5447347,
     "address": "1485 KING STREET, BRIDGEWATER, NS",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=44.3969581,-64.5447347",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1099,7 +1099,7 @@
     "lat": 43.0323638,
     "lng": -81.1487638,
     "address": "361-365 RICHMOND STREET, DOWNTOWN, LONDON, ONTARIO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.0323638,-81.1487638",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1112,7 +1112,7 @@
     "lat": 43.7252286,
     "lng": -79.5146435,
     "address": "5 QUEENSLEA AVENUE, TORONTO",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=43.7252286,-79.5146435",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1125,7 +1125,7 @@
     "lat": 49.3496231,
     "lng": -123.1938643,
     "address": "2900 RODGERS CREEK LANE, WEST BAY, WEST VANCOUVER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=49.3496231,-123.1938643",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1138,7 +1138,7 @@
     "lat": 44.0051052,
     "lng": -79.4576821,
     "address": "205 SPARKS AVENUE, NORTH YORK",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=44.0051052,-79.4576821",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1151,7 +1151,7 @@
     "lat": 51.1288836,
     "lng": -114.1435625,
     "address": "33 EDGEVALLEY CIRCLE NW, EDGEMONT, CALGARY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=51.1288836,-114.1435625",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1164,7 +1164,7 @@
     "lat": 1.3900621,
     "lng": 103.9118416,
     "address": "27 PUNGGOL FIELD WALK,",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.3900621,103.9118416",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1177,7 +1177,7 @@
     "lat": 1.3456408,
     "lng": 103.7270781,
     "address": "7 JURONG WEST STREET 41",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.3456408,103.7270781",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1190,7 +1190,7 @@
     "lat": 1.3069073,
     "lng": 103.7662593,
     "address": "27 A JUBILEE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.3069073,103.7662593",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1203,7 +1203,7 @@
     "lat": 1.296998,
     "lng": 103.8554786,
     "address": "6 RAFFLES QUAY, #15-01, SINGAPORE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.296998,103.8554786",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1216,7 +1216,7 @@
     "lat": 1.3071636,
     "lng": 103.8325514,
     "address": "25 SCOTTS ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.3071636,103.8325514",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1229,7 +1229,7 @@
     "lat": 1.306331,
     "lng": 103.9052286,
     "address": "143 EAST COAST ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.306331,103.9052286",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1242,7 +1242,7 @@
     "lat": 1.3373112,
     "lng": 103.8688749,
     "address": "1 WOODLEIGH LANE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.3373112,103.8688749",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1255,7 +1255,7 @@
     "lat": 1.4236118,
     "lng": 103.8507149,
     "address": "2 YISHUN AVE 42",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=1.4236118,103.8507149",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1268,7 +1268,7 @@
     "lat": 40.7267734,
     "lng": -74.0474179,
     "address": "123 COLES STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7267734,-74.0474179",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1281,7 +1281,7 @@
     "lat": 34.2916838,
     "lng": -79.868981,
     "address": "49 FLATBUSH AVE EXTENSION",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=34.2916838,-79.868981",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1294,7 +1294,7 @@
     "lat": 40.8565215,
     "lng": -73.925785,
     "address": "549 AUDUBON AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8565215,-73.925785",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1307,7 +1307,7 @@
     "lat": 40.6717317,
     "lng": -74.1224728,
     "address": "BAYONNE HIGH SCHOOL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6717317,-74.1224728",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1320,7 +1320,7 @@
     "lat": 40.8912921,
     "lng": -74.0082769,
     "address": "100 ELIZABETH AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8912921,-74.0082769",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1333,7 +1333,7 @@
     "lat": 40.8174061,
     "lng": -74.1603537,
     "address": "300 FRANKLIN AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8174061,-74.1603537",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1346,7 +1346,7 @@
     "lat": 40.5825048,
     "lng": -73.9691682,
     "address": "OCEAN PKWY AND WEST AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.5825048,-73.9691682",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1359,7 +1359,7 @@
     "lat": 40.8694335,
     "lng": -74.1632282,
     "address": "333 COLFAX AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8694335,-74.1632282",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1372,7 +1372,7 @@
     "lat": 40.9282048,
     "lng": -74.0597182,
     "address": "99 E CENTURY RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.9282048,-74.0597182",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1385,7 +1385,7 @@
     "lat": 40.6583901,
     "lng": -74.2061151,
     "address": "600 PEARL ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6583901,-74.2061151",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1398,7 +1398,7 @@
     "lat": 39.4502507,
     "lng": -78.6965087,
     "address": "143-10 SPRINGFIELD BLVD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.4502507,-78.6965087",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1411,7 +1411,7 @@
     "lat": 40.6346958,
     "lng": -74.2651707,
     "address": "121 W ST GEORGE AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6346958,-74.2651707",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1424,7 +1424,7 @@
     "lat": 40.7931091,
     "lng": -73.7041413,
     "address": "200 MEMORIAL PLACE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7931091,-73.7041413",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1437,7 +1437,7 @@
     "lat": 40.6432375,
     "lng": -73.7091074,
     "address": "1170 PENINSULA BLVD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6432375,-73.7091074",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1450,7 +1450,7 @@
     "lat": 40.9308537,
     "lng": -74.2031663,
     "address": "45 REINHARDT RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.9308537,-74.2031663",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1463,7 +1463,7 @@
     "lat": 40.991998,
     "lng": -74.0782666,
     "address": "IMMACULATE HEART ACADEMY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.991998,-74.0782666",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1476,7 +1476,7 @@
     "lat": 41.009895,
     "lng": -73.9792094,
     "address": "100 CENTRAL AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.009895,-73.9792094",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1489,7 +1489,7 @@
     "lat": 40.6107079,
     "lng": -74.2940529,
     "address": "1012 MADISON AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6107079,-74.2940529",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1502,7 +1502,7 @@
     "lat": 40.8043401,
     "lng": -74.3751246,
     "address": "63 MT. PLEASANT AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8043401,-74.3751246",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1515,7 +1515,7 @@
     "lat": 40.972843,
     "lng": -74.2709328,
     "address": "970 BLACK OAK RIDGE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.972843,-74.2709328",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1528,7 +1528,7 @@
     "lat": 40.8937113,
     "lng": -74.3596404,
     "address": "100 HORSENECK ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8937113,-74.3596404",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1541,7 +1541,7 @@
     "lat": 41.0078755,
     "lng": -73.7534649,
     "address": "950 MAMARONECK AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.0078755,-73.7534649",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1554,7 +1554,7 @@
     "lat": 40.8141567,
     "lng": -74.4237522,
     "address": "165 WHIPPANY RD.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8141567,-74.4237522",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1567,7 +1567,7 @@
     "lat": 40.4020592,
     "lng": -74.0998076,
     "address": "63 TINDALL ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.4020592,-74.0998076",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1580,7 +1580,7 @@
     "lat": 40.652478,
     "lng": -74.4752306,
     "address": "108 STIRLING RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.652478,-74.4752306",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1593,7 +1593,7 @@
     "lat": 40.5539852,
     "lng": -82.8633406,
     "address": "50 BOULEVARD OF EAGLES",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.5539852,-82.8633406",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1606,7 +1606,7 @@
     "lat": 40.3822503,
     "lng": -74.1791235,
     "address": "36 CRAWFORDS CORNER",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3822503,-74.1791235",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1619,7 +1619,7 @@
     "lat": 40.5257,
     "lng": -74.42702,
     "address": "100 BEHMER RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.5257,-74.42702",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1632,7 +1632,7 @@
     "lat": 40.694251,
     "lng": -74.5462609,
     "address": "268 S. FINLEY AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.694251,-74.5462609",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1645,7 +1645,7 @@
     "lat": 40.8902545,
     "lng": -74.5292409,
     "address": "520 WEST MAIN STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8902545,-74.5292409",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1658,7 +1658,7 @@
     "lat": 40.7775675,
     "lng": -74.5912914,
     "address": "65 EAST MAIN STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7775675,-74.5912914",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1671,7 +1671,7 @@
     "lat": 40.4804877,
     "lng": -74.4808144,
     "address": "1000 SOMERSET STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.4804877,-74.4808144",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1684,7 +1684,7 @@
     "lat": 40.2899892,
     "lng": -73.9911995,
     "address": "404 INDIANA AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2899892,-73.9911995",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1697,7 +1697,7 @@
     "lat": 41.1753023,
     "lng": -73.7574932,
     "address": "70 ROARING BROOK ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.1753023,-73.7574932",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1710,7 +1710,7 @@
     "lat": 40.452812,
     "lng": -74.4686784,
     "address": "98 RAIDER ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.452812,-74.4686784",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1723,7 +1723,7 @@
     "lat": 41.0918673,
     "lng": -73.5655521,
     "address": "125 ROXBURY RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.0918673,-73.5655521",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1736,7 +1736,7 @@
     "lat": 41.1917153,
     "lng": -73.6777249,
     "address": "632 SOUTH BEDFORD RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.1917153,-73.6777249",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1749,7 +1749,7 @@
     "lat": 40.8098887,
     "lng": -74.7285184,
     "address": "259 BARTLEY ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8098887,-74.7285184",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1762,7 +1762,7 @@
     "lat": 40.3742324,
     "lng": -74.5641533,
     "address": "750 RIDGE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3742324,-74.5641533",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1775,7 +1775,7 @@
     "lat": 40.1685526,
     "lng": -74.061316,
     "address": "1630 EIGHTEENTH AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.1685526,-74.061316",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1788,7 +1788,7 @@
     "lat": 41.1345966,
     "lng": -73.3736769,
     "address": "1 SYLVAN RD N",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.1345966,-73.3736769",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1801,7 +1801,7 @@
     "lat": 40.7508139,
     "lng": -73.1829379,
     "address": "1 REDMEN STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7508139,-73.1829379",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1814,7 +1814,7 @@
     "lat": 40.2603454,
     "lng": -74.5325215,
     "address": "25 LESHIN LA",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2603454,-74.5325215",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1827,7 +1827,7 @@
     "lat": 41.3652189,
     "lng": -73.7569964,
     "address": "421 BALDWIN PLACE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3652189,-73.7569964",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1840,7 +1840,7 @@
     "lat": 40.7822501,
     "lng": -73.1418735,
     "address": "190 7TH ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7822501,-73.1418735",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1853,7 +1853,7 @@
     "lat": 40.3057962,
     "lng": -74.6185198,
     "address": "346 CLARKSVILLE RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3057962,-74.6185198",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1866,7 +1866,7 @@
     "lat": 41.0505459,
     "lng": -74.7599823,
     "address": "44 RYERSON AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.0505459,-74.7599823",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1879,7 +1879,7 @@
     "lat": 40.3363987,
     "lng": -74.685943,
     "address": "HUN SCHOOL OF PRINCETON",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3363987,-74.685943",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1892,7 +1892,7 @@
     "lat": 41.1996279,
     "lng": -74.6435007,
     "address": "299 PIDGEON HILL RD.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.1996279,-74.6435007",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1905,7 +1905,7 @@
     "lat": 40.9244922,
     "lng": -73.1307068,
     "address": "GAEBELEIN HALL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.9244922,-73.1307068",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1918,7 +1918,7 @@
     "lat": 40.6264865,
     "lng": -74.8846603,
     "address": "256 ROUTE 513",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6264865,-74.8846603",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1931,7 +1931,7 @@
     "lat": 41.108125,
     "lng": -74.7632896,
     "address": "77 HALSEY ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.108125,-74.7632896",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1944,7 +1944,7 @@
     "lat": 40.21956,
     "lng": -74.7421743,
     "address": "400 CHAMBERS STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.21956,-74.7421743",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1957,7 +1957,7 @@
     "lat": 39.9650996,
     "lng": -74.1419582,
     "address": "1225 RAIDER WAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9650996,-74.1419582",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1970,7 +1970,7 @@
     "lat": 40.0905156,
     "lng": -74.6894082,
     "address": "160 MANSFIELD RD E",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.0905156,-74.6894082",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1983,7 +1983,7 @@
     "lat": 40.1770351,
     "lng": -74.8420312,
     "address": "608 S. OLDS BLVD.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.1770351,-74.8420312",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -1996,7 +1996,7 @@
     "lat": 40.3393907,
     "lng": -75.0563485,
     "address": "2804 HOLICONG ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3393907,-75.0563485",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2009,7 +2009,7 @@
     "lat": 40.2134747,
     "lng": -74.9761325,
     "address": "2002 ROCK WAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2134747,-74.9761325",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2022,7 +2022,7 @@
     "lat": 40.1573999,
     "lng": -74.948559,
     "address": "2001 OLD LINCOLN HIGHWAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.1573999,-74.948559",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2035,7 +2035,7 @@
     "lat": 40.1128227,
     "lng": -74.9320253,
     "address": "4319 HULMEVILLE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.1128227,-74.9320253",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2048,7 +2048,7 @@
     "lat": 40.6870881,
     "lng": -75.2209532,
     "address": "2601 WILLIAM PENN HIGHWAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6870881,-75.2209532",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2061,7 +2061,7 @@
     "lat": 41.3166567,
     "lng": -72.9732752,
     "address": "986 FOREST ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3166567,-72.9732752",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2074,7 +2074,7 @@
     "lat": 39.9100023,
     "lng": -75.1818531,
     "address": "13500 PHILMONT AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9100023,-75.1818531",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2087,7 +2087,7 @@
     "lat": 40.0849962,
     "lng": -74.9863163,
     "address": "11201 ACADEMY ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.0849962,-74.9863163",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2100,7 +2100,7 @@
     "lat": 41.2871442,
     "lng": -72.8004775,
     "address": "185 E. MAIN ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.2871442,-72.8004775",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2113,7 +2113,7 @@
     "lat": 41.3299067,
     "lng": -72.8315353,
     "address": "35 WHEELBARROW LANE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3299067,-72.8315353",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2126,7 +2126,7 @@
     "lat": 39.9864472,
     "lng": -74.9423236,
     "address": "350 BRIDGEBORO RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9864472,-74.9423236",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2139,7 +2139,7 @@
     "lat": 39.986462,
     "lng": -75.0269057,
     "address": "800 HYLTON RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.986462,-75.0269057",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2152,7 +2152,7 @@
     "lat": 39.9470914,
     "lng": -75.0065641,
     "address": "180 FREDERICK AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9470914,-75.0065641",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2165,7 +2165,7 @@
     "lat": 39.8745176,
     "lng": -74.8969797,
     "address": "120 TOMLINSON MILL ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.8745176,-74.8969797",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2178,7 +2178,7 @@
     "lat": 41.3121628,
     "lng": -72.7118831,
     "address": "605 NEW ENGLAND RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3121628,-72.7118831",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2191,7 +2191,7 @@
     "lat": 42.4153945,
     "lng": -71.1507566,
     "address": "301 NORTH 4TH STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.4153945,-71.1507566",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2204,7 +2204,7 @@
     "lat": 41.1091861,
     "lng": -75.4223372,
     "address": "181 PANTHER LANE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.1091861,-75.4223372",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2217,7 +2217,7 @@
     "lat": 40.5333538,
     "lng": -75.5068369,
     "address": "500 MACUNGIE AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.5333538,-75.5068369",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2230,7 +2230,7 @@
     "lat": 39.981188,
     "lng": -75.1562828,
     "address": "WACHMAN HALL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.981188,-75.1562828",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2243,7 +2243,7 @@
     "lat": 39.6134778,
     "lng": -74.3593476,
     "address": "590 NUGENTOWN ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.6134778,-74.3593476",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2256,7 +2256,7 @@
     "lat": 40.0996521,
     "lng": -75.2701403,
     "address": "201 E GERMANTOWN PIKE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.0996521,-75.2701403",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2269,7 +2269,7 @@
     "lat": 41.2927581,
     "lng": -72.6199798,
     "address": "286 GREEN HILL RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.2927581,-72.6199798",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2282,7 +2282,7 @@
     "lat": 39.9360935,
     "lng": -75.0978668,
     "address": "1700 PARK BLVD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9360935,-75.0978668",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2295,7 +2295,7 @@
     "lat": 39.9019177,
     "lng": -75.0264654,
     "address": "901 HOPKINS RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9019177,-75.0264654",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2308,7 +2308,7 @@
     "lat": 39.9651344,
     "lng": -75.1633713,
     "address": "616 N. 15TH STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9651344,-75.1633713",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2321,7 +2321,7 @@
     "lat": 41.6622844,
     "lng": -72.9608052,
     "address": "BRISTOL CENTRAL HIGH SCHOOL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.6622844,-72.9608052",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2334,7 +2334,7 @@
     "lat": 39.9400517,
     "lng": -75.1615327,
     "address": "1100 CATHARINE STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9400517,-75.1615327",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2347,7 +2347,7 @@
     "lat": 41.6156735,
     "lng": -72.8611283,
     "address": "720 PLEASANT STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.6156735,-72.8611283",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2360,7 +2360,7 @@
     "lat": 39.9585868,
     "lng": -75.2194309,
     "address": "4901 CHESTNUT ST.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9585868,-75.2194309",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2373,7 +2373,7 @@
     "lat": 41.686179,
     "lng": -72.9221639,
     "address": "632 KING STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.686179,-72.9221639",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2386,7 +2386,7 @@
     "lat": 39.9517686,
     "lng": -75.2337218,
     "address": "5501 CEDAR AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9517686,-75.2337218",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2399,7 +2399,7 @@
     "lat": 39.9456682,
     "lng": -75.2715728,
     "address": "PENN WOOD HIGH SCHOOL",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9456682,-75.2715728",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2412,7 +2412,7 @@
     "lat": 39.7422698,
     "lng": -75.0767977,
     "address": "529 HURFFVILLE CROSS KEYS RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.7422698,-75.0767977",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2425,7 +2425,7 @@
     "lat": 39.9832196,
     "lng": -75.3795889,
     "address": "120 MEDIA LINE RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9832196,-75.3795889",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2438,7 +2438,7 @@
     "lat": 41.7506059,
     "lng": -72.8670521,
     "address": "10 MONTEITH DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.7506059,-72.8670521",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2451,7 +2451,7 @@
     "lat": 40.8346746,
     "lng": -75.7126453,
     "address": "1 INDIAN LANE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.8346746,-75.7126453",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2464,7 +2464,7 @@
     "lat": 39.8367596,
     "lng": -75.2447086,
     "address": "670 NORTH DELAWARE ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.8367596,-75.2447086",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2477,7 +2477,7 @@
     "lat": 40.2540364,
     "lng": -75.6349062,
     "address": "750 N WASHINGTON ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2540364,-75.6349062",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2490,7 +2490,7 @@
     "lat": 40.971827,
     "lng": -72.2002235,
     "address": "2 LONG LN",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.971827,-72.2002235",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2503,7 +2503,7 @@
     "lat": 39.5372313,
     "lng": -74.9176899,
     "address": "125 WEYMOUTH ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.5372313,-74.9176899",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2516,7 +2516,7 @@
     "lat": 41.7733158,
     "lng": -72.7016943,
     "address": "85 WOODLAND STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.7733158,-72.7016943",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2529,7 +2529,7 @@
     "lat": 39.500462,
     "lng": -74.8755484,
     "address": "611 CEDAR AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.500462,-74.8755484",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2542,7 +2542,7 @@
     "lat": 41.8721043,
     "lng": -72.8218051,
     "address": "34 FARMS VILLAGE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8721043,-72.8218051",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2555,7 +2555,7 @@
     "lat": 41.4180597,
     "lng": -75.6688145,
     "address": "63 MIKE MUNCHAK WAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.4180597,-75.6688145",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2568,7 +2568,7 @@
     "lat": 39.3961738,
     "lng": -74.6280052,
     "address": "24 HIGH SCHOOL DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.3961738,-74.6280052",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2581,7 +2581,7 @@
     "lat": 41.3034051,
     "lng": -75.7934878,
     "address": "5 STOUT ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3034051,-75.7934878",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2594,7 +2594,7 @@
     "lat": 39.3466888,
     "lng": -74.5775591,
     "address": "1301 OAK AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.3466888,-74.5775591",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2607,7 +2607,7 @@
     "lat": 41.3691291,
     "lng": -72.2126246,
     "address": "30 CHESTERFIELD ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3691291,-72.2126246",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2620,7 +2620,7 @@
     "lat": 41.8406924,
     "lng": -72.6393524,
     "address": "THE LOOMIS CHAFFEE SCH",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8406924,-72.6393524",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2633,7 +2633,7 @@
     "lat": 41.2665915,
     "lng": -75.8581274,
     "address": "2021 WOLFPACK WAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.2665915,-75.8581274",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2646,7 +2646,7 @@
     "lat": 40.5061969,
     "lng": -122.379165,
     "address": "801 NORTH 13TH STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.5061969,-122.379165",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2659,7 +2659,7 @@
     "lat": 41.7803878,
     "lng": -72.5165086,
     "address": "134 MIDDLE TPKE E",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.7803878,-72.5165086",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2672,7 +2672,7 @@
     "lat": 39.7166321,
     "lng": -75.4568593,
     "address": "334 HARDING HIGHWAY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.7166321,-75.4568593",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2685,7 +2685,7 @@
     "lat": 41.2636925,
     "lng": -75.8976969,
     "address": "201 NORTH SPRAGUE AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.2636925,-75.8976969",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2698,7 +2698,7 @@
     "lat": 39.2796505,
     "lng": -74.567832,
     "address": "501 ATLANTIC AVE.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.2796505,-74.567832",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2711,7 +2711,7 @@
     "lat": 41.8430824,
     "lng": -72.554088,
     "address": "161 NEVERS ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8430824,-72.554088",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2724,7 +2724,7 @@
     "lat": 41.2423013,
     "lng": -75.9500103,
     "address": "150 WADHAM ST.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.2423013,-75.9500103",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2737,7 +2737,7 @@
     "lat": 40.3237823,
     "lng": -75.9723906,
     "address": "630 EVANS AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3237823,-75.9723906",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2750,7 +2750,7 @@
     "lat": 39.4383625,
     "lng": -75.2450396,
     "address": "90 SILVER LAKE RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.4383625,-75.2450396",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2763,7 +2763,7 @@
     "lat": 40.3310768,
     "lng": -76.0014027,
     "address": "2601 GRANDVIEW BLVD.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3310768,-76.0014027",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2776,7 +2776,7 @@
     "lat": 42.3407198,
     "lng": -74.0621583,
     "address": "1301 RT 145",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.3407198,-74.0621583",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2789,7 +2789,7 @@
     "lat": 42.1459038,
     "lng": -72.7532376,
     "address": "177 MONTGOMERY RD.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.1459038,-72.7532376",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2802,7 +2802,7 @@
     "lat": 40.6809879,
     "lng": -76.2142287,
     "address": "1600 ELK AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6809879,-76.2142287",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2815,7 +2815,7 @@
     "lat": 42.1221074,
     "lng": -72.6415522,
     "address": "425 PIPER ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.1221074,-72.6415522",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2828,7 +2828,7 @@
     "lat": 41.3764766,
     "lng": -71.8205086,
     "address": "23 WARD AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.3764766,-71.8205086",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2841,7 +2841,7 @@
     "lat": 42.1771492,
     "lng": -72.5922541,
     "address": "617 MONTGOMERY ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.1771492,-72.5922541",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2854,7 +2854,7 @@
     "lat": 42.446513,
     "lng": -73.2482865,
     "address": "300 EAST STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.446513,-73.2482865",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2867,7 +2867,7 @@
     "lat": 42.1109204,
     "lng": -72.4456122,
     "address": "621 MAIN STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.1109204,-72.4456122",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2880,7 +2880,7 @@
     "lat": 39.6227262,
     "lng": -75.8343023,
     "address": "110 JAMES ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.6227262,-75.8343023",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2893,7 +2893,7 @@
     "lat": 40.6100881,
     "lng": -75.4612922,
     "address": "600 WEST FIFTH ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.6100881,-75.4612922",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2906,7 +2906,7 @@
     "lat": 39.8649764,
     "lng": -76.1585029,
     "address": "585 SOLANCO ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.8649764,-76.1585029",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2919,7 +2919,7 @@
     "lat": 42.6664838,
     "lng": -73.7830417,
     "address": "700 WASHINGTON AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.6664838,-73.7830417",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2932,7 +2932,7 @@
     "lat": 41.8606392,
     "lng": -71.8728032,
     "address": "226 PUTNAM PIKE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8606392,-71.8728032",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2945,7 +2945,7 @@
     "lat": 40.7814792,
     "lng": -76.5844037,
     "address": "2000 WEST STATE STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.7814792,-76.5844037",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2958,7 +2958,7 @@
     "lat": 42.3573309,
     "lng": -72.4781468,
     "address": "21 MATTOON ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.3573309,-72.4781468",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2971,7 +2971,7 @@
     "lat": 42.7128957,
     "lng": -73.6609939,
     "address": "285 PAWLING AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.7128957,-73.6609939",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2984,7 +2984,7 @@
     "lat": 42.7269465,
     "lng": -73.6716938,
     "address": "1950 BURDETT AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.7269465,-73.6716938",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -2997,7 +2997,7 @@
     "lat": 42.0860206,
     "lng": -76.0458193,
     "address": "205 WOODLAWN DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.0860206,-76.0458193",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3010,7 +3010,7 @@
     "lat": 42.0975869,
     "lng": -76.0482548,
     "address": "1200 E MAIN ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.0975869,-76.0482548",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3023,7 +3023,7 @@
     "lat": 39.5161727,
     "lng": -76.170309,
     "address": "251 PARADISE ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.5161727,-76.170309",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3036,7 +3036,7 @@
     "lat": 41.5567756,
     "lng": -71.4462957,
     "address": "150 FAIRWAY DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.5567756,-71.4462957",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3049,7 +3049,7 @@
     "lat": 41.6364372,
     "lng": -71.4846975,
     "address": "300 AVENGER DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.6364372,-71.4846975",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3062,7 +3062,7 @@
     "lat": 40.014487,
     "lng": -76.7005724,
     "address": "601 MUNDIS MILL ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.014487,-76.7005724",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3075,7 +3075,7 @@
     "lat": 39.9488471,
     "lng": -76.6932608,
     "address": "1800 HOLLYWOOD DRIVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.9488471,-76.6932608",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3088,7 +3088,7 @@
     "lat": 41.8289551,
     "lng": -71.3982766,
     "address": "216 HOPE STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8289551,-71.3982766",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3101,7 +3101,7 @@
     "lat": 41.8337138,
     "lng": -71.3981774,
     "address": "250 LLOYD AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8337138,-71.3981774",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3114,7 +3114,7 @@
     "lat": 41.7475264,
     "lng": -71.3206244,
     "address": "220 LINCOLN AVE.",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.7475264,-71.3206244",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3127,7 +3127,7 @@
     "lat": 42.9911348,
     "lng": -73.856715,
     "address": "220 BALLSTON AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.9911348,-73.856715",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3140,7 +3140,7 @@
     "lat": 41.8191751,
     "lng": -71.3536586,
     "address": "2000 PAWTUCKET AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.8191751,-71.3536586",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3153,7 +3153,7 @@
     "lat": 40.4744625,
     "lng": -74.3561302,
     "address": "331 W LOCKHART ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.4744625,-74.3561302",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3166,7 +3166,7 @@
     "lat": 40.2383449,
     "lng": -76.9262234,
     "address": "100 SOUTH 24TH STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2383449,-76.9262234",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3179,7 +3179,7 @@
     "lat": 42.1499388,
     "lng": -71.5347221,
     "address": "31 WEST FOUNTAIN ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.1499388,-71.5347221",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3192,7 +3192,7 @@
     "lat": 39.3916926,
     "lng": -76.4655726,
     "address": "4601 EBENEZER ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.3916926,-76.4655726",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3205,7 +3205,7 @@
     "lat": 40.2401413,
     "lng": -77.0615687,
     "address": "CV 9TH GRADE ACADEMY",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2401413,-77.0615687",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3218,7 +3218,7 @@
     "lat": 40.2870948,
     "lng": -78.9161878,
     "address": "509 E MAIN ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.2870948,-78.9161878",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3231,7 +3231,7 @@
     "lat": 39.5991294,
     "lng": -76.6596025,
     "address": "17301 YORK RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.5991294,-76.6596025",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3244,7 +3244,7 @@
     "lat": 42.8367243,
     "lng": -72.5612313,
     "address": "131 FAIRGROUND ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.8367243,-72.5612313",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3257,7 +3257,7 @@
     "lat": 39.387761,
     "lng": -76.5381127,
     "address": "2600 PUTTY HILL AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.387761,-76.5381127",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3270,7 +3270,7 @@
     "lat": 39.434581,
     "lng": -76.6102707,
     "address": "255 EAST PADONIA ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.434581,-76.6102707",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3283,7 +3283,7 @@
     "lat": 38.754806,
     "lng": -75.8283498,
     "address": "25320 RICHARDSON RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.754806,-75.8283498",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3296,7 +3296,7 @@
     "lat": 39.3602359,
     "lng": -76.6339251,
     "address": "5407 ROLAND AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.3602359,-76.6339251",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3309,7 +3309,7 @@
     "lat": 41.6436552,
     "lng": -70.9462274,
     "address": "230 HATHAWAY BLVD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.6436552,-70.9462274",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3322,7 +3322,7 @@
     "lat": 42.2759327,
     "lng": -71.3612744,
     "address": "15 WEST ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.2759327,-71.3612744",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3335,7 +3335,7 @@
     "lat": 42.3194299,
     "lng": -71.4034328,
     "address": "115 A STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.3194299,-71.4034328",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3348,7 +3348,7 @@
     "lat": 41.4970652,
     "lng": -93.4889877,
     "address": "623 W. PENN STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=41.4970652,-93.4889877",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3361,7 +3361,7 @@
     "lat": 42.0077782,
     "lng": -71.080471,
     "address": "250 FOUNDRY ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.0077782,-71.080471",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3374,7 +3374,7 @@
     "lat": 39.3958004,
     "lng": -76.776003,
     "address": "8600 MCDONOGH ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.3958004,-76.776003",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3387,7 +3387,7 @@
     "lat": 42.0550224,
     "lng": -71.1106931,
     "address": "100 LOTHROP ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.0550224,-71.1106931",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3400,7 +3400,7 @@
     "lat": 42.4551252,
     "lng": -76.4992514,
     "address": "1401 N CAYUGA ST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.4551252,-76.4992514",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3413,7 +3413,7 @@
     "lat": 40.3837487,
     "lng": -77.2997393,
     "address": "2608 SHERMANS VALLEY ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=40.3837487,-77.2997393",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3426,7 +3426,7 @@
     "lat": 38.7551404,
     "lng": -76.0653199,
     "address": "723 MECKLENBURG AVE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.7551404,-76.0653199",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3439,7 +3439,7 @@
     "lat": 38.3398883,
     "lng": -75.189871,
     "address": "9913 SEAHAWK ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.3398883,-75.189871",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3452,7 +3452,7 @@
     "lat": 39.0778397,
     "lng": -76.5589902,
     "address": "60 ROBINSON ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.0778397,-76.5589902",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3465,7 +3465,7 @@
     "lat": 39.5414903,
     "lng": -76.9924815,
     "address": "1225 WASHINGTON ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.5414903,-76.9924815",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3478,7 +3478,7 @@
     "lat": 42.2459278,
     "lng": -71.1621841,
     "address": "140 WHITING AVENUE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.2459278,-71.1621841",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3491,7 +3491,7 @@
     "lat": 39.4132532,
     "lng": -76.9527043,
     "address": "5855 BARTHOLOW RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.4132532,-76.9527043",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3504,7 +3504,7 @@
     "lat": 39.2060771,
     "lng": -76.8111898,
     "address": "6101 OLD DOBBIN LANE",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.2060771,-76.8111898",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3517,7 +3517,7 @@
     "lat": 38.9679472,
     "lng": -76.486463,
     "address": "2700 RIVA ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.9679472,-76.486463",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3530,7 +3530,7 @@
     "lat": 39.0963486,
     "lng": -76.6549097,
     "address": "1001 ANNAPOLIS ROAD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.0963486,-76.6549097",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3543,7 +3543,7 @@
     "lat": 39.2535592,
     "lng": -76.8702478,
     "address": "4300 CENTENNIAL LN",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.2535592,-76.8702478",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3556,7 +3556,7 @@
     "lat": 42.3322945,
     "lng": -71.1277832,
     "address": "115 GREENOUGH STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.3322945,-71.1277832",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3569,7 +3569,7 @@
     "lat": 39.5462601,
     "lng": -77.1026951,
     "address": "1000 GREEN VALLEY RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.5462601,-77.1026951",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3582,7 +3582,7 @@
     "lat": 42.4452046,
     "lng": -71.2340947,
     "address": "251 WALTHAM STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.4452046,-71.2340947",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3595,7 +3595,7 @@
     "lat": 39.216706,
     "lng": -76.8726735,
     "address": "5460 TRUMPETER RD",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=39.216706,-76.8726735",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3608,7 +3608,7 @@
     "lat": 38.9218557,
     "lng": -76.5600313,
     "address": "201 CENTRAL AVE EAST",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.9218557,-76.5600313",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3621,7 +3621,7 @@
     "lat": 38.3671033,
     "lng": -75.5815837,
     "address": "916 S SCHUMAKER DR",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=38.3671033,-75.5815837",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
@@ -3634,7 +3634,7 @@
     "lat": 42.3464136,
     "lng": -71.0851372,
     "address": "40 DALTON STREET",
-    "gmaps_link": "https://maps.google.com/?q=23.021537,72.580057",
+    "gmaps_link": "https://maps.google.com/?q=42.3464136,-71.0851372",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
