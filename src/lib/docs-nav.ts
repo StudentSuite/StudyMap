@@ -6,15 +6,20 @@ import {
   Database,
   Download,
   FileJson,
+  Code2,
+  Gauge,
   Gift,
   GitPullRequest,
   GraduationCap,
   History,
   Layers,
+  Lock,
   MapPin,
+  Milestone,
   MousePointerClick,
   Puzzle,
   Server,
+  ShieldCheck,
   Trophy,
   Wrench,
 } from "lucide-react";
@@ -122,6 +127,24 @@ export const docsNav: DocsNavEntry[] = [
     group: "Guides",
   },
   {
+    href: "/docs/verification-process",
+    title: "Verification & the Verified Badge",
+    description:
+      "How a place earns the Verified badge, how long it stays current, and how to re-check a stale one.",
+    icon: ShieldCheck,
+    iconClassName: "text-success",
+    group: "Guides",
+  },
+  {
+    href: "/docs/privacy-data",
+    title: "Privacy & Your Data",
+    description:
+      "What StudyMap stores when you sign in: saved places, home location, calendar events, competition saves, and how it's protected.",
+    icon: Lock,
+    iconClassName: "text-primary",
+    group: "Guides",
+  },
+  {
     href: "/docs/awesome-student-resources",
     title: "Awesome Student Resources",
     description:
@@ -199,6 +222,33 @@ export const docsNav: DocsNavEntry[] = [
     description:
       "Read the competitions dataset programmatically: GET /api/competitions, filters, pagination, and errors.",
     icon: Trophy,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/api-usage",
+    title: "API Usage & Limits",
+    description:
+      "What actually bounds the places and competitions APIs: pagination caps and response caching. No key, no rate limiting today.",
+    icon: Gauge,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/embedding-widget",
+    title: "Embedding the Map",
+    description:
+      "Drop a live StudyMap view on your own site with an <iframe>: get the code from the map's Embed button, or build the URL yourself.",
+    icon: Code2,
+    iconClassName: "text-primary",
+    group: "Developers",
+  },
+  {
+    href: "/docs/roadmap",
+    title: "Roadmap",
+    description:
+      "Where StudyMap is headed: what just shipped, what's thin and needs contributions, and how direction actually gets decided here.",
+    icon: Milestone,
     iconClassName: "text-primary",
     group: "Developers",
   },

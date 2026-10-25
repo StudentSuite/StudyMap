@@ -31,16 +31,24 @@
     "date": "2026-09-06",
     "readTime": "2 min read"
   },
+  "/docs/verification-process": {
+    "date": "2026-10-25",
+    "readTime": "2 min read"
+  },
+  "/docs/privacy-data": {
+    "date": "2026-10-25",
+    "readTime": "2 min read"
+  },
   "/docs/awesome-student-resources": {
-    "date": "2026-08-01",
+    "date": "2026-10-21",
     "readTime": "1 min read"
   },
   "/docs/awesome-study-resources": {
-    "date": "2026-08-01",
+    "date": "2026-10-21",
     "readTime": "1 min read"
   },
   "/docs/awesome-skills-plugins": {
-    "date": "2026-08-01",
+    "date": "2026-10-21",
     "readTime": "1 min read"
   },
   "/docs/contributing": {
@@ -66,6 +74,18 @@
   "/docs/competitions-api": {
     "date": "2026-09-06",
     "readTime": "4 min read"
+  },
+  "/docs/api-usage": {
+    "date": "2026-10-25",
+    "readTime": "2 min read"
+  },
+  "/docs/embedding-widget": {
+    "date": "2026-10-25",
+    "readTime": "2 min read"
+  },
+  "/docs/roadmap": {
+    "date": "2026-10-25",
+    "readTime": "2 min read"
   },
   "/docs/self-hosting": {
     "date": "2026-09-06",
