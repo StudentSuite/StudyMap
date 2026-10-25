@@ -6,8 +6,10 @@ import { site } from "@/lib/site";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { AppMain } from "@/components/layout/app-main";
 import { Toaster } from "@/components/ui/sonner";
 import { PwaRegister } from "@/components/pwa-register";
+import { OfflineBanner } from "@/components/system/offline-banner";
 import { Analytics } from "@/components/analytics";
 import { Analytics as VercelAnalytics } from "@vercel/analytics/next";
 import { cn } from "@/lib/utils";
@@ -98,9 +100,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main id="main-content" className="flex flex-1 flex-col pt-14">
-            {children}
-          </main>
+          <OfflineBanner />
+          <AppMain>{children}</AppMain>
           <Footer />
           <Toaster richColors position="top-center" />
           <PwaRegister />

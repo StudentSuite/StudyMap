@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { site } from "@/lib/site";
 
@@ -18,6 +21,10 @@ const legalLinks = [
 ];
 
 export function Footer() {
+  const pathname = usePathname();
+  // Same chrome-free rule as the navbar - see /docs/embedding-widget.
+  if (pathname.startsWith("/embed")) return null;
+
   return (
     // The `dark` class is deliberate and is not a theme bug: the footer is
     // always dark, in every theme. `.dark` in globals.css is a plain class

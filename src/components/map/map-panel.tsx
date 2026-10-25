@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { MapPinPlus, Search, Share2, X } from "lucide-react";
+import { Code2, MapPinPlus, Search, Share2, X } from "lucide-react";
 
 import type { City, PlaceType, Place } from "@/lib/types";
 import { humanizeCity } from "@/lib/types";
@@ -19,6 +19,7 @@ import { CategoryChips } from "@/components/map/category-chips";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
+import { EmbedWidgetDialog } from "@/components/map/embed-widget";
 import { ResultsList, type ResultRow } from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 import type { LatLng } from "@/lib/geo";
@@ -94,6 +95,7 @@ export function MapPanel({
   scrollChips = false,
 }: MapPanelProps) {
   const [suggestOpen, setSuggestOpen] = React.useState(false);
+  const [embedOpen, setEmbedOpen] = React.useState(false);
 
   const dirty = filters.types.length > 0 || !!filters.city || !!filters.query;
 
@@ -174,6 +176,16 @@ export function MapPanel({
             <Share2 className="size-4" />
             <span className="ml-1 hidden lg:inline">Share</span>
           </Button>
+          <Button
+            size="sm"
+            variant="outline"
+            className="h-8"
+            onClick={() => setEmbedOpen(true)}
+            aria-label="Get an embed code for this view"
+          >
+            <Code2 className="size-4" />
+            <span className="ml-1 hidden lg:inline">Embed</span>
+          </Button>
         </div>
       )}
 
@@ -209,6 +221,7 @@ export function MapPanel({
       />
 
       <SuggestPlaceDialog open={suggestOpen} onOpenChange={setSuggestOpen} />
+      <EmbedWidgetDialog open={embedOpen} onOpenChange={setEmbedOpen} />
     </div>
   );
 }

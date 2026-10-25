@@ -91,6 +91,10 @@ export function Navbar() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
+  // The embeddable map widget renders chrome-free in a third-party iframe -
+  // no nav, no sign-in, nothing account-aware. See /docs/embedding-widget.
+  if (pathname.startsWith("/embed")) return null;
+
   return (
     <header className="fixed top-0 inset-x-0 z-[1100] w-full border-b bg-background/95 backdrop-blur-sm supports-[backdrop-filter]:bg-background/80">
       <div className="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4">
