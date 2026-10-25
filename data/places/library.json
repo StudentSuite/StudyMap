@@ -5289,5 +5289,71 @@
     "address": "Soma Caddesi, Kasaplar Mahallesi, Altieylul, Balikesir, 10100, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.6403050,27.8803575",
     "added_by": "yakew7"
+  },
+  {
+    "id": "mel-library-01",
+    "name": "State Library Victoria",
+    "type": "library",
+    "city": "melbourne",
+    "lat": -37.8097696,
+    "lng": 144.9655352,
+    "address": "328 Swanston St, Melbourne VIC 3000, Australia",
+    "gmaps_link": "https://maps.google.com/?q=-37.8097696,144.9655352",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "cdmx-library-01",
+    "name": "Biblioteca Vasconcelos",
+    "type": "library",
+    "city": "mexico_city",
+    "lat": 19.4474857,
+    "lng": -99.150807,
+    "address": "Eje 1 Nte. S/N, Buenavista, Cuauhtemoc, 06350 CDMX, Mexico",
+    "gmaps_link": "https://maps.google.com/?q=19.4474857,-99.150807",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "bkk-library-01",
+    "name": "Neilson Hays Library",
+    "type": "library",
+    "city": "bangkok",
+    "lat": 13.7271053,
+    "lng": 100.5229655,
+    "address": "195 Surawong Rd, Bang Rak, Bangkok 10500, Thailand",
+    "gmaps_link": "https://maps.google.com/?q=13.7271053,100.5229655",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "hcm-library-01",
+    "name": "General Sciences Library",
+    "type": "library",
+    "city": "ho_chi_minh_city",
+    "lat": 10.7750889,
+    "lng": 106.6989299,
+    "address": "69 Ly Tu Trong, Ben Thanh, District 1, Ho Chi Minh City, Vietnam",
+    "gmaps_link": "https://maps.google.com/?q=10.7750889,106.6989299",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "tpe-library-01",
+    "name": "Taipei Public Main Library",
+    "type": "library",
+    "city": "taipei",
+    "lat": 25.0292374,
+    "lng": 121.5383324,
+    "address": "No. 125, Sec 2, Jianguo S Rd, Da'an Dist, Taipei 106, Taiwan",
+    "gmaps_link": "https://maps.google.com/?q=25.0292374,121.5383324",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "van-library-02",
+    "name": "Vancouver Public Library, Kitsilano Branch",
+    "type": "library",
+    "city": "vancouver",
+    "lat": 49.2647206,
+    "lng": -123.168715,
+    "address": "2425 Macdonald St, Vancouver BC V6K 2G6, Canada",
+    "gmaps_link": "https://maps.google.com/?q=49.2647206,-123.168715",
+    "added_by": "anaydhawan"
   }
 ]
