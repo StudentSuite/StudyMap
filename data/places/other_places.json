@@ -1769,5 +1769,16 @@
     "address": "Calle Oeste, San Juan de Lurigancho, Lima, 15423",
     "gmaps_link": "https://maps.google.com/?q=-11.9546373,-76.987467",
     "added_by": "shauryagangrade"
+  },
+  {
+    "id": "manila-other_places-02",
+    "name": "QBO Innovation Hub",
+    "type": "other_places",
+    "city": "manila",
+    "lat": 14.5557052,
+    "lng": 121.0179106,
+    "address": "11F, Zero-Ten Park, Frabelle Business Center, 111 Rada St, Legazpi Village, Makati City, 1229 Metro Manila, Philippines",
+    "gmaps_link": "https://maps.google.com/?q=14.5557052,121.0179106",
+    "added_by": "anaydhawan"
   }
 ]

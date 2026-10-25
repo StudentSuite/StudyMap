@@ -9664,5 +9664,18 @@
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"
+  },
+  {
+    "id": "74749",
+    "name": "DHA Suffa University",
+    "type": "sat_centre",
+    "city": "karachi",
+    "lat": 24.8146514,
+    "lng": 67.0799119,
+    "address": "Ph-VII, DG-78, Off Khayaban-e-Tufail Ext, Phase 7 Ext, Karachi, 75500, Pakistan",
+    "gmaps_link": "https://maps.google.com/?q=24.8146514,67.0799119",
+    "added_by": "anaydhawan",
+    "exam": "SAT",
+    "valid_till": "2026-11-07"
   }
 ]

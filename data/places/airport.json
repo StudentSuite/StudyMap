@@ -1252,5 +1252,38 @@
     "address": "Miami, FL 33122, USA",
     "gmaps_link": "https://maps.google.com/?q=25.7959,-80.2870",
     "added_by": "yakew7"
+  },
+  {
+    "id": "ruh-airport-01",
+    "name": "King Khalid International Airport",
+    "type": "airport",
+    "city": "riyadh",
+    "lat": 24.959443,
+    "lng": 46.7010829,
+    "address": "Airport Road, Riyadh, Saudi Arabia",
+    "gmaps_link": "https://maps.google.com/?q=24.959443,46.7010829",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "khi-airport-01",
+    "name": "Jinnah International Airport",
+    "type": "airport",
+    "city": "karachi",
+    "lat": 24.9007815,
+    "lng": 67.1681027,
+    "address": "Airport Road, Faisal Cantonment, Karachi, Pakistan",
+    "gmaps_link": "https://maps.google.com/?q=24.9007815,67.1681027",
+    "added_by": "anaydhawan"
+  },
+  {
+    "id": "dac-airport-01",
+    "name": "Hazrat Shahjalal International Airport",
+    "type": "airport",
+    "city": "dhaka",
+    "lat": 23.8434344,
+    "lng": 90.4029252,
+    "address": "Airport - Dakshinkhan Rd, Dhaka 1229, Bangladesh",
+    "gmaps_link": "https://maps.google.com/?q=23.8434344,90.4029252",
+    "added_by": "anaydhawan"
   }
 ]

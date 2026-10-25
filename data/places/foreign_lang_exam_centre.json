@@ -1006,5 +1006,65 @@
     "gmaps_link": "https://maps.google.com/?q=43.8452627,-79.379242",
     "added_by": "yakew7",
     "exam": "IELTS"
+  },
+  {
+    "id": "dac-foreign_lang_exam_centre-01",
+    "name": "Alliance Française de Dhaka",
+    "type": "foreign_lang_exam_centre",
+    "city": "dhaka",
+    "lat": 23.7407854,
+    "lng": 90.3827609,
+    "address": "Plot No 26, Road 3, Mirpur Rd, Dhaka 1205, Bangladesh",
+    "gmaps_link": "https://maps.google.com/?q=23.7407854,90.3827609",
+    "added_by": "anaydhawan",
+    "exam": "DELF"
+  },
+  {
+    "id": "khi-foreign_lang_exam_centre-01",
+    "name": "Goethe-Institut Karachi",
+    "type": "foreign_lang_exam_centre",
+    "city": "karachi",
+    "lat": 24.833072,
+    "lng": 67.0362317,
+    "address": "Plot ST-1, Kehkashan, Block 8 Clifton, Karachi, 75500, Pakistan",
+    "gmaps_link": "https://maps.google.com/?q=24.833072,67.0362317",
+    "added_by": "anaydhawan",
+    "exam": "Goethe-Zertifikat (A1-C2)"
+  },
+  {
+    "id": "sgn-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS - TP. HCM Lê Văn Sỹ",
+    "type": "foreign_lang_exam_centre",
+    "city": "ho_chi_minh_city",
+    "lat": 10.7946644,
+    "lng": 106.6678667,
+    "address": "226 Đ. Lê Văn Sỹ, Tân Sơn Hòa, Hồ Chí Minh 70000, Vietnam",
+    "gmaps_link": "https://maps.google.com/?q=10.7946644,106.6678667",
+    "added_by": "anaydhawan",
+    "exam": "IELTS"
+  },
+  {
+    "id": "bog-foreign_lang_exam_centre-01",
+    "name": "British Council Colombia - Sede Chicó",
+    "type": "foreign_lang_exam_centre",
+    "city": "bogota",
+    "lat": 4.6753859,
+    "lng": -74.0483262,
+    "address": "Chicó Sede Principal, Cra. 11a #93-35 piso 6, Bogotá, Colombia",
+    "gmaps_link": "https://maps.google.com/?q=4.6753859,-74.0483262",
+    "added_by": "anaydhawan",
+    "exam": "IELTS"
+  },
+  {
+    "id": "acc-foreign_lang_exam_centre-01",
+    "name": "British Council Accra",
+    "type": "foreign_lang_exam_centre",
+    "city": "accra",
+    "lat": 5.5560334,
+    "lng": -0.2013895,
+    "address": "Liberia Road, Accra, Ghana",
+    "gmaps_link": "https://maps.google.com/?q=5.5560334,-0.2013895",
+    "added_by": "anaydhawan",
+    "exam": "IELTS"
   }
 ]
