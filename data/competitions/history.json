@@ -422,5 +422,95 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "national-wwii-museum-student-writing-contest",
+    "name": "National WWII Museum Student Writing Contest",
+    "organizer": "The National WWII Museum",
+    "organizer_url": "https://www.nationalww2museum.org/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "poetry",
+      "World War II"
+    ],
+    "description": "An annual writing contest for US students in grades 7 to 12. The 2026-27 prompt asks students to write a sonnet, villanelle or free-verse poem about an everyday soldier's wartime experience. Entries are judged in junior (grades 7 to 9) and senior (grades 10 to 12) divisions, and the contest is open to public, private, parochial and home school students, including US citizens attending school overseas.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 750 for first place, USD 500 for second, USD 250 for third and USD 100 for honorable mentions in both the junior and senior divisions.",
+    "official_url": "https://www.nationalww2museum.org/students-teachers/school-programs/student-writing-contest",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest opens",
+        "date": "2026-10-26",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.nationalww2museum.org/students-teachers/school-programs/student-writing-contest"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2027-01-22",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://azstudentopportunityhub.org/opportunity/student-writing-contest-the-national-wwii-museum"
+      },
+      {
+        "label": "Winners notified",
+        "date": "2027-03-15",
+        "type": "results",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://www.nationalww2museum.org/students-teachers/school-programs/student-writing-contest"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-04-01"
+  },
+  {
+    "id": "wha-world-historian-student-essay-prize",
+    "name": "World Historian Student Essay Prize",
+    "organizer": "World History Association",
+    "organizer_url": "https://www.thewha.org/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "world history",
+      "essay writing"
+    ],
+    "description": "An international essay prize for K-12 students, who write about a personal or family connection to world history in approximately 1,000 words. The winner receives USD 500, a one-year World History Association membership and a certificate, and is honored at the WHA annual conference. The 2027 submission deadline will be announced in early November 2026.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 500 cash prize, a one-year World History Association membership, a certificate and consideration for publication in the World History Bulletin.",
+    "official_url": "https://www.thewha.org/prizes-awarded-by-the-wha",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Winner honored at WHA annual conference",
+        "date": "2027-06-28",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.thewha.org/2027-wha-annual-conference"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-07-01"
   }
 ]

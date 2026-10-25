@@ -366,5 +366,111 @@
     },
     "valid_till": "2027-02-01",
     "image": "/competitions/teen-ink-contests.png"
+  },
+  {
+    "id": "kenyon-review-patricia-grodd-poetry-prize",
+    "name": "Patricia Grodd Poetry Prize for Young Writers",
+    "organizer": "The Kenyon Review",
+    "organizer_url": "https://kenyonreview.org/",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "creative writing"
+    ],
+    "description": "An annual poetry contest for high school sophomores and juniors, run by The Kenyon Review. Entrants submit one unpublished poem, and the winner and runners-up are published in the journal.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in The Kenyon Review for the winner and runners-up, plus a full scholarship to a Kenyon Review Young Writers workshop for the winner.",
+    "official_url": "https://kenyonreview.org/submit/patricia-grodd/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Submissions open (recurring November window)",
+        "date": "2026-11-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://kenyonreview.org/submit/patricia-grodd/"
+      },
+      {
+        "label": "Submissions close (recurring November window)",
+        "date": "2026-11-30",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://thekenyonreview.submittable.com/submit/6852/the-patricia-grodd-poetry-prize-for-young-writers-open-only-to-high-school-sopho"
+      },
+      {
+        "label": "Winners announced (recurring March announcement)",
+        "date": "2027-03-15",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://kenyonreview.org/submit/patricia-grodd/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-03-31"
+  },
+  {
+    "id": "polyphony-lit-fall-contest",
+    "name": "Polyphony Lit Fall Contest",
+    "organizer": "Polyphony Lit",
+    "organizer_url": "https://www.polyphonylit.org/",
+    "category": "creative_writing",
+    "subjects": [
+      "creative writing",
+      "poetry",
+      "fiction",
+      "creative nonfiction"
+    ],
+    "description": "A seasonal contest for high school writers worldwide, with separate categories for poetry, fiction, and creative nonfiction. The first 200 submissions are free, and winners are published in Polyphony Lit and considered for its Claudia Ann Seaman Awards.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Publication in Polyphony Lit, editorial feedback, a full scholarship to Polyphony Lit's literary editor course, and eligibility for the Claudia Ann Seaman Awards, which pay USD 200 per genre winner.",
+    "official_url": "https://www.polyphonylit.org/copy-of-summer-contest-2026",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Fall contest submissions open (recurring October window)",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.polyphonylit.org/copy-of-summer-contest-2026"
+      },
+      {
+        "label": "Fall contest submissions close (recurring December window)",
+        "date": "2026-12-31",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.polyphonylit.org/copy-of-summer-contest-2026"
+      },
+      {
+        "label": "Claudia Ann Seaman Awards announced (estimated)",
+        "date": "2027-06-01",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.polyphonylit.org/claudia-ann-seaman-awards"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-06-01"
   }
 ]

@@ -495,7 +495,8 @@
     },
     "valid_till": "2027-03-01",
     "image": "/competitions/lockheed-martin-codequest.png"
-  },  {
+  },
+  {
     "id": "apex-high-school-ai-championship",
     "name": "Apex High School AI Championship",
     "organizer": "Correlation One (Apex America Initiative)",
@@ -542,5 +543,103 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-03-01"
+  },
+  {
+    "id": "canadian-computing-competition",
+    "name": "Canadian Computing Competition",
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "coding",
+    "subjects": [
+      "computer science",
+      "algorithms",
+      "programming"
+    ],
+    "description": "A school-administered programming contest with Junior and Senior divisions, each containing five problems to solve in three hours. Students submit code through the CCC Online Grader in C, C++, Python or Java. Top Senior participants can be invited to the Canadian Computing Olympiad, and the top 25 percent of scorers earn Certificates of Distinction.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 10,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Distinction for the top 25 percent of scorers; top Senior participants may be invited to the Canadian Computing Olympiad.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/ccc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest date in North and South America",
+        "date": "2027-02-17",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests"
+      },
+      {
+        "label": "Contest date outside North and South America",
+        "date": "2027-02-18",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests"
+      },
+      {
+        "label": "Ordering deadline",
+        "date": "2027-02-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-03-15"
+  },
+  {
+    "id": "congressional-app-challenge",
+    "name": "Congressional App Challenge",
+    "organizer": "Internet Education Foundation",
+    "organizer_url": "https://www.congressionalappchallenge.us/about/",
+    "category": "coding",
+    "subjects": [
+      "computer science",
+      "app development",
+      "coding"
+    ],
+    "description": "A district-level app competition hosted by members of the US House of Representatives. Middle and high school students can enter alone or in teams of up to four, building an app in any programming language or platform. Each district's winner is recognized by its representative, and winning apps may be displayed in the US Capitol for one year.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Winning teams are recognized by their member of Congress, and each winning app may be displayed in the US Capitol for one year; additional prizes may be available by district.",
+    "official_url": "https://www.congressionalappchallenge.us/rules/",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Registration and submission deadline",
+        "date": "2026-10-26",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.congressionalappchallenge.us/student-registration/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2026-12-15",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.congressionalappchallenge.us/rules/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-01-15"
   }
 ]

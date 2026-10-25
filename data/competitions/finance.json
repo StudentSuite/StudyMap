@@ -342,5 +342,95 @@
     },
     "valid_till": "2027-05-01",
     "image": "/competitions/fed-challenge-high-school.png"
+  },
+  {
+    "id": "euro-challenge-usa",
+    "name": "Euro Challenge US",
+    "organizer": "Delegation of the European Union to the United States",
+    "organizer_url": "https://www.euro-challenge.org/",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "finance",
+      "European studies"
+    ],
+    "description": "A team economics competition for US high school students in grades 9 and 10 that focuses on the euro area and European economic policy. Teams of at least three students analyze a real economic challenge and present recommendations to judges.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Top five teams receive Santander awards of USD 1,500, USD 1,000, USD 750, USD 500, and USD 250 per member; the top two teams also win a trip to Washington, D.C.",
+    "official_url": "https://www.euro-challenge.org/new-page-52",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Tri-State preliminary round, virtual",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.euro-challenge.org/usa-dates-copy"
+      },
+      {
+        "label": "Tri-State preliminary round, in person at TD Bank One Vanderbilt",
+        "date": "2027-03-19",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.euro-challenge.org/usa-dates-copy"
+      },
+      {
+        "label": "Semifinals and finals at TD Bank One Vanderbilt, New York City",
+        "date": "2027-04-19",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.euro-challenge.org/usa-dates-copy"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-04-19"
+  },
+  {
+    "id": "international-economics-olympiad",
+    "name": "International Economics Olympiad",
+    "organizer": "International Economics Olympiad Association",
+    "organizer_url": "https://ieo-official.org/",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "finance",
+      "business"
+    ],
+    "description": "An annual economics competition for high school students under 20, with national selection rounds leading to an international final. Contestants complete economics and finance multiple-choice and open questions plus a business case.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver, and bronze medals for individual results, team statuettes, and special prizes.",
+    "official_url": "https://ieo-official.org/national",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "International final (expected July or August 2027)",
+        "date": "2027-07-15",
+        "type": "round",
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://ieo-official.org/regulations"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-08-31"
   }
 ]

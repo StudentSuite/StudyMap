@@ -414,5 +414,112 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-05-04"
+  },
+  {
+    "id": "stockholm-junior-water-prize",
+    "name": "Stockholm Junior Water Prize",
+    "organizer": "Stockholm Water Foundation",
+    "organizer_url": "https://stockholmwaterfoundation.org/",
+    "category": "research",
+    "subjects": [
+      "water science",
+      "environmental science",
+      "research"
+    ],
+    "description": "An international water research competition for students aged 15 to 20 who are enrolled in secondary school. National winners are nominated to Stockholm, where they present projects on water quality, management, treatment, or education during World Water Week.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 20,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "The international winner receives USD 15,000 and a crystal sculpture; the winner's school receives USD 5,000.",
+    "official_url": "https://stockholmwaterfoundation.org/stockholm-junior-water-prize/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "International final and award ceremony during World Water Week (expected August 2027)",
+        "date": "2027-08-15",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://stockholmwaterfoundation.org/stockholm-junior-water-prize/engage/enter-competition/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-08-31"
+  },
+  {
+    "id": "the-earth-prize",
+    "name": "The Earth Prize",
+    "organizer": "The Earth Foundation",
+    "organizer_url": "https://theearthprize.org/",
+    "category": "research",
+    "subjects": [
+      "environmental science",
+      "sustainability",
+      "research",
+      "innovation"
+    ],
+    "description": "A global environmental sustainability competition for students aged 13 to 19, who work alone or in teams of up to five to develop a solution to an environmental problem. Teams submit a structured blueprint, and regional winners receive USD 10,000 to implement their ideas.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 104,500 total prize pool, including USD 10,000 for each of seven regional winners.",
+    "official_url": "https://www.theearthprize.org/competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration closes",
+        "date": "2027-01-10",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.theearthprize.org/rules"
+      },
+      {
+        "label": "Submissions close",
+        "date": "2027-01-31",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.theearthprize.org/rules"
+      },
+      {
+        "label": "Scholar teams announced",
+        "date": "2027-03-03",
+        "type": "results",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.theearthprize.org/rules"
+      },
+      {
+        "label": "Regional winners announced",
+        "date": "2027-05-09",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.theearthprize.org/rules"
+      },
+      {
+        "label": "Awards ceremony",
+        "date": "2027-05-28",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.theearthprize.org/rules"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-05-28"
   }
 ]

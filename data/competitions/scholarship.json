@@ -322,5 +322,111 @@
     },
     "valid_till": "2027-02-15",
     "image": "/competitions/ron-brown-scholar-program.png"
+  },
+  {
+    "id": "dell-scholars-program",
+    "name": "Dell Scholars Program",
+    "organizer": "Michael & Susan Dell Foundation",
+    "organizer_url": "https://www.dellscholars.org/",
+    "category": "scholarship",
+    "subjects": [
+      "scholarship",
+      "college readiness",
+      "financial aid"
+    ],
+    "description": "A scholarship and college-success program for Texas high school seniors who are Pell Grant eligible and plan to attend an accredited four-year public university in Texas. Dell Scholars receive USD 20,000, a laptop, book credits, emergency funds, and ongoing academic and career support.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 20,000 scholarship plus a laptop, book credits, emergency funds, and advising support.",
+    "official_url": "https://apply.dellscholars.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application opens",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.dellscholars.org/students/"
+      },
+      {
+        "label": "Application deadline",
+        "date": "2027-01-12",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.dellscholars.org/students/"
+      },
+      {
+        "label": "Finalists announced",
+        "date": "2027-01-21",
+        "type": "results",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.dellscholars.org/students/"
+      },
+      {
+        "label": "Dell Scholars announced",
+        "date": "2027-05-20",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.dellscholars.org/students/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "horatio-alger-national-scholarship",
+    "name": "Horatio Alger National Scholarship",
+    "organizer": "Horatio Alger Association of Distinguished Americans",
+    "organizer_url": "https://horatioalger.org/",
+    "category": "scholarship",
+    "subjects": [
+      "scholarship",
+      "financial need",
+      "leadership"
+    ],
+    "description": "A national scholarship for high school juniors who have shown perseverance through adversity and demonstrated financial need. The program awards 105 scholarships of USD 25,000 each to US citizens with a 2.0 GPA or higher and family adjusted gross income of USD 100,000 or less.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "105 national scholarships of USD 25,000 each.",
+    "official_url": "https://horatioalger.org/scholarships-and-services/undergraduate-scholarships/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior application period opens",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://horatioalger.org/scholarships/"
+      },
+      {
+        "label": "Junior application period closes",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://horatioalger.org/scholarships/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-03-01"
   }
 ]

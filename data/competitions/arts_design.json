@@ -547,5 +547,106 @@
       "on": "2026-10-05"
     },
     "valid_till": "2027-02-01"
+  },
+  {
+    "id": "national-pta-reflections",
+    "name": "National PTA Reflections",
+    "organizer": "National PTA",
+    "organizer_url": "https://www.pta.org/",
+    "category": "arts_design",
+    "subjects": [
+      "visual arts",
+      "photography",
+      "literature",
+      "music",
+      "dance",
+      "film"
+    ],
+    "description": "A national arts program in which students from pre-K through grade 12 create works on an annual theme and enter through their local PTA. The 2026-27 theme is 'What My Culture Means to Me', with categories for dance choreography, film production, music composition, literature, photography, visual arts and accessible arts. Local PTAs set entry deadlines and eligibility.",
+    "format": "hybrid",
+    "age_min": 4,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National awards include USD 800 Outstanding Interpretation scholarships, USD 200 Award of Excellence scholarships, medals, certificates and virtual exhibition features; local and state PTAs may offer additional prizes.",
+    "official_url": "https://www.pta.org/home/programs/reflections",
+    "cycle_year": 2026,
+    "dates": [
+      {
+        "label": "Local PTA entry deadline (varies; check local PTA)",
+        "date": "2026-11-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.pta.org/home/programs/reflections/craft-an-entry"
+      },
+      {
+        "label": "National awards announced",
+        "date": "2027-05-01",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.pta.org/home/programs/reflections/for-students-and-families"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "junior-duck-stamp",
+    "name": "Junior Duck Stamp Conservation and Design Program",
+    "organizer": "U.S. Fish and Wildlife Service",
+    "organizer_url": "https://www.fws.gov/",
+    "category": "arts_design",
+    "subjects": [
+      "visual arts",
+      "conservation",
+      "wildlife"
+    ],
+    "description": "A K-12 art and conservation program in which students create a realistic drawing or painting of an eligible North American waterfowl species. Entries are judged in state contests, and each state's Best of Show advances to national judging, where one image becomes the next Junior Duck Stamp. The program is open to US citizens, resident aliens and nationals, including students in US territories and citizens attending school abroad through a legal state.",
+    "format": "in_person",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National scholarships for the top three artists and the winning conservation message; the national art winner and a parent or guardian receive a trip to the First Day of Sale, and state contests offer additional awards.",
+    "official_url": "https://www.fws.gov/program/junior-duck-stamp",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "State contest entry deadline (varies by state)",
+        "date": "2027-03-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.fws.gov/program/junior-duck-stamp/junior-duck-stamp-contest-information"
+      },
+      {
+        "label": "National judging (expected April 2027)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.fws.gov/program/junior-duck-stamp/junior-duck-stamp-contest-information"
+      },
+      {
+        "label": "National winners announced (expected late April 2027)",
+        "date": "2027-04-21",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.fws.gov/program/junior-duck-stamp/junior-duck-stamp-contest-information"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-06-01"
   }
 ]

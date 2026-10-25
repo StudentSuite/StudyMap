@@ -381,5 +381,97 @@
       "on": "2026-09-26"
     },
     "valid_till": "2026-11-01"
+  },
+  {
+    "id": "one-earth-young-filmmakers-contest",
+    "name": "One Earth Young Filmmakers Contest",
+    "organizer": "One Earth Collective",
+    "organizer_url": "https://www.oneearthfilmfest.org/",
+    "category": "film_video",
+    "subjects": [
+      "film",
+      "environment",
+      "sustainability",
+      "documentary"
+    ],
+    "description": "An environmental film contest for young filmmakers from grade 3 through age 25, with separate categories for elementary, middle school, high school, university, and post-graduate filmmakers. Entries must run 3 to 8 minutes and propose a solution to an environmental problem.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 25,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash prizes from USD 100 to USD 1,000 by age category, each matched by a grant to a sustainability project; winning films screen at One Earth events.",
+    "official_url": "https://www.oneearthfilmfest.org/contest-rules",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest submissions close",
+        "date": "2027-06-25",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.oneearthfilmfest.org/contest-details"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-06-25"
+  },
+  {
+    "id": "austin-film-festival-young-filmmakers-competition",
+    "name": "Austin Film Festival Young Filmmakers Competition",
+    "organizer": "Austin Film Festival",
+    "organizer_url": "https://austinfilmfestival.com/",
+    "category": "film_video",
+    "subjects": [
+      "film",
+      "narrative",
+      "documentary",
+      "animation"
+    ],
+    "description": "A free short film competition for filmmakers ages 13 to 18 who are in middle school or high school during production. Selected narrative, documentary, and animated shorts screen at the festival's Young Filmmakers Showcase.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Young Filmmakers Program Jury Award, plus up to USD 500 in travel reimbursement, a two-night hotel stay, and two festival badges for the winner.",
+    "official_url": "https://austinfilmfestival.com/yfp/competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 competition submissions open",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://austinfilmfestival.com/about-aff-film-competition/"
+      },
+      {
+        "label": "Submission deadline (estimated from the 2026 cycle)",
+        "date": "2027-08-28",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://austinfilmfestival.com/yfp/competition/"
+      },
+      {
+        "label": "Festival and Young Filmmakers Showcase (expected)",
+        "date": "2027-10-28",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://austinfilmfestival.com/yfp/competition/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-10-28"
   }
 ]

@@ -500,5 +500,119 @@
       "on": "2026-09-19"
     },
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "national-high-school-ethics-bowl",
+    "name": "National High School Ethics Bowl",
+    "organizer": "Parr Center for Ethics, University of North Carolina at Chapel Hill",
+    "organizer_url": "https://nhseb.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "ethics",
+      "philosophy",
+      "debate"
+    ],
+    "description": "A team competition in which high school students analyze ethical case studies and defend their judgments before judges. Teams compete in regional bowls, advance through divisional playoffs and reach the national championship in Chapel Hill. Cases cover topics from public health and technology to social policy, and some regional hosts charge a registration fee.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "National champion and top-four team honors, plus the Robert Ladenson Spirit of the Ethics Bowl Award, Judges' Choice Award and case-writing competition awards.",
+    "official_url": "https://nhseb.org/regionals",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional competition season opens",
+        "date": "2026-09-18",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nhseb.org/regionals"
+      },
+      {
+        "label": "Regional competition season ends",
+        "date": "2027-02-08",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nhseb.org/regionals"
+      },
+      {
+        "label": "National championship begins",
+        "date": "2027-04-09",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nhseb.org/championship"
+      },
+      {
+        "label": "National championship ends",
+        "date": "2027-04-11",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://nhseb.org/championship"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "yale-model-united-nations",
+    "name": "Yale Model United Nations",
+    "organizer": "Yale International Relations Association",
+    "organizer_url": "https://www.ymun.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "diplomacy",
+      "international relations",
+      "public speaking"
+    ],
+    "description": "A four-day Model United Nations conference at Yale University for high school students, with committees covering security, development, human rights and other global issues. Delegations write resolutions and debate from assigned country or character perspectives. The conference also runs essay and arts contests, and in-person delegate registration is USD 90, with lower rates for virtual delegates and advisors.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 90,
+      "currency": "USD"
+    },
+    "prize": "Committee awards for top delegates, plus essay and arts contests whose winning selections are published on the YMUN website.",
+    "official_url": "https://www.ymun.org/about-ymun",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Conference begins",
+        "date": "2027-01-21",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ymun.org/"
+      },
+      {
+        "label": "Conference ends",
+        "date": "2027-01-24",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ymun.org/"
+      },
+      {
+        "label": "Essay and arts contest deadline",
+        "date": "2026-12-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.ymun.org/contests"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-02-15"
   }
 ]

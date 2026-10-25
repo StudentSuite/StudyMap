@@ -426,5 +426,143 @@
     },
     "valid_till": "2027-07-01",
     "image": "/competitions/young-enterprise-company-programme.png"
+  },
+  {
+    "id": "blue-ocean-student-entrepreneur-competition",
+    "name": "Blue Ocean Student Entrepreneur Competition",
+    "organizer": "Blue Ocean Student Entrepreneurs Corporation",
+    "organizer_url": "https://www.blueoceancompetition.org/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "business strategy",
+      "pitching"
+    ],
+    "description": "A virtual entrepreneurship competition for high school students, who pitch a blue ocean business idea in a 3 to 5 minute video. Students can enter alone or in teams of up to five, work through a free mini-course, and advance through Top 500, Top 100, Top 30 and Top 10 rounds before the live finale. The competition is free and open to students worldwide.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 1,000 for first place, USD 750 for second, USD 500 for third and a USD 750 People's Choice Award; finalists also receive certificates.",
+    "official_url": "https://blueoceancompetition.org/compete/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-02-21",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://blueoceancompetition.org/compete/"
+      },
+      {
+        "label": "Top 100 announced",
+        "date": "2027-04-05",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://blueoceancompetition.org/compete/"
+      },
+      {
+        "label": "Top 30 announced",
+        "date": "2027-04-22",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://blueoceancompetition.org/compete/"
+      },
+      {
+        "label": "Top 10 announced",
+        "date": "2027-05-04",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://blueoceancompetition.org/compete/"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2027-05-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.blueoceancompetition.org/faq"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "deca-virtual-business-challenge",
+    "name": "DECA Virtual Business Challenge",
+    "organizer": "DECA Inc. and Knowledge Matters",
+    "organizer_url": "https://www.deca.org/",
+    "category": "business",
+    "subjects": [
+      "business management",
+      "entrepreneurship",
+      "simulation"
+    ],
+    "description": "An online business simulation competition for DECA high school members, hosted by Knowledge Matters. Teams of one to three students manage a virtual business across two qualifying rounds in tracks such as entrepreneurship, fashion, accounting, hotel management and personal finance. Top performers compete for more than USD 20,000 in scholarship money.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "More than USD 20,000 in scholarship money across the competition, plus DECA recognition for top teams.",
+    "official_url": "https://www.deca.org/compete/virtual-business-challenge-entrepreneurship",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team registration opens",
+        "date": "2026-09-29",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.knowledgematters.com/high-school/competitions/deca/"
+      },
+      {
+        "label": "Round 1 begins",
+        "date": "2026-10-13",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.knowledgematters.com/high-school/competitions/"
+      },
+      {
+        "label": "Round 1 ends",
+        "date": "2026-11-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.knowledgematters.com/high-school/competitions/"
+      },
+      {
+        "label": "Round 2 begins",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.knowledgematters.com/high-school/competitions/"
+      },
+      {
+        "label": "Round 2 ends",
+        "date": "2027-02-26",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.knowledgematters.com/high-school/competitions/"
+      }
+    ],
+    "added_by": "shauryagangrade",
+    "valid_till": "2027-03-15"
   }
 ]
