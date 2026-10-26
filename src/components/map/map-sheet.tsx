@@ -3,14 +3,22 @@
 import * as React from "react";
 import { Drawer } from "vaul";
 
-// vaul snapPoints: a number is a fraction of container height (0-1); a
-// string is parsed as a literal pixel value. These must be numbers, not
-// percentage strings, or vaul silently mis-parses "48%" as 48px.
+// vaul snapPoints: a number is a fraction of CONTAINER (window) height
+// (0-1); a string is parsed with parseInt as a literal pixel value,
+// independent of window/drawer height entirely. These must be numbers,
+// not percentage strings, or vaul silently mis-parses "48%" as 48px.
 // Three stops: peek (summary bar), half (list browsable), full (all content).
-// Peek is 0.15 rather than a tighter fraction so the drag handle, the
-// min-h-11 peek button, and the safe-area padding all fit without clipping
-// the summary text on short viewports (see #216).
-export const SHEET_SNAP_POINTS = [0.15, 0.48, 0.92] as const;
+//
+// Peek is a fixed pixel height, not a fraction, because the peek bar's
+// content (drag handle + the min-h-11 summary button + safe-area padding)
+// has a fixed height that doesn't scale with viewport height - but vaul's
+// fraction math is computed against the WINDOW's height, not against
+// Drawer.Content's own rendered height, which is capped at max-h-[92dvh]
+// below. That mismatch under-revealed the peek bar by exactly the capped
+// 8% margin (#309) once the max-h cap was added after #216's original fix.
+// A literal pixel value sized to the real content sidesteps that math
+// instead of re-tuning a fraction that's fighting two different heights.
+export const SHEET_SNAP_POINTS = ["144px", 0.48, 0.92] as const;
 
 interface MapSheetProps {
   open: boolean;

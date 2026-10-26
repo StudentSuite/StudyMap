@@ -18,7 +18,7 @@ const { renderMap } = vi.hoisted(() => ({
 vi.mock("next/dynamic", () => ({ default: () => renderMap }));
 vi.mock("@/components/map/map-sheet", () => ({
   MapSheet: () => null,
-  SHEET_SNAP_POINTS: [0.15, 0.48, 0.92],
+  SHEET_SNAP_POINTS: ["144px", 0.48, 0.92],
 }));
 vi.mock("@/lib/supabase/client", () => ({ createClient: () => null }));
 

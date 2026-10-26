@@ -163,31 +163,35 @@ export function MapPanel({
         )}
       </div>
 
-      {showNearMe && (
-        <div className="flex items-stretch gap-2">
-          <NearMeButton onLocated={onLocated} className="flex-1" />
-          <Button
-            size="sm"
-            variant="outline"
-            className="h-8"
-            onClick={onShare}
-            aria-label="Copy a shareable link to this view"
-          >
-            <Share2 className="size-4" />
-            <span className="ml-1 hidden lg:inline">Share</span>
-          </Button>
-          <Button
-            size="sm"
-            variant="outline"
-            className="h-8"
-            onClick={() => setEmbedOpen(true)}
-            aria-label="Get an embed code for this view"
-          >
-            <Code2 className="size-4" />
-            <span className="ml-1 hidden lg:inline">Embed</span>
-          </Button>
-        </div>
-      )}
+      {/*
+        Near Me is gated by showNearMe: mobile has its own NearMeFab, so
+        the inline button would be redundant there. Share and Embed have
+        no such mobile equivalent - they always render, or mobile users
+        have no way to reach either (the gap #310 surfaced for Embed).
+      */}
+      <div className="flex items-stretch gap-2">
+        {showNearMe && <NearMeButton onLocated={onLocated} className="flex-1" />}
+        <Button
+          size="sm"
+          variant="outline"
+          className="h-8"
+          onClick={onShare}
+          aria-label="Copy a shareable link to this view"
+        >
+          <Share2 className="size-4" />
+          <span className="ml-1 hidden lg:inline">Share</span>
+        </Button>
+        <Button
+          size="sm"
+          variant="outline"
+          className="h-8"
+          onClick={() => setEmbedOpen(true)}
+          aria-label="Get an embed code for this view"
+        >
+          <Code2 className="size-4" />
+          <span className="ml-1 hidden lg:inline">Embed</span>
+        </Button>
+      </div>
 
       <Button
         size="sm"
