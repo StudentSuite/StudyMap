@@ -72,11 +72,11 @@ export default function RoadmapPage() {
           <CardContent className="text-sm text-foreground/80">
             <ul className="ml-4 list-disc space-y-1.5">
               <li>
-                <span className="font-medium">Geographic depth.</span> Coverage is
-                deepest in India and a handful of other countries; most of the world has
-                at most a handful of entries per category, if any. Adding a real,
-                verifiable place in an under-covered city is one of the highest-value
-                single contributions anyone can make.
+                <span className="font-medium">Geographic depth.</span> Coverage is deepest
+                in India and a handful of other countries; most of the world has at most a
+                handful of entries per category, if any. Adding a real, verifiable place
+                in an under-covered city is one of the highest-value single contributions
+                anyone can make.
               </li>
               <li>
                 <span className="font-medium">Re-verification.</span> Most places have
@@ -102,7 +102,9 @@ export default function RoadmapPage() {
         <Card>
           <CardHeader>
             <CardTitle>How direction actually gets decided</CardTitle>
-            <CardDescription>Issues and pull requests, not a backlog tool</CardDescription>
+            <CardDescription>
+              Issues and pull requests, not a backlog tool
+            </CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-foreground/80">
             <p>

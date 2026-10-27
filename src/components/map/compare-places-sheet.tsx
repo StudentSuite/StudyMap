@@ -45,7 +45,11 @@ function pairDistances(places: Place[]): PairDistance[] {
  * between each pair. Callers are expected to pass 2 or 3 places; fewer than
  * 2 just renders the one card with no distances.
  */
-export function ComparePlacesSheet({ places, open, onOpenChange }: ComparePlacesSheetProps) {
+export function ComparePlacesSheet({
+  places,
+  open,
+  onOpenChange,
+}: ComparePlacesSheetProps) {
   const distances = places.length > 1 ? pairDistances(places) : [];
 
   return (
@@ -76,7 +80,9 @@ export function ComparePlacesSheet({ places, open, onOpenChange }: ComparePlaces
                   />
                   {PLACE_TYPE_LABELS[place.type]}
                 </div>
-                <p className="text-xs text-muted-foreground">{humanizeCity(place.city)}</p>
+                <p className="text-xs text-muted-foreground">
+                  {humanizeCity(place.city)}
+                </p>
                 {place.address && (
                   <p className="text-xs leading-snug text-muted-foreground">
                     {place.address}

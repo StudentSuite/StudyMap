@@ -23,7 +23,7 @@ const TABLES: { name: string; stores: string; note?: string }[] = [
   },
   {
     name: "user_home",
-    stores: "One lat/lng, if you've set a home location (powers \"Near me\" sorting).",
+    stores: 'One lat/lng, if you\'ve set a home location (powers "Near me" sorting).',
   },
   {
     name: "user_events",
@@ -46,8 +46,8 @@ export default function PrivacyDataPage() {
       <div className="space-y-4">
         <p className="text-foreground/80">
           The map, calendar, and competitions catalog are fully public and need no
-          account. Signing in only unlocks a handful of private, per-user features -
-          this page is what those store.
+          account. Signing in only unlocks a handful of private, per-user features - this
+          page is what those store.
         </p>
 
         <Card>
@@ -110,7 +110,9 @@ export default function PrivacyDataPage() {
         <Card>
           <CardHeader>
             <CardTitle>Password resets</CardTitle>
-            <CardDescription>Attempts are rate-limited, not your email itself</CardDescription>
+            <CardDescription>
+              Attempts are rate-limited, not your email itself
+            </CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-foreground/80">
             <p>

@@ -17,7 +17,11 @@ interface HeatmapToggleProps {
  * layer to `map-view.tsx`, which is out of scope here. Styled to match
  * `NearMeButton` so both sit naturally in the same map-controls stack.
  */
-export function HeatmapToggle({ pressed, onPressedChange, className }: HeatmapToggleProps) {
+export function HeatmapToggle({
+  pressed,
+  onPressedChange,
+  className,
+}: HeatmapToggleProps) {
   return (
     <Button
       type="button"
