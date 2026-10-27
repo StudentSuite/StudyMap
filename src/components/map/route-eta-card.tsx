@@ -35,9 +35,11 @@ export function RouteEtaCard({ home, place }: RouteEtaCardProps) {
     <div className="flex items-start gap-2 rounded-md border border-border bg-muted/30 px-2.5 py-2 text-xs text-muted-foreground">
       <Footprints className="mt-0.5 size-3.5 shrink-0" aria-hidden />
       <p>
-        <span className="font-medium text-foreground">{formatDistance(distanceKm)} away</span>{" "}
-        from home, straight-line. Roughly {formatWalkingEta(distanceKm)} walking at a 5 km/h
-        pace, not a real route, so actual walking distance and time can differ.
+        <span className="font-medium text-foreground">
+          {formatDistance(distanceKm)} away
+        </span>{" "}
+        from home, straight-line. Roughly {formatWalkingEta(distanceKm)} walking at a 5
+        km/h pace, not a real route, so actual walking distance and time can differ.
       </p>
     </div>
   );

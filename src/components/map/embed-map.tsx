@@ -33,7 +33,8 @@ export function EmbedMap({ places }: EmbedMapProps) {
   );
 
   const visible = React.useMemo(
-    () => filterPlaces(places, { types: state.types, city: state.city, query: state.query }),
+    () =>
+      filterPlaces(places, { types: state.types, city: state.city, query: state.query }),
     [places, state.types, state.city, state.query],
   );
 
@@ -53,7 +54,9 @@ export function EmbedMap({ places }: EmbedMapProps) {
           focusId={state.placeId}
           focusBounds={focusBounds}
           closePopupTrigger={0}
-          center={state.lat !== null && state.lng !== null ? [state.lat, state.lng] : undefined}
+          center={
+            state.lat !== null && state.lng !== null ? [state.lat, state.lng] : undefined
+          }
           zoom={state.zoom ?? studyMapConfig.defaultZoom}
         />
       </div>
@@ -63,7 +66,8 @@ export function EmbedMap({ places }: EmbedMapProps) {
         rel="noreferrer"
         className="flex h-7 shrink-0 items-center justify-center bg-card text-xs font-medium text-muted-foreground hover:text-foreground"
       >
-        {visible.length} {visible.length === 1 ? "place" : "places"} · View on {site.name} ↗
+        {visible.length} {visible.length === 1 ? "place" : "places"} · View on {site.name}{" "}
+        ↗
       </Link>
     </div>
   );

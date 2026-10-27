@@ -31,7 +31,9 @@ export default function VerificationProcessPage() {
         <Card>
           <CardHeader>
             <CardTitle>What the badge means</CardTitle>
-            <CardDescription>A green badge with the check date, next to the pin</CardDescription>
+            <CardDescription>
+              A green badge with the check date, next to the pin
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 text-sm text-foreground/80">
             <p>
@@ -78,15 +80,15 @@ export default function VerificationProcessPage() {
         >
           <p>
             Confirm the address and entrance still match what&apos;s on the map, and that
-            the place is still open and operating. If anything has actually changed - name,
-            address, permanently closed - that&apos;s a correction, not a verification;
-            say so in the issue instead of confirming stale data.
+            the place is still open and operating. If anything has actually changed -
+            name, address, permanently closed - that&apos;s a correction, not a
+            verification; say so in the issue instead of confirming stale data.
           </p>
         </StepCard>
 
         <StepCard
           step={3}
-          title="File a &quot;Verify a place&quot; issue"
+          title='File a "Verify a place" issue'
           description="One small form, no pull request needed"
           isLast
         >
@@ -100,8 +102,9 @@ export default function VerificationProcessPage() {
             >
               Verify a place
             </a>{" "}
-            issue with the place&apos;s id (from its dataset entry, or the map&apos;s share
-            link), the date you checked it, and what you found. A maintainer then adds the{" "}
+            issue with the place&apos;s id (from its dataset entry, or the map&apos;s
+            share link), the date you checked it, and what you found. A maintainer then
+            adds the{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">
               verified
             </code>{" "}

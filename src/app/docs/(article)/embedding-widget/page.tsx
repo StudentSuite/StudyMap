@@ -35,9 +35,7 @@ export default function EmbeddingWidgetPage() {
           <code className="rounded bg-muted px-1.5 py-0.5 font-mono">/embed</code> is a
           second, chrome-free version of the map: no navbar, no sidebar, no sign-in - just
           the pins, sized to fit wherever you put it. It&apos;s meant to be put inside an{" "}
-          <code className="rounded bg-muted px-1.5 py-0.5 font-mono">
-            &lt;iframe&gt;
-          </code>{" "}
+          <code className="rounded bg-muted px-1.5 py-0.5 font-mono">&lt;iframe&gt;</code>{" "}
           on a school, library, or organization&apos;s own site.
         </p>
 
@@ -67,9 +65,7 @@ export default function EmbeddingWidgetPage() {
         <Card>
           <CardHeader>
             <CardTitle>Or build the URL yourself</CardTitle>
-            <CardDescription>
-              Same query parameters as a shared /map link
-            </CardDescription>
+            <CardDescription>Same query parameters as a shared /map link</CardDescription>
           </CardHeader>
           <CardContent className="space-y-3 text-sm text-foreground/80">
             <ul className="ml-4 list-disc space-y-1.5">

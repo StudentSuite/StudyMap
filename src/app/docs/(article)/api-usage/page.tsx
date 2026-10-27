@@ -24,7 +24,10 @@ export default function ApiUsagePage() {
       <div className="space-y-4">
         <p className="text-foreground/80">
           Both{" "}
-          <Link href="/docs/places-api" className="font-medium text-primary hover:underline">
+          <Link
+            href="/docs/places-api"
+            className="font-medium text-primary hover:underline"
+          >
             Places API
           </Link>{" "}
           and{" "}
@@ -35,14 +38,16 @@ export default function ApiUsagePage() {
             Competitions API
           </Link>{" "}
           are public, unauthenticated, read-only endpoints. This page is the honest answer
-          to &quot;how much can I call this&quot; - what&apos;s actually enforced, not what
-          might be assumed.
+          to &quot;how much can I call this&quot; - what&apos;s actually enforced, not
+          what might be assumed.
         </p>
 
         <Card>
           <CardHeader>
             <CardTitle>No API key, no rate limiting</CardTitle>
-            <CardDescription>Nothing throttles requests by IP or client today</CardDescription>
+            <CardDescription>
+              Nothing throttles requests by IP or client today
+            </CardDescription>
           </CardHeader>
           <CardContent className="space-y-2 text-sm text-foreground/80">
             <p>
@@ -50,7 +55,10 @@ export default function ApiUsagePage() {
               requests-per-minute style limit. What bounds them instead is pagination and
               caching, below. If that ever changes (a key requirement, a 429 response), it
               will show up on the{" "}
-              <Link href="/docs/changelog" className="font-medium text-primary hover:underline">
+              <Link
+                href="/docs/changelog"
+                className="font-medium text-primary hover:underline"
+              >
                 changelog
               </Link>{" "}
               and this page gets updated alongside it - don&apos;t build something that
@@ -62,7 +70,9 @@ export default function ApiUsagePage() {
         <Card>
           <CardHeader>
             <CardTitle>Pagination caps</CardTitle>
-            <CardDescription>The real limit is response size, not request rate</CardDescription>
+            <CardDescription>
+              The real limit is response size, not request rate
+            </CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-foreground/80">
             <ul className="ml-4 list-disc space-y-1.5">
@@ -98,7 +108,9 @@ export default function ApiUsagePage() {
         <Card>
           <CardHeader>
             <CardTitle>Response caching</CardTitle>
-            <CardDescription>6 hours - the real reason you rarely need to poll fast</CardDescription>
+            <CardDescription>
+              6 hours - the real reason you rarely need to poll fast
+            </CardDescription>
           </CardHeader>
           <CardContent className="text-sm text-foreground/80">
             <p>
@@ -107,8 +119,8 @@ export default function ApiUsagePage() {
                 Cache-Control
               </code>{" "}
               header with a 6-hour max age. The underlying datasets change a few times a
-              week at most, so polling more often than that gets you the same data,
-              served from cache either way.
+              week at most, so polling more often than that gets you the same data, served
+              from cache either way.
             </p>
           </CardContent>
         </Card>
@@ -122,13 +134,9 @@ export default function ApiUsagePage() {
         <p>
           Nothing stops a tight polling loop today, but nothing has to reward it either.
           Respect the 6-hour cache window, page through large pulls with{" "}
-          <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">
-            offset
-          </code>{" "}
+          <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">offset</code>{" "}
           instead of raising{" "}
-          <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">
-            limit
-          </code>{" "}
+          <code className="rounded bg-muted px-1.5 py-0.5 font-mono text-xs">limit</code>{" "}
           past what you need, and if you&apos;re running something that calls either
           endpoint thousands of times a day, say so in an issue - that&apos;s exactly the
           kind of usage that would justify adding real rate limiting.

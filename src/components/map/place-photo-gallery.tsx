@@ -48,9 +48,9 @@ export function PlacePhotoGallery({ place }: PlacePhotoGalleryProps) {
         </div>
         <p className="flex items-start gap-1.5 text-xs text-muted-foreground">
           <MapPinOff className="mt-0.5 size-3.5 shrink-0" aria-hidden />
-          Street View not available here? Not every location has coverage -
-          a blank or grey preview above means Google hasn&apos;t mapped this spot yet,
-          not that something&apos;s broken.
+          Street View not available here? Not every location has coverage - a blank or
+          grey preview above means Google hasn&apos;t mapped this spot yet, not that
+          something&apos;s broken.
         </p>
       </CardContent>
     </Card>

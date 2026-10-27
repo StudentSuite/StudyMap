@@ -74,7 +74,9 @@ export function SharePlaceCard({ place }: SharePlaceCardProps) {
               {PLACE_TYPE_LABELS[place.type]} · {humanizeCity(place.city)}
             </p>
             {place.address && (
-              <p className="mt-0.5 truncate text-xs text-muted-foreground">{place.address}</p>
+              <p className="mt-0.5 truncate text-xs text-muted-foreground">
+                {place.address}
+              </p>
             )}
           </div>
         </div>

@@ -74,7 +74,9 @@ export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDraw
 
               <p className="text-[11px] text-muted-foreground/75">
                 Added by{" "}
-                <span className="font-medium text-muted-foreground">{place.added_by}</span>
+                <span className="font-medium text-muted-foreground">
+                  {place.added_by}
+                </span>
               </p>
             </div>
           </>

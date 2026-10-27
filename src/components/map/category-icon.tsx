@@ -1,4 +1,11 @@
-import { GraduationCap, Landmark, Library, MapPin, Plane, type LucideIcon } from "lucide-react";
+import {
+  GraduationCap,
+  Landmark,
+  Library,
+  MapPin,
+  Plane,
+  type LucideIcon,
+} from "lucide-react";
 
 import type { PlaceType } from "@/lib/types";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
@@ -29,6 +36,10 @@ export interface CategoryIconProps {
 export function CategoryIcon({ type, className }: CategoryIconProps) {
   const Icon = PLACE_TYPE_ICONS[type];
   return (
-    <Icon aria-hidden className={cn("size-4", className)} style={{ color: PLACE_TYPE_COLORS[type] }} />
+    <Icon
+      aria-hidden
+      className={cn("size-4", className)}
+      style={{ color: PLACE_TYPE_COLORS[type] }}
+    />
   );
 }

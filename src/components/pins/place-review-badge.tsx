@@ -31,7 +31,11 @@ export interface PlaceReviewBadgeProps {
  * for a future UI layer that sources ratings from elsewhere (e.g. hardcoded
  * on a features/showcase list) and passes them in directly.
  */
-export function PlaceReviewBadge({ rating, reviewCount, className }: PlaceReviewBadgeProps) {
+export function PlaceReviewBadge({
+  rating,
+  reviewCount,
+  className,
+}: PlaceReviewBadgeProps) {
   if (rating == null && reviewCount == null) return null;
 
   let label: string;

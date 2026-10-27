@@ -13,10 +13,7 @@ export function AppMain({ children }: { children: React.ReactNode }) {
   const isEmbed = pathname.startsWith("/embed");
 
   return (
-    <main
-      id="main-content"
-      className={cn("flex flex-1 flex-col", !isEmbed && "pt-14")}
-    >
+    <main id="main-content" className={cn("flex flex-1 flex-col", !isEmbed && "pt-14")}>
       {children}
     </main>
   );

@@ -121,8 +121,8 @@ export function ReportIssueDialog({ place, open, onOpenChange }: ReportIssueDial
             <DialogHeader>
               <DialogTitle>Report an issue</DialogTitle>
               <DialogDescription>
-                {place.name} - opens a pre-filled GitHub issue for a maintainer to review, no
-                account or Git knowledge needed beyond a GitHub sign-in to submit it.
+                {place.name} - opens a pre-filled GitHub issue for a maintainer to review,
+                no account or Git knowledge needed beyond a GitHub sign-in to submit it.
               </DialogDescription>
             </DialogHeader>
 

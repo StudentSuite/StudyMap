@@ -65,7 +65,12 @@ export function CitySwitcher({ cities, className }: CitySwitcherProps) {
   }
 
   return (
-    <Select open={open} onOpenChange={handleOpenChange} onValueChange={handleSelect} value="">
+    <Select
+      open={open}
+      onOpenChange={handleOpenChange}
+      onValueChange={handleSelect}
+      value=""
+    >
       <SelectTrigger
         className={cn("w-full sm:w-64", className)}
         aria-label="Jump to a city"
