@@ -1,7 +1,7 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
-import MapView from "@/components/map/map-view";
+import MapView, { pinIcon } from "@/components/map/map-view";
 
 const { flyTo } = vi.hoisted(() => ({ flyTo: vi.fn() }));
 
@@ -116,5 +116,15 @@ describe("MapView configuration", () => {
       14,
       expect.objectContaining({ animate: false }),
     );
+  });
+});
+
+describe("pinIcon", () => {
+  it("returns the same icon instance for the same place type", () => {
+    expect(pinIcon("library")).toBe(pinIcon("library"));
+  });
+
+  it("returns a different icon for a different place type", () => {
+    expect(pinIcon("library")).not.toBe(pinIcon("airport"));
   });
 });

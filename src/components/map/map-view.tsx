@@ -30,8 +30,17 @@ function emptyTypeCounts(): ClusterAggProps {
   return Object.fromEntries(PLACE_TYPES.map((type) => [type, 0])) as ClusterAggProps;
 }
 
-/** Builds a pie-style divIcon: a conic-gradient ring colored by place type, count in the middle. */
+const clusterIconCache = new Map<string, L.DivIcon>();
+
+/**
+ * Builds a pie-style divIcon: a conic-gradient ring colored by place type, count in the middle.
+ * Cached by the per-type counts so react-leaflet sees the same icon object across renders
+ * and skips `marker.setIcon` for clusters that did not change.
+ */
 function clusterIcon(counts: ClusterAggProps, total: number, label: string): L.DivIcon {
+  const key = PLACE_TYPES.map((type) => counts[type]).join(",");
+  const cached = clusterIconCache.get(key);
+  if (cached) return cached;
   let acc = 0;
   const stops: string[] = [];
   for (const type of PLACE_TYPES) {
@@ -43,12 +52,14 @@ function clusterIcon(counts: ClusterAggProps, total: number, label: string): L.D
     stops.push(`${PLACE_TYPE_COLORS[type]} ${from}deg ${to}deg`);
   }
   const size = total < 10 ? 36 : total < 50 ? 44 : 54;
-  return L.divIcon({
+  const icon = L.divIcon({
     html: `<div class="cluster-pie" style="width:${size}px;height:${size}px;background:conic-gradient(${stops.join(", ")});box-sizing:border-box;" role="button" tabindex="0" aria-label="${label}"><span>${total}</span></div>`,
     className: "cluster-pie-icon",
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
   });
+  clusterIconCache.set(key, icon);
+  return icon;
 }
 
 /** Summarizes a cluster's contents for assistive tech, e.g. "Cluster of 11 places, mostly SAT centre". */
@@ -67,14 +78,21 @@ function clusterLabel(counts: ClusterAggProps, total: number): string {
   return `Cluster of ${total} ${total === 1 ? "place" : "places"}, mostly ${PLACE_TYPE_LABELS[dominant].toLowerCase()}`;
 }
 
-function pinIcon(color: string): L.DivIcon {
-  return L.divIcon({
-    html: `<div class="pin-marker" style="background-color:${color};"></div>`,
+const pinIconCache = new Map<PlaceType, L.DivIcon>();
+
+/** One shared icon per place type, so unchanged pins keep the same icon object across renders. */
+export function pinIcon(type: PlaceType): L.DivIcon {
+  const cached = pinIconCache.get(type);
+  if (cached) return cached;
+  const icon = L.divIcon({
+    html: `<div class="pin-marker" style="background-color:${PLACE_TYPE_COLORS[type]};"></div>`,
     className: "pin-marker-icon",
     iconSize: [32, 40],
     iconAnchor: [16, 40],
     popupAnchor: [0, -40],
   });
+  pinIconCache.set(type, icon);
+  return icon;
 }
 
 /** True when the visitor has asked for reduced motion. Guarded for SSR and jsdom. */
@@ -139,6 +157,11 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
     return sc;
   }, [places]);
 
+  const placesById = useMemo(
+    () => new Map(places.map((place) => [place.id, place])),
+    [places],
+  );
+
   const clusters = useMemo(() => index.getClusters(bbox, zoom), [index, bbox, zoom]);
 
   return (
@@ -183,14 +206,14 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
           );
         }
 
-        const place = places.find((p) => p.id === properties.placeId);
+        const place = placesById.get(properties.placeId);
         if (!place) return null;
         return (
           <Marker
             key={place.id}
             position={[lat, lng]}
             title={`${place.name}, ${PLACE_TYPE_LABELS[place.type]}`}
-            icon={pinIcon(PLACE_TYPE_COLORS[place.type])}
+            icon={pinIcon(place.type)}
             eventHandlers={{
               click: (e) => {
                 L.DomEvent.stopPropagation(e);
