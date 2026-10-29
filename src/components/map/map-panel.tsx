@@ -4,18 +4,11 @@ import * as React from "react";
 import { Code2, MapPinPlus, Search, Share2, X } from "lucide-react";
 
 import type { City, PlaceType, Place } from "@/lib/types";
-import { humanizeCity } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { CategoryChips } from "@/components/map/category-chips";
+import { CityFilter } from "@/components/map/city-filter";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
@@ -69,7 +62,7 @@ interface MapPanelProps {
 }
 
 /**
- * The full map control stack: search, category chips, city select, actions,
+ * The full map control stack: search, category chips, city filter, actions,
  * and the results list. Shared by the desktop sidebar and the mobile sheet;
  * `showSearch` / `showNearMe` let the mobile layout hoist those into the
  * always-visible top bar and FAB instead.
@@ -132,24 +125,11 @@ export function MapPanel({
       />
 
       <div className="flex items-center gap-2">
-        <Select
-          value={filters.city ?? undefined}
-          onValueChange={(value) =>
-            onFiltersChange({ ...filters, city: value === "all" ? null : value })
-          }
-        >
-          <SelectTrigger className="h-8 flex-1 text-sm">
-            <SelectValue placeholder="All cities" />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="all">All cities</SelectItem>
-            {cities.map((city) => (
-              <SelectItem key={city} value={city}>
-                {humanizeCity(city)}
-              </SelectItem>
-            ))}
-          </SelectContent>
-        </Select>
+        <CityFilter
+          cities={cities}
+          value={filters.city}
+          onChange={(city) => onFiltersChange({ ...filters, city })}
+        />
         {dirty && (
           <Button
             variant="ghost"
