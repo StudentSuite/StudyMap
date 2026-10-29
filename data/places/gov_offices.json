@@ -2442,17 +2442,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "lgs-gov_offices-01",
-    "name": "Nigeria Immigration Service Passport Office, Ikeja",
-    "type": "gov_offices",
-    "city": "lagos",
-    "lat": 6.6179055,
-    "lng": 3.3559413,
-    "address": "5 Assbifi Road, Agidingbi, Ikeja, Lagos, Nigeria",
-    "gmaps_link": "https://maps.google.com/?q=6.6179055,3.3559413",
-    "added_by": "yakew7"
-  },
-  {
     "id": "bce-gov_offices-01",
     "name": "Nigeria Immigration Service Command Headquarters, Ikpoba Hill",
     "type": "gov_offices",
