@@ -21,6 +21,11 @@ export function isLatLngPlaceholderGmapsLink(value) {
   }
 }
 
+/** True when `value` is an ISO 3166-1 alpha-2 style country code: exactly two capital letters. */
+export function isCountryCode(value) {
+  return typeof value === "string" && /^[A-Z]{2}$/.test(value);
+}
+
 /** True when `value` is a "YYYY-MM-DD" string naming a real calendar date. */
 export function isRealIsoDate(value) {
   if (typeof value !== "string" || !ISO_DATE_RE.test(value)) return false;
