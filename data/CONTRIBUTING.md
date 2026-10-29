@@ -12,7 +12,7 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
 | File | What goes here |
 |------|---------------|
 | `sat_centre.json` | SAT exam venues. Include `exam: "SAT"` and `valid_till` |
-| `foreign_lang_exam_centre.json` | IELTS, TOEFL, Goethe, DELF, and other foreign-language exam venues. Include `exam` name and `valid_till` where known |
+| `foreign_lang_exam_centre.json` | IELTS, TOEFL, Goethe, DELF, and other foreign-language exam venues. Include `exam` and `valid_till` (see below) |
 | `library.json` | Public and institutional libraries |
 | `gov_offices.json` | Passport offices, RTOs, embassies, post offices, district offices, and other government/civic offices |
 | `airport.json` | Airports |
@@ -40,6 +40,7 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
 - `type`: must match the filename exactly
 - `lat`/`lng`: from Google Maps (right-click pin, "What's here?"). Any real-world coordinate works: `places.schema.json` checks latitude is between -90 and 90 and longitude between -180 and 180.
 - `address`: optional, short, human-readable
+- `exam` and `valid_till` (exam centres only): `exam` is one label per exam, so the same exam is never spelled two ways. Use `IELTS`, `TOEFL`, `Goethe-Zertifikat (A1-C2)`, `DELF/DALF` (`TEF/TCF/DELF/DALF` for a centre that also takes the TEF and TCF), `DELF`, `DELE`, `TOMER Turkish Proficiency Certificate` or `SAT`, and add a new label here when you add a new exam. `valid_till` is the date to reconfirm the centre by: 6 months after you last checked it (the PR date for a new record).
 - `gmaps_link`: Google Maps share link (Share -> Copy link)
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
 - `verified` is the one exception (#126): a maintainer may add it after a
