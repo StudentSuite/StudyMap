@@ -26,6 +26,8 @@ function daysUntil(iso: string, now: Date): number | null {
 export interface ExamCentreCountdownProps {
   place: Place;
   className?: string;
+  /** The clock to compare against; tests pass a fixed date. Defaults to the current time. */
+  now?: Date;
 }
 
 /**
@@ -35,10 +37,14 @@ export interface ExamCentreCountdownProps {
  * pattern as verified-badge.tsx: green while comfortably valid, amber inside
  * the 60-day window, red once the date has passed.
  */
-export function ExamCentreCountdown({ place, className }: ExamCentreCountdownProps) {
+export function ExamCentreCountdown({
+  place,
+  className,
+  now = new Date(),
+}: ExamCentreCountdownProps) {
   if (!place.valid_till) return null;
 
-  const days = daysUntil(place.valid_till, new Date());
+  const days = daysUntil(place.valid_till, now);
   const expired = days !== null && days < 0;
   const expiringSoon = days !== null && days >= 0 && days <= EXPIRY_WARNING_DAYS;
 
