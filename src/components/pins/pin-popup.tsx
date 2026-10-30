@@ -7,19 +7,11 @@ import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
+import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 interface PinPopupProps {
   place: Place;
-}
-
-function formatValidTill(iso: string): string {
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(iso)) return iso;
-  return new Date(iso + "T00:00:00").toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-  });
 }
 
 export function PinPopup({ place }: PinPopupProps) {
@@ -61,6 +53,7 @@ export function PinPopup({ place }: PinPopupProps) {
           </div>
           <span className="text-muted-foreground">{humanizeCity(place.city)}</span>
           <VerifiedBadge place={place} />
+          <ExamCentreCountdown place={place} />
         </div>
       </div>
 
@@ -69,13 +62,10 @@ export function PinPopup({ place }: PinPopupProps) {
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
       )}
 
-      {/* Exam centre validity */}
+      {/* Exam centre: the validity pill in the header carries the reconfirm date */}
       {place.exam && (
         <div className="rounded-md border border-border/60 bg-muted/50 px-2 py-1.5 text-[11px] leading-snug text-muted-foreground">
           <span className="font-medium text-foreground">{place.exam}</span> centre
-          {place.valid_till && (
-            <> &middot; reconfirm by {formatValidTill(place.valid_till)}</>
-          )}
         </div>
       )}
 
