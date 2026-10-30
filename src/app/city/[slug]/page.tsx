@@ -14,6 +14,7 @@ import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageContainer } from "@/components/layout/page-container";
+import { CityStatsCard } from "@/components/home/city-stats-card";
 
 // Every city page is decided at build time from the dataset; a slug that is
 // not in it is a 404, never a server-rendered miss.
@@ -67,6 +68,9 @@ export default async function CityPage({ params }: CityPageProps) {
         {page.places.length} place{page.places.length === 1 ? "" : "s"} in {name}, from
         the crowdsourced StudyMap dataset. Open one on the map to see it in context.
       </p>
+
+      {/* Per-type counts, each linking to /map filtered to this city and type. */}
+      <CityStatsCard city={page.city} places={page.places} className="mt-6" />
 
       {page.places.length <= THIN_CITY_MAX_PLACES && (
         <Card className="mt-6 bg-secondary/40">
