@@ -484,17 +484,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "lhr-other_places-01",
-    "name": "The British Library",
-    "type": "other_places",
-    "city": "london",
-    "lat": 51.5299,
-    "lng": -0.127,
-    "address": "96 Euston Rd, London NW1 2DB, UK",
-    "gmaps_link": "https://maps.google.com/?q=51.5299,-0.1270",
-    "added_by": "yakew7"
-  },
-  {
     "id": "tyo-other_places-01",
     "name": "Roppongi Hills Mori Art Museum",
     "type": "other_places",
@@ -946,17 +935,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "pmb-other_places-01",
-    "name": "Pymble Ladies College",
-    "type": "other_places",
-    "city": "pymble",
-    "lat": -33.7460852,
-    "lng": 151.1366461,
-    "address": "Avon Road, Pymble NSW 2073, Australia",
-    "gmaps_link": "https://maps.google.com/?q=-33.7460852,151.1366461",
-    "added_by": "yakew7"
-  },
-  {
     "id": "yng-other_places-01",
     "name": "Kyung Hee University Global Campus",
     "type": "other_places",
@@ -1086,17 +1064,6 @@
     "lng": -0.9565278,
     "address": "Whiteknights Campus, Reading RG6 6AA, UK",
     "gmaps_link": "https://maps.google.com/?q=51.4399250,-0.9565278",
-    "added_by": "yakew7"
-  },
-  {
-    "id": "crw-other_places-01",
-    "name": "Wellington College",
-    "type": "other_places",
-    "city": "crowthorne",
-    "lat": 51.3624135,
-    "lng": -0.8080941,
-    "address": "Duke's Ride, Crowthorne, Berkshire RG45 7PU, UK",
-    "gmaps_link": "https://maps.google.com/?q=51.3624135,-0.8080941",
     "added_by": "yakew7"
   },
   {
@@ -1254,17 +1221,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "hdw-other_places-01",
-    "name": "African Leadership Academy",
-    "type": "other_places",
-    "city": "honeydew",
-    "lat": -26.0788389,
-    "lng": 27.9253018,
-    "address": "1050 Printech Avenue, Honeydew, Johannesburg 2170, South Africa",
-    "gmaps_link": "https://maps.google.com/?q=-26.0788389,27.9253018",
-    "added_by": "yakew7"
-  },
-  {
     "id": "uaq-other_places-01",
     "name": "Umm Al Quwain University",
     "type": "other_places",
@@ -1339,17 +1295,6 @@
     "lng": 145.3787362,
     "address": "110 Smiths Lane, Clyde North, VIC 3978, Australia",
     "gmaps_link": "https://maps.google.com/?q=-38.1062032,145.3787362",
-    "added_by": "yakew7"
-  },
-  {
-    "id": "don-other_places-01",
-    "name": "Noosa Pengari Steiner School",
-    "type": "other_places",
-    "city": "doonan",
-    "lat": -26.452046,
-    "lng": 153.0277901,
-    "address": "86 Nyell Road, Doonan, QLD 4562, Australia",
-    "gmaps_link": "https://maps.google.com/?q=-26.4520460,153.0277901",
     "added_by": "yakew7"
   },
   {

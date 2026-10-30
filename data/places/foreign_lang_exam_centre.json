@@ -924,18 +924,6 @@
     "exam": "IELTS"
   },
   {
-    "id": "aln-foreign_lang_exam_centre-01",
-    "name": "British Council IELTS Test Centre, Al Ain University",
-    "type": "foreign_lang_exam_centre",
-    "city": "al_ain",
-    "lat": 24.2394169,
-    "lng": 55.7408993,
-    "address": "Al Ain University, Al Jimi, Al Ain, Abu Dhabi, UAE",
-    "gmaps_link": "https://maps.google.com/?q=24.2394169,55.7408993",
-    "added_by": "yakew7",
-    "exam": "IELTS"
-  },
-  {
     "id": "alg-foreign_lang_exam_centre-01",
     "name": "British Council IELTS Test Centre, Valley of Experts Training Institute",
     "type": "foreign_lang_exam_centre",

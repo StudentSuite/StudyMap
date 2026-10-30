@@ -2376,17 +2376,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "osg-library-01",
-    "name": "National Library of Nigeria, Osun State Branch",
-    "type": "library",
-    "city": "osogbo",
-    "lat": 7.7583223,
-    "lng": 4.5750447,
-    "address": "New Ikiru Road, Omo West, Osogbo, Osun State, Nigeria",
-    "gmaps_link": "https://maps.google.com/?q=7.7583223,4.5750447",
-    "added_by": "yakew7"
-  },
-  {
     "id": "cme-library-01",
     "name": "Biblioteca Municipal de Camarma de Esteruelas",
     "type": "library",
@@ -2717,17 +2706,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "aln-library-01",
-    "name": "Zayed Central Library",
-    "type": "library",
-    "city": "al_ain",
-    "lat": 24.2159922,
-    "lng": 55.7514736,
-    "address": "Mohammed Bin Khalifa Street, Al Jahili, Al Ain, Abu Dhabi, UAE",
-    "gmaps_link": "https://maps.google.com/?q=24.2159922,55.7514736",
-    "added_by": "yakew7"
-  },
-  {
     "id": "alg-library-01",
     "name": "Al Rashidiya Public Library",
     "type": "library",
@@ -2791,17 +2769,6 @@
     "lng": 7.6625589,
     "address": "Hauptstrasse 28, 79400 Kandern, Germany",
     "gmaps_link": "https://maps.google.com/?q=47.7145838,7.6625589",
-    "added_by": "yakew7"
-  },
-  {
-    "id": "pia-library-01",
-    "name": "Biblioteca Publica Estadual Desembargador Cromwell de Carvalho",
-    "type": "library",
-    "city": "teresina",
-    "lat": -5.0873515,
-    "lng": -42.8100592,
-    "address": "Praca Demostenes Avelino 1788, Centro, Teresina, Piaui, Brazil",
-    "gmaps_link": "https://maps.google.com/?q=-5.0873515,-42.8100592",
     "added_by": "yakew7"
   },
   {
