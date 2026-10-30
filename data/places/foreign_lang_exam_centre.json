@@ -9,7 +9,8 @@
     "address": "8th Floor, Urmi Estate, 95 Ganpatrao Kadam Marg, Lower Parel West, Mumbai 400013",
     "gmaps_link": "https://maps.google.com/?q=18.9979,72.8227",
     "added_by": "anaydhawan",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-01-03"
   },
   {
     "id": "pun-foreign_lang_exam_centre-01",
@@ -21,7 +22,8 @@
     "address": "14/3-B, Boat Club Road, Pune 411001",
     "gmaps_link": "https://maps.google.com/?q=18.5384,73.8772",
     "added_by": "anaydhawan",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-01-03"
   },
   {
     "id": "blr-foreign_lang_exam_centre-01",
@@ -33,7 +35,8 @@
     "address": "23, Prestige Takt, Kasturba Road, Bengaluru 560001",
     "gmaps_link": "https://maps.google.com/?q=12.9742008,77.5970447",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-06"
   },
   {
     "id": "che-foreign_lang_exam_centre-01",
@@ -45,7 +48,8 @@
     "address": "737 Anna Salai, Chennai 600002",
     "gmaps_link": "https://maps.google.com/?q=13.0597354,80.2578777",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-06"
   },
   {
     "id": "kol-foreign_lang_exam_centre-01",
@@ -57,7 +61,8 @@
     "address": "16 Camac Street, Kolkata 700017",
     "gmaps_link": "https://maps.google.com/?q=22.5507515,88.3542505",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-06"
   },
   {
     "id": "ahm-foreign_lang_exam_centre-01",
@@ -69,7 +74,8 @@
     "address": "Amrapali Lake View Tower, Opposite Vastrapur Lake, Vastrapur, Ahmedabad 380015",
     "gmaps_link": "https://maps.google.com/?q=23.039716,72.529538",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-06"
   },
   {
     "id": "delhi-ncr-foreign_lang_exam_centre-01",
@@ -81,7 +87,8 @@
     "address": "17 Kasturba Gandhi Marg, Connaught Place, New Delhi 110001",
     "gmaps_link": "https://maps.google.com/?q=28.6269199,77.2223994",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "sin-foreign_lang_exam_centre-01",
@@ -93,7 +100,8 @@
     "address": "30 Napier Road, Singapore 258509",
     "gmaps_link": "https://maps.google.com/?q=1.3050887,103.8214566",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "dxb-foreign_lang_exam_centre-01",
@@ -105,7 +113,8 @@
     "address": "Office 106, Opal Tower, Burj Khalifa Street, Business Bay, Dubai, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.1856357,55.2758106",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "ldn-foreign_lang_exam_centre-01",
@@ -117,7 +126,8 @@
     "address": "Sovereign House, 212 Shaftesbury Avenue, London WC2H 8DP",
     "gmaps_link": "https://maps.google.com/?q=51.5114248,-0.1331587",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "nyc-foreign_lang_exam_centre-01",
@@ -129,7 +139,8 @@
     "address": "1250 Broadway, New York, NY 10001",
     "gmaps_link": "https://maps.google.com/?q=40.7476660,-73.9878545",
     "added_by": "yakew7",
-    "exam": "TOEFL"
+    "exam": "TOEFL",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "cai-foreign_lang_exam_centre-01",
@@ -141,7 +152,8 @@
     "address": "192 El Nil Street, Agouza, Cairo, Egypt",
     "gmaps_link": "https://maps.google.com/?q=30.0514974,31.2139664",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "cbe-foreign_lang_exam_centre-01",
@@ -153,7 +165,8 @@
     "address": "1055/7, Gowtham Centre, Avinashi Road, Coimbatore",
     "gmaps_link": "https://maps.google.com/?q=11.0333976,77.0320401",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "ind-foreign_lang_exam_centre-01",
@@ -165,7 +178,8 @@
     "address": "Near Brilliant Convention Center, Vijay Nagar, Indore 452010",
     "gmaps_link": "https://maps.google.com/?q=22.6948381,75.8539948",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "bho-foreign_lang_exam_centre-01",
@@ -177,7 +191,8 @@
     "address": "Hall No. 203, Vijay Stambh, BDA Complex, MP Nagar Zone 1, Bhopal 462011",
     "gmaps_link": "https://maps.google.com/?q=23.2360672,77.4336432",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "ngp-foreign_lang_exam_centre-01",
@@ -189,7 +204,8 @@
     "address": "Shri Ramdeobaba University, Katol Road, Nagpur 440013",
     "gmaps_link": "https://maps.google.com/?q=21.1768645,79.0606934",
     "added_by": "yakew7",
-    "exam": "TOEFL"
+    "exam": "TOEFL",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "sur-foreign_lang_exam_centre-01",
@@ -201,7 +217,8 @@
     "address": "Solaris The Address, Dumas Road, Piplod, Surat 395008",
     "gmaps_link": "https://maps.google.com/?q=21.1652097,72.7757537",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "vij-foreign_lang_exam_centre-01",
@@ -213,7 +230,8 @@
     "address": "2nd Floor, Santhi Plaza, near Benz Circle, Vijayawada 520008",
     "gmaps_link": "https://maps.google.com/?q=16.500597,80.656369",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "auh-foreign_lang_exam_centre-01",
@@ -225,7 +243,8 @@
     "address": "Villa 16, Al Qasbah Street, Al Bateen, Abu Dhabi, UAE",
     "gmaps_link": "https://maps.google.com/?q=24.4513839,54.3379658",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "shj-foreign_lang_exam_centre-01",
@@ -237,7 +256,8 @@
     "address": "4th Floor, Omran Tower, King Abdul Aziz Street, Al Qasimia, Sharjah, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.3450651,55.3924941",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "sel-foreign_lang_exam_centre-01",
@@ -249,7 +269,8 @@
     "address": "Paichai Jeongdong Building, Jeong-dong, Jung-gu, Seoul, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.5661683,126.9726202",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "bus-foreign_lang_exam_centre-01",
@@ -261,7 +282,8 @@
     "address": "4F Ssangyong Platinum Building, 70 Dongcheon-ro, Busanjin-gu, Busan 47294, South Korea",
     "gmaps_link": "https://maps.google.com/?q=35.1549816,129.0625689",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "man-foreign_lang_exam_centre-01",
@@ -273,7 +295,8 @@
     "address": "Samuel Alexander Building, Oxford Road, Manchester M13 9PL, United Kingdom",
     "gmaps_link": "https://maps.google.com/?q=53.4640165,-2.2335775",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "par-foreign_lang_exam_centre-01",
@@ -285,7 +308,8 @@
     "address": "9 Rue de Constantine, 75007 Paris, France",
     "gmaps_link": "https://maps.google.com/?q=48.8603301,2.3150980",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "ber-foreign_lang_exam_centre-01",
@@ -297,7 +321,8 @@
     "address": "Neue Schoenhauser Strasse 20, 10178 Berlin, Deutschland",
     "gmaps_link": "https://maps.google.com/?q=52.5247869,13.4062226",
     "added_by": "yakew7",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "mad-foreign_lang_exam_centre-01",
@@ -309,7 +334,8 @@
     "address": "Paseo del General Martinez Campos 31, 28010 Madrid, Spain",
     "gmaps_link": "https://maps.google.com/?q=40.4356224,-3.6937744",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "bcn-foreign_lang_exam_centre-01",
@@ -321,7 +347,8 @@
     "address": "Carrer d'Amigo 83, 08021 Barcelona, Spain",
     "gmaps_link": "https://maps.google.com/?q=41.3974692,2.1415109",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "bos-foreign_lang_exam_centre-01",
@@ -333,7 +360,8 @@
     "address": "1 Faneuil Hall Square, Boston, MA 02109, USA",
     "gmaps_link": "https://maps.google.com/?q=42.3600335,-71.0562341",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "mtl-foreign_lang_exam_centre-01",
@@ -345,7 +373,8 @@
     "address": "1001 Rue Sherbrooke Est, Montreal, QC H2L 1L3, Canada",
     "gmaps_link": "https://maps.google.com/?q=45.5205579,-73.5664322",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "lag-foreign_lang_exam_centre-01",
@@ -357,7 +386,8 @@
     "address": "20 Thompson Avenue, Ikoyi, Lagos, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.4523431,3.4280523",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "jnb-foreign_lang_exam_centre-01",
@@ -369,7 +399,8 @@
     "address": "Dunkeld Corner, 275 Jan Smuts Avenue, Dunkeld West, Johannesburg 2196, South Africa",
     "gmaps_link": "https://maps.google.com/?q=-26.1307582,28.0351276",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "tor-foreign_lang_exam_centre-01",
@@ -380,6 +411,7 @@
     "lng": -79.3849,
     "address": "100 University Ave, North Tower, 2nd Floor, Toronto, ON M5J 1V6, Canada",
     "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-08",
     "gmaps_link": "https://maps.google.com/?q=43.6473,-79.3849",
     "added_by": "shauryagangrade"
   },
@@ -391,7 +423,8 @@
     "lat": 43.6688,
     "lng": -79.4052,
     "address": "24 Spadina Rd, Toronto, ON M5R 2S7, Canada",
-    "exam": "TEF, TCF, DELF, DALF",
+    "exam": "TEF/TCF/DELF/DALF",
+    "valid_till": "2027-03-08",
     "gmaps_link": "https://maps.google.com/?q=43.6688,-79.4052",
     "added_by": "shauryagangrade"
   },
@@ -403,6 +436,7 @@
     "lng": 32.8538149,
     "address": "Ataturk Bulvari, Bakanliklar, Kizilay, Ankara, Turkey",
     "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-07",
     "type": "foreign_lang_exam_centre",
     "gmaps_link": "https://maps.google.com/?q=39.9190176,32.8538149",
     "added_by": "yakew7"
@@ -415,6 +449,7 @@
     "lng": 28.9781666,
     "address": "Istiklal Caddesi, Beyoglu, Istanbul 34433, Turkey",
     "exam": "IELTS",
+    "valid_till": "2027-03-07",
     "type": "foreign_lang_exam_centre",
     "gmaps_link": "https://maps.google.com/?q=41.0338612,28.9781666",
     "added_by": "yakew7"
@@ -429,7 +464,8 @@
     "address": "Huhnerposten 1, 20097 Hamburg, Germany",
     "gmaps_link": "https://maps.google.com/?q=53.5498149,10.0086675",
     "added_by": "yakew7",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "gur-foreign_lang_exam_centre-01",
@@ -441,7 +477,8 @@
     "address": "Sector 14, Gurugram, Haryana, India",
     "gmaps_link": "https://maps.google.com/?q=28.473784,77.0471827",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "rnc-foreign_lang_exam_centre-01",
@@ -453,7 +490,8 @@
     "address": "Main Road, Ranchi, Jharkhand 834001, India",
     "gmaps_link": "https://maps.google.com/?q=23.3763871,85.318877",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "bbs-foreign_lang_exam_centre-01",
@@ -465,7 +503,8 @@
     "address": "Jaydev Vihar, Bhubaneswar, Odisha 751013, India",
     "gmaps_link": "https://maps.google.com/?q=20.2962317,85.8264588",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "abj-foreign_lang_exam_centre-01",
@@ -477,7 +516,8 @@
     "address": "3645 Ibrahim Babangida Way, Maitama, Abuja, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=9.0845078,7.4906302",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-07"
   },
   {
     "id": "sfo-foreign_lang_exam_centre-01",
@@ -489,7 +529,8 @@
     "address": "1345 Bush St, San Francisco, CA 94109, USA",
     "gmaps_link": "https://maps.google.com/?q=37.7755,-122.4206",
     "added_by": "yakew7",
-    "exam": "DELF/DALF (French)"
+    "exam": "DELF/DALF",
+    "valid_till": "2027-03-13"
   },
   {
     "id": "prg-foreign_lang_exam_centre-01",
@@ -501,7 +542,8 @@
     "address": "Masarykovo n\u00e1b\u0159e\u017e\u00ed 1748/32, 110 00 Praha 1, Czech Republic",
     "gmaps_link": "https://maps.google.com/?q=50.0815,14.4149",
     "added_by": "yakew7",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-13"
   },
   {
     "id": "syd-foreign_lang_exam_centre-01",
@@ -513,7 +555,8 @@
     "address": "Level 6, 250 George St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8650,151.2094",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-13"
   },
   {
     "id": "mil-foreign_lang_exam_centre-01",
@@ -525,7 +568,8 @@
     "address": "Via San Paolo 10, 20121 Milano, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.4658111,9.1935727",
     "added_by": "yakew7",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-21"
   },
   {
     "id": "sp-foreign_lang_exam_centre-01",
@@ -537,7 +581,8 @@
     "address": "Rua Lisboa 974, Jardim Paulista, Sao Paulo, SP 05413-001, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-23.5559808,-46.6816712",
     "added_by": "yakew7",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-03-21"
   },
   {
     "id": "rio-foreign_lang_exam_centre-01",
@@ -549,7 +594,8 @@
     "address": "Rua Muniz Barreto 730, Botafogo, Rio de Janeiro, RJ 22251-090, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-22.9480586,-43.1844316",
     "added_by": "yakew7",
-    "exam": "DELF/DALF"
+    "exam": "DELF/DALF",
+    "valid_till": "2027-03-21"
   },
   {
     "id": "esk-foreign_lang_exam_centre-01",
@@ -561,7 +607,8 @@
     "address": "Anadolu Universitesi Kampusu, Tepebasi, Eskisehir 26200, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.7918989,30.5005231",
     "added_by": "yakew7",
-    "exam": "TOMER Turkish Proficiency Certificate"
+    "exam": "TOMER Turkish Proficiency Certificate",
+    "valid_till": "2027-03-21"
   },
   {
     "id": "aan-foreign_lang_exam_centre-01",
@@ -573,7 +620,8 @@
     "address": "Al Ain University, Al Jimi, Al Ain, UAE",
     "gmaps_link": "https://maps.google.com/?q=24.2394169,55.7408993",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "ajm-foreign_lang_exam_centre-01",
@@ -585,7 +633,8 @@
     "address": "Al Rashidiya 2, Ajman, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.3969159,55.4472268",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "flr-foreign_lang_exam_centre-01",
@@ -597,7 +646,8 @@
     "address": "Via Bolognese 52, 50139 Firenze, Italy",
     "gmaps_link": "https://maps.google.com/?q=43.7906978,11.2616724",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "rom-foreign_lang_exam_centre-01",
@@ -609,7 +659,8 @@
     "address": "Sapienza Universita di Roma, Piazzale Aldo Moro 5, 00185 Roma, Italy",
     "gmaps_link": "https://maps.google.com/?q=41.9014620,12.5152950",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "mxp-foreign_lang_exam_centre-01",
@@ -621,7 +672,8 @@
     "address": "Via Borgospesso 11, 20121 Milano, Italy",
     "gmaps_link": "https://maps.google.com/?q=45.4702620,9.1942238",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "erz-foreign_lang_exam_centre-02",
@@ -633,7 +685,8 @@
     "address": "Ataturk Universitesi Kampusu, Yakutiye, Erzurum, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.9024928,41.2427694",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "diy-foreign_lang_exam_centre-01",
@@ -645,7 +698,8 @@
     "address": "Hevsel Kampusu, Yeni Mardin Yolu Caddesi, Sur, Diyarbakir, Turkey",
     "gmaps_link": "https://maps.google.com/?q=37.9220500,40.2451883",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "vant-foreign_lang_exam_centre-01",
@@ -657,7 +711,8 @@
     "address": "Vali Mithatbey Mahallesi, Ipekyolu, Van, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.5049130,43.3955928",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "mrs-foreign_lang_exam_centre-02",
@@ -669,7 +724,8 @@
     "address": "Sehitmustafa Mahallesi, Tarsus, Mersin, Turkey",
     "gmaps_link": "https://maps.google.com/?q=36.9159195,34.8920445",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "mns-foreign_lang_exam_centre-02",
@@ -681,7 +737,8 @@
     "address": "Muradiye Mahallesi, Yunusemre, Manisa, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.6491528,27.3453013",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "bfd-foreign_lang_exam_centre-01",
@@ -693,7 +750,8 @@
     "address": "Haylands Way, Bedford MK41 9BX, UK",
     "gmaps_link": "https://maps.google.com/?q=52.1467836,-0.4424621",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "rdg-foreign_lang_exam_centre-01",
@@ -705,7 +763,8 @@
     "address": "Whiteknights Campus, Reading RG6 6AA, UK",
     "gmaps_link": "https://maps.google.com/?q=51.4399250,-0.9565278",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "yrk-foreign_lang_exam_centre-01",
@@ -717,7 +776,8 @@
     "address": "137 Holgate Road, York YO24 4DH, UK",
     "gmaps_link": "https://maps.google.com/?q=53.9541212,-1.1040431",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "sbr-foreign_lang_exam_centre-01",
@@ -729,7 +789,8 @@
     "address": "25 Claremont Hill, Shrewsbury SY1 1RD, UK",
     "gmaps_link": "https://maps.google.com/?q=52.7078194,-2.7574842",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "cpq-foreign_lang_exam_centre-01",
@@ -741,7 +802,8 @@
     "address": "Rua Doutor Antonio da Costa Carvalho 480, Cambui, 13024-050 Campinas, SP, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-22.8943767,-47.0556279",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "cur-foreign_lang_exam_centre-01",
@@ -753,7 +815,8 @@
     "address": "Rua General Carneiro 777, Centro, Curitiba, PR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-25.4292320,-49.2600180",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "cur-foreign_lang_exam_centre-02",
@@ -765,7 +828,8 @@
     "address": "Rua Chile 1678, Rebou\u00e7as, Curitiba, PR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-25.4497214,-49.2656236",
     "added_by": "yakew7",
-    "exam": "TOEFL"
+    "exam": "TOEFL",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "boa-foreign_lang_exam_centre-01",
@@ -777,7 +841,8 @@
     "address": "Rua Major Manoel Correa 545, Sao Francisco, 69305-100 Boa Vista, RR, Brazil",
     "gmaps_link": "https://maps.google.com/?q=2.8315680,-60.6755466",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "uaq-foreign_lang_exam_centre-01",
@@ -789,7 +854,8 @@
     "address": "Al Shmookh Center, Ittihad Street, Umm Al Quwain, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.5856050,55.5760450",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "awk-foreign_lang_exam_centre-01",
@@ -801,7 +867,8 @@
     "address": "20 Nibo Road, Amawbia, Awka, Anambra State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.2189470,7.0774372",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "kon-foreign_lang_exam_centre-01",
@@ -813,7 +880,8 @@
     "address": "Kultur Mahallesi, Cumhuriyet Bulvari, Konak, Izmir, Turkey",
     "gmaps_link": "https://maps.google.com/?q=38.4314642,27.1374017",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "ynu-foreign_lang_exam_centre-01",
@@ -825,7 +893,8 @@
     "address": "119 Songdomunhwa-ro, Yeonsu-gu, Incheon, South Korea",
     "gmaps_link": "https://maps.google.com/?q=37.3756356,126.6665221",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "ankr-foreign_lang_exam_centre-01",
@@ -837,7 +906,8 @@
     "address": "Guniz Sokak No:42, Kavaklidere, Cankaya, Ankara, Turkey",
     "gmaps_link": "https://maps.google.com/?q=39.9133494,32.8578531",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "mrp-foreign_lang_exam_centre-01",
@@ -849,7 +919,8 @@
     "address": "Etiler Mahallesi, 834. Sokak No:9, Remel Plaza, Muratpasa, Antalya, Turkey",
     "gmaps_link": "https://maps.google.com/?q=36.8992302,30.7091218",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "lgs-foreign_lang_exam_centre-01",
@@ -861,7 +932,8 @@
     "address": "7A Kudirat Abiola Way, Oregun, Ikeja, Lagos, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.5992618,3.3659932",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "ben-foreign_lang_exam_centre-01",
@@ -873,7 +945,8 @@
     "address": "76 Boundary Road, off Airport Road, Ikpokpan Junction, Benin City, Edo State, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=6.3149345,5.6138916",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "trk-foreign_lang_exam_centre-01",
@@ -885,7 +958,8 @@
     "address": "1 Hospital Road, off Race Course Road, Nassarawa GRA, Kano, Nigeria",
     "gmaps_link": "https://maps.google.com/?q=11.9948775,8.5501061",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "ctn-foreign_lang_exam_centre-01",
@@ -897,7 +971,8 @@
     "address": "1 St George's Mall, Cape Town City Centre, Cape Town 8001, South Africa",
     "gmaps_link": "https://maps.google.com/?q=-33.9196895,18.4247380",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "nrb-foreign_lang_exam_centre-01",
@@ -909,7 +984,8 @@
     "address": "Upper Hill Road, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.3009143,36.8216810",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "nrb-foreign_lang_exam_centre-02",
@@ -921,7 +997,8 @@
     "address": "2nd Floor, Euro Towers, Muthithi Road, Westlands, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.2654200,36.8066763",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "alg-foreign_lang_exam_centre-01",
@@ -933,7 +1010,8 @@
     "address": "Al Garhoud Community Center, Al Garhoud, Dubai, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.2494824,55.3399801",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "alt-foreign_lang_exam_centre-01",
@@ -945,7 +1023,8 @@
     "address": "Al Ghurair Investment Corporate Office, opposite Union Metro Station, Deira, Dubai, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.2659919,55.3137713",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "poa-foreign_lang_exam_centre-01",
@@ -957,7 +1036,8 @@
     "address": "Rua Joao Bastian 277, Tres Figueiras, Porto Alegre, RS, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-30.0390215,-51.1712146",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "poa-foreign_lang_exam_centre-02",
@@ -969,7 +1049,8 @@
     "address": "Avenida Sertorio 5310, Jardim Lindoia, Porto Alegre, RS, Brazil",
     "gmaps_link": "https://maps.google.com/?q=-29.9976847,-51.1515464",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "rmd-foreign_lang_exam_centre-01",
@@ -981,7 +1062,8 @@
     "address": "Bld. 5, 110-13571 Commerce Parkway, Richmond, BC V6V 2R2, Canada",
     "gmaps_link": "https://maps.google.com/?q=49.1745088,-123.0735219",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "rmh-foreign_lang_exam_centre-01",
@@ -993,7 +1075,8 @@
     "address": "Unit 201, 650 Highway 7 East, Richmond Hill, ON L4B 2N7, Canada",
     "gmaps_link": "https://maps.google.com/?q=43.8452627,-79.379242",
     "added_by": "yakew7",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-03-25"
   },
   {
     "id": "dac-foreign_lang_exam_centre-01",
@@ -1005,7 +1088,8 @@
     "address": "Plot No 26, Road 3, Mirpur Rd, Dhaka 1205, Bangladesh",
     "gmaps_link": "https://maps.google.com/?q=23.7407854,90.3827609",
     "added_by": "anaydhawan",
-    "exam": "DELF"
+    "exam": "DELF",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "khi-foreign_lang_exam_centre-01",
@@ -1017,7 +1101,8 @@
     "address": "Plot ST-1, Kehkashan, Block 8 Clifton, Karachi, 75500, Pakistan",
     "gmaps_link": "https://maps.google.com/?q=24.833072,67.0362317",
     "added_by": "anaydhawan",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "sgn-foreign_lang_exam_centre-01",
@@ -1029,7 +1114,8 @@
     "address": "226 Đ. Lê Văn Sỹ, Tân Sơn Hòa, Hồ Chí Minh 70000, Vietnam",
     "gmaps_link": "https://maps.google.com/?q=10.7946644,106.6678667",
     "added_by": "anaydhawan",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "bog-foreign_lang_exam_centre-01",
@@ -1041,7 +1127,8 @@
     "address": "Chicó Sede Principal, Cra. 11a #93-35 piso 6, Bogotá, Colombia",
     "gmaps_link": "https://maps.google.com/?q=4.6753859,-74.0483262",
     "added_by": "anaydhawan",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "acc-foreign_lang_exam_centre-01",
@@ -1053,7 +1140,8 @@
     "address": "Liberia Road, Accra, Ghana",
     "gmaps_link": "https://maps.google.com/?q=5.5560334,-0.2013895",
     "added_by": "anaydhawan",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "nrb-foreign_lang_exam_centre-03",
@@ -1065,7 +1153,8 @@
     "address": "Monrovia Street, Nairobi CBD, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.2823182,36.8165518",
     "added_by": "propcgamer20-png",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "nrb-foreign_lang_exam_centre-04",
@@ -1077,7 +1166,8 @@
     "address": "Utalii Lane, Nairobi CBD, Nairobi, Kenya",
     "gmaps_link": "https://maps.google.com/?q=-1.2825874,36.8165128",
     "added_by": "propcgamer20-png",
-    "exam": "DELF/DALF"
+    "exam": "DELF/DALF",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "syd-foreign_lang_exam_centre-02",
@@ -1089,7 +1179,8 @@
     "address": "90 Ocean Street, Woollahra NSW 2025, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8833178,151.2384558",
     "added_by": "propcgamer20-png",
-    "exam": "Goethe-Zertifikat (A1-C2)"
+    "exam": "Goethe-Zertifikat (A1-C2)",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "syd-foreign_lang_exam_centre-03",
@@ -1101,7 +1192,8 @@
     "address": "725-731 George St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8811250,151.2043824",
     "added_by": "propcgamer20-png",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "syd-foreign_lang_exam_centre-04",
@@ -1113,7 +1205,8 @@
     "address": "22-24 City Road, Chippendale NSW 2008, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8855028,151.1947331",
     "added_by": "propcgamer20-png",
-    "exam": "DELE"
+    "exam": "DELE",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "mel-foreign_lang_exam_centre-01",
@@ -1125,7 +1218,8 @@
     "address": "51 Grey Street, St Kilda VIC 3182, Australia",
     "gmaps_link": "https://maps.google.com/?q=-37.8616991,144.9787899",
     "added_by": "propcgamer20-png",
-    "exam": "DELF/DALF"
+    "exam": "DELF/DALF",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "mel-foreign_lang_exam_centre-02",
@@ -1137,7 +1231,8 @@
     "address": "170 Queen Street, Melbourne VIC 3000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-37.8144925,144.9607301",
     "added_by": "propcgamer20-png",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "bne-foreign_lang_exam_centre-01",
@@ -1149,7 +1244,8 @@
     "address": "262 Montague Road, West End QLD 4101, Australia",
     "gmaps_link": "https://maps.google.com/?q=-27.4785941,153.0066054",
     "added_by": "propcgamer20-png",
-    "exam": "DELF/DALF"
+    "exam": "DELF/DALF",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "bne-foreign_lang_exam_centre-02",
@@ -1161,7 +1257,8 @@
     "address": "Level 3, 99 Creek Street, Brisbane QLD 4000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-27.4662193,153.0282539",
     "added_by": "propcgamer20-png",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   },
   {
     "id": "per-foreign_lang_exam_centre-01",
@@ -1173,6 +1270,7 @@
     "address": "Level 1, 188 Newcastle Street, Northbridge WA 6003, Australia",
     "gmaps_link": "https://maps.google.com/?q=-31.9463104,115.8614450",
     "added_by": "propcgamer20-png",
-    "exam": "IELTS"
+    "exam": "IELTS",
+    "valid_till": "2027-04-26"
   }
 ]
