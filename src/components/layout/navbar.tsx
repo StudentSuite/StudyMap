@@ -41,6 +41,9 @@ export function Navbar() {
   const [searchLoaded, setSearchLoaded] = React.useState(false);
 
   const authEnabled = isSupabaseConfigured();
+  // The embeddable map widget renders chrome-free in a third-party iframe - no nav, no
+  // sign-in, nothing account-aware. See /docs/embedding-widget.
+  const isEmbed = pathname.startsWith("/embed");
 
   function openSearch() {
     setSearchLoaded(true);
@@ -69,6 +72,8 @@ export function Navbar() {
   }, []);
 
   React.useEffect(() => {
+    // Nothing on /embed shows login state, so do not ask Supabase about the visitor at all.
+    if (isEmbed) return;
     const supabase = createClient();
     if (!supabase) return;
     supabase.auth
@@ -79,7 +84,7 @@ export function Navbar() {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((_, session) => setLoggedIn(!!session));
     return () => subscription.unsubscribe();
-  }, []);
+  }, [isEmbed]);
 
   async function handleSignOut() {
     const supabase = createClient();
@@ -91,9 +96,7 @@ export function Navbar() {
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
-  // The embeddable map widget renders chrome-free in a third-party iframe -
-  // no nav, no sign-in, nothing account-aware. See /docs/embedding-widget.
-  if (pathname.startsWith("/embed")) return null;
+  if (isEmbed) return null;
 
   return (
     <header className="fixed top-0 inset-x-0 z-[1100] w-full border-b bg-background/95 backdrop-blur-sm supports-[backdrop-filter]:bg-background/80">
