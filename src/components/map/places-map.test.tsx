@@ -107,7 +107,9 @@ describe("PlacesMap search URLs", () => {
     expect(
       screen.getByRole("button", { name: /^Library\s*1$/ }).getAttribute("aria-pressed"),
     ).toBe("true");
-    expect(screen.getByRole("combobox").textContent).toContain("Mumbai");
+    expect((screen.getByLabelText("Filter by city") as HTMLInputElement).value).toBe(
+      "Mumbai",
+    );
     expect(renderMap.mock.lastCall?.[0]).toMatchObject({
       places: [PLACES[0]],
       focusId: "city-library",
