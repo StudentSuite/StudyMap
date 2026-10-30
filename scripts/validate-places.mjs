@@ -18,6 +18,10 @@
  *   - gmaps_link matches the schema's pattern
  *   - valid_till is a real ISO date (YYYY-MM-DD), when present
  *   - No em dashes in any string field
+ *   - gmaps_link in the ?q=<lat>,<lng> form points at the record's own lat/lng
+ *     (within 0.01 degrees)
+ *   - Warns (does not fail) on records sharing a city and a normalised name,
+ *     including across files
  *   - Warns (does not fail) on near-duplicate coordinates between
  *     different-named places within the same file
  *
@@ -29,6 +33,8 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 import {
   Reporter,
+  findSameNamePlaces,
+  gmapsLinkCoordinates,
   hasEmDash,
   isCountryCode,
   isLatLngPlaceholderGmapsLink,
@@ -60,11 +66,14 @@ const ID_SLUG_RE = /^[a-z][a-z0-9_]*(-[a-z0-9_]+)*-[0-9]+$/;
 const ID_NUMERIC_RE = /^[0-9]+$/;
 
 const NEAR_DUPE_METERS = 50;
+// About 1 km. The largest gap among agreeing records in the dataset is 0.0009 degrees.
+const GMAPS_LINK_TOLERANCE_DEG = 0.01;
 
 const reporter = new Reporter();
 const err = (loc, msg) => reporter.err(loc, msg);
 const warn = (loc, msg) => reporter.warn(loc, msg);
 const globalIds = new Set();
+const allRecords = [];
 
 // Haversine distance in meters between two lat/lng points.
 function metersBetween(a, b) {
@@ -112,6 +121,7 @@ for (const file of files) {
     const r = records[i];
     const loc = `${file}[${i}] (id: ${r.id ?? "?"})`;
     const before = reporter.totalErrors;
+    allRecords.push({ file, ...r });
 
     // Required fields
     for (const field of REQUIRED_FIELDS) {
@@ -224,6 +234,22 @@ for (const file of files) {
           loc,
           `gmaps_link is still the literal "lat,lng" placeholder (see #229) — fill it with the record's coordinates`,
         );
+      } else {
+        // A link in the ?q=<lat>,<lng> form must point at the record's own coordinates
+        // (see #283). Other forms (cid=, short links) carry no coordinates to compare.
+        const linked = gmapsLinkCoordinates(r.gmaps_link);
+        if (
+          linked &&
+          typeof r.lat === "number" &&
+          typeof r.lng === "number" &&
+          (Math.abs(linked.lat - r.lat) > GMAPS_LINK_TOLERANCE_DEG ||
+            Math.abs(linked.lng - r.lng) > GMAPS_LINK_TOLERANCE_DEG)
+        ) {
+          err(
+            loc,
+            `gmaps_link points at ${linked.lat},${linked.lng} but the record's lat/lng is ${r.lat},${r.lng} — the link was probably copied from another place`,
+          );
+        }
       }
     }
 
@@ -301,6 +327,16 @@ for (const file of files) {
   const status = fileErrors === 0 ? " OK " : "FAIL";
   console.log(
     `  ${status}   ${file} (${records.length} records, ${fileErrors} error(s))`,
+  );
+}
+
+// Same city and same normalised name, in the same file or across files. A warning, not an
+// error: a few such pairs are known (see #285) and can be two real branches.
+for (const group of findSameNamePlaces(allRecords)) {
+  warn(
+    "data/places",
+    `${group.length} records share the city "${group[0].city}" and the name "${group[0].name}": ` +
+      group.map((r) => `${r.file}:${r.id ?? "?"}`).join(", "),
   );
 }
 
