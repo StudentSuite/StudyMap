@@ -70,8 +70,18 @@ function expectExistingState() {
   expect(params().get("zoom")).toBe("11");
 }
 
+function stubViewport(desktop: boolean) {
+  vi.stubGlobal("matchMedia", (query: string) => ({
+    matches: desktop && query === "(min-width: 1024px)",
+    media: query,
+    addEventListener: () => {},
+    removeEventListener: () => {},
+  }));
+}
+
 beforeEach(() => {
   vi.useFakeTimers();
+  stubViewport(true);
   window.history.replaceState(null, "", "/map");
   renderMap.mockClear();
   writeText.mockReset().mockResolvedValue(undefined);
@@ -85,6 +95,7 @@ afterEach(() => {
   cleanup();
   vi.useRealTimers();
   vi.restoreAllMocks();
+  vi.unstubAllGlobals();
   if (clipboardDescriptor) {
     Object.defineProperty(navigator, "clipboard", clipboardDescriptor);
   } else {
@@ -208,5 +219,25 @@ describe("PlacesMap search URLs", () => {
     for (const item of PLACES) {
       expect(screen.getByText(item.name)).toBeTruthy();
     }
+  });
+});
+
+describe("PlacesMap panel mounting", () => {
+  it("mounts the sidebar panel at desktop width", () => {
+    render(<PlacesMap places={PLACES} />);
+
+    // Sidebar search + mobile top bar search.
+    expect(searchInputs()).toHaveLength(2);
+    expect(screen.getAllByRole("button", { name: "Suggest a place" })).toHaveLength(1);
+  });
+
+  it("does not build the sidebar panel on a phone", () => {
+    stubViewport(false);
+    render(<PlacesMap places={PLACES} />);
+
+    // Only the mobile top bar search; the sheet is closed at peek height.
+    expect(searchInputs()).toHaveLength(1);
+    expect(screen.queryByRole("button", { name: "Suggest a place" })).toBeNull();
+    expect(screen.queryByText("City Library")).toBeNull();
   });
 });

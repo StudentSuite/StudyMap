@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import { ExternalLink, MapPinPlus, MapPinX, Navigation, RotateCcw } from "lucide-react";
 
 import type { Place } from "@/lib/types";
@@ -28,7 +29,12 @@ interface ResultsListProps {
   focusId?: string | null;
   /** Optional expand/collapse control (e.g. "Show all" for the nearest list). */
   toggle?: { label: string; onClick: () => void } | null;
+  /** Rows rendered at once; a "Show more" button reveals the next page. */
+  pageSize?: number;
 }
+
+/** Rows rendered before "Show more", so the unfiltered map does not build ~2,000 rows. */
+export const RESULTS_PAGE_SIZE = 100;
 
 /** A scrollable list of places. Clicking a row flies the map to that pin. */
 export function ResultsList({
@@ -38,7 +44,26 @@ export function ResultsList({
   onSelect,
   focusId,
   toggle,
+  pageSize = RESULTS_PAGE_SIZE,
 }: ResultsListProps) {
+  const [limit, setLimit] = React.useState(pageSize);
+
+  // A new result set (filter, search, nearest-first) starts again from the first page.
+  const [seenRows, setSeenRows] = React.useState(rows);
+  if (rows !== seenRows) {
+    setSeenRows(rows);
+    setLimit(pageSize);
+  }
+
+  const shownRows = rows.slice(0, limit);
+  // A focused pin beyond the page still needs its row, or the highlight would vanish.
+  if (focusId && rows.length > limit) {
+    const focused = rows.find((row) => row.place.id === focusId);
+    if (focused && !shownRows.includes(focused)) shownRows.push(focused);
+  }
+  const nextPage = Math.min(pageSize, rows.length - limit);
+  const hiddenCount = rows.length - shownRows.length;
+
   return (
     <div className="flex min-h-[120px] flex-1 flex-col">
       <div className="flex items-center justify-between pb-1.5">
@@ -90,7 +115,7 @@ export function ResultsList({
         />
       ) : (
         <ul className="min-h-0 space-y-1 overflow-y-auto">
-          {rows.map(({ place, distanceKm }) => (
+          {shownRows.map(({ place, distanceKm }) => (
             <li key={place.id}>
               <div
                 className={`group flex items-center gap-2.5 rounded-md px-2 py-2 ${
@@ -145,6 +170,19 @@ export function ResultsList({
               </div>
             </li>
           ))}
+          {rows.length > limit && (
+            <li className="pt-1">
+              <Button
+                type="button"
+                variant="outline"
+                size="sm"
+                className="w-full"
+                onClick={() => setLimit((current) => current + pageSize)}
+              >
+                Show {nextPage} more ({hiddenCount} not shown)
+              </Button>
+            </li>
+          )}
         </ul>
       )}
     </div>

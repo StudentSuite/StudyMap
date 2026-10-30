@@ -28,6 +28,7 @@ import { MapErrorBoundary } from "@/components/map/map-error-boundary";
 import { MapPanel } from "@/components/map/map-panel";
 import { MapSheet, SHEET_SNAP_POINTS } from "@/components/map/map-sheet";
 import { NearMeFab } from "@/components/map/near-me-fab";
+import { useMediaQuery } from "@/lib/use-media-query";
 import { UserPlaceDialog } from "@/components/map/user-place-dialog";
 import { UserHomeDialog } from "@/components/map/user-home-dialog";
 import type { ResultRow } from "@/components/map/results-list";
@@ -86,6 +87,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
   const [sortByDistance, setSortByDistance] = React.useState(false);
   const [snap, setSnap] = React.useState<number | string | null>(SHEET_SNAP_POINTS[0]);
+  // Mount one MapPanel, not both: the sidebar from `lg` up (the same breakpoint as the
+  // `lg:` classes below), the sheet below it. Building the other one only to hide it with
+  // CSS doubled the list and its interactive elements.
+  const isDesktop = useMediaQuery("(min-width: 1024px)");
   // Sheet always open on mobile at peek snap; "closing" resets to peek, not hidden.
   const [sheetOpen, setSheetOpen] = React.useState(true);
   const hydrated = React.useRef(false);
@@ -380,7 +385,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     <div className="flex h-full w-full overflow-hidden">
       {/* Desktop sidebar */}
       <aside className="hidden w-[360px] shrink-0 flex-col overflow-hidden border-r border-border bg-card p-4 lg:flex">
-        <MapPanel {...panelProps} showSearch showNearMe scrollChips />
+        {isDesktop && <MapPanel {...panelProps} showSearch showNearMe scrollChips />}
       </aside>
 
       {/* Map + mobile overlays */}
@@ -462,7 +467,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
             </button>
           )}
           {/* Full panel: visible when sheet above peek */}
-          {snap !== SHEET_SNAP_POINTS[0] && (
+          {snap !== SHEET_SNAP_POINTS[0] && !isDesktop && (
             <MapPanel {...panelProps} showSearch={false} showNearMe={false} scrollChips />
           )}
         </MapSheet>
