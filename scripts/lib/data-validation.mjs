@@ -69,3 +69,8 @@ export class Reporter {
     this.totalWarnings++;
   }
 }
+
+/** True when `value` is an ISO 3166-1 alpha-2 style country code: exactly two capital letters. */
+export function isCountryCode(value) {
+  return typeof value === "string" && /^[A-Z]{2}$/.test(value);
+}

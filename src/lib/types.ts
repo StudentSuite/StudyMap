@@ -280,6 +280,8 @@ export interface Place {
   name: string;
   type: PlaceType;
   city: City;
+  /** ISO 3166-1 alpha-2 country code in capitals (e.g. "IN"). Optional while records are backfilled (#288). */
+  country?: string;
   lat: number;
   lng: number;
   address?: string;

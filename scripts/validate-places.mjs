@@ -11,6 +11,7 @@
  *   - type is one of the schema's enum values
  *   - type matches the filename it lives in
  *   - city is a lowercase, underscore-separated slug
+ *   - country, when present, is a two-letter upper-case ISO 3166-1 code
  *   - id matches the <city-prefix>-<type>-<number> convention, or is a bare
  *     numeric id (the College Board SAT centre code convention)
  *   - lat/lng are numbers within the schema's min/max bounds
@@ -29,6 +30,7 @@ import { fileURLToPath } from "url";
 import {
   Reporter,
   hasEmDash,
+  isCountryCode,
   isLatLngPlaceholderGmapsLink,
   isRealIsoDate,
 } from "./lib/data-validation.mjs";
@@ -170,6 +172,14 @@ for (const file of files) {
       err(
         loc,
         `city must be a lowercase, underscore-separated slug, got ${JSON.stringify(r.city)}`,
+      );
+    }
+
+    // country, when present, is an upper-case ISO 3166-1 alpha-2 code (see #288)
+    if (r.country !== undefined && !isCountryCode(r.country)) {
+      err(
+        loc,
+        `country must be a two-letter upper-case ISO 3166-1 alpha-2 code like "IN", got ${JSON.stringify(r.country)}`,
       );
     }
 

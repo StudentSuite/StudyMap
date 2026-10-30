@@ -27,6 +27,11 @@
       "pattern": "^[a-z0-9]+(_[a-z0-9]+)*$",
       "description": "Lowercase, underscore-separated slug, e.g. \"mumbai\", \"navi_mumbai\". Any city worldwide is welcome, not a fixed enum."
     },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$",
+      "description": "Optional for now. ISO 3166-1 alpha-2 country code in capitals, e.g. \"IN\", \"GB\". Competitions already use the same codes."
+    },
     "lat": {
       "type": "number",
       "minimum": -90,
