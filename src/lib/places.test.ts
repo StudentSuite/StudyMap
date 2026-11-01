@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import satCentres from "../../data/places/sat_centre.json";
 
 import { cityBounds, filterPlaces, getCities } from "@/lib/places";
 import type { Place } from "@/lib/types";
@@ -146,5 +147,30 @@ describe("cityBounds", () => {
       minLng: 72.83,
       maxLng: 72.84,
     });
+  });
+});
+
+describe("SAT centre city slugs", () => {
+  it("keeps same-named North American centres out of unrelated city pages", () => {
+    const expectedCities: Record<string, string> = {
+      "96390": "london_ontario",
+      "07330": "manchester_connecticut",
+      "21171": "berlin_maryland",
+      "33282": "cairo_new_york",
+      "33154": "bedford_new_york",
+      "39616": "reading_pennsylvania",
+      "39740": "york_pennsylvania",
+      "39744": "york_pennsylvania",
+      "21100": "aberdeen_maryland",
+      "07140": "bristol_connecticut",
+      "07145": "bristol_connecticut",
+      "21774": "salisbury_maryland",
+      "87361": "southport_queensland",
+    };
+
+    for (const [id, city] of Object.entries(expectedCities)) {
+      expect(satCentres.find((centre) => centre.id === id)?.city).toBe(city);
+    }
+    expect(satCentres.find((centre) => centre.id === "59096")?.city).toBe("arona");
   });
 });
