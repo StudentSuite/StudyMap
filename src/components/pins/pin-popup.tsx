@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import { ExternalLink, Link2, Navigation } from "lucide-react";
 import { toast } from "sonner";
 
@@ -7,6 +8,8 @@ import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
+import { DirectionsModal } from "@/components/map/directions-modal";
+import { ReportIssueDialog } from "@/components/map/report-issue-dialog";
 import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
@@ -15,6 +18,9 @@ interface PinPopupProps {
 }
 
 export function PinPopup({ place }: PinPopupProps) {
+  const [directionsOpen, setDirectionsOpen] = React.useState(false);
+  const [reportOpen, setReportOpen] = React.useState(false);
+
   function copyLink() {
     const url = buildShareUrl({
       types: [],
@@ -80,15 +86,15 @@ export function PinPopup({ place }: PinPopupProps) {
           <ExternalLink className="size-3.5" />
           Google Maps
         </a>
-        <a
-          href={directionsUrl(place.lat, place.lng)}
-          target="_blank"
-          rel="noreferrer"
+        <button
+          type="button"
+          onClick={() => setDirectionsOpen(true)}
           aria-label={`Directions to ${place.name}`}
+          aria-haspopup="dialog"
           className="inline-flex items-center justify-center rounded-md border border-input bg-background px-2.5 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-muted hover:text-foreground active:bg-muted/80"
         >
           <Navigation className="size-3.5" />
-        </a>
+        </button>
         <button
           type="button"
           onClick={copyLink}
@@ -100,12 +106,27 @@ export function PinPopup({ place }: PinPopupProps) {
       </div>
 
       {/* Footer badge */}
-      <div className="border-t border-border/30 pt-2">
+      <div className="flex items-center justify-between gap-2 border-t border-border/30 pt-2">
         <p className="text-[11px] text-muted-foreground/75">
           Added by{" "}
           <span className="font-medium text-muted-foreground">{place.added_by}</span>
         </p>
+        <button
+          type="button"
+          onClick={() => setReportOpen(true)}
+          aria-haspopup="dialog"
+          className="text-[11px] text-muted-foreground underline-offset-2 hover:text-foreground hover:underline"
+        >
+          Report a problem
+        </button>
       </div>
+
+      <DirectionsModal
+        place={place}
+        open={directionsOpen}
+        onOpenChange={setDirectionsOpen}
+      />
+      <ReportIssueDialog place={place} open={reportOpen} onOpenChange={setReportOpen} />
     </div>
   );
 }
