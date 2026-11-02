@@ -3,7 +3,7 @@
     "id": "bow-seat-ocean-awareness-contest",
     "name": "Ocean Awareness Contest",
     "organizer": "Bow Seat Ocean Awareness Programs",
-    "organizer_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/",
+    "organizer_url": "https://bowseat.org/programs/blue-planet-awareness-contest/contest-overview/",
     "category": "arts_design",
     "subjects": [
       "visual art",
@@ -20,7 +20,7 @@
       "currency": "USD"
     },
     "prize": "USD 1,000 Gold Award in each division.",
-    "official_url": "https://bowseat.org/programs/ocean-awareness-contest/contest-overview/",
+    "official_url": "https://bowseat.org/programs/blue-planet-awareness-contest/contest-overview/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -29,7 +29,7 @@
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/faqs/"
+        "source_url": "https://bowseat.org/programs/blue-planet-awareness-contest/faqs/"
       },
       {
         "label": "Winners announced",
@@ -37,7 +37,7 @@
         "type": "results",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://bowseat.org/programs/ocean-awareness-contest/awards/"
+        "source_url": "https://bowseat.org/programs/blue-planet-awareness-contest/awards/"
       }
     ],
     "added_by": "yakew7",
@@ -448,7 +448,7 @@
       "currency": "USD"
     },
     "prize": "Certificates and prizes for first-, second-, and third-place posters in each grade band.",
-    "official_url": "https://www.amstat.org/education/k-12-students/",
+    "official_url": "https://www.amstat.org/education/k-12-educators#comps",
     "cycle_year": 2027,
     "dates": [
       {
@@ -488,7 +488,7 @@
       "currency": "USD"
     },
     "prize": "Certificates and prizes for first-, second-, and third-place projects in each grade band.",
-    "official_url": "https://www.amstat.org/education/k-12-students/",
+    "official_url": "https://www.amstat.org/education/k-12-educators#comps",
     "cycle_year": 2027,
     "dates": [
       {

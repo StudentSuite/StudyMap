@@ -1939,9 +1939,9 @@
   },
   {
     "id": "you-be-the-chemist-challenge",
-    "name": "You Be The Chemist Challenge",
+    "name": "You Be The Solution Challenge (formerly You Be The Chemist)",
     "organizer": "Chemical Educational Foundation",
-    "organizer_url": "https://www.chemed.org/",
+    "organizer_url": "https://www.cefinstem.org/",
     "category": "stem",
     "subjects": [
       "chemistry",
@@ -1958,7 +1958,7 @@
       "currency": "USD"
     },
     "prize": "Scholarship awards for top teams at the National Challenge in Houston, Texas.",
-    "official_url": "https://www.chemed.org/programs/challenge/",
+    "official_url": "https://www.cefinstem.org/programs/challenge/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -1975,7 +1975,7 @@
         "type": "round",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.chemed.org/programs/challenge/"
+        "source_url": "https://www.cefinstem.org/programs/challenge/"
       }
     ],
     "added_by": "yakew7",
@@ -2789,7 +2789,7 @@
       "currency": "MXN"
     },
     "prize": "Advancement to the national round; the top four scorers represent Mexico at the IBO.",
-    "official_url": "https://amc.mx/olimpiadanacionaldebiologia/index-2.html",
+    "official_url": "https://amc.mx/olimpiadanacionaldebiologia/",
     "cycle_year": 2026,
     "dates": [
       {
@@ -3447,7 +3447,7 @@
       "currency": "AUD"
     },
     "prize": "Advancement toward the national final; the top performer represents Australia at the IBB World Championship.",
-    "official_url": "https://hsl.educationperfect.com/brain-bee-challenge-2026",
+    "official_url": "https://www.ans.org.au/meetings-events/australia-brain-bee-challenge/about-the-brain-bee-challenge",
     "cycle_year": 2027,
     "dates": [
       {
@@ -3456,7 +3456,7 @@
         "type": "round",
         "timezone": "UTC+11",
         "estimated": true,
-        "source_url": "https://hsl.educationperfect.com/brain-bee-challenge-2026"
+        "source_url": "https://www.ans.org.au/meetings-events/australia-brain-bee-challenge"
       },
       {
         "label": "Round 1 assessment window closes (following the usual March pattern)",
@@ -3737,7 +3737,7 @@
       "currency": "NGN"
     },
     "prize": "Recognition at the event; participation in IBRO and Dana Foundation supported brain awareness activities.",
-    "official_url": "https://neurosciencenigeria.org",
+    "official_url": "https://www.thebrainbee.org/",
     "cycle_year": 2026,
     "dates": [
       {

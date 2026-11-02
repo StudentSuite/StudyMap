@@ -305,7 +305,7 @@
       "currency": "USD"
     },
     "prize": "USD 250 for the winner; shortlisted authors are published on the Reedsy blog.",
-    "official_url": "https://reedsy.com/writing-contest",
+    "official_url": "https://reedsy.com/creative-writing-prompts/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -314,7 +314,7 @@
         "type": "deadline",
         "timezone": "UTC",
         "estimated": true,
-        "source_url": "https://reedsy.com/creative-writing-prompts/"
+        "source_url": "https://reedsy.com/faq/common-questions/more-about-reedsy/reedsy-prompts"
       }
     ],
     "added_by": "yakew7",

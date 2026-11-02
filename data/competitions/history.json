@@ -68,7 +68,7 @@
       "currency": "USD"
     },
     "prize": "National Championship title in history quiz bowl.",
-    "official_url": "https://www.historybowl.com/",
+    "official_url": "https://www.iacompetitions.com/our-competitions/",
     "cycle_year": 2027,
     "dates": [
       {
@@ -77,7 +77,7 @@
         "type": "round",
         "timezone": "UTC-4",
         "estimated": false,
-        "source_url": "https://www.historybowl.com/"
+        "source_url": "https://www.iacompetitions.com/"
       },
       {
         "label": "National Championships (Arlington)",
@@ -183,7 +183,7 @@
       "currency": "USD"
     },
     "prize": "National Championship title in individual history quiz.",
-    "official_url": "https://www.historybowl.com/",
+    "official_url": "https://www.iacompetitions.com/our-competitions/",
     "cycle_year": 2027,
     "dates": [
       {

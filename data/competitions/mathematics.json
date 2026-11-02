@@ -685,7 +685,7 @@
     "id": "pan-african-mathematics-olympiad",
     "name": "Pan African Mathematics Olympiad (PAMO)",
     "organizer": "African Mathematical Union, Pan African Mathematics Olympiads Commission",
-    "organizer_url": "https://www.africanmathunion.org/pamo",
+    "organizer_url": "https://www.pamoofficial.org/committee/",
     "category": "mathematics",
     "subjects": [
       "mathematics",
@@ -719,7 +719,7 @@
         "type": "ceremony",
         "timezone": "UTC+2",
         "estimated": false,
-        "source_url": "https://www.africanmathunion.org/amu--pamoc"
+        "source_url": "https://www.pamoofficial.org/timeline/"
       }
     ],
     "added_by": "yakew7",
