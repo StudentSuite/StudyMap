@@ -6,11 +6,13 @@ import { site } from "@/lib/site";
 import { Button } from "@/components/ui/button";
 import { MapPreview } from "@/components/home/map-preview";
 import { HeroParticles } from "@/components/home/hero-particles";
+import { CitySwitcher } from "@/components/home/city-switcher";
 
 export function Hero() {
   const places = getPlaces();
   const total = places.length;
-  const cityCount = getCities(places).length;
+  const cities = getCities(places);
+  const cityCount = cities.length;
   const stats = `${total} places · ${PLACE_TYPES.length} categories · ${cityCount} cities · 100% open data`;
 
   return (
@@ -46,6 +48,10 @@ export function Hero() {
                 Add a place
               </Link>
             </Button>
+          </div>
+
+          <div className="mt-5 flex justify-center">
+            <CitySwitcher cities={cities} />
           </div>
 
           <p className="mt-4 font-mono text-xs text-muted-foreground">{stats}</p>

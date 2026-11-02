@@ -54,3 +54,18 @@ describe("PinPopup report a problem", () => {
     expect(screen.getByRole("button", { name: "Open GitHub issue" })).toBeTruthy();
   });
 });
+
+describe("PinPopup distance from home", () => {
+  it("shows a straight-line distance when a home is set", () => {
+    render(<PinPopup place={place} home={{ lat: 19.0, lng: 72.85 }} />);
+
+    expect(screen.getByText(/away/)).toBeTruthy();
+    expect(screen.getByText(/not a real route/)).toBeTruthy();
+  });
+
+  it("shows nothing extra without a home", () => {
+    render(<PinPopup place={place} />);
+
+    expect(screen.queryByText(/not a real route/)).toBeNull();
+  });
+});
