@@ -285,7 +285,7 @@
     "id": "ron-brown-scholar-program",
     "name": "Ron Brown Scholar Program",
     "organizer": "Ron Brown Scholar Fund",
-    "organizer_url": "https://ronbrown.org/",
+    "organizer_url": "https://ronbrown.org/about/",
     "category": "scholarship",
     "subjects": [
       "academics",
@@ -303,16 +303,16 @@
       "currency": "USD"
     },
     "prize": "USD 40,000 scholarship paid over four years, plus mentoring and Capstone conferencing.",
-    "official_url": "https://www.ronbrown.org/capstones/scholar-program/",
+    "official_url": "https://ronbrown.org/ron-brown-scholarship/",
     "cycle_year": 2027,
     "dates": [
       {
         "label": "Scholarship application deadline",
-        "date": "2027-01-09",
+        "date": "2026-12-01",
         "type": "deadline",
         "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://ronbrown.org/ron-brown-scholarship/"
+        "estimated": false,
+        "source_url": "https://ronbrown.my.site.com/s/"
       }
     ],
     "added_by": "yakew7",

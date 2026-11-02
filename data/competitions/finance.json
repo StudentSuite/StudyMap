@@ -297,7 +297,7 @@
     "id": "fed-challenge-high-school",
     "name": "Fed Challenge (High School)",
     "organizer": "Federal Reserve System",
-    "organizer_url": "https://www.federalreserve.gov/education/fed-challenge.htm",
+    "organizer_url": "https://www.federalreserve.gov/aboutthefed/educational-tools/national-high-school-fed-challenge.htm",
     "category": "finance",
     "subjects": [
       "macroeconomics",
@@ -315,7 +315,7 @@
       "currency": "USD"
     },
     "prize": "Recognition at each Federal Reserve district and a national championship trophy.",
-    "official_url": "https://www.federalreserve.gov/education/fed-challenge.htm",
+    "official_url": "https://www.federalreserve.gov/aboutthefed/educational-tools/national-high-school-fed-challenge.htm",
     "cycle_year": 2027,
     "dates": [
       {
