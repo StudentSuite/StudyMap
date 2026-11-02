@@ -112,7 +112,7 @@ function boundsToBbox(bounds: L.LatLngBounds): [number, number, number, number] 
  * render exactly as the plain PlaceMarker below; only overlapping points
  * change appearance, and clicking a cluster zooms into it.
  */
-function ClusteredMarkers({ places }: { places: Place[] }) {
+function ClusteredMarkers({ places, home }: { places: Place[]; home: LatLng | null }) {
   const map = useMap();
   const [bbox, setBbox] = useState<[number, number, number, number]>(() =>
     boundsToBbox(map.getBounds()),
@@ -220,7 +220,7 @@ function ClusteredMarkers({ places }: { places: Place[] }) {
             }}
           >
             <Popup autoPan={false} closeOnClick={false}>
-              <PinPopup place={place} />
+              <PinPopup place={place} home={home} />
             </Popup>
           </Marker>
         );
@@ -238,6 +238,8 @@ export interface MapViewport {
 interface MapViewProps {
   places: Place[];
   userLocation?: LatLng | null;
+  /** The visitor's saved home; pin popups show how far each place is from it. */
+  home?: LatLng | null;
   focusId?: string | null;
   /** Bounding box to fly to, e.g. the selected city's pins. */
   focusBounds?: Bounds | null;
@@ -470,6 +472,7 @@ function MapResizeHandler() {
 export default function MapView({
   places,
   userLocation,
+  home = null,
   focusId,
   focusBounds,
   interactive = true,
@@ -578,7 +581,7 @@ export default function MapView({
           </CircleMarker>
         )}
 
-        <ClusteredMarkers places={places} />
+        <ClusteredMarkers places={places} home={home} />
       </MapContainer>
     </div>
   );

@@ -403,6 +403,7 @@ export function PlacesMap({
           <MapView
             places={mapPlaces}
             userLocation={userLocation}
+            home={home ? { lat: home.lat, lng: home.lng } : null}
             focusId={focusId}
             focusBounds={focusBounds}
             closePopupTrigger={closePopupTrigger}

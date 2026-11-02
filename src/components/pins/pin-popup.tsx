@@ -8,16 +8,20 @@ import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
+import type { LatLng } from "@/lib/geo";
 import { DirectionsModal } from "@/components/map/directions-modal";
 import { ReportIssueDialog } from "@/components/map/report-issue-dialog";
+import { RouteEtaCard } from "@/components/map/route-eta-card";
 import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 interface PinPopupProps {
   place: Place;
+  /** The signed-in visitor's saved home, for a distance estimate. */
+  home?: LatLng | null;
 }
 
-export function PinPopup({ place }: PinPopupProps) {
+export function PinPopup({ place, home = null }: PinPopupProps) {
   const [directionsOpen, setDirectionsOpen] = React.useState(false);
   const [reportOpen, setReportOpen] = React.useState(false);
 
@@ -67,6 +71,8 @@ export function PinPopup({ place }: PinPopupProps) {
       {place.address && (
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
       )}
+
+      <RouteEtaCard home={home} place={place} />
 
       {/* Exam centre: the validity pill in the header carries the reconfirm date */}
       {place.exam && (

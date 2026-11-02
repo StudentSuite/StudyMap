@@ -7,6 +7,7 @@ import { PLACE_TYPES } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { PageContainer } from "@/components/layout/page-container";
+import { ContributionLeaderboard } from "@/components/map/contribution-leaderboard";
 
 export const metadata: Metadata = {
   title: "About",
@@ -30,7 +31,8 @@ const principles = [
 ];
 
 export default function AboutPage() {
-  const total = getPlaces().length;
+  const places = getPlaces();
+  const total = places.length;
 
   return (
     <PageContainer>
@@ -68,6 +70,10 @@ export default function AboutPage() {
           corrected through pull requests and issues, so the map gets more accurate every
           time a student helps out.
         </p>
+      </section>
+
+      <section className="mt-12 space-y-3">
+        <ContributionLeaderboard places={places} />
       </section>
 
       <section className="mt-12 space-y-3">
