@@ -302,7 +302,14 @@ describe("PlacesMap panel mounting", () => {
 
 describe("PlacesMap filter presets", () => {
   it("narrows the results to the preset's type and sets it in the URL", () => {
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
     expect(screen.getByText("City Library")).toBeTruthy();
 
     fireEvent.click(screen.getByRole("button", { name: "Airports" }));
