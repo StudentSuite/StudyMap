@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import type { Place, PlaceType } from "@/lib/types";
 import { PLACE_TYPES, PLACE_TYPE_LABELS, humanizeCity } from "@/lib/types";
-import { filterPlaces } from "@/lib/places";
+import { filterPlaces } from "@/lib/places-utils";
 import { mapStateToSearch } from "@/lib/share";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 

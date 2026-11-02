@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 
-import { getPlaces } from "@/lib/places";
+import { getCities, getPlaces } from "@/lib/places";
 import { PlacesMap } from "@/components/map/places-map";
+import studyMapConfig from "../../../studymap.config";
 
 export const metadata: Metadata = {
   title: "Map",
@@ -14,7 +15,12 @@ export default function MapPage() {
 
   return (
     <div className="h-[calc(100dvh-3.5rem)] w-full">
-      <PlacesMap places={places} />
+      <PlacesMap
+        places={places}
+        cities={getCities(places)}
+        defaultCenter={studyMapConfig.center}
+        defaultZoom={studyMapConfig.defaultZoom}
+      />
     </div>
   );
 }

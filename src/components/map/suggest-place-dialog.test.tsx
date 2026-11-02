@@ -52,7 +52,7 @@ describe("isGoogleMapsUrl", () => {
 
 describe("SuggestPlaceDialog submission", () => {
   it("rejects an invalid Google Maps URL inline", () => {
-    render(<SuggestPlaceDialog open onOpenChange={vi.fn()} />);
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
     fillRequiredFields("google maps com/place/x");
 
     expect(screen.getByRole("alert").textContent).toContain(
@@ -68,7 +68,7 @@ describe("SuggestPlaceDialog submission", () => {
     const onOpenChange = vi.fn();
     vi.spyOn(window, "open").mockReturnValue(null);
 
-    render(<SuggestPlaceDialog open onOpenChange={onOpenChange} />);
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={onOpenChange} />);
     fillRequiredFields("https://maps.app.goo.gl/abc123");
     fireEvent.click(screen.getByRole("button", { name: "Open GitHub issue" }));
 
@@ -101,7 +101,7 @@ describe("SuggestPlaceDialog submission", () => {
     } as unknown as Window;
     vi.spyOn(window, "open").mockReturnValue(opened);
 
-    render(<SuggestPlaceDialog open onOpenChange={onOpenChange} />);
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={onOpenChange} />);
     fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
     fireEvent.click(screen.getByRole("button", { name: "Open GitHub issue" }));
 
