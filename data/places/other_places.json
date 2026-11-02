@@ -1232,17 +1232,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "shl-other_places-01",
-    "name": "Shawnigan Lake School",
-    "type": "other_places",
-    "city": "shawnigan_lake",
-    "lat": 48.6558661,
-    "lng": -123.638364,
-    "address": "1975 Renfrew Road, Shawnigan Lake, BC V0R 2W1, Canada",
-    "gmaps_link": "https://maps.google.com/?q=48.6558661,-123.6383640",
-    "added_by": "yakew7"
-  },
-  {
     "id": "hct-other_places-01",
     "name": "Harrow International School Appi Japan",
     "type": "other_places",
