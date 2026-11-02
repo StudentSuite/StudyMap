@@ -18,8 +18,7 @@ import {
 import type { Place, PlaceType } from "@/lib/types";
 import { PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
-import studyMapConfig from "../../../studymap.config";
-import type { Bounds } from "@/lib/places";
+import type { Bounds } from "@/lib/places-utils";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 
@@ -244,10 +243,10 @@ interface MapViewProps {
   focusBounds?: Bounds | null;
   /** When false, the map is a static preview: no pan, zoom, or controls. */
   interactive?: boolean;
-  /** Initial zoom level; falls back to the MMR default. */
-  zoom?: number;
-  /** Initial center, as [lat, lng]; falls back to the configured region center. */
-  center?: [number, number];
+  /** Initial zoom level. Callers resolve it from `studymap.config.ts`, so this bundle stays free of the dataset. */
+  zoom: number;
+  /** Initial center, as [lat, lng]. */
+  center: [number, number];
   /** When set, the map starts at this viewport instead of fitting all places. */
   initialViewport?: MapViewport | null;
   /** Fired on pan/zoom end with the current center and zoom. */
@@ -474,8 +473,8 @@ export default function MapView({
   focusId,
   focusBounds,
   interactive = true,
-  zoom = studyMapConfig.defaultZoom,
-  center = studyMapConfig.center,
+  zoom,
+  center,
   initialViewport = null,
   onViewportChange,
   closePopupTrigger = 0,

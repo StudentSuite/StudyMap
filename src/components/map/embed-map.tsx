@@ -5,10 +5,9 @@ import dynamic from "next/dynamic";
 import Link from "next/link";
 
 import type { Place } from "@/lib/types";
-import { cityBounds, filterPlaces } from "@/lib/places";
+import { cityBounds, filterPlaces } from "@/lib/places-utils";
 import { parseMapState } from "@/lib/share";
 import { site } from "@/lib/site";
-import studyMapConfig from "../../../studymap.config";
 
 const MapView = dynamic(() => import("@/components/map/map-view"), {
   ssr: false,
@@ -17,6 +16,8 @@ const MapView = dynamic(() => import("@/components/map/map-view"), {
 
 interface EmbedMapProps {
   places: Place[];
+  defaultCenter: [number, number];
+  defaultZoom: number;
 }
 
 /**
@@ -26,7 +27,7 @@ interface EmbedMapProps {
  * the full map's "Share" button already works as an embed URL. Public
  * places only - private/saved places never enter this component.
  */
-export function EmbedMap({ places }: EmbedMapProps) {
+export function EmbedMap({ places, defaultCenter, defaultZoom }: EmbedMapProps) {
   const state = React.useMemo(
     () => parseMapState(typeof window === "undefined" ? "" : window.location.search),
     [],
@@ -55,9 +56,11 @@ export function EmbedMap({ places }: EmbedMapProps) {
           focusBounds={focusBounds}
           closePopupTrigger={0}
           center={
-            state.lat !== null && state.lng !== null ? [state.lat, state.lng] : undefined
+            state.lat !== null && state.lng !== null
+              ? [state.lat, state.lng]
+              : defaultCenter
           }
-          zoom={state.zoom ?? studyMapConfig.defaultZoom}
+          zoom={state.zoom ?? defaultZoom}
         />
       </div>
       <Link

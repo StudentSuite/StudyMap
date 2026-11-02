@@ -41,12 +41,14 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
+const VIEW = { center: [19.08, 72.95] as [number, number], zoom: 11 };
+
 describe("MapView configuration", () => {
   it("shows actionable guidance when the MapTiler key is blank", () => {
     vi.stubEnv("NEXT_PUBLIC_MAPTILER_KEY", "   ");
     const warn = vi.spyOn(console, "warn").mockImplementation(() => undefined);
 
-    render(<MapView places={[]} />);
+    render(<MapView places={[]} {...VIEW} />);
 
     expect(screen.getByRole("status", { name: "Basemap unavailable" })).toBeTruthy();
     expect(screen.getByText("NEXT_PUBLIC_MAPTILER_KEY")).toBeTruthy();
@@ -72,6 +74,7 @@ describe("MapView configuration", () => {
     );
     render(
       <MapView
+        {...VIEW}
         places={[
           {
             id: "heathrow",
@@ -109,7 +112,7 @@ describe("MapView configuration", () => {
     }));
     flyTo.mockClear();
 
-    render(<MapView places={[]} userLocation={{ lat: 19.2, lng: 72.9 }} />);
+    render(<MapView places={[]} {...VIEW} userLocation={{ lat: 19.2, lng: 72.9 }} />);
 
     expect(flyTo).toHaveBeenCalledWith(
       [19.2, 72.9],

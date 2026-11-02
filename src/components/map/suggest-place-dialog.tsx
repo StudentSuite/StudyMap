@@ -26,13 +26,13 @@ import {
   PLACE_TYPE_LABELS,
   PLACE_TYPES,
   type PlaceType,
+  type City,
 } from "@/lib/types";
-import { getCities, getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
 
-const datasetCities = getCities(getPlaces());
-
 interface SuggestPlaceDialogProps {
+  /** Cities already in the public dataset, offered as suggestions. */
+  datasetCities: City[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
 }
@@ -88,7 +88,11 @@ export function isGoogleMapsUrl(value: string): boolean {
  * pre-filled "New issue" page. Nothing is written directly to the repo -
  * a maintainer still reviews and merges it through the existing PR flow.
  */
-export function SuggestPlaceDialog({ open, onOpenChange }: SuggestPlaceDialogProps) {
+export function SuggestPlaceDialog({
+  datasetCities,
+  open,
+  onOpenChange,
+}: SuggestPlaceDialogProps) {
   const [name, setName] = React.useState("");
   const [type, setType] = React.useState<PlaceType>("library");
   const [city, setCity] = React.useState("");

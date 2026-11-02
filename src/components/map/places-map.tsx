@@ -6,13 +6,12 @@ import type { User } from "@supabase/supabase-js";
 import { ChevronUp, Search, SlidersHorizontal } from "lucide-react";
 import { toast } from "sonner";
 
-import type { Place, PlaceType } from "@/lib/types";
+import type { City, Place, PlaceType } from "@/lib/types";
 import { humanizeCity, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
-import { cityBounds, filterPlaces, getCities } from "@/lib/places";
+import { cityBounds, filterPlaces, getCities } from "@/lib/places-utils";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
 import type { MapViewport } from "@/components/map/map-view";
-import studyMapConfig from "../../../studymap.config";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
 import {
@@ -51,9 +50,18 @@ const MapView = dynamic(() => import("@/components/map/map-view"), {
 
 interface PlacesMapProps {
   places: Place[];
+  /** Distinct city slugs in `places`, in display order (from `getCities`). */
+  cities: City[];
+  defaultCenter: [number, number];
+  defaultZoom: number;
 }
 
-export function PlacesMap({ places }: PlacesMapProps) {
+export function PlacesMap({
+  places,
+  cities,
+  defaultCenter,
+  defaultZoom,
+}: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>(() => {
     if (typeof window === "undefined") return { types: [], city: null, query: "" };
     const state = parseMapState(window.location.search);
@@ -77,7 +85,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
     return {
       lat: state.lat,
       lng: state.lng,
-      zoom: state.zoom ?? studyMapConfig.defaultZoom,
+      zoom: state.zoom ?? defaultZoom,
     };
   });
   const handleViewportChange = React.useCallback((next: MapViewport) => {
@@ -105,8 +113,6 @@ export function PlacesMap({ places }: PlacesMapProps) {
   const [homeDialogOpen, setHomeDialogOpen] = React.useState(false);
   const [myPlacesError, setMyPlacesError] = React.useState<string | null>(null);
   const [lastUserId, setLastUserId] = React.useState<string | null>(null);
-
-  const cities = React.useMemo(() => getCities(places), [places]);
 
   const activeFilters = React.useMemo(() => {
     const labels: string[] = [];
@@ -229,7 +235,10 @@ export function PlacesMap({ places }: PlacesMapProps) {
     [visible, privatePlaces],
   );
 
-  const myCities = React.useMemo(() => getCities(privatePlaces), [privatePlaces]);
+  const myCities = React.useMemo(
+    () => getCities(privatePlaces, cities),
+    [privatePlaces, cities],
+  );
 
   const byDistance = React.useMemo(() => {
     if (!userLocation) return [];
@@ -397,8 +406,8 @@ export function PlacesMap({ places }: PlacesMapProps) {
             focusId={focusId}
             focusBounds={focusBounds}
             closePopupTrigger={closePopupTrigger}
-            center={viewport ? [viewport.lat, viewport.lng] : undefined}
-            zoom={viewport?.zoom}
+            center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
+            zoom={viewport?.zoom ?? defaultZoom}
             initialViewport={viewport}
             onViewportChange={handleViewportChange}
           />
@@ -479,6 +488,7 @@ export function PlacesMap({ places }: PlacesMapProps) {
             open={placeDialogOpen}
             onOpenChange={setPlaceDialogOpen}
             place={editingPlace}
+            datasetCities={cities}
             onSaved={handlePlaceSaved}
             onDeleted={handlePlaceDeleted}
           />

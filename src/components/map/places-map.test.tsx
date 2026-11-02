@@ -34,6 +34,8 @@ function place(overrides: Partial<Place> & Pick<Place, "id" | "name">): Place {
   };
 }
 
+const CITIES = ["mumbai", "thane"];
+
 const PLACES: Place[] = [
   place({ id: "city-library", name: "City Library" }),
   place({ id: "reading-room", name: "Riverside Reading Room" }),
@@ -106,7 +108,14 @@ afterEach(() => {
 describe("PlacesMap search URLs", () => {
   it("keeps an initial query and the other shared state after mounting", () => {
     window.history.replaceState(null, "", FILTERED_URL);
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     expect(searchInputs().map((input) => input.value)).toEqual(["Library", "Library"]);
     expect(screen.getByText("City Library")).toBeTruthy();
@@ -129,7 +138,14 @@ describe("PlacesMap search URLs", () => {
   });
 
   it("updates results and the URL only after the latest input has settled", () => {
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
     const replace = vi.spyOn(window.history, "replaceState");
     const historyLength = window.history.length;
     const [desktop, mobile] = searchInputs();
@@ -160,7 +176,14 @@ describe("PlacesMap search URLs", () => {
 
   it("shares the applied query and restores the same results from the copied link", async () => {
     window.history.replaceState(null, "", FILTERED_URL);
-    const view = render(<PlacesMap places={PLACES} />);
+    const view = render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
     fireEvent.change(searchInputs()[0], { target: { value: "Reading" } });
 
     await act(async () => {
@@ -182,7 +205,14 @@ describe("PlacesMap search URLs", () => {
     expect(copied.pathname).toBe("/map");
     view.unmount();
     window.history.replaceState(null, "", copied.href);
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     expect(searchInputs().map((input) => input.value)).toEqual(["Reading", "Reading"]);
     expect(screen.getByText("Riverside Reading Room")).toBeTruthy();
@@ -193,7 +223,14 @@ describe("PlacesMap search URLs", () => {
 
   it("clears the query without waiting 250 ms or losing the other shared state", () => {
     window.history.replaceState(null, "", FILTERED_URL);
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     fireEvent.change(searchInputs()[0], { target: { value: "" } });
     advance(0);
@@ -209,7 +246,14 @@ describe("PlacesMap search URLs", () => {
 
   it("resets the search and filters to an unfiltered URL", () => {
     window.history.replaceState(null, "", "/map?q=Library&types=library&city=mumbai");
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     fireEvent.click(screen.getByRole("button", { name: "Reset" }));
     advance(0);
@@ -224,7 +268,14 @@ describe("PlacesMap search URLs", () => {
 
 describe("PlacesMap panel mounting", () => {
   it("mounts the sidebar panel at desktop width", () => {
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     // Sidebar search + mobile top bar search.
     expect(searchInputs()).toHaveLength(2);
@@ -233,7 +284,14 @@ describe("PlacesMap panel mounting", () => {
 
   it("does not build the sidebar panel on a phone", () => {
     stubViewport(false);
-    render(<PlacesMap places={PLACES} />);
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
 
     // Only the mobile top bar search; the sheet is closed at peek height.
     expect(searchInputs()).toHaveLength(1);

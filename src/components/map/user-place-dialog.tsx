@@ -25,10 +25,9 @@ import {
   PLACE_TYPE_LABELS,
   PLACE_TYPES,
   type PlaceType,
+  type City,
 } from "@/lib/types";
-import { getCities, getPlaces } from "@/lib/places";
 
-const datasetCities = getCities(getPlaces());
 import { isMissingTableError } from "@/lib/utils";
 import {
   createUserPlace,
@@ -42,6 +41,8 @@ function normalizeCity(input: string): string {
 }
 
 interface UserPlaceDialogProps {
+  /** Cities already in the public dataset, offered as suggestions. */
+  datasetCities: City[];
   open: boolean;
   onOpenChange: (open: boolean) => void;
   place: UserPlaceRow | null;
@@ -50,6 +51,7 @@ interface UserPlaceDialogProps {
 }
 
 export function UserPlaceDialog({
+  datasetCities,
   open,
   onOpenChange,
   place,

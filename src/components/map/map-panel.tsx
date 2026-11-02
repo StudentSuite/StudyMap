@@ -204,7 +204,11 @@ export function MapPanel({
         toggle={resultsToggle}
       />
 
-      <SuggestPlaceDialog open={suggestOpen} onOpenChange={setSuggestOpen} />
+      <SuggestPlaceDialog
+        datasetCities={cities}
+        open={suggestOpen}
+        onOpenChange={setSuggestOpen}
+      />
       <EmbedWidgetDialog open={embedOpen} onOpenChange={setEmbedOpen} />
     </div>
   );
