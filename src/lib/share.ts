@@ -4,6 +4,8 @@ import type { City, PlaceType } from "@/lib/types";
 export interface MapShareState {
   types: PlaceType[];
   city: City | null;
+  /** ISO 3166-1 alpha-2 code in capitals, or null for all countries. */
+  country: string | null;
   query: string;
   placeId: string | null;
   /** Optional viewport: map center coordinates and zoom level. */
@@ -35,6 +37,8 @@ function parseNumber(raw: string | null, min?: number, max?: number): number | n
 export function parseMapState(search: string): MapShareState {
   const params = new URLSearchParams(search);
   const city = params.get("city")?.trim() || null;
+  const rawCountry = params.get("country")?.trim() ?? "";
+  const country = /^[A-Za-z]{2}$/.test(rawCountry) ? rawCountry.toUpperCase() : null;
   const lat = parseNumber(params.get("lat"), -90, 90);
   const lng = parseNumber(params.get("lng"), -180, 180);
   const zoom = parseNumber(params.get("zoom"), 0, 20);
@@ -43,6 +47,7 @@ export function parseMapState(search: string): MapShareState {
   return {
     types: parseList(params.get("types"), TYPE_SET) as PlaceType[],
     city,
+    country,
     query: params.get("q") ?? "",
     placeId: params.get("place"),
     lat: hasViewport ? lat : null,
@@ -55,6 +60,7 @@ export function parseMapState(search: string): MapShareState {
 export function mapStateToSearch(state: MapShareState): string {
   const params = new URLSearchParams();
   if (state.types.length) params.set("types", state.types.join(","));
+  if (state.country) params.set("country", state.country);
   if (state.city) params.set("city", state.city);
   if (state.query) params.set("q", state.query);
   if (state.placeId) params.set("place", state.placeId);

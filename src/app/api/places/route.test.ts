@@ -57,11 +57,28 @@ describe("GET /api/places (route handler)", () => {
     expect(body.error).toContain("bookshop");
   });
 
-  it("returns 400 for a country filter (dataset has no country field)", async () => {
+  it("filters by country case-insensitively", async () => {
+    const response = await GET(request("/api/places?country=in&limit=1"));
+    expect(response.status).toBe(200);
+    const body = await json(response);
+    const data = body.data as { country: string }[];
+    expect(data).toHaveLength(1);
+    expect(data[0].country).toBe("IN");
+    expect(body.total).toBeGreaterThan(1);
+  });
+
+  it("returns 400 for a country name instead of a code", async () => {
     const response = await GET(request("/api/places?country=India"));
     expect(response.status).toBe(400);
     const body = await json(response);
-    expect(String(body.error)).toContain("country");
+    expect(String(body.error)).toContain("two-letter");
+  });
+
+  it("returns 400 for a well-formed code that no place uses", async () => {
+    const response = await GET(request("/api/places?country=ZZ"));
+    expect(response.status).toBe(400);
+    const body = await json(response);
+    expect(String(body.error)).toContain("ZZ");
   });
 
   it("returns 400 for a malformed limit", async () => {

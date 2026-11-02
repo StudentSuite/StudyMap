@@ -1,14 +1,25 @@
 import { describe, expect, it } from "vitest";
 
-import { parsePlacesQuery, PLACES_API_LIMITS, queryPlaces } from "@/lib/places-api";
+import {
+  parsePlacesQuery,
+  PLACES_API_LIMITS,
+  queryPlaces,
+  unknownCountryError,
+} from "@/lib/places-api";
 import type { Place } from "@/lib/types";
 
-function place(id: string, city: string, type: Place["type"] = "library"): Place {
+function place(
+  id: string,
+  city: string,
+  type: Place["type"] = "library",
+  country = "IN",
+): Place {
   return {
     id,
     name: id,
     type,
     city,
+    country,
     lat: 19.07,
     lng: 72.87,
     gmaps_link: "https://maps.google.com/?q=19.07,72.87",
@@ -21,7 +32,7 @@ const DATASET: Place[] = [
   place("mum-2", "mumbai", "sat_centre"),
   place("nd-1", "new delhi", "library"),
   place("nd-2", "new delhi", "gov_offices"),
-  place("ny-1", "new_york", "airport"),
+  place("ny-1", "new_york", "airport", "US"),
 ];
 
 function params(entries: [string, string][]): URLSearchParams {
@@ -80,9 +91,15 @@ describe("parsePlacesQuery validation", () => {
     }
   });
 
-  it("rejects a country filter because the dataset has no country field", () => {
-    const parsed = parsePlacesQuery(params([["country", "India"]]));
-    expect(parsed.ok).toBe(false);
+  it("normalizes a country code to upper case", () => {
+    const parsed = parsePlacesQuery(params([["country", " in "]]));
+    expect(parsed.ok && parsed.query.country).toBe("IN");
+  });
+
+  it("rejects a country that is not a two-letter code", () => {
+    for (const bad of ["India", "I", "IN1", "", "  "]) {
+      expect(parsePlacesQuery(params([["country", bad]])).ok, bad).toBe(false);
+    }
   });
 
   it("rejects malformed limit and offset values", () => {
@@ -140,6 +157,21 @@ describe("queryPlaces", () => {
     expect(result.data.map((p) => p.id)).toEqual(["mum-2"]);
   });
 
+  it("filters by country", () => {
+    const result = queryPlaces(DATASET, { country: "US", limit: 100, offset: 0 });
+    expect(result.data.map((p) => p.id)).toEqual(["ny-1"]);
+  });
+
+  it("combines country with category", () => {
+    const result = queryPlaces(DATASET, {
+      country: "IN",
+      category: "library",
+      limit: 100,
+      offset: 0,
+    });
+    expect(result.data.map((p) => p.id)).toEqual(["mum-1", "nd-1"]);
+  });
+
   it("applies limit and offset with total reflecting the full match set", () => {
     const page = queryPlaces(DATASET, { limit: 2, offset: 1 });
     expect(page.data.map((p) => p.id)).toEqual(["mum-2", "nd-1"]);
@@ -155,5 +187,20 @@ describe("queryPlaces", () => {
   it("returns an empty dataset unchanged", () => {
     const result = queryPlaces([], { limit: 100, offset: 0 });
     expect(result).toEqual({ data: [], total: 0, limit: 100, offset: 0 });
+  });
+});
+
+describe("unknownCountryError", () => {
+  it("is null without a country filter or when a place uses the code", () => {
+    expect(unknownCountryError(DATASET, { limit: 100, offset: 0 })).toBeNull();
+    expect(
+      unknownCountryError(DATASET, { country: "US", limit: 100, offset: 0 }),
+    ).toBeNull();
+  });
+
+  it("names a code no place uses", () => {
+    expect(
+      unknownCountryError(DATASET, { country: "ZZ", limit: 100, offset: 0 }),
+    ).toContain('"ZZ"');
   });
 });

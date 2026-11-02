@@ -26,6 +26,7 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
   "name": "City Library, Dadar branch",
   "type": "library",
   "city": "mumbai",
+  "country": "IN",
   "lat": 19.0176,
   "lng": 72.8562,
   "address": "Gate 2, Gokhale Road, Dadar West",
@@ -37,7 +38,7 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
 **Fields:**
 - `id`: `<city-prefix>-<type>-<number>`. Prefix is a short slug for the city (e.g. `mum`, `thane`, `navi`, `ldn`, `jkt`). Increment from the highest existing number in the file for that prefix.
 - `city`: lowercase, underscore-separated slug (e.g. `mumbai`, `navi_mumbai`, `jakarta`). Any city worldwide is welcome, not just Mumbai/Thane/Navi Mumbai. If a city name is already used for a different city, append the state, province, or country (e.g. `london_ontario` or `york_pennsylvania`).
-- `country`: optional for now. The place's ISO 3166-1 alpha-2 country code in capitals (e.g. `IN`, `GB`, `KE`), the same codes competitions use. Lowercase or a country name fails `npm run validate`. Existing records are being backfilled, after which it becomes required (#288).
+- `country`: required. The place's ISO 3166-1 alpha-2 country code in capitals (e.g. `IN`, `GB`, `KE`), the same codes competitions use. Lowercase or a country name fails `npm run validate`. It powers the map's country filter and the `country` parameter of `/api/places`.
 - `type`: must match the filename exactly
 - `lat`/`lng`: from Google Maps (right-click pin, "What's here?"). Any real-world coordinate works: `places.schema.json` checks latitude is between -90 and 90 and longitude between -180 and 180.
 - `address`: optional, short, human-readable

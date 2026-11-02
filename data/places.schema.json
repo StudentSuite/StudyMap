@@ -5,7 +5,7 @@
   "description": "Canonical schema for one entry in data/places/<type>.json. Mirrors the Place type in src/lib/types.ts. See data/CONTRIBUTING.md for the human-readable guide.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "name", "type", "city", "lat", "lng", "gmaps_link", "added_by"],
+  "required": ["id", "name", "type", "city", "country", "lat", "lng", "gmaps_link", "added_by"],
   "properties": {
     "id": {
       "type": "string",
@@ -30,7 +30,7 @@
     "country": {
       "type": "string",
       "pattern": "^[A-Z]{2}$",
-      "description": "Optional for now. ISO 3166-1 alpha-2 country code in capitals, e.g. \"IN\", \"GB\". Competitions already use the same codes."
+      "description": "ISO 3166-1 alpha-2 country code in capitals, e.g. \"IN\", \"GB\". Competitions already use the same codes."
     },
     "lat": {
       "type": "number",

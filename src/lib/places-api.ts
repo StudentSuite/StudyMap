@@ -18,6 +18,8 @@ export const PLACES_API_LIMITS = {
 export interface PlacesQuery {
   city?: City;
   category?: PlaceType;
+  /** Upper-case ISO 3166-1 alpha-2 code. */
+  country?: string;
   limit: number;
   offset: number;
 }
@@ -41,7 +43,7 @@ function isNonNegativeInteger(value: string): boolean {
 /**
  * Parse and validate the query string of GET /api/places.
  *
- * Strict by design: unknown categories, cities, or a country filter are
+ * Strict by design: unknown categories and malformed country codes are
  * 400s with a message, never silently ignored — a consumer building on the
  * dataset should not have to guess why their filter matched nothing. The one
  * deliberate leniency is `limit`: values above the hard cap are clamped
@@ -88,18 +90,19 @@ export function parsePlacesQuery(params: URLSearchParams): PlacesQueryParse {
   }
 
   const rawCountry = params.get("country");
+  let country: string | undefined;
   if (rawCountry !== null) {
     if (rawCountry.trim() === "") {
       return { ok: false, error: "country must not be empty" };
     }
-    // The schema has no country field today, so no record can satisfy this
-    // filter. Reject loudly rather than return an empty list that looks like
-    // a bug, and point at the contract.
-    return {
-      ok: false,
-      error:
-        'the dataset does not carry a "country" field yet, so the country filter cannot match anything; see /docs/places-api',
-    };
+    // Stored as upper-case ISO 3166-1 alpha-2 codes; accept any casing.
+    if (!/^[A-Za-z]{2}$/.test(rawCountry.trim())) {
+      return {
+        ok: false,
+        error: `country must be a two-letter ISO 3166-1 alpha-2 code like "IN", got "${rawCountry}"`,
+      };
+    }
+    country = rawCountry.trim().toUpperCase();
   }
 
   const rawLimit = params.get("limit");
@@ -120,7 +123,7 @@ export function parsePlacesQuery(params: URLSearchParams): PlacesQueryParse {
     offset = Number(rawOffset);
   }
 
-  return { ok: true, query: { city, category, limit, offset } };
+  return { ok: true, query: { city, category, country, limit, offset } };
 }
 
 /**
@@ -129,15 +132,13 @@ export function parsePlacesQuery(params: URLSearchParams): PlacesQueryParse {
  */
 export function queryPlaces(
   places: Place[],
-  { city, category, limit, offset }: PlacesQuery,
+  { city, category, country, limit, offset }: PlacesQuery,
 ): PlacesQueryResult {
-  // `country` is rejected at parse time because the schema has no country
-  // field; adding a match here is a one-line change once the dataset carries
-  // one.
   const matches = places.filter(
     (place) =>
       (city === undefined || cityToSlug(place.city) === city) &&
-      (category === undefined || place.type === category),
+      (category === undefined || place.type === category) &&
+      (country === undefined || place.country === country),
   );
   return {
     data: matches.slice(offset, offset + limit),
@@ -145,4 +146,16 @@ export function queryPlaces(
     limit,
     offset,
   };
+}
+
+/**
+ * A 400 message when `query.country` is a well-formed code that no place
+ * uses (a typo such as "ZZ"), so the consumer is told rather than handed an
+ * empty list that looks like a bug. Null when the filter is absent or matches
+ * at least one place.
+ */
+export function unknownCountryError(places: Place[], query: PlacesQuery): string | null {
+  if (query.country === undefined) return null;
+  if (places.some((place) => place.country === query.country)) return null;
+  return `no places have country "${query.country}"; use an ISO 3166-1 alpha-2 code such as "IN"`;
 }

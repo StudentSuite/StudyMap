@@ -25,6 +25,7 @@ const RESPONSE_EXAMPLE = `{
       "name": "David Sassoon Library",
       "type": "library",
       "city": "mumbai",
+      "country": "IN",
       "lat": 18.9674,
       "lng": 72.8339,
       "address": "Fort, Mumbai 400001",
@@ -58,7 +59,7 @@ const FILTERS: { name: string; type: string; notes: string }[] = [
     name: "country",
     type: "string",
     notes:
-      "Rejected with a 400 today: the dataset schema has no `country` field yet, so no record could satisfy the filter.",
+      "ISO 3166-1 alpha-2 country code, matched case-insensitively (`IN`, `in`). A value that is not two letters, or a code no place uses, is a 400.",
   },
   {
     name: "limit",
@@ -187,8 +188,8 @@ curl "https://studyymap.com/api/places?category=library&limit=50&offset=100"`}
           <p className="text-sm text-foreground/80">
             400 cases: an unknown{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">category</code>,{" "}
-            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code> (no
-            country data in the schema yet), a non-integer{" "}
+            <code className="rounded bg-muted px-1.5 py-0.5 font-mono">country</code> that
+            is not a two-letter code or that no place uses, a non-integer{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">limit</code> or{" "}
             <code className="rounded bg-muted px-1.5 py-0.5 font-mono">offset</code>, or a
             repeated parameter. A{" "}

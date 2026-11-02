@@ -10,6 +10,7 @@ import {
 const emptyState: MapShareState = {
   types: [],
   city: null,
+  country: null,
   query: "",
   placeId: null,
   lat: null,
@@ -22,6 +23,7 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
     const state: MapShareState = {
       types: ["library", "sat_centre"],
       city: "mumbai",
+      country: "IN",
       query: "library",
       placeId: "mum-library-01",
       lat: 19.076,
@@ -130,6 +132,23 @@ describe("mapStateToSearch / parseMapState round-trip", () => {
   it("omits the zoom when it is null", () => {
     const search = mapStateToSearch({ ...emptyState, lat: 19.076, lng: 72.8777 });
     expect(search).toBe("?lat=19.076&lng=72.8777");
+  });
+});
+
+describe("country param", () => {
+  it("reads a country code in any case and upper-cases it", () => {
+    expect(parseMapState("?country=in").country).toBe("IN");
+    expect(parseMapState("?country=KE").country).toBe("KE");
+  });
+
+  it("ignores anything that is not a two-letter code", () => {
+    for (const bad of ["India", "I", "IN1", ""]) {
+      expect(parseMapState(`?country=${bad}`).country, bad).toBeNull();
+    }
+  });
+
+  it("writes the country into the query string", () => {
+    expect(mapStateToSearch({ ...emptyState, country: "GB" })).toBe("?country=GB");
   });
 });
 

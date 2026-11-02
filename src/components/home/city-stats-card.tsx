@@ -42,6 +42,7 @@ export function CityStatsCard({ city, places, className }: CityStatsCardProps) {
                   href={`/map${mapStateToSearch({
                     types: [type],
                     city,
+                    country: null,
                     query: "",
                     placeId: null,
                     lat: null,

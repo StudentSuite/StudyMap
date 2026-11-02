@@ -7,7 +7,12 @@ import { foldText } from "@/lib/utils";
  */
 export function filterPlaces(
   places: Place[],
-  opts: { types?: PlaceType[]; city?: City | null; query?: string },
+  opts: {
+    types?: PlaceType[];
+    city?: City | null;
+    country?: string | null;
+    query?: string;
+  },
 ): Place[] {
   const q = foldText(opts.query?.trim() ?? "");
   return places.filter((place) => {
@@ -15,6 +20,9 @@ export function filterPlaces(
       return false;
     }
     if (opts.city && place.city !== opts.city) {
+      return false;
+    }
+    if (opts.country && place.country !== opts.country) {
       return false;
     }
     if (q) {
@@ -38,6 +46,34 @@ export function getCities(places: Place[], preferredOrder: readonly City[] = [])
     .filter((city) => !preferredOrder.includes(city))
     .sort();
   return [...ordered, ...rest];
+}
+
+/** Display name for an ISO 3166-1 alpha-2 code ("IN" -> "India"); the code itself if unknown. */
+export function countryName(code: string): string {
+  try {
+    return new Intl.DisplayNames(["en"], { type: "region" }).of(code) ?? code;
+  } catch {
+    return code;
+  }
+}
+
+/** Every distinct country code present in `places`, sorted by display name. */
+export function getCountries(places: Place[]): string[] {
+  const present = new Set<string>();
+  for (const place of places) if (place.country) present.add(place.country);
+  return Array.from(present).sort((a, b) => countryName(a).localeCompare(countryName(b)));
+}
+
+/** The cities of `cities` that have at least one place in `country`, keeping their order. */
+export function citiesInCountry(
+  places: Place[],
+  cities: readonly City[],
+  country: string,
+): City[] {
+  const present = new Set(
+    places.filter((place) => place.country === country).map((place) => place.city),
+  );
+  return cities.filter((city) => present.has(city));
 }
 
 export interface Bounds {

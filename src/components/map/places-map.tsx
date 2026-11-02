@@ -8,7 +8,14 @@ import { toast } from "sonner";
 
 import type { City, Place, PlaceType } from "@/lib/types";
 import { humanizeCity, PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
-import { cityBounds, filterPlaces, getCities } from "@/lib/places-utils";
+import {
+  cityBounds,
+  citiesInCountry,
+  countryName,
+  filterPlaces,
+  getCities,
+  getCountries,
+} from "@/lib/places-utils";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
 import type { MapViewport } from "@/components/map/map-view";
@@ -63,9 +70,15 @@ export function PlacesMap({
   defaultZoom,
 }: PlacesMapProps) {
   const [filters, setFilters] = React.useState<PlaceFilters>(() => {
-    if (typeof window === "undefined") return { types: [], city: null, query: "" };
+    if (typeof window === "undefined")
+      return { types: [], city: null, country: null, query: "" };
     const state = parseMapState(window.location.search);
-    return { types: state.types, city: state.city, query: state.query };
+    return {
+      types: state.types,
+      city: state.city,
+      country: state.country,
+      query: state.query,
+    };
   });
   const [debouncedQuery, setDebouncedQuery] = React.useState(() => {
     if (typeof window === "undefined") return "";
@@ -121,6 +134,7 @@ export function PlacesMap({
         `types: ${filters.types.map((type) => PLACE_TYPE_LABELS[type]).join(", ")}`,
       );
     }
+    if (filters.country) labels.push(`country: ${countryName(filters.country)}`);
     if (filters.city) labels.push(`city: ${humanizeCity(filters.city)}`);
     if (filters.query.trim()) labels.push(`search: ${filters.query.trim()}`);
     return labels;
@@ -191,6 +205,7 @@ export function PlacesMap({
     const search = mapStateToSearch({
       types: filters.types,
       city: filters.city,
+      country: filters.country,
       query: debouncedQuery,
       placeId: focusId,
       lat: viewport?.lat ?? null,
@@ -198,16 +213,17 @@ export function PlacesMap({
       zoom: viewport?.zoom ?? null,
     });
     window.history.replaceState(null, "", `${window.location.pathname}${search}`);
-  }, [filters.types, filters.city, debouncedQuery, focusId, viewport]);
+  }, [filters.types, filters.city, filters.country, debouncedQuery, focusId, viewport]);
 
   const visible = React.useMemo(
     () =>
       filterPlaces(places, {
         types: filters.types,
         city: filters.city,
+        country: filters.country,
         query: debouncedQuery,
       }),
-    [places, filters.types, filters.city, debouncedQuery],
+    [places, filters.types, filters.city, filters.country, debouncedQuery],
   );
 
   const typeCounts = React.useMemo(() => {
@@ -274,6 +290,7 @@ export function PlacesMap({
     const url = buildShareUrl({
       types: filters.types,
       city: filters.city,
+      country: filters.country,
       query: debouncedQuery,
       placeId: focusId,
       lat: viewport?.lat ?? null,
@@ -350,6 +367,27 @@ export function PlacesMap({
     setSheetOpen(true);
   }
 
+  const countries = React.useMemo(() => getCountries(places), [places]);
+  // Picking a country narrows the city list to that country's cities.
+  const filterCities = React.useMemo(
+    () => (filters.country ? citiesInCountry(places, cities, filters.country) : cities),
+    [places, cities, filters.country],
+  );
+
+  function changeFilters(next: PlaceFilters) {
+    // Switching country drops a selected city that is not in it, which would show nothing.
+    if (
+      next.country &&
+      next.country !== filters.country &&
+      next.city &&
+      !citiesInCountry(places, cities, next.country).includes(next.city)
+    ) {
+      setFilters({ ...next, city: null });
+      return;
+    }
+    setFilters(next);
+  }
+
   function selectPlace(place: Place) {
     setFocusId(place.id);
     setSnap(SHEET_SNAP_POINTS[0]); // collapse to peek so pin is visible
@@ -357,14 +395,16 @@ export function PlacesMap({
 
   const panelProps = {
     filters,
-    onFiltersChange: setFilters,
+    onFiltersChange: changeFilters,
+    countries,
     cities,
+    cityOptions: filterCities,
     typeCounts,
     resultCount: visible.length,
     rows,
     resultsHeader,
     activeFilters,
-    onResetFilters: () => setFilters({ types: [], city: null, query: "" }),
+    onResetFilters: () => setFilters({ types: [], city: null, country: null, query: "" }),
     resultsToggle,
     onSelectPlace: selectPlace,
     focusId,

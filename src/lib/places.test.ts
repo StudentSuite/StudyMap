@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import satCentres from "../../data/places/sat_centre.json";
 
 import { cityBounds, filterPlaces, getCities } from "@/lib/places";
+import { citiesInCountry, countryName, getCountries } from "@/lib/places-utils";
 import type { Place } from "@/lib/types";
 
 function place(overrides: Partial<Place> & { id: string }): Place {
@@ -172,5 +173,48 @@ describe("SAT centre city slugs", () => {
       expect(satCentres.find((centre) => centre.id === id)?.city).toBe(city);
     }
     expect(satCentres.find((centre) => centre.id === "59096")?.city).toBe("arona");
+  });
+});
+
+describe("country helpers", () => {
+  const mk = (id: string, city: string, country?: string): Place => ({
+    id,
+    name: id,
+    type: "library",
+    city,
+    country,
+    lat: 0,
+    lng: 0,
+    gmaps_link: "https://maps.google.com/?q=0,0",
+    added_by: "test",
+  });
+  const data = [
+    mk("a", "mumbai", "IN"),
+    mk("b", "nairobi", "KE"),
+    mk("c", "pune", "IN"),
+    mk("d", "x"),
+  ];
+
+  it("lists distinct countries sorted by display name, skipping places without one", () => {
+    expect(getCountries(data)).toEqual(["IN", "KE"]);
+  });
+
+  it("names a country from its code and falls back to the code", () => {
+    expect(countryName("IN")).toBe("India");
+    expect(countryName("zz9")).toBe("zz9");
+  });
+
+  it("narrows the city list to a country, keeping order", () => {
+    expect(citiesInCountry(data, ["pune", "nairobi", "mumbai", "x"], "IN")).toEqual([
+      "pune",
+      "mumbai",
+    ]);
+  });
+
+  it("filters places by country", () => {
+    expect(filterPlaces(data, { country: "KE" }).map((p) => p.id)).toEqual(["b"]);
+    expect(filterPlaces(data, { country: "IN", city: "pune" }).map((p) => p.id)).toEqual([
+      "c",
+    ]);
   });
 });
