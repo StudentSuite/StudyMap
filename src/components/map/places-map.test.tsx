@@ -241,3 +241,18 @@ describe("PlacesMap panel mounting", () => {
     expect(screen.queryByText("City Library")).toBeNull();
   });
 });
+
+describe("PlacesMap filter presets", () => {
+  it("narrows the results to the preset's type and sets it in the URL", () => {
+    render(<PlacesMap places={PLACES} />);
+    expect(screen.getByText("City Library")).toBeTruthy();
+
+    fireEvent.click(screen.getByRole("button", { name: "Airports" }));
+
+    expect(screen.getByText("City Airport")).toBeTruthy();
+    expect(screen.queryByText("City Library")).toBeNull();
+    expect(screen.queryByText("Thane Library")).toBeNull();
+    advance(500);
+    expect(params().get("types")).toBe("airport");
+  });
+});

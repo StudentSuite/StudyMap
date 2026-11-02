@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { CategoryChips } from "@/components/map/category-chips";
+import { FilterPresets } from "@/components/map/filter-presets";
 import { CityFilter } from "@/components/map/city-filter";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
@@ -123,6 +124,8 @@ export function MapPanel({
         onToggle={toggleType}
         scroll={scrollChips}
       />
+
+      <FilterPresets onApply={(types) => onFiltersChange({ ...filters, types })} />
 
       <div className="flex items-center gap-2">
         <CityFilter
