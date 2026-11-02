@@ -35,8 +35,13 @@ export function EmbedMap({ places, defaultCenter, defaultZoom }: EmbedMapProps) 
 
   const visible = React.useMemo(
     () =>
-      filterPlaces(places, { types: state.types, city: state.city, query: state.query }),
-    [places, state.types, state.city, state.query],
+      filterPlaces(places, {
+        types: state.types,
+        city: state.city,
+        country: state.country,
+        query: state.query,
+      }),
+    [places, state.types, state.city, state.country, state.query],
   );
 
   const focusBounds = React.useMemo(

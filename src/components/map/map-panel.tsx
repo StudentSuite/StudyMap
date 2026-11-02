@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator";
 import { CategoryChips } from "@/components/map/category-chips";
 import { FilterPresets } from "@/components/map/filter-presets";
 import { CityFilter } from "@/components/map/city-filter";
+import { CountryFilter } from "@/components/map/country-filter";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
@@ -39,7 +40,12 @@ export interface MyPlacesProps {
 interface MapPanelProps {
   filters: PlaceFilters;
   onFiltersChange: (filters: PlaceFilters) => void;
+  /** Country codes in the dataset, sorted by display name. */
+  countries: string[];
+  /** Every city in the dataset (used for suggestions). */
   cities: City[];
+  /** Cities the city filter offers; defaults to `cities`, narrowed when a country is picked. */
+  cityOptions?: City[];
   typeCounts: Record<PlaceType, number>;
   resultCount: number;
 
@@ -71,7 +77,9 @@ interface MapPanelProps {
 export function MapPanel({
   filters,
   onFiltersChange,
+  countries,
   cities,
+  cityOptions,
   typeCounts,
   resultCount,
   rows,
@@ -91,7 +99,8 @@ export function MapPanel({
   const [suggestOpen, setSuggestOpen] = React.useState(false);
   const [embedOpen, setEmbedOpen] = React.useState(false);
 
-  const dirty = filters.types.length > 0 || !!filters.city || !!filters.query;
+  const dirty =
+    filters.types.length > 0 || !!filters.city || !!filters.country || !!filters.query;
 
   function toggleType(type: PlaceType) {
     onFiltersChange({
@@ -128,8 +137,16 @@ export function MapPanel({
       <FilterPresets onApply={(types) => onFiltersChange({ ...filters, types })} />
 
       <div className="flex items-center gap-2">
+        <CountryFilter
+          countries={countries}
+          value={filters.country}
+          onChange={(country) => onFiltersChange({ ...filters, country })}
+        />
+      </div>
+
+      <div className="flex items-center gap-2">
         <CityFilter
-          cities={cities}
+          cities={cityOptions ?? cities}
           value={filters.city}
           onChange={(city) => onFiltersChange({ ...filters, city })}
         />
@@ -138,7 +155,9 @@ export function MapPanel({
             variant="ghost"
             size="sm"
             className="h-8 shrink-0 px-2 text-xs"
-            onClick={() => onFiltersChange({ types: [], city: null, query: "" })}
+            onClick={() =>
+              onFiltersChange({ types: [], city: null, country: null, query: "" })
+            }
           >
             <X className="size-3.5" />
             Reset

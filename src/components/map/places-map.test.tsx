@@ -321,3 +321,59 @@ describe("PlacesMap filter presets", () => {
     expect(params().get("types")).toBe("airport");
   });
 });
+
+describe("PlacesMap country filter", () => {
+  const WORLD: Place[] = [
+    place({ id: "mum", name: "City Library", country: "IN" }),
+    place({ id: "thane", name: "Thane Library", city: "thane", country: "IN" }),
+    place({ id: "nbo", name: "Nairobi Library", city: "nairobi", country: "KE" }),
+  ];
+  const WORLD_CITIES = ["mumbai", "thane", "nairobi"];
+
+  function renderWorld() {
+    render(
+      <PlacesMap
+        places={WORLD}
+        cities={WORLD_CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
+  }
+
+  it("narrows the results to the chosen country and keeps it in the URL", () => {
+    renderWorld();
+    expect(screen.getByText("Nairobi Library")).toBeTruthy();
+
+    fireEvent.change(screen.getAllByLabelText("Filter by country")[0], {
+      target: { value: "KE" },
+    });
+
+    expect(screen.getByText("Nairobi Library")).toBeTruthy();
+    expect(screen.queryByText("City Library")).toBeNull();
+    advance(500);
+    expect(params().get("country")).toBe("KE");
+  });
+
+  it("restores a country from a shared link", () => {
+    window.history.replaceState(null, "", "/map?country=in");
+    renderWorld();
+
+    expect(screen.getByText("City Library")).toBeTruthy();
+    expect(screen.queryByText("Nairobi Library")).toBeNull();
+  });
+
+  it("drops a selected city that is not in the newly chosen country", () => {
+    window.history.replaceState(null, "", "/map?city=mumbai");
+    renderWorld();
+
+    fireEvent.change(screen.getAllByLabelText("Filter by country")[0], {
+      target: { value: "KE" },
+    });
+
+    advance(500);
+    expect(params().get("country")).toBe("KE");
+    expect(params().get("city")).toBeNull();
+    expect(screen.getByText("Nairobi Library")).toBeTruthy();
+  });
+});

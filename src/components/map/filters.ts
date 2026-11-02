@@ -4,5 +4,7 @@ import type { City, PlaceType } from "@/lib/types";
 export interface PlaceFilters {
   types: PlaceType[];
   city: City | null;
+  /** ISO 3166-1 alpha-2 code, or null for all countries. */
+  country: string | null;
   query: string;
 }

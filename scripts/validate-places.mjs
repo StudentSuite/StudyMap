@@ -185,7 +185,7 @@ for (const file of files) {
       );
     }
 
-    // country, when present, is an upper-case ISO 3166-1 alpha-2 code (see #288)
+    // country is required (see schema.required) and an upper-case ISO 3166-1 alpha-2 code (see #288)
     if (r.country !== undefined && !isCountryCode(r.country)) {
       err(
         loc,

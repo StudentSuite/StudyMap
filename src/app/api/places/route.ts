@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-import { parsePlacesQuery, queryPlaces } from "@/lib/places-api";
+import { parsePlacesQuery, queryPlaces, unknownCountryError } from "@/lib/places-api";
 import { getPlaces } from "@/lib/places";
 
 /**
@@ -35,7 +35,16 @@ export async function GET(request: Request) {
     );
   }
 
-  const result = queryPlaces(getPlaces(), parsed.query);
+  const places = getPlaces();
+  const unknownCountry = unknownCountryError(places, parsed.query);
+  if (unknownCountry) {
+    return NextResponse.json(
+      { error: unknownCountry },
+      { status: 400, headers: { ...CORS_HEADERS, ...CACHE_HEADERS } },
+    );
+  }
+
+  const result = queryPlaces(places, parsed.query);
   return NextResponse.json(result, {
     headers: { ...CORS_HEADERS, ...CACHE_HEADERS },
   });

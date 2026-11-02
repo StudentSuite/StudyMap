@@ -25,6 +25,7 @@ const EXAMPLE = `{
   "name": "City Library, Dadar branch",
   "type": "library",
   "city": "mumbai",
+  "country": "IN",
   "lat": 19.0176,
   "lng": 72.8562,
   "address": "Gate 2, Gokhale Road, Dadar West",

@@ -20,6 +20,7 @@ const SCHEMA_EXAMPLE = `{
   "name": "Place Name",
   "type": "library",
   "city": "mumbai",
+  "country": "IN",
   "lat": 19.1234,
   "lng": 72.8765,
   "address": "Street, Area, City PINCODE",

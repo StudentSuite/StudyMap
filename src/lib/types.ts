@@ -280,7 +280,11 @@ export interface Place {
   name: string;
   type: PlaceType;
   city: City;
-  /** ISO 3166-1 alpha-2 country code in capitals (e.g. "IN"). Optional while records are backfilled (#288). */
+  /**
+   * ISO 3166-1 alpha-2 country code in capitals (e.g. "IN"). Required in the committed
+   * dataset (schema + validator), optional here because a visitor's private saved
+   * places have no country.
+   */
   country?: string;
   lat: number;
   lng: number;
