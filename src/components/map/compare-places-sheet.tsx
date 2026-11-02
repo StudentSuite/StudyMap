@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
-import { PLACE_TYPE_COLORS } from "@/lib/map";
+import { CategoryIcon } from "@/components/map/category-icon";
 import { formatDistance, haversineKm } from "@/lib/geo";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -73,11 +73,7 @@ export function ComparePlacesSheet({
               </CardHeader>
               <CardContent className="space-y-2">
                 <div className="inline-flex items-center gap-1.5 rounded-full bg-muted px-2 py-0.5 text-xs text-muted-foreground">
-                  <span
-                    aria-hidden
-                    className="size-2 rounded-full"
-                    style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-                  />
+                  <CategoryIcon type={place.type} className="size-3.5" />
                   {PLACE_TYPE_LABELS[place.type]}
                 </div>
                 <p className="text-xs text-muted-foreground">

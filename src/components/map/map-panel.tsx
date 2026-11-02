@@ -15,7 +15,11 @@ import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
 import { EmbedWidgetDialog } from "@/components/map/embed-widget";
-import { ResultsList, type ResultRow } from "@/components/map/results-list";
+import {
+  ResultsList,
+  type CompareControls,
+  type ResultRow,
+} from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 import type { LatLng } from "@/lib/geo";
 import type { UserHome, UserPlaceRow } from "@/lib/user-places";
@@ -55,6 +59,8 @@ interface MapPanelProps {
   onResetFilters: () => void;
   resultsToggle?: { label: string; onClick: () => void } | null;
   onSelectPlace: (place: Place) => void;
+  onShowDetails?: (place: Place) => void;
+  compare?: CompareControls;
   focusId?: string | null;
 
   onLocated: (loc: LatLng) => void;
@@ -88,6 +94,8 @@ export function MapPanel({
   onResetFilters,
   resultsToggle,
   onSelectPlace,
+  onShowDetails,
+  compare,
   focusId,
   onLocated,
   onShare,
@@ -222,6 +230,8 @@ export function MapPanel({
           onSuggest: () => setSuggestOpen(true),
         }}
         onSelect={onSelectPlace}
+        onDetails={onShowDetails}
+        compare={compare}
         focusId={focusId}
         toggle={resultsToggle}
       />

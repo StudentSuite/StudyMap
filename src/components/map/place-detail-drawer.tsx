@@ -4,7 +4,9 @@ import { ExternalLink } from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
-import { PLACE_TYPE_COLORS } from "@/lib/map";
+import { CategoryIcon } from "@/components/map/category-icon";
+import { PlacePhotoGallery } from "@/components/map/place-photo-gallery";
+import { SharePlaceCard } from "@/components/map/share-place-card";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -30,7 +32,7 @@ interface PlaceDetailDrawerProps {
 export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDrawerProps) {
   return (
     <Sheet open={open && place !== null} onOpenChange={onOpenChange}>
-      <SheetContent side="right">
+      <SheetContent side="right" className="overflow-y-auto">
         {place && (
           <>
             <SheetHeader>
@@ -43,11 +45,7 @@ export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDraw
 
             <div className="flex flex-col gap-4 px-4">
               <div className="inline-flex w-fit items-center gap-1.5 rounded-full bg-muted px-2.5 py-1 text-xs font-medium text-muted-foreground">
-                <span
-                  aria-hidden
-                  className="size-2 rounded-full"
-                  style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-                />
+                <CategoryIcon type={place.type} className="size-3.5" />
                 {PLACE_TYPE_LABELS[place.type]}
               </div>
 
@@ -71,6 +69,10 @@ export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDraw
                   Directions
                 </a>
               </Button>
+
+              <PlacePhotoGallery place={place} />
+
+              <SharePlaceCard place={place} />
 
               <p className="text-[11px] text-muted-foreground/75">
                 Added by{" "}

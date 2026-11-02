@@ -377,3 +377,41 @@ describe("PlacesMap country filter", () => {
     expect(screen.getByText("Nairobi Library")).toBeTruthy();
   });
 });
+
+describe("PlacesMap details and compare", () => {
+  function renderMapWithPlaces() {
+    render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
+  }
+
+  it("opens the detail drawer for a row", () => {
+    renderMapWithPlaces();
+
+    fireEvent.click(
+      screen.getAllByRole("button", { name: "Details for City Library" })[0],
+    );
+
+    expect(screen.getByRole("dialog")).toBeTruthy();
+    expect(screen.getByText("Street View preview")).toBeTruthy();
+    expect(screen.getByRole("button", { name: /Copy link/ })).toBeTruthy();
+  });
+
+  it("compares two picked places and clears the selection", () => {
+    renderMapWithPlaces();
+
+    fireEvent.click(screen.getAllByRole("checkbox", { name: "Compare City Library" })[0]);
+    fireEvent.click(
+      screen.getAllByRole("checkbox", { name: "Compare Thane Library" })[0],
+    );
+    fireEvent.click(screen.getAllByRole("button", { name: "Compare (2)" })[0]);
+
+    expect(screen.getByText("Compare places")).toBeTruthy();
+    expect(screen.getByText("2 places side by side.")).toBeTruthy();
+  });
+});

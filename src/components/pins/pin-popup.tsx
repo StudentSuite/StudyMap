@@ -6,11 +6,12 @@ import { toast } from "sonner";
 
 import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
-import { directionsUrl, PLACE_TYPE_COLORS } from "@/lib/map";
+import { directionsUrl } from "@/lib/map";
 import { buildShareUrl } from "@/lib/share";
 import type { LatLng } from "@/lib/geo";
 import { DirectionsModal } from "@/components/map/directions-modal";
 import { ReportIssueDialog } from "@/components/map/report-issue-dialog";
+import { CategoryIcon } from "@/components/map/category-icon";
 import { RouteEtaCard } from "@/components/map/route-eta-card";
 import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
@@ -55,11 +56,7 @@ export function PinPopup({ place, home = null }: PinPopupProps) {
         </p>
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <div className="inline-flex items-center gap-1.5 rounded-full bg-muted px-2 py-1">
-            <span
-              aria-hidden
-              className="size-2 rounded-full"
-              style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-            />
+            <CategoryIcon type={place.type} className="size-3.5" />
             <span className="text-muted-foreground">{PLACE_TYPE_LABELS[place.type]}</span>
           </div>
           <span className="text-muted-foreground">{humanizeCity(place.city)}</span>
