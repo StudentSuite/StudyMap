@@ -1,20 +1,37 @@
 "use client";
 
 import * as React from "react";
-import { ExternalLink, MapPinPlus, MapPinX, Navigation, RotateCcw } from "lucide-react";
+import {
+  ExternalLink,
+  Info,
+  MapPinPlus,
+  MapPinX,
+  Navigation,
+  RotateCcw,
+} from "lucide-react";
 
 import type { Place } from "@/lib/types";
 import { PLACE_TYPE_LABELS } from "@/lib/types";
-import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { directionsUrl } from "@/lib/map";
 import { formatDistance } from "@/lib/geo";
 import { Button } from "@/components/ui/button";
 import { EmptyState } from "@/components/ui/empty-state";
+import { CategoryIcon } from "@/components/map/category-icon";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 export interface ResultRow {
   place: Place;
   distanceKm?: number;
+}
+
+/** Pick 2 or 3 rows to compare side by side. */
+export interface CompareControls {
+  selectedIds: string[];
+  /** Most places that can be compared at once. */
+  max: number;
+  onToggle: (place: Place) => void;
+  onOpen: () => void;
+  onClear: () => void;
 }
 
 interface ResultsListProps {
@@ -26,6 +43,9 @@ interface ResultsListProps {
     onSuggest: () => void;
   };
   onSelect: (place: Place) => void;
+  /** Opens the detail drawer for a place; the row shows an info button when set. */
+  onDetails?: (place: Place) => void;
+  compare?: CompareControls;
   focusId?: string | null;
   /** Optional expand/collapse control (e.g. "Show all" for the nearest list). */
   toggle?: { label: string; onClick: () => void } | null;
@@ -42,6 +62,8 @@ export function ResultsList({
   rows,
   emptyState,
   onSelect,
+  onDetails,
+  compare,
   focusId,
   toggle,
   pageSize = RESULTS_PAGE_SIZE,
@@ -78,6 +100,27 @@ export function ResultsList({
           </button>
         )}
       </div>
+
+      {compare && compare.selectedIds.length > 0 && (
+        <div className="flex items-center justify-between gap-2 pb-1.5">
+          <Button
+            type="button"
+            size="sm"
+            variant="secondary"
+            disabled={compare.selectedIds.length < 2}
+            onClick={compare.onOpen}
+          >
+            Compare ({compare.selectedIds.length})
+          </Button>
+          <button
+            type="button"
+            onClick={compare.onClear}
+            className="text-xs text-muted-foreground underline-offset-2 hover:underline"
+          >
+            Clear selection
+          </button>
+        </div>
+      )}
 
       {rows.length === 0 ? (
         <EmptyState
@@ -122,11 +165,20 @@ export function ResultsList({
                   focusId === place.id ? "bg-muted ring-1 ring-border" : "hover:bg-muted"
                 }`}
               >
-                <span
-                  aria-hidden
-                  className="size-3 shrink-0 rounded-full"
-                  style={{ backgroundColor: PLACE_TYPE_COLORS[place.type] }}
-                />
+                {compare && (
+                  <input
+                    type="checkbox"
+                    aria-label={"Compare " + place.name}
+                    checked={compare.selectedIds.includes(place.id)}
+                    disabled={
+                      !compare.selectedIds.includes(place.id) &&
+                      compare.selectedIds.length >= compare.max
+                    }
+                    onChange={() => compare.onToggle(place)}
+                    className="size-4 shrink-0 accent-primary"
+                  />
+                )}
+                <CategoryIcon type={place.type} className="shrink-0" />
                 <button
                   type="button"
                   onClick={() => onSelect(place)}
@@ -145,6 +197,16 @@ export function ResultsList({
                     {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
                   </span>
                 </button>
+                {onDetails && (
+                  <button
+                    type="button"
+                    onClick={() => onDetails(place)}
+                    aria-label={"Details for " + place.name}
+                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                  >
+                    <Info className="size-4" />
+                  </button>
+                )}
                 {place.gmaps_link && (
                   <a
                     href={place.gmaps_link}

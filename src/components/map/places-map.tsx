@@ -31,7 +31,9 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { MapErrorBoundary } from "@/components/map/map-error-boundary";
+import { ComparePlacesSheet } from "@/components/map/compare-places-sheet";
 import { MapPanel } from "@/components/map/map-panel";
+import { PlaceDetailDrawer } from "@/components/map/place-detail-drawer";
 import { MapSheet, SHEET_SNAP_POINTS } from "@/components/map/map-sheet";
 import { NearMeFab } from "@/components/map/near-me-fab";
 import { useMediaQuery } from "@/lib/use-media-query";
@@ -54,6 +56,9 @@ const MapView = dynamic(() => import("@/components/map/map-view"), {
     </div>
   ),
 });
+
+/** Most places the compare sheet shows side by side. */
+const COMPARE_MAX = 3;
 
 interface PlacesMapProps {
   places: Place[];
@@ -388,6 +393,35 @@ export function PlacesMap({
     setFilters(next);
   }
 
+  // Detail drawer and side-by-side compare (picked from the results list).
+  const [detailPlace, setDetailPlace] = React.useState<Place | null>(null);
+  const [compareIds, setCompareIds] = React.useState<string[]>([]);
+  const [compareOpen, setCompareOpen] = React.useState(false);
+  const comparePlaces = React.useMemo(
+    () =>
+      compareIds
+        .map((id) => places.find((place) => place.id === id))
+        .filter((place): place is Place => place !== undefined),
+    [compareIds, places],
+  );
+  const compare = {
+    selectedIds: compareIds,
+    max: COMPARE_MAX,
+    onToggle: (place: Place) =>
+      setCompareIds((ids) =>
+        ids.includes(place.id)
+          ? ids.filter((id) => id !== place.id)
+          : ids.length < COMPARE_MAX
+            ? [...ids, place.id]
+            : ids,
+      ),
+    onOpen: () => setCompareOpen(true),
+    onClear: () => {
+      setCompareIds([]);
+      setCompareOpen(false);
+    },
+  };
+
   function selectPlace(place: Place) {
     setFocusId(place.id);
     setSnap(SHEET_SNAP_POINTS[0]); // collapse to peek so pin is visible
@@ -407,6 +441,8 @@ export function PlacesMap({
     onResetFilters: () => setFilters({ types: [], city: null, country: null, query: "" }),
     resultsToggle,
     onSelectPlace: selectPlace,
+    onShowDetails: setDetailPlace,
+    compare,
     focusId,
     onLocated,
     onShare: share,
@@ -436,6 +472,19 @@ export function PlacesMap({
       <aside className="hidden w-[360px] shrink-0 flex-col overflow-hidden border-r border-border bg-card p-4 lg:flex">
         {isDesktop && <MapPanel {...panelProps} showSearch showNearMe scrollChips />}
       </aside>
+
+      <PlaceDetailDrawer
+        place={detailPlace}
+        open={detailPlace !== null}
+        onOpenChange={(open) => {
+          if (!open) setDetailPlace(null);
+        }}
+      />
+      <ComparePlacesSheet
+        places={comparePlaces}
+        open={compareOpen}
+        onOpenChange={setCompareOpen}
+      />
 
       {/* Map + mobile overlays */}
       <div className="relative min-w-0 flex-1">

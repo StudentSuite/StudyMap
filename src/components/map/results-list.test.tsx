@@ -198,3 +198,94 @@ describe("ResultsList paging", () => {
     expect(screen.getByText("Place 99")).toBeTruthy();
   });
 });
+
+describe("ResultsList details and compare", () => {
+  const rowsOf = (n: number): ResultRow[] =>
+    Array.from({ length: n }, (_, i) => ({
+      place: {
+        id: "p" + i,
+        name: "Place " + i,
+        type: "library" as const,
+        city: "mumbai",
+        lat: 19 + i / 100,
+        lng: 72.8,
+        gmaps_link: "https://maps.google.com/?q=19,72.8",
+        added_by: "test",
+      },
+    }));
+  const emptyState = { activeFilters: [], onReset: vi.fn(), onSuggest: vi.fn() };
+
+  it("opens the details for the row's place", () => {
+    const onDetails = vi.fn();
+    render(
+      <ResultsList
+        header="All places"
+        rows={rowsOf(2)}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+        onDetails={onDetails}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "Details for Place 1" }));
+
+    expect(onDetails).toHaveBeenCalledWith(expect.objectContaining({ id: "p1" }));
+  });
+
+  it("shows no details button or checkbox unless asked", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={rowsOf(1)}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+      />,
+    );
+
+    expect(screen.queryByRole("button", { name: /Details for/ })).toBeNull();
+    expect(screen.queryByRole("checkbox")).toBeNull();
+  });
+
+  it("needs two picks before Compare is enabled and caps the picks at the maximum", () => {
+    const onToggle = vi.fn();
+    const onOpen = vi.fn();
+    const base = { max: 3, onToggle, onOpen, onClear: vi.fn() };
+    const rows = rowsOf(4);
+    const { rerender } = render(
+      <ResultsList
+        header="All places"
+        rows={rows}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+        compare={{ ...base, selectedIds: ["p0"] }}
+      />,
+    );
+
+    expect(
+      (screen.getByRole("button", { name: "Compare (1)" }) as HTMLButtonElement).disabled,
+    ).toBe(true);
+
+    rerender(
+      <ResultsList
+        header="All places"
+        rows={rows}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+        compare={{ ...base, selectedIds: ["p0", "p1", "p2"] }}
+      />,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: "Compare (3)" }));
+    expect(onOpen).toHaveBeenCalled();
+    expect(
+      (screen.getByRole("checkbox", { name: "Compare Place 3" }) as HTMLInputElement)
+        .disabled,
+    ).toBe(true);
+    expect(
+      (screen.getByRole("checkbox", { name: "Compare Place 1" }) as HTMLInputElement)
+        .disabled,
+    ).toBe(false);
+    fireEvent.click(screen.getByRole("checkbox", { name: "Compare Place 1" }));
+    expect(onToggle).toHaveBeenCalledWith(expect.objectContaining({ id: "p1" }));
+  });
+});
