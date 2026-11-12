@@ -50,13 +50,16 @@ describe("ExamCentreCountdown", () => {
     expect(screen.getByText(/^Expires soon/)).toBeTruthy();
   });
 
-  it("shows Expired in the destructive colour once the date has passed", () => {
+  it("shows the last confirmed date in a neutral tone once the date has passed", () => {
     render(
       <ExamCentreCountdown place={{ ...centre, valid_till: "2026-09-01" }} now={now} />,
     );
 
-    const pill = screen.getByText(/^Expired/);
-    expect(pill.className).toContain("text-destructive");
+    const pill = screen.getByText(/^Last confirmed for/);
+    expect(pill.textContent).toContain("2026");
+    expect(pill.className).toContain("text-muted-foreground");
+    expect(pill.className).not.toContain("text-destructive");
+    expect(screen.queryByText(/Expired/)).toBeNull();
   });
 
   it("renders nothing when the place has no valid_till", () => {
@@ -72,7 +75,7 @@ describe("PinPopup exam centre validity", () => {
   it("shows the validity pill and no duplicate reconfirm text for an exam centre", () => {
     render(<PinPopup place={centre} />);
 
-    expect(screen.getByText(/^(Valid until|Expires soon|Expired)/)).toBeTruthy();
+    expect(screen.getByText(/^(Valid until|Expires soon|Last confirmed for)/)).toBeTruthy();
     expect(screen.getByText("SAT")).toBeTruthy();
     expect(screen.queryByText(/reconfirm by/)).toBeNull();
   });
@@ -83,6 +86,6 @@ describe("PinPopup exam centre validity", () => {
     delete library.valid_till;
     render(<PinPopup place={library} />);
 
-    expect(screen.queryByText(/^(Valid until|Expires soon|Expired)/)).toBeNull();
+    expect(screen.queryByText(/^(Valid until|Expires soon|Last confirmed for)/)).toBeNull();
   });
 });

@@ -13,6 +13,12 @@ import {
 // fixture directory (see src/lib/data-freshness.test.ts).
 const DEFAULT_DATA_DIRS = ["data/places", "data/competitions"];
 
+// For these place types valid_till is the last test administration the centre
+// was confirmed for, not a deadline. Once it passes the record is reported as a
+// warning (it still shows on the map as "Last confirmed for ..."), so a
+// finished administration does not fail the check for every centre at once.
+const EXAM_CENTRE_TYPES = new Set(["sat_centre", "foreign_lang_exam_centre"]);
+
 function parseArgs(argv) {
   let today = new Date().toISOString().slice(0, 10);
   let dataDirs = DEFAULT_DATA_DIRS.map((dir) => resolve(dir));
@@ -64,6 +70,8 @@ function checkDir(dataDir, today) {
   let totalRecords = 0;
   let datedRecords = 0;
   let totalErrors = 0;
+  let totalWarnings = 0;
+  const warnedFiles = new Set();
 
   for (const file of files) {
     const path = resolve(dataDir, file);
@@ -106,6 +114,18 @@ function checkDir(dataDir, today) {
             `ERROR ${recordLoc}: valid_till must be a real ISO date (YYYY-MM-DD), got "${record.valid_till}"`,
           );
           totalErrors++;
+        } else if (
+          record.valid_till < today &&
+          !isCompetitionDir &&
+          EXAM_CENTRE_TYPES.has(record.type ?? file.replace(/\.json$/, ""))
+        ) {
+          totalWarnings++;
+          if (!warnedFiles.has(file)) {
+            warnedFiles.add(file);
+            console.warn(
+              `WARN  ${file}: valid_till has passed for exam centres (first: ${recordLoc}, ${record.valid_till}); they show as "Last confirmed for <date>" until re-confirmed for the next administration`,
+            );
+          }
         } else if (record.valid_till < today) {
           // Valid ISO YYYY-MM-DD strings sort in chronological order.
           console.error(
@@ -149,19 +169,21 @@ function checkDir(dataDir, today) {
     }
   }
 
-  return { totalRecords, datedRecords, totalErrors };
+  return { totalRecords, datedRecords, totalErrors, totalWarnings };
 }
 
 function checkFreshness({ today, dataDirs }) {
   let totalRecords = 0;
   let datedRecords = 0;
   let totalErrors = 0;
+  let totalWarnings = 0;
 
   for (const dataDir of dataDirs) {
     const result = checkDir(dataDir, today);
     totalRecords += result.totalRecords;
     datedRecords += result.datedRecords;
     totalErrors += result.totalErrors;
+    totalWarnings += result.totalWarnings;
   }
 
   if (totalErrors > 0) {
@@ -171,8 +193,12 @@ function checkFreshness({ today, dataDirs }) {
     return 1;
   }
 
+  const warningNote =
+    totalWarnings > 0
+      ? `; ${totalWarnings} exam centre record(s) are past their last confirmed administration (warning only)`
+      : "";
   console.log(
-    `Freshness passed: ${totalRecords} record(s), ${datedRecords} dated record(s), current as of ${today}.`,
+    `Freshness passed: ${totalRecords} record(s), ${datedRecords} dated record(s), current as of ${today}${warningNote}.`,
   );
   return 0;
 }
