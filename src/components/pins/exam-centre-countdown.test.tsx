@@ -75,7 +75,9 @@ describe("PinPopup exam centre validity", () => {
   it("shows the validity pill and no duplicate reconfirm text for an exam centre", () => {
     render(<PinPopup place={centre} />);
 
-    expect(screen.getByText(/^(Valid until|Expires soon|Last confirmed for)/)).toBeTruthy();
+    expect(
+      screen.getByText(/^(Valid until|Expires soon|Last confirmed for)/),
+    ).toBeTruthy();
     expect(screen.getByText("SAT")).toBeTruthy();
     expect(screen.queryByText(/reconfirm by/)).toBeNull();
   });
@@ -86,6 +88,8 @@ describe("PinPopup exam centre validity", () => {
     delete library.valid_till;
     render(<PinPopup place={library} />);
 
-    expect(screen.queryByText(/^(Valid until|Expires soon|Last confirmed for)/)).toBeNull();
+    expect(
+      screen.queryByText(/^(Valid until|Expires soon|Last confirmed for)/),
+    ).toBeNull();
   });
 });
