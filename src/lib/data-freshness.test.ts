@@ -35,15 +35,40 @@ describe("data freshness check", () => {
     expect(result.stdout).toContain("3 record(s), 2 dated record(s)");
   });
 
-  it("fails when a valid_till deadline has passed", () => {
-    const result = runFreshness([{ id: "stale", valid_till: "2026-08-21" }]);
+  it("warns, without failing, when an exam centre's last confirmed date has passed", () => {
+    const result = runFreshness([{ id: "centre", valid_till: "2026-08-21" }]);
+
+    expect(result.status).toBe(0);
+    expect(result.stderr).toContain("WARN");
+    expect(result.stderr).toContain("sat_centre.json");
+    expect(result.stderr).not.toContain("ERROR");
+    expect(result.stdout).toContain("1 exam centre record(s)");
+  });
+
+  it("applies the same warning to foreign language exam centres", () => {
+    const result = runFreshness(
+      [{ id: "centre", valid_till: "2026-08-21" }],
+      TODAY,
+      "foreign_lang_exam_centre.json",
+    );
+
+    expect(result.status).toBe(0);
+    expect(result.stderr).toContain("WARN");
+  });
+
+  it("fails when a valid_till deadline has passed on a non-exam-centre place", () => {
+    const result = runFreshness(
+      [{ id: "stale", valid_till: "2026-08-21" }],
+      TODAY,
+      "library.json",
+    );
 
     expect(result.status).toBe(1);
     expect(result.stderr).toContain("id: stale");
     expect(result.stderr).toContain("valid_till expired on 2026-08-21");
   });
 
-  it("fails on an impossible valid_till date", () => {
+  it("still fails on an impossible valid_till date for an exam centre", () => {
     const result = runFreshness([{ id: "bad-date", valid_till: "2026-02-30" }]);
 
     expect(result.status).toBe(1);

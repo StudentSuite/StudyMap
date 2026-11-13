@@ -35,7 +35,9 @@ export interface ExamCentreCountdownProps {
  * carrying a `valid_till` date. Absent entirely once the place has no
  * `valid_till`. Colour follows the same success/warning/destructive token
  * pattern as verified-badge.tsx: green while comfortably valid, amber inside
- * the 60-day window, red once the date has passed.
+ * the 60-day window. Once the date has passed it is read as the last
+ * administration the centre was confirmed for, shown in a neutral tone rather
+ * than as an error.
  */
 export function ExamCentreCountdown({
   place,
@@ -49,13 +51,13 @@ export function ExamCentreCountdown({
   const expiringSoon = days !== null && days >= 0 && days <= EXPIRY_WARNING_DAYS;
 
   const tone = expired
-    ? "border-destructive/25 bg-destructive/10 text-destructive"
+    ? "border-border bg-muted text-muted-foreground"
     : expiringSoon
       ? "border-warning/25 bg-warning/10 text-warning"
       : "border-success/25 bg-success/10 text-success";
 
   const label = expired
-    ? `Expired ${formatDate(place.valid_till)}`
+    ? `Last confirmed for ${formatDate(place.valid_till)}`
     : expiringSoon
       ? `Expires soon · ${formatDate(place.valid_till)}`
       : `Valid until ${formatDate(place.valid_till)}`;

@@ -295,6 +295,10 @@ export interface Place {
   verified?: Verified;
   /** Exam this place is a centre for, e.g. "SAT", "Goethe-Zertifikat (A1-C2)". */
   exam?: string;
-  /** ISO date the centre's exam/address validity should be reconfirmed by. */
+  /**
+   * ISO date of the last test administration the centre was confirmed for. Once
+   * it passes, the map shows "Last confirmed for <date>" and the freshness check
+   * warns instead of failing.
+   */
   valid_till?: string;
 }

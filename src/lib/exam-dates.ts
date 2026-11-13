@@ -87,6 +87,7 @@ export const EXAM_EVENTS: ExamEvent[] = [
     examEnd: "2026-11-07",
     results: "2026-11-20",
     confirmed: true,
+    archived: true,
     notes: "Register early: international centre seats fill fast.",
     source: {
       label: "College Board: SAT dates and deadlines",

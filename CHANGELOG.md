@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- SAT and foreign language exam centres: `valid_till` now means the last test administration the centre was confirmed for. After it passes, the pin shows "Last confirmed for <date>" in a neutral tone instead of "Expired", and `npm run check:freshness` warns instead of failing. Other places and competitions keep the strict check.
 - `/docs`: persistent sidebar (grouped nav, desktop + mobile drawer), a shared prose wrapper, and a prev/next pager, all sourced from one `lib/docs-nav.ts` instead of per-page duplicated lists. `docs-nav.ts` now covers all 16 routes across four groups (Guides, Awesome Lists, Contributing, Developers).
 - `CodeBlock` moved from hand-rolled JSON tinting to server-rendered `shiki` (dual light/dark theme), so bash and JSON snippets get real syntax highlighting.
 - `lib/site.ts` and `/about` no longer claim Mumbai-only coverage now that the dataset is global; Instagram footer link corrected to `@student.suite`.
