@@ -1123,5 +1123,182 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-03-15"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "gauss-contests",
+    "name": "Gauss Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Multiple-choice mathematics contests for Grades 7 and 8, offered in English and French. They give younger students a wider view of mathematics than the school curriculum usually does, in a low-pressure format; schools must order at least ten contests.",
+    "age_min": 12,
+    "age_max": 14,
+    "fee": {
+      "amount": 5,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Participation for everyone; Certificates of Distinction for the top 25 percent within a school (schools with at least 4 participants); a Certificate of Outstanding Achievement for each school's top scorer per grade (schools with at least 10 participants).",
+    "official_url": "https://cemc.uwaterloo.ca/contests/gauss",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-04-22",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/gauss"
+      },
+      {
+        "label": "Contest period opens",
+        "date": "2027-05-10",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest period closes",
+        "date": "2027-05-21",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-06-01"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "pascal-cayley-fermat-contests",
+    "name": "Pascal, Cayley and Fermat Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Three grade-specific multiple-choice contests for Grades 9 to 11, built to be approachable for students who have never written a math contest. Offered in English and French; the Euclid and the Canadian Senior and Intermediate contests are the next step up.",
+    "age_min": 13,
+    "age_max": 17,
+    "fee": {
+      "amount": 6,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Distinction for the top 25 percent of competitors; each school's champion who meets the medal cutoff may receive a Contest Medal, at the CEMC's discretion.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/pcf",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline for schools in India",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
+        "label": "Ordering deadline for schools outside Canada and India",
+        "date": "2027-02-02",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
+        "label": "Contest date in North and South America (first day)",
+        "date": "2027-02-23",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date outside North and South America (first day)",
+        "date": "2027-02-24",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-03-15"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "fryer-galois-hypatia-contests",
+    "name": "Fryer, Galois and Hypatia Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving",
+      "mathematical communication"
+    ],
+    "description": "Three full-solution contests for Grades 9 to 11, run at the same time by grade level. Students write out complete solutions, which builds both problem solving and mathematical communication. Offered in English and French.",
+    "age_min": 13,
+    "age_max": 17,
+    "fee": {
+      "amount": 12,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Distinction for the top 25 percent of competitors; each school's champion who meets the medal cutoff may receive a Contest Medal; some top scorers appear on zone, provincial, Canadian and international honour rolls.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/fgh",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-03-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/fgh"
+      },
+      {
+        "label": "Contest date in North and South America",
+        "date": "2027-04-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date outside North and South America",
+        "date": "2027-04-08",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-05-01"
   }
 ]
