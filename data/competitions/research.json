@@ -32,14 +32,22 @@
         "timezone": "UTC-5",
         "estimated": false,
         "source_url": "https://www.societyforscience.org/regeneron-sts/official-rules/"
+      },
+      {
+        "label": "2028 application opens",
+        "date": "2027-06-01",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.societyforscience.org/regeneron-sts/application-requirements/"
       }
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-05"
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
     },
-    "valid_till": "2027-01-01",
+    "valid_till": "2027-06-01",
     "image": "/competitions/regeneron-science-talent-search.png"
   },
   {
