@@ -737,5 +737,53 @@
       "on": "2026-11-17"
     },
     "valid_till": "2027-07-01"
+  },
+  {
+    "id": "raspberry-pi-foundation-coding-challenge",
+    "name": "Raspberry Pi Foundation Coding Challenge (RPFCC)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "coding",
+    "subjects": [
+      "programming",
+      "computational thinking"
+    ],
+    "description": "A free 45 minute online coding challenge of 10 tasks in two sections, formerly the Coding Challenge and the Oxford University Computing Challenge. Students pick a block-based or text-based track and one of four skill-based divisions (Novice, Explorer, Navigator, Trailblazer) rather than an age band, so it suits beginners.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 0,
+      "currency": "AUD"
+    },
+    "prize": "Perfect Score, Distinction, Merit or Participation certificates based on score cut-offs set by the Raspberry Pi Foundation.",
+    "official_url": "https://www.amt.edu.au/rpfcc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-06-11",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/rpfcc"
+      },
+      {
+        "label": "Challenge window (first day)",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-07-15"
   }
 ]
