@@ -641,5 +641,101 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-01-15"
+  },
+  {
+    "id": "australian-informatics-olympiad",
+    "name": "Australian Informatics Olympiad (AIO)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "coding",
+    "subjects": [
+      "programming",
+      "algorithms"
+    ],
+    "description": "A 3 hour online programming contest of 6 questions answered in source code (C, C++, Java or Python 3), auto-judged on correctness and speed, for students in Years 7 to 12 with coding experience. Good results can lead to invitations to the AMT olympiad programs.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 25.9,
+      "currency": "AUD"
+    },
+    "prize": "Gold (top 10 percent), Silver (next 15), Bronze (next 25), Credit (next 20) and Participation certificates; strong performers may be invited to AMT olympiad programs.",
+    "official_url": "https://www.amt.edu.au/aio",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-08-20",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/aio"
+      },
+      {
+        "label": "Contest day",
+        "date": "2027-08-26",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-10-01"
+  },
+  {
+    "id": "computational-and-algorithmic-thinking",
+    "name": "Computational and Algorithmic Thinking (CAT)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "coding",
+    "subjects": [
+      "algorithmic thinking",
+      "logic"
+    ],
+    "description": "A 60 minute competition for Years 5 to 12 built around three-stage tasks where students develop informal algorithms and test them on data of growing size. No programming experience is needed, and it runs online or on printed paper.",
+    "format": "hybrid",
+    "age_min": 10,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 9.3,
+      "currency": "AUD"
+    },
+    "prize": "Participation, Credit, Distinction and High Distinction awards by percentile (High Distinction is the top 2 percent); prizes for high performers in the Intermediate and Senior divisions at the AMT's discretion.",
+    "official_url": "https://www.amt.edu.au/cat",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Online entries close",
+        "date": "2027-05-14",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/cat"
+      },
+      {
+        "label": "Competition sitting (first day)",
+        "date": "2027-05-18",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-07-01"
   }
 ]
