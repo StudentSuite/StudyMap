@@ -1123,5 +1123,101 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-03-15"
+  },
+  {
+    "id": "ukmt-junior-mathematical-challenge",
+    "name": "UKMT Junior Mathematical Challenge (JMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions on mathematical reasoning and precision, open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-05-05",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Junior Mathematical Challenge sitting",
+        "date": "2027-05-05",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ukmt-intermediate-mathematical-challenge",
+    "name": "UKMT Intermediate Mathematical Challenge (IMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions for Year 11 and below in England, Wales and overseas (S4 or below in Scotland, Year 12 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Intermediate Mathematical Challenge sitting",
+        "date": "2027-01-27",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-03-01"
   }
 ]
