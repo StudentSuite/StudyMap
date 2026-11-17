@@ -105,6 +105,7 @@ export const EXAM_EVENTS: ExamEvent[] = [
     results: "Early January 2027",
     resultsEstimated: true,
     confirmed: false,
+    archived: true,
     notes:
       "Window subject to IB confirmation. Results historically release in the first week of January.",
     source: {
