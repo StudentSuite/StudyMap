@@ -1300,5 +1300,62 @@
       }
     ],
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "canadian-team-mathematics-contest",
+    "name": "Canadian Team Mathematics Contest",
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "teamwork",
+      "problem solving"
+    ],
+    "description": "A team contest where six secondary students work together through individual, team and relay events of short-answer problems. Schools can run it in-school or enter a lottery to take part at the University of Waterloo in person or virtually; at least half of the individual problems are accessible to Grade 9 and 10 students.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 50,
+      "currency": "CAD"
+    },
+    "prize": "Certificates for participants; no ranked prizes are listed on the contest page.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/ctmc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Lottery registration deadline for the University of Waterloo event",
+        "date": "2026-11-19",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/ctmc"
+      },
+      {
+        "label": "University of Waterloo event",
+        "date": "2027-04-13",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/ctmc"
+      },
+      {
+        "label": "In-school ordering deadline",
+        "date": "2027-04-12",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-05-01"
   }
 ]
