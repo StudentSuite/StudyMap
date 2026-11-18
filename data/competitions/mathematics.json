@@ -1226,6 +1226,14 @@
         "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
       },
       {
+        "label": "Ordering deadline for schools in Canada",
+        "date": "2027-02-09",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
         "label": "Contest date in North and South America (first day)",
         "date": "2027-02-23",
         "type": "round",
