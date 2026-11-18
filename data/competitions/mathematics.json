@@ -1149,6 +1149,14 @@
     "cycle_year": 2027,
     "dates": [
       {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-04-14",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
         "label": "Downloadable paper purchase deadline",
         "date": "2027-05-05",
         "type": "deadline",
@@ -1196,6 +1204,14 @@
     "official_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge",
     "cycle_year": 2027,
     "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-01-06",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
       {
         "label": "Downloadable paper purchase deadline",
         "date": "2027-01-27",
