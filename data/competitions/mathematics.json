@@ -1149,6 +1149,22 @@
     "cycle_year": 2027,
     "dates": [
       {
+        "label": "Printed paper entries close (International)",
+        "date": "2027-06-25",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Printed paper entries close (Australia and New Zealand)",
+        "date": "2027-07-02",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
         "label": "Online entries close",
         "date": "2027-07-30",
         "type": "deadline",
