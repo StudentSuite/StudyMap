@@ -5806,5 +5806,69 @@
     "address": "2425 Macdonald St, Vancouver BC V6K 2G6, Canada",
     "gmaps_link": "https://maps.google.com/?q=49.2647206,-123.168715",
     "added_by": "anaydhawan"
+  },
+  {
+    "id": "wdc-library-01",
+    "name": "Library of Congress, Thomas Jefferson Building",
+    "type": "library",
+    "city": "washington",
+    "country": "US",
+    "lat": 38.888674,
+    "lng": -77.004636,
+    "address": "10 First Street SE, Washington, DC 20540",
+    "gmaps_link": "https://maps.google.com/?q=38.888674,-77.004636",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "dub-library-02",
+    "name": "National Library of Ireland",
+    "type": "library",
+    "city": "dublin",
+    "country": "IE",
+    "lat": 53.341125,
+    "lng": -6.2545,
+    "address": "7-8 Kildare Street, Dublin D02 P638",
+    "gmaps_link": "https://maps.google.com/?q=53.341125,-6.2545",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "scl-library-01",
+    "name": "Biblioteca Nacional de Chile",
+    "type": "library",
+    "city": "santiago",
+    "country": "CL",
+    "lat": -33.442064,
+    "lng": -70.645665,
+    "address": "Avenida Libertador Bernardo O'Higgins 651, Santiago",
+    "gmaps_link": "https://maps.google.com/?q=-33.442064,-70.645665",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "alx-library-01",
+    "name": "Bibliotheca Alexandrina",
+    "type": "library",
+    "city": "alexandria",
+    "country": "EG",
+    "lat": 31.208661,
+    "lng": 29.908933,
+    "address": "El Shatby, Alexandria 21526",
+    "gmaps_link": "https://maps.google.com/?q=31.208661,29.908933",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
   }
 ]
