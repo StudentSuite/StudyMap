@@ -9,7 +9,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- `/traffic`: monthly visitors and page views as a chart, with settings for chart type (bars, line, area, table), metric and monthly or running totals. Numbers live in `src/lib/traffic.ts`; add a row each month.
 - `/stats`: dataset numbers (places, cities, countries, competitions, contributors, verified places) and a ranked breakdown of places by category, country or city and of competitions by category or region.
 - Competitions: a second dataset next to places (`data/competitions/*.json`, validated by `npm run validate:competitions`), with a browse page (`/competitions`) that filters by subject, format, participation, region, fee, age and deadline and can switch between cards and a list, a detail page per competition (`/competitions/[slug]`), saving a competition when signed in (`/competitions/saved`), a personal calendar feed (`/api/competitions/saved.ics`), a public JSON API (`/api/competitions`) and its docs page, and competition dates on the exam calendar.
 - Onboarding: a short first-run questionnaire (`/onboarding`) shown once after first sign-in, with answers stored in a `user_profiles` row.

@@ -60,10 +60,9 @@
   --grid-line: rgba(180, 83, 9, 0.055);
   --grid-line-bold: rgba(180, 83, 9, 0.1);
 
-  /* Chart series (categorical slots 1-2). Validated for CVD separation and
-     3:1 contrast on the card surface, light and dark (see /traffic). */
+  /* Chart series color (categorical slot 1). Passes 3:1 contrast on the card
+     surface in light and dark. */
   --viz-1: #2a78d6;
-  --viz-2: #eb6834;
 
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 170ms;
@@ -125,7 +124,6 @@
   --grid-line-bold: rgba(245, 158, 11, 0.09);
 
   --viz-1: #3987e5;
-  --viz-2: #d95926;
 }
 
 /* ================================================================

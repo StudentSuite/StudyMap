@@ -15,7 +15,6 @@ const STATIC_ROUTES = [
   "/docs",
   "/about",
   "/stats",
-  "/traffic",
   "/contribute",
 ];
 const LEGAL_ROUTES = ["/legal/privacy", "/legal/terms", "/legal/disclaimer"];
