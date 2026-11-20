@@ -10,6 +10,8 @@ const quickLinks = [
   { href: "/competitions", label: "Competitions" },
   { href: "/calendar", label: "Exam Calendar" },
   { href: "/about", label: "About" },
+  { href: "/stats", label: "Stats" },
+  { href: "/traffic", label: "Traffic" },
   { href: "/contribute", label: "Contribute" },
   { href: "/docs", label: "Docs" },
 ];
