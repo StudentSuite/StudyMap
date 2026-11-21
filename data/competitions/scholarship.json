@@ -83,14 +83,30 @@
         "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://www.coca-colascholarsfoundation.org/about/faq"
+      },
+      {
+        "label": "2028 cycle application opens (Phase 1 runs August 3 to September 30 each year)",
+        "date": "2027-08-03",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.coca-colascholarsfoundation.org/apply/"
+      },
+      {
+        "label": "2028 cycle application deadline (annual pattern)",
+        "date": "2027-09-30",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.coca-colascholarsfoundation.org/apply/"
       }
     ],
     "added_by": "shauryagangrade",
     "verified": {
-      "by": "shauryagangrade",
-      "on": "2026-09-06"
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-08-01",
     "image": "/competitions/coca-cola-scholars.png"
   },
   {

@@ -8,7 +8,15 @@ import { docsPages } from "@/lib/docs-nav";
 import { getChangelog } from "@/lib/changelog";
 import type { Competition } from "@/lib/types";
 
-const STATIC_ROUTES = ["/", "/map", "/calendar", "/docs", "/about", "/contribute"];
+const STATIC_ROUTES = [
+  "/",
+  "/map",
+  "/calendar",
+  "/docs",
+  "/about",
+  "/stats",
+  "/contribute",
+];
 const LEGAL_ROUTES = ["/legal/privacy", "/legal/terms", "/legal/disclaimer"];
 
 /** Newest `verified.on` date among a city's places, or undefined if none are verified. */
