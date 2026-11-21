@@ -758,12 +758,28 @@
     "cycle_year": 2027,
     "dates": [
       {
+        "label": "Enrollment deadline (following the usual October 1 pattern, estimated)",
+        "date": "2026-10-01",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.wordmasterschallenge.com/enroll"
+      },
+      {
         "label": "Meet 1 testing window",
         "date": "2026-11-09",
         "type": "round",
         "timezone": "UTC-5",
         "estimated": false,
         "source_url": "https://www.wordmasterschallenge.com/challenge-schedule"
+      },
+      {
+        "label": "Meet 1 score submission deadline",
+        "date": "2026-12-04",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.wordmasterschallenge.com/"
       },
       {
         "label": "Meet 2 testing window",
@@ -780,20 +796,12 @@
         "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://www.wordmasterschallenge.com/challenge-schedule"
-      },
-      {
-        "label": "Enrollment deadline (following the usual October 1 pattern, estimated)",
-        "date": "2026-10-01",
-        "type": "registration_close",
-        "timezone": "UTC-4",
-        "estimated": true,
-        "source_url": "https://www.wordmasterschallenge.com/enroll"
       }
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-24"
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
     },
     "valid_till": "2027-05-01"
   },

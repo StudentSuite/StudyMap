@@ -1531,10 +1531,10 @@
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-21"
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-01-31"
   },
   {
     "id": "indian-national-biology-olympiad",
@@ -3896,12 +3896,20 @@
         "timezone": "UTC+1",
         "estimated": true,
         "source_url": "https://en.wikipedia.org/wiki/International_Physics_Olympiad"
+      },
+      {
+        "label": "New Round 1 starts (the 2027 Round 1 closed end of September 2026)",
+        "date": "2027-04-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.scienceolympiaden.de/ipho/internationale-physik-olympiade-wettbewerb/information-aktuelle-runde-1"
       }
     ],
     "added_by": "yakew7",
     "verified": {
-      "by": "yakew7",
-      "on": "2026-09-24"
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
     },
     "valid_till": "2027-01-15"
   },

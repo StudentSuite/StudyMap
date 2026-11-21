@@ -1362,7 +1362,7 @@
     "city": "miami",
     "country": "US",
     "lat": 25.7959,
-    "lng": -80.2870,
+    "lng": -80.287,
     "address": "Miami, FL 33122, USA",
     "gmaps_link": "https://maps.google.com/?q=25.7959,-80.2870",
     "added_by": "yakew7"
@@ -1402,5 +1402,117 @@
     "address": "Airport - Dakshinkhan Rd, Dhaka 1229, Bangladesh",
     "gmaps_link": "https://maps.google.com/?q=23.8434344,90.4029252",
     "added_by": "anaydhawan"
+  },
+  {
+    "id": "bkk-airport-01",
+    "name": "Suvarnabhumi Airport",
+    "type": "airport",
+    "city": "bangkok",
+    "country": "TH",
+    "lat": 13.681877,
+    "lng": 100.74858,
+    "address": "Bang Phli, Samut Prakan, Thailand",
+    "gmaps_link": "https://maps.google.com/?q=13.681877,100.74858",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "nrt-airport-01",
+    "name": "Narita International Airport",
+    "type": "airport",
+    "city": "narita",
+    "country": "JP",
+    "lat": 35.775852,
+    "lng": 140.393324,
+    "address": "Narita, Chiba, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.775852,140.393324",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "hnd-airport-01",
+    "name": "Tokyo Haneda Airport",
+    "type": "airport",
+    "city": "tokyo",
+    "country": "JP",
+    "lat": 35.545692,
+    "lng": 139.776099,
+    "address": "Ota City, Tokyo, Japan",
+    "gmaps_link": "https://maps.google.com/?q=35.545692,139.776099",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "doh-airport-01",
+    "name": "Hamad International Airport",
+    "type": "airport",
+    "city": "doha",
+    "country": "QA",
+    "lat": 25.27486,
+    "lng": 51.612451,
+    "address": "Doha, Qatar",
+    "gmaps_link": "https://maps.google.com/?q=25.27486,51.612451",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "hkg-airport-01",
+    "name": "Hong Kong International Airport",
+    "type": "airport",
+    "city": "hong_kong",
+    "country": "HK",
+    "lat": 22.312599,
+    "lng": 113.9173,
+    "address": "Chek Lap Kok, Hong Kong",
+    "gmaps_link": "https://maps.google.com/?q=22.312599,113.9173",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "han-airport-01",
+    "name": "Noi Bai International Airport",
+    "type": "airport",
+    "city": "hanoi",
+    "country": "VN",
+    "lat": 21.218892,
+    "lng": 105.80446,
+    "address": "Noi Bai, Soc Son, Hanoi, Vietnam",
+    "gmaps_link": "https://maps.google.com/?q=21.218892,105.80446",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
+  },
+  {
+    "id": "acc-airport-01",
+    "name": "Kotoka International Airport",
+    "type": "airport",
+    "city": "accra",
+    "country": "GH",
+    "lat": 5.60384,
+    "lng": -0.168269,
+    "address": "Airport City, Accra, Ghana",
+    "gmaps_link": "https://maps.google.com/?q=5.60384,-0.168269",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    }
   }
 ]
