@@ -1125,6 +1125,62 @@
     "valid_till": "2027-03-15"
   },
   {
+    "id": "euclid-contest",
+    "name": "Euclid Contest",
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A written mathematics contest for Grade 12 students, mixing short-answer and full-solution questions, some of them among the hardest the CEMC sets. Schools order the paper and supervise the sitting; any full-time student may write it, and only official participants are ranked.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 18,
+      "currency": "CAD"
+    },
+    "prize": "The top five official participants in Canada receive a plaque and a $500 prize, and the next ten receive $200, at the CEMC's discretion; scoring participants earn certificates and medals.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/euclid",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-03-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date in North and South America",
+        "date": "2027-04-06",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date outside North and South America",
+        "date": "2027-04-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
     "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
     "organizer_url": "https://cemc.uwaterloo.ca/",
     "category": "mathematics",

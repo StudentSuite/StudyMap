@@ -60,6 +60,10 @@
   --grid-line: rgba(180, 83, 9, 0.055);
   --grid-line-bold: rgba(180, 83, 9, 0.1);
 
+  /* Chart series color (categorical slot 1). Passes 3:1 contrast on the card
+     surface in light and dark. */
+  --viz-1: #2a78d6;
+
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 170ms;
   --duration-med: 280ms;
@@ -118,6 +122,8 @@
   /* Notebook grid (shared StudentSuite design language) */
   --grid-line: rgba(245, 158, 11, 0.05);
   --grid-line-bold: rgba(245, 158, 11, 0.09);
+
+  --viz-1: #3987e5;
 }
 
 /* ================================================================
