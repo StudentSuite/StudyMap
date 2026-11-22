@@ -1,0 +1,114 @@
+name: Place submission
+
+# Turns an issue labelled `place-submission` (created by POST /api/submit-place,
+# see #264) into a pull request that adds the record to data/places/. A
+# maintainer still reviews and merges it. Only a user with triage access can
+# apply the label, so a random issue cannot trigger this.
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions: {}
+
+jobs:
+  process:
+    if: contains(github.event.issue.labels.*.name, 'place-submission')
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    concurrency:
+      group: place-submission-${{ github.event.issue.number }}
+      cancel-in-progress: false
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # `opened` and `labeled` can both fire for one issue; do the work once.
+      - name: Skip if a pull request already exists
+        id: existing
+        run: |
+          count=$(gh pr list --state all --head "place-submission/issue-${ISSUE_NUMBER}" --json number --jq length)
+          echo "exists=$([ "$count" -gt 0 ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+
+      - name: Build the record
+        id: process
+        if: steps.existing.outputs.exists == 'false'
+        run: node scripts/process-place-submission.mjs
+
+      - name: Validate the dataset
+        if: steps.process.outputs.status == 'ready'
+        run: npm run validate:places
+
+      - name: Open the pull request
+        id: pr
+        if: steps.process.outputs.status == 'ready'
+        env:
+          BRANCH: ${{ steps.process.outputs.branch }}
+          TITLE: ${{ steps.process.outputs.title }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/places
+          git commit -m "$TITLE"
+          git push origin "$BRANCH"
+          cat > pr-body.md <<EOF
+          ## What this changes
+
+          Adds one place from the web form. Source issue: #${ISSUE_NUMBER}
+
+          ## Type of change
+
+          - [x] New public place(s)
+
+          ## Proof (required for new public places)
+
+          The submitter's note and claims are in the issue. Check them against Google Maps before merging.
+
+          | Field                                    | Value |
+          | ---------------------------------------- | ----- |
+          | Source or citation                       | see #${ISSUE_NUMBER} |
+          | Google Maps rating (must be >= 4.0)      | reviewer to check |
+          | Google Maps review count (must be >= 50) | reviewer to check |
+          | Date verified                            | reviewer to check |
+
+          - [ ] Each place's rating is 4.0 or higher.
+          - [ ] Each place has 50 or more reviews.
+          - [ ] Coordinates point to the correct entrance.
+          - [x] The JSON record stops at \`gmaps_link\` and \`added_by\` (no proof fields committed).
+
+          ## Checklist
+
+          - [x] The site hosts no copyrighted files; resource and paper changes are links only.
+          - [x] No em dashes in any copy.
+
+          Closes #${ISSUE_NUMBER}
+
+          Opened by the place-submission workflow. Pull requests opened with the default token do not start CI; the dataset validator already passed in the workflow, and closing and reopening this PR starts the rest.
+          EOF
+          gh pr create --base "${{ github.event.repository.default_branch }}" --head "$BRANCH" --title "$TITLE" --body-file pr-body.md
+
+      - name: Comment on the issue
+        if: always() && steps.process.outputs.status != ''
+        env:
+          STATUS: ${{ steps.process.outputs.status }}
+          MESSAGE: ${{ steps.process.outputs.message }}
+        run: |
+          case "$STATUS" in
+            ready) prefix="Thanks. This is now a pull request for review." ;;
+            *) prefix="This submission needs a maintainer." ;;
+          esac
+          printf '%s\n\n%s\n' "$prefix" "$MESSAGE" > comment.md
+          gh issue comment "$ISSUE_NUMBER" --body-file comment.md
+          if [ "$STATUS" != "ready" ]; then
+            gh issue edit "$ISSUE_NUMBER" --add-label "needs-triage" || true
+          fi
