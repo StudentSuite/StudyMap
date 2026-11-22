@@ -35,6 +35,7 @@ import { ComparePlacesSheet } from "@/components/map/compare-places-sheet";
 import { MapPanel } from "@/components/map/map-panel";
 import { PlaceDetailDrawer } from "@/components/map/place-detail-drawer";
 import { MapSheet, SHEET_SNAP_POINTS } from "@/components/map/map-sheet";
+import { HeatmapToggle } from "@/components/map/heatmap-toggle";
 import { NearMeFab } from "@/components/map/near-me-fab";
 import { useMediaQuery } from "@/lib/use-media-query";
 import { UserPlaceDialog } from "@/components/map/user-place-dialog";
@@ -111,6 +112,7 @@ export function PlacesMap({
   }, []);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
+  const [heatmap, setHeatmap] = React.useState(false);
   const [sortByDistance, setSortByDistance] = React.useState(false);
   const [snap, setSnap] = React.useState<number | string | null>(SHEET_SNAP_POINTS[0]);
   // Mount one MapPanel, not both: the sidebar from `lg` up (the same breakpoint as the
@@ -496,12 +498,20 @@ export function PlacesMap({
             focusId={focusId}
             focusBounds={focusBounds}
             closePopupTrigger={closePopupTrigger}
+            heatmap={heatmap}
             center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
             zoom={viewport?.zoom ?? defaultZoom}
             initialViewport={viewport}
             onViewportChange={handleViewportChange}
           />
         </MapErrorBoundary>
+
+        {/* Density overlay toggle; below the mobile top bar, top-right on desktop */}
+        <HeatmapToggle
+          pressed={heatmap}
+          onPressedChange={setHeatmap}
+          className="absolute right-3 top-[4.5rem] z-[1000] w-auto shadow-md lg:top-3"
+        />
 
         {/* Mobile top bar: persistent search + filters trigger */}
         <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex gap-2 lg:hidden">

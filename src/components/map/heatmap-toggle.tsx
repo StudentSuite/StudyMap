@@ -12,10 +12,10 @@ interface HeatmapToggleProps {
 }
 
 /**
- * Toggle control for a places-density heatmap overlay. This is just the
- * control - it flips `pressed` and leaves actually rendering a heatmap
- * layer to `map-view.tsx`, which is out of scope here. Styled to match
- * `NearMeButton` so both sit naturally in the same map-controls stack.
+ * Toggle control for the places-density heatmap overlay. It flips `pressed`;
+ * `places-map.tsx` passes that to `map-view.tsx`, which draws the overlay.
+ * Styled to match `NearMeButton` so both sit naturally in the same
+ * map-controls stack.
  */
 export function HeatmapToggle({
   pressed,
