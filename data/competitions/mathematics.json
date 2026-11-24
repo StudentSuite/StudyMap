@@ -1533,5 +1533,333 @@
       "on": "2026-11-17"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "ukmt-junior-mathematical-challenge",
+    "name": "UKMT Junior Mathematical Challenge (JMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions on mathematical reasoning and precision, open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-04-14",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-05-05",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Junior Mathematical Challenge sitting",
+        "date": "2027-05-05",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ukmt-intermediate-mathematical-challenge",
+    "name": "UKMT Intermediate Mathematical Challenge (IMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions for Year 11 and below in England, Wales and overseas (S4 or below in Scotland, Year 12 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-01-06",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Intermediate Mathematical Challenge sitting",
+        "date": "2027-01-27",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "ukmt-primary-kangaroo",
+    "name": "UKMT Primary Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 45 minute paper of 20 multiple-choice questions for UK primary pupils (Year 5/6 or below in England and Wales, P6/P7 or below in Scotland and Northern Ireland), linked to the International Kangaroo papers. Entries are sold in packs of 10 for 10 GBP, so the fee above is the per-pupil figure; it must be sat on paper, and Leeds primary schools can claim free entries in 2027.",
+    "format": "in_person",
+    "age_min": 9,
+    "age_max": 11,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1,
+      "currency": "GBP"
+    },
+    "prize": "Certificates by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-02-25",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      },
+      {
+        "label": "Competition window opens",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      },
+      {
+        "label": "Competition window closes",
+        "date": "2027-03-25",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-grey-pink-kangaroos",
+    "name": "UKMT Grey and Pink Kangaroos",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Intermediate Mathematical Challenge. Entry is by invitation based on a qualifying IMC score, or by discretionary entry, and is open to UK schools only. Grey Kangaroo is for Year 9 and below in England and Wales (S2 or below in Scotland, Year 10 or below in Northern Ireland); Pink Kangaroo is for Years 10 and 11 (S3 and S4, Years 11 and 12). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/grey-and-pink-kangaroos",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Grey and Pink Kangaroo date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-cayley-hamilton-maclaurin-olympiads",
+    "name": "UKMT Cayley, Hamilton and Maclaurin Mathematical Olympiads",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style problems needing full written solutions, taken as the follow-on round to the Intermediate Mathematical Challenge. Around 1,800 students qualify from the IMC each year, and discretionary entry is also possible. Cayley is for Year 9 and below, Hamilton for Year 10 and Maclaurin for Year 11 in England, Wales and overseas (S2, S3 and S4 in Scotland; Years 10, 11 and 12 in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/cayley-hamilton-maclaurin-olympiad-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-junior-kangaroo",
+    "name": "UKMT Junior Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Junior Mathematical Challenge. Entry is by invitation based on a qualifying JMC score, or by discretionary entry, and is open to UK schools only (Year 8 and below in England and Wales, S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior Kangaroo date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
+  },
+  {
+    "id": "ukmt-junior-mathematical-olympiad",
+    "name": "UKMT Junior Mathematical Olympiad",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style questions needing full written solutions, taken as the follow-on round to the Junior Mathematical Challenge. Around 1,200 students qualify from the JMC each year, and discretionary entry is also possible. Open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
   }
 ]
