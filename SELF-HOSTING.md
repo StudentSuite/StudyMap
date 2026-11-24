@@ -83,7 +83,9 @@ a Supabase project:
 3. In the Supabase SQL editor, run every file in `supabase/migrations/`, in filename order. Each
    one creates its tables with row-level security already scoped to `auth.uid()`, so users can
    only ever read or write their own rows. This includes `user_places`, `user_home`, and
-   `user_events` (the three original sign-in-gated tables), plus `competition_saves` and
+   `user_events` (the three original sign-in-gated tables), `saved_places` (the stars on public
+   places, private per user; without it saving still works, kept in the browser only), plus
+   `competition_saves` and
    `competition_stats` for the competitions vertical: saves are private per user, and
    `competition_stats` is a public save-count aggregate kept in sync by a trigger, readable by
    anyone but writable only by that trigger, never directly. It also includes `user_profiles`,

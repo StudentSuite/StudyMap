@@ -189,3 +189,39 @@ describe("buildShareUrl", () => {
     expect(url).toBe(`${window.location.origin}${window.location.pathname}`);
   });
 });
+
+describe("saved shortlist in the link (#355)", () => {
+  const base: MapShareState = {
+    types: [],
+    city: null,
+    country: null,
+    query: "",
+    placeId: null,
+    lat: null,
+    lng: null,
+    zoom: null,
+  };
+
+  it("round-trips a shortlist through the saved parameter", () => {
+    const search = mapStateToSearch({ ...base, saved: ["mum-library-07", "12345"] });
+    expect(search).toBe("?saved=mum-library-07%2C12345");
+    expect(parseMapState(search).saved).toEqual(["mum-library-07", "12345"]);
+  });
+
+  it("leaves the parameter out when there is no shortlist, so existing links are unchanged", () => {
+    expect(mapStateToSearch({ ...base })).toBe("");
+    expect(mapStateToSearch({ ...base, saved: [] })).toBe("");
+    expect(parseMapState("")).not.toHaveProperty("saved");
+  });
+
+  it("ignores malformed ids and duplicates in a shared link", () => {
+    expect(parseMapState("?saved=a,,<b>,a,c%20d,e").saved).toEqual(["a", "e"]);
+  });
+
+  it("keeps the shortlist alongside the other state", () => {
+    const search = mapStateToSearch({ ...base, country: "IN", saved: ["a"] });
+    const parsed = parseMapState(search);
+    expect(parsed.country).toBe("IN");
+    expect(parsed.saved).toEqual(["a"]);
+  });
+});

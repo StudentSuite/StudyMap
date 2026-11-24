@@ -6,6 +6,7 @@ import type { Place } from "@/lib/types";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
 import { CategoryIcon } from "@/components/map/category-icon";
 import { PlacePhotoGallery } from "@/components/map/place-photo-gallery";
+import { SaveStar } from "@/components/map/save-star";
 import { SharePlaceCard } from "@/components/map/share-place-card";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 import { Button } from "@/components/ui/button";
@@ -39,6 +40,7 @@ export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDraw
               <SheetTitle className="flex items-center gap-2">
                 {place.name}
                 <VerifiedBadge place={place} />
+                <SaveStar placeId={place.id} placeName={place.name} className="ml-auto" />
               </SheetTitle>
               <SheetDescription>{humanizeCity(place.city)}</SheetDescription>
             </SheetHeader>

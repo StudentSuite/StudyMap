@@ -18,6 +18,9 @@ import {
 } from "@/lib/places-utils";
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
+import { pruneToDataset } from "@/lib/saved-places";
+import { SavedPlacesProvider } from "@/components/map/save-star";
+import { useSavedPlaces } from "@/components/map/use-saved-places";
 import type { MapViewport } from "@/components/map/map-view";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
@@ -134,6 +137,25 @@ export function PlacesMap({
   const [myPlacesError, setMyPlacesError] = React.useState<string | null>(null);
   const [lastUserId, setLastUserId] = React.useState<string | null>(null);
 
+  // Saved public places (#355): this visitor's own list, a shared shortlist
+  // opened from a `?saved=` link (read-only: it narrows the map, it never
+  // changes the visitor's list), and the "Saved" filter.
+  const savedList = useSavedPlaces(user?.id ?? null);
+  const [sharedIds, setSharedIds] = React.useState<string[]>(() => {
+    if (typeof window === "undefined") return [];
+    return pruneToDataset(parseMapState(window.location.search).saved ?? [], places);
+  });
+  const [savedOnly, setSavedOnly] = React.useState(false);
+  // Ids whose place was removed from the dataset are dropped silently.
+  const savedIds = React.useMemo(
+    () => pruneToDataset(savedList.ids, places),
+    [savedList.ids, places],
+  );
+  const savedApi = React.useMemo(
+    () => ({ isSaved: savedList.isSaved, toggle: savedList.toggle }),
+    [savedList.isSaved, savedList.toggle],
+  );
+
   const activeFilters = React.useMemo(() => {
     const labels: string[] = [];
     if (filters.types.length > 0) {
@@ -144,8 +166,10 @@ export function PlacesMap({
     if (filters.country) labels.push(`country: ${countryName(filters.country)}`);
     if (filters.city) labels.push(`city: ${humanizeCity(filters.city)}`);
     if (filters.query.trim()) labels.push(`search: ${filters.query.trim()}`);
+    if (sharedIds.length > 0) labels.push("a shared shortlist");
+    else if (savedOnly) labels.push("saved places only");
     return labels;
-  }, [filters]);
+  }, [filters, sharedIds, savedOnly]);
 
   // Clear stale saved-places/home data as soon as the signed-in user changes,
   // during render rather than an effect, so there's no stale-data flash.
@@ -218,20 +242,41 @@ export function PlacesMap({
       lat: viewport?.lat ?? null,
       lng: viewport?.lng ?? null,
       zoom: viewport?.zoom ?? null,
+      saved: sharedIds,
     });
     window.history.replaceState(null, "", `${window.location.pathname}${search}`);
-  }, [filters.types, filters.city, filters.country, debouncedQuery, focusId, viewport]);
+  }, [
+    filters.types,
+    filters.city,
+    filters.country,
+    debouncedQuery,
+    focusId,
+    viewport,
+    sharedIds,
+  ]);
 
-  const visible = React.useMemo(
-    () =>
-      filterPlaces(places, {
-        types: filters.types,
-        city: filters.city,
-        country: filters.country,
-        query: debouncedQuery,
-      }),
-    [places, filters.types, filters.city, filters.country, debouncedQuery],
-  );
+  const visible = React.useMemo(() => {
+    const matching = filterPlaces(places, {
+      types: filters.types,
+      city: filters.city,
+      country: filters.country,
+      query: debouncedQuery,
+    });
+    // A shared shortlist wins over "Saved only"; both narrow what the filters found.
+    const shortlist = sharedIds.length > 0 ? sharedIds : savedOnly ? savedIds : null;
+    if (!shortlist) return matching;
+    const wanted = new Set(shortlist);
+    return matching.filter((place) => wanted.has(place.id));
+  }, [
+    places,
+    filters.types,
+    filters.city,
+    filters.country,
+    debouncedQuery,
+    sharedIds,
+    savedOnly,
+    savedIds,
+  ]);
 
   const typeCounts = React.useMemo(() => {
     const counts = Object.fromEntries(PLACE_TYPES.map((t) => [t, 0])) as Record<
@@ -303,6 +348,7 @@ export function PlacesMap({
       lat: viewport?.lat ?? null,
       lng: viewport?.lng ?? null,
       zoom: viewport?.zoom ?? null,
+      saved: sharedIds,
     });
     if (!("clipboard" in navigator)) {
       toast.error("Copying isn't supported in this browser");
@@ -312,6 +358,38 @@ export function PlacesMap({
       .writeText(url)
       .then(() => toast.success("Link copied"))
       .catch(() => toast.error("Could not copy link"));
+  }
+
+  /** Copies a link that opens this visitor's saved places as a read-only shortlist. */
+  function shareSavedList() {
+    const url = buildShareUrl({
+      types: [],
+      city: null,
+      country: null,
+      query: "",
+      placeId: null,
+      lat: null,
+      lng: null,
+      zoom: null,
+      saved: savedIds,
+    });
+    if (!("clipboard" in navigator)) {
+      toast.error("Copying isn't supported in this browser");
+      return;
+    }
+    navigator.clipboard
+      .writeText(url)
+      .then(() => toast.success("Link to your saved places copied"))
+      .catch(() => toast.error("Could not copy link"));
+  }
+
+  /** Adds a shared shortlist to this visitor's own list and returns to the normal map. */
+  function saveSharedList() {
+    savedList.addMany(sharedIds);
+    toast.success(
+      `Added ${sharedIds.length} ${sharedIds.length === 1 ? "place" : "places"} to your saved places`,
+    );
+    setSharedIds([]);
   }
 
   function onLocated(loc: LatLng) {
@@ -440,8 +518,29 @@ export function PlacesMap({
     rows,
     resultsHeader,
     activeFilters,
-    onResetFilters: () => setFilters({ types: [], city: null, country: null, query: "" }),
+    onResetFilters: () => {
+      setFilters({ types: [], city: null, country: null, query: "" });
+      setSavedOnly(false);
+      setSharedIds([]);
+    },
     resultsToggle,
+    savedControls: {
+      count: savedIds.length,
+      active: savedOnly && sharedIds.length === 0,
+      onToggle: () => {
+        setSharedIds([]);
+        setSavedOnly((on) => !on);
+      },
+      onShare: shareSavedList,
+      shared:
+        sharedIds.length > 0
+          ? {
+              count: sharedIds.length,
+              onSaveAll: saveSharedList,
+              onExit: () => setSharedIds([]),
+            }
+          : null,
+    },
     onSelectPlace: selectPlace,
     onShowDetails: setDetailPlace,
     compare,
@@ -469,138 +568,145 @@ export function PlacesMap({
   };
 
   return (
-    <div className="flex h-full w-full overflow-hidden">
-      {/* Desktop sidebar */}
-      <aside className="hidden w-[360px] shrink-0 flex-col overflow-hidden border-r border-border bg-card p-4 lg:flex">
-        {isDesktop && <MapPanel {...panelProps} showSearch showNearMe scrollChips />}
-      </aside>
+    <SavedPlacesProvider value={savedApi}>
+      <div className="flex h-full w-full overflow-hidden">
+        {/* Desktop sidebar */}
+        <aside className="hidden w-[360px] shrink-0 flex-col overflow-hidden border-r border-border bg-card p-4 lg:flex">
+          {isDesktop && <MapPanel {...panelProps} showSearch showNearMe scrollChips />}
+        </aside>
 
-      <PlaceDetailDrawer
-        place={detailPlace}
-        open={detailPlace !== null}
-        onOpenChange={(open) => {
-          if (!open) setDetailPlace(null);
-        }}
-      />
-      <ComparePlacesSheet
-        places={comparePlaces}
-        open={compareOpen}
-        onOpenChange={setCompareOpen}
-      />
-
-      {/* Map + mobile overlays */}
-      <div className="relative min-w-0 flex-1">
-        <MapErrorBoundary>
-          <MapView
-            places={mapPlaces}
-            userLocation={userLocation}
-            home={home ? { lat: home.lat, lng: home.lng } : null}
-            focusId={focusId}
-            focusBounds={focusBounds}
-            closePopupTrigger={closePopupTrigger}
-            heatmap={heatmap}
-            center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
-            zoom={viewport?.zoom ?? defaultZoom}
-            initialViewport={viewport}
-            onViewportChange={handleViewportChange}
-          />
-        </MapErrorBoundary>
-
-        {/* Density overlay toggle; below the mobile top bar, top-right on desktop */}
-        <HeatmapToggle
-          pressed={heatmap}
-          onPressedChange={setHeatmap}
-          className="absolute right-3 top-[4.5rem] z-[1000] w-auto shadow-md lg:top-3"
+        <PlaceDetailDrawer
+          place={detailPlace}
+          open={detailPlace !== null}
+          onOpenChange={(open) => {
+            if (!open) setDetailPlace(null);
+          }}
+        />
+        <ComparePlacesSheet
+          places={comparePlaces}
+          open={compareOpen}
+          onOpenChange={setCompareOpen}
         />
 
-        {/* Mobile top bar: persistent search + filters trigger */}
-        <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex gap-2 lg:hidden">
-          <div className="pointer-events-auto relative flex-1">
-            <Search className="pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              type="search"
-              placeholder="Search places..."
-              value={filters.query}
-              onChange={(e) => setFilters({ ...filters, query: e.target.value })}
-              aria-label="Search places by name or city"
-              className="h-11 bg-card pl-8 shadow-md"
+        {/* Map + mobile overlays */}
+        <div className="relative min-w-0 flex-1">
+          <MapErrorBoundary>
+            <MapView
+              places={mapPlaces}
+              userLocation={userLocation}
+              home={home ? { lat: home.lat, lng: home.lng } : null}
+              focusId={focusId}
+              focusBounds={focusBounds}
+              closePopupTrigger={closePopupTrigger}
+              heatmap={heatmap}
+              center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
+              zoom={viewport?.zoom ?? defaultZoom}
+              initialViewport={viewport}
+              onViewportChange={handleViewportChange}
             />
+          </MapErrorBoundary>
+
+          {/* Density overlay toggle; below the mobile top bar, top-right on desktop */}
+          <HeatmapToggle
+            pressed={heatmap}
+            onPressedChange={setHeatmap}
+            className="absolute right-3 top-[4.5rem] z-[1000] w-auto shadow-md lg:top-3"
+          />
+
+          {/* Mobile top bar: persistent search + filters trigger */}
+          <div className="pointer-events-none absolute inset-x-3 top-3 z-[1000] flex gap-2 lg:hidden">
+            <div className="pointer-events-auto relative flex-1">
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="search"
+                placeholder="Search places..."
+                value={filters.query}
+                onChange={(e) => setFilters({ ...filters, query: e.target.value })}
+                aria-label="Search places by name or city"
+                className="h-11 bg-card pl-8 shadow-md"
+              />
+            </div>
+            <Button
+              variant="secondary"
+              className="pointer-events-auto h-11 shrink-0 px-4 shadow-md"
+              onClick={openSheet}
+              aria-label="Open filters"
+            >
+              <SlidersHorizontal className="size-4" />
+              Filters
+            </Button>
           </div>
-          <Button
-            variant="secondary"
-            className="pointer-events-auto h-11 shrink-0 px-4 shadow-md"
-            onClick={openSheet}
-            aria-label="Open filters"
+
+          {/* Mobile near-me FAB, above peek sheet */}
+          <NearMeFab
+            onLocated={onLocated}
+            className="absolute bottom-[calc(12vh+1rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
+          />
+
+          {/* Mobile bottom sheet: always visible at peek, draggable to half/full */}
+          <MapSheet
+            open={sheetOpen}
+            onOpenChange={(open) => {
+              if (!open) {
+                // Reset to peek instead of fully hiding
+                setSnap(SHEET_SNAP_POINTS[0]);
+                setSheetOpen(true);
+              } else {
+                setSheetOpen(true);
+              }
+            }}
+            snap={snap}
+            onSnapChange={setSnap}
           >
-            <SlidersHorizontal className="size-4" />
-            Filters
-          </Button>
+            {/* Peek summary: visible when sheet at peek height */}
+            {snap === SHEET_SNAP_POINTS[0] && (
+              <button
+                type="button"
+                onClick={openSheet}
+                className="flex w-full min-h-11 items-center justify-between text-left"
+                aria-label="Expand places and filters"
+              >
+                <span className="text-sm font-semibold text-foreground">
+                  {visible.length} {visible.length === 1 ? "place" : "places"} shown
+                </span>
+                <span className="flex items-center gap-1 text-sm text-muted-foreground">
+                  {userLocation ? "Nearest" : "Browse"}
+                  <ChevronUp className="size-5" />
+                </span>
+              </button>
+            )}
+            {/* Full panel: visible when sheet above peek */}
+            {snap !== SHEET_SNAP_POINTS[0] && !isDesktop && (
+              <MapPanel
+                {...panelProps}
+                showSearch={false}
+                showNearMe={false}
+                scrollChips
+              />
+            )}
+          </MapSheet>
         </div>
 
-        {/* Mobile near-me FAB, above peek sheet */}
-        <NearMeFab
-          onLocated={onLocated}
-          className="absolute bottom-[calc(12vh+1rem+env(safe-area-inset-bottom))] right-[calc(1rem+env(safe-area-inset-right))] z-[1000] lg:hidden"
-        />
-
-        {/* Mobile bottom sheet: always visible at peek, draggable to half/full */}
-        <MapSheet
-          open={sheetOpen}
-          onOpenChange={(open) => {
-            if (!open) {
-              // Reset to peek instead of fully hiding
-              setSnap(SHEET_SNAP_POINTS[0]);
-              setSheetOpen(true);
-            } else {
-              setSheetOpen(true);
-            }
-          }}
-          snap={snap}
-          onSnapChange={setSnap}
-        >
-          {/* Peek summary: visible when sheet at peek height */}
-          {snap === SHEET_SNAP_POINTS[0] && (
-            <button
-              type="button"
-              onClick={openSheet}
-              className="flex w-full min-h-11 items-center justify-between text-left"
-              aria-label="Expand places and filters"
-            >
-              <span className="text-sm font-semibold text-foreground">
-                {visible.length} {visible.length === 1 ? "place" : "places"} shown
-              </span>
-              <span className="flex items-center gap-1 text-sm text-muted-foreground">
-                {userLocation ? "Nearest" : "Browse"}
-                <ChevronUp className="size-5" />
-              </span>
-            </button>
-          )}
-          {/* Full panel: visible when sheet above peek */}
-          {snap !== SHEET_SNAP_POINTS[0] && !isDesktop && (
-            <MapPanel {...panelProps} showSearch={false} showNearMe={false} scrollChips />
-          )}
-        </MapSheet>
+        {user && (
+          <>
+            <UserPlaceDialog
+              open={placeDialogOpen}
+              onOpenChange={setPlaceDialogOpen}
+              place={editingPlace}
+              datasetCities={cities}
+              onSaved={handlePlaceSaved}
+              onDeleted={handlePlaceDeleted}
+            />
+            <UserHomeDialog
+              open={homeDialogOpen}
+              onOpenChange={setHomeDialogOpen}
+              home={home}
+              onSaved={handleHomeSaved}
+              onDeleted={handleHomeDeleted}
+            />
+          </>
+        )}
       </div>
-
-      {user && (
-        <>
-          <UserPlaceDialog
-            open={placeDialogOpen}
-            onOpenChange={setPlaceDialogOpen}
-            place={editingPlace}
-            datasetCities={cities}
-            onSaved={handlePlaceSaved}
-            onDeleted={handlePlaceDeleted}
-          />
-          <UserHomeDialog
-            open={homeDialogOpen}
-            onOpenChange={setHomeDialogOpen}
-            home={home}
-            onSaved={handleHomeSaved}
-            onDeleted={handleHomeDeleted}
-          />
-        </>
-      )}
-    </div>
+    </SavedPlacesProvider>
   );
 }

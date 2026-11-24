@@ -13,6 +13,7 @@ import { DirectionsModal } from "@/components/map/directions-modal";
 import { ReportIssueDialog } from "@/components/map/report-issue-dialog";
 import { CategoryIcon } from "@/components/map/category-icon";
 import { RouteEtaCard } from "@/components/map/route-eta-card";
+import { SaveStar } from "@/components/map/save-star";
 import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
@@ -107,6 +108,11 @@ export function PinPopup({ place, home = null }: PinPopupProps) {
         >
           <Link2 className="size-3.5" />
         </button>
+        <SaveStar
+          placeId={place.id}
+          placeName={place.name}
+          className="border border-input bg-background px-2.5 py-2"
+        />
       </div>
 
       {/* Footer badge */}

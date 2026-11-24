@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { Code2, MapPinPlus, Search, Share2, X } from "lucide-react";
+import { Code2, MapPinPlus, Search, Share2, Star, X } from "lucide-react";
 
 import type { City, PlaceType, Place } from "@/lib/types";
 import { Button } from "@/components/ui/button";
@@ -41,6 +41,18 @@ export interface MyPlacesProps {
   onEditHome: () => void;
 }
 
+/** The "Saved" filter, the Share action, and the banner for a shared shortlist (#355). */
+export interface SavedControls {
+  /** How many of the visitor's own saved places still exist in the dataset. */
+  count: number;
+  /** True while the list is narrowed to the visitor's saved places. */
+  active: boolean;
+  onToggle: () => void;
+  onShare: () => void;
+  /** Set while a `?saved=` link is open: a read-only shortlist from someone else. */
+  shared: { count: number; onSaveAll: () => void; onExit: () => void } | null;
+}
+
 interface MapPanelProps {
   filters: PlaceFilters;
   onFiltersChange: (filters: PlaceFilters) => void;
@@ -58,6 +70,7 @@ interface MapPanelProps {
   activeFilters: string[];
   onResetFilters: () => void;
   resultsToggle?: { label: string; onClick: () => void } | null;
+  savedControls?: SavedControls;
   onSelectPlace: (place: Place) => void;
   onShowDetails?: (place: Place) => void;
   compare?: CompareControls;
@@ -93,6 +106,7 @@ export function MapPanel({
   activeFilters,
   onResetFilters,
   resultsToggle,
+  savedControls,
   onSelectPlace,
   onShowDetails,
   compare,
@@ -212,6 +226,68 @@ export function MapPanel({
         <MapPinPlus className="size-3.5" />
         Suggest a place
       </Button>
+
+      {savedControls && (
+        <div className="flex flex-col gap-1.5">
+          {savedControls.shared ? (
+            <div
+              role="status"
+              className="rounded-md border border-border bg-muted/50 px-3 py-2 text-xs"
+            >
+              <p className="text-foreground">
+                A shortlist of {savedControls.shared.count}{" "}
+                {savedControls.shared.count === 1 ? "place" : "places"} was shared with
+                you. It is read only: your own saved places are not changed.
+              </p>
+              <div className="mt-2 flex flex-wrap gap-2">
+                <Button type="button" size="sm" onClick={savedControls.shared.onSaveAll}>
+                  Save all to my list
+                </Button>
+                <Button
+                  type="button"
+                  size="sm"
+                  variant="ghost"
+                  onClick={savedControls.shared.onExit}
+                >
+                  Show all places
+                </Button>
+              </div>
+            </div>
+          ) : (
+            <div className="flex items-center justify-between gap-2">
+              <button
+                type="button"
+                aria-pressed={savedControls.active}
+                onClick={savedControls.onToggle}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-medium transition-colors ${
+                  savedControls.active
+                    ? "border-amber-500 bg-amber-500/15 text-foreground"
+                    : "border-border bg-card text-muted-foreground hover:bg-muted hover:text-foreground"
+                }`}
+              >
+                <Star
+                  className="size-3.5"
+                  fill={savedControls.active ? "currentColor" : "none"}
+                  aria-hidden
+                />
+                Saved
+                <span className="tabular-nums text-[11px] text-muted-foreground">
+                  {savedControls.count}
+                </span>
+              </button>
+              {savedControls.count > 0 && (
+                <button
+                  type="button"
+                  onClick={savedControls.onShare}
+                  className="text-xs text-primary underline-offset-2 hover:underline"
+                >
+                  Share list
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+      )}
 
       {myPlaces && <MyPlacesPanel {...myPlaces} />}
 

@@ -1,6 +1,7 @@
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
+import { SavedPlacesProvider } from "@/components/map/save-star";
 import { PinPopup } from "@/components/pins/pin-popup";
 import type { Place } from "@/lib/types";
 
@@ -67,5 +68,27 @@ describe("PinPopup distance from home", () => {
     render(<PinPopup place={place} />);
 
     expect(screen.queryByText(/not a real route/)).toBeNull();
+  });
+});
+
+describe("PinPopup save star (#355)", () => {
+  it("has no star where there is no saved list, as in an embed", () => {
+    render(<PinPopup place={place} />);
+    expect(
+      screen.queryByRole("button", { name: new RegExp(`Save ${place.name}`) }),
+    ).toBeNull();
+  });
+
+  it("saves and unsaves the place from the popup", () => {
+    const toggle = vi.fn();
+    render(
+      <SavedPlacesProvider value={{ isSaved: () => false, toggle }}>
+        <PinPopup place={place} />
+      </SavedPlacesProvider>,
+    );
+
+    fireEvent.click(screen.getByRole("button", { name: `Save ${place.name}` }));
+
+    expect(toggle).toHaveBeenCalledWith(place.id);
   });
 });

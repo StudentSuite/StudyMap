@@ -1,3 +1,4 @@
+import { parseSavedParam, savedParam } from "@/lib/saved-places";
 import { PLACE_TYPES } from "@/lib/types";
 import type { City, PlaceType } from "@/lib/types";
 
@@ -12,6 +13,8 @@ export interface MapShareState {
   lat: number | null;
   lng: number | null;
   zoom: number | null;
+  /** Optional shared shortlist: place ids from a `?saved=a,b` link (#355). */
+  saved?: readonly string[];
 }
 
 const TYPE_SET = new Set<string>(PLACE_TYPES);
@@ -44,6 +47,7 @@ export function parseMapState(search: string): MapShareState {
   const zoom = parseNumber(params.get("zoom"), 0, 20);
   // A viewport only makes sense with both coordinates; otherwise ignore all three.
   const hasViewport = lat !== null && lng !== null;
+  const saved = parseSavedParam(params.get("saved"));
   return {
     types: parseList(params.get("types"), TYPE_SET) as PlaceType[],
     city,
@@ -53,6 +57,7 @@ export function parseMapState(search: string): MapShareState {
     lat: hasViewport ? lat : null,
     lng: hasViewport ? lng : null,
     zoom: hasViewport ? zoom : null,
+    ...(saved.length > 0 ? { saved } : {}),
   };
 }
 
@@ -64,6 +69,8 @@ export function mapStateToSearch(state: MapShareState): string {
   if (state.city) params.set("city", state.city);
   if (state.query) params.set("q", state.query);
   if (state.placeId) params.set("place", state.placeId);
+  const saved = savedParam(state.saved ?? []);
+  if (saved) params.set("saved", saved);
   if (state.lat !== null && state.lng !== null) {
     params.set("lat", String(state.lat));
     params.set("lng", String(state.lng));
