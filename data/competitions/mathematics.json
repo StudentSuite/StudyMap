@@ -1861,5 +1861,262 @@
       "on": "2026-11-19"
     },
     "valid_till": "2027-07-15"
+  },
+  {
+    "id": "australian-mathematics-competition",
+    "name": "Australian Mathematics Competition (AMC)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Australia's longest running and largest school maths competition, first run in 1978: 30 questions (25 multiple choice, 5 integer answer) in 60 minutes for primary and 75 minutes for secondary divisions, covering Years 3 to 12. Every student receives an award, and available both online and on printed paper, including for international schools.",
+    "format": "hybrid",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 9.3,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award (Participation, Proficiency, Credit, Distinction, High Distinction); Prize winners get a lapel pin and shop voucher; Cheryl Praeger Medal, AMC Medals and the Peter O'Halloran Award for a perfect score.",
+    "official_url": "https://www.amt.edu.au/amc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Printed paper entries close (International)",
+        "date": "2027-06-25",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Printed paper entries close (Australia and New Zealand)",
+        "date": "2027-07-02",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Online entries close",
+        "date": "2027-07-30",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Competition sitting (first day)",
+        "date": "2027-08-03",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-09-01"
+  },
+  {
+    "id": "australian-intermediate-mathematics-olympiad",
+    "name": "Australian Intermediate Mathematics Olympiad (AIMO)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad problem solving"
+    ],
+    "description": "A 4 hour olympiad paper pitched at Year 10 level for students in Years 7 to 10: 10 questions, eight with integer answers and two needing written solutions or proofs. Results are used to identify students for the AMT olympiad pathway.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 25.9,
+      "currency": "AUD"
+    },
+    "prize": "Prizes for nationally outstanding students; High Distinction (about top 10 percent), Distinction (next 15), Credit (next 25) and Participation certificates.",
+    "official_url": "https://www.amt.edu.au/aimo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-09-03",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/aimo"
+      },
+      {
+        "label": "Competition day",
+        "date": "2027-09-09",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-10-15"
+  },
+  {
+    "id": "australian-junior-mathematics-olympiad",
+    "name": "Australian Junior Mathematics Olympiad (AJMO)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad problem solving"
+    ],
+    "description": "A new 90 minute online contest of 10 integer-answer problems for students up to Year 8 who want challenging olympiad-style mathematics but are not yet ready for the AIMO. The listed fee is a special introductory price and entry dates were still to be confirmed.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 12.5,
+      "currency": "AUD"
+    },
+    "prize": "Prizes may be awarded to high performers; High Distinction (about top 10 percent), Distinction (next 15), Credit (next 25) and Participation certificates.",
+    "official_url": "https://www.amt.edu.au/ajmo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Competition day",
+        "date": "2027-09-09",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-10-15"
+  },
+  {
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "region": "AU",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "id": "kangourou-sans-frontieres-australia",
+    "name": "Kangourou sans Frontières (Australia)",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "An online multiple-choice maths competition for Years 3 to 12 (24 questions for Middle Primary, 30 for other divisions; 60 minutes primary, 75 secondary), inspired by the AMC and run by the AMT in Australia as part of the Kangourou sans Frontières network, billed as the largest maths competition in the world. It is a good rehearsal before the AMC in August.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual",
+    "fee": {
+      "amount": 5.5,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award: Participation, Credit (top 50 percent of Australian participants), Distinction (top 15) or High Distinction (top 3).",
+    "official_url": "https://www.amt.edu.au/ksf",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-03-19",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/ksf"
+      },
+      {
+        "label": "Competition window (first day)",
+        "date": "2027-03-23",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "valid_till": "2027-05-01"
+  },
+  {
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "region": "AU",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "id": "amt-maths-challenge",
+    "name": "AMT Maths Challenge",
+    "subjects": [
+      "mathematics",
+      "problem solving",
+      "teamwork"
+    ],
+    "description": "A classroom problem-solving program for Years 3 to 10, delivered by teachers over 3 to 4 weeks with printed problem booklets and a teacher guide. Primary students answer 4 worked-solution problems and secondary students 6, working in groups of three (primary) or two (secondary); the fee above is the primary price and secondary is 30 AUD.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 16,
+    "participation": "team",
+    "fee": {
+      "amount": 24,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award: Participation, Proficiency, Credit, Distinction or High Distinction depending on division and score.",
+    "official_url": "https://www.amt.edu.au/challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-05-21",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/challenge"
+      },
+      {
+        "label": "Program window opens",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      },
+      {
+        "label": "Program window closes",
+        "date": "2027-06-25",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "valid_till": "2027-08-01"
   }
 ]
