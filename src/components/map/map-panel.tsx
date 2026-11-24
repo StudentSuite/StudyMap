@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { Code2, MapPinPlus, Search, Share2, X } from "lucide-react";
 
 import type { City, PlaceType, Place } from "@/lib/types";
@@ -10,6 +11,8 @@ import { Separator } from "@/components/ui/separator";
 import { CategoryChips } from "@/components/map/category-chips";
 import { CityFilter } from "@/components/map/city-filter";
 import { CountryFilter } from "@/components/map/country-filter";
+import { countrySlug } from "@/lib/country-pages";
+import { countryName } from "@/lib/places-utils";
 import { NearMeButton } from "@/components/map/near-me-button";
 import { MyPlacesPanel } from "@/components/map/my-places-panel";
 import { SuggestPlaceDialog } from "@/components/map/suggest-place-dialog";
@@ -156,6 +159,14 @@ export function MapPanel({
           value={filters.country}
           onChange={(country) => onFiltersChange({ ...filters, country })}
         />
+        {filters.country && (
+          <Link
+            href={`/country/${countrySlug(filters.country)}`}
+            className="shrink-0 text-xs text-primary underline-offset-2 hover:underline"
+          >
+            View {countryName(filters.country)} page
+          </Link>
+        )}
       </div>
 
       <div className="flex items-center gap-2">

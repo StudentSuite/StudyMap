@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 
 import { cityPages } from "@/lib/city-pages";
 import { getCompetitions } from "@/lib/competitions";
+import { countryPages } from "@/lib/country-pages";
 import { getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
 import { docsPages } from "@/lib/docs-nav";
@@ -68,6 +69,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
+  const countryEntries = countryPages(getPlaces()).map(({ slug, places }) => {
+    const lastModified = newestVerifiedOn(places);
+    return {
+      url: `${site.url}/country/${slug}`,
+      ...(lastModified ? { lastModified } : {}),
+    };
+  });
+
   const competitions = getCompetitions();
   const competitionDetailEntries = competitions.map((competition) => {
     const lastModified = competitionLastModified(competition);
@@ -97,5 +106,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...competitionDetailEntries,
   ];
 
-  return [...staticEntries, ...docsEntries, ...cityEntries, ...competitionEntries];
+  return [
+    ...staticEntries,
+    ...docsEntries,
+    ...cityEntries,
+    ...countryEntries,
+    ...competitionEntries,
+  ];
 }

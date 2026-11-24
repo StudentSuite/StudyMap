@@ -94,7 +94,7 @@ export function placesByType(places: Place[]): [PlaceType, Place[]][] {
 }
 
 /** Lower-case singular and plural nouns for each place type, used in sentences. */
-const PLACE_TYPE_NOUNS: Record<PlaceType, [singular: string, plural: string]> = {
+export const PLACE_TYPE_NOUNS: Record<PlaceType, [singular: string, plural: string]> = {
   library: ["library", "libraries"],
   other_places: ["other place", "other places"],
   airport: ["airport", "airports"],
@@ -106,7 +106,7 @@ const PLACE_TYPE_NOUNS: Record<PlaceType, [singular: string, plural: string]> = 
   gov_offices: ["government office", "government offices"],
 };
 
-function joinWithAnd(parts: string[]): string {
+export function joinWithAnd(parts: string[]): string {
   if (parts.length <= 1) return parts.join("");
   return `${parts.slice(0, -1).join(", ")} and ${parts[parts.length - 1]}`;
 }

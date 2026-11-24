@@ -1,7 +1,13 @@
 import { describe, expect, it } from "vitest";
 
 import type { CityPage } from "@/lib/city-pages";
-import { ogCitySummary, ogCompetitionSummary, MAX_OG_COUNT_ROWS } from "@/lib/og";
+import type { CountryPage } from "@/lib/country-pages";
+import {
+  ogCitySummary,
+  ogCompetitionSummary,
+  ogCountrySummary,
+  MAX_OG_COUNT_ROWS,
+} from "@/lib/og";
 import type { Competition } from "@/lib/types";
 
 function page(
@@ -137,5 +143,50 @@ describe("ogCompetitionSummary", () => {
   it("is null once every date has passed", () => {
     const summary = ogCompetitionSummary(competition(), new Date("2028-01-01T00:00:00Z"));
     expect(summary.nextDate).toBeNull();
+  });
+});
+
+describe("ogCountrySummary (#358)", () => {
+  const country = (types: string[]): CountryPage => ({
+    code: "IN",
+    slug: "in",
+    name: "India",
+    cities: [
+      { city: "mumbai", slug: "mumbai", count: 2 },
+      { city: "thane", slug: "thane", count: 1 },
+    ],
+    places: types.map((type, i) => ({
+      id: `p${i}`,
+      name: `p${i}`,
+      type,
+      city: i === 0 ? "thane" : "mumbai",
+      country: "IN",
+    })) as CountryPage["places"],
+  });
+
+  it("names the country, counts every place and the cities, and leads with the biggest category", () => {
+    const summary = ogCountrySummary(country(["library", "airport", "library"]));
+
+    expect(summary.name).toBe("India");
+    expect(summary.total).toBe(3);
+    expect(summary.cityCount).toBe(2);
+    expect(summary.counts[0]).toEqual({ label: "Library", count: 2 });
+    expect(summary.more).toBe(0);
+  });
+
+  it("caps the category rows and reports how many were left off", () => {
+    const summary = ogCountrySummary(
+      country([
+        "library",
+        "airport",
+        "sat_centre",
+        "foreign_lang_exam_centre",
+        "gov_offices",
+        "other_places",
+      ]),
+    );
+
+    expect(summary.counts).toHaveLength(MAX_OG_COUNT_ROWS);
+    expect(summary.more).toBe(6 - MAX_OG_COUNT_ROWS);
   });
 });

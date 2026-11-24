@@ -8,6 +8,7 @@ import {
   findCityPage,
   placesByType,
 } from "@/lib/city-pages";
+import { countryOfCity } from "@/lib/country-pages";
 import { getPlaces } from "@/lib/places";
 import { placeJsonLdScript } from "@/lib/jsonld";
 import { humanizeCity, PLACE_TYPE_LABELS } from "@/lib/types";
@@ -48,6 +49,7 @@ export default async function CityPage({ params }: CityPageProps) {
 
   const name = humanizeCity(page.city);
   const grouped = placesByType(page.places);
+  const country = countryOfCity(getPlaces(), page.city);
 
   return (
     <PageContainer>
@@ -60,6 +62,20 @@ export default async function CityPage({ params }: CityPageProps) {
           dangerouslySetInnerHTML={{ __html: placeJsonLdScript(place) }}
         />
       ))}
+      {country && (
+        <nav aria-label="Breadcrumb" className="mb-2 text-sm text-muted-foreground">
+          <Link
+            href={`/country/${country.slug}`}
+            className="underline-offset-4 hover:text-foreground hover:underline"
+          >
+            {country.name}
+          </Link>
+          <span aria-hidden className="mx-1.5">
+            /
+          </span>
+          <span aria-current="page">{name}</span>
+        </nav>
+      )}
       <p className="kicker">Places in</p>
       <h1 className="mt-3 font-heading text-3xl font-bold tracking-tight sm:text-4xl">
         {name}
