@@ -16,6 +16,7 @@ afterEach(() => {
   cleanup();
   toastError.mockReset();
   vi.restoreAllMocks();
+  vi.unstubAllGlobals();
 });
 
 function fillRequiredFields(gmapsLink: string) {
@@ -50,6 +51,26 @@ describe("isGoogleMapsUrl", () => {
   });
 });
 
+function mockApi(status: number, body: unknown) {
+  const fetchMock = vi.fn().mockResolvedValue({
+    ok: status >= 200 && status < 300,
+    status,
+    json: async () => body,
+  });
+  vi.stubGlobal("fetch", fetchMock);
+  return fetchMock;
+}
+
+/** Fails the API call so the dialog switches to the GitHub-issue fallback. */
+async function openFallback(onOpenChange = vi.fn()) {
+  mockApi(503, { ok: false, reason: "unavailable" });
+  render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={onOpenChange} />);
+  fillRequiredFields("https://maps.app.goo.gl/abc123");
+  fireEvent.click(screen.getByRole("button", { name: "Submit place" }));
+  await screen.findByRole("button", { name: "Open GitHub issue" });
+  return onOpenChange;
+}
+
 describe("SuggestPlaceDialog submission", () => {
   it("rejects an invalid Google Maps URL inline", () => {
     render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
@@ -59,17 +80,71 @@ describe("SuggestPlaceDialog submission", () => {
       "Enter a valid Google Maps link.",
     );
     expect(
-      (screen.getByRole("button", { name: "Open GitHub issue" }) as HTMLButtonElement)
+      (screen.getByRole("button", { name: "Submit place" }) as HTMLButtonElement)
         .disabled,
     ).toBe(true);
   });
 
-  it("keeps form data and exposes a fallback link when the popup is blocked", () => {
-    const onOpenChange = vi.fn();
-    vi.spyOn(window, "open").mockReturnValue(null);
+  it("posts the form to the API and shows the queued confirmation", async () => {
+    const fetchMock = mockApi(201, {
+      ok: true,
+      issueUrl: "https://github.com/StudentSuite/StudyMap/issues/999",
+    });
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
+    fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
+    fireEvent.change(screen.getByLabelText("Your name"), { target: { value: "Asha" } });
+    fireEvent.click(screen.getByRole("button", { name: "Submit place" }));
 
-    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={onOpenChange} />);
-    fillRequiredFields("https://maps.app.goo.gl/abc123");
+    expect(await screen.findByText(/in the queue/)).toBeTruthy();
+    const link = screen.getByRole("link", {
+      name: "Follow it on GitHub",
+    }) as HTMLAnchorElement;
+    expect(link.href).toBe("https://github.com/StudentSuite/StudyMap/issues/999");
+
+    const [url, init] = fetchMock.mock.calls[0] as [string, RequestInit];
+    expect(url).toBe("/api/submit-place");
+    expect(JSON.parse(init.body as string)).toMatchObject({
+      name: "Central Library",
+      type: "library",
+      city: "Mumbai",
+      gmapsLink: "https://maps.google.com/?q=19.0176,72.8562",
+      contributor: "Asha",
+      website: "",
+    });
+  });
+
+  it("shows a server message and keeps the form on a rate limit", async () => {
+    mockApi(429, { ok: false, reason: "rate_limited" });
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
+    fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
+    fireEvent.click(screen.getByRole("button", { name: "Submit place" }));
+
+    expect((await screen.findByRole("alert")).textContent).toContain(
+      "Too many suggestions",
+    );
+    expect((screen.getByLabelText("Place name") as HTMLInputElement).value).toBe(
+      "Central Library",
+    );
+    expect(screen.queryByRole("button", { name: "Open GitHub issue" })).toBeNull();
+  });
+
+  it("falls back to the GitHub issue path when the API is unavailable", async () => {
+    await openFallback();
+    expect(screen.getByRole("status").textContent).toContain("could not send this");
+  });
+
+  it("falls back when the request itself fails", async () => {
+    vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new TypeError("offline")));
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
+    fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
+    fireEvent.click(screen.getByRole("button", { name: "Submit place" }));
+
+    expect(await screen.findByRole("button", { name: "Open GitHub issue" })).toBeTruthy();
+  });
+
+  it("keeps form data and exposes a fallback link when the popup is blocked", async () => {
+    const onOpenChange = await openFallback();
+    vi.spyOn(window, "open").mockReturnValue(null);
     fireEvent.click(screen.getByRole("button", { name: "Open GitHub issue" }));
 
     expect(window.open).toHaveBeenCalledWith("", "_blank");
@@ -78,9 +153,6 @@ describe("SuggestPlaceDialog submission", () => {
       "Central Library",
     );
     expect((screen.getByLabelText("City") as HTMLInputElement).value).toBe("Mumbai");
-    expect((screen.getByLabelText("Google Maps link") as HTMLInputElement).value).toBe(
-      "https://maps.app.goo.gl/abc123",
-    );
 
     const fallback = screen.getByRole("link", {
       name: "Open GitHub here",
@@ -92,17 +164,14 @@ describe("SuggestPlaceDialog submission", () => {
     );
   });
 
-  it("severs opener before navigating a successful popup and closes the dialog", () => {
-    const onOpenChange = vi.fn();
+  it("severs opener before navigating a successful popup and closes the dialog", async () => {
+    const onOpenChange = await openFallback();
     const replace = vi.fn();
     const opened = {
       opener: window,
       location: { replace },
     } as unknown as Window;
     vi.spyOn(window, "open").mockReturnValue(opened);
-
-    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={onOpenChange} />);
-    fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
     fireEvent.click(screen.getByRole("button", { name: "Open GitHub issue" }));
 
     expect(opened.opener).toBeNull();

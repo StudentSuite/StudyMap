@@ -158,6 +158,18 @@
             "source_url": "https://www.olympiad.org.uk/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.bwinf.de/olympiade/",
+        "stages": [
+          {
+            "name": "45. Bundeswettbewerb Informatik, 2. Runde submission deadline (organiser says 'Anfang 2027 bis April 2027'; 44th round ended 13 April 2026). Finalists and strong round-2 entrants are invited to the IOI selection",
+            "date": "2027-04-12",
+            "estimated": true,
+            "source_url": "https://www.bwinf.de/bundeswettbewerb/"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -328,22 +340,22 @@
     },
     "prize": "Certificates with achievement levels for participants and class reports for teachers.",
     "official_url": "https://www.bebraschallenge.org/registration/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Challenge window opens",
-        "date": "2026-11-09",
+        "date": "2027-11-08",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.bebraschallenge.org/"
       },
       {
         "label": "Challenge window closes",
-        "date": "2026-11-20",
+        "date": "2027-11-19",
         "type": "deadline",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.bebraschallenge.org/examples/"
       }
     ],
@@ -352,7 +364,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-15",
+    "valid_till": "2027-05-24",
     "image": "/competitions/bebras-challenge.png"
   },
   {

@@ -61,23 +61,39 @@
     },
     "prize": "Publication in the Journal of Future Economists.",
     "official_url": "https://www.newyorkfed.org/outreach-and-education/high-school/high-school-fed-challenge",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Submission deadline",
-        "date": "2026-11-06",
-        "type": "deadline",
+        "label": "Team registration deadline",
+        "date": "2027-02-15",
+        "type": "registration_close",
         "timezone": "UTC-5",
         "estimated": false,
-        "source_url": "https://www.newyorkfed.org/education"
+        "source_url": "https://www.newyorkfed.org/outreach-and-education/high-school/high-school-fed-challenge"
+      },
+      {
+        "label": "Paper submission deadline",
+        "date": "2027-03-15",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.newyorkfed.org/medialibrary/media/outreach-and-education/high-school-fed-challenge-rule-book-2026-2027"
+      },
+      {
+        "label": "Notification of publication decision",
+        "date": "2027-05-14",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.newyorkfed.org/outreach-and-education/high-school/high-school-fed-challenge"
       }
     ],
     "added_by": "yakew7",
     "verified": {
       "by": "yakew7",
-      "on": "2026-09-05"
+      "on": "2026-11-24"
     },
-    "valid_till": "2027-01-01",
+    "valid_till": "2027-05-14",
     "image": "/competitions/new-york-fed-s-high-school-economics-essay.png"
   },
   {

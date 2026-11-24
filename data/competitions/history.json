@@ -21,31 +21,39 @@
     },
     "prize": "Publication in The Concord Review.",
     "official_url": "https://tcr.org/submit",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
+        "label": "Summer issue deadline",
+        "date": "2027-02-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://tcr.org/submit"
+      },
+      {
+        "label": "Fall issue deadline",
+        "date": "2027-05-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://tcr.org/submit"
+      },
+      {
         "label": "Winter issue deadline",
-        "date": "2026-08-01",
+        "date": "2027-08-01",
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://tcr.org/NWB-FAQ"
-      },
-      {
-        "label": "Spring issue deadline",
-        "date": "2026-11-01",
-        "type": "deadline",
-        "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://tcr.org/"
       }
     ],
     "added_by": "yakew7",
     "verified": {
       "by": "yakew7",
-      "on": "2026-09-05"
+      "on": "2026-11-24"
     },
-    "valid_till": "2027-01-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/concord-review.png"
   },
   {

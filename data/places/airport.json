@@ -453,7 +453,11 @@
     "lng": 11.2887,
     "address": "40132 Bologna BO, Italy",
     "gmaps_link": "https://maps.google.com/?q=44.5354,11.2887",
-    "added_by": "anaydhawan"
+    "added_by": "anaydhawan",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "cta-airport-01",
@@ -489,7 +493,11 @@
     "lng": 6.1089,
     "address": "1215 Geneve, Switzerland",
     "gmaps_link": "https://maps.google.com/?q=46.2381,6.1089",
-    "added_by": "anaydhawan"
+    "added_by": "anaydhawan",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "vie-airport-01",

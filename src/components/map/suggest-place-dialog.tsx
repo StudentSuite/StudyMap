@@ -41,8 +41,8 @@ function buildIssueUrl(fields: {
   name: string;
   type: PlaceType;
   city: string;
-  address: string;
   gmapsLink: string;
+  contributor: string;
   note: string;
 }): string {
   const title = `Suggest a place: ${fields.name}`;
@@ -50,8 +50,10 @@ function buildIssueUrl(fields: {
     `**Place name:** ${fields.name}`,
     `**Type:** ${PLACE_TYPE_LABELS[fields.type]}`,
     `**City:** ${fields.city}`,
-    `**Address:** ${fields.address || "(not provided)"}`,
     `**Google Maps link:** ${fields.gmapsLink}`,
+    ...(fields.contributor.trim()
+      ? [`**Contributor:** ${fields.contributor.trim()}`]
+      : []),
     ...(fields.note.trim() ? ["", "**Additional notes:**", fields.note.trim()] : []),
     "",
     "---",
@@ -82,11 +84,16 @@ export function isGoogleMapsUrl(value: string): boolean {
   }
 }
 
+type Phase = "form" | "sending" | "done" | "fallback";
+
 /**
- * Public, no-account entry point for suggesting a new place: collects the
- * same fields as the GitHub-issue path in /docs/contributing, then opens a
- * pre-filled "New issue" page. Nothing is written directly to the repo -
- * a maintainer still reviews and merges it through the existing PR flow.
+ * Public, no-account entry point for suggesting a new place. Posts the form
+ * to /api/submit-place, which files a labelled issue that a workflow turns
+ * into a pull request (#264); a maintainer still reviews every one.
+ *
+ * When the server cannot take the submission (no token configured, GitHub
+ * down, offline) the dialog falls back to opening a pre-filled GitHub issue,
+ * which needs a GitHub sign-in but works with no server setup.
  */
 export function SuggestPlaceDialog({
   datasetCities,
@@ -96,9 +103,13 @@ export function SuggestPlaceDialog({
   const [name, setName] = React.useState("");
   const [type, setType] = React.useState<PlaceType>("library");
   const [city, setCity] = React.useState("");
-  const [address, setAddress] = React.useState("");
   const [gmapsLink, setGmapsLink] = React.useState("");
+  const [contributor, setContributor] = React.useState("");
   const [note, setNote] = React.useState("");
+  const [honeypot, setHoneypot] = React.useState("");
+  const [phase, setPhase] = React.useState<Phase>("form");
+  const [formError, setFormError] = React.useState<string | null>(null);
+  const [issueUrl, setIssueUrl] = React.useState<string | null>(null);
   const [popupBlocked, setPopupBlocked] = React.useState(false);
   const [lastResetKey, setLastResetKey] = React.useState<boolean | null>(null);
 
@@ -110,9 +121,13 @@ export function SuggestPlaceDialog({
       setName("");
       setType("library");
       setCity("");
-      setAddress("");
       setGmapsLink("");
+      setContributor("");
       setNote("");
+      setHoneypot("");
+      setPhase("form");
+      setFormError(null);
+      setIssueUrl(null);
       setPopupBlocked(false);
     }
   }
@@ -123,19 +138,70 @@ export function SuggestPlaceDialog({
   const isGmapsLinkValid = isGoogleMapsUrl(trimmedGmapsLink);
   const showGmapsError = trimmedGmapsLink.length > 0 && !isGmapsLinkValid;
   const isValid = Boolean(trimmedName && trimmedCity && isGmapsLinkValid);
-  const issueUrl = isValid
+  const fallbackUrl = isValid
     ? buildIssueUrl({
         name: trimmedName,
         type,
         city: trimmedCity,
-        address: address.trim(),
         gmapsLink: trimmedGmapsLink,
+        contributor,
         note,
       })
     : null;
 
-  function handleSubmit() {
-    if (!issueUrl) return;
+  async function handleSubmit() {
+    if (!isValid || phase === "sending") return;
+    setPhase("sending");
+    setFormError(null);
+
+    try {
+      const res = await fetch("/api/submit-place", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: trimmedName,
+          type,
+          city: trimmedCity,
+          gmapsLink: trimmedGmapsLink,
+          contributor: contributor.trim(),
+          note: note.trim(),
+          website: honeypot,
+        }),
+      });
+      const json = (await res.json().catch(() => ({}))) as {
+        ok?: boolean;
+        reason?: string;
+        error?: string;
+        issueUrl?: string;
+      };
+
+      if (res.ok && json.ok) {
+        setIssueUrl(typeof json.issueUrl === "string" ? json.issueUrl : null);
+        setPhase("done");
+        return;
+      }
+      if (json.reason === "rate_limited") {
+        setFormError("Too many suggestions from this connection. Try again in an hour.");
+      } else if (json.reason === "full") {
+        setFormError(
+          "The review queue is full right now. Please try again in a few days.",
+        );
+      } else if (json.reason === "invalid") {
+        setFormError(json.error ?? "Check the form and try again.");
+      } else {
+        // "unavailable", "github", or anything unexpected: use the GitHub path.
+        setPhase("fallback");
+        return;
+      }
+      setPhase("form");
+    } catch {
+      // Offline or the route is unreachable.
+      setPhase("fallback");
+    }
+  }
+
+  function handleOpenGithub() {
+    if (!fallbackUrl) return;
 
     // Open a blank tab first so a non-null handle genuinely means the browser
     // allowed the popup. Passing "noopener" to window.open intentionally
@@ -148,10 +214,45 @@ export function SuggestPlaceDialog({
     }
 
     opened.opener = null;
-    opened.location.replace(issueUrl);
+    opened.location.replace(fallbackUrl);
     setPopupBlocked(false);
     onOpenChange(false);
   }
+
+  if (phase === "done") {
+    return (
+      <Dialog open={open} onOpenChange={onOpenChange}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Thanks, it&apos;s in the queue</DialogTitle>
+            <DialogDescription>
+              A maintainer will check {trimmedName} before it goes on the map. That
+              usually takes a few days.
+              {issueUrl ? (
+                <>
+                  {" "}
+                  <a
+                    href={issueUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium underline underline-offset-4"
+                  >
+                    Follow it on GitHub
+                  </a>
+                  .
+                </>
+              ) : null}
+            </DialogDescription>
+          </DialogHeader>
+          <DialogFooter>
+            <Button onClick={() => onOpenChange(false)}>Close</Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    );
+  }
+
+  const isFallback = phase === "fallback";
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -159,8 +260,8 @@ export function SuggestPlaceDialog({
         <DialogHeader>
           <DialogTitle>Suggest a place</DialogTitle>
           <DialogDescription>
-            Opens a pre-filled GitHub issue for a maintainer to review - no account or Git
-            knowledge needed beyond a GitHub sign-in to submit it.
+            No GitHub account needed. A maintainer checks every place before it goes on
+            the map.
           </DialogDescription>
         </DialogHeader>
 
@@ -210,17 +311,6 @@ export function SuggestPlaceDialog({
           </div>
 
           <div className="grid gap-1.5">
-            <Label htmlFor="suggest-place-address">Address</Label>
-            <Input
-              id="suggest-place-address"
-              value={address}
-              onChange={(e) => setAddress(e.target.value)}
-              placeholder="Optional, short and human-readable"
-              maxLength={200}
-            />
-          </div>
-
-          <div className="grid gap-1.5">
             <Label htmlFor="suggest-place-gmaps">Google Maps link</Label>
             <Input
               id="suggest-place-gmaps"
@@ -242,6 +332,17 @@ export function SuggestPlaceDialog({
           </div>
 
           <div className="grid gap-1.5">
+            <Label htmlFor="suggest-place-contributor">Your name</Label>
+            <Input
+              id="suggest-place-contributor"
+              value={contributor}
+              onChange={(e) => setContributor(e.target.value)}
+              placeholder="Optional, credited on the place"
+              maxLength={60}
+            />
+          </div>
+
+          <div className="grid gap-1.5">
             <Label htmlFor="suggest-place-note">Anything else?</Label>
             <textarea
               id="suggest-place-note"
@@ -254,11 +355,39 @@ export function SuggestPlaceDialog({
             />
           </div>
 
-          {popupBlocked && issueUrl ? (
+          {/* Honeypot: invisible to people, tempting to bots. */}
+          <div
+            aria-hidden="true"
+            className="absolute -left-[9999px] h-0 w-0 overflow-hidden"
+          >
+            <label htmlFor="suggest-place-website">Website</label>
+            <input
+              id="suggest-place-website"
+              tabIndex={-1}
+              autoComplete="off"
+              value={honeypot}
+              onChange={(e) => setHoneypot(e.target.value)}
+            />
+          </div>
+
+          {formError ? (
+            <p role="alert" className="text-sm text-destructive">
+              {formError}
+            </p>
+          ) : null}
+
+          {isFallback ? (
+            <p role="status" className="text-sm text-muted-foreground">
+              We could not send this from here. You can still suggest it through GitHub,
+              which needs a GitHub sign-in.
+            </p>
+          ) : null}
+
+          {popupBlocked && fallbackUrl ? (
             <p role="alert" className="text-sm text-destructive">
               Pop-up blocked. Your suggestion is still here.{" "}
               <a
-                href={issueUrl}
+                href={fallbackUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-medium underline underline-offset-4"
@@ -271,9 +400,15 @@ export function SuggestPlaceDialog({
         </div>
 
         <DialogFooter>
-          <Button onClick={handleSubmit} disabled={!isValid}>
-            Open GitHub issue
-          </Button>
+          {isFallback ? (
+            <Button onClick={handleOpenGithub} disabled={!isValid}>
+              Open GitHub issue
+            </Button>
+          ) : (
+            <Button onClick={handleSubmit} disabled={!isValid || phase === "sending"}>
+              {phase === "sending" ? "Sending..." : "Submit place"}
+            </Button>
+          )}
         </DialogFooter>
       </DialogContent>
     </Dialog>

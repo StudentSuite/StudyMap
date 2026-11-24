@@ -45,6 +45,30 @@
             "source_url": "https://www.iapt.org.in/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ijso",
+        "stages": [
+          {
+            "name": "IJSO 2027 Aufgabenrunde registration and submission deadline (round opens 1 Nov 2026)",
+            "date": "2027-01-15",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          },
+          {
+            "name": "IJSO 2027 Klausurrunde (26 April to 7 May)",
+            "date": "2027-04-26",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          },
+          {
+            "name": "IJSO 2027 Bundesfinale (20-24 September)",
+            "date": "2027-09-20",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -137,6 +161,24 @@
             "date": "2027-01-01",
             "estimated": true,
             "source_url": "https://usabo-trc.org/"
+          }
+        ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ibo",
+        "stages": [
+          {
+            "name": "3. Runde der BiologieOlympiade 2027 (14-19 February)",
+            "date": "2027-02-14",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ibo"
+          },
+          {
+            "name": "4. Runde der BiologieOlympiade 2027 (17-22 May, four best form the German IBO team)",
+            "date": "2027-05-17",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ibo"
           }
         ]
       }
@@ -284,6 +326,36 @@
             "source_url": "https://www.acs.org/education/students/highschool/olympiad.html"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/icho",
+        "stages": [
+          {
+            "name": "Bundesrunde zur IChO 2027 (round 3, 21-26 February)",
+            "date": "2027-02-21",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/icho"
+          },
+          {
+            "name": "Finalrunde zur IChO 2027 (round 4, May 2027; day estimated from the 2026 final of 17-23 May)",
+            "date": "2027-05-16",
+            "estimated": true,
+            "source_url": "https://www.scienceolympiaden.de/icho"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/olympiades-internationales-de-chimie-presentation/",
+        "stages": [
+          {
+            "name": "National written pre-selection test (2026-27 calendar not yet published, estimated from the 25 March 2026 test)",
+            "date": "2027-03-24",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/olympiades-internationales-de-chimie-organisation-annee/"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -378,6 +450,36 @@
             "source_url": "https://www.aapt.org/physicsteam/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ipho",
+        "stages": [
+          {
+            "name": "Bundesrunde zur IPhO 2027 (round 3)",
+            "date": "2027-02-01",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ipho"
+          },
+          {
+            "name": "Finalrunde zur IPhO 2027 (round 4, German team chosen)",
+            "date": "2027-03-20",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ipho"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/ipho-presentation/",
+        "stages": [
+          {
+            "name": "National written pre-selection test (24 students go to the May experimental camp, five make the delegation). 2026-27 calendar not yet published, estimated from the 25 March 2026 test",
+            "date": "2027-03-24",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/test-organisation-de-lannee-ipho/"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -411,23 +513,15 @@
     },
     "prize": "Gold, silver and bronze medals plus honourable mentions.",
     "official_url": "https://ioaastrophysics.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "IOAA 2026 (Hanoi, Vietnam)",
-        "date": "2026-09-25",
+        "label": "IOAA 2027 (host and dates not yet announced; estimate follows the usual mid-August timing)",
+        "date": "2027-08-12",
         "type": "round",
-        "timezone": "UTC+7",
-        "estimated": false,
-        "source_url": "https://ioaastrophysics.org/current-ioaa/news"
-      },
-      {
-        "label": "Results announced",
-        "date": "2026-10-05",
-        "type": "results",
-        "timezone": "UTC+7",
-        "estimated": false,
-        "source_url": "https://ioaastrophysics.org/"
+        "timezone": "UTC",
+        "estimated": true,
+        "source_url": "https://www.newsonair.gov.in/18th-ioaa-set-to-begin-in-mumbai-tomorrow"
       }
     ],
     "country_tracks": [
@@ -437,9 +531,9 @@
         "stages": [
           {
             "name": "Indian National Astronomy Olympiad (INAO)",
-            "date": "2027-01-31",
-            "estimated": true,
-            "source_url": "https://olympiads.hbcse.tifr.res.in/"
+            "date": "2027-01-30",
+            "estimated": false,
+            "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
           }
         ]
       }
@@ -449,7 +543,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-12-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/ioaa.png"
   },
   {
@@ -685,7 +779,27 @@
       "on": "2026-09-06"
     },
     "valid_till": "2027-02-01",
-    "image": "/competitions/international-earth-science-olympiad.png"
+    "image": "/competitions/international-earth-science-olympiad.png",
+    "country_tracks": [
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/olympiades-internationales-de-geosciences-presentation/",
+        "stages": [
+          {
+            "name": "Registration closes for the national IESO 2027 selection test (opened 5 October 2026)",
+            "date": "2026-12-04",
+            "estimated": false,
+            "source_url": "https://www.sciencesalecole.org/olympiades-internationales-de-geosciences-presentation/"
+          },
+          {
+            "name": "National selection test, 4-day window (estimated from 26-29 January 2026)",
+            "date": "2027-01-25",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/categories/actualites/ieso/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "international-olympiad-in-ai",
@@ -1224,11 +1338,11 @@
     },
     "prize": "Gold, silver and bronze medals; top performers are considered for Singapore's IBO training squad.",
     "official_url": "https://sibiol.org.sg/activities/biology-olympiads/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "SBO theory round (annual November exam)",
-        "date": "2026-11-06",
+        "date": "2027-11-05",
         "type": "round",
         "timezone": "UTC+8",
         "estimated": true,
@@ -1240,7 +1354,7 @@
       "by": "yakew7",
       "on": "2026-09-21"
     },
-    "valid_till": "2026-12-15"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "british-biology-olympiad",
@@ -1322,35 +1436,35 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Registration opens",
-        "date": "2026-06-01",
-        "type": "registration_open",
-        "timezone": "UTC+12",
-        "estimated": false,
-        "source_url": "https://nzibo.org/"
-      },
-      {
-        "label": "Registration closes",
-        "date": "2026-08-10",
-        "type": "registration_close",
-        "timezone": "UTC+12",
-        "estimated": false,
-        "source_url": "https://nzibo.org/key-dates/"
-      },
-      {
-        "label": "National Entrance Exam",
-        "date": "2026-08-19",
-        "type": "round",
-        "timezone": "UTC+12",
-        "estimated": false,
-        "source_url": "https://nzibo.org/key-dates/"
-      },
-      {
         "label": "Selection exam for Practical Training Camp",
         "date": "2027-03-03",
         "type": "round",
         "timezone": "UTC+13",
         "estimated": false,
+        "source_url": "https://nzibo.org/key-dates/"
+      },
+      {
+        "label": "Registration opens (2027/28 intake; organiser lists as to be confirmed)",
+        "date": "2027-06-01",
+        "type": "registration_open",
+        "timezone": "UTC+12",
+        "estimated": true,
+        "source_url": "https://nzibo.org/key-dates/"
+      },
+      {
+        "label": "Registration closes (2027/28 intake; organiser lists as to be confirmed)",
+        "date": "2027-08-09",
+        "type": "registration_close",
+        "timezone": "UTC+12",
+        "estimated": true,
+        "source_url": "https://nzibo.org/key-dates/"
+      },
+      {
+        "label": "National Entrance Exam (2027/28 intake; organiser lists as to be confirmed)",
+        "date": "2027-08-18",
+        "type": "round",
+        "timezone": "UTC+12",
+        "estimated": true,
         "source_url": "https://nzibo.org/key-dates/"
       }
     ],
@@ -1359,7 +1473,7 @@
       "by": "yakew7",
       "on": "2026-09-21"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "canadian-biology-olympiad",
@@ -2171,24 +2285,8 @@
     },
     "prize": "Advancement to Round Two at Dublin City University; selection for Ireland's IChO team.",
     "official_url": "https://ista.ie/irish-chemistry-olympiad/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
-      {
-        "label": "Round 1 (DCU, UCC, QUB and TUS assessment centres)",
-        "date": "2026-02-21",
-        "type": "round",
-        "timezone": "UTC",
-        "estimated": false,
-        "source_url": "https://ista.ie/registration-for-2026-chemistry-olympiad-ireland-competition"
-      },
-      {
-        "label": "Round 2 (Dublin City University)",
-        "date": "2026-04-09",
-        "type": "round",
-        "timezone": "UTC+1",
-        "estimated": false,
-        "source_url": "https://ista.ie/registration-for-2026-chemistry-olympiad-ireland-competition"
-      },
       {
         "label": "Chemistry Olympiad Ireland 2027 Round 1 (following the usual February pattern)",
         "date": "2027-02-20",
@@ -2203,7 +2301,7 @@
       "by": "yakew7",
       "on": "2026-09-21"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-02-20"
   },
   {
     "id": "national-ocean-sciences-bowl",
@@ -2382,30 +2480,30 @@
     },
     "prize": "USD 500 first place, USD 250 second place and USD 100 third place, plus sponsored travel to NAMEPA's Annual Conference in New York.",
     "official_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Submission window opens",
-        "date": "2026-04-01",
+        "date": "2027-04-01",
         "type": "registration_open",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html"
       },
       {
         "label": "Submission deadline",
-        "date": "2026-10-01",
+        "date": "2027-10-01",
         "type": "deadline",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "http://www.americansalvage.org/marine-science-scholarship-competition.html"
       },
       {
         "label": "Awards presented at NAMEPA Annual Conference (New York)",
-        "date": "2026-10-29",
+        "date": "2027-10-28",
         "type": "ceremony",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://namepa.net/science-awards/"
       }
     ],
@@ -2414,7 +2512,7 @@
       "by": "yakew7",
       "on": "2026-09-21"
     },
-    "valid_till": "2026-11-15"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "german-biology-olympiad",
@@ -3072,23 +3170,23 @@
     },
     "prize": "Medals by phase; top finishers advance to the Advanced Chemistry Course and IChO delegation selection.",
     "official_url": "https://obquimica.org/olimpiada/olimpiada-brasileira-de-quimica",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Phase II (following the usual October pattern, per the Parana state schedule)",
-        "date": "2026-10-23",
+        "label": "OBQ 2027 national in-person exam (following the usual late-August pattern)",
+        "date": "2027-08-27",
         "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://obquimica.org/calendario"
+      },
+      {
+        "label": "OBQ 2027 results published (following the usual mid-November pattern)",
+        "date": "2027-11-12",
+        "type": "results",
         "timezone": "UTC-3",
         "estimated": true,
         "source_url": "https://obquimica.org/"
-      },
-      {
-        "label": "Phase III national theory exam (following the usual November pattern)",
-        "date": "2026-11-14",
-        "type": "round",
-        "timezone": "UTC-3",
-        "estimated": true,
-        "source_url": "https://obquimica.org/perguntas-frequentes"
       }
     ],
     "added_by": "yakew7",
@@ -3096,7 +3194,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2027-01-15"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "mexican-chemistry-olympiad",

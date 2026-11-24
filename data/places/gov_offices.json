@@ -717,7 +717,11 @@
     "lng": 2.2704486,
     "address": "13-15 Rue Alfred Dehodencq, 75016 Paris, France",
     "gmaps_link": "https://maps.google.com/?q=48.8606137,2.2704486",
-    "added_by": "yakew7"
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "ber-gov_offices-01",
@@ -1305,7 +1309,11 @@
     "lng": 151.2069,
     "address": "483 George St, Sydney NSW 2000, Australia",
     "gmaps_link": "https://maps.google.com/?q=-33.8731,151.2069",
-    "added_by": "yakew7"
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "tyo-gov_offices-01",
