@@ -1173,7 +1173,11 @@
     "gmaps_link": "https://maps.google.com/?q=23.7407854,90.3827609",
     "added_by": "anaydhawan",
     "exam": "DELF",
-    "valid_till": "2027-04-26"
+    "valid_till": "2027-04-26",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "khi-foreign_lang_exam_centre-01",
