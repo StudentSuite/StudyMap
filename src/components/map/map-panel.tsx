@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { CategoryChips } from "@/components/map/category-chips";
-import { FilterPresets } from "@/components/map/filter-presets";
 import { CityFilter } from "@/components/map/city-filter";
 import { CountryFilter } from "@/components/map/country-filter";
 import { NearMeButton } from "@/components/map/near-me-button";
@@ -139,10 +138,10 @@ export function MapPanel({
         selected={filters.types}
         counts={typeCounts}
         onToggle={toggleType}
+        onSetTypes={(types) => onFiltersChange({ ...filters, types })}
+        onClear={() => onFiltersChange({ ...filters, types: [] })}
         scroll={scrollChips}
       />
-
-      <FilterPresets onApply={(types) => onFiltersChange({ ...filters, types })} />
 
       <div className="flex items-center gap-2">
         <CountryFilter

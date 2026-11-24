@@ -11,7 +11,8 @@ import {
 } from "lucide-react";
 
 import type { Place } from "@/lib/types";
-import { PLACE_TYPE_LABELS } from "@/lib/types";
+import { PLACE_TYPE_LABELS, humanizeCity } from "@/lib/types";
+import { countryName } from "@/lib/places-utils";
 import { directionsUrl } from "@/lib/map";
 import { formatDistance } from "@/lib/geo";
 import { Button } from "@/components/ui/button";
@@ -52,6 +53,16 @@ interface ResultsListProps {
   /** Rows rendered at once; a "Show more" button reveals the next page. */
   pageSize?: number;
 }
+
+/** "Mumbai, India": the city and, when the place has one, its country, so same-named places are told apart (#354). */
+export function placeLocationLabel(place: Place): string {
+  const city = humanizeCity(place.city);
+  return place.country ? `${city}, ${countryName(place.country)}` : city;
+}
+
+/** Touch-sized (44px) below the `lg` sidebar breakpoint, where the list sits in the mobile sheet. */
+const ROW_ACTION_CLASS =
+  "flex min-h-11 min-w-11 shrink-0 items-center justify-center rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground lg:min-h-0 lg:min-w-0";
 
 /** Rows rendered before "Show more", so the unfiltered map does not build ~2,000 rows. */
 export const RESULTS_PAGE_SIZE = 100;
@@ -187,13 +198,13 @@ export function ResultsList({
                   title={`${place.name} (${PLACE_TYPE_LABELS[place.type]})`}
                 >
                   <span className="flex items-center gap-1.5">
-                    <span className="block truncate text-sm text-foreground">
+                    <span className="line-clamp-2 break-words text-sm text-foreground">
                       {place.name}
                     </span>
                     <VerifiedBadge place={place} />
                   </span>
                   <span className="block truncate text-xs text-muted-foreground">
-                    {PLACE_TYPE_LABELS[place.type]}
+                    {PLACE_TYPE_LABELS[place.type]} · {placeLocationLabel(place)}
                     {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
                   </span>
                 </button>
@@ -202,7 +213,7 @@ export function ResultsList({
                     type="button"
                     onClick={() => onDetails(place)}
                     aria-label={"Details for " + place.name}
-                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                    className={ROW_ACTION_CLASS}
                   >
                     <Info className="size-4" />
                   </button>
@@ -214,7 +225,7 @@ export function ResultsList({
                     rel="noreferrer"
                     onClick={(e) => e.stopPropagation()}
                     aria-label={`Open ${place.name} in Google Maps`}
-                    className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                    className={ROW_ACTION_CLASS}
                   >
                     <ExternalLink className="size-4" />
                   </a>
@@ -225,7 +236,7 @@ export function ResultsList({
                   rel="noreferrer"
                   onClick={(e) => e.stopPropagation()}
                   aria-label={`Directions to ${place.name}`}
-                  className="shrink-0 rounded-md p-2 text-muted-foreground transition-colors hover:bg-background hover:text-foreground focus-visible:bg-background focus-visible:text-foreground"
+                  className={ROW_ACTION_CLASS}
                 >
                   <Navigation className="size-4" />
                 </a>

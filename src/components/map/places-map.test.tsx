@@ -300,8 +300,8 @@ describe("PlacesMap panel mounting", () => {
   });
 });
 
-describe("PlacesMap filter presets", () => {
-  it("narrows the results to the preset's type and sets it in the URL", () => {
+describe("PlacesMap category filter", () => {
+  function renderMap() {
     render(
       <PlacesMap
         places={PLACES}
@@ -310,15 +310,39 @@ describe("PlacesMap filter presets", () => {
         defaultZoom={11}
       />,
     );
+  }
+
+  it("narrows the results to the chosen type and sets it in the URL", () => {
+    renderMap();
     expect(screen.getByText("City Library")).toBeTruthy();
 
-    fireEvent.click(screen.getByRole("button", { name: "Airports" }));
+    fireEvent.click(screen.getByRole("button", { name: /^Airport/ }));
 
     expect(screen.getByText("City Airport")).toBeTruthy();
     expect(screen.queryByText("City Library")).toBeNull();
     expect(screen.queryByText("Thane Library")).toBeNull();
     advance(500);
     expect(params().get("types")).toBe("airport");
+  });
+
+  it("has one filter row, not a second row of presets (#352)", () => {
+    renderMap();
+
+    expect(screen.queryByRole("group", { name: "Filter presets" })).toBeNull();
+    expect(screen.getAllByRole("group", { name: "Filter by place type" })).toHaveLength(
+      1,
+    );
+  });
+
+  it("shows how many categories are selected and clears them", () => {
+    renderMap();
+    fireEvent.click(screen.getByRole("button", { name: /^Airport/ }));
+    expect(screen.getByText(/1 category selected/)).toBeTruthy();
+
+    fireEvent.click(screen.getByRole("button", { name: "Clear" }));
+
+    expect(screen.queryByText(/category selected/)).toBeNull();
+    expect(screen.getByText("City Library")).toBeTruthy();
   });
 });
 

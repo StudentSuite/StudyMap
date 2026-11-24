@@ -289,3 +289,113 @@ describe("ResultsList details and compare", () => {
     expect(onToggle).toHaveBeenCalledWith(expect.objectContaining({ id: "p1" }));
   });
 });
+
+describe("ResultsList row location (#354)", () => {
+  const base = {
+    type: "airport" as const,
+    lat: 19,
+    lng: 72,
+    gmaps_link: "https://maps.google.com/?q=19,72",
+    added_by: "test",
+  };
+  const emptyState = { activeFilters: [], onReset: vi.fn(), onSuggest: vi.fn() };
+
+  it("tells two places with the same name apart by city and country", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[
+          {
+            place: {
+              ...base,
+              id: "mumbai-airport",
+              name: "Chhatrapati Shivaji Maharaj International Airport",
+              city: "mumbai",
+              country: "IN",
+            },
+          },
+          {
+            place: {
+              ...base,
+              id: "other-airport",
+              name: "Chhatrapati Shivaji Maharaj International Airport",
+              city: "nagpur",
+              country: "IN",
+            },
+          },
+        ]}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByText(/Airport · Mumbai, India/)).toBeTruthy();
+    expect(screen.getByText(/Airport · Nagpur, India/)).toBeTruthy();
+  });
+
+  it("puts the distance after the location when it is known", () => {
+    render(
+      <ResultsList
+        header="Nearest to you"
+        rows={[
+          {
+            place: { ...base, id: "a", name: "Heathrow", city: "london", country: "GB" },
+            distanceKm: 2.5,
+          },
+        ]}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByText(/Airport · London, United Kingdom · /)).toBeTruthy();
+  });
+
+  it("omits the country, with no stray comma, for a private place that has none", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[{ place: { ...base, id: "own-1", name: "My spot", city: "thane" } }]}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByText("Airport · Thane")).toBeTruthy();
+  });
+
+  it("lets the name wrap to two lines instead of truncating to one", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[
+          { place: { ...base, id: "a", name: "A very long place name", city: "mumbai" } },
+        ]}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+      />,
+    );
+
+    const name = screen.getByText("A very long place name");
+    expect(name.className).toContain("line-clamp-2");
+    expect(name.className).not.toContain("truncate");
+  });
+
+  it("keeps the accessible names of the row actions", () => {
+    render(
+      <ResultsList
+        header="All places"
+        rows={[{ place: { ...base, id: "a", name: "Heathrow", city: "london" } }]}
+        emptyState={emptyState}
+        onSelect={vi.fn()}
+        onDetails={vi.fn()}
+      />,
+    );
+
+    expect(screen.getByRole("button", { name: "Details for Heathrow" })).toBeTruthy();
+    expect(
+      screen.getByRole("link", { name: "Open Heathrow in Google Maps" }),
+    ).toBeTruthy();
+    expect(screen.getByRole("link", { name: "Directions to Heathrow" })).toBeTruthy();
+  });
+});
