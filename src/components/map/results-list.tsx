@@ -15,6 +15,7 @@ import { PLACE_TYPE_LABELS } from "@/lib/types";
 import { directionsUrl } from "@/lib/map";
 import { formatDistance } from "@/lib/geo";
 import { Button } from "@/components/ui/button";
+import { Switch } from "@/components/ui/switch";
 import { EmptyState } from "@/components/ui/empty-state";
 import { CategoryIcon } from "@/components/map/category-icon";
 import { SaveStar } from "@/components/map/save-star";
@@ -52,6 +53,17 @@ interface ResultsListProps {
   toggle?: { label: string; onClick: () => void } | null;
   /** Rows rendered at once; a "Show more" button reveals the next page. */
   pageSize?: number;
+  /** Limits the list to the visible map area (#351). Omit to hide the control. */
+  viewFilter?: ViewFilterControls;
+}
+
+/** The "Only places in this view" switch and the "Search this area" prompt. */
+export interface ViewFilterControls {
+  checked: boolean;
+  onChange: (checked: boolean) => void;
+  /** True once the map has moved away from the area the list was built for. */
+  moved: boolean;
+  onSearchArea: () => void;
 }
 
 /** Rows rendered before "Show more", so the unfiltered map does not build ~2,000 rows. */
@@ -68,8 +80,10 @@ export function ResultsList({
   focusId,
   toggle,
   pageSize = RESULTS_PAGE_SIZE,
+  viewFilter,
 }: ResultsListProps) {
   const [limit, setLimit] = React.useState(pageSize);
+  const viewSwitchId = React.useId();
 
   // A new result set (filter, search, nearest-first) starts again from the first page.
   const [seenRows, setSeenRows] = React.useState(rows);
@@ -101,6 +115,36 @@ export function ResultsList({
           </button>
         )}
       </div>
+
+      {viewFilter && (
+        <div className="flex flex-col gap-1.5 pb-1.5">
+          <div className="flex items-center gap-2">
+            <Switch
+              id={viewSwitchId}
+              size="sm"
+              checked={viewFilter.checked}
+              onCheckedChange={viewFilter.onChange}
+            />
+            <label
+              htmlFor={viewSwitchId}
+              className="cursor-pointer text-xs text-muted-foreground"
+            >
+              Only places in this view
+            </label>
+          </div>
+          {viewFilter.checked && viewFilter.moved && (
+            <Button
+              type="button"
+              size="sm"
+              variant="secondary"
+              className="w-full"
+              onClick={viewFilter.onSearchArea}
+            >
+              Search this area
+            </Button>
+          )}
+        </div>
+      )}
 
       {compare && compare.selectedIds.length > 0 && (
         <div className="flex items-center justify-between gap-2 pb-1.5">

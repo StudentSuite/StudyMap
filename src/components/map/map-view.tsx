@@ -2,7 +2,7 @@
 
 import "leaflet/dist/leaflet.css";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import L from "leaflet";
 import Supercluster from "supercluster";
 import {
@@ -22,6 +22,8 @@ import type { Bounds } from "@/lib/places-utils";
 import { densityCells, type HeatCell } from "@/lib/heatmap";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
+import { GO_TO_PLACE_ZOOM, HOME_ZOOM, fitMaxZoom } from "@/components/map/viewport";
+import type { MapBounds } from "@/components/map/filters";
 
 type ClusterPointProps = { placeId: string; type: PlaceType };
 type ClusterAggProps = Record<PlaceType, number>;
@@ -234,6 +236,8 @@ export interface MapViewport {
   lat: number;
   lng: number;
   zoom: number;
+  /** The visible rectangle. Reported by the map as it moves; absent on a viewport restored from the URL. */
+  bounds?: MapBounds;
 }
 
 interface MapViewProps {
@@ -252,6 +256,8 @@ interface MapViewProps {
   center: [number, number];
   /** When set, the map starts at this viewport instead of fitting all places. */
   initialViewport?: MapViewport | null;
+  /** True when nothing in the URL or storage chose a start view, so a signed-in visitor's home may (#350). */
+  openOnHome?: boolean;
   /** Fired on pan/zoom end with the current center and zoom. */
   onViewportChange?: (viewport: MapViewport) => void;
   /** Increment to imperatively close all open popups. */
@@ -313,13 +319,19 @@ function FlyToUser({ lat, lng }: { lat: number; lng: number }) {
 function FlyToPlace({ id, lat, lng }: { id: string; lat: number; lng: number }) {
   const map = useMap();
   useEffect(() => {
-    map.flyTo([lat, lng], 15, { duration: 1, animate: !prefersReducedMotion() });
+    map.flyTo([lat, lng], GO_TO_PLACE_ZOOM, {
+      duration: 1,
+      animate: !prefersReducedMotion(),
+    });
   }, [map, id, lat, lng]);
   return null;
 }
 
 /** Fits the initial view to every place's extent, once, so the map opens
- * showing the whole dataset instead of a fixed Mumbai-only crop. */
+ * showing the whole dataset instead of a fixed Mumbai-only crop. A single
+ * place (for example a `?q=` search with one hit) has a zero-size extent, so
+ * the zoom is capped or Leaflet would fall back to its maximum, where the
+ * basemap is blank (#353). */
 function FitAllOnMount({ places }: { places: Place[] }) {
   const map = useMap();
   const fitted = useRef(false);
@@ -333,9 +345,68 @@ function FitAllOnMount({ places }: { places: Place[] }) {
         [Math.min(...lats), Math.min(...lngs)],
         [Math.max(...lats), Math.max(...lngs)],
       ],
-      { padding: [32, 32] },
+      { padding: [32, 32], maxZoom: fitMaxZoom(places.length) },
     );
   }, [map, places]);
+  return null;
+}
+
+/**
+ * Opens on the signed-in visitor's saved home instead of the whole world (#350).
+ * The home arrives after the map has mounted, so this jumps there once, without
+ * animation, and only if the visitor has not touched the map yet.
+ */
+function StartAtHome({
+  lat,
+  lng,
+  onStarted,
+}: {
+  lat: number;
+  lng: number;
+  /** Tells the parent the jump happened, so a later remount never repeats it. */
+  onStarted: () => void;
+}) {
+  const map = useMap();
+  const touched = useRef(false);
+  const jumped = useRef(false);
+  useEffect(() => {
+    const container = map.getContainer();
+    const mark = () => {
+      touched.current = true;
+    };
+    container.addEventListener("pointerdown", mark, { once: true });
+    container.addEventListener("keydown", mark, { once: true });
+    return () => {
+      container.removeEventListener("pointerdown", mark);
+      container.removeEventListener("keydown", mark);
+    };
+  }, [map]);
+  useEffect(() => {
+    if (jumped.current || touched.current) return;
+    jumped.current = true;
+    map.setView([lat, lng], HOME_ZOOM, { animate: false });
+    onStarted();
+  }, [map, lat, lng, onStarted]);
+  return null;
+}
+
+/**
+ * Keeps the basemap covering the whole viewport. Without a minimum zoom the
+ * world can be zoomed out until grey strips show above and below the tiles
+ * (#350); the minimum is the smallest zoom at which the world still fills the
+ * container, and it follows the container size.
+ */
+function CoverViewportMinZoom() {
+  const map = useMap();
+  useEffect(() => {
+    const world = L.latLngBounds([-85, -180], [85, 180]);
+    const apply = () => map.setMinZoom(map.getBoundsZoom(world, true));
+    apply();
+    map.on("resize", apply);
+    return () => {
+      map.off("resize", apply);
+    };
+  }, [map]);
   return null;
 }
 
@@ -478,12 +549,21 @@ function ViewportReporter({
   useEffect(() => {
     function report() {
       const center = map.getCenter();
-      const viewport = {
+      const view = map.getBounds();
+      const round = (value: number) => Math.round(value * 1e4) / 1e4;
+      const viewport: MapViewport = {
         lat: Math.round(center.lat * 1e5) / 1e5,
         lng: Math.round(center.lng * 1e5) / 1e5,
         zoom: Math.round(map.getZoom() * 10) / 10,
+        bounds: {
+          west: round(view.getWest()),
+          south: round(view.getSouth()),
+          east: round(view.getEast()),
+          north: round(view.getNorth()),
+        },
       };
-      const key = `${viewport.lat},${viewport.lng},${viewport.zoom}`;
+      const b = viewport.bounds as MapBounds;
+      const key = `${viewport.lat},${viewport.lng},${viewport.zoom},${b.west},${b.south},${b.east},${b.north}`;
       if (key === last.current) return;
       last.current = key;
       onViewportChange(viewport);
@@ -533,11 +613,15 @@ export default function MapView({
   zoom,
   center,
   initialViewport = null,
+  openOnHome = false,
   onViewportChange,
   closePopupTrigger = 0,
   heatmap = false,
 }: MapViewProps) {
   const mapTilerKey = process.env.NEXT_PUBLIC_MAPTILER_KEY?.trim();
+  // Set once the map has opened on the visitor's home, so a later filter change never jumps back.
+  const [homeStarted, setHomeStarted] = useState(false);
+  const markHomeStarted = useCallback(() => setHomeStarted(true), []);
 
   useEffect(() => {
     if (
@@ -604,6 +688,7 @@ export default function MapView({
         <MapResizeHandler />
         <ClosePopupOnTrigger trigger={closePopupTrigger} />
         {interactive && <ScrollZoomGuard />}
+        {interactive && <CoverViewportMinZoom />}
         {interactive && onViewportChange && (
           <ViewportReporter onViewportChange={onViewportChange} />
         )}
@@ -611,7 +696,17 @@ export default function MapView({
           !userLocation &&
           !focusPlace &&
           !focusBounds &&
-          !initialViewport && <FitAllOnMount places={places} />}
+          !initialViewport &&
+          !(openOnHome && home) && <FitAllOnMount places={places} />}
+        {interactive &&
+          openOnHome &&
+          home &&
+          !userLocation &&
+          !focusPlace &&
+          !focusBounds &&
+          !homeStarted && (
+            <StartAtHome lat={home.lat} lng={home.lng} onStarted={markHomeStarted} />
+          )}
 
         {userLocation && <FlyToUser lat={userLocation.lat} lng={userLocation.lng} />}
         {focusPlace && (

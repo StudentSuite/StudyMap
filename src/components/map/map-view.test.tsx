@@ -3,7 +3,12 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 
 import MapView, { pinIcon } from "@/components/map/map-view";
 
-const { flyTo } = vi.hoisted(() => ({ flyTo: vi.fn() }));
+const { flyTo, fitBounds, setView, setMinZoom } = vi.hoisted(() => ({
+  flyTo: vi.fn(),
+  fitBounds: vi.fn(),
+  setView: vi.fn(),
+  setMinZoom: vi.fn(),
+}));
 
 vi.mock("react-leaflet", async () => {
   const React = await import("react");
@@ -16,8 +21,11 @@ vi.mock("react-leaflet", async () => {
     }),
     getZoom: () => 18,
     getContainer: () => document.createElement("div"),
-    fitBounds: vi.fn(),
+    fitBounds,
     flyTo,
+    setView,
+    setMinZoom,
+    getBoundsZoom: () => 2,
     scrollWheelZoom: { disable: vi.fn(), enable: vi.fn(), enabled: () => false },
     on: vi.fn(),
     off: vi.fn(),
@@ -119,6 +127,96 @@ describe("MapView configuration", () => {
       14,
       expect.objectContaining({ animate: false }),
     );
+  });
+});
+
+describe("MapView start view", () => {
+  const place = (id: string, lat: number, lng: number) => ({
+    id,
+    name: id,
+    type: "library" as const,
+    city: "london",
+    lat,
+    lng,
+    gmaps_link: "",
+    added_by: "test",
+  });
+
+  function setup() {
+    vi.stubEnv("NEXT_PUBLIC_MAPTILER_KEY", "test-key");
+    vi.stubGlobal(
+      "ResizeObserver",
+      class {
+        observe() {}
+        disconnect() {}
+      },
+    );
+    fitBounds.mockClear();
+    setView.mockClear();
+    setMinZoom.mockClear();
+  }
+
+  it("caps the zoom when a search leaves a single place (#353)", () => {
+    setup();
+    render(<MapView {...VIEW} places={[place("one", 40.1, 33.0)]} />);
+
+    expect(fitBounds).toHaveBeenCalledWith(
+      [
+        [40.1, 33.0],
+        [40.1, 33.0],
+      ],
+      expect.objectContaining({ maxZoom: 16 }),
+    );
+  });
+
+  it("caps the zoom lower when it fits several places (#353)", () => {
+    setup();
+    render(
+      <MapView {...VIEW} places={[place("a", 51.5, -0.1), place("b", 51.6, -0.2)]} />,
+    );
+
+    expect(fitBounds).toHaveBeenCalledWith(
+      expect.anything(),
+      expect.objectContaining({ maxZoom: 15 }),
+    );
+  });
+
+  it("keeps the basemap covering the viewport with a minimum zoom (#350)", () => {
+    setup();
+    render(<MapView {...VIEW} places={[]} />);
+
+    expect(setMinZoom).toHaveBeenCalledWith(2);
+  });
+
+  it("opens on the saved home instead of the whole world when nothing chose a view (#350)", () => {
+    setup();
+    render(
+      <MapView
+        {...VIEW}
+        places={[place("a", 51.5, -0.1)]}
+        home={{ lat: 6.52, lng: 3.37 }}
+        openOnHome
+      />,
+    );
+
+    expect(setView).toHaveBeenCalledTimes(1);
+    expect(setView).toHaveBeenCalledWith([6.52, 3.37], 11, { animate: false });
+    expect(fitBounds).not.toHaveBeenCalled();
+  });
+
+  it("ignores the saved home when a viewport was restored (#350)", () => {
+    setup();
+    render(
+      <MapView
+        {...VIEW}
+        places={[place("a", 51.5, -0.1)]}
+        home={{ lat: 6.52, lng: 3.37 }}
+        initialViewport={{ lat: 1, lng: 2, zoom: 5 }}
+      />,
+    );
+
+    expect(setView).not.toHaveBeenCalled();
+    expect(fitBounds).not.toHaveBeenCalled();
   });
 });
 

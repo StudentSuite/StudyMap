@@ -19,6 +19,7 @@ import {
   ResultsList,
   type CompareControls,
   type ResultRow,
+  type ViewFilterControls,
 } from "@/components/map/results-list";
 import type { PlaceFilters } from "@/components/map/filters";
 import type { LatLng } from "@/lib/geo";
@@ -64,6 +65,10 @@ interface MapPanelProps {
   cityOptions?: City[];
   typeCounts: Record<PlaceType, number>;
   resultCount: number;
+  /** What `resultCount` counts: the places in the visible map area, or all places that match the filters. */
+  resultScope?: "view" | "total";
+  /** The "Only places in this view" switch and "Search this area" prompt; omitted to hide them. */
+  viewFilter?: ViewFilterControls;
 
   rows: ResultRow[];
   resultsHeader: string;
@@ -101,6 +106,8 @@ export function MapPanel({
   cityOptions,
   typeCounts,
   resultCount,
+  resultScope,
+  viewFilter,
   rows,
   resultsHeader,
   activeFilters,
@@ -294,7 +301,12 @@ export function MapPanel({
       <Separator />
 
       <p className="text-xs font-semibold text-foreground">
-        {resultCount} {resultCount === 1 ? "place" : "places"} shown
+        {resultCount} {resultCount === 1 ? "place" : "places"}{" "}
+        {resultScope === "view"
+          ? "in this view"
+          : resultScope === "total"
+            ? "total"
+            : "shown"}
       </p>
 
       <ResultsList
@@ -310,6 +322,7 @@ export function MapPanel({
         compare={compare}
         focusId={focusId}
         toggle={resultsToggle}
+        viewFilter={viewFilter}
       />
 
       <SuggestPlaceDialog

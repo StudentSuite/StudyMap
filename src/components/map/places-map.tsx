@@ -22,6 +22,7 @@ import { pruneToDataset } from "@/lib/saved-places";
 import { SavedPlacesProvider } from "@/components/map/save-star";
 import { useSavedPlaces } from "@/components/map/use-saved-places";
 import type { MapViewport } from "@/components/map/map-view";
+import { hasExplicitIntent, loadViewport, saveViewport } from "@/components/map/viewport";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
 import {
@@ -44,7 +45,13 @@ import { useMediaQuery } from "@/lib/use-media-query";
 import { UserPlaceDialog } from "@/components/map/user-place-dialog";
 import { UserHomeDialog } from "@/components/map/user-home-dialog";
 import type { ResultRow } from "@/components/map/results-list";
-import type { PlaceFilters } from "@/components/map/filters";
+import {
+  filterByBounds,
+  sameBounds,
+  wantsInView,
+  type MapBounds,
+  type PlaceFilters,
+} from "@/components/map/filters";
 
 const MapView = dynamic(() => import("@/components/map/map-view"), {
   ssr: false,
@@ -100,19 +107,48 @@ export function PlacesMap({
   });
   // A viewport in the URL restores that exact center/zoom on load instead of
   // fitting all places; it is then kept in sync as the user pans (see #118).
+  // Start view, first match wins (#350): an explicit URL viewport, then the
+  // place, search or filter the URL asked for (the map fits those itself), then
+  // wherever this visitor last left the map, then the saved home (below), then
+  // the whole dataset.
   const [viewport, setViewport] = React.useState<MapViewport | null>(() => {
     if (typeof window === "undefined") return null;
     const state = parseMapState(window.location.search);
-    if (state.lat === null || state.lng === null) return null;
-    return {
-      lat: state.lat,
-      lng: state.lng,
-      zoom: state.zoom ?? defaultZoom,
-    };
+    if (state.lat !== null && state.lng !== null) {
+      return {
+        lat: state.lat,
+        lng: state.lng,
+        zoom: state.zoom ?? defaultZoom,
+      };
+    }
+    return hasExplicitIntent(state) ? null : loadViewport();
   });
-  const handleViewportChange = React.useCallback((next: MapViewport) => {
-    setViewport(next);
-  }, []);
+  // True only when nothing chose the start view, so a saved home is allowed to.
+  const [openOnHome] = React.useState(() => {
+    if (typeof window === "undefined") return false;
+    const state = parseMapState(window.location.search);
+    if (state.lat !== null && state.lng !== null) return false;
+    return !hasExplicitIntent(state) && loadViewport() === null;
+  });
+  // "Only places in this view" (#351): null follows the zoom, true/false is the
+  // visitor's choice. The list is built for `appliedBounds`, which only moves
+  // when the visitor taps "Search this area" or flips the switch, so the list
+  // never reshuffles under their cursor while they scroll it.
+  const [inViewPref, setInViewPref] = React.useState<boolean | null>(null);
+  const [appliedBounds, setAppliedBounds] = React.useState<MapBounds | null>(null);
+  const handleViewportChange = React.useCallback(
+    (next: MapViewport) => {
+      setViewport(next);
+      saveViewport({ lat: next.lat, lng: next.lng, zoom: next.zoom });
+      // The first time the list is meant to follow the map, pin it to this view.
+      setAppliedBounds(
+        (prev) =>
+          prev ??
+          (next.bounds && wantsInView(inViewPref, next.zoom) ? next.bounds : null),
+      );
+    },
+    [inViewPref],
+  );
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
   const [heatmap, setHeatmap] = React.useState(false);
@@ -308,10 +344,31 @@ export function PlacesMap({
     [privatePlaces, cities],
   );
 
+  const inViewOn = wantsInView(inViewPref, viewport?.zoom ?? defaultZoom);
+  const activeBounds = inViewOn ? appliedBounds : null;
+  // The places the list shows: those matching the filters, and, when the
+  // switch is on, only the ones inside the area the list was built for.
+  const listed = React.useMemo(
+    () => (activeBounds ? filterByBounds(visible, activeBounds) : visible),
+    [visible, activeBounds],
+  );
+  const viewMoved = Boolean(
+    activeBounds && viewport?.bounds && !sameBounds(activeBounds, viewport.bounds),
+  );
+
+  function changeInView(on: boolean) {
+    setInViewPref(on);
+    if (on) setAppliedBounds(viewport?.bounds ?? null);
+  }
+
+  function searchThisArea() {
+    setAppliedBounds(viewport?.bounds ?? null);
+  }
+
   const byDistance = React.useMemo(() => {
     if (!userLocation) return [];
-    return placesByDistance(visible, userLocation);
-  }, [visible, userLocation]);
+    return placesByDistance(listed, userLocation);
+  }, [listed, userLocation]);
 
   // Build the results list: nearest-first when located, otherwise all visible.
   const { rows, resultsHeader, resultsToggle } = React.useMemo(() => {
@@ -332,11 +389,11 @@ export function PlacesMap({
       };
     }
     return {
-      rows: visible.map((place) => ({ place })) as ResultRow[],
+      rows: listed.map((place) => ({ place })) as ResultRow[],
       resultsHeader: "All places",
       resultsToggle: null,
     };
-  }, [userLocation, byDistance, sortByDistance, visible]);
+  }, [userLocation, byDistance, sortByDistance, listed]);
 
   function share() {
     const url = buildShareUrl({
@@ -514,7 +571,14 @@ export function PlacesMap({
     cities,
     cityOptions: filterCities,
     typeCounts,
-    resultCount: visible.length,
+    resultCount: listed.length,
+    resultScope: (activeBounds ? "view" : "total") as "view" | "total",
+    viewFilter: {
+      checked: inViewOn,
+      onChange: changeInView,
+      moved: viewMoved,
+      onSearchArea: searchThisArea,
+    },
     rows,
     resultsHeader,
     activeFilters,
@@ -602,6 +666,7 @@ export function PlacesMap({
               center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
               zoom={viewport?.zoom ?? defaultZoom}
               initialViewport={viewport}
+              openOnHome={openOnHome}
               onViewportChange={handleViewportChange}
             />
           </MapErrorBoundary>
