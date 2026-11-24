@@ -19,6 +19,7 @@ import {
 import { placesByDistance, type LatLng } from "@/lib/geo";
 import { buildShareUrl, mapStateToSearch, parseMapState } from "@/lib/share";
 import type { MapViewport } from "@/components/map/map-view";
+import { hasExplicitIntent, loadViewport, saveViewport } from "@/components/map/viewport";
 import { createClient } from "@/lib/supabase/client";
 import { isMissingTableError } from "@/lib/utils";
 import {
@@ -97,18 +98,32 @@ export function PlacesMap({
   });
   // A viewport in the URL restores that exact center/zoom on load instead of
   // fitting all places; it is then kept in sync as the user pans (see #118).
+  // Start view, first match wins (#350): an explicit URL viewport, then the
+  // place, search or filter the URL asked for (the map fits those itself), then
+  // wherever this visitor last left the map, then the saved home (below), then
+  // the whole dataset.
   const [viewport, setViewport] = React.useState<MapViewport | null>(() => {
     if (typeof window === "undefined") return null;
     const state = parseMapState(window.location.search);
-    if (state.lat === null || state.lng === null) return null;
-    return {
-      lat: state.lat,
-      lng: state.lng,
-      zoom: state.zoom ?? defaultZoom,
-    };
+    if (state.lat !== null && state.lng !== null) {
+      return {
+        lat: state.lat,
+        lng: state.lng,
+        zoom: state.zoom ?? defaultZoom,
+      };
+    }
+    return hasExplicitIntent(state) ? null : loadViewport();
+  });
+  // True only when nothing chose the start view, so a saved home is allowed to.
+  const [openOnHome] = React.useState(() => {
+    if (typeof window === "undefined") return false;
+    const state = parseMapState(window.location.search);
+    if (state.lat !== null && state.lng !== null) return false;
+    return !hasExplicitIntent(state) && loadViewport() === null;
   });
   const handleViewportChange = React.useCallback((next: MapViewport) => {
     setViewport(next);
+    saveViewport(next);
   }, []);
   const [userLocation, setUserLocation] = React.useState<LatLng | null>(null);
   const [closePopupTrigger, setClosePopupTrigger] = React.useState(0);
@@ -502,6 +517,7 @@ export function PlacesMap({
             center={viewport ? [viewport.lat, viewport.lng] : defaultCenter}
             zoom={viewport?.zoom ?? defaultZoom}
             initialViewport={viewport}
+            openOnHome={openOnHome}
             onViewportChange={handleViewportChange}
           />
         </MapErrorBoundary>
