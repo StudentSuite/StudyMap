@@ -283,3 +283,121 @@ describe("appendRecordText", () => {
     expect(JSON.parse(appendRecordText("[]\n", record))).toEqual([record]);
   });
 });
+
+describe("optional contact details (#356)", () => {
+  const withContact = {
+    ...valid,
+    city: "Mumbai",
+    placeWebsite: "https://www.bl.uk/",
+    phone: "+44 (0)20 7412 7000",
+    hours: "Mon-Fri 09:30-20:00",
+  };
+
+  it("leaves the three fields out entirely when they are blank or absent", () => {
+    const value = submission({ ...valid, placeWebsite: "", phone: "  ", hours: "" });
+    expect(value).not.toHaveProperty("website");
+    expect(value).not.toHaveProperty("phone");
+    expect(value).not.toHaveProperty("hours");
+  });
+
+  it("normalises a typed phone number to E.164", () => {
+    for (const typed of [
+      "+44 20 7412 7000",
+      "+44-20-7412-7000",
+      "0044 20 7412 7000",
+      "+44 (0)20 7412 7000",
+      "+442074127000",
+    ]) {
+      expect(submission({ ...valid, phone: typed }).phone).toBe("+442074127000");
+    }
+  });
+
+  it("rejects a phone number with no country code", () => {
+    const result = normalizeSubmission({ ...valid, phone: "020 7412 7000" });
+    expect(result.ok).toBe(false);
+    expect((result as { error: string }).error).toContain("country code");
+  });
+
+  it("rejects a website that is not https, has no scheme, or contains spaces", () => {
+    for (const website of [
+      "http://www.bl.uk",
+      "www.bl.uk",
+      "https://bl .uk",
+      "javascript:alert(1)",
+    ]) {
+      const result = normalizeSubmission({ ...valid, placeWebsite: website });
+      expect(result.ok, website).toBe(false);
+    }
+  });
+
+  it("reads the website from placeWebsite, the key the form sends", () => {
+    expect(submission({ ...valid, placeWebsite: "https://www.bl.uk/" }).website).toBe(
+      "https://www.bl.uk/",
+    );
+  });
+
+  it("reads the website back from a stored submission, which uses website", () => {
+    expect(submission({ ...valid, website: "https://www.bl.uk/" }).website).toBe(
+      "https://www.bl.uk/",
+    );
+  });
+
+  it("flattens line breaks and em dashes in hours", () => {
+    expect(submission({ ...valid, hours: "Mon—Fri\n9-5" }).hours).toBe("Mon-Fri 9-5");
+  });
+
+  it("caps hours at 120 characters", () => {
+    expect(submission({ ...valid, hours: "x".repeat(300) }).hours).toHaveLength(120);
+  });
+
+  it("round-trips through the issue body", () => {
+    const sub = submission(withContact);
+    const body = buildIssueBody(sub);
+    expect(body).toContain("**Website:** https://www.bl.uk/");
+    expect(body).toContain("**Phone:** +442074127000");
+    expect(body).toContain("**Hours:** Mon-Fri 09:30-20:00");
+    expect(parseIssueBody(body)).toMatchObject({
+      website: "https://www.bl.uk/",
+      phone: "+442074127000",
+      hours: "Mon-Fri 09:30-20:00",
+    });
+  });
+
+  it("puts only the given fields in the record, before gmaps_link", () => {
+    const sub = submission({ ...valid, city: "Mumbai", hours: "Mon-Sat 10:00-18:00" });
+    const record = buildPlaceRecord({
+      sub,
+      coords: { lat: 19.033, lng: 73.0297 },
+      country: "IN",
+      id: "mum-library-03",
+    });
+    expect(record).toMatchObject({ hours: "Mon-Sat 10:00-18:00" });
+    expect(record).not.toHaveProperty("website");
+    expect(record).not.toHaveProperty("phone");
+    const keys = Object.keys(record);
+    expect(keys.indexOf("hours")).toBeLessThan(keys.indexOf("gmaps_link"));
+  });
+
+  it("turns a submission with contact details into a record and tells the reviewer to check them", async () => {
+    const result = await processSubmission({
+      body: buildIssueBody(submission(withContact)),
+      records,
+    });
+    expect(result.status).toBe("ready");
+    expect((result as { record: Record<string, string> }).record).toMatchObject({
+      website: "https://www.bl.uk/",
+      phone: "+442074127000",
+      hours: "Mon-Fri 09:30-20:00",
+    });
+    expect(result.message).toContain("place's own site or listing");
+  });
+
+  it("does not ask the reviewer to check contact details when there are none", async () => {
+    const result = await processSubmission({
+      body: buildIssueBody(submission({ ...valid, city: "Mumbai" })),
+      records,
+    });
+    expect(result.status).toBe("ready");
+    expect(result.message).not.toContain("typed by the submitter");
+  });
+});

@@ -182,3 +182,99 @@ describe("SuggestPlaceDialog submission", () => {
     expect(onOpenChange).toHaveBeenCalledWith(false);
   });
 });
+
+describe("SuggestPlaceDialog contact details (#356)", () => {
+  function renderForm() {
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
+    fillRequiredFields("https://maps.google.com/?q=19.0176,72.8562");
+  }
+
+  const submitButton = () =>
+    screen.getByRole("button", { name: "Submit place" }) as HTMLButtonElement;
+
+  it("offers optional website, phone and opening hours fields", () => {
+    renderForm();
+
+    expect(screen.getByLabelText("Place website (optional)")).toBeTruthy();
+    expect(screen.getByLabelText("Phone (optional)")).toBeTruthy();
+    expect(screen.getByLabelText("Opening hours (optional)")).toBeTruthy();
+    expect(submitButton().disabled).toBe(false);
+  });
+
+  it("sends the website as placeWebsite and keeps the honeypot field empty", async () => {
+    const fetchMock = mockApi(201, {
+      ok: true,
+      issueUrl: "https://github.com/o/r/issues/1",
+    });
+    renderForm();
+    fireEvent.change(screen.getByLabelText("Place website (optional)"), {
+      target: { value: "https://www.bl.uk/" },
+    });
+    fireEvent.change(screen.getByLabelText("Phone (optional)"), {
+      target: { value: "+44 (0)20 7412 7000" },
+    });
+    fireEvent.change(screen.getByLabelText("Opening hours (optional)"), {
+      target: { value: "Mon-Fri 09:30-20:00" },
+    });
+    fireEvent.click(submitButton());
+    await screen.findByText(/in the queue/);
+
+    const body = JSON.parse(
+      (fetchMock.mock.calls[0] as [string, RequestInit])[1].body as string,
+    );
+    expect(body).toMatchObject({
+      placeWebsite: "https://www.bl.uk/",
+      phone: "+442074127000",
+      hours: "Mon-Fri 09:30-20:00",
+      website: "",
+    });
+  });
+
+  it("blocks a phone number with no country code and says why", () => {
+    renderForm();
+    fireEvent.change(screen.getByLabelText("Phone (optional)"), {
+      target: { value: "020 7412 7000" },
+    });
+
+    expect(screen.getByRole("alert").textContent).toContain("Include the country code");
+    expect(submitButton().disabled).toBe(true);
+  });
+
+  it("blocks a website that is not https and says why", () => {
+    renderForm();
+    fireEvent.change(screen.getByLabelText("Place website (optional)"), {
+      target: { value: "http://www.bl.uk" },
+    });
+
+    expect(screen.getByRole("alert").textContent).toContain("https://");
+    expect(submitButton().disabled).toBe(true);
+  });
+
+  it("allows the fields to be left blank", () => {
+    renderForm();
+
+    expect(screen.queryByRole("alert")).toBeNull();
+    expect(submitButton().disabled).toBe(false);
+  });
+
+  it("puts the contact details into the GitHub issue fallback", async () => {
+    mockApi(503, { ok: false, reason: "unavailable" });
+    render(<SuggestPlaceDialog datasetCities={[]} open onOpenChange={vi.fn()} />);
+    fillRequiredFields("https://maps.app.goo.gl/abc123");
+    fireEvent.change(screen.getByLabelText("Phone (optional)"), {
+      target: { value: "+442074127000" },
+    });
+    fireEvent.click(submitButton());
+    await screen.findByRole("button", { name: "Open GitHub issue" });
+    const replace = vi.fn();
+    vi.spyOn(window, "open").mockReturnValue({
+      opener: window,
+      location: { replace },
+    } as unknown as Window);
+
+    fireEvent.click(screen.getByRole("button", { name: "Open GitHub issue" }));
+
+    const url = new URL(replace.mock.calls[0]?.[0] as string);
+    expect(url.searchParams.get("body")).toContain("**Phone:** +442074127000");
+  });
+});
