@@ -14,6 +14,7 @@ import { ReportIssueDialog } from "@/components/map/report-issue-dialog";
 import { CategoryIcon } from "@/components/map/category-icon";
 import { RouteEtaCard } from "@/components/map/route-eta-card";
 import { ExamCentreCountdown } from "@/components/pins/exam-centre-countdown";
+import { PlaceContact } from "@/components/pins/place-contact";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 interface PinPopupProps {
@@ -69,6 +70,8 @@ export function PinPopup({ place, home = null }: PinPopupProps) {
       {place.address && (
         <p className="text-xs leading-snug text-muted-foreground">{place.address}</p>
       )}
+
+      <PlaceContact place={place} />
 
       <RouteEtaCard home={home} place={place} />
 
