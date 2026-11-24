@@ -2,6 +2,8 @@ import { describe, expect, it } from "vitest";
 
 import sitemap from "@/app/sitemap";
 import { getCompetitions } from "@/lib/competitions";
+import { countryPages } from "@/lib/country-pages";
+import { getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
 
 describe("sitemap", () => {
@@ -56,6 +58,23 @@ describe("sitemap", () => {
         (e) => e.url === `${site.url}/competitions/${competition.id}`,
       );
       expect(entry?.lastModified).toBeDefined();
+    }
+  });
+
+  it("lists one canonical URL per country page, and none for a country with no places (#358)", () => {
+    const entries = sitemap();
+    const pages = countryPages(getPlaces());
+    const urls = entries
+      .map((e) => e.url)
+      .filter((url) => url.startsWith(`${site.url}/country/`));
+
+    expect(urls).toHaveLength(pages.length);
+    expect(new Set(urls).size).toBe(urls.length);
+    for (const page of pages) {
+      expect(urls).toContain(`${site.url}/country/${page.slug}`);
+    }
+    for (const url of urls) {
+      expect(url.slice(`${site.url}/country/`.length)).toMatch(/^[a-z]{2}$/);
     }
   });
 });

@@ -2,12 +2,15 @@ import { describe, expect, it } from "vitest";
 
 import {
   competitionJsonLd,
+  countryJsonLd,
+  countryJsonLdScript,
   competitionJsonLdScript,
   placeJsonLd,
   placeJsonLdScript,
   schemaOrgCompetitionType,
   schemaOrgType,
 } from "@/lib/jsonld";
+import { countryPages } from "@/lib/country-pages";
 import { site } from "@/lib/site";
 import { COMPETITION_CATEGORIES } from "@/lib/types";
 import type { Competition } from "@/lib/types";
@@ -320,5 +323,59 @@ describe("competitionJsonLdScript", () => {
     );
     expect(script).not.toContain("</");
     expect(script).toContain("\\u003c");
+  });
+});
+
+describe("countryJsonLd (#358)", () => {
+  const place = (id: string, city: string, name = id): Place => ({
+    id,
+    name,
+    type: "library",
+    city,
+    country: "IN",
+    lat: 1,
+    lng: 2,
+    gmaps_link: "https://maps.google.com/?q=1,2",
+    added_by: "test",
+  });
+  const [india] = countryPages([
+    place("a", "mumbai"),
+    place("b", "mumbai"),
+    place("c", "navi_mumbai"),
+  ]);
+
+  it("describes the country and lists its cities as an ItemList linking to the city pages", () => {
+    const data = countryJsonLd(india) as { "@graph": Array<Record<string, unknown>> };
+    const [country, list] = data["@graph"];
+
+    expect(country).toMatchObject({
+      "@type": "Country",
+      name: "India",
+      identifier: "IN",
+      url: `${site.url}/country/in`,
+    });
+    expect(list).toMatchObject({ "@type": "ItemList", numberOfItems: 2 });
+    expect(list.itemListElement).toEqual([
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Mumbai",
+        url: `${site.url}/city/mumbai`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Navi Mumbai",
+        url: `${site.url}/city/navi_mumbai`,
+      },
+    ]);
+  });
+
+  it("escapes < so a name can never close the script block early", () => {
+    const [hostile] = countryPages([place("a", "x</script><b>", "n")]);
+    const script = countryJsonLdScript(hostile);
+    expect(script).not.toContain("</script>");
+    expect(script).not.toContain("<");
+    expect(JSON.parse(script)["@graph"][1].itemListElement).toHaveLength(1);
   });
 });
