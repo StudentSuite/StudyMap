@@ -355,6 +355,18 @@ describe("PlacesMap country filter", () => {
     expect(params().get("country")).toBe("KE");
   });
 
+  it("links to the country page only once a country is chosen (#358)", () => {
+    renderWorld();
+    expect(screen.queryByRole("link", { name: /page$/ })).toBeNull();
+
+    fireEvent.change(screen.getAllByLabelText("Filter by country")[0], {
+      target: { value: "KE" },
+    });
+
+    const link = screen.getByRole("link", { name: "View Kenya page" });
+    expect(link.getAttribute("href")).toBe("/country/ke");
+  });
+
   it("restores a country from a shared link", () => {
     window.history.replaceState(null, "", "/map?country=in");
     renderWorld();
