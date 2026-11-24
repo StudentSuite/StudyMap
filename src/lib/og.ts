@@ -1,4 +1,5 @@
 import type { CityPage } from "@/lib/city-pages";
+import type { CountryPage } from "@/lib/country-pages";
 import { placesByType } from "@/lib/city-pages";
 import { nextDate } from "@/lib/competitions";
 import {
@@ -39,6 +40,32 @@ export function ogCitySummary(page: CityPage): OgCitySummary {
   return {
     name: humanizeCity(page.city),
     total: page.places.length,
+    counts: shown.map(([type, places]) => ({
+      label: PLACE_TYPE_LABELS[type],
+      count: places.length,
+    })),
+    more: Math.max(0, grouped.length - MAX_OG_COUNT_ROWS),
+  };
+}
+
+export interface OgCountrySummary extends OgCitySummary {
+  /** How many cities the country has in the dataset. */
+  cityCount: number;
+}
+
+/**
+ * What a country's Open Graph card should say: the display name, the total
+ * place count, how many cities, and the biggest categories. Same shape and
+ * rules as the city card, so the two look like one family.
+ */
+export function ogCountrySummary(page: CountryPage): OgCountrySummary {
+  const grouped = placesByType(page.places);
+  const bySize = grouped.slice().sort((a, b) => b[1].length - a[1].length);
+  const shown = bySize.slice(0, MAX_OG_COUNT_ROWS);
+  return {
+    name: page.name,
+    total: page.places.length,
+    cityCount: page.cities.length,
     counts: shown.map(([type, places]) => ({
       label: PLACE_TYPE_LABELS[type],
       count: places.length,

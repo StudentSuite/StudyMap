@@ -1,4 +1,6 @@
 import { site } from "@/lib/site";
+import type { CountryPage } from "@/lib/country-pages";
+import { humanizeCity } from "@/lib/types";
 import type { Competition, CompetitionFormat } from "@/lib/types";
 import type { Place } from "@/lib/types";
 
@@ -132,4 +134,43 @@ export function competitionJsonLd(competition: Competition): Record<string, unkn
  */
 export function competitionJsonLdScript(competition: Competition): string {
   return JSON.stringify(competitionJsonLd(competition)).replace(/</g, "\\u003c");
+}
+
+/**
+ * schema.org markup for a country landing page (#358): a `Country` that
+ * contains its cities, plus an `ItemList` of those cities so a crawler can
+ * follow them to their own pages. Names and counts are real; nothing is
+ * invented.
+ */
+export function countryJsonLd(page: CountryPage): Record<string, unknown> {
+  const url = `${site.url}/country/${page.slug}`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Country",
+        "@id": `${url}#country`,
+        name: page.name,
+        identifier: page.code,
+        url,
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${url}#cities`,
+        name: `Cities in ${page.name} on StudyMap`,
+        numberOfItems: page.cities.length,
+        itemListElement: page.cities.map((entry, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: humanizeCity(entry.city),
+          url: `${site.url}/city/${entry.slug}`,
+        })),
+      },
+    ],
+  };
+}
+
+/** The JSON payload for a country page's `<script type="application/ld+json">` block, with `<` escaped. */
+export function countryJsonLdScript(page: CountryPage): string {
+  return JSON.stringify(countryJsonLd(page)).replace(/</g, "\\u003c");
 }
