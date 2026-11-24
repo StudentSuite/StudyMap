@@ -130,14 +130,14 @@
     },
     "prize": "Full four year scholarship from a partner college, valued over USD 360,000.",
     "official_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
-    "cycle_year": 2027,
+    "cycle_year": 2028,
     "dates": [
       {
         "label": "National College Match application deadline",
-        "date": "2026-10-01",
+        "date": "2027-10-01",
         "type": "deadline",
-        "timezone": "UTC-8",
-        "estimated": false,
+        "timezone": "UTC-7",
+        "estimated": true,
         "source_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/apply/dates-and-deadlines"
       }
     ],
@@ -146,7 +146,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/questbridge-national-college-match.png"
   },
   {
@@ -171,14 +171,14 @@
     },
     "prize": "USD 1,000 to USD 7,500 per year for up to 500 four year scholarships.",
     "official_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
-    "cycle_year": 2027,
+    "cycle_year": 2028,
     "dates": [
       {
         "label": "Application deadline",
-        "date": "2026-11-12",
+        "date": "2027-11-12",
         "type": "deadline",
         "timezone": "UTC-8",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.elks.org/scholarweb/resources/MVSFAQ.cfm"
       }
     ],
@@ -187,7 +187,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-15",
+    "valid_till": "2027-05-24",
     "image": "/competitions/elks-mvs.png"
   },
   {

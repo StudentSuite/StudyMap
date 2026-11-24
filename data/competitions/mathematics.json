@@ -171,15 +171,23 @@
     },
     "prize": "USD 50,000 first prize, from a USD 100,000 total prize pool.",
     "official_url": "https://mathprize.atfoundation.org/apply",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Contest at MIT",
-        "date": "2026-10-11",
+        "label": "Application deadline (estimated from the 2026 deadline)",
+        "date": "2027-05-31",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://mathprize.atfoundation.org/apply"
+      },
+      {
+        "label": "Contest at MIT (estimated, second Sunday of October)",
+        "date": "2027-10-10",
         "type": "round",
         "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://mathprize.atfoundation.org/experience/schedule"
+        "estimated": true,
+        "source_url": "https://mathprize.atfoundation.org/experience/past-events/2025"
       }
     ],
     "added_by": "yakew7",
@@ -187,7 +195,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/math-prize-for-girls.png"
   },
   {
@@ -408,20 +416,20 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Fall round (following the usual October pattern, local city dates vary)",
-        "date": "2026-10-25",
+        "label": "Spring round, basic (O-level) (estimated from the usual late February Sunday pattern, local city dates vary)",
+        "date": "2027-02-28",
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/news/"
+        "source_url": "https://www.turgor.ru/geography/"
       },
       {
-        "label": "Spring round (following the usual February to March pattern, local city dates vary)",
-        "date": "2027-02-21",
+        "label": "Spring round, advanced (A-level) (estimated from the usual early to mid March Sunday pattern, local city dates vary)",
+        "date": "2027-03-14",
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/problems/"
+        "source_url": "https://www.turgor.ru/geography/"
       }
     ],
     "added_by": "yakew7",
@@ -429,7 +437,7 @@
       "by": "yakew7",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-11-15",
+    "valid_till": "2027-03-14",
     "image": "/competitions/tournament-of-the-towns.png"
   },
   {
@@ -511,22 +519,22 @@
     },
     "prize": "Certificates of distinction; automatic AIME qualification for top scorers.",
     "official_url": "https://maa.org/student-programs/amc/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "AMC 10/12 A",
-        "date": "2026-11-05",
+        "date": "2027-11-04",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://maa.org/student-programs/amc/"
       },
       {
         "label": "AMC 10/12 B",
-        "date": "2026-11-13",
+        "date": "2027-11-12",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://maa.org/maa-amc-registration-faq/"
       }
     ],
@@ -535,7 +543,7 @@
       "by": "yakew7",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "kangaroo-math-competition",
@@ -751,22 +759,22 @@
     },
     "prize": "Gold, silver and bronze certificates by score band; top scorers qualify for the British Mathematical Olympiad.",
     "official_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Downloadable paper purchase deadline",
-        "date": "2026-10-07",
+        "date": "2027-10-06",
         "type": "deadline",
         "timezone": "UTC+1",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge"
       },
       {
         "label": "Senior Mathematical Challenge sitting",
-        "date": "2026-10-07",
+        "date": "2027-10-06",
         "type": "round",
         "timezone": "UTC+1",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
       }
     ],
@@ -775,7 +783,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "pumac",
@@ -798,22 +806,22 @@
     },
     "prize": "Individual and team awards across subject tests, the team round and the power round.",
     "official_url": "https://pumac.princeton.edu/registration-info",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Registration deadline",
-        "date": "2026-10-11",
+        "date": "2027-10-10",
         "type": "registration_close",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://pumac.princeton.edu/coaches/register/"
       },
       {
         "label": "PUMaC competition day (Princeton, NJ)",
-        "date": "2026-11-21",
+        "date": "2027-11-20",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://pumac.princeton.edu/registration-info"
       }
     ],
@@ -822,7 +830,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "berkeley-math-tournament",
@@ -996,22 +1004,22 @@
     },
     "prize": "Individual and team awards across the power, team, individual and relay rounds.",
     "official_url": "https://www.dukemathmeet.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Registration deadline",
-        "date": "2026-10-25",
+        "date": "2027-10-24",
         "type": "registration_close",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.dukemathmeet.org/registration"
       },
       {
-        "label": "Duke Math Meet 2026",
-        "date": "2026-11-07",
+        "label": "Duke Math Meet 2027",
+        "date": "2027-11-06",
         "type": "round",
-        "timezone": "UTC-5",
-        "estimated": false,
+        "timezone": "UTC-4",
+        "estimated": true,
         "source_url": "https://www.dukemathmeet.org/"
       }
     ],
@@ -1020,7 +1028,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "caltech-math-meet",

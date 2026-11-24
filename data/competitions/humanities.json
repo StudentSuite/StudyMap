@@ -421,22 +421,14 @@
     },
     "prize": "Cash awards, medals and certificates for the top three international rank holders, plus zonal and school-level recognition for other high scorers.",
     "official_url": "https://sofworld.org/ieo",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Level 1 exam, first sitting",
-        "date": "2026-09-30",
+        "label": "Level 2 exam (tentative: 2nd or 3rd Sunday of February, exact date due by December 2026)",
+        "date": "2027-02-14",
         "type": "round",
         "timezone": "UTC+5:30",
-        "estimated": false,
-        "source_url": "https://sofworld.org/exam-schedule"
-      },
-      {
-        "label": "Level 1 exam, final sitting",
-        "date": "2026-11-17",
-        "type": "round",
-        "timezone": "UTC+5:30",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://sofworld.org/exam-schedule"
       }
     ],
@@ -445,7 +437,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-15"
+    "valid_till": "2027-02-14"
   },
   {
     "id": "icas-english",

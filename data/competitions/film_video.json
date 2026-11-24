@@ -351,28 +351,12 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "2026 competition deadline",
-        "date": "2026-03-20",
-        "type": "deadline",
-        "timezone": "UTC-5",
-        "estimated": false,
-        "source_url": "https://www.apa.org/ed/precollege/psychology-teacher-network/announcements-events"
-      },
-      {
-        "label": "2027 competition topic announced",
-        "date": "2026-11-15",
-        "type": "round",
-        "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://www.apa.org/ed/precollege/topss/student-competition"
-      },
-      {
-        "label": "Video submission deadline",
+        "label": "Video submission deadline (estimated, APA says only 'spring 2027')",
         "date": "2027-03-20",
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.apa.org/ed/precollege/topss/student-competition"
+        "source_url": "https://www.apa.org/ed/precollege/psychology-teacher-network/announcements-events"
       }
     ],
     "added_by": "shauryagangrade",
@@ -380,7 +364,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-26"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-03-20"
   },
   {
     "id": "one-earth-young-filmmakers-contest",

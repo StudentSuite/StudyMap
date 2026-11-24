@@ -234,19 +234,27 @@
     },
     "prize": "A top award of USD 25,000 plus thousands in additional prizes.",
     "official_url": "https://www.societyforscience.org/jic/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Affiliated fair results due",
-        "date": "2026-10-01",
-        "type": "deadline",
+        "label": "Application opens",
+        "date": "2027-02-01",
+        "type": "registration_open",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.societyforscience.org/isef/affiliated-fair-network/"
+        "source_url": "https://www.societyforscience.org/jic/"
+      },
+      {
+        "label": "Application deadline",
+        "date": "2027-06-10",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.societyforscience.org/jic/"
       },
       {
         "label": "National finals (Washington DC)",
-        "date": "2026-10-20",
+        "date": "2027-10-26",
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
@@ -258,7 +266,7 @@
       "by": "yakew7",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-11-15",
+    "valid_till": "2027-05-24",
     "image": "/competitions/broadcom-masters.png"
   },
   {

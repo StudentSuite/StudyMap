@@ -11,7 +11,7 @@
     ],
     "description": "A paid-entry writing competition run by Harvard's student newspaper with Crimson Education, judged across creative, argumentative and journalistic tracks. Entrants pick one of fifteen prompts and the top writers advance to a Global Final.",
     "format": "online",
-    "age_min": 13,
+    "age_min": 10,
     "age_max": 18,
     "participation": "individual",
     "region": "international",
@@ -19,41 +19,65 @@
       "amount": 15,
       "currency": "USD"
     },
-    "prize": "Cash prizes up to USD 8,000 and an internship with The Crimson.",
+    "prize": "Gift cards up to USD 1,000 for each first place winner, plus USD 1,000 of Crimson mentorship credit and a place on the Harvard Crimson Summer Journalism Course.",
     "official_url": "https://www.essaycomp.org/what-is-hcgec",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Regular registration closes",
-        "date": "2026-02-10",
+        "label": "Early bird registration closes",
+        "date": "2026-12-15",
         "type": "registration_close",
         "timezone": "UTC",
-        "estimated": false,
-        "source_url": "https://www.essaycomp.org/competition-structure-and-dates"
-      },
-      {
-        "label": "Submission deadline",
-        "date": "2026-08-30",
-        "type": "deadline",
-        "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://www.essaycomp.org/faq"
       },
       {
-        "label": "Prizes must be claimed by",
-        "date": "2026-09-30",
-        "type": "results",
-        "timezone": "UTC-4",
+        "label": "Regular registration closes",
+        "date": "2027-02-10",
+        "type": "registration_close",
+        "timezone": "UTC",
         "estimated": false,
-        "source_url": "https://www.essaycomp.org/past-hcgec"
+        "source_url": "https://www.essaycomp.org/faq"
+      },
+      {
+        "label": "Regional essay submission deadline",
+        "date": "2027-02-23",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/faq"
+      },
+      {
+        "label": "Global finalists announced",
+        "date": "2027-03-10",
+        "type": "results",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/faq"
+      },
+      {
+        "label": "Global finals submission deadline",
+        "date": "2027-03-19",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/faq"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2027-03-31",
+        "type": "results",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.essaycomp.org/faq"
       }
     ],
     "added_by": "yakew7",
     "verified": {
       "by": "yakew7",
-      "on": "2026-09-05"
+      "on": "2026-11-24"
     },
-    "valid_till": "2026-10-15",
+    "valid_till": "2027-03-31",
     "image": "/competitions/harvard-crimson-global-essay-competition.png"
   },
   {
@@ -121,38 +145,38 @@
     },
     "prize": "USD 5,000 scholarship for each category winner.",
     "official_url": "https://www.johnlockeinstitute.com/apply-now",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Registration closes",
-        "date": "2026-03-31",
+        "date": "2027-03-31",
         "type": "registration_close",
         "timezone": "UTC",
-        "estimated": false,
-        "source_url": "https://essaycompetition.johnlocke.com/"
+        "estimated": true,
+        "source_url": "https://www.johnlockeinstitute.com/essay-competition"
       },
       {
         "label": "Submission closes",
-        "date": "2026-05-31",
+        "date": "2027-05-31",
         "type": "deadline",
         "timezone": "UTC",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.johnlockeinstitute.com/essay-competition"
       },
       {
         "label": "Shortlist announced",
-        "date": "2026-07-07",
+        "date": "2027-07-07",
         "type": "results",
         "timezone": "UTC",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.johnlockeinstitute.com/essay-competition"
       },
       {
         "label": "Awards dinner",
-        "date": "2026-10-03",
+        "date": "2027-10-02",
         "type": "ceremony",
         "timezone": "UTC+1",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.johnlockeinstitute.com/essay-competition"
       }
     ],
@@ -161,7 +185,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/john-locke-global-essay-prize.png"
   },
   {
@@ -189,28 +213,28 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Regular registration closes",
+        "label": "Regular registration closes (estimated from the 2026 pattern)",
         "date": "2027-08-13",
         "type": "registration_close",
-        "timezone": "UTC-5",
+        "timezone": "UTC-4",
         "estimated": true,
         "source_url": "https://thepolitic.org/high-school-competition/"
       },
       {
-        "label": "Essay submission deadline",
+        "label": "Essay submission deadline (estimated from the 2026 pattern)",
         "date": "2027-08-20",
         "type": "deadline",
-        "timezone": "UTC-5",
+        "timezone": "UTC-4",
         "estimated": true,
         "source_url": "https://thepolitic.org/high-school-competition/"
       },
       {
-        "label": "Winners announced",
+        "label": "Winners announced (estimated from the 2026 pattern)",
         "date": "2027-09-10",
         "type": "results",
-        "timezone": "UTC-5",
+        "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://drive.google.com/file/d/1RN3bcGfAIbaBEhK9XHdrFdU0Vyo_dpRY/view?usp=sharing"
+        "source_url": "https://thepolitic.org/page/high-school-competition/"
       }
     ],
     "added_by": "yakew7",
@@ -218,7 +242,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-26"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/the-politic-high-school-essay-competition.png"
   },
   {
