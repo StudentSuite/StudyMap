@@ -140,6 +140,90 @@
             "source_url": "https://cms.math.ca/competitions/comc/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade",
+        "stages": [
+          {
+            "name": "Auswahlwettbewerb IMO 2027: 1. Auswahlklausur (invited from BWM round 2, Mathematik-Olympiade Bundesrunde or Jugend forscht state winners in mathematics)",
+            "date": "2026-11-24",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "Auswahlwettbewerb IMO 2027: 2. Auswahlklausur",
+            "date": "2026-11-25",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "1. Vorbereitungsseminar, Hamburg (16 best scorers of the two papers)",
+            "date": "2027-01-29",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "Abschlussseminar, Oberwolfach (six-person German IMO team chosen)",
+            "date": "2027-05-15",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://maths-olympiques.fr/",
+        "stages": [
+          {
+            "name": "POFM correspondence assignment 1 (geometry) due",
+            "date": "2026-11-25",
+            "estimated": false,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 2 (provisional date)",
+            "date": "2027-01-06",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM olympic training camp, February",
+            "date": "2027-02-08",
+            "estimated": false,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 3 (provisional dates 10-11 February)",
+            "date": "2027-02-10",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          }
+        ]
+      },
+      {
+        "country": "ZA",
+        "official_url": "https://samf.ac.za/en/sa-mathematics-olympiad",
+        "stages": [
+          {
+            "name": "SA Mathematics Olympiad Round 1, 2027 cycle (estimated from the 2026 date of 12 March; top scorers progress towards the IMO training camps)",
+            "date": "2027-03-11",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          },
+          {
+            "name": "SA Mathematics Olympiad Round 2, 2027 cycle (estimated from the 2026 date of 14 May; 50 percent or more in Round 1 to qualify)",
+            "date": "2027-05-13",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          },
+          {
+            "name": "SA Mathematics Olympiad Round 3 / final, 2027 cycle (estimated from the 2026 date of 30 July; about 100 juniors and 100 seniors; feeds the April and December IMO selection camps)",
+            "date": "2027-07-29",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -687,7 +771,27 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "country_tracks": [
+      {
+        "country": "FR",
+        "official_url": "https://maths-olympiques.fr/",
+        "stages": [
+          {
+            "name": "POFM selection test 2 (EGMO selection uses tests 1-3; provisional date)",
+            "date": "2027-01-06",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 3 (provisional dates 10-11 February; four girls selected for EGMO after this)",
+            "date": "2027-02-10",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pan-african-mathematics-olympiad",

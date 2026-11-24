@@ -158,6 +158,18 @@
             "source_url": "https://www.olympiad.org.uk/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.bwinf.de/olympiade/",
+        "stages": [
+          {
+            "name": "45. Bundeswettbewerb Informatik, 2. Runde submission deadline (organiser says 'Anfang 2027 bis April 2027'; 44th round ended 13 April 2026). Finalists and strong round-2 entrants are invited to the IOI selection",
+            "date": "2027-04-12",
+            "estimated": true,
+            "source_url": "https://www.bwinf.de/bundeswettbewerb/"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",

@@ -45,6 +45,30 @@
             "source_url": "https://www.iapt.org.in/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ijso",
+        "stages": [
+          {
+            "name": "IJSO 2027 Aufgabenrunde registration and submission deadline (round opens 1 Nov 2026)",
+            "date": "2027-01-15",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          },
+          {
+            "name": "IJSO 2027 Klausurrunde (26 April to 7 May)",
+            "date": "2027-04-26",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          },
+          {
+            "name": "IJSO 2027 Bundesfinale (20-24 September)",
+            "date": "2027-09-20",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ijso"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -137,6 +161,24 @@
             "date": "2027-01-01",
             "estimated": true,
             "source_url": "https://usabo-trc.org/"
+          }
+        ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ibo",
+        "stages": [
+          {
+            "name": "3. Runde der BiologieOlympiade 2027 (14-19 February)",
+            "date": "2027-02-14",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ibo"
+          },
+          {
+            "name": "4. Runde der BiologieOlympiade 2027 (17-22 May, four best form the German IBO team)",
+            "date": "2027-05-17",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ibo"
           }
         ]
       }
@@ -284,6 +326,36 @@
             "source_url": "https://www.acs.org/education/students/highschool/olympiad.html"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/icho",
+        "stages": [
+          {
+            "name": "Bundesrunde zur IChO 2027 (round 3, 21-26 February)",
+            "date": "2027-02-21",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/icho"
+          },
+          {
+            "name": "Finalrunde zur IChO 2027 (round 4, May 2027; day estimated from the 2026 final of 17-23 May)",
+            "date": "2027-05-16",
+            "estimated": true,
+            "source_url": "https://www.scienceolympiaden.de/icho"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/olympiades-internationales-de-chimie-presentation/",
+        "stages": [
+          {
+            "name": "National written pre-selection test (2026-27 calendar not yet published, estimated from the 25 March 2026 test)",
+            "date": "2027-03-24",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/olympiades-internationales-de-chimie-organisation-annee/"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -376,6 +448,36 @@
             "date": "2027-01-27",
             "estimated": true,
             "source_url": "https://www.aapt.org/physicsteam/"
+          }
+        ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.scienceolympiaden.de/ipho",
+        "stages": [
+          {
+            "name": "Bundesrunde zur IPhO 2027 (round 3)",
+            "date": "2027-02-01",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ipho"
+          },
+          {
+            "name": "Finalrunde zur IPhO 2027 (round 4, German team chosen)",
+            "date": "2027-03-20",
+            "estimated": false,
+            "source_url": "https://www.scienceolympiaden.de/ipho"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/ipho-presentation/",
+        "stages": [
+          {
+            "name": "National written pre-selection test (24 students go to the May experimental camp, five make the delegation). 2026-27 calendar not yet published, estimated from the 25 March 2026 test",
+            "date": "2027-03-24",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/test-organisation-de-lannee-ipho/"
           }
         ]
       }
@@ -677,7 +779,27 @@
       "on": "2026-09-06"
     },
     "valid_till": "2027-02-01",
-    "image": "/competitions/international-earth-science-olympiad.png"
+    "image": "/competitions/international-earth-science-olympiad.png",
+    "country_tracks": [
+      {
+        "country": "FR",
+        "official_url": "https://www.sciencesalecole.org/olympiades-internationales-de-geosciences-presentation/",
+        "stages": [
+          {
+            "name": "Registration closes for the national IESO 2027 selection test (opened 5 October 2026)",
+            "date": "2026-12-04",
+            "estimated": false,
+            "source_url": "https://www.sciencesalecole.org/olympiades-internationales-de-geosciences-presentation/"
+          },
+          {
+            "name": "National selection test, 4-day window (estimated from 26-29 January 2026)",
+            "date": "2027-01-25",
+            "estimated": true,
+            "source_url": "https://www.sciencesalecole.org/categories/actualites/ieso/"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "international-olympiad-in-ai",
