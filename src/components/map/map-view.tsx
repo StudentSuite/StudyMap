@@ -19,6 +19,7 @@ import type { Place, PlaceType } from "@/lib/types";
 import { PLACE_TYPES, PLACE_TYPE_LABELS } from "@/lib/types";
 import type { LatLng } from "@/lib/geo";
 import type { Bounds } from "@/lib/places-utils";
+import { densityCells, type HeatCell } from "@/lib/heatmap";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 
@@ -255,6 +256,8 @@ interface MapViewProps {
   onViewportChange?: (viewport: MapViewport) => void;
   /** Increment to imperatively close all open popups. */
   closePopupTrigger?: number;
+  /** Draws a places-density overlay under the pins. */
+  heatmap?: boolean;
 }
 
 let didWarnAboutMissingMapTilerKey = false;
@@ -334,6 +337,57 @@ function FitAllOnMount({ places }: { places: Place[] }) {
     );
   }, [map, places]);
   return null;
+}
+
+const HEAT_PANE = "studymap-heat";
+const HEAT_CELL_PX = 48;
+
+/**
+ * Density overlay: a soft, blurred blob per grid cell under the pins, sized
+ * to the screen so it re-forms as the map zooms. Drawn in its own pane below
+ * the markers and with pointer events off, so pins and popups stay usable.
+ */
+function HeatLayer({ places }: { places: Place[] }) {
+  const map = useMap();
+  const [cells, setCells] = useState<HeatCell[]>([]);
+
+  useEffect(() => {
+    const pane = map.getPane(HEAT_PANE) ?? map.createPane(HEAT_PANE);
+    pane.style.zIndex = "450";
+    pane.style.pointerEvents = "none";
+    pane.style.filter = "blur(10px)";
+
+    function recompute() {
+      const zoom = map.getZoom();
+      setCells(
+        densityCells(places, (p) => map.project([p.lat, p.lng], zoom), HEAT_CELL_PX),
+      );
+    }
+    recompute();
+    map.on("zoomend", recompute);
+    return () => {
+      map.off("zoomend", recompute);
+    };
+  }, [map, places]);
+
+  return (
+    <>
+      {cells.map((cell) => (
+        <CircleMarker
+          key={`${cell.lat},${cell.lng}`}
+          center={[cell.lat, cell.lng]}
+          radius={HEAT_CELL_PX * (0.45 + 0.35 * cell.intensity)}
+          pane={HEAT_PANE}
+          interactive={false}
+          pathOptions={{
+            stroke: false,
+            fillColor: "#f97316",
+            fillOpacity: 0.18 + 0.42 * cell.intensity,
+          }}
+        />
+      ))}
+    </>
+  );
 }
 
 /** Eases the map to fit a bounding box, e.g. a selected city's pins. */
@@ -481,6 +535,7 @@ export default function MapView({
   initialViewport = null,
   onViewportChange,
   closePopupTrigger = 0,
+  heatmap = false,
 }: MapViewProps) {
   const mapTilerKey = process.env.NEXT_PUBLIC_MAPTILER_KEY?.trim();
 
@@ -581,6 +636,7 @@ export default function MapView({
           </CircleMarker>
         )}
 
+        {heatmap && <HeatLayer places={places} />}
         <ClusteredMarkers places={places} home={home} />
       </MapContainer>
     </div>

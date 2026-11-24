@@ -20,23 +20,23 @@
     },
     "prize": "Publication in the Foyle Young Poets anthology and Poetry Society membership.",
     "official_url": "https://foyleyoungpoets.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Submission closes",
-        "date": "2026-07-31",
+        "date": "2027-07-31",
         "type": "deadline",
-        "timezone": "UTC+1",
-        "estimated": false,
-        "source_url": "https://foyleyoungpoets.org/rules/"
-      },
-      {
-        "label": "Winners contacted",
-        "date": "2026-10-01",
-        "type": "results",
         "timezone": "UTC+1",
         "estimated": true,
         "source_url": "https://foyleyoungpoets.org/about/"
+      },
+      {
+        "label": "Winners contacted",
+        "date": "2027-10-01",
+        "type": "results",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://foyleyoungpoets.org/rules/"
       }
     ],
     "added_by": "yakew7",
@@ -44,7 +44,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/foyle-young-poets-of-the-year-award.png"
   },
   {
@@ -233,14 +233,22 @@
         "timezone": "UTC-4",
         "estimated": false,
         "source_url": "https://www.bennington.edu/events/young-writers-awards"
+      },
+      {
+        "label": "Winners announced",
+        "date": "2027-04-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.bennington.edu/node/97255"
       }
     ],
     "added_by": "shauryagangrade",
     "verified": {
-      "by": "shauryagangrade",
-      "on": "2026-09-06"
+      "by": "yakew7",
+      "on": "2026-11-24"
     },
-    "valid_till": "2027-01-01",
+    "valid_till": "2027-04-15",
     "image": "/competitions/bennington-young-writers-awards.png"
   },
   {

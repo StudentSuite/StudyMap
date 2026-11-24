@@ -351,28 +351,12 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "2026 competition deadline",
-        "date": "2026-03-20",
-        "type": "deadline",
-        "timezone": "UTC-5",
-        "estimated": false,
-        "source_url": "https://www.apa.org/ed/precollege/psychology-teacher-network/announcements-events"
-      },
-      {
-        "label": "2027 competition topic announced",
-        "date": "2026-11-15",
-        "type": "round",
-        "timezone": "UTC-5",
-        "estimated": true,
-        "source_url": "https://www.apa.org/ed/precollege/topss/student-competition"
-      },
-      {
-        "label": "Video submission deadline",
+        "label": "Video submission deadline (estimated, APA says only 'spring 2027')",
         "date": "2027-03-20",
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": true,
-        "source_url": "https://www.apa.org/ed/precollege/topss/student-competition"
+        "source_url": "https://www.apa.org/ed/precollege/psychology-teacher-network/announcements-events"
       }
     ],
     "added_by": "shauryagangrade",
@@ -380,7 +364,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-26"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-03-20"
   },
   {
     "id": "one-earth-young-filmmakers-contest",
@@ -473,5 +457,54 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-10-28"
+  },
+  {
+    "id": "latest-generation-film-contest",
+    "name": "Latest Generation Film Contest",
+    "organizer": "Lincoln Presidential Foundation",
+    "organizer_url": "https://www.lincolnpresidential.org",
+    "category": "film_video",
+    "subjects": [
+      "documentary",
+      "film",
+      "history"
+    ],
+    "description": "A US contest for filmmakers aged 14 to 22 who make a 5 to 8 minute documentary on a true story from the past. The 2027 theme is Stories of Repair, about how Americans responded to hardship, division or injustice and helped fix it.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 22,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Cash awards, mentorship from professional filmmakers, and a red-carpet screening in Chicago.",
+    "official_url": "https://www.lincolnpresidential.org/events/latest-generation-film-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Film submission deadline",
+        "date": "2027-02-28",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.lincolnpresidential.org/events/upcoming-events/latest-generation-film-contest"
+      },
+      {
+        "label": "Winners announced (May 2027, exact day not published)",
+        "date": "2027-05-01",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://northwestminnesotaartscouncil.org/blog/filmnorth-shares-filmmaking-opportunities"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    },
+    "valid_till": "2027-05-01"
   }
 ]

@@ -489,7 +489,11 @@
     "lng": -0.1276918,
     "address": "96 Euston Road, London NW1 2DB",
     "gmaps_link": "https://maps.google.com/?q=51.5299119,-0.1276918",
-    "added_by": "yakew7"
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "ldn-library-02",
@@ -993,7 +997,11 @@
     "lng": 149.1295736,
     "address": "Parkes Place, Parkes, Canberra ACT 2600, Australia",
     "gmaps_link": "https://maps.google.com/?q=-35.2965236,149.1295736",
-    "added_by": "yakew7"
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "bne-library-01",

@@ -21,11 +21,11 @@
     },
     "prize": "USD 1,000 Gold Award in each division.",
     "official_url": "https://bowseat.org/programs/blue-planet-awareness-contest/contest-overview/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Submission closed",
-        "date": "2026-06-08",
+        "label": "Submission deadline",
+        "date": "2027-06-07",
         "type": "deadline",
         "timezone": "UTC-4",
         "estimated": false,
@@ -33,19 +33,19 @@
       },
       {
         "label": "Winners announced",
-        "date": "2026-11-15",
+        "date": "2027-11-15",
         "type": "results",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://bowseat.org/programs/blue-planet-awareness-contest/awards/"
       }
     ],
     "added_by": "yakew7",
     "verified": {
       "by": "yakew7",
-      "on": "2026-09-05"
+      "on": "2026-11-24"
     },
-    "valid_till": "2026-12-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/bow-seat-ocean-awareness-contest.png"
   },
   {
@@ -283,15 +283,15 @@
     },
     "prize": "Cash awards from USD 250 to USD 10,000.",
     "official_url": "https://youngarts.org/competition/",
-    "cycle_year": 2026,
+    "cycle_year": 2028,
     "dates": [
       {
         "label": "Application deadline",
-        "date": "2026-10-10",
+        "date": "2027-10-05",
         "type": "deadline",
         "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://youngarts.org/apply/"
+        "estimated": true,
+        "source_url": "https://youngarts.org/faq/"
       }
     ],
     "added_by": "yakew7",
@@ -299,7 +299,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-12-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/youngarts-national-arts-competition.png"
   },
   {

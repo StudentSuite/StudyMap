@@ -47,7 +47,12 @@ export default function ContributingPage() {
           </CardHeader>
           <CardContent className="space-y-3 text-sm text-foreground/80">
             <p>
-              Open a{" "}
+              Don&apos;t have a GitHub account? Use the{" "}
+              <a href="/contribute" className="font-medium text-primary hover:underline">
+                Suggest a place form
+              </a>
+              : name, Google Maps link and type, and we open the pull request for you.
+              Otherwise, open a{" "}
               <a
                 href="https://github.com/StudentSuite/StudyMap/issues/new"
                 target="_blank"

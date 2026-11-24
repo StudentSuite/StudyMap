@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 
+import { getCities, getPlaces } from "@/lib/places";
 import { site } from "@/lib/site";
+import { SuggestPlaceButton } from "@/components/contribute/suggest-place-button";
 import {
   Card,
   CardContent,
@@ -40,9 +42,25 @@ export default function ContributePage() {
           <CardContent className="space-y-4">
             <div className="space-y-3">
               <p className="text-sm text-foreground/80">
-                Places are added via GitHub pull requests. Here is the process:
+                Send us the place name, a Google Maps link and its type. No GitHub
+                account, no Git, no JSON. We read the coordinates from the link and open a
+                pull request for you, and a maintainer checks it before it goes on the
+                map.
               </p>
-              <ol className="ml-4 list-inside list-decimal space-y-2 text-sm text-foreground/80">
+              <p className="text-xs text-muted-foreground">
+                Places need a real Google Maps listing with good reviews (4.0 or higher,
+                50 or more reviews). Just want to save a place for yourself? Sign in and
+                use &quot;My places&quot; on the map instead - those stay private to your
+                account and skip this review.
+              </p>
+            </div>
+            <SuggestPlaceButton datasetCities={getCities(getPlaces())} />
+
+            <details className="group rounded-lg border p-3 text-sm text-foreground/80">
+              <summary className="cursor-pointer font-medium">
+                Prefer Git? Add it yourself with a pull request
+              </summary>
+              <ol className="mt-3 ml-4 list-inside list-decimal space-y-2">
                 <li>Fork the repository on GitHub</li>
                 <li>
                   Add your place to the JSON file in the{" "}
@@ -55,24 +73,15 @@ export default function ContributePage() {
                 <li>Create a pull request with a clear description</li>
                 <li>Wait for review and merge</li>
               </ol>
-              <p className="text-xs text-muted-foreground">
-                All places must have a source citation and meet a minimum verification
-                threshold (e.g., Google Maps listing with reviews).
-              </p>
-              <p className="text-xs text-muted-foreground">
-                Just want to save a place for yourself, not add it to the public map? Sign
-                in and use &quot;My places&quot; on the map instead - those are private to
-                your account only and won&apos;t go through this review process.
-              </p>
-            </div>
-            <a
-              href={site.repo}
-              target="_blank"
-              rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
-            >
-              View the repository
-            </a>
+              <a
+                href={site.repo}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-3 inline-flex items-center gap-1.5 font-medium text-primary hover:underline"
+              >
+                View the repository
+              </a>
+            </details>
           </CardContent>
         </Card>
 

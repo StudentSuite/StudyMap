@@ -130,14 +130,14 @@
     },
     "prize": "Full four year scholarship from a partner college, valued over USD 360,000.",
     "official_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match",
-    "cycle_year": 2027,
+    "cycle_year": 2028,
     "dates": [
       {
         "label": "National College Match application deadline",
-        "date": "2026-10-01",
+        "date": "2027-10-01",
         "type": "deadline",
-        "timezone": "UTC-8",
-        "estimated": false,
+        "timezone": "UTC-7",
+        "estimated": true,
         "source_url": "https://www.questbridge.org/apply-to-college/programs/national-college-match/apply/dates-and-deadlines"
       }
     ],
@@ -146,7 +146,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/questbridge-national-college-match.png"
   },
   {
@@ -171,14 +171,14 @@
     },
     "prize": "USD 1,000 to USD 7,500 per year for up to 500 four year scholarships.",
     "official_url": "https://www.elks.org/scholars/scholarships/mvs.cfm",
-    "cycle_year": 2027,
+    "cycle_year": 2028,
     "dates": [
       {
         "label": "Application deadline",
-        "date": "2026-11-12",
+        "date": "2027-11-12",
         "type": "deadline",
         "timezone": "UTC-8",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.elks.org/scholarweb/resources/MVSFAQ.cfm"
       }
     ],
@@ -187,7 +187,7 @@
       "by": "shauryagangrade",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-12-15",
+    "valid_till": "2027-05-24",
     "image": "/competitions/elks-mvs.png"
   },
   {
@@ -444,5 +444,119 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-03-01"
+  },
+  {
+    "id": "ge-reagan-foundation-scholarship",
+    "name": "GE-Reagan Foundation Scholarship Program",
+    "organizer": "Ronald Reagan Presidential Foundation and Institute",
+    "organizer_url": "https://www.reaganfoundation.org",
+    "category": "scholarship",
+    "subjects": [
+      "leadership",
+      "citizenship",
+      "college scholarship"
+    ],
+    "description": "A renewable college scholarship for US high school seniors with at least a 3.0 GPA. Applicants are judged on leadership, integrity, drive and citizenship, with financial information as one part of the evaluation.",
+    "format": "online",
+    "age_min": 17,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 10,000 per year, renewable for up to three more years (USD 40,000 total).",
+    "official_url": "https://www.reaganfoundation.org/education/ge-reagan-foundation-scholarship",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application opens",
+        "date": "2026-10-12",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.reaganfoundation.org/education/ge-reagan-foundation-scholarship"
+      },
+      {
+        "label": "Application deadline (3:00 p.m. EST)",
+        "date": "2027-01-07",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://apply.mykaleidoscope.com/program/GEReagan2027Scholarship"
+      },
+      {
+        "label": "Applicants notified by email (by this date)",
+        "date": "2027-03-01",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.reaganfoundation.org/education/ge-reagan-foundation-scholarship"
+      },
+      {
+        "label": "Recipients notified by email (by this date)",
+        "date": "2027-04-30",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.reaganfoundation.org/education/ge-reagan-foundation-scholarship"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    },
+    "valid_till": "2027-04-30"
+  },
+  {
+    "id": "washington-crossing-foundation-national-scholarship",
+    "name": "Washington Crossing Foundation National Scholarship Competition",
+    "organizer": "Washington Crossing Foundation",
+    "organizer_url": "https://www.gwcf.org",
+    "category": "scholarship",
+    "subjects": [
+      "government service",
+      "public service",
+      "essay"
+    ],
+    "description": "A scholarship competition for US high school seniors planning a career in local, state or federal government. Applicants mail three copies of a cover page, a 300 word essay, a counselor or principal recommendation, transcripts and a resume.",
+    "format": "in_person",
+    "age_min": 17,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarships of USD 1,000 to USD 10,000, with one four-year West Coast award.",
+    "official_url": "https://www.gwcf.org/scholarship",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application postmark deadline",
+        "date": "2027-01-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.gwcf.org/scholarship"
+      },
+      {
+        "label": "Scholarship awards ceremony and luncheon",
+        "date": "2027-04-24",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.gwcf.org/events"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    },
+    "valid_till": "2027-04-24"
   }
 ]

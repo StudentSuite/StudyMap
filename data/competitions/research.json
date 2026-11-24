@@ -234,19 +234,27 @@
     },
     "prize": "A top award of USD 25,000 plus thousands in additional prizes.",
     "official_url": "https://www.societyforscience.org/jic/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Affiliated fair results due",
-        "date": "2026-10-01",
-        "type": "deadline",
+        "label": "Application opens",
+        "date": "2027-02-01",
+        "type": "registration_open",
         "timezone": "UTC-5",
         "estimated": true,
-        "source_url": "https://www.societyforscience.org/isef/affiliated-fair-network/"
+        "source_url": "https://www.societyforscience.org/jic/"
+      },
+      {
+        "label": "Application deadline",
+        "date": "2027-06-10",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.societyforscience.org/jic/"
       },
       {
         "label": "National finals (Washington DC)",
-        "date": "2026-10-20",
+        "date": "2027-10-26",
         "type": "round",
         "timezone": "UTC-4",
         "estimated": true,
@@ -258,7 +266,7 @@
       "by": "yakew7",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-11-15",
+    "valid_till": "2027-05-24",
     "image": "/competitions/broadcom-masters.png"
   },
   {
@@ -529,5 +537,47 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-05-28"
+  },
+  {
+    "id": "research-science-institute",
+    "name": "Research Science Institute (RSI)",
+    "organizer": "Center for Excellence in Education",
+    "organizer_url": "https://www.cee.org",
+    "category": "research",
+    "subjects": [
+      "science",
+      "engineering",
+      "mathematics",
+      "research"
+    ],
+    "description": "A free summer program for rising high school seniors with one week of STEM classes, a five-week research internship under a mentor, and a final week of written and oral project presentations. It is held at MIT, with a second site at Stanford added for 2027.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "No cost to attend; participants complete an individual research project with a mentor and present it.",
+    "official_url": "https://www.cee.org/programs/apply-rsi",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "RSI 2027 applications close",
+        "date": "2026-12-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cee.org/programs/research-science-institute"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    },
+    "valid_till": "2026-12-11"
   }
 ]

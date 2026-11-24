@@ -140,6 +140,90 @@
             "source_url": "https://cms.math.ca/competitions/comc/"
           }
         ]
+      },
+      {
+        "country": "DE",
+        "official_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade",
+        "stages": [
+          {
+            "name": "Auswahlwettbewerb IMO 2027: 1. Auswahlklausur (invited from BWM round 2, Mathematik-Olympiade Bundesrunde or Jugend forscht state winners in mathematics)",
+            "date": "2026-11-24",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "Auswahlwettbewerb IMO 2027: 2. Auswahlklausur",
+            "date": "2026-11-25",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "1. Vorbereitungsseminar, Hamburg (16 best scorers of the two papers)",
+            "date": "2027-01-29",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          },
+          {
+            "name": "Abschlussseminar, Oberwolfach (six-person German IMO team chosen)",
+            "date": "2027-05-15",
+            "estimated": false,
+            "source_url": "https://www.mathe-wettbewerbe.de/internationale-mathematik-olympiade"
+          }
+        ]
+      },
+      {
+        "country": "FR",
+        "official_url": "https://maths-olympiques.fr/",
+        "stages": [
+          {
+            "name": "POFM correspondence assignment 1 (geometry) due",
+            "date": "2026-11-25",
+            "estimated": false,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 2 (provisional date)",
+            "date": "2027-01-06",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM olympic training camp, February",
+            "date": "2027-02-08",
+            "estimated": false,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 3 (provisional dates 10-11 February)",
+            "date": "2027-02-10",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          }
+        ]
+      },
+      {
+        "country": "ZA",
+        "official_url": "https://samf.ac.za/en/sa-mathematics-olympiad",
+        "stages": [
+          {
+            "name": "SA Mathematics Olympiad Round 1, 2027 cycle (estimated from the 2026 date of 12 March; top scorers progress towards the IMO training camps)",
+            "date": "2027-03-11",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          },
+          {
+            "name": "SA Mathematics Olympiad Round 2, 2027 cycle (estimated from the 2026 date of 14 May; 50 percent or more in Round 1 to qualify)",
+            "date": "2027-05-13",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          },
+          {
+            "name": "SA Mathematics Olympiad Round 3 / final, 2027 cycle (estimated from the 2026 date of 30 July; about 100 juniors and 100 seniors; feeds the April and December IMO selection camps)",
+            "date": "2027-07-29",
+            "estimated": true,
+            "source_url": "https://samf.ac.za/en/maths-calendar"
+          }
+        ]
       }
     ],
     "added_by": "yakew7",
@@ -171,15 +255,23 @@
     },
     "prize": "USD 50,000 first prize, from a USD 100,000 total prize pool.",
     "official_url": "https://mathprize.atfoundation.org/apply",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
-        "label": "Contest at MIT",
-        "date": "2026-10-11",
+        "label": "Application deadline (estimated from the 2026 deadline)",
+        "date": "2027-05-31",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://mathprize.atfoundation.org/apply"
+      },
+      {
+        "label": "Contest at MIT (estimated, second Sunday of October)",
+        "date": "2027-10-10",
         "type": "round",
         "timezone": "UTC-4",
-        "estimated": false,
-        "source_url": "https://mathprize.atfoundation.org/experience/schedule"
+        "estimated": true,
+        "source_url": "https://mathprize.atfoundation.org/experience/past-events/2025"
       }
     ],
     "added_by": "yakew7",
@@ -187,7 +279,7 @@
       "by": "yakew7",
       "on": "2026-09-05"
     },
-    "valid_till": "2026-11-01",
+    "valid_till": "2027-05-24",
     "image": "/competitions/math-prize-for-girls.png"
   },
   {
@@ -408,20 +500,20 @@
     "cycle_year": 2027,
     "dates": [
       {
-        "label": "Fall round (following the usual October pattern, local city dates vary)",
-        "date": "2026-10-25",
+        "label": "Spring round, basic (O-level) (estimated from the usual late February Sunday pattern, local city dates vary)",
+        "date": "2027-02-28",
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/news/"
+        "source_url": "https://www.turgor.ru/geography/"
       },
       {
-        "label": "Spring round (following the usual February to March pattern, local city dates vary)",
-        "date": "2027-02-21",
+        "label": "Spring round, advanced (A-level) (estimated from the usual early to mid March Sunday pattern, local city dates vary)",
+        "date": "2027-03-14",
         "type": "round",
         "timezone": "UTC+3",
         "estimated": true,
-        "source_url": "https://www.turgor.ru/en/problems/"
+        "source_url": "https://www.turgor.ru/geography/"
       }
     ],
     "added_by": "yakew7",
@@ -429,7 +521,7 @@
       "by": "yakew7",
       "on": "2026-09-06"
     },
-    "valid_till": "2026-11-15",
+    "valid_till": "2027-03-14",
     "image": "/competitions/tournament-of-the-towns.png"
   },
   {
@@ -511,22 +603,22 @@
     },
     "prize": "Certificates of distinction; automatic AIME qualification for top scorers.",
     "official_url": "https://maa.org/student-programs/amc/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "AMC 10/12 A",
-        "date": "2026-11-05",
+        "date": "2027-11-04",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://maa.org/student-programs/amc/"
       },
       {
         "label": "AMC 10/12 B",
-        "date": "2026-11-13",
+        "date": "2027-11-12",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://maa.org/maa-amc-registration-faq/"
       }
     ],
@@ -535,7 +627,7 @@
       "by": "yakew7",
       "on": "2026-09-13"
     },
-    "valid_till": "2027-01-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "kangaroo-math-competition",
@@ -679,7 +771,27 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2027-05-01"
+    "valid_till": "2027-05-01",
+    "country_tracks": [
+      {
+        "country": "FR",
+        "official_url": "https://maths-olympiques.fr/",
+        "stages": [
+          {
+            "name": "POFM selection test 2 (EGMO selection uses tests 1-3; provisional date)",
+            "date": "2027-01-06",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          },
+          {
+            "name": "POFM selection test 3 (provisional dates 10-11 February; four girls selected for EGMO after this)",
+            "date": "2027-02-10",
+            "estimated": true,
+            "source_url": "https://maths-olympiques.fr/?page_id=23014"
+          }
+        ]
+      }
+    ]
   },
   {
     "id": "pan-african-mathematics-olympiad",
@@ -751,22 +863,22 @@
     },
     "prize": "Gold, silver and bronze certificates by score band; top scorers qualify for the British Mathematical Olympiad.",
     "official_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Downloadable paper purchase deadline",
-        "date": "2026-10-07",
+        "date": "2027-10-06",
         "type": "deadline",
         "timezone": "UTC+1",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://ukmt.org.uk/senior-challenges/senior-mathematical-challenge"
       },
       {
         "label": "Senior Mathematical Challenge sitting",
-        "date": "2026-10-07",
+        "date": "2027-10-06",
         "type": "round",
         "timezone": "UTC+1",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
       }
     ],
@@ -775,7 +887,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-11-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "pumac",
@@ -798,22 +910,22 @@
     },
     "prize": "Individual and team awards across subject tests, the team round and the power round.",
     "official_url": "https://pumac.princeton.edu/registration-info",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Registration deadline",
-        "date": "2026-10-11",
+        "date": "2027-10-10",
         "type": "registration_close",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://pumac.princeton.edu/coaches/register/"
       },
       {
         "label": "PUMaC competition day (Princeton, NJ)",
-        "date": "2026-11-21",
+        "date": "2027-11-20",
         "type": "round",
         "timezone": "UTC-5",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://pumac.princeton.edu/registration-info"
       }
     ],
@@ -822,7 +934,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "berkeley-math-tournament",
@@ -996,22 +1108,22 @@
     },
     "prize": "Individual and team awards across the power, team, individual and relay rounds.",
     "official_url": "https://www.dukemathmeet.org/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "Registration deadline",
-        "date": "2026-10-25",
+        "date": "2027-10-24",
         "type": "registration_close",
         "timezone": "UTC-4",
-        "estimated": false,
+        "estimated": true,
         "source_url": "https://www.dukemathmeet.org/registration"
       },
       {
-        "label": "Duke Math Meet 2026",
-        "date": "2026-11-07",
+        "label": "Duke Math Meet 2027",
+        "date": "2027-11-06",
         "type": "round",
-        "timezone": "UTC-5",
-        "estimated": false,
+        "timezone": "UTC-4",
+        "estimated": true,
         "source_url": "https://www.dukemathmeet.org/"
       }
     ],
@@ -1020,7 +1132,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-01"
+    "valid_till": "2027-05-24"
   },
   {
     "id": "caltech-math-meet",
@@ -1179,6 +1291,576 @@
       "on": "2026-11-17"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "gauss-contests",
+    "name": "Gauss Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Multiple-choice mathematics contests for Grades 7 and 8, offered in English and French. They give younger students a wider view of mathematics than the school curriculum usually does, in a low-pressure format; schools must order at least ten contests.",
+    "age_min": 12,
+    "age_max": 14,
+    "fee": {
+      "amount": 5,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Participation for everyone; Certificates of Distinction for the top 25 percent within a school (schools with at least 4 participants); a Certificate of Outstanding Achievement for each school's top scorer per grade (schools with at least 10 participants).",
+    "official_url": "https://cemc.uwaterloo.ca/contests/gauss",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-04-22",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/gauss"
+      },
+      {
+        "label": "Contest period opens",
+        "date": "2027-05-10",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest period closes",
+        "date": "2027-05-21",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-06-01"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "pascal-cayley-fermat-contests",
+    "name": "Pascal, Cayley and Fermat Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Three grade-specific multiple-choice contests for Grades 9 to 11, built to be approachable for students who have never written a math contest. Offered in English and French; the Euclid and the Canadian Senior and Intermediate contests are the next step up.",
+    "age_min": 13,
+    "age_max": 17,
+    "fee": {
+      "amount": 6,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Distinction for the top 25 percent of competitors; each school's champion who meets the medal cutoff may receive a Contest Medal, at the CEMC's discretion.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/pcf",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline for schools in India",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
+        "label": "Ordering deadline for schools outside Canada and India",
+        "date": "2027-02-02",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
+        "label": "Ordering deadline for schools in Canada",
+        "date": "2027-02-09",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/pcf"
+      },
+      {
+        "label": "Contest date in North and South America (first day)",
+        "date": "2027-02-23",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date outside North and South America (first day)",
+        "date": "2027-02-24",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-03-15"
+  },
+  {
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "participation": "individual",
+    "region": "international",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "format": "in_person",
+    "id": "fryer-galois-hypatia-contests",
+    "name": "Fryer, Galois and Hypatia Contests",
+    "subjects": [
+      "mathematics",
+      "problem solving",
+      "mathematical communication"
+    ],
+    "description": "Three full-solution contests for Grades 9 to 11, run at the same time by grade level. Students write out complete solutions, which builds both problem solving and mathematical communication. Offered in English and French.",
+    "age_min": 13,
+    "age_max": 17,
+    "fee": {
+      "amount": 12,
+      "currency": "CAD"
+    },
+    "prize": "Certificates of Distinction for the top 25 percent of competitors; each school's champion who meets the medal cutoff may receive a Contest Medal; some top scorers appear on zone, provincial, Canadian and international honour rolls.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/fgh",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-03-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/fgh"
+      },
+      {
+        "label": "Contest date in North and South America",
+        "date": "2027-04-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      },
+      {
+        "label": "Contest date outside North and South America",
+        "date": "2027-04-08",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "canadian-team-mathematics-contest",
+    "name": "Canadian Team Mathematics Contest",
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "teamwork",
+      "problem solving"
+    ],
+    "description": "A team contest where six secondary students work together through individual, team and relay events of short-answer problems. Schools can run it in-school or enter a lottery to take part at the University of Waterloo in person or virtually; at least half of the individual problems are accessible to Grade 9 and 10 students.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 50,
+      "currency": "CAD"
+    },
+    "prize": "Certificates for participants; no ranked prizes are listed on the contest page.",
+    "official_url": "https://cemc.uwaterloo.ca/contests/ctmc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Lottery registration deadline for the University of Waterloo event",
+        "date": "2026-11-19",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/ctmc"
+      },
+      {
+        "label": "University of Waterloo event",
+        "date": "2027-04-13",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/ctmc"
+      },
+      {
+        "label": "In-school ordering deadline",
+        "date": "2027-04-12",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/contests.html"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-05-01"
+  },
+  {
+    "id": "ukmt-junior-mathematical-challenge",
+    "name": "UKMT Junior Mathematical Challenge (JMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions on mathematical reasoning and precision, open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-04-14",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-05-05",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Junior Mathematical Challenge sitting",
+        "date": "2027-05-05",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ukmt-intermediate-mathematical-challenge",
+    "name": "UKMT Intermediate Mathematical Challenge (IMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions for Year 11 and below in England, Wales and overseas (S4 or below in Scotland, Year 12 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-01-06",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Intermediate Mathematical Challenge sitting",
+        "date": "2027-01-27",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "ukmt-primary-kangaroo",
+    "name": "UKMT Primary Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 45 minute paper of 20 multiple-choice questions for UK primary pupils (Year 5/6 or below in England and Wales, P6/P7 or below in Scotland and Northern Ireland), linked to the International Kangaroo papers. Entries are sold in packs of 10 for 10 GBP, so the fee above is the per-pupil figure; it must be sat on paper, and Leeds primary schools can claim free entries in 2027.",
+    "format": "in_person",
+    "age_min": 9,
+    "age_max": 11,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1,
+      "currency": "GBP"
+    },
+    "prize": "Certificates by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-02-25",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      },
+      {
+        "label": "Competition window opens",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      },
+      {
+        "label": "Competition window closes",
+        "date": "2027-03-25",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-grey-pink-kangaroos",
+    "name": "UKMT Grey and Pink Kangaroos",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Intermediate Mathematical Challenge. Entry is by invitation based on a qualifying IMC score, or by discretionary entry, and is open to UK schools only. Grey Kangaroo is for Year 9 and below in England and Wales (S2 or below in Scotland, Year 10 or below in Northern Ireland); Pink Kangaroo is for Years 10 and 11 (S3 and S4, Years 11 and 12). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/grey-and-pink-kangaroos",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Grey and Pink Kangaroo date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-cayley-hamilton-maclaurin-olympiads",
+    "name": "UKMT Cayley, Hamilton and Maclaurin Mathematical Olympiads",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style problems needing full written solutions, taken as the follow-on round to the Intermediate Mathematical Challenge. Around 1,800 students qualify from the IMC each year, and discretionary entry is also possible. Cayley is for Year 9 and below, Hamilton for Year 10 and Maclaurin for Year 11 in England, Wales and overseas (S2, S3 and S4 in Scotland; Years 10, 11 and 12 in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/cayley-hamilton-maclaurin-olympiad-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-junior-kangaroo",
+    "name": "UKMT Junior Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Junior Mathematical Challenge. Entry is by invitation based on a qualifying JMC score, or by discretionary entry, and is open to UK schools only (Year 8 and below in England and Wales, S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior Kangaroo date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
+  },
+  {
+    "id": "ukmt-junior-mathematical-olympiad",
+    "name": "UKMT Junior Mathematical Olympiad",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style questions needing full written solutions, taken as the follow-on round to the Junior Mathematical Challenge. Around 1,200 students qualify from the JMC each year, and discretionary entry is also possible. Open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
   },
   {
     "id": "australian-mathematics-competition",

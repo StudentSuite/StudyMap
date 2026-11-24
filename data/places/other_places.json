@@ -381,7 +381,11 @@
     "lng": -123.1116636,
     "address": "515 West Hastings Street, Vancouver, BC V6B 4N5, Canada",
     "gmaps_link": "https://maps.google.com/?q=49.2845459,-123.1116636",
-    "added_by": "yakew7"
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    }
   },
   {
     "id": "nyk-other_places-01",
@@ -1293,18 +1297,6 @@
     "lng": 56.3535807,
     "address": "Kalba, Sharjah, UAE",
     "gmaps_link": "https://maps.google.com/?q=25.0239120,56.3535807",
-    "added_by": "yakew7"
-  },
-  {
-    "id": "klb-other_places-02",
-    "name": "American School of Kalba",
-    "type": "other_places",
-    "city": "kalba",
-    "country": "AE",
-    "lat": 25.0990937,
-    "lng": 56.3580697,
-    "address": "Rugaylat Road, Kalba, Sharjah, UAE",
-    "gmaps_link": "https://maps.google.com/?q=25.0990937,56.3580697",
     "added_by": "yakew7"
   },
   {
