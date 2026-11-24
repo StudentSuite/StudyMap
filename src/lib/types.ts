@@ -289,6 +289,12 @@ export interface Place {
   lat: number;
   lng: number;
   address?: string;
+  /** Optional: the place's own https:// website or listing page (#356). */
+  website?: string;
+  /** Optional: international format with no spaces, e.g. "+442074127000" (#356). */
+  phone?: string;
+  /** Optional: short free text, e.g. "Mon-Fri 09:00-17:00" (#356). */
+  hours?: string;
   gmaps_link: string;
   added_by: string;
   /** Optional proof a contributor re-checked this place; verified places show a badge. */

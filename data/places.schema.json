@@ -46,6 +46,23 @@
       "type": "string",
       "description": "Optional, short, human-readable"
     },
+    "website": {
+      "type": "string",
+      "pattern": "^https://[^\\s]+$",
+      "maxLength": 300,
+      "description": "Optional. The place's own https:// website or listing page. Must come from the place itself, not a third-party directory."
+    },
+    "phone": {
+      "type": "string",
+      "pattern": "^\\+[1-9][0-9]{6,14}$",
+      "description": "Optional. International format with no spaces, e.g. \"+442074127000\" (E.164). Must come from the place's own site or listing."
+    },
+    "hours": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120,
+      "description": "Optional. Short free text for now, e.g. \"Mon-Fri 09:00-17:00\". Must come from the place's own site or listing."
+    },
     "gmaps_link": {
       "type": "string",
       "pattern": "^https://(maps\\.google\\.com(\\?|/)|maps\\.app\\.goo\\.gl/|www\\.google\\.com/maps/|goo\\.gl/maps/)"
