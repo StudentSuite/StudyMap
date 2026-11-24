@@ -42,6 +42,7 @@ below is also machine-enforced by [`places.schema.json`](places.schema.json), wh
 - `type`: must match the filename exactly
 - `lat`/`lng`: from Google Maps (right-click pin, "What's here?"). Any real-world coordinate works: `places.schema.json` checks latitude is between -90 and 90 and longitude between -180 and 180.
 - `address`: optional, short, human-readable
+- `website`, `phone` and `hours`: all optional, so a record without them stays valid. `website` is the place's own `https://` page. `phone` is international format with no spaces or punctuation, like `+442074127000` (drop the national `0` in `+44 (0)20...`). `hours` is short free text of at most 120 characters, like `Mon-Fri 09:00-17:00`. They must come from the place's own website or listing, not a third-party directory, and you note where and when you checked them in the PR (see [Verification](#verification)).
 - `exam` and `valid_till` (exam centres only): `exam` is one label per exam, so the same exam is never spelled two ways. Use `IELTS`, `TOEFL`, `Goethe-Zertifikat (A1-C2)`, `DELF/DALF` (`TEF/TCF/DELF/DALF` for a centre that also takes the TEF and TCF), `DELF`, `DELE`, `TOMER Turkish Proficiency Certificate` or `SAT`, and add a new label here when you add a new exam. `valid_till` is the date to reconfirm the centre by: 6 months after you last checked it (the PR date for a new record).
 - `gmaps_link`: Google Maps share link (Share -> Copy link)
 - Do not add rating, review count, or verified date to the JSON. Those go in the PR.
@@ -70,6 +71,21 @@ re-checked the place:
   places look exactly as before.
 - `npm run validate` fails on a malformed `verified` block (missing or empty
   `by`, a non-date or impossible `on`, or extra keys).
+
+### Phone, website and opening hours
+
+Opening hours and phone numbers go stale faster than a pin. When a PR adds or
+changes `website`, `phone` or `hours`:
+
+- take each one from the place's **own** website or listing, never from a
+  directory or a map app's aggregated "popular times";
+- put the page you read it from and the date you checked it in the PR
+  description (it stays in the PR, not in the JSON, like the other proof);
+- leave a field out rather than guess: all three are optional;
+- when you re-verify a place (above), re-check these three as well.
+
+`npm run validate` checks the format only (`https://` URL, `+` and digits for
+the phone, short single-line hours). It cannot tell you the value is right.
 
 ## Quality gate (must pass before merge)
 

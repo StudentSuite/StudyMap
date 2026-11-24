@@ -81,6 +81,32 @@ describe("POST /api/submit-place", () => {
     expect(createIssue).not.toHaveBeenCalled();
   });
 
+  it("files a real website sent as placeWebsite, which is not the honeypot (#356)", async () => {
+    const res = await post({
+      ...good,
+      placeWebsite: "https://www.bl.uk/",
+      phone: "+44 20 7412 7000",
+      hours: "Mon-Fri 09:30-20:00",
+      website: "",
+    });
+    expect(res.status).toBe(201);
+    expect(createIssue).toHaveBeenCalledWith(
+      "test-token",
+      expect.objectContaining({
+        website: "https://www.bl.uk/",
+        phone: "+442074127000",
+        hours: "Mon-Fri 09:30-20:00",
+      }),
+    );
+  });
+
+  it("rejects a malformed phone with a message instead of dropping it (#356)", async () => {
+    const res = await post({ ...good, phone: "020 7412 7000" });
+    expect(res.status).toBe(400);
+    expect(await res.json()).toMatchObject({ ok: false, reason: "invalid" });
+    expect(createIssue).not.toHaveBeenCalled();
+  });
+
   it("returns 503 unavailable when no token is configured", async () => {
     delete process.env.PLACE_SUBMISSION_TOKEN;
     const res = await post(good);

@@ -204,3 +204,26 @@ describe("unknownCountryError", () => {
     ).toContain('"ZZ"');
   });
 });
+
+describe("queryPlaces contact fields (#356)", () => {
+  it("returns the optional website, phone and hours unchanged, and nothing extra for places without them", () => {
+    const withContact: Place = {
+      ...place("lon-1", "london", "library", "GB"),
+      website: "https://www.bl.uk/",
+      phone: "+442074127000",
+      hours: "Mon-Fri 09:30-20:00",
+    };
+    const plain = place("lon-2", "london", "library", "GB");
+
+    const result = queryPlaces([withContact, plain], { limit: 100, offset: 0 });
+
+    expect(result.data[0]).toMatchObject({
+      website: "https://www.bl.uk/",
+      phone: "+442074127000",
+      hours: "Mon-Fri 09:30-20:00",
+    });
+    expect(result.data[1]).not.toHaveProperty("website");
+    expect(result.data[1]).not.toHaveProperty("phone");
+    expect(result.data[1]).not.toHaveProperty("hours");
+  });
+});

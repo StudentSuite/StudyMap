@@ -85,7 +85,11 @@ export async function processSubmission({ body, records, resolve = resolveShortL
   const record = buildPlaceRecord({ sub, coords, country, id });
   return {
     status: "ready",
-    message: `Added \`${id}\`. Check the pin location and the quality gate (rating 4.0+, 50+ reviews) before merging.`,
+    message: `Added \`${id}\`. Check the pin location and the quality gate (rating 4.0+, 50+ reviews) before merging.${
+      record.website || record.phone || record.hours
+        ? " The website, phone and hours were typed by the submitter: confirm each against the place's own site or listing, and drop any you cannot."
+        : ""
+    }`,
     record,
     sub,
   };

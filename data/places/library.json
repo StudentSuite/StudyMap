@@ -488,6 +488,8 @@
     "lat": 51.5299119,
     "lng": -0.1276918,
     "address": "96 Euston Road, London NW1 2DB",
+    "website": "https://www.bl.uk/visit",
+    "hours": "Mon-Thu 09:30-20:00, Fri 09:30-18:00, Sat 09:30-17:00, Sun 11:00-17:00",
     "gmaps_link": "https://maps.google.com/?q=51.5299119,-0.1276918",
     "added_by": "yakew7",
     "verified": {
@@ -996,6 +998,8 @@
     "lat": -35.2965236,
     "lng": 149.1295736,
     "address": "Parkes Place, Parkes, Canberra ACT 2600, Australia",
+    "website": "https://www.library.gov.au/visit",
+    "phone": "+61262621111",
     "gmaps_link": "https://maps.google.com/?q=-35.2965236,149.1295736",
     "added_by": "yakew7",
     "verified": {
@@ -1360,6 +1364,9 @@
     "lat": -33.8672,
     "lng": 151.214,
     "address": "Macquarie St, Sydney NSW 2000, Australia",
+    "website": "https://www.sl.nsw.gov.au/visit-us/opening-hours",
+    "phone": "+61292731414",
+    "hours": "Mon-Thu 09:00-20:00, Fri 09:00-17:00, Sat-Sun 10:00-17:00",
     "gmaps_link": "https://maps.google.com/?q=-33.8672,151.2140",
     "added_by": "yakew7"
   },
@@ -5752,6 +5759,9 @@
     "lat": -37.8097696,
     "lng": 144.9655352,
     "address": "328 Swanston St, Melbourne VIC 3000, Australia",
+    "website": "https://www.slv.vic.gov.au/visit",
+    "phone": "+61386647000",
+    "hours": "Daily 10:00-18:00",
     "gmaps_link": "https://maps.google.com/?q=-37.8097696,144.9655352",
     "added_by": "anaydhawan"
   },
@@ -5824,6 +5834,9 @@
     "lat": 38.888674,
     "lng": -77.004636,
     "address": "10 First Street SE, Washington, DC 20540",
+    "website": "https://www.loc.gov/visit/",
+    "phone": "+12027079779",
+    "hours": "Tue-Wed 10:00-17:00, Thu 10:00-20:00, Fri-Sat 10:00-17:00, closed Sun-Mon",
     "gmaps_link": "https://maps.google.com/?q=38.888674,-77.004636",
     "added_by": "propcgamer20-png",
     "verified": {
@@ -5840,6 +5853,8 @@
     "lat": 53.341125,
     "lng": -6.2545,
     "address": "7-8 Kildare Street, Dublin D02 P638",
+    "website": "https://www.nli.ie/contact",
+    "phone": "+35316030200",
     "gmaps_link": "https://maps.google.com/?q=53.341125,-6.2545",
     "added_by": "propcgamer20-png",
     "verified": {
