@@ -11,6 +11,7 @@ const { renderMap } = vi.hoisted(() => ({
       places: Place[];
       focusId: string | null;
       initialViewport: MapViewport | null;
+      onViewportChange?: (viewport: MapViewport) => void;
     }) => null
   >(() => null),
 }));
@@ -413,5 +414,124 @@ describe("PlacesMap details and compare", () => {
 
     expect(screen.getByText("Compare places")).toBeTruthy();
     expect(screen.getByText("2 places side by side.")).toBeTruthy();
+  });
+});
+
+describe("PlacesMap list follows the map (#351)", () => {
+  const LAGOS = { west: 3.0, south: 6.3, east: 3.7, north: 6.8 };
+  const LONDON = { west: -0.6, south: 51.3, east: 0.3, north: 51.7 };
+  const WORLD: Place[] = [
+    place({ id: "ikeja", name: "Ikeja Library", city: "lagos", lat: 6.6, lng: 3.34 }),
+    place({ id: "lekki", name: "Lekki Library", city: "lagos", lat: 6.45, lng: 3.55 }),
+    place({
+      id: "heathrow",
+      name: "Heathrow Library",
+      city: "london",
+      lat: 51.47,
+      lng: -0.45,
+    }),
+  ];
+
+  function renderWorld() {
+    render(
+      <PlacesMap
+        places={WORLD}
+        cities={["lagos", "london"]}
+        defaultCenter={[20, 0]}
+        defaultZoom={2}
+      />,
+    );
+  }
+
+  function moveTo(bounds: typeof LAGOS, zoom: number) {
+    const onViewportChange = renderMap.mock.lastCall?.[0].onViewportChange;
+    act(() => {
+      onViewportChange?.({
+        lat: (bounds.north + bounds.south) / 2,
+        lng: (bounds.east + bounds.west) / 2,
+        zoom,
+        bounds,
+      });
+    });
+  }
+
+  afterEach(() => window.localStorage.clear());
+
+  it("lists every place, as a total, while the map is zoomed out", () => {
+    renderWorld();
+
+    moveTo({ west: -180, south: -80, east: 180, north: 80 }, 2);
+
+    expect(screen.getByText("3 places total")).toBeTruthy();
+    expect(screen.getByText("Heathrow Library")).toBeTruthy();
+    expect(screen.getByText("Ikeja Library")).toBeTruthy();
+  });
+
+  it("lists only the places in view once the map is zoomed in", () => {
+    renderWorld();
+
+    moveTo(LAGOS, 10);
+
+    expect(screen.getByText("2 places in this view")).toBeTruthy();
+    expect(screen.getByText("Ikeja Library")).toBeTruthy();
+    expect(screen.queryByText("Heathrow Library")).toBeNull();
+  });
+
+  it("does not reshuffle the list when the map moves, and offers Search this area instead", () => {
+    renderWorld();
+    moveTo(LAGOS, 10);
+    expect(screen.queryByRole("button", { name: "Search this area" })).toBeNull();
+
+    moveTo(LONDON, 10);
+
+    expect(screen.getByText("Ikeja Library")).toBeTruthy();
+    expect(screen.queryByText("Heathrow Library")).toBeNull();
+    expect(screen.getByRole("button", { name: "Search this area" })).toBeTruthy();
+  });
+
+  it("lists the new area after Search this area is tapped", () => {
+    renderWorld();
+    moveTo(LAGOS, 10);
+    moveTo(LONDON, 10);
+
+    fireEvent.click(screen.getByRole("button", { name: "Search this area" }));
+
+    expect(screen.getByText("1 place in this view")).toBeTruthy();
+    expect(screen.getByText("Heathrow Library")).toBeTruthy();
+    expect(screen.queryByText("Ikeja Library")).toBeNull();
+    expect(screen.queryByRole("button", { name: "Search this area" })).toBeNull();
+  });
+
+  it("goes back to every place when the switch is turned off", () => {
+    renderWorld();
+    moveTo(LAGOS, 10);
+
+    fireEvent.click(screen.getByRole("switch", { name: "Only places in this view" }));
+
+    expect(screen.getByText("3 places total")).toBeTruthy();
+    expect(screen.getByText("Heathrow Library")).toBeTruthy();
+    expect(screen.queryByRole("button", { name: "Search this area" })).toBeNull();
+  });
+
+  it("keeps the filters applied inside the view", () => {
+    renderWorld();
+    moveTo(LAGOS, 10);
+
+    fireEvent.change(searchInputs()[0], { target: { value: "Lekki" } });
+    advance(500);
+
+    expect(screen.getByText("1 place in this view")).toBeTruthy();
+    expect(screen.getByText("Lekki Library")).toBeTruthy();
+    expect(screen.queryByText("Ikeja Library")).toBeNull();
+  });
+
+  it("does not store the bounds in the URL", () => {
+    renderWorld();
+    moveTo(LAGOS, 10);
+    advance(500);
+
+    expect(params().get("lat")).toBe("6.55");
+    expect(window.location.search).not.toContain("west");
+    expect(window.location.search).not.toContain("bounds");
   });
 });

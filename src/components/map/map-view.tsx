@@ -23,6 +23,7 @@ import { densityCells, type HeatCell } from "@/lib/heatmap";
 import { PLACE_TYPE_COLORS } from "@/lib/map";
 import { PinPopup } from "@/components/pins/pin-popup";
 import { GO_TO_PLACE_ZOOM, HOME_ZOOM, fitMaxZoom } from "@/components/map/viewport";
+import type { MapBounds } from "@/components/map/filters";
 
 type ClusterPointProps = { placeId: string; type: PlaceType };
 type ClusterAggProps = Record<PlaceType, number>;
@@ -235,6 +236,8 @@ export interface MapViewport {
   lat: number;
   lng: number;
   zoom: number;
+  /** The visible rectangle. Reported by the map as it moves; absent on a viewport restored from the URL. */
+  bounds?: MapBounds;
 }
 
 interface MapViewProps {
@@ -546,12 +549,21 @@ function ViewportReporter({
   useEffect(() => {
     function report() {
       const center = map.getCenter();
-      const viewport = {
+      const view = map.getBounds();
+      const round = (value: number) => Math.round(value * 1e4) / 1e4;
+      const viewport: MapViewport = {
         lat: Math.round(center.lat * 1e5) / 1e5,
         lng: Math.round(center.lng * 1e5) / 1e5,
         zoom: Math.round(map.getZoom() * 10) / 10,
+        bounds: {
+          west: round(view.getWest()),
+          south: round(view.getSouth()),
+          east: round(view.getEast()),
+          north: round(view.getNorth()),
+        },
       };
-      const key = `${viewport.lat},${viewport.lng},${viewport.zoom}`;
+      const b = viewport.bounds as MapBounds;
+      const key = `${viewport.lat},${viewport.lng},${viewport.zoom},${b.west},${b.south},${b.east},${b.north}`;
       if (key === last.current) return;
       last.current = key;
       onViewportChange(viewport);
