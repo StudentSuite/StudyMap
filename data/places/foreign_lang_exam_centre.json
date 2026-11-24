@@ -1374,5 +1374,61 @@
     "added_by": "propcgamer20-png",
     "exam": "IELTS",
     "valid_till": "2027-04-26"
+  },
+  {
+    "id": "han-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Ngoc Khanh, Hanoi",
+    "type": "foreign_lang_exam_centre",
+    "city": "hanoi",
+    "country": "VN",
+    "lat": 21.0296368,
+    "lng": 105.8177362,
+    "address": "15-17 Ngoc Khanh, Giang Vo Ward, Hanoi, Vietnam",
+    "gmaps_link": "https://maps.google.com/?q=21.0296368,105.8177362",
+    "added_by": "yakew7",
+    "exam": "IELTS",
+    "valid_till": "2027-05-24"
+  },
+  {
+    "id": "han-foreign_lang_exam_centre-02",
+    "name": "IDP IELTS Test Centre, Phan Boi Chau, Hanoi",
+    "type": "foreign_lang_exam_centre",
+    "city": "hanoi",
+    "country": "VN",
+    "lat": 21.0249836,
+    "lng": 105.8429787,
+    "address": "28 Phan Boi Chau, Cua Nam Ward, Hanoi, Vietnam",
+    "gmaps_link": "https://maps.google.com/?q=21.0249836,105.8429787",
+    "added_by": "yakew7",
+    "exam": "IELTS",
+    "valid_till": "2027-05-24"
+  },
+  {
+    "id": "manila-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Makati",
+    "type": "foreign_lang_exam_centre",
+    "city": "manila",
+    "country": "PH",
+    "lat": 14.5557631,
+    "lng": 121.0208774,
+    "address": "21F Tower 2, The Enterprise Centre, Corner Paseo de Roxas and Ayala Avenue, Makati City, Philippines",
+    "gmaps_link": "https://maps.google.com/?q=14.5557631,121.0208774",
+    "added_by": "yakew7",
+    "exam": "IELTS",
+    "valid_till": "2027-05-24"
+  },
+  {
+    "id": "jed-foreign_lang_exam_centre-01",
+    "name": "IDP IELTS Test Centre, Jeddah (Bin Sulaiman Centre)",
+    "type": "foreign_lang_exam_centre",
+    "city": "jeddah",
+    "country": "SA",
+    "lat": 21.5596239,
+    "lng": 39.1419097,
+    "address": "Office 306, 3rd Floor, Bin Sulaiman Centre, Prince Sultan Rd, Al Khalidiyyah, Jeddah 23431, Saudi Arabia",
+    "gmaps_link": "https://maps.google.com/?q=21.5596239,39.1419097",
+    "added_by": "yakew7",
+    "exam": "IELTS",
+    "valid_till": "2027-05-24"
   }
 ]
