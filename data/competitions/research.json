@@ -529,5 +529,47 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-05-28"
+  },
+  {
+    "id": "research-science-institute",
+    "name": "Research Science Institute (RSI)",
+    "organizer": "Center for Excellence in Education",
+    "organizer_url": "https://www.cee.org",
+    "category": "research",
+    "subjects": [
+      "science",
+      "engineering",
+      "mathematics",
+      "research"
+    ],
+    "description": "A free summer program for rising high school seniors with one week of STEM classes, a five-week research internship under a mentor, and a final week of written and oral project presentations. It is held at MIT, with a second site at Stanford added for 2027.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "No cost to attend; participants complete an individual research project with a mentor and present it.",
+    "official_url": "https://www.cee.org/programs/apply-rsi",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "RSI 2027 applications close",
+        "date": "2026-12-11",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cee.org/programs/research-science-institute"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-24"
+    },
+    "valid_till": "2026-12-11"
   }
 ]
