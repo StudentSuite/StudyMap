@@ -7061,10 +7061,10 @@
     "type": "sat_centre",
     "city": "kalba",
     "country": "AE",
-    "lat": 25.051296,
-    "lng": 56.354219,
+    "lat": 25.0734177,
+    "lng": 56.355226,
     "address": "29 Sheik Hamad Bin Saeed Alqassimi",
-    "gmaps_link": "https://maps.google.com/?q=25.051296,56.354219",
+    "gmaps_link": "https://maps.google.com/?q=25.0734177,56.355226",
     "added_by": "shauryagangrade",
     "exam": "SAT",
     "valid_till": "2026-11-07"

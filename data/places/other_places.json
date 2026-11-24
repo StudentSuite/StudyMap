@@ -1296,18 +1296,6 @@
     "added_by": "yakew7"
   },
   {
-    "id": "klb-other_places-02",
-    "name": "American School of Kalba",
-    "type": "other_places",
-    "city": "kalba",
-    "country": "AE",
-    "lat": 25.0990937,
-    "lng": 56.3580697,
-    "address": "Rugaylat Road, Kalba, Sharjah, UAE",
-    "gmaps_link": "https://maps.google.com/?q=25.0990937,56.3580697",
-    "added_by": "yakew7"
-  },
-  {
     "id": "rwy-other_places-01",
     "name": "Higher Colleges of Technology, Ruwais Campus",
     "type": "other_places",
