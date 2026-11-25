@@ -558,5 +558,121 @@
       "on": "2026-11-24"
     },
     "valid_till": "2027-04-24"
+  },
+  {
+    "id": "coolidge-scholarship",
+    "name": "Coolidge Scholarship",
+    "organizer": "Calvin Coolidge Presidential Fund",
+    "organizer_url": "https://coolidgescholars.org/",
+    "category": "scholarship",
+    "subjects": [
+      "academics",
+      "public policy",
+      "history",
+      "essay writing"
+    ],
+    "description": "A merit scholarship for US high school juniors that is awarded before college applications. Applicants submit essays and letters of reference, take a second assessment on Calvin Coolidge, and finalists are interviewed in Vermont.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Full tuition, room and board, required fees and a book stipend for four years of undergraduate study at an accredited US college or university.",
+    "official_url": "https://coolidgescholars.org/apply/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application deadline (5:00 PM Pacific)",
+        "date": "2026-12-01",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://coolidgescholars.org/selection-timeline/"
+      },
+      {
+        "label": "Second Assessment Round notifications (late January)",
+        "date": "2027-01-31",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://coolidgescholars.org/selection-timeline/"
+      },
+      {
+        "label": "All applicants informed of outcome by",
+        "date": "2027-06-01",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://coolidgescholars.org/selection-timeline/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-05-25"
+  },
+  {
+    "id": "taco-bell-live-mas-scholarship",
+    "name": "Live Más Scholarship",
+    "organizer": "Taco Bell Foundation",
+    "organizer_url": "https://tacobellfoundation.org/",
+    "category": "scholarship",
+    "subjects": [
+      "community impact",
+      "personal passion",
+      "essay writing",
+      "video"
+    ],
+    "description": "A scholarship for US residents aged 16 to 26 who are heading to or already in higher education or trade programs. Applicants submit one essay of 250 to 500 words or a video of 30 seconds to 2 minutes about their passion, community and impact, and financial need is considered.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 26,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "College scholarships, with awards of USD 25,000 cited by the foundation, plus mentoring and career resources.",
+    "official_url": "https://tacobellfoundation.org/live-mas-scholarship/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application window opens",
+        "date": "2026-10-13",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://tacobellfoundation.org/live-mas-scholarship/eligibilityfaq/"
+      },
+      {
+        "label": "Application deadline (5:00 PM Pacific)",
+        "date": "2027-01-05",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://tacobellfoundation.org/live-mas-scholarship/"
+      },
+      {
+        "label": "Award notifications (spring 2027)",
+        "date": "2027-04-15",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://tacobellfoundation.org/live-mas-scholarship/eligibilityfaq/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-04-30"
   }
 ]

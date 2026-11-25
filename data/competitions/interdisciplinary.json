@@ -641,5 +641,72 @@
       "on": "2026-09-26"
     },
     "valid_till": "2027-01-15"
+  },
+  {
+    "id": "nss-space-settlement-contest",
+    "name": "NSS Gerard K. O'Neill Space Settlement Contest",
+    "organizer": "National Space Society",
+    "organizer_url": "https://nss.org/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "space settlement",
+      "engineering",
+      "science",
+      "art",
+      "writing"
+    ],
+    "description": "Students design a permanent human settlement in free space and submit a report of up to 50 pages, or an artistic or literary entry. Individuals and teams of up to 12 enter, and entries are grouped by the grade of the oldest team member.",
+    "format": "online",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 15,
+      "currency": "USD"
+    },
+    "prize": "A grand prize for the best entry, a USD 5,000 Herman Rubin Memorial Scholarship for the top entry whose student attends ISDC, and USD 500 awards for the top Artistic Merit and Literary Merit entries.",
+    "official_url": "https://nss.org/nss-space-settlement-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://nss.org/nss-space-settlement-contest/news/"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2027-02-15",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://nss.org/nss-space-settlement-contest/news/"
+      },
+      {
+        "label": "Winners typically announced (end of March)",
+        "date": "2027-03-31",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://nss.org/nss-space-settlement-contest/about-the-contest/"
+      },
+      {
+        "label": "ISDC 2027 conference, Los Angeles (May 27-30)",
+        "date": "2027-05-27",
+        "type": "ceremony",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://nss.org/nss-space-settlement-contest/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-04-15"
   }
 ]
