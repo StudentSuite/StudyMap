@@ -903,5 +903,149 @@
       "on": "2026-09-24"
     },
     "valid_till": "2026-12-20"
+  },
+  {
+    "id": "uk-linguistics-olympiad",
+    "name": "UK Linguistics Olympiad (UKLO)",
+    "organizer": "United Kingdom Linguistics Olympiad",
+    "organizer_url": "https://www.uklo.org/",
+    "category": "humanities",
+    "subjects": [
+      "linguistics",
+      "language analysis"
+    ],
+    "description": "Language-analysis puzzle competition run through schools at four levels, from Breakthrough to Advanced. Top scorers go through further rounds and coaching before being presented for the International Linguistics Olympiad.",
+    "format": "in_person",
+    "age_min": 7,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Gold, Silver and Bronze awards and participation certificates at each level",
+    "official_url": "https://www.uklo.org/tell-me-about-uklo/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 Advanced entry deadline",
+        "date": "2026-11-02",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.uklo.org/2027calendar/"
+      },
+      {
+        "label": "Round 1 (Breakthrough, Foundation, Intermediate) test week begins",
+        "date": "2027-01-11",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.uklo.org/2027calendar/"
+      },
+      {
+        "label": "Round 2 test day",
+        "date": "2027-02-03",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.uklo.org/2027calendar/"
+      },
+      {
+        "label": "Round 1 (Breakthrough, Foundation, Intermediate) thresholds deadline",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.uklo.org/2027calendar/"
+      },
+      {
+        "label": "Round 2 results",
+        "date": "2027-03-01",
+        "type": "results",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.uklo.org/2027calendar/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-03-31"
+  },
+  {
+    "id": "national-spanish-exam",
+    "name": "National Spanish Exam (NSE)",
+    "organizer": "American Association of Teachers of Spanish and Portuguese (AATSP)",
+    "organizer_url": "https://nationalspanishexam.org/",
+    "category": "humanities",
+    "subjects": [
+      "Spanish",
+      "languages"
+    ],
+    "description": "Online Spanish proficiency exam and contest for students in grades 6 to 12, registered by teachers who book seats. Students scoring at or above the 75th percentile receive medals and can apply for scholarships.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 6,
+      "currency": "USD"
+    },
+    "prize": "Gold, silver, bronze and honorable mention medals; eligibility for scholarships",
+    "official_url": "https://nationalspanishexam.org/exams/national-spanish-exam/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Open registration begins",
+        "date": "2026-10-15",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nationalspanishexam.org/exams/national-spanish-exam/registration/"
+      },
+      {
+        "label": "Regular registration closes",
+        "date": "2027-02-01",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nationalspanishexam.org/exams/national-spanish-exam/registration/"
+      },
+      {
+        "label": "Late registration closes",
+        "date": "2027-02-21",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nationalspanishexam.org/exams/national-spanish-exam/registration/"
+      },
+      {
+        "label": "Exam window opens",
+        "date": "2027-02-22",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nationalspanishexam.org/exams/national-spanish-exam/registration/"
+      },
+      {
+        "label": "Exam window closes (hard deadline)",
+        "date": "2027-04-02",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://nationalspanishexam.org/plan-for-the-2026-27-school-year/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-04-30"
   }
 ]
