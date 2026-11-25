@@ -448,5 +448,183 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-08-31"
+  },
+  {
+    "id": "harvard-international-economics-essay-contest",
+    "name": "Harvard International Economics Essay Contest (HIEEC)",
+    "organizer": "Harvard Undergraduate Economics Association",
+    "organizer_url": "https://www.thehuea.org",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "essay writing"
+    ],
+    "description": "High school students anywhere in the world write an essay of up to 1,500 words answering one of the set economics prompts or a question of their own. Entries are judged anonymously in two divisions, grades 9 to 10 and grades 11 to 12. The fee is USD 25 for schools in the United States and USD 35 elsewhere.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 35,
+      "currency": "USD"
+    },
+    "prize": "Winners' essays published online and finalists named, with digital certificates for award recipients",
+    "official_url": "https://www.thehuea.org/competitions/hieec",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Contest opens",
+        "date": "2026-10-26",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.thehuea.org/general-8"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2027-01-05",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.thehuea.org/general-8"
+      },
+      {
+        "label": "Finalists and winners announced (early to mid March)",
+        "date": "2027-03-10",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.thehuea.org/competitions/hieec"
+      }
+    ],
+    "valid_till": "2027-03-31",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "young-economist-of-the-year",
+    "name": "Young Economist of the Year",
+    "organizer": "Royal Economic Society (Discover Economics)",
+    "organizer_url": "https://res.org.uk/",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "essay writing",
+      "public policy"
+    ],
+    "description": "Students in Years 10 to 13 (or equivalent) in the UK answer one of five economics questions as a blog of up to 1,000 words, or as a video, podcast or slide deck, alone or in groups of up to five. Five shortlisted entries present at a final event hosted by KPMG in London.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Five finalists present to a panel at KPMG, with separate Welsh and Scottish awards",
+    "official_url": "https://www.discovereconomics.co.uk/young-economist-of-the-year",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries open (organiser says March)",
+        "date": "2027-03-01",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.discovereconomics.co.uk/young-economist-of-the-year"
+      },
+      {
+        "label": "Entry deadline (2026 deadline was 29 June)",
+        "date": "2027-06-28",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.discovereconomics.co.uk/young-economist-of-the-year-2026"
+      },
+      {
+        "label": "Final event at KPMG (2026 final was October)",
+        "date": "2027-10-15",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.discovereconomics.co.uk/young-economist-of-the-year-2026"
+      }
+    ],
+    "valid_till": "2027-05-25",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "stevens-trading-day",
+    "name": "Stevens Trading Day",
+    "organizer": "Stevens Institute of Technology School of Business",
+    "organizer_url": "https://www.stevens.edu/school-business",
+    "category": "finance",
+    "subjects": [
+      "investing",
+      "stock trading",
+      "finance"
+    ],
+    "description": "High school sophomores and juniors manage a simulated stock portfolio on a trading simulator for a month in February. The top 30 portfolios are invited to a live trading finals on the Stevens campus in Hoboken, New Jersey.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 25,
+      "currency": "USD"
+    },
+    "prize": "Participation certificate for all entrants, finals on the Stevens campus for the top 30 portfolios",
+    "official_url": "https://www.stevens.edu/school-business-high-school-programs-trading-day",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/school-business/school-of-business-contests-for-high-school-students"
+      },
+      {
+        "label": "Registration deadline",
+        "date": "2027-01-22",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/school-business-high-school-programs-trading-day"
+      },
+      {
+        "label": "Virtual trading competition begins",
+        "date": "2027-02-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/school-business-high-school-programs-trading-day"
+      },
+      {
+        "label": "Live trading finals at Stevens",
+        "date": "2027-04-30",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/school-business-high-school-programs-trading-day"
+      }
+    ],
+    "valid_till": "2027-05-01",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
   }
 ]
