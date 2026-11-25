@@ -480,5 +480,160 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-06-01"
+  },
+  {
+    "id": "orwell-youth-prize",
+    "name": "The Orwell Youth Prize",
+    "organizer": "The Orwell Foundation",
+    "organizer_url": "https://www.orwellfoundation.com/",
+    "category": "creative_writing",
+    "subjects": [
+      "creative writing",
+      "journalism",
+      "essay",
+      "poetry"
+    ],
+    "description": "A UK writing prize on a set theme, 'Acts of Courage' for 2027, where entries can be an essay, story, poem, journalism or another form. Open to students in years 7 to 13 at UK schools or following a British curriculum abroad, with written feedback on drafts sent in early.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "GBP 100 and a set of Orwell's works for each category winner, with one winning entry published in The Observer.",
+    "official_url": "https://www.orwellfoundation.com/the-orwell-youth-prize/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Deadline for feedback on a draft",
+        "date": "2027-03-03",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.orwellfoundation.com/the-orwell-youth-prize/about/terms-and-conditions/"
+      },
+      {
+        "label": "Final entry deadline",
+        "date": "2027-04-28",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.orwellfoundation.com/the-orwell-youth-prize/about/terms-and-conditions/"
+      }
+    ],
+    "valid_till": "2027-05-12",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "narrative-high-school-writing-contest",
+    "name": "Narrative High School Writing Contest",
+    "organizer": "Narrative Magazine",
+    "organizer_url": "https://www.narrativemagazine.com/",
+    "category": "creative_writing",
+    "subjects": [
+      "fiction",
+      "poetry",
+      "personal essay"
+    ],
+    "description": "A free contest for high school students in the US and other countries, submitted through a teacher. Entries are stories or essays up to 600 words or poems of 10 to 50 lines, and winners are edited with the magazine's editor before publication.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 500 for first place, USD 250 for second, USD 100 for third and USD 50 per finalist, with publication in Narrative.",
+    "official_url": "https://www.narrativemagazine.com/node/612775/printable/print",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open (January per organiser)",
+        "date": "2027-01-06",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.narrativemagazine.com/node/612775/printable/print"
+      },
+      {
+        "label": "Submission deadline (early February, based on the 2026 timing)",
+        "date": "2027-02-03",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": true,
+        "source_url": "https://www.narrativemagazine.com/submission/hs"
+      },
+      {
+        "label": "Winners and finalists announced (mid April)",
+        "date": "2027-04-15",
+        "type": "results",
+        "timezone": "UTC-7",
+        "estimated": true,
+        "source_url": "https://www.narrativemagazine.com/node/612775/printable/print"
+      }
+    ],
+    "valid_till": "2027-04-30",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "young-romantics-poetry-prize",
+    "name": "Young Romantics Poetry Prize",
+    "organizer": "Keats-Shelley Memorial Association (Keats-Shelley House, Rome)",
+    "organizer_url": "https://keats-shelley.org/prizes/",
+    "category": "creative_writing",
+    "subjects": [
+      "poetry",
+      "romantic literature"
+    ],
+    "description": "A free poetry prize for school-aged writers, with a set theme each year (Oceans for 2026-27). Entrants submit one original poem of up to 30 lines in English, judged anonymously.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "GBP 700 for the winner and GBP 300 for each of two highly commended poems, plus publication in The Keats-Shelley Review",
+    "official_url": "https://keats-shelley.org/prize/young-romantics-poetry-prize/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (10am GMT)",
+        "date": "2027-02-01",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://keats-shelley.org/prize/young-romantics-poetry-prize/"
+      },
+      {
+        "label": "Entry deadline for the paired Young Romantics prizes (10am GMT)",
+        "date": "2027-02-01",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://keats-shelley.org/prize/young-romantics-essay-prize/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-02-01"
   }
 ]
