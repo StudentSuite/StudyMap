@@ -1522,5 +1522,125 @@
       "by": "propcgamer20-png",
       "on": "2026-11-17"
     }
+  },
+  {
+    "id": "tll-airport-01",
+    "name": "Tallinn Airport",
+    "type": "airport",
+    "city": "tallinn",
+    "country": "EE",
+    "lat": 59.41455,
+    "lng": 24.833465,
+    "address": "Tartu mnt 101, 10112 Tallinn",
+    "gmaps_link": "https://maps.google.com/?q=59.41455,24.833465",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "rig-airport-01",
+    "name": "Riga International Airport",
+    "type": "airport",
+    "city": "riga",
+    "country": "LV",
+    "lat": 56.920139,
+    "lng": 23.974383,
+    "address": "Marupe, Marupes novads, LV-1053",
+    "gmaps_link": "https://maps.google.com/?q=56.920139,23.974383",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "vno-airport-01",
+    "name": "Vilnius International Airport",
+    "type": "airport",
+    "city": "vilnius",
+    "country": "LT",
+    "lat": 54.635587,
+    "lng": 25.285472,
+    "address": "Rodunios kl. 10A, Vilnius 02189",
+    "gmaps_link": "https://maps.google.com/?q=54.635587,25.285472",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "evn-airport-01",
+    "name": "Zvartnots International Airport",
+    "type": "airport",
+    "city": "yerevan",
+    "country": "AM",
+    "lat": 40.151963,
+    "lng": 44.399279,
+    "address": "Zvartnots, Yerevan",
+    "gmaps_link": "https://maps.google.com/?q=40.151963,44.399279",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "chc-airport-01",
+    "name": "Christchurch Airport",
+    "type": "airport",
+    "city": "christchurch",
+    "country": "NZ",
+    "lat": -43.48763,
+    "lng": 172.537403,
+    "address": "30 Durey Road, Harewood, Christchurch 8053",
+    "gmaps_link": "https://maps.google.com/?q=-43.48763,172.537403",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kix-airport-01",
+    "name": "Kansai International Airport",
+    "type": "airport",
+    "city": "osaka",
+    "country": "JP",
+    "lat": 34.431999,
+    "lng": 135.236602,
+    "address": "1 Senshukukokita, Izumisano, Osaka 549-0001",
+    "gmaps_link": "https://maps.google.com/?q=34.431999,135.236602",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "amm-airport-01",
+    "name": "Queen Alia International Airport",
+    "type": "airport",
+    "city": "amman",
+    "country": "JO",
+    "lat": 31.721698,
+    "lng": 35.996456,
+    "address": "Desert Highway, Amman",
+    "gmaps_link": "https://maps.google.com/?q=31.721698,35.996456",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "mct-airport-01",
+    "name": "Muscat International Airport",
+    "type": "airport",
+    "city": "muscat",
+    "country": "OM",
+    "lat": 23.600641,
+    "lng": 58.282745,
+    "address": "Seeb, Muscat",
+    "gmaps_link": "https://maps.google.com/?q=23.600641,58.282745",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "kgl-airport-01",
+    "name": "Kigali International Airport",
+    "type": "airport",
+    "city": "kigali",
+    "country": "RW",
+    "lat": -1.963312,
+    "lng": 30.135018,
+    "address": "KN 5 Rd, Kigali",
+    "gmaps_link": "https://maps.google.com/?q=-1.963312,30.135018",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sjo-airport-01",
+    "name": "Juan Santamaria International Airport",
+    "type": "airport",
+    "city": "san_jose_costa_rica",
+    "country": "CR",
+    "lat": 9.998166,
+    "lng": -84.20476,
+    "address": "Rio Segundo, Alajuela Province",
+    "gmaps_link": "https://maps.google.com/?q=9.998166,-84.20476",
+    "added_by": "yakew7"
   }
 ]
