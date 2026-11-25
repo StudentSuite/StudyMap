@@ -813,5 +813,125 @@
       "on": "2026-11-17"
     },
     "valid_till": "2027-07-15"
+  },
+  {
+    "id": "indian-computing-olympiad",
+    "name": "Indian Computing Olympiad (ICO)",
+    "organizer": "Indian Association for Research in Computing Science (IARCS)",
+    "organizer_url": "https://www.iarcs.org.in/",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms"
+    ],
+    "description": "India's national school olympiad in algorithms and programming. Students qualify through the Zonal Informatics Olympiad or the Zonal Computing Olympiad into the Indian National Olympiad in Informatics, and about 30 of those go to the IOI training camp.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 472,
+      "currency": "INR"
+    },
+    "prize": "About 30 INOI students are invited to the IOI Training Camp, from which the four-student India team for the IOI is chosen.",
+    "official_url": "https://www.iarcs.org.in/inoi/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "ZCO-2027 online registration closes (9:00 PM IST)",
+        "date": "2026-12-01",
+        "type": "registration_close",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://www.iarcs.org.in/inoi/current.php"
+      },
+      {
+        "label": "Zonal Computing Olympiad (ZCO-2027), 2:00 to 5:00 PM",
+        "date": "2026-12-12",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://www.iarcs.org.in/inoi/current.php"
+      },
+      {
+        "label": "Indian National Olympiad in Informatics (INOI-2027), 2:00 to 5:00 PM",
+        "date": "2027-02-06",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://www.iarcs.org.in/inoi/current.php"
+      }
+    ],
+    "valid_till": "2027-02-28",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "british-informatics-olympiad",
+    "name": "British Informatics Olympiad (BIO)",
+    "organizer": "British Informatics Olympiad",
+    "organizer_url": "https://www.olympiad.org.uk/",
+    "category": "coding",
+    "subjects": [
+      "competitive programming",
+      "algorithms"
+    ],
+    "description": "A programming competition for pre-university students resident in mainland Britain. The first round is a three-hour computer-based paper taken at school, and the top 15 are invited to a final in Cambridge, from which the British IOI team is chosen.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Top four finalists form the British team for the International Olympiad in Informatics.",
+    "official_url": "https://www.olympiad.org.uk/overview.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "BIO 2027 registration opens (organizers say details follow in November; 2026 registration opened in November)",
+        "date": "2026-11-30",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.olympiad.org.uk/"
+      },
+      {
+        "label": "First-round window opens (2026 window opened 8 December)",
+        "date": "2026-12-07",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.olympiad.org.uk/"
+      },
+      {
+        "label": "First-round window closes (2026 window closed 23 January)",
+        "date": "2027-01-22",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.olympiad.org.uk/"
+      },
+      {
+        "label": "BIO final, Cambridge, in the Easter holidays (2026 final was 3 to 5 April)",
+        "date": "2027-04-02",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.olympiad.org.uk/2026/index.html"
+      }
+    ],
+    "valid_till": "2027-03-31",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
   }
 ]

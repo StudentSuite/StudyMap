@@ -2118,5 +2118,229 @@
       }
     ],
     "valid_till": "2027-08-01"
+  },
+  {
+    "id": "brown-university-math-olympiad",
+    "name": "Brown University Math Olympiad (BrUMO)",
+    "organizer": "Brown University Math Olympiad student organizing team",
+    "organizer_url": "https://www.brumo.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A two-day math tournament held at Brown University for students in grade 12 or below, with an individual round, a team round, a mystery round and a guts round. Teams of four to six apply in a beginner-friendly Division B or a more experienced Division A, and individuals are placed on teams by the organizers.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Awards presented at the ceremony after the Saturday tests.",
+    "official_url": "https://www.brumo.org/tournament-info",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (5:00 PM EST)",
+        "date": "2026-11-30",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Registration closes (11:59 PM EST)",
+        "date": "2027-01-11",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Accepted teams notified",
+        "date": "2027-01-18",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Accepted teams confirm participation and submit waivers (11:59 PM EST)",
+        "date": "2027-02-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "BrUMO 2027 at Brown University (event runs 12 to 13 March, tests on Saturday)",
+        "date": "2027-03-13",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Online contest with the same problems, planned about a week after the in-person event (exact date not yet announced)",
+        "date": "2027-03-20",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.brumo.org/faqs"
+      }
+    ],
+    "valid_till": "2027-03-20",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "ukmt-team-maths-challenge",
+    "name": "UKMT Team Maths Challenge (TMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "teamwork"
+    ],
+    "description": "A day-long team event for pupils in Year 8 and Year 9 (or the equivalent in Scotland and Northern Ireland), held at regional finals hosted by schools and universities across the UK. Each school enters one team of four, and high-scoring teams are invited to a national final.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 14,
+    "participation": "team",
+    "region": "GB",
+    "fee": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "prize": "Prizes for the top teams at the national final.",
+    "official_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens on the UKMT portal",
+        "date": "2026-10-05",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "Registration closes for the earliest regional final listed (three weeks before 3 February)",
+        "date": "2027-01-13",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "First regional final listed (Tranby Croft College, Hull)",
+        "date": "2027-02-03",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/challenge-schools/tmc-tranby-croft-college"
+      },
+      {
+        "label": "Registration closes for the latest regional final listed (three weeks before 24 March)",
+        "date": "2027-03-03",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "Latest regional final listed (Maidstone Grammar School for Girls)",
+        "date": "2027-03-24",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/challenge-schools/tmc-maidstone-grammar-school-for-girls"
+      }
+    ],
+    "valid_till": "2027-03-31",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "math-league-contests",
+    "name": "The Math League Contests",
+    "organizer": "The Math League",
+    "organizer_url": "https://www.mathleague.com/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "School-based math contests for grades 4 to 8, plus Algebra Course 1 and a six-contest high school league that runs from October to March. A teacher registers the school and orders test sets, and students sit the contests in class on set dates.",
+    "format": "in_person",
+    "age_min": 9,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 45,
+      "currency": "USD"
+    },
+    "prize": "Certificates of Merit for top students.",
+    "official_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline for the grades 6 to 8 contests (late registrations accepted)",
+        "date": "2026-12-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/schools/registerforcontests?id=106"
+      },
+      {
+        "label": "Registration deadline for the grade 4, grade 5 and Algebra Course 1 contests (late registrations accepted)",
+        "date": "2027-01-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/schools/registerforcontests?id=106"
+      },
+      {
+        "label": "Grades 6 to 8 contest (or 23 February)",
+        "date": "2027-02-16",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      },
+      {
+        "label": "High school contest 6 of 6",
+        "date": "2027-03-16",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      },
+      {
+        "label": "Grade 4, grade 5 and Algebra Course 1 contests (April 15 or later)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      }
+    ],
+    "valid_till": "2027-04-30",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
   }
 ]
