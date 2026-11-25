@@ -4433,5 +4433,316 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-01-15"
+  },
+  {
+    "id": "european-astro-pi-challenge",
+    "name": "European Astro Pi Challenge",
+    "organizer": "ESA Education and the Raspberry Pi Foundation",
+    "organizer_url": "https://education.esa.int/",
+    "category": "stem",
+    "subjects": [
+      "space science",
+      "programming",
+      "physics",
+      "earth observation"
+    ],
+    "description": "Young people write Python programs that run on Raspberry Pi computers aboard the International Space Station. Mission Zero is a short beginner task, and Mission Space Lab lets teams of 2 to 6 run their own science experiment using the station's sensors or camera.",
+    "format": "online",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Certificates showing when and where each program ran on the ISS, plus the data and images it collected",
+    "official_url": "https://astro-pi.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (Mission Zero and Mission Space Lab)",
+        "date": "2026-09-14",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://astro-pi.org/mission-space-lab"
+      },
+      {
+        "label": "Mission Space Lab program submission deadline (12:00 CET)",
+        "date": "2027-02-22",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://astro-pi.org/mission-space-lab"
+      },
+      {
+        "label": "Mission Zero entry deadline (12:00 CET)",
+        "date": "2027-03-22",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://astro-pi.org/mission-zero"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-03-22"
+  },
+  {
+    "id": "esa-climate-detectives",
+    "name": "ESA Climate Detectives",
+    "organizer": "ESA Education and national ESERO offices",
+    "organizer_url": "https://education.esa.int/",
+    "category": "stem",
+    "subjects": [
+      "earth science",
+      "climate",
+      "earth observation",
+      "environment"
+    ],
+    "description": "A school project in which student teams investigate a local environmental question, using satellite and field data for the Teens level (recommended 14 to 19) or badge-earning activities for the Kids level (recommended 5 to 13). Open to students from ESA Member States, Associate Members and Canada, submitted through a registered teacher or educator.",
+    "format": "online",
+    "age_min": 5,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Certificates for every submitting team; selected Teens teams are invited to the Climate Detectives Summit at ESA ESRIN in Italy",
+    "official_url": "https://climatedetectives.esa.int/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (Kids and Teens)",
+        "date": "2026-09-07",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://education.esa.int/climate_detectives_2026_2027_registration_now_open/"
+      },
+      {
+        "label": "Climate Detectives Teens window closes (check your national timeline)",
+        "date": "2027-04-02",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://climatedetectives.esa.int/"
+      },
+      {
+        "label": "Climate Detectives Kids window closes",
+        "date": "2027-08-06",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://climatedetectives.esa.int/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-04-02"
+  },
+  {
+    "id": "rube-goldberg-machine-contest",
+    "name": "Rube Goldberg Machine Contest",
+    "organizer": "Rube Goldberg Institute",
+    "organizer_url": "https://www.rubegoldberg.org/",
+    "category": "stem",
+    "subjects": [
+      "engineering",
+      "physics",
+      "problem solving"
+    ],
+    "description": "Teams of 1 to 15 build a chain-reaction machine from everyday objects that completes a set annual task, scored on step count and interventions across three runs. Teams compete in elementary, middle school or high school divisions at a regional event, with winners advancing to the World Championship Rube-A-Thon.",
+    "format": "in_person",
+    "age_min": 5,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "prize": "Advancement from regional events to the World Championship Rube-A-Thon",
+    "official_url": "https://www.rubegoldberg.org/rube-goldberg-contests/the-rube-goldberg-machine-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regional events begin worldwide",
+        "date": "2027-01-01",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.rubegoldberg.org/rube-goldberg-contests/"
+      },
+      {
+        "label": "Asia International RGMC, Incheon, South Korea",
+        "date": "2027-02-28",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.rubegoldberg.org/rube-goldberg-contests/"
+      },
+      {
+        "label": "Regional events end",
+        "date": "2027-03-29",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.rubegoldberg.org/rube-goldberg-contests/the-rube-goldberg-machine-contest/"
+      },
+      {
+        "label": "World Championship Rube-A-Thon, Rialto, California",
+        "date": "2027-05-22",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://www.rubegoldberg.org/rube-goldberg-contests/the-rube-goldberg-machine-contest/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-03-29"
+  },
+  {
+    "id": "international-stem-olympiad",
+    "name": "International STEM Olympiad",
+    "organizer": "Main Team Organisation GmbH",
+    "organizer_url": "https://main-team.org/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "mathematics",
+      "technology",
+      "engineering"
+    ],
+    "description": "An online olympiad for school students in grades 1 to 12 with separate Math, Science and Technology and Engineering exams (Technology and Engineering for grades 7 to 11). Students pass a qualification round, then a final round and a Best of the Best round, and qualifiers can attend an on-site Grand Final in Lisbon.",
+    "format": "hybrid",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 20,
+      "currency": "EUR"
+    },
+    "prize": "Medals, certificates and awards; Grand Final in Lisbon for qualifiers",
+    "official_url": "https://stemolympiad.org/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens for the new exam period",
+        "date": "2026-08-16",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://stemolympiad.org/announcements/"
+      },
+      {
+        "label": "Qualification Round, second online option (last date to qualify)",
+        "date": "2027-01-30",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://stemolympiad.org/exams_calendar/"
+      },
+      {
+        "label": "Final Round (online)",
+        "date": "2027-02-13",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://stemolympiad.org/exams_calendar/"
+      },
+      {
+        "label": "Best of the Best (BOB) Round (online)",
+        "date": "2027-03-06",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://stemolympiad.org/exams_calendar/"
+      },
+      {
+        "label": "Grand Final, Lisbon, Portugal (24 to 30 June 2027)",
+        "date": "2027-06-24",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://stemolympiad.org/exams_calendar/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-02-13"
+  },
+  {
+    "id": "sof-international-science-olympiad",
+    "name": "SOF International Science Olympiad (ISO)",
+    "organizer": "Science Olympiad Foundation",
+    "organizer_url": "https://sofworld.org/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "reasoning"
+    ],
+    "description": "A one-hour multiple-choice science olympiad for students in classes 1 to 12, entered through their school. The top 5 percent of each class in Level 1 move on to a Level 2 exam, and ranks are awarded internationally, by zone and by school.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 170,
+      "currency": "INR"
+    },
+    "prize": "Cash awards, medals and certificates for the top three international rank holders; zonal and school-level recognition",
+    "official_url": "https://sofworld.org/iso",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Last day for schools to register for Level 1 Date 3 (30 days before the exam)",
+        "date": "2026-11-03",
+        "type": "registration_close",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://sofworld.org/iso"
+      },
+      {
+        "label": "Level 1 exam, Date 3",
+        "date": "2026-12-03",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://sofworld.org/exam-schedule"
+      },
+      {
+        "label": "Level 2 exam (tentative: 2nd or 3rd Sunday of February, exact date due by December 2026)",
+        "date": "2027-02-14",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://sofworld.org/exam-schedule"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-02-14"
   }
 ]
