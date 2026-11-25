@@ -5893,5 +5893,125 @@
       "by": "propcgamer20-png",
       "on": "2026-11-17"
     }
+  },
+  {
+    "id": "edi-library-01",
+    "name": "National Library of Scotland",
+    "type": "library",
+    "city": "edinburgh",
+    "country": "GB",
+    "lat": 55.948578,
+    "lng": -3.191972,
+    "address": "George IV Bridge, Edinburgh EH1 1EW",
+    "gmaps_link": "https://maps.google.com/?q=55.948578,-3.191972",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bhx-library-01",
+    "name": "Library of Birmingham",
+    "type": "library",
+    "city": "birmingham",
+    "country": "GB",
+    "lat": 52.479416,
+    "lng": -1.908459,
+    "address": "Centenary Square, Birmingham B1 2ND",
+    "gmaps_link": "https://maps.google.com/?q=52.479416,-1.908459",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "aar-library-01",
+    "name": "Dokk1 (Aarhus Main Library)",
+    "type": "library",
+    "city": "aarhus",
+    "country": "DK",
+    "lat": 56.153569,
+    "lng": 10.21435,
+    "address": "Hack Kampmanns Plads 2, 8000 Aarhus",
+    "gmaps_link": "https://maps.google.com/?q=56.153569,10.21435",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "upp-library-01",
+    "name": "Carolina Rediviva (Uppsala University Library)",
+    "type": "library",
+    "city": "uppsala",
+    "country": "SE",
+    "lat": 59.855116,
+    "lng": 17.63143,
+    "address": "Dag Hammarskjolds vag 1, 752 37 Uppsala",
+    "gmaps_link": "https://maps.google.com/?q=59.855116,17.63143",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "sxb-library-01",
+    "name": "Bibliotheque nationale et universitaire de Strasbourg (BNU)",
+    "type": "library",
+    "city": "strasbourg",
+    "country": "FR",
+    "lat": 48.58711,
+    "lng": 7.755869,
+    "address": "6 Place de la Republique, 67000 Strasbourg",
+    "gmaps_link": "https://maps.google.com/?q=48.58711,7.755869",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "gtb-library-01",
+    "name": "Gothenburg City Library (Stadsbiblioteket)",
+    "type": "library",
+    "city": "gothenburg",
+    "country": "SE",
+    "lat": 57.697779,
+    "lng": 11.97938,
+    "address": "Gotaplatsen 3, 412 56 Goteborg",
+    "gmaps_link": "https://maps.google.com/?q=57.697779,11.97938",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "tmp-library-01",
+    "name": "Tampere Main Library Metso",
+    "type": "library",
+    "city": "tampere",
+    "country": "FI",
+    "lat": 61.497953,
+    "lng": 23.751014,
+    "address": "Pirkankatu 2, 33210 Tampere",
+    "gmaps_link": "https://maps.google.com/?q=61.497953,23.751014",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "ork-library-01",
+    "name": "Cork City Library",
+    "type": "library",
+    "city": "cork",
+    "country": "IE",
+    "lat": 51.896783,
+    "lng": -8.475203,
+    "address": "57-61 Grand Parade, Cork",
+    "gmaps_link": "https://maps.google.com/?q=51.896783,-8.475203",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "lej-library-01",
+    "name": "Deutsche Nationalbibliothek, Leipzig",
+    "type": "library",
+    "city": "leipzig",
+    "country": "DE",
+    "lat": 51.32229,
+    "lng": 12.396532,
+    "address": "Deutscher Platz 1, 04103 Leipzig",
+    "gmaps_link": "https://maps.google.com/?q=51.32229,12.396532",
+    "added_by": "yakew7"
+  },
+  {
+    "id": "bgo-library-01",
+    "name": "Bergen Public Library (Bergen offentlige bibliotek)",
+    "type": "library",
+    "city": "bergen",
+    "country": "NO",
+    "lat": 60.389864,
+    "lng": 5.332189,
+    "address": "Stromgaten 6, 5015 Bergen",
+    "gmaps_link": "https://maps.google.com/?q=60.389864,5.332189",
+    "added_by": "yakew7"
   }
 ]
