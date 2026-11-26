@@ -5127,5 +5127,348 @@
       "on": "2026-11-26"
     },
     "valid_till": "2027-05-20"
+  },
+  {
+    "id": "big-bang-competition",
+    "name": "The Big Bang Competition",
+    "organizer": "EngineeringUK",
+    "organizer_url": "https://eukeducation.org.uk/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "engineering",
+      "technology"
+    ],
+    "description": "Students aged 11 to 18 in the UK enter a self-directed science, engineering or technology project, alone or in a team. Entries are judged in junior, intermediate and senior age groups, and finalists take part in video call judging before the awards ceremony at The Big Bang Fair.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "GBP 1,000 and a trophy for each of three overall winners; GBP 500 and a trophy for each category and age group winner",
+    "official_url": "https://eukeducation.org.uk/about-us/our-activities-for-schools/the-big-bang-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (4pm)",
+        "date": "2027-03-12",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://eukeducation.org.uk/about-us/our-activities-for-schools/the-big-bang-competition/enter-the-big-bang-competition/"
+      },
+      {
+        "label": "Finalists announced",
+        "date": "2027-04-20",
+        "type": "results",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://eukeducation.org.uk/about-us/our-activities-for-schools/the-big-bang-competition/enter-the-big-bang-competition/"
+      },
+      {
+        "label": "Finalist video call judging begins",
+        "date": "2027-04-28",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://eukeducation.org.uk/about-us/our-activities-for-schools/the-big-bang-competition/enter-the-big-bang-competition/"
+      },
+      {
+        "label": "Finalist video call judging ends",
+        "date": "2027-05-06",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://eukeducation.org.uk/about-us/our-activities-for-schools/the-big-bang-competition/overview/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-06"
+  },
+  {
+    "id": "beamline-for-schools",
+    "name": "Beamline for Schools",
+    "organizer": "CERN",
+    "organizer_url": "https://home.cern/",
+    "category": "stem",
+    "subjects": [
+      "physics",
+      "particle physics",
+      "experiment design"
+    ],
+    "description": "Teams of secondary school students propose an experiment that could be run on a particle beamline. Winning teams are invited to carry it out at CERN, DESY or ELSA, and every team with a valid proposal gets a participation certificate.",
+    "format": "hybrid",
+    "age_min": 16,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "CHF"
+    },
+    "prize": "A trip to CERN, DESY or ELSA to run the proposed experiment with all costs covered; special prizes for up to 50 shortlisted teams",
+    "official_url": "https://beamlineforschools.cern/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Proposal submission opens (December 2026)",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://beamlineforschools.cern/faqs"
+      },
+      {
+        "label": "Proposal and registration deadline (23:59 Geneva time)",
+        "date": "2027-03-12",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://beamlineforschools.cern/terms-and-conditions"
+      },
+      {
+        "label": "Winning teams notified (June 2027)",
+        "date": "2027-06-15",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://beamlineforschools.cern/faqs"
+      },
+      {
+        "label": "Winning teams run their experiments (late September 2027)",
+        "date": "2027-09-25",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://beamlineforschools.cern/faqs"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "scifest-college",
+    "name": "SciFest@College",
+    "organizer": "SciFest",
+    "organizer_url": "https://www.scifest.ie/",
+    "category": "stem",
+    "subjects": [
+      "life sciences",
+      "physical sciences",
+      "technology"
+    ],
+    "description": "Regional STEM fairs held at Irish colleges, where second-level students present projects in life sciences, physical sciences or technology to judges. Projects can be individual or group entries, and teachers must register before students submit an entry form.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "IE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "A range of awards at each regional venue",
+    "official_url": "https://www.scifest.ie/Page/SciFest@College-Dates-and-Contacts/3773/Index.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry forms available by",
+        "date": "2027-01-31",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.scifest.ie/Page/SciFest@College-Information-for-Students/3625/Index.html"
+      },
+      {
+        "label": "Closing date for entry forms",
+        "date": "2027-03-11",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.scifest.ie/Page/SciFest@College-Entry-Rules-and-Guidelines/3627/Index.html"
+      },
+      {
+        "label": "DCU fair (first listed venue date)",
+        "date": "2027-04-13",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.scifest.ie/Page/SciFest@College-Dates-and-Contacts/3773/Index.html"
+      },
+      {
+        "label": "TU Dublin Grangegorman fair (last listed venue date)",
+        "date": "2027-05-07",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.scifest.ie/Page/SciFest@College-Dates-and-Contacts/3773/Index.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-07"
+  },
+  {
+    "id": "jugend-innovativ",
+    "name": "Jugend Innovativ",
+    "organizer": "Austria Wirtschaftsservice (aws), for Austrian federal ministries",
+    "organizer_url": "https://www.aws.at/",
+    "category": "stem",
+    "subjects": [
+      "engineering",
+      "science",
+      "sustainability",
+      "innovation"
+    ],
+    "description": "Austrian school and apprentice project competition for people aged 15 to 20, with categories including engineering, science and sustainability. Teams hand in a project report, and about 30 projects are invited to the federal final.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 20,
+    "participation": "individual_or_team",
+    "region": "AT",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "EUR 2,500, 2,000 and 1,500 for the top three in each category, EUR 750 recognition prizes, EUR 1,000 audience prize",
+    "official_url": "https://www.jugendinnovativ.at/teilnahme/wettbewerb",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Project registration opens",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.jugendinnovativ.at/teilnahme/wettbewerb"
+      },
+      {
+        "label": "Project registration deadline",
+        "date": "2026-11-30",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.jugendinnovativ.at/teilnahme/wettbewerb"
+      },
+      {
+        "label": "Project report deadline",
+        "date": "2027-01-30",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.jugendinnovativ.at/teilnahme/wettbewerbsablauf"
+      },
+      {
+        "label": "Federal final (3 days between 31 May and 3 June, exact dates to be announced)",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.jugendinnovativ.at/teilnahme/wettbewerbsablauf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "utstallningen-unga-forskare",
+    "name": "Utställningen Unga Forskare",
+    "organizer": "Unga Forskare",
+    "organizer_url": "https://ungaforskare.se/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "technology",
+      "mathematics",
+      "engineering"
+    ],
+    "description": "Swedish national science fair for upper secondary students, with a digital selection round, regional semifinals and a national final. Projects can be experimental, theoretical, programming, field or construction work in science, technology or maths, and it is the Swedish selection route to Regeneron ISEF and EUCYS.",
+    "format": "hybrid",
+    "age_min": 16,
+    "age_max": 22,
+    "participation": "individual_or_team",
+    "region": "SE",
+    "fee": {
+      "amount": 0,
+      "currency": "SEK"
+    },
+    "prize": "Prizes and scholarship trips worth over SEK 500,000 at the final",
+    "official_url": "https://ungaforskare.se/utstallningen/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Digital entry opens",
+        "date": "2027-01-04",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/utstallningen/"
+      },
+      {
+        "label": "Entry deadline (23:59)",
+        "date": "2027-02-04",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/utstallningen/"
+      },
+      {
+        "label": "Semifinals begin (run to 9 March)",
+        "date": "2027-02-24",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/utstallningen/"
+      },
+      {
+        "label": "Final week begins",
+        "date": "2027-04-05",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/om-finalen/"
+      },
+      {
+        "label": "Prize ceremony at Tekniska museet",
+        "date": "2027-04-08",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/om-finalen/"
+      },
+      {
+        "label": "Final week ends",
+        "date": "2027-04-09",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://ungaforskare.se/om-finalen/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-04-09"
   }
 ]
