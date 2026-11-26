@@ -4744,5 +4744,388 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-02-14"
+  },
+  {
+    "id": "indian-national-astronomy-olympiad",
+    "name": "Indian National Astronomy Olympiad (INAO)",
+    "organizer": "Homi Bhabha Centre for Science Education (HBCSE) and Indian Association of Physics Teachers (IAPT)",
+    "organizer_url": "https://www.iapt.org.in/",
+    "category": "stem",
+    "subjects": [
+      "astronomy",
+      "astrophysics"
+    ],
+    "description": "The second stage of India's selection for the International Olympiad on Astronomy and Astrophysics, open to students who clear the National Standard Examination in Astronomy. The top scorers are invited to an Orientation cum Selection Camp at HBCSE Mumbai, which picks the five-student national team.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 300,
+      "currency": "INR"
+    },
+    "prize": "Advancement to the Orientation cum Selection Camp; selection for India's five-student IOAA team.",
+    "official_url": "https://olympiads.hbcse.tifr.res.in/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Standard Examination in Astronomy (NSEA)",
+        "date": "2026-11-21",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Students selected for the Indian National Olympiads listed on the IAPT website (by this date)",
+        "date": "2027-01-15",
+        "type": "results",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Mandatory INO registration on the HBCSE site closes (2026 window was 6 to 17 January)",
+        "date": "2027-01-17",
+        "type": "deadline",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      },
+      {
+        "label": "Indian National Astronomy Olympiad (INAO), 9:00 to 12:00",
+        "date": "2027-01-30",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "INO final results and OCSC lists (published 6 March in 2026)",
+        "date": "2027-03-06",
+        "type": "results",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      },
+      {
+        "label": "Orientation cum Selection Camp, Astronomy (2026 camp ran 27 April to 13 May; 2027 dates due by 15 January)",
+        "date": "2027-04-27",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "indian-national-physics-olympiad",
+    "name": "Indian National Physics Olympiad (INPhO)",
+    "organizer": "Homi Bhabha Centre for Science Education (HBCSE) and Indian Association of Physics Teachers (IAPT)",
+    "organizer_url": "https://www.iapt.org.in/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "The second stage of India's selection for the International Physics Olympiad, open to students who clear the National Standard Examination in Physics. The strongest performers attend an Orientation cum Selection Camp at HBCSE Mumbai, which chooses the five-student national team.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 300,
+      "currency": "INR"
+    },
+    "prize": "Advancement to the Orientation cum Selection Camp; selection for India's five-student IPhO team.",
+    "official_url": "https://olympiads.hbcse.tifr.res.in/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Standard Examination in Physics (NSEP)",
+        "date": "2026-11-22",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Students selected for the Indian National Olympiads listed on the IAPT website (by this date)",
+        "date": "2027-01-15",
+        "type": "results",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "Mandatory INO registration on the HBCSE site closes (2026 window was 6 to 17 January)",
+        "date": "2027-01-17",
+        "type": "deadline",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      },
+      {
+        "label": "Indian National Physics Olympiad (INPhO), 9:00 to 12:00",
+        "date": "2027-01-31",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2026-2027/"
+      },
+      {
+        "label": "INO final results and OCSC lists (published 6 March in 2026)",
+        "date": "2027-03-06",
+        "type": "results",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      },
+      {
+        "label": "Orientation cum Selection Camp, Physics (2026 camp ran 21 April to 4 May; 2027 dates due by 15 January)",
+        "date": "2027-04-21",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/science-olympiad-2025-2026/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "cubes-in-space",
+    "name": "Cubes in Space",
+    "organizer": "iEDU (idoodledu inc.), in collaboration with NASA's Wallops Flight Facility",
+    "organizer_url": "https://www.cubesinspace.com/",
+    "category": "stem",
+    "subjects": [
+      "space science",
+      "physics",
+      "engineering",
+      "experiment design"
+    ],
+    "description": "Students design a small science experiment that fits in a 4 cm cube and apply for it to fly on a NASA sounding rocket or research balloon. Selected experiments launch on a mission, and applying costs nothing. The rocket mission is limited to US citizens and permanent residents, while the balloon mission is open to international students.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Selected experiments fly on a NASA sounding rocket or research balloon mission; a flight administration fee of USD 80 applies to a selected non-powered experiment.",
+    "official_url": "https://www.cubesinspace.com/faq.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration and enrollment open",
+        "date": "2026-11-09",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/timeline.html"
+      },
+      {
+        "label": "Registration and enrollment close",
+        "date": "2027-02-22",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/images/resources/cis2027schedule.pdf"
+      },
+      {
+        "label": "Intent to Fly form submission deadline",
+        "date": "2027-03-12",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/images/resources/cis2027schedule.pdf"
+      },
+      {
+        "label": "Application for Spaceflight submission deadline",
+        "date": "2027-04-12",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/images/resources/cis2027schedule.pdf"
+      },
+      {
+        "label": "Revised Application for Spaceflight submission deadline",
+        "date": "2027-05-03",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/images/resources/cis2027schedule.pdf"
+      },
+      {
+        "label": "Experiment selection notification",
+        "date": "2027-05-10",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/images/resources/cis2027schedule.pdf"
+      },
+      {
+        "label": "SR-13 launch on NASA's RockSat mission",
+        "date": "2027-06-24",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.cubesinspace.com/timeline.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "italian-physics-olympiad",
+    "name": "Italian Physics Olympiad (Campionati Italiani di Fisica)",
+    "organizer": "Associazione per l'Insegnamento della Fisica (AIF), on behalf of the Italian Ministry of Education",
+    "organizer_url": "https://www.aif.it/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "A three-stage physics competition for upper secondary school students in Italy and Italian schools abroad, running from a school round through local rounds to a national final. The best national finalists are chosen for Italy's teams at the European Physics Olympiad and the International Physics Olympiad.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IT",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Selection for Italy's teams at the European Physics Olympiad and the International Physics Olympiad.",
+    "official_url": "https://www.olifis.it/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Schools' registration deadline",
+        "date": "2026-12-06",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.olifis.it/index.php/informazioni/calendario-olifis"
+      },
+      {
+        "label": "School round (Gara di Istituto)",
+        "date": "2026-12-16",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.olifis.it/index.php/iscrizione/346-xli-campionati-di-fisica-2027"
+      },
+      {
+        "label": "Local round (Gara Locale)",
+        "date": "2027-02-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.olifis.it/index.php/informazioni/calendario-olifis"
+      },
+      {
+        "label": "National final, Senigallia (7 to 10 April)",
+        "date": "2027-04-07",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.olifis.it/index.php/iscrizione/346-xli-campionati-di-fisica-2027"
+      },
+      {
+        "label": "Selection test for the EuPhO and IPhO teams (end of May)",
+        "date": "2027-05-28",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.olifis.it/index.php/iscrizione/346-xli-campionati-di-fisica-2027"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "bpho-junior-physics-challenges",
+    "name": "BPhO Junior Physics Challenge and Year 7/8 Physics Challenge",
+    "organizer": "British Physics Olympiad (BPhO)",
+    "organizer_url": "https://www.bpho.org.uk/",
+    "category": "stem",
+    "subjects": [
+      "physics"
+    ],
+    "description": "Two online multiple-choice physics quizzes sat in school under teacher supervision: the Junior Physics Challenge for Year 10 and the Year 7/8 Physics Challenge. Each has two 25-minute papers of 30 questions covering topics such as dynamics, electricity, optics, heat and waves, and results come back to schools with award boundaries.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "prize": "Certificates.",
+    "official_url": "https://www.bpho.org.uk/bpho/JPC.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior Physics Challenge window opens",
+        "date": "2027-04-23",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/Competitions/"
+      },
+      {
+        "label": "Year 7/8 Physics Challenge window opens",
+        "date": "2027-04-27",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/Y7-8challenge.html"
+      },
+      {
+        "label": "Junior Physics Challenge window closes",
+        "date": "2027-05-14",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/JPC.html"
+      },
+      {
+        "label": "Year 7/8 Physics Challenge window closes",
+        "date": "2027-05-18",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/Y7-8challenge.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
   }
 ]
