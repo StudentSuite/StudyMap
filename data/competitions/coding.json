@@ -933,5 +933,162 @@
       "by": "yakew7",
       "on": "2026-11-25"
     }
+  },
+  {
+    "id": "g4c-student-challenge",
+    "name": "Games for Change Student Challenge",
+    "organizer": "Games for Change",
+    "organizer_url": "https://www.gamesforchange.org/",
+    "category": "coding",
+    "subjects": [
+      "game design",
+      "coding",
+      "social impact"
+    ],
+    "description": "An international game design competition where students make a digital game, tabletop game, character design or game trailer around one of two yearly social impact themes. Entries are judged in age divisions, and each year's Game of the Year earns a scholarship.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 25,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Game of the Year winners share a USD 10,000 scholarship; category winners receive games, technology and mentorships.",
+    "official_url": "https://learn.gamesforchange.org/student-challenge/competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Competition opens for submissions",
+        "date": "2026-11-09",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://cdn.prod.website-files.com/6880b7bfda6519f232c26284/6ae21361edf142c2a6ff1df6_e2560f475c026aabb1c2e36d738a59aa_2026-2027%20G4C%20Student%20Challenge%20Competition%20Handbook%20v3%20%281%29.pdf"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2027-03-29",
+        "type": "deadline",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://learn.gamesforchange.org/student-challenge/competition"
+      },
+      {
+        "label": "Finalists and winners notified (mid-May)",
+        "date": "2027-05-15",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://cdn.prod.website-files.com/6880b7bfda6519f232c26284/6ae21361edf142c2a6ff1df6_e2560f475c026aabb1c2e36d738a59aa_2026-2027%20G4C%20Student%20Challenge%20Competition%20Handbook%20v3%20%281%29.pdf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "coolest-projects-online",
+    "name": "Coolest Projects Online Showcase",
+    "organizer": "Raspberry Pi Foundation",
+    "organizer_url": "https://coolestprojects.org/",
+    "category": "coding",
+    "subjects": [
+      "coding",
+      "digital making",
+      "scratch",
+      "hardware"
+    ],
+    "description": "A worldwide online showcase where young people enter digital projects made with code, such as games, apps, websites, hardware builds and AI projects. Every entry gets a certificate and personalised feedback from judges, and a livestream highlights selected projects.",
+    "format": "online",
+    "age_min": 0,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Certificate and personalised feedback for every entry, with favourites highlighted in a livestream by guest judges.",
+    "official_url": "https://online.coolestprojects.org/cp-online-2027",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries open",
+        "date": "2027-01-13",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://online.coolestprojects.org/cp-online-2027"
+      },
+      {
+        "label": "Online showcase livestream",
+        "date": "2027-06-23",
+        "type": "ceremony",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://online.coolestprojects.org/take-part"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "constructor-challenge",
+    "name": "Constructor Challenge",
+    "organizer": "Constructor University",
+    "organizer_url": "https://constructor.university/",
+    "category": "coding",
+    "subjects": [
+      "programming",
+      "mathematics",
+      "natural sciences",
+      "economics"
+    ],
+    "description": "A free online contest for high school students with problems in computational sciences and engineering, natural sciences, and business and decision sciences. Entrants can take one or more categories and solve the problems at any time during the open window.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Certificates and special offers from Constructor University and Constructor Talent School",
+    "official_url": "https://constructor.university/lp/constructor-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Challenge opens (estimated from the 2026 spring edition)",
+        "date": "2027-04-15",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://constructor.university/talent-school"
+      },
+      {
+        "label": "Challenge closes, 23:59 CEST (estimated from the 2026 spring edition)",
+        "date": "2027-05-15",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://constructor.university/lp/constructor-challenge"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-20"
   }
 ]

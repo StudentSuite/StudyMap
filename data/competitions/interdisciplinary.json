@@ -708,5 +708,121 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-04-15"
+  },
+  {
+    "id": "esa-cansat",
+    "name": "ESA CanSat",
+    "organizer": "European Space Agency (ESA Education) with national ESERO offices",
+    "organizer_url": "https://education.esa.int/",
+    "category": "interdisciplinary",
+    "subjects": [
+      "space engineering",
+      "electronics",
+      "programming",
+      "physics"
+    ],
+    "description": "Teams of secondary school students design, build and launch a satellite that fits inside a soft drink can, measuring temperature and pressure on descent plus a mission of their own choice. Teams enter through a national competition, and national winners are invited to an ESA event in the Netherlands.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "National winners are invited to the CanSat Space Engineering Summit at ESA ESTEC, with accommodation, meals and up to EUR 300 per person in travel costs paid by ESA.",
+    "official_url": "https://cansat.esa.int/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline, CanSat France (deadlines vary by country)",
+        "date": "2026-12-31",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://cansat.esa.int/national-competitions/"
+      },
+      {
+        "label": "CanSat Space Engineering Summit begins at ESA ESTEC (national winners)",
+        "date": "2027-06-30",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://cansat.esa.int/about-cansat/european-event/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "robofest",
+    "name": "Robofest",
+    "organizer": "Lawrence Technological University",
+    "organizer_url": "https://robofest.net",
+    "category": "interdisciplinary",
+    "subjects": [
+      "robotics",
+      "artificial intelligence",
+      "computer vision",
+      "programming"
+    ],
+    "description": "Student teams build and program autonomous robots for a game or a project exhibition, using any robot kit and programming language. Qualifier events and video qualifiers lead to a US Championship in Michigan and a World Championship in Seoul.",
+    "format": "hybrid",
+    "age_min": 6,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 110,
+      "currency": "USD"
+    },
+    "prize": "Qualification for the US Championship or the World Championship, plus category awards",
+    "official_url": "https://robofest.net/index.php/current-competitions/main-page",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team pre-registration opens",
+        "date": "2026-09-07",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://robofest.net/index.php/current-competitions/main-page"
+      },
+      {
+        "label": "Video qualifier entries due (US and international)",
+        "date": "2027-04-12",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://robofest.net/index.php/current-competitions/main-page"
+      },
+      {
+        "label": "US Championship at Lawrence Technological University",
+        "date": "2027-05-07",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://robofest.net/images/2627/General2027_V2.pdf"
+      },
+      {
+        "label": "World Championship at KwangWoon University, Seoul",
+        "date": "2027-05-28",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://robofest.net/index.php/current-competitions/main-page"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]
