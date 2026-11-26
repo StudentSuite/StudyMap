@@ -694,5 +694,118 @@
       "by": "yakew7",
       "on": "2026-11-25"
     }
+  },
+  {
+    "id": "student-enterprise-programme-ireland",
+    "name": "Student Enterprise Programme (Ireland)",
+    "organizer": "Network of Local Enterprise Offices of Ireland",
+    "organizer_url": "https://www.studententerprise.ie/",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "business planning"
+    ],
+    "description": "Irish secondary school students set up and run a real mini business, write a business report and exhibit at a county final. One team per category from each county goes on to the National Final, where three judges interview each team at its display stand.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "IE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Overall winner, 2nd and 3rd place in each of the Junior, Intermediate and Senior categories, plus innovation, sustainability, sales and marketing, intellectual property and display stand awards.",
+    "official_url": "https://www.studententerprise.ie/what-is-sep/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "County finals (estimated start)",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.studententerprise.ie/about/timetable/"
+      },
+      {
+        "label": "Deadline for National Final entries",
+        "date": "2027-04-08",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.studententerprise.ie/"
+      },
+      {
+        "label": "National Final",
+        "date": "2027-05-06",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.studententerprise.ie/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-10"
+  },
+  {
+    "id": "ivey-high-school-case-competitions",
+    "name": "Ivey High School Case Competitions",
+    "organizer": "Ivey Business School, Western University",
+    "organizer_url": "https://www.ivey.uwo.ca/",
+    "category": "business",
+    "subjects": [
+      "business case",
+      "strategy",
+      "presentation"
+    ],
+    "description": "One-day spring events where high school students are placed on mixed-school teams, solve a real-world business case and present to a panel of judges. No prior business experience is needed, and the 2027 events are held in four Canadian cities.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "team",
+    "region": "CA",
+    "fee": {
+      "amount": 60,
+      "currency": "CAD"
+    },
+    "prize": "Prizes for winning teams; amounts are not published.",
+    "official_url": "https://www.ivey.uwo.ca/pre-ivey-experiences/high-school-case-competitions/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Montreal and Vancouver events",
+        "date": "2027-04-10",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.ivey.uwo.ca/high-school-case-competitions/"
+      },
+      {
+        "label": "Calgary event",
+        "date": "2027-04-24",
+        "type": "round",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.ivey.uwo.ca/high-school-case-competitions/"
+      },
+      {
+        "label": "London, Ontario event",
+        "date": "2027-05-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.ivey.uwo.ca/high-school-case-competitions/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-04"
   }
 ]

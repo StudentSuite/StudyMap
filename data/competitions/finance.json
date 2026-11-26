@@ -626,5 +626,175 @@
       "by": "yakew7",
       "on": "2026-11-25"
     }
+  },
+  {
+    "id": "yis-global-stock-pitch-competition",
+    "name": "YIS Global Stock Pitch Competition",
+    "organizer": "Young Investors Society",
+    "organizer_url": "https://yis.org/",
+    "category": "finance",
+    "subjects": [
+      "investing",
+      "equity research",
+      "finance"
+    ],
+    "description": "High school students research a publicly traded company and submit a written report, slides and a video with a buy or sell recommendation, alone or in pairs. The top 100 teams are invited to present in person at the Global Youth Investment Summit in New York City.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 30,
+      "currency": "USD"
+    },
+    "prize": "Top 100 teams are invited to the Global Youth Investment Summit; no cash prize is listed.",
+    "official_url": "https://yis.org/programs/stock-pitch-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-12-15",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://yis.org/programs/stock-pitch-competition/"
+      },
+      {
+        "label": "Report, slides and video due",
+        "date": "2027-02-19",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://yis.org/programs/stock-pitch-competition/"
+      },
+      {
+        "label": "Global Youth Investment Summit begins (New York City)",
+        "date": "2027-05-25",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://yis.org/programs/global-youth-investment-summit/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "fcdo-next-generation-economics-competition",
+    "name": "FCDO Next Generation Economics Competition",
+    "organizer": "Foreign, Commonwealth and Development Office, with the LSE Hub for Equal Representation",
+    "organizer_url": "https://www.gov.uk/government/organisations/foreign-commonwealth-development-office",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "policy",
+      "writing"
+    ],
+    "description": "UK secondary school students write a letter of up to 1,000 words answering one of four questions on major economic challenges. Entries are marked anonymously in separate Under 16 and Under 18 categories, and no economics background is needed.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "2026 prizes: GBP 350 for each category winner, GBP 200 for runners up and GBP 100 for shortlisted entrants; top 8 offered a funded London visit (UK-based entrants only).",
+    "official_url": "https://www.gov.uk/guidance/fcdo-next-generation-economics-competition",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (estimated from the 2026 close on 28 June)",
+        "date": "2027-06-28",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.gov.uk/guidance/fcdo-next-generation-economics-competition"
+      },
+      {
+        "label": "Results announced (estimated)",
+        "date": "2027-09-30",
+        "type": "results",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.gov.uk/government/publications/fcdo-next-generation-economics-competition-2025-winner-announced"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "world-economics-cup",
+    "name": "World Economics Cup",
+    "organizer": "EAE International",
+    "organizer_url": "https://www.worldeconcup.org/",
+    "category": "finance",
+    "subjects": [
+      "economics",
+      "team competition"
+    ],
+    "description": "An online economics competition for high school students. Students qualify by earning 470 points on a self-paced bundle, then teams of six sit individual exams and submit a team case-study video in a single World Final.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Awards at world and continental level; amounts are not published.",
+    "official_url": "https://www.worldeconcup.org/current_wec.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School and student registration closes",
+        "date": "2027-05-01",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.worldeconcup.org/current_wec.html"
+      },
+      {
+        "label": "Qualification deadline",
+        "date": "2027-06-15",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.worldeconcup.org/qualification.html"
+      },
+      {
+        "label": "World Final begins (Fundamentals exam)",
+        "date": "2027-07-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.worldeconcup.org/current_wec.html"
+      },
+      {
+        "label": "Team presentation video due",
+        "date": "2027-07-25",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.worldeconcup.org/current_wec.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]
