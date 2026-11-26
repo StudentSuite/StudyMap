@@ -782,5 +782,136 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-07-15"
+  },
+  {
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "id": "goldsmiths-young-anthropologist",
+    "name": "Goldsmiths Young Anthropologist Competition",
+    "organizer": "Goldsmiths, University of London",
+    "organizer_url": "https://www.gold.ac.uk/",
+    "category": "essay_writing",
+    "subjects": [
+      "anthropology",
+      "culture and identity",
+      "essay writing"
+    ],
+    "description": "A 1,000-word essay competition from the Goldsmiths anthropology department for 16 to 18 year olds in UK schools and colleges. The essay question is sent to entrants after they register.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "GBP 500 for the winner, GBP 100 for the runner-up, plus small prizes for shortlisted entries",
+    "official_url": "https://www.gold.ac.uk/schools-and-colleges/young-writer-competitions/young-anthropologist/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close (11.59pm BST)",
+        "date": "2027-04-16",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.gold.ac.uk/schools-and-colleges/young-writer-competitions/terms/"
+      }
+    ],
+    "valid_till": "2027-05-14"
+  },
+  {
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "id": "zoryan-institute-student-essay-contest",
+    "name": "Zoryan Institute Student Essay Contest (Levonty Kazarian Award)",
+    "organizer": "Zoryan Institute",
+    "organizer_url": "https://zoryaninstitute.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "genocide studies",
+      "human rights",
+      "history"
+    ],
+    "description": "An essay contest for high school students on genocide or human rights, with a topic of the entrant's choice. Essays are 750 to 1,000 words in English and the winner is published in Genocide Studies International.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "CAD 1,000 Levonty Kazarian Award for Genocide Studies and publication in Genocide Studies International",
+    "official_url": "https://zoryaninstitute.org/high-school-genocide-education-resources/student-essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission deadline",
+        "date": "2027-04-12",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://docs.google.com/forms/d/e/1FAIpQLSehRMX35Lsi9KjsMcGSeysiuWzEFJOULHzYrqT0ulNcpSL70w/viewform"
+      }
+    ],
+    "valid_till": "2027-05-26"
+  },
+  {
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "id": "sealoearth-global-essay-contest",
+    "name": "SEALOEarth Global Essay Contest",
+    "organizer": "SEALOEarth",
+    "organizer_url": "https://www.sealoearth.org/",
+    "category": "essay_writing",
+    "subjects": [
+      "environment",
+      "sustainability",
+      "essay writing"
+    ],
+    "description": "A free online essay contest on an environmental prompt, open to writers worldwide in four age divisions. The 2027 prompt asks whether technology can protect the planet without damaging it, and winners are announced at an Earth Day event.",
+    "format": "online",
+    "age_min": 9,
+    "age_max": 25,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 200 for first prize and USD 100 for second prize in each age division",
+    "official_url": "https://www.sealoearth.org/essaycontest.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Essay submission deadline",
+        "date": "2027-03-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.sealoearth.org/essaycontest.html"
+      },
+      {
+        "label": "Earth Day Celebration and awards ceremony",
+        "date": "2027-04-24",
+        "type": "ceremony",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.sealoearth.org/earthdaycelebration.html"
+      }
+    ],
+    "valid_till": "2027-05-26"
   }
 ]

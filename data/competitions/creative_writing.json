@@ -635,5 +635,86 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-02-01"
+  },
+  {
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "id": "goldsmiths-young-writer",
+    "name": "Goldsmiths Young Writer Competition",
+    "organizer": "Goldsmiths, University of London",
+    "organizer_url": "https://www.gold.ac.uk/",
+    "category": "creative_writing",
+    "subjects": [
+      "short fiction",
+      "creative writing"
+    ],
+    "description": "A 1,000-word short story competition run by Goldsmiths for 16 to 18 year olds studying in the UK. Registered entrants are sent a title, a line of dialogue and an object that the story must include.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "GBP 500 for the winner, GBP 100 for the runner-up, plus small prizes for shortlisted entries",
+    "official_url": "https://www.gold.ac.uk/schools-and-colleges/young-writer-competitions/young-writer/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close (11.59pm BST)",
+        "date": "2027-04-16",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.gold.ac.uk/schools-and-colleges/young-writer-competitions/terms/"
+      }
+    ],
+    "valid_till": "2027-05-14"
+  },
+  {
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "id": "royal-court-young-playwrights-award",
+    "name": "Royal Court Young Playwrights Award",
+    "organizer": "Royal Court Theatre",
+    "organizer_url": "https://royalcourttheatre.com/",
+    "category": "creative_writing",
+    "subjects": [
+      "playwriting",
+      "drama",
+      "creative writing"
+    ],
+    "description": "A free playwriting competition for teenagers based in the UK. Entrants send an original play of 1,000 to 5,000 words and every entry gets written feedback, with winning plays given staged readings at the Royal Court in London.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Staged readings of winning plays at the Royal Court Theatre, publication by Nick Hern Books, plus certificates and books for shortlisted writers",
+    "official_url": "https://royalcourttheatre.com/write-and-create/schools-young-people/young-playwrights-award/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (12pm midday)",
+        "date": "2027-04-01",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://royalcourttheatre.com/write-and-create/schools-young-people/young-playwrights-award/faqs/"
+      }
+    ],
+    "valid_till": "2027-05-26"
   }
 ]
