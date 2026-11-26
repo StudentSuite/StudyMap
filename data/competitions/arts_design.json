@@ -704,5 +704,73 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-04-30"
+  },
+  {
+    "id": "icefa-lidice",
+    "name": "International Children's Exhibition of Fine Arts Lidice (ICEFA Lidice)",
+    "organizer": "Lidice Memorial",
+    "organizer_url": "https://www.lidice-memorial.cz/en",
+    "category": "arts_design",
+    "subjects": [
+      "visual art",
+      "drawing and painting",
+      "printmaking",
+      "photography",
+      "animation",
+      "sculpture"
+    ],
+    "description": "An annual art competition and exhibition begun in 1967 in memory of the child victims of Lidice. Children aged 4 to 16 send in drawings, paintings, prints, photographs, 3D objects or short films on a yearly theme, and the 2027 theme is Holidays.",
+    "format": "hybrid",
+    "age_min": 4,
+    "age_max": 16,
+    "participation": "individual_or_team",
+    "region": "CZ",
+    "fee": {
+      "amount": 0,
+      "currency": "CZK"
+    },
+    "prize": "Rose of Lidice medals, school medals and honourable mentions, with winning works shown at the Lidice Gallery",
+    "official_url": "https://www.mdvv-lidice.cz/en/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry deadline (artworks must arrive in Lidice)",
+        "date": "2027-02-12",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.mdvv-lidice.cz/en/invitation/"
+      },
+      {
+        "label": "Expert panel judging sessions begin (11 to 13 and 18 to 20 March)",
+        "date": "2027-03-11",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.mdvv-lidice.cz/en/invitation/"
+      },
+      {
+        "label": "Results published (early May)",
+        "date": "2027-05-01",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.mdvv-lidice.cz/en/invitation/"
+      },
+      {
+        "label": "Ceremonial opening at the Lidice Gallery",
+        "date": "2027-05-27",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.mdvv-lidice.cz/en/invitation/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]

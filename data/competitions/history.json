@@ -605,5 +605,62 @@
     ],
     "added_by": "yakew7",
     "valid_till": "2027-05-25"
+  },
+  {
+    "id": "geschichtswettbewerb-des-bundespraesidenten",
+    "name": "Federal President's History Competition (Geschichtswettbewerb des Bundespräsidenten)",
+    "organizer": "Körber-Stiftung",
+    "organizer_url": "https://www.koerber-stiftung.de/",
+    "category": "history",
+    "subjects": [
+      "history",
+      "historical research",
+      "local history"
+    ],
+    "description": "A research competition in which children and young people investigate a history topic and submit their findings as a written paper, film, podcast, website, exhibition or other format. The 2026/27 round asks about the history of food and drink, and entries must be written in German.",
+    "format": "online",
+    "age_min": 6,
+    "age_max": 21,
+    "participation": "individual_or_team",
+    "region": "DE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "More than 550 cash prizes: state prizes of EUR 200 to 1,000 and federal prizes of EUR 750 to 2,500",
+    "official_url": "https://www.geschichtswettbewerb.de",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submission database opens",
+        "date": "2026-09-01",
+        "type": "registration_open",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://koerber-stiftung.de/projekte/geschichtswettbewerb/mitmachen/beitrag-einreichen/"
+      },
+      {
+        "label": "Submission deadline (23:59)",
+        "date": "2027-02-28",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://koerber-stiftung.de/projekte/geschichtswettbewerb/faq/"
+      },
+      {
+        "label": "Participants informed of results (mid-June)",
+        "date": "2027-06-15",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://koerber-stiftung.de/projekte/geschichtswettbewerb/faq/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]

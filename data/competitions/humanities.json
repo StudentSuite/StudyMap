@@ -1047,5 +1047,143 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-04-30"
+  },
+  {
+    "id": "north-american-computational-linguistics-open",
+    "name": "North American Computational Linguistics Open (NACLO)",
+    "organizer": "North American Computational Linguistics Open Competition (NACLO)",
+    "organizer_url": "https://www.naclo.org/",
+    "category": "humanities",
+    "subjects": [
+      "linguistics",
+      "computational linguistics",
+      "logic"
+    ],
+    "description": "A contest where middle and high school students solve linguistics puzzles built from real languages, with no prior knowledge of linguistics or other languages needed. It is held in person at registered school and university sites across the US and Canada, with an Open Round followed by an Invitational Round for top scorers.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Top scorers can be selected for the US or Canada team at the International Linguistics Olympiad",
+    "official_url": "https://www.naclo.org/about.php",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Student registration opens",
+        "date": "2026-10-12",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.naclo.org/"
+      },
+      {
+        "label": "Open Round",
+        "date": "2027-01-28",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.naclo.org/2027/2027NACLOStudentHandbook.pdf"
+      },
+      {
+        "label": "Invitational Round",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.naclo.org/2027/2027NACLOStudentHandbook.pdf"
+      },
+      {
+        "label": "Results announced (handbook says 5 to 7 weeks after a round)",
+        "date": "2027-04-29",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.naclo.org/2027/2027NACLOStudentHandbook.pdf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-13"
+  },
+  {
+    "id": "ozclo",
+    "name": "Australian Computational and Linguistics Olympiad (OzCLO)",
+    "organizer": "OzCLO, run by volunteer linguists and students at Australian universities",
+    "organizer_url": "https://ozclo.org.au/",
+    "category": "humanities",
+    "subjects": [
+      "linguistics",
+      "computational linguistics",
+      "problem solving"
+    ],
+    "description": "A school-based language puzzle competition for Year 7 to 12 students working in teams of four on problems drawn from real languages. Round 1 is held online at school, and the top teams in each state or territory play an in-person national round, with the top two teams going on to the International Linguistics Olympiad.",
+    "format": "hybrid",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "team",
+    "region": "AU",
+    "fee": {
+      "amount": 40,
+      "currency": "AUD"
+    },
+    "prize": "Top two teams represent Australia at the International Linguistics Olympiad in Bangkok",
+    "official_url": "https://ozclo.org.au/current-competition/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2027-01-20",
+        "type": "registration_open",
+        "timezone": "UTC+11",
+        "estimated": false,
+        "source_url": "https://ozclo.org.au/"
+      },
+      {
+        "label": "Registration closes",
+        "date": "2027-02-19",
+        "type": "registration_close",
+        "timezone": "UTC+11",
+        "estimated": false,
+        "source_url": "https://ozclo.org.au/wp-content/uploads/2026/11/OzCLO-poster-2027-1.pdf"
+      },
+      {
+        "label": "Round 1 (online, at school)",
+        "date": "2027-02-24",
+        "type": "round",
+        "timezone": "UTC+11",
+        "estimated": false,
+        "source_url": "https://ozclo.org.au/wp-content/uploads/2026/11/OzCLO-poster-2027-1.pdf"
+      },
+      {
+        "label": "Round 2 (in person)",
+        "date": "2027-03-17",
+        "type": "round",
+        "timezone": "UTC+11",
+        "estimated": false,
+        "source_url": "https://ozclo.org.au/wp-content/uploads/2026/11/OzCLO-poster-2027-1.pdf"
+      },
+      {
+        "label": "International Linguistics Olympiad 2027, Bangkok (page lists 21 to 28 July)",
+        "date": "2027-07-21",
+        "type": "round",
+        "timezone": "UTC+7",
+        "estimated": false,
+        "source_url": "https://ozclo.org.au/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]

@@ -506,5 +506,71 @@
       "on": "2026-11-24"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "young-hearts-film-festival",
+    "name": "Young Hearts Film Festival",
+    "organizer": "Ińskie Centrum Kultury with the Stowarzyszenie Ińska Fabryka Snów",
+    "organizer_url": "https://youngheartsfilmfestival.com/",
+    "category": "film_video",
+    "subjects": [
+      "film",
+      "animation",
+      "music video",
+      "youth media"
+    ],
+    "description": "A film competition and festival in Ińsko, Poland, for short films of up to 10 minutes whose main creators were 19 or younger when making them. A youth jury judges in three age groups, with categories for Polish films, workshop films, music videos, ecological films, animation and foreign films.",
+    "format": "hybrid",
+    "age_min": 7,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "PL",
+    "fee": {
+      "amount": 0,
+      "currency": "PLN"
+    },
+    "prize": "18 cash prizes worth PLN 20,000 in total, including a PLN 3,000 Grand Prix",
+    "official_url": "https://youngheartsfilmfestival.com/regulamin-yhff2027",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Film submissions open",
+        "date": "2026-10-30",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://assets.zyrosite.com/Yle5bn5rq5Fp3ryG/regulamin_yhff_2027-YdsiRtdS4C1BXvjH.pdf"
+      },
+      {
+        "label": "Film submission deadline",
+        "date": "2027-02-28",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://assets.zyrosite.com/Yle5bn5rq5Fp3ryG/regulamin_yhff_2027-YdsiRtdS4C1BXvjH.pdf"
+      },
+      {
+        "label": "Selected films announced (organiser informs makers by this date)",
+        "date": "2027-06-15",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://assets.zyrosite.com/Yle5bn5rq5Fp3ryG/regulamin_yhff_2027-YdsiRtdS4C1BXvjH.pdf"
+      },
+      {
+        "label": "Festival final gala and awards",
+        "date": "2027-07-04",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://assets.zyrosite.com/Yle5bn5rq5Fp3ryG/regulamin_yhff_2027-YdsiRtdS4C1BXvjH.pdf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
   }
 ]
