@@ -2888,11 +2888,11 @@
     },
     "prize": "Advancement to the national round; the top four scorers represent Mexico at the IBO.",
     "official_url": "https://amc.mx/olimpiadanacionaldebiologia/",
-    "cycle_year": 2026,
+    "cycle_year": 2027,
     "dates": [
       {
         "label": "State level round (following the usual late-October pattern)",
-        "date": "2026-10-25",
+        "date": "2027-10-25",
         "type": "round",
         "timezone": "UTC-6",
         "estimated": true,
@@ -2900,7 +2900,7 @@
       },
       {
         "label": "National round (following the usual late-November pattern)",
-        "date": "2026-11-25",
+        "date": "2027-11-25",
         "type": "round",
         "timezone": "UTC-6",
         "estimated": true,
@@ -2912,7 +2912,7 @@
       "by": "yakew7",
       "on": "2026-09-24"
     },
-    "valid_till": "2026-12-15"
+    "valid_till": "2027-05-26"
   },
   {
     "id": "thailand-biology-olympiad",
