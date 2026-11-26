@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
 import { EmptyState } from "@/components/ui/empty-state";
 import { CategoryIcon } from "@/components/map/category-icon";
+import { SaveStar } from "@/components/map/save-star";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 
 export interface ResultRow {
@@ -252,6 +253,7 @@ export function ResultsList({
                     {distanceKm !== undefined && ` · ${formatDistance(distanceKm)}`}
                   </span>
                 </button>
+                <SaveStar placeId={place.id} placeName={place.name} touch />
                 {onDetails && (
                   <button
                     type="button"

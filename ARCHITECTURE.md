@@ -41,7 +41,7 @@ studymap/
 │   └── lib/                      # pure TypeScript utilities (no JSX)
 ├── supabase/
 │   └── migrations/                # SQL for the optional, sign-in-gated tables (user_places,
-│                                   #   user_home, user_events, competition_saves,
+│                                   #   user_home, user_events, saved_places, competition_saves,
 │                                   #   competition_stats), run once by hand - see SELF-HOSTING.md
 ├── ARCHITECTURE.md
 ├── CHANGELOG.md
@@ -208,6 +208,7 @@ Pure TypeScript modules. No JSX, no React imports. Each file has a single respon
 | `competitions-share.ts`                    | Encodes and decodes competition filters to and from a shareable URL query                            |
 | `competition-events.ts`                    | Flattens a competition's milestones into calendar-friendly events                                    |
 | `competition-saves.ts`                     | Save, unsave and count saved competitions (`competition_saves`, `competition_stats` tables)          |
+| `saved-places.ts`                          | The visitor's starred places: browser storage, the `?saved=` link, account sync                      |
 | `calendar-feed.ts`                         | Resolves a calendar-feed token to the competitions that user saved, without exposing who they are    |
 | `ics.ts`                                   | Builds RFC 5545 iCalendar text for calendar feeds                                                    |
 | `user-profile.ts`                          | Onboarding answers (board, field, country, referral source) and their `user_profiles` row            |

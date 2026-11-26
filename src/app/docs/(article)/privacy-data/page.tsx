@@ -30,6 +30,12 @@ const TABLES: { name: string; stores: string; note?: string }[] = [
     stores: "Personal calendar events you've added on top of the public exam calendar.",
   },
   {
+    name: "saved_places",
+    stores:
+      "Which public places you've starred on the map - just a list of ids, nothing else.",
+    note: "Also kept in this browser, so it works without an account; signing in merges the two.",
+  },
+  {
     name: "competition_saves",
     stores: "Which competitions you've saved - just a list of ids, nothing else.",
   },

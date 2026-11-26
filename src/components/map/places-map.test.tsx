@@ -571,3 +571,151 @@ describe("PlacesMap list follows the map (#351)", () => {
     expect(window.location.search).not.toContain("bounds");
   });
 });
+
+describe("PlacesMap saved places (#355)", () => {
+  afterEach(() => window.localStorage.clear());
+
+  function renderMap() {
+    return render(
+      <PlacesMap
+        places={PLACES}
+        cities={CITIES}
+        defaultCenter={[19.08, 72.95]}
+        defaultZoom={11}
+      />,
+    );
+  }
+
+  const star = (name: string) => screen.getByRole("button", { name: `Save ${name}` });
+  const stored = () =>
+    JSON.parse(window.localStorage.getItem("studymap:saved-places") ?? "[]");
+
+  it("stars a place from the results list and keeps it after a reload", () => {
+    const { unmount } = renderMap();
+    fireEvent.click(star("City Library"));
+
+    expect(
+      screen
+        .getByRole("button", { name: "Remove City Library from saved" })
+        .getAttribute("aria-pressed"),
+    ).toBe("true");
+    expect(stored()).toEqual(["city-library"]);
+
+    unmount();
+    renderMap();
+    expect(
+      screen.getByRole("button", { name: "Remove City Library from saved" }),
+    ).toBeTruthy();
+  });
+
+  it("shows how many places are saved, and a Saved filter that narrows the list to them", () => {
+    renderMap();
+    fireEvent.click(star("City Library"));
+    fireEvent.click(star("City Airport"));
+
+    const filter = screen.getByRole("button", { name: /^Saved\s*2$/ });
+    expect(filter.getAttribute("aria-pressed")).toBe("false");
+    fireEvent.click(filter);
+
+    expect(
+      screen.getByRole("button", { name: /^Saved\s*2$/ }).getAttribute("aria-pressed"),
+    ).toBe("true");
+    expect(screen.getByText("City Library")).toBeTruthy();
+    expect(screen.getByText("City Airport")).toBeTruthy();
+    expect(screen.queryByText("Thane Library")).toBeNull();
+    expect(screen.queryByText("Riverside Reading Room")).toBeNull();
+
+    fireEvent.click(screen.getByRole("button", { name: /^Saved\s*2$/ }));
+    expect(screen.getByText("Thane Library")).toBeTruthy();
+  });
+
+  it("says why the list is empty when the Saved filter is on and nothing is saved", () => {
+    renderMap();
+    fireEvent.click(screen.getByRole("button", { name: /^Saved\s*0$/ }));
+
+    expect(screen.getByRole("status").textContent).toContain("saved places only");
+  });
+
+  it("copies a link that opens the saved places as a shortlist", () => {
+    renderMap();
+    fireEvent.click(star("City Library"));
+    fireEvent.click(star("City Airport"));
+
+    fireEvent.click(screen.getByRole("button", { name: "Share list" }));
+
+    expect(writeText).toHaveBeenCalledOnce();
+    const url = new URL(writeText.mock.calls[0][0]);
+    expect(url.searchParams.get("saved")).toBe("city-library,airport");
+  });
+
+  it("offers to share only once something is saved", () => {
+    renderMap();
+    expect(screen.queryByRole("button", { name: "Share list" })).toBeNull();
+    fireEvent.click(star("City Library"));
+    expect(screen.getByRole("button", { name: "Share list" })).toBeTruthy();
+  });
+
+  describe("opening a shared link", () => {
+    it("shows that shortlist read only, and drops places that no longer exist", () => {
+      window.history.replaceState(
+        null,
+        "",
+        "/map?saved=city-library,airport,deleted-place",
+      );
+      renderMap();
+
+      expect(screen.getByRole("status").textContent).toContain("A shortlist of 2 places");
+      expect(screen.getByText("City Library")).toBeTruthy();
+      expect(screen.getByText("City Airport")).toBeTruthy();
+      expect(screen.queryByText("Thane Library")).toBeNull();
+      // Read only: the visitor's own list is untouched.
+      expect(stored()).toEqual([]);
+      expect(screen.queryByRole("button", { name: "Share list" })).toBeNull();
+    });
+
+    it("keeps the shortlist in the address bar", () => {
+      window.history.replaceState(null, "", "/map?saved=city-library,airport");
+      renderMap();
+      advance(500);
+
+      expect(params().get("saved")).toBe("city-library,airport");
+    });
+
+    it("adds the shortlist to the visitor's own list on request, without duplicates", () => {
+      window.localStorage.setItem(
+        "studymap:saved-places",
+        JSON.stringify(["city-library"]),
+      );
+      window.history.replaceState(null, "", "/map?saved=city-library,airport");
+      renderMap();
+
+      fireEvent.click(screen.getByRole("button", { name: "Save all to my list" }));
+      advance(500);
+
+      expect(stored()).toEqual(["city-library", "airport"]);
+      expect(screen.queryByRole("status")).toBeNull();
+      expect(screen.getByText("Thane Library")).toBeTruthy();
+      expect(params().get("saved")).toBeNull();
+    });
+
+    it("returns to every place without saving anything", () => {
+      window.history.replaceState(null, "", "/map?saved=city-library");
+      renderMap();
+
+      fireEvent.click(screen.getByRole("button", { name: "Show all places" }));
+      advance(500);
+
+      expect(screen.getByText("Thane Library")).toBeTruthy();
+      expect(stored()).toEqual([]);
+      expect(params().get("saved")).toBeNull();
+    });
+
+    it("ignores a link whose places are all gone", () => {
+      window.history.replaceState(null, "", "/map?saved=gone-1,gone-2");
+      renderMap();
+
+      expect(screen.queryByRole("status")).toBeNull();
+      expect(screen.getByText("Thane Library")).toBeTruthy();
+    });
+  });
+});
