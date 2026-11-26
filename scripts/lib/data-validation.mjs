@@ -90,6 +90,24 @@ export function isHttpUrl(value) {
   }
 }
 
+/**
+ * True when `value` is an international phone number in E.164 form: "+", a non-zero
+ * country digit, then 6 to 14 more digits, with no spaces or punctuation (#356).
+ */
+export function isE164Phone(value) {
+  return typeof value === "string" && /^\+[1-9][0-9]{6,14}$/.test(value);
+}
+
+/** True when `value` is a short, non-blank, single-line opening-hours text (#356). */
+export function isOpeningHours(value) {
+  return (
+    typeof value === "string" &&
+    value.trim().length > 0 &&
+    value.length <= 120 &&
+    !/[\r\n]/.test(value)
+  );
+}
+
 /** True when `value` is a string containing an em dash. House rule, see #193/#194. */
 export function hasEmDash(value) {
   return typeof value === "string" && value.includes("—");

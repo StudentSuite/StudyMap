@@ -29,6 +29,8 @@ import {
   type City,
 } from "@/lib/types";
 import { site } from "@/lib/site";
+import { isE164Phone, isHttpsUrl } from "../../../scripts/lib/data-validation.mjs";
+import { normalizePhone } from "../../../scripts/lib/place-submission.mjs";
 
 interface SuggestPlaceDialogProps {
   /** Cities already in the public dataset, offered as suggestions. */
@@ -42,6 +44,9 @@ function buildIssueUrl(fields: {
   type: PlaceType;
   city: string;
   gmapsLink: string;
+  website: string;
+  phone: string;
+  hours: string;
   contributor: string;
   note: string;
 }): string {
@@ -51,6 +56,9 @@ function buildIssueUrl(fields: {
     `**Type:** ${PLACE_TYPE_LABELS[fields.type]}`,
     `**City:** ${fields.city}`,
     `**Google Maps link:** ${fields.gmapsLink}`,
+    ...(fields.website ? [`**Website:** ${fields.website}`] : []),
+    ...(fields.phone ? [`**Phone:** ${fields.phone}`] : []),
+    ...(fields.hours ? [`**Hours:** ${fields.hours}`] : []),
     ...(fields.contributor.trim()
       ? [`**Contributor:** ${fields.contributor.trim()}`]
       : []),
@@ -104,6 +112,9 @@ export function SuggestPlaceDialog({
   const [type, setType] = React.useState<PlaceType>("library");
   const [city, setCity] = React.useState("");
   const [gmapsLink, setGmapsLink] = React.useState("");
+  const [placeWebsite, setPlaceWebsite] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  const [hours, setHours] = React.useState("");
   const [contributor, setContributor] = React.useState("");
   const [note, setNote] = React.useState("");
   const [honeypot, setHoneypot] = React.useState("");
@@ -122,6 +133,9 @@ export function SuggestPlaceDialog({
       setType("library");
       setCity("");
       setGmapsLink("");
+      setPlaceWebsite("");
+      setPhone("");
+      setHours("");
       setContributor("");
       setNote("");
       setHoneypot("");
@@ -137,13 +151,30 @@ export function SuggestPlaceDialog({
   const trimmedGmapsLink = gmapsLink.trim();
   const isGmapsLinkValid = isGoogleMapsUrl(trimmedGmapsLink);
   const showGmapsError = trimmedGmapsLink.length > 0 && !isGmapsLinkValid;
-  const isValid = Boolean(trimmedName && trimmedCity && isGmapsLinkValid);
+  // The three contact fields are optional: blank is fine, a filled one must be well formed.
+  const trimmedWebsite = placeWebsite.trim();
+  const normalizedPhone = normalizePhone(phone);
+  const trimmedHours = hours.trim();
+  const showWebsiteError =
+    trimmedWebsite.length > 0 &&
+    (!isHttpsUrl(trimmedWebsite) || /\s/.test(trimmedWebsite));
+  const showPhoneError = normalizedPhone.length > 0 && !isE164Phone(normalizedPhone);
+  const isValid = Boolean(
+    trimmedName &&
+    trimmedCity &&
+    isGmapsLinkValid &&
+    !showWebsiteError &&
+    !showPhoneError,
+  );
   const fallbackUrl = isValid
     ? buildIssueUrl({
         name: trimmedName,
         type,
         city: trimmedCity,
         gmapsLink: trimmedGmapsLink,
+        website: trimmedWebsite,
+        phone: normalizedPhone,
+        hours: trimmedHours,
         contributor,
         note,
       })
@@ -163,6 +194,10 @@ export function SuggestPlaceDialog({
           type,
           city: trimmedCity,
           gmapsLink: trimmedGmapsLink,
+          // `website` below is the hidden honeypot; the real one is `placeWebsite`.
+          placeWebsite: trimmedWebsite,
+          phone: normalizedPhone,
+          hours: trimmedHours,
           contributor: contributor.trim(),
           note: note.trim(),
           website: honeypot,
@@ -329,6 +364,69 @@ export function SuggestPlaceDialog({
                 Enter a valid Google Maps link.
               </p>
             ) : null}
+          </div>
+
+          <div className="grid gap-1.5">
+            <Label htmlFor="suggest-place-site">Place website (optional)</Label>
+            <Input
+              id="suggest-place-site"
+              type="url"
+              inputMode="url"
+              value={placeWebsite}
+              onChange={(e) => setPlaceWebsite(e.target.value)}
+              placeholder="https://..."
+              maxLength={300}
+              aria-invalid={showWebsiteError}
+              aria-describedby={showWebsiteError ? "suggest-place-site-error" : undefined}
+            />
+            {showWebsiteError ? (
+              <p
+                id="suggest-place-site-error"
+                role="alert"
+                className="text-xs text-destructive"
+              >
+                Enter the website as an https:// link, or leave it blank.
+              </p>
+            ) : null}
+          </div>
+
+          <div className="grid gap-1.5">
+            <Label htmlFor="suggest-place-phone">Phone (optional)</Label>
+            <Input
+              id="suggest-place-phone"
+              type="tel"
+              inputMode="tel"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              placeholder="+44 20 7412 7000"
+              maxLength={30}
+              aria-invalid={showPhoneError}
+              aria-describedby={showPhoneError ? "suggest-place-phone-error" : undefined}
+            />
+            {showPhoneError ? (
+              <p
+                id="suggest-place-phone-error"
+                role="alert"
+                className="text-xs text-destructive"
+              >
+                Include the country code, like +44 20 7412 7000, or leave it blank.
+              </p>
+            ) : null}
+          </div>
+
+          <div className="grid gap-1.5">
+            <Label htmlFor="suggest-place-hours">Opening hours (optional)</Label>
+            <Input
+              id="suggest-place-hours"
+              value={hours}
+              onChange={(e) => setHours(e.target.value)}
+              placeholder="Mon-Fri 09:00-17:00"
+              maxLength={120}
+              aria-describedby="suggest-place-contact-hint"
+            />
+            <p id="suggest-place-contact-hint" className="text-xs text-muted-foreground">
+              Only details from the website or listing of the place itself, please.
+            </p>
           </div>
 
           <div className="grid gap-1.5">

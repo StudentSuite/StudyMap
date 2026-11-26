@@ -8,6 +8,7 @@ import { CategoryIcon } from "@/components/map/category-icon";
 import { PlacePhotoGallery } from "@/components/map/place-photo-gallery";
 import { SaveStar } from "@/components/map/save-star";
 import { SharePlaceCard } from "@/components/map/share-place-card";
+import { PlaceContact } from "@/components/pins/place-contact";
 import { VerifiedBadge } from "@/components/pins/verified-badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -57,6 +58,8 @@ export function PlaceDetailDrawer({ place, open, onOpenChange }: PlaceDetailDraw
                   <p className="text-sm text-foreground">{place.address}</p>
                 </div>
               )}
+
+              <PlaceContact place={place} variant="detailed" />
 
               {place.exam && (
                 <div className="space-y-1">

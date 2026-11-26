@@ -650,5 +650,137 @@
       "on": "2026-09-24"
     },
     "valid_till": "2027-07-01"
+  },
+  {
+    "id": "horizon-academic-essay-prize",
+    "name": "Horizon Academic Essay Prize",
+    "organizer": "Horizon Academic",
+    "organizer_url": "https://horizoninspires.com/",
+    "category": "essay_writing",
+    "subjects": [
+      "writing",
+      "argumentative essay",
+      "current affairs"
+    ],
+    "description": "An essay prize for current high school students from any country. Entrants pick one of five prompts on AI, robotics, climate, health or geopolitics and write up to 1,000 words in English.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Top essay: USD 1,000 cash plus a USD 6,950 scholarship toward a Horizon Academic research program.",
+    "official_url": "https://horizoninspires.com/essay-prize/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Free registration closes",
+        "date": "2027-01-17",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://essay.horizoninspires.com/registration"
+      },
+      {
+        "label": "Late registration (USD 5) and essay submission deadline",
+        "date": "2027-01-24",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://essay.horizoninspires.com/registration"
+      },
+      {
+        "label": "Shortlist notification",
+        "date": "2027-02-08",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://horizoninspires.com/essay-prize/"
+      },
+      {
+        "label": "Virtual award ceremony",
+        "date": "2027-02-14",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://horizoninspires.com/essay-prize/"
+      }
+    ],
+    "valid_till": "2027-02-14",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "sidgwick-prize",
+    "name": "The Sidgwick Prize",
+    "organizer": "The Sidgwick Prize",
+    "organizer_url": "https://www.sidgwickprize.com/",
+    "category": "essay_writing",
+    "subjects": [
+      "humanities",
+      "social sciences",
+      "philosophy",
+      "history",
+      "economics"
+    ],
+    "description": "A paid-entry essay competition where students answer one of three set questions in one of eight disciplines (philosophy, politics, economics, history, law, theology, psychology, art history). Essays of up to 2,000 words each receive written feedback from an academic specialist.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 12,
+      "currency": "GBP"
+    },
+    "prize": "GBP 100 per discipline winner plus a 75 percent discount on a summer course; the overall winner gets GBP 100 and a fully funded place on the course",
+    "official_url": "https://www.sidgwickprize.com/faq",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration and submissions open",
+        "date": "2026-09-19",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.sidgwickprize.com/"
+      },
+      {
+        "label": "Registration and essay submission deadline (23:59 BST)",
+        "date": "2027-06-30",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.sidgwickprize.com/"
+      },
+      {
+        "label": "Late submission deadline (23:59 BST, GBP 20 late fee)",
+        "date": "2027-07-15",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.sidgwickprize.com/late-submission"
+      },
+      {
+        "label": "Awards ceremony",
+        "date": "2027-09-18",
+        "type": "ceremony",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.sidgwickprize.com/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-07-15"
   }
 ]

@@ -1533,5 +1533,814 @@
       "on": "2026-11-17"
     },
     "valid_till": "2027-05-01"
+  },
+  {
+    "id": "ukmt-junior-mathematical-challenge",
+    "name": "UKMT Junior Mathematical Challenge (JMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions on mathematical reasoning and precision, open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-04-14",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-05-05",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-challenge"
+      },
+      {
+        "label": "Junior Mathematical Challenge sitting",
+        "date": "2027-05-05",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-06-01"
+  },
+  {
+    "id": "ukmt-intermediate-mathematical-challenge",
+    "name": "UKMT Intermediate Mathematical Challenge (IMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions for Year 11 and below in England, Wales and overseas (S4 or below in Scotland, Year 12 or below in Northern Ireland). Papers are sold in packs of 10 for 16 GBP posted or 15 GBP to download and print, so the fee above is the per-paper figure; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1.6,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Physical paper purchase deadline",
+        "date": "2027-01-06",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Downloadable paper purchase deadline",
+        "date": "2027-01-27",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/intermediate-challenges/intermediate-mathematical-challenge"
+      },
+      {
+        "label": "Intermediate Mathematical Challenge sitting",
+        "date": "2027-01-27",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-03-01"
+  },
+  {
+    "id": "ukmt-primary-kangaroo",
+    "name": "UKMT Primary Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 45 minute paper of 20 multiple-choice questions for UK primary pupils (Year 5/6 or below in England and Wales, P6/P7 or below in Scotland and Northern Ireland), linked to the International Kangaroo papers. Entries are sold in packs of 10 for 10 GBP, so the fee above is the per-pupil figure; it must be sat on paper, and Leeds primary schools can claim free entries in 2027.",
+    "format": "in_person",
+    "age_min": 9,
+    "age_max": 11,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 1,
+      "currency": "GBP"
+    },
+    "prize": "Certificates by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-02-25",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      },
+      {
+        "label": "Competition window opens",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      },
+      {
+        "label": "Competition window closes",
+        "date": "2027-03-25",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/junior-challenges/primary-kangaroo"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-grey-pink-kangaroos",
+    "name": "UKMT Grey and Pink Kangaroos",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Intermediate Mathematical Challenge. Entry is by invitation based on a qualifying IMC score, or by discretionary entry, and is open to UK schools only. Grey Kangaroo is for Year 9 and below in England and Wales (S2 or below in Scotland, Year 10 or below in Northern Ireland); Pink Kangaroo is for Years 10 and 11 (S3 and S4, Years 11 and 12). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/grey-and-pink-kangaroos",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Grey and Pink Kangaroo date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-cayley-hamilton-maclaurin-olympiads",
+    "name": "UKMT Cayley, Hamilton and Maclaurin Mathematical Olympiads",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style problems needing full written solutions, taken as the follow-on round to the Intermediate Mathematical Challenge. Around 1,800 students qualify from the IMC each year, and discretionary entry is also possible. Cayley is for Year 9 and below, Hamilton for Year 10 and Maclaurin for Year 11 in England, Wales and overseas (S2, S3 and S4 in Scotland; Years 10, 11 and 12 in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/intermediate-challenges/cayley-hamilton-maclaurin-olympiad-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-04-15"
+  },
+  {
+    "id": "ukmt-junior-kangaroo",
+    "name": "UKMT Junior Kangaroo",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 60 minute paper of 25 multiple-choice questions, taken as the follow-on round to the Junior Mathematical Challenge. Entry is by invitation based on a qualifying JMC score, or by discretionary entry, and is open to UK schools only (Year 8 and below in England and Wales, S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 4 GBP each and automatic qualifiers enter free; all UKMT competitions are paper-format only.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 4,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-kangaroo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior Kangaroo date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
+  },
+  {
+    "id": "ukmt-junior-mathematical-olympiad",
+    "name": "UKMT Junior Mathematical Olympiad",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 2 hour paper of six Olympiad-style questions needing full written solutions, taken as the follow-on round to the Junior Mathematical Challenge. Around 1,200 students qualify from the JMC each year, and discretionary entry is also possible. Open to Year 8 and below in England, Wales and overseas (S2 or below in Scotland, Year 9 or below in Northern Ireland). Discretionary entries cost 25 GBP each and qualifiers enter free.",
+    "format": "in_person",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 25,
+      "currency": "GBP"
+    },
+    "prize": "Certificates awarded by score band; see the Awards and scoring page linked from the competition page.",
+    "official_url": "https://ukmt.org.uk/junior-challenges/junior-mathematical-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Olympiad date",
+        "date": "2027-06-15",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/competition-calendar-2026-27"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-19"
+    },
+    "valid_till": "2027-07-15"
+  },
+  {
+    "id": "australian-mathematics-competition",
+    "name": "Australian Mathematics Competition (AMC)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "Australia's longest running and largest school maths competition, first run in 1978: 30 questions (25 multiple choice, 5 integer answer) in 60 minutes for primary and 75 minutes for secondary divisions, covering Years 3 to 12. Every student receives an award, and available both online and on printed paper, including for international schools.",
+    "format": "hybrid",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 9.3,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award (Participation, Proficiency, Credit, Distinction, High Distinction); Prize winners get a lapel pin and shop voucher; Cheryl Praeger Medal, AMC Medals and the Peter O'Halloran Award for a perfect score.",
+    "official_url": "https://www.amt.edu.au/amc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Printed paper entries close (International)",
+        "date": "2027-06-25",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Printed paper entries close (Australia and New Zealand)",
+        "date": "2027-07-02",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Online entries close",
+        "date": "2027-07-30",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/amc"
+      },
+      {
+        "label": "Competition sitting (first day)",
+        "date": "2027-08-03",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-09-01"
+  },
+  {
+    "id": "australian-intermediate-mathematics-olympiad",
+    "name": "Australian Intermediate Mathematics Olympiad (AIMO)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad problem solving"
+    ],
+    "description": "A 4 hour olympiad paper pitched at Year 10 level for students in Years 7 to 10: 10 questions, eight with integer answers and two needing written solutions or proofs. Results are used to identify students for the AMT olympiad pathway.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 16,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 25.9,
+      "currency": "AUD"
+    },
+    "prize": "Prizes for nationally outstanding students; High Distinction (about top 10 percent), Distinction (next 15), Credit (next 25) and Participation certificates.",
+    "official_url": "https://www.amt.edu.au/aimo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-09-03",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/aimo"
+      },
+      {
+        "label": "Competition day",
+        "date": "2027-09-09",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-10-15"
+  },
+  {
+    "id": "australian-junior-mathematics-olympiad",
+    "name": "Australian Junior Mathematics Olympiad (AJMO)",
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad problem solving"
+    ],
+    "description": "A new 90 minute online contest of 10 integer-answer problems for students up to Year 8 who want challenging olympiad-style mathematics but are not yet ready for the AIMO. The listed fee is a special introductory price and entry dates were still to be confirmed.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 14,
+    "participation": "individual",
+    "region": "AU",
+    "fee": {
+      "amount": 12.5,
+      "currency": "AUD"
+    },
+    "prize": "Prizes may be awarded to high performers; High Distinction (about top 10 percent), Distinction (next 15), Credit (next 25) and Participation certificates.",
+    "official_url": "https://www.amt.edu.au/ajmo",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Competition day",
+        "date": "2027-09-09",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "valid_till": "2027-10-15"
+  },
+  {
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "region": "AU",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "id": "kangourou-sans-frontieres-australia",
+    "name": "Kangourou sans Frontières (Australia)",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "An online multiple-choice maths competition for Years 3 to 12 (24 questions for Middle Primary, 30 for other divisions; 60 minutes primary, 75 secondary), inspired by the AMC and run by the AMT in Australia as part of the Kangourou sans Frontières network, billed as the largest maths competition in the world. It is a good rehearsal before the AMC in August.",
+    "format": "online",
+    "age_min": 8,
+    "age_max": 18,
+    "participation": "individual",
+    "fee": {
+      "amount": 5.5,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award: Participation, Credit (top 50 percent of Australian participants), Distinction (top 15) or High Distinction (top 3).",
+    "official_url": "https://www.amt.edu.au/ksf",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-03-19",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/ksf"
+      },
+      {
+        "label": "Competition window (first day)",
+        "date": "2027-03-23",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "valid_till": "2027-05-01"
+  },
+  {
+    "organizer": "Australian Maths Trust",
+    "organizer_url": "https://www.amt.edu.au/",
+    "category": "mathematics",
+    "region": "AU",
+    "added_by": "propcgamer20-png",
+    "verified": {
+      "by": "propcgamer20-png",
+      "on": "2026-11-17"
+    },
+    "id": "amt-maths-challenge",
+    "name": "AMT Maths Challenge",
+    "subjects": [
+      "mathematics",
+      "problem solving",
+      "teamwork"
+    ],
+    "description": "A classroom problem-solving program for Years 3 to 10, delivered by teachers over 3 to 4 weeks with printed problem booklets and a teacher guide. Primary students answer 4 worked-solution problems and secondary students 6, working in groups of three (primary) or two (secondary); the fee above is the primary price and secondary is 30 AUD.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 16,
+    "participation": "team",
+    "fee": {
+      "amount": 24,
+      "currency": "AUD"
+    },
+    "prize": "Every student receives an award: Participation, Proficiency, Credit, Distinction or High Distinction depending on division and score.",
+    "official_url": "https://www.amt.edu.au/challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entries close",
+        "date": "2027-05-21",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/challenge"
+      },
+      {
+        "label": "Program window opens",
+        "date": "2027-03-01",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      },
+      {
+        "label": "Program window closes",
+        "date": "2027-06-25",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://www.amt.edu.au/competitions"
+      }
+    ],
+    "valid_till": "2027-08-01"
+  },
+  {
+    "id": "brown-university-math-olympiad",
+    "name": "Brown University Math Olympiad (BrUMO)",
+    "organizer": "Brown University Math Olympiad student organizing team",
+    "organizer_url": "https://www.brumo.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A two-day math tournament held at Brown University for students in grade 12 or below, with an individual round, a team round, a mystery round and a guts round. Teams of four to six apply in a beginner-friendly Division B or a more experienced Division A, and individuals are placed on teams by the organizers.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Awards presented at the ceremony after the Saturday tests.",
+    "official_url": "https://www.brumo.org/tournament-info",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (5:00 PM EST)",
+        "date": "2026-11-30",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Registration closes (11:59 PM EST)",
+        "date": "2027-01-11",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Accepted teams notified",
+        "date": "2027-01-18",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Accepted teams confirm participation and submit waivers (11:59 PM EST)",
+        "date": "2027-02-06",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "BrUMO 2027 at Brown University (event runs 12 to 13 March, tests on Saturday)",
+        "date": "2027-03-13",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.brumo.org/tournament-info"
+      },
+      {
+        "label": "Online contest with the same problems, planned about a week after the in-person event (exact date not yet announced)",
+        "date": "2027-03-20",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.brumo.org/faqs"
+      }
+    ],
+    "valid_till": "2027-03-20",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "ukmt-team-maths-challenge",
+    "name": "UKMT Team Maths Challenge (TMC)",
+    "organizer": "United Kingdom Mathematics Trust (UKMT)",
+    "organizer_url": "https://ukmt.org.uk/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "teamwork"
+    ],
+    "description": "A day-long team event for pupils in Year 8 and Year 9 (or the equivalent in Scotland and Northern Ireland), held at regional finals hosted by schools and universities across the UK. Each school enters one team of four, and high-scoring teams are invited to a national final.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 14,
+    "participation": "team",
+    "region": "GB",
+    "fee": {
+      "amount": 50,
+      "currency": "GBP"
+    },
+    "prize": "Prizes for the top teams at the national final.",
+    "official_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens on the UKMT portal",
+        "date": "2026-10-05",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "Registration closes for the earliest regional final listed (three weeks before 3 February)",
+        "date": "2027-01-13",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "First regional final listed (Tranby Croft College, Hull)",
+        "date": "2027-02-03",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/challenge-schools/tmc-tranby-croft-college"
+      },
+      {
+        "label": "Registration closes for the latest regional final listed (three weeks before 24 March)",
+        "date": "2027-03-03",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://ukmt.org.uk/team-challenges/team-mathematical-challenge"
+      },
+      {
+        "label": "Latest regional final listed (Maidstone Grammar School for Girls)",
+        "date": "2027-03-24",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://ukmt.org.uk/challenge-schools/tmc-maidstone-grammar-school-for-girls"
+      }
+    ],
+    "valid_till": "2027-03-31",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "math-league-contests",
+    "name": "The Math League Contests",
+    "organizer": "The Math League",
+    "organizer_url": "https://www.mathleague.com/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "School-based math contests for grades 4 to 8, plus Algebra Course 1 and a six-contest high school league that runs from October to March. A teacher registers the school and orders test sets, and students sit the contests in class on set dates.",
+    "format": "in_person",
+    "age_min": 9,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 45,
+      "currency": "USD"
+    },
+    "prize": "Certificates of Merit for top students.",
+    "official_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline for the grades 6 to 8 contests (late registrations accepted)",
+        "date": "2026-12-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/schools/registerforcontests?id=106"
+      },
+      {
+        "label": "Registration deadline for the grade 4, grade 5 and Algebra Course 1 contests (late registrations accepted)",
+        "date": "2027-01-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/schools/registerforcontests?id=106"
+      },
+      {
+        "label": "Grades 6 to 8 contest (or 23 February)",
+        "date": "2027-02-16",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      },
+      {
+        "label": "High school contest 6 of 6",
+        "date": "2027-03-16",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      },
+      {
+        "label": "Grade 4, grade 5 and Algebra Course 1 contests (April 15 or later)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.mathleague.com/index.php/annualcontestinformation/contestschedules"
+      }
+    ],
+    "valid_till": "2027-04-30",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
   }
 ]

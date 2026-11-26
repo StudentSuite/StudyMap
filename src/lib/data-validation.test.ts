@@ -1,8 +1,13 @@
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 
 import {
   findSameNamePlaces,
   gmapsLinkCoordinates,
+  isE164Phone,
+  isHttpsUrl,
+  isOpeningHours,
   normalizePlaceName,
 } from "../../scripts/lib/data-validation.mjs";
 
@@ -85,5 +90,91 @@ describe("findSameNamePlaces", () => {
         place("a.json", "2", "x", "Two"),
       ]),
     ).toEqual([]);
+  });
+});
+
+describe("isE164Phone (#356)", () => {
+  it.each(["+442074127000", "+14155552671", "+912212345678", "+8613800138000"])(
+    "accepts %s",
+    (value) => {
+      expect(isE164Phone(value)).toBe(true);
+    },
+  );
+
+  it.each([
+    "442074127000",
+    "+44 20 7412 7000",
+    "+44-20-7412-7000",
+    "(020) 7412 7000",
+    "+0442074127000",
+    "+4420",
+    "+1234567890123456",
+    "",
+    "tel:+442074127000",
+  ])("rejects %j", (value) => {
+    expect(isE164Phone(value)).toBe(false);
+  });
+
+  it("rejects values that are not strings", () => {
+    expect(isE164Phone(442074127000)).toBe(false);
+    expect(isE164Phone(null)).toBe(false);
+  });
+});
+
+describe("isOpeningHours (#356)", () => {
+  it("accepts short single-line text", () => {
+    expect(isOpeningHours("Mon-Fri 09:00-17:00")).toBe(true);
+    expect(isOpeningHours("Open 24 hours")).toBe(true);
+  });
+
+  it("rejects blank text, line breaks and anything over 120 characters", () => {
+    expect(isOpeningHours("")).toBe(false);
+    expect(isOpeningHours("   ")).toBe(false);
+    expect(isOpeningHours("Mon-Fri\n9-5")).toBe(false);
+    expect(isOpeningHours("x".repeat(121))).toBe(false);
+    expect(isOpeningHours("x".repeat(120))).toBe(true);
+  });
+});
+
+describe("place schema and validator agree on the contact fields (#356)", () => {
+  const schema = JSON.parse(
+    readFileSync(join(process.cwd(), "data", "places.schema.json"), "utf8"),
+  );
+  const props = schema.properties;
+
+  it("lists website, phone and hours as optional properties", () => {
+    for (const field of ["website", "phone", "hours"]) {
+      expect(props[field]).toBeTruthy();
+      expect(schema.required).not.toContain(field);
+    }
+  });
+
+  it("uses a phone pattern that matches the validator on the same samples", () => {
+    const re = new RegExp(props.phone.pattern);
+    for (const sample of [
+      "+442074127000",
+      "+14155552671",
+      "442074127000",
+      "+44 20 7412",
+      "",
+    ]) {
+      expect(re.test(sample)).toBe(isE164Phone(sample));
+    }
+  });
+
+  it("uses a website pattern that requires https", () => {
+    const re = new RegExp(props.website.pattern);
+    for (const sample of [
+      "https://www.bl.uk",
+      "http://www.bl.uk",
+      "www.bl.uk",
+      "https://with space.com",
+    ]) {
+      expect(re.test(sample)).toBe(isHttpsUrl(sample) && !/\s/.test(sample));
+    }
+  });
+
+  it("caps the hours length at the same limit as the validator", () => {
+    expect(props.hours.maxLength).toBe(120);
   });
 });

@@ -520,5 +520,90 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-07-01"
+  },
+  {
+    "id": "american-ancestors-young-family-historians-essay-contest",
+    "name": "Young Family Historians Essay Contest",
+    "organizer": "American Ancestors",
+    "organizer_url": "https://www.americanancestors.org/",
+    "category": "history",
+    "subjects": [
+      "family history",
+      "genealogy",
+      "essay writing"
+    ],
+    "description": "Essay contest for US students in grades 4 to 12 about a meaningful object and what it reveals about the writer's family history. Entries are judged separately in three grade bands and must describe the student's own research process.",
+    "format": "online",
+    "age_min": 9,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "USD 500 per grade-band winner, USD 250 per semifinalist, plus a one-year student membership",
+    "official_url": "https://www.americanancestors.org/Essay-Contest-2027",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Essay submission deadline",
+        "date": "2027-04-01",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.americanancestors.org/Essay-Contest-2027"
+      },
+      {
+        "label": "Winners announced (by end of August)",
+        "date": "2027-08-31",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.americanancestors.org/sites/default/files/2026-07/2027%20American%20Ancestors%20Young%20Historian%20Essay%20Contest%20Flyer.pdf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-05-25"
+  },
+  {
+    "id": "abmf-past-is-prologue-essay-contest",
+    "name": "Past Is Prologue Essay Contest",
+    "organizer": "American Battle Monuments Foundation",
+    "organizer_url": "https://abmf.org/",
+    "category": "history",
+    "subjects": [
+      "American military history",
+      "essay writing"
+    ],
+    "description": "Annual essay contest for students aged 11 to 18 on a moment in American military history tied to an overseas ABMC cemetery or monument. Students write with an adult editor and are judged anonymously in three age groups.",
+    "format": "online",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Up to USD 10,000 top first prize, with prizes by age group",
+    "official_url": "https://abmf.org/past-is-prologue-essay-contest/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Essay deadline (estimate based on the 2026 deadline of 3 May)",
+        "date": "2027-05-03",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": true,
+        "source_url": "https://abmf.org/essay-contest-application/"
+      }
+    ],
+    "added_by": "yakew7",
+    "valid_till": "2027-05-25"
   }
 ]

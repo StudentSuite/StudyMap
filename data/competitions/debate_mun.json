@@ -614,5 +614,161 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-02-15"
+  },
+  {
+    "id": "nhsmun",
+    "name": "National High School Model United Nations (NHSMUN)",
+    "organizer": "International Model United Nations Association (IMUNA)",
+    "organizer_url": "https://imuna.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "model united nations",
+      "international relations",
+      "diplomacy",
+      "public speaking"
+    ],
+    "description": "A four-day Model UN conference in New York City where secondary school delegations represent countries in simulated UN committees. Schools from more than 70 countries attend, and sessions include a speaker series with diplomats and UN officials.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 185,
+      "currency": "USD"
+    },
+    "prize": "No prizes are listed on the organiser's pages; the fee covers committee sessions, the speaker series and preparation materials.",
+    "official_url": "https://imuna.org/nhsmun/nyc/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Early registration opens",
+        "date": "2026-05-14",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://imuna.org/nhsmun/nyc/register/"
+      },
+      {
+        "label": "Late registration tier begins (USD 185 per participant; registration closes at capacity)",
+        "date": "2026-11-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://imuna.org/nhsmun/nyc/conference/fees/"
+      },
+      {
+        "label": "Last day for a 50% refund; fees non-refundable after this date",
+        "date": "2027-01-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://imuna.org/nhsmun/nyc/conference/fees/"
+      },
+      {
+        "label": "Session I (March 12-15)",
+        "date": "2027-03-12",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://imuna.org/nhsmun/nyc/links-and-resources/faq/"
+      },
+      {
+        "label": "Session II (March 17-20)",
+        "date": "2027-03-17",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://imuna.org/nhsmun/nyc/links-and-resources/faq/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-03-22"
+  },
+  {
+    "id": "berkeley-model-united-nations",
+    "name": "Berkeley Model United Nations (BMUN)",
+    "organizer": "Berkeley Model United Nations",
+    "organizer_url": "https://www.bmun.org/",
+    "category": "debate_mun",
+    "subjects": [
+      "model united nations",
+      "international relations",
+      "diplomacy",
+      "research"
+    ],
+    "description": "A three-day high school Model UN conference run by UC Berkeley students, with 19 committees in its 75th session. Schools register delegations in rounds, and delegates submit position papers ahead of the March conference. The organiser reports delegates attending from around the world.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "team",
+    "region": "US",
+    "fee": {
+      "amount": 115,
+      "currency": "USD"
+    },
+    "prize": "Research awards for position papers and committee awards.",
+    "official_url": "https://www.bmun.org/register",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 3 registration opens (delegate fee USD 115 plus USD 80 school fee)",
+        "date": "2026-11-16",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/s/BMUN-75-Registration-Guide-2.pdf"
+      },
+      {
+        "label": "Waitlist round opens",
+        "date": "2026-12-14",
+        "type": "registration_open",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/s/BMUN-75-Registration-Guide-2.pdf"
+      },
+      {
+        "label": "Registration final closing date",
+        "date": "2027-01-15",
+        "type": "registration_close",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/s/BMUN-75-Registration-Guide-2.pdf"
+      },
+      {
+        "label": "Position paper deadline for research awards",
+        "date": "2027-02-14",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/register"
+      },
+      {
+        "label": "Position paper deadline for committee awards",
+        "date": "2027-02-21",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/register"
+      },
+      {
+        "label": "BMUN LXXV conference (March 5-7)",
+        "date": "2027-03-05",
+        "type": "round",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://www.bmun.org/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    },
+    "valid_till": "2027-03-08"
   }
 ]

@@ -10,7 +10,7 @@
  * and synchronous; network and file access live in the callers.
  */
 
-import { normalizePlaceName } from "./data-validation.mjs";
+import { isE164Phone, isHttpsUrl, normalizePlaceName } from "./data-validation.mjs";
 
 export const SUBMISSION_LABEL = "place-submission";
 export const SUBMISSION_MARKER = "<!-- studymap-place-submission:v1 -->";
@@ -24,7 +24,7 @@ export const PLACE_TYPES = [
   "gov_offices",
 ];
 
-const MAX = { name: 120, city: 60, contributor: 60, note: 500 };
+const MAX = { name: 120, city: 60, contributor: 60, note: 500, website: 300, hours: 120 };
 
 // Same host rules as the place schema's gmaps_link pattern, plus the short
 // links the "Share" button produces (which the processing script resolves).
@@ -58,6 +58,18 @@ function clean(value, max) {
 }
 
 /**
+ * "+44 (20) 7412-7000" and "0044 20 7412 7000" both become "+442074127000".
+ * Anything that is still not E.164 afterwards is left for the caller to reject.
+ */
+export function normalizePhone(input) {
+  // "(0)" is the national trunk digit written after the country code ("+44 (0)20 ..."); it is not dialled from abroad.
+  const stripped = String(input ?? "")
+    .replace(/\(0\)/g, "")
+    .replace(/[\s().-]/g, "");
+  return stripped.startsWith("00") ? `+${stripped.slice(2)}` : stripped;
+}
+
+/**
  * Validates and normalises a raw submission. Returns
  * { ok: true, value } or { ok: false, error }.
  */
@@ -78,6 +90,34 @@ export function normalizeSubmission(raw) {
     return { ok: false, error: "Enter a valid Google Maps link." };
   }
 
+  // Optional contact details (#356). Blank means "not given"; a value that is
+  // given but malformed is rejected, so a typo never silently disappears.
+  // The form sends the real field as `placeWebsite`: `website` on the request is the
+  // hidden honeypot, which the route drops when filled, so the two must not share a
+  // key. A stored submission (read back from an issue) uses the normalised `website`.
+  const websiteInput = [raw.placeWebsite, raw.website].find(
+    (value) => typeof value === "string" && value.trim() !== "",
+  );
+  const website = typeof websiteInput === "string" ? websiteInput.trim() : "";
+  if (
+    website &&
+    (website.length > MAX.website || !isHttpsUrl(website) || /\s/.test(website))
+  ) {
+    return {
+      ok: false,
+      error: "Enter the website as an https:// link, or leave it blank.",
+    };
+  }
+  const phone = normalizePhone(typeof raw.phone === "string" ? raw.phone : "");
+  if (phone && !isE164Phone(phone)) {
+    return {
+      ok: false,
+      error:
+        "Enter the phone with its country code, like +442074127000, or leave it blank.",
+    };
+  }
+  const hours = clean(raw.hours, MAX.hours);
+
   return {
     ok: true,
     value: {
@@ -85,6 +125,9 @@ export function normalizeSubmission(raw) {
       type,
       city,
       gmapsLink,
+      ...(website ? { website } : {}),
+      ...(phone ? { phone } : {}),
+      ...(hours ? { hours } : {}),
       contributor: clean(raw.contributor, MAX.contributor),
       note: clean(raw.note, MAX.note),
     },
@@ -99,6 +142,9 @@ export function buildIssueBody(sub) {
     `**Type:** ${sub.type}`,
     `**City:** ${sub.city}`,
     `**Google Maps link:** ${sub.gmapsLink}`,
+    ...(sub.website ? [`**Website:** ${sub.website}`] : []),
+    ...(sub.phone ? [`**Phone:** ${sub.phone}`] : []),
+    ...(sub.hours ? [`**Hours:** ${sub.hours}`] : []),
     `**Contributor:** ${sub.contributor || "(anonymous)"}`,
     ...(sub.note ? [`**Note:** ${sub.note}`] : []),
     "",
@@ -211,6 +257,9 @@ export function buildPlaceRecord({ sub, coords, country, id }) {
     country,
     lat: coords.lat,
     lng: coords.lng,
+    ...(sub.website ? { website: sub.website } : {}),
+    ...(sub.phone ? { phone: sub.phone } : {}),
+    ...(sub.hours ? { hours: sub.hours } : {}),
     gmaps_link: `https://maps.google.com/?q=${coords.lat},${coords.lng}`,
     added_by: addedByFor(sub.contributor),
   };

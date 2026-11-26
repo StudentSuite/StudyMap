@@ -564,5 +564,135 @@
     ],
     "added_by": "shauryagangrade",
     "valid_till": "2027-03-15"
+  },
+  {
+    "id": "vermont-pitch-challenge",
+    "name": "Vermont Pitch Challenge",
+    "organizer": "University of Vermont Undergraduate Admissions",
+    "organizer_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "business pitch",
+      "social impact"
+    ],
+    "description": "High school students in grades 10 to 12 submit a business idea as a short written proposal, a video of up to four minutes or an audio recording, alone or in teams of up to three. Five finalist teams pitch in person at the University of Vermont, and the top prize is a full-tuition scholarship to the university.",
+    "format": "hybrid",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Full tuition scholarship to UVM (grand prize), USD 5,000 each for second and third place, USD 1,000 each for fourth and fifth",
+    "official_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge/how-compete",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Submissions open",
+        "date": "2026-10-15",
+        "type": "registration_open",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge/how-compete"
+      },
+      {
+        "label": "Submission deadline",
+        "date": "2027-02-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge/how-compete"
+      },
+      {
+        "label": "Finalists announced",
+        "date": "2027-03-15",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge/how-compete"
+      },
+      {
+        "label": "Final pitch event at UVM",
+        "date": "2027-04-13",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.uvm.edu/admissions/vermont-pitch-challenge/news/2027-vermont-pitch-challenge-opens-submissions"
+      }
+    ],
+    "valid_till": "2027-03-01",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
+  },
+  {
+    "id": "stevens-high-school-ai-video-pitch",
+    "name": "Stevens High School Business and AI Video Pitch Competition",
+    "organizer": "Stevens Institute of Technology School of Business",
+    "organizer_url": "https://www.stevens.edu/school-business/school-of-business-contests-for-high-school-students",
+    "category": "business",
+    "subjects": [
+      "entrepreneurship",
+      "artificial intelligence",
+      "business pitch"
+    ],
+    "description": "Students in grades 9 to 11 enter individually with an original business idea that uses artificial intelligence to solve a real problem, presented in a video of two minutes or less. No coding or prototype is required, and the top three entries win cash prizes.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 25,
+      "currency": "USD"
+    },
+    "prize": "USD 500 first place, USD 250 second place, USD 100 third place",
+    "official_url": "https://www.stevens.edu/school-business/high-school-entrepreneurship-and-artificial-intelligence-ai-video-pitch",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens",
+        "date": "2026-10-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/page-basic/high-school-entrepreneurship-and-artificial-intelligence-ai-video-pitch"
+      },
+      {
+        "label": "Registration deadline",
+        "date": "2027-01-08",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/page-basic/high-school-entrepreneurship-and-artificial-intelligence-ai-video-pitch"
+      },
+      {
+        "label": "Video submission deadline",
+        "date": "2027-01-15",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/page-basic/high-school-entrepreneurship-and-artificial-intelligence-ai-video-pitch"
+      },
+      {
+        "label": "Finalists announced",
+        "date": "2027-02-12",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stevens.edu/page-basic/high-school-entrepreneurship-and-artificial-intelligence-ai-video-pitch"
+      }
+    ],
+    "valid_till": "2027-02-12",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-25"
+    }
   }
 ]

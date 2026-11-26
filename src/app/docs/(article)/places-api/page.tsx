@@ -29,6 +29,9 @@ const RESPONSE_EXAMPLE = `{
       "lat": 18.9674,
       "lng": 72.8339,
       "address": "Fort, Mumbai 400001",
+      "website": "https://example.org/library",
+      "phone": "+912222660000",
+      "hours": "Mon-Sat 10:00-18:00",
       "gmaps_link": "https://maps.google.com/?q=18.9674,72.8339",
       "added_by": "thunderblitzyt-eng"
     }

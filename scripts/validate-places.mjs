@@ -17,6 +17,9 @@
  *   - lat/lng are numbers within the schema's min/max bounds
  *   - gmaps_link matches the schema's pattern
  *   - valid_till is a real ISO date (YYYY-MM-DD), when present
+ *   - website is an https:// URL, phone is E.164 (+ then 7 to 15 digits, no
+ *     spaces) and hours is short single-line text, when present (all three
+ *     are optional, so no existing record needs them)
  *   - No em dashes in any string field
  *   - gmaps_link in the ?q=<lat>,<lng> form points at the record's own lat/lng
  *     (within 0.01 degrees)
@@ -37,7 +40,10 @@ import {
   gmapsLinkCoordinates,
   hasEmDash,
   isCountryCode,
+  isE164Phone,
+  isHttpsUrl,
   isLatLngPlaceholderGmapsLink,
+  isOpeningHours,
   isRealIsoDate,
 } from "./lib/data-validation.mjs";
 
@@ -196,6 +202,26 @@ for (const file of files) {
     // valid_till format, when present
     if (r.valid_till !== undefined && !isRealIsoDate(r.valid_till)) {
       err(loc, `valid_till must be a real ISO date (YYYY-MM-DD), got "${r.valid_till}"`);
+    }
+
+    // Optional contact details (#356): format only, the fields stay optional
+    if (r.website !== undefined && (!isHttpsUrl(r.website) || r.website.length > 300)) {
+      err(
+        loc,
+        `website must be an https:// URL of at most 300 characters, got ${JSON.stringify(r.website)}`,
+      );
+    }
+    if (r.phone !== undefined && !isE164Phone(r.phone)) {
+      err(
+        loc,
+        `phone must be in international format with no spaces, like "+442074127000", got ${JSON.stringify(r.phone)}`,
+      );
+    }
+    if (r.hours !== undefined && !isOpeningHours(r.hours)) {
+      err(
+        loc,
+        `hours must be short single-line text of at most 120 characters, like "Mon-Fri 09:00-17:00", got ${JSON.stringify(r.hours)}`,
+      );
     }
 
     // lat bounds
