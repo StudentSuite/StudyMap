@@ -579,5 +579,147 @@
       "on": "2026-11-24"
     },
     "valid_till": "2026-12-11"
+  },
+  {
+    "id": "clark-scholars-program",
+    "name": "Anson L. Clark Scholars Program",
+    "organizer": "Texas Tech University",
+    "organizer_url": "https://www.depts.ttu.edu/clarkscholars/",
+    "category": "research",
+    "subjects": [
+      "research",
+      "biology",
+      "chemistry",
+      "computer science",
+      "engineering",
+      "economics"
+    ],
+    "description": "A seven-week summer research program at Texas Tech for twelve rising high school seniors and recent graduates, working with a faculty mentor. Applicants must be 17 by the start date and be US citizens or permanent residents.",
+    "format": "in_person",
+    "age_min": 17,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 25,
+      "currency": "USD"
+    },
+    "prize": "No program fee, room and board covered, and a USD 750 stipend after a successful research report",
+    "official_url": "https://www.depts.ttu.edu/clarkscholars/ProgramDetails.php",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application opens",
+        "date": "2027-01-02",
+        "type": "registration_open",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.depts.ttu.edu/clarkscholars/ApplicationDetails.php"
+      },
+      {
+        "label": "Application deadline (11:59 PM CT)",
+        "date": "2027-02-15",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.depts.ttu.edu/clarkscholars/ApplicationDetails.php"
+      },
+      {
+        "label": "Admission decisions, no later than the first part of May",
+        "date": "2027-05-07",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.depts.ttu.edu/clarkscholars/FrequentlyAskedQuestions.php"
+      },
+      {
+        "label": "Program starts (runs to August 5)",
+        "date": "2027-06-20",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.depts.ttu.edu/clarkscholars/"
+      }
+    ],
+    "valid_till": "2027-05-15",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    }
+  },
+  {
+    "id": "simons-summer-research-program",
+    "name": "Simons Summer Research Program",
+    "organizer": "Stony Brook University",
+    "organizer_url": "https://www.stonybrook.edu/simons/",
+    "category": "research",
+    "subjects": [
+      "research",
+      "science",
+      "mathematics",
+      "engineering"
+    ],
+    "description": "A six-week summer program at Stony Brook where nominated high school juniors join a faculty research group and finish with an abstract and poster. Applicants must be US citizens or permanent residents and 16 by the program start, and a school nomination is required.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 75,
+      "currency": "USD"
+    },
+    "prize": "Six-week research placement with a faculty mentor and a closing poster symposium",
+    "official_url": "https://www.stonybrook.edu/simons/apply/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application opens",
+        "date": "2026-11-15",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stonybrook.edu/simons/apply/forms.html"
+      },
+      {
+        "label": "School nomination deadline",
+        "date": "2027-01-29",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stonybrook.edu/simons/apply/"
+      },
+      {
+        "label": "Application deadline (11:59 PM ET)",
+        "date": "2027-02-05",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.stonybrook.edu/simons/apply/"
+      },
+      {
+        "label": "Admission decisions sent (early April)",
+        "date": "2027-04-05",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.stonybrook.edu/simons/apply/"
+      },
+      {
+        "label": "Program starts (runs to August 6)",
+        "date": "2027-06-28",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.stonybrook.edu/simons/about/"
+      }
+    ],
+    "valid_till": "2027-05-15",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    }
   }
 ]

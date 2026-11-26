@@ -770,5 +770,119 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-03-08"
+  },
+  {
+    "id": "ethics-olympiad-senior-school",
+    "name": "Ethics Olympiad (Senior School)",
+    "organizer": "Ethics Olympiad",
+    "organizer_url": "https://ethicsolympiad.org",
+    "category": "debate_mun",
+    "subjects": [
+      "ethics",
+      "philosophy",
+      "discussion"
+    ],
+    "description": "Teams of four or five students aged 15 to 18 discuss ethical cases in moderated online heats on Zoom, with cases released to coaches in advance. Schools may enter one or two teams, and top Middle and Senior School teams are invited to an international final.",
+    "format": "online",
+    "age_min": 15,
+    "age_max": 18,
+    "participation": "team",
+    "region": "international",
+    "fee": {
+      "amount": 270,
+      "currency": "AUD"
+    },
+    "prize": "Gold, silver and bronze awards, with an invitation to the international final for top teams",
+    "official_url": "https://ethicsolympiad.org/registration/ethics-olympiads/senior-2027/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Early-bird registration rate ends (applies before January 2027)",
+        "date": "2026-12-31",
+        "type": "deadline",
+        "timezone": "UTC+10",
+        "estimated": true,
+        "source_url": "https://ethicsolympiad.org/about-us/how-does-it-work/"
+      },
+      {
+        "label": "First Senior School event dates (India, Singapore)",
+        "date": "2027-05-04",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://ethicsolympiad.org/registration/ethics-olympiads/senior-2027/"
+      },
+      {
+        "label": "Last listed Senior School event date (South Korea, South East Asia)",
+        "date": "2027-05-31",
+        "type": "round",
+        "timezone": "UTC+10",
+        "estimated": false,
+        "source_url": "https://ethicsolympiad.org/registration/ethics-olympiads/senior-2027/"
+      }
+    ],
+    "valid_till": "2027-05-26",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    }
+  },
+  {
+    "id": "cahsmun",
+    "name": "Canadian High Schools Model United Nations (CAHSMUN)",
+    "organizer": "Ponderosa Foundation (CAHSMUN)",
+    "organizer_url": "https://cahsmun.org",
+    "category": "debate_mun",
+    "subjects": [
+      "model un",
+      "diplomacy",
+      "public speaking"
+    ],
+    "description": "A three-day high school Model UN conference in Vancouver with 21 committees, including crisis and regional bodies. Delegates must register through a school, debate academy or community organisation delegation.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "CA",
+    "fee": {
+      "amount": 360,
+      "currency": "CAD"
+    },
+    "prize": "Committee awards; need-based bursaries cover up to 100% of the registration fee",
+    "official_url": "https://cahsmun.org/register",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Regular registration period ends",
+        "date": "2027-01-24",
+        "type": "registration_close",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://cahsmun.org/register"
+      },
+      {
+        "label": "Late registration period ends",
+        "date": "2027-02-28",
+        "type": "deadline",
+        "timezone": "UTC-8",
+        "estimated": false,
+        "source_url": "https://cahsmun.org/register"
+      },
+      {
+        "label": "Opening ceremonies (conference runs April 2 to 4)",
+        "date": "2027-04-03",
+        "type": "round",
+        "timezone": "UTC-7",
+        "estimated": false,
+        "source_url": "https://cahsmun.org/schedule"
+      }
+    ],
+    "valid_till": "2027-04-30",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    }
   }
 ]

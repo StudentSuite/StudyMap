@@ -674,5 +674,62 @@
       "on": "2026-11-25"
     },
     "valid_till": "2027-04-30"
+  },
+  {
+    "id": "burger-king-scholars",
+    "name": "Burger King Scholars Program",
+    "organizer": "Burger King Foundation",
+    "organizer_url": "https://www.burgerkingfoundation.org/",
+    "category": "scholarship",
+    "subjects": [
+      "academic achievement",
+      "community service",
+      "financial need"
+    ],
+    "description": "Scholarships for graduating high school seniors in the US, Puerto Rico, Guam and Canada, reviewed on GPA, work experience, activities, community service and financial need. A separate track covers Burger King employees and their families.",
+    "format": "online",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Scholarships from USD 1,000 to USD 60,000",
+    "official_url": "https://scholarshipamerica.org/scholarship/burgerking/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Application period opens",
+        "date": "2026-10-15",
+        "type": "registration_open",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://www.burgerkingfoundation.org/programs/burger-king-sm-scholars"
+      },
+      {
+        "label": "Application deadline (11:59 PM CT)",
+        "date": "2026-12-15",
+        "type": "deadline",
+        "timezone": "UTC-6",
+        "estimated": false,
+        "source_url": "https://scholarshipamerica.org/scholarship/burgerking/"
+      },
+      {
+        "label": "Scholars announced (spring 2027, usual timing)",
+        "date": "2027-04-30",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.burgerkingfoundation.org/blog-posts/celebrating-our-bk-scholars-in-miami"
+      }
+    ],
+    "valid_till": "2027-05-15",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    }
   }
 ]
