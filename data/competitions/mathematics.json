@@ -2342,5 +2342,309 @@
       "by": "yakew7",
       "on": "2026-11-25"
     }
+  },
+  {
+    "id": "indian-olympiad-qualifier-in-mathematics",
+    "name": "Indian Olympiad Qualifier in Mathematics (IOQM) and INMO pathway",
+    "organizer": "Mathematics Teachers' Association (India), with HBCSE, TIFR",
+    "organizer_url": "https://www.mtai.org.in/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The Indian national mathematics olympiad programme runs in stages: the IOQM qualifier, the Regional Mathematical Olympiad (RMO) and the Indian National Mathematical Olympiad (INMO). Students in classes 8 to 12 take written papers, and the later stages require full proofs.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "IN",
+    "fee": {
+      "amount": 300,
+      "currency": "INR"
+    },
+    "prize": "Regional and national certificates; top INMO scorers move on to the International Mathematical Olympiad training camp.",
+    "official_url": "https://ioqm.mtai.org.in/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "RMO 2026 (second stage)",
+        "date": "2026-11-15",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2026-2027/"
+      },
+      {
+        "label": "INMO 2027 (third stage)",
+        "date": "2027-01-17",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": false,
+        "source_url": "https://olympiads.hbcse.tifr.res.in/mathematical-olympiad-2026-2027/"
+      },
+      {
+        "label": "IOQM 2027 student enrolment closes (estimated)",
+        "date": "2027-07-28",
+        "type": "deadline",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://ioqm.mtai.org.in/"
+      },
+      {
+        "label": "IOQM 2027 exam day (estimated)",
+        "date": "2027-09-05",
+        "type": "round",
+        "timezone": "UTC+5:30",
+        "estimated": true,
+        "source_url": "https://ioqm.mtai.org.in/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "dutch-mathematical-olympiad",
+    "name": "Dutch Mathematical Olympiad (Nederlandse Wiskunde Olympiade)",
+    "organizer": "Dutch Mathematical Olympiad organisation (Wiskunde Olympiade)",
+    "organizer_url": "https://www.wiskundeolympiade.nl/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A yearly competition for students in havo and vwo secondary education in the Netherlands, with a school-based first round in January, a second round at universities in March and a final in September. The best finalists can join training for the Dutch teams at international olympiads.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "NL",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Individual prizes for finalists and school prizes; winners are invited to team training.",
+    "official_url": "https://www.wiskundeolympiade.nl/docenten/info-in-english",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School registration closes",
+        "date": "2027-01-07",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.wiskundeolympiade.nl/"
+      },
+      {
+        "label": "First round (any day in this window)",
+        "date": "2027-01-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.wiskundeolympiade.nl/leerlingen/agenda-wedstrijdrondes"
+      },
+      {
+        "label": "Second round",
+        "date": "2027-03-19",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.wiskundeolympiade.nl/leerlingen/agenda-wedstrijdrondes"
+      },
+      {
+        "label": "Final (TU Eindhoven)",
+        "date": "2027-09-17",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.wiskundeolympiade.nl/leerlingen/agenda-wedstrijdrondes"
+      },
+      {
+        "label": "Prize ceremony",
+        "date": "2027-11-12",
+        "type": "ceremony",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.wiskundeolympiade.nl/leerlingen/agenda-wedstrijdrondes"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "canada-usa-mathcamp-qualifying-quiz",
+    "name": "Canada/USA Mathcamp Qualifying Quiz",
+    "organizer": "Canada/USA Mathcamp",
+    "organizer_url": "https://www.mathcamp.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The Qualifying Quiz is a set of five to ten open-ended problems that forms the core of the application to Canada/USA Mathcamp, a five-week summer program. Applicants submit written solutions together with their scratchwork and the resources they used.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Admission to the Mathcamp summer program, with financial aid available.",
+    "official_url": "https://www.mathcamp.org/qualifying_quiz/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 application and Quiz open (estimated)",
+        "date": "2027-01-11",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.mathcamp.org/qualifying_quiz/"
+      },
+      {
+        "label": "Application and Quiz deadline (estimated)",
+        "date": "2027-02-22",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://www.mathcamp.org/admission/deadlines/"
+      },
+      {
+        "label": "Admission decisions announced (estimated)",
+        "date": "2027-04-16",
+        "type": "results",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.mathcamp.org/admission/deadlines/"
+      },
+      {
+        "label": "Admitted students must register (estimated)",
+        "date": "2027-05-03",
+        "type": "registration_close",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://www.mathcamp.org/admission/deadlines/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-03"
+  },
+  {
+    "id": "japan-mathematical-olympiad",
+    "name": "Japan Mathematical Olympiad (JMO)",
+    "organizer": "Mathematical Olympiad Foundation of Japan",
+    "organizer_url": "https://www.imojp.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "proof writing"
+    ],
+    "description": "The national selection contest for Japan's team at the International Mathematical Olympiad, open to people under 20 who are not in university. A short-answer preliminary in November is followed by a four-hour proof-based final in February and a selection camp in March.",
+    "format": "in_person",
+    "age_min": 12,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "JP",
+    "fee": {
+      "amount": 5000,
+      "currency": "JPY"
+    },
+    "prize": "Winners (about 20) receive medals and are invited to the IMO team selection camp; the champion receives the Kawai Cup.",
+    "official_url": "https://www.imojp.org/domestic/jmo_apply.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "JMO final (honsen)",
+        "date": "2027-02-11",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.imojp.org/domestic/jmo_apply.html"
+      },
+      {
+        "label": "IMO team selection camp begins (planned)",
+        "date": "2027-03-25",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": false,
+        "source_url": "https://www.imojp.org/domestic/jmo_overview.html"
+      },
+      {
+        "label": "38th JMO application deadline (estimated)",
+        "date": "2027-09-10",
+        "type": "deadline",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.imojp.org/domestic/jmo_overview.html"
+      },
+      {
+        "label": "38th JMO preliminary (estimated)",
+        "date": "2027-11-21",
+        "type": "round",
+        "timezone": "UTC+9",
+        "estimated": true,
+        "source_url": "https://www.imojp.org/domestic/jmo_overview.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-05-26"
+  },
+  {
+    "id": "cmimc",
+    "name": "Carnegie Mellon Informatics and Mathematics Competition (CMIMC) Math",
+    "organizer": "Carnegie Mellon Informatics and Mathematics Competition (CMU students)",
+    "organizer_url": "https://cmimc.com/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "computer science"
+    ],
+    "description": "A spring math contest hosted on the Carnegie Mellon campus by university students, with individual rounds in algebra and number theory, combinatorics and computer science, and geometry, plus team rounds. It is open to high school students and younger from any country, individually or in teams of up to six.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual_or_team",
+    "region": "US",
+    "fee": {
+      "amount": 5,
+      "currency": "USD"
+    },
+    "prize": "Individual and team rankings and awards.",
+    "official_url": "https://cmimc.com/competitions/cmimc",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "CMIMC 2027",
+        "date": "2027-03-27",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cmimc.com/faq"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-26"
+    },
+    "valid_till": "2027-03-27"
   }
 ]
