@@ -6033,5 +6033,70 @@
       "on": "2026-11-27"
     },
     "valid_till": "2027-05-27"
+  },
+  {
+    "id": "tubitak-2204-a-high-school-research-projects",
+    "name": "TUBITAK 2204-A High School Students Research Projects Competition",
+    "organizer": "TUBITAK Science Fellowships and Grant Programmes Department (BIDEB)",
+    "organizer_url": "https://tubitak.gov.tr/",
+    "category": "stem",
+    "subjects": [
+      "science",
+      "engineering",
+      "research projects"
+    ],
+    "description": "Turkey's national research project competition for high school students, held for the 58th time. Projects by up to three students are judged online first, then at regional exhibitions, and regional winners go on to a national final in Ankara. Open to students in Turkey and the TRNC who are under 20 on the application deadline.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "TR",
+    "fee": {
+      "amount": 0,
+      "currency": "TRY"
+    },
+    "prize": "Final prizes up to TRY 33,000 per student and TRY 24,000 per project for the advisor",
+    "official_url": "https://tubitak.gov.tr/tr/yarismalar/2204-lise-ogrencileri-arastirma-projeleri-yarismasi",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Applications open",
+        "date": "2026-09-23",
+        "type": "registration_open",
+        "timezone": "UTC+3",
+        "estimated": false,
+        "source_url": "https://tubitak.gov.tr/tr/yarismalar/2204-lise-ogrencileri-arastirma-projeleri-yarismasi"
+      },
+      {
+        "label": "Application deadline (17:30)",
+        "date": "2027-01-04",
+        "type": "deadline",
+        "timezone": "UTC+3",
+        "estimated": false,
+        "source_url": "https://tubitak.gov.tr/tr/yarismalar/2204-lise-ogrencileri-arastirma-projeleri-yarismasi"
+      },
+      {
+        "label": "National final exhibition (estimated from 2026: 27 to 30 April, Ankara)",
+        "date": "2027-04-27",
+        "type": "round",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://tubitak.gov.tr/sites/default/files/2026-04/ek4_lise_etkinlige_iliskin_aciklamalar_2026_0.pdf"
+      },
+      {
+        "label": "Final award ceremony (estimated from 2026: 30 April)",
+        "date": "2027-04-30",
+        "type": "ceremony",
+        "timezone": "UTC+3",
+        "estimated": true,
+        "source_url": "https://tubitak.gov.tr/sites/default/files/2026-04/ek4_lise_etkinlige_iliskin_aciklamalar_2026_0.pdf"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
   }
 ]

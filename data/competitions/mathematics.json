@@ -2935,5 +2935,276 @@
       "by": "yakew7",
       "on": "2026-11-27"
     }
+  },
+  {
+    "id": "malaysia-imonst-1",
+    "name": "International Mathematical Olympiad National Selection Test, Malaysia (IMONST 1)",
+    "organizer": "Malaysia IMO Committee",
+    "organizer_url": "https://imo-malaysia.org/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad"
+    ],
+    "description": "The first online round of Malaysia's national selection path for the International Mathematical Olympiad. Papers of 20 short-answer problems cover algebra, geometry, number theory and combinatorics, with separate papers for Beginner, Pioneer, Junior and Senior age groups, and anyone including international students may sit it.",
+    "format": "online",
+    "age_min": 6,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "MY",
+    "fee": {
+      "amount": 50,
+      "currency": "MYR"
+    },
+    "prize": "Digital certificate and ranking report; medallists may be invited to IMONST 2",
+    "official_url": "https://imo-malaysia.org/imonst1/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Early-bird registration closes (RM45)",
+        "date": "2027-05-01",
+        "type": "deadline",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://contesthub.my"
+      },
+      {
+        "label": "Normal registration closes (RM50)",
+        "date": "2027-07-05",
+        "type": "registration_close",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://contesthub.my"
+      },
+      {
+        "label": "IMONST 1 online window opens (closes 8 August, 12:00)",
+        "date": "2027-08-06",
+        "type": "round",
+        "timezone": "UTC+8",
+        "estimated": false,
+        "source_url": "https://contesthub.my"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
+  },
+  {
+    "id": "obmep",
+    "name": "Brazilian Mathematical Olympiad of Public Schools (OBMEP)",
+    "organizer": "Instituto de Matematica Pura e Aplicada (IMPA)",
+    "organizer_url": "https://impa.br/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics"
+    ],
+    "description": "Brazil's national school mathematics olympiad, with a multiple-choice first phase and a written second phase for students from the 6th year of elementary school to the last year of secondary school. Schools in Brazil register their students, and entry is free for public schools while private schools pay a fee.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "BR",
+    "fee": {
+      "amount": 0,
+      "currency": "BRL"
+    },
+    "prize": "Gold, silver and bronze medals and honourable mentions; medallists can join the PIC Jr. scientific initiation programme",
+    "official_url": "https://www.obmep.org.br/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "School registration opens (estimated from 2026 calendar: 4 Feb)",
+        "date": "2027-02-04",
+        "type": "registration_open",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://www.obmep.org.br/calendario.htm"
+      },
+      {
+        "label": "School registration closes (estimated from 2026 calendar: 16 Mar)",
+        "date": "2027-03-16",
+        "type": "registration_close",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://www.obmep.org.br/calendario.htm"
+      },
+      {
+        "label": "First phase (estimated from 2026 calendar: 9 Jun)",
+        "date": "2027-06-08",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://www.obmep.org.br/calendario.htm"
+      },
+      {
+        "label": "Second phase (estimated from 2026 calendar: 17 Oct)",
+        "date": "2027-10-16",
+        "type": "round",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://www.obmep.org.br/calendario.htm"
+      },
+      {
+        "label": "Results published (estimated from 2026 calendar: 15 Dec)",
+        "date": "2027-12-15",
+        "type": "results",
+        "timezone": "UTC-3",
+        "estimated": true,
+        "source_url": "https://www.obmep.org.br/calendario.htm"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
+  },
+  {
+    "id": "south-african-mathematics-olympiad",
+    "name": "South African Mathematics Olympiad (SAMO)",
+    "organizer": "South African Mathematics Foundation (SAMF)",
+    "organizer_url": "https://www.samf.ac.za/en/about-samf",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad"
+    ],
+    "description": "A three-round national mathematics olympiad for learners in grades 8 to 12. Round one is a one-hour multiple-choice paper marked by teachers, round two is a two-hour paper marked by SAMF, and about 100 junior and 100 senior learners reach the third round. Schools enter their learners, and schools outside South Africa write the first round online.",
+    "format": "hybrid",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "ZA",
+    "fee": {
+      "amount": 45,
+      "currency": "ZAR"
+    },
+    "prize": "Certificates, bronze medals for third round participants and prizes for top learners; top performers are considered for the national IMO and Pan-African teams",
+    "official_url": "https://www.samf.ac.za/en/sa-mathematics-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Entry closing date",
+        "date": "2027-02-19",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.samf.ac.za/en/sa-mathematics-olympiad"
+      },
+      {
+        "label": "First round",
+        "date": "2027-03-11",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.samf.ac.za/en/sa-mathematics-olympiad"
+      },
+      {
+        "label": "Second round",
+        "date": "2027-05-11",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.samf.ac.za/en/sa-mathematics-olympiad"
+      },
+      {
+        "label": "Third round",
+        "date": "2027-07-29",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.samf.ac.za/en/sa-mathematics-olympiad"
+      },
+      {
+        "label": "SAMF annual awards function (estimated from 2026 calendar: 17 Oct)",
+        "date": "2027-10-16",
+        "type": "ceremony",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.samf.ac.za/en/maths-calendar"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
+  },
+  {
+    "id": "olimpiada-colombiana-de-matematicas",
+    "name": "Colombian Mathematical Olympiad, grades 6 to 11 (Olimpiada Colombiana de Matematicas)",
+    "organizer": "Universidad Antonio Nariño (UAN)",
+    "organizer_url": "https://oc.uan.edu.co/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "olympiad"
+    ],
+    "description": "Colombia's national mathematics olympiad for students in grades 6 to 11, run in a qualifying test, a selective test, a semifinal and a final round. Schools enter their students, or students can take part individually, and top performers can be chosen for Colombian teams at international olympiads.",
+    "format": "hybrid",
+    "age_min": 11,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "CO",
+    "fee": {
+      "amount": 17000,
+      "currency": "COP"
+    },
+    "prize": "Awards ceremony after the final round; selection route to Colombian teams at international mathematics olympiads",
+    "official_url": "https://oc.uan.edu.co/olimpiada-colombiana-de-matematicas",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Qualifying test (estimated from 2026 calendar: 19 Mar)",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://oc.uan.edu.co/inscripciones-calendario"
+      },
+      {
+        "label": "Selective test (estimated from 2026 calendar: 16 Apr)",
+        "date": "2027-04-15",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://oc.uan.edu.co/inscripciones-calendario"
+      },
+      {
+        "label": "Semifinal (estimated from 2026 calendar: 7 May)",
+        "date": "2027-05-06",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://oc.uan.edu.co/inscripciones-calendario"
+      },
+      {
+        "label": "Final round, four days (estimated from 2026 calendar: 26 to 29 May)",
+        "date": "2027-05-25",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://oc.uan.edu.co/inscripciones-calendario"
+      },
+      {
+        "label": "Awards ceremony (estimated from 2026 calendar: 30 May)",
+        "date": "2027-05-29",
+        "type": "ceremony",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://oc.uan.edu.co/inscripciones-calendario"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
   }
 ]
