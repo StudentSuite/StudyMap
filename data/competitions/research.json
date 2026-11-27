@@ -721,5 +721,55 @@
       "by": "yakew7",
       "on": "2026-11-26"
     }
+  },
+  {
+    "id": "connectome-research-competition",
+    "name": "Connectome 2026-2027 Connectomics Research Competition",
+    "organizer": "Clematis Research Empowerment Hub",
+    "organizer_url": "https://clematisresearch.github.io/connectome/",
+    "category": "research",
+    "subjects": [
+      "neuroscience",
+      "connectomics",
+      "data analysis",
+      "python"
+    ],
+    "description": "An open neuroscience research competition where students analyse real brain datasets, either the fruit fly male CNS connectome or human functional connectomes. Entries are a written report and a video, judged in separate high school and undergraduate categories.",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "CAD 750 total prize pool across research, science communication and community engagement awards",
+    "official_url": "https://clematisresearch.github.io/connectomeguide/competition-overview/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Final submission deadline (5:00 PM EST)",
+        "date": "2027-12-01",
+        "type": "deadline",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://clematisresearch.github.io/connectomeguide/important-dates/"
+      },
+      {
+        "label": "Winners and awardees announced (April 2028, day not given)",
+        "date": "2028-04-30",
+        "type": "results",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://clematisresearch.github.io/connectomeguide/important-dates/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
   }
 ]

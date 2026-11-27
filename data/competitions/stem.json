@@ -5816,5 +5816,222 @@
       "on": "2026-11-27"
     },
     "valid_till": "2027-02-06"
+  },
+  {
+    "id": "international-psychology-olympiad",
+    "name": "International Psychology Olympiad (IPsyO)",
+    "organizer": "International Psychology Olympiad (IPsyO)",
+    "organizer_url": "https://www.ipsyo.org/",
+    "category": "stem",
+    "subjects": [
+      "psychology",
+      "critical thinking",
+      "research skills"
+    ],
+    "description": "An online psychology competition for secondary school students in about 80 countries and regions. Students first earn a qualification score on a preparation bundle, then sit Module A (analytical reasoning), and the top six per country or region move on to Module B (a written case response).",
+    "format": "online",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "prize": "Gold, Silver and Bronze awards for the top six per country or region; tiered grade certificates for other participants",
+    "official_url": "https://www.ipsyo.org/current-ipsyo.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "2027 registration opens",
+        "date": "2027-01-01",
+        "type": "registration_open",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.ipsyo.org/"
+      },
+      {
+        "label": "Qualification and registration deadline (site says before June 30, 2027)",
+        "date": "2027-06-30",
+        "type": "deadline",
+        "timezone": "UTC",
+        "estimated": false,
+        "source_url": "https://www.ipsyo.org/apply.html"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
+  },
+  {
+    "id": "british-psychology-olympiad",
+    "name": "British Psychology Olympiad (BPO)",
+    "organizer": "Minds Underground (U2 Tuition Ltd)",
+    "organizer_url": "https://www.mindsunderground.com/",
+    "category": "stem",
+    "subjects": [
+      "psychology",
+      "critical thinking",
+      "essay writing"
+    ],
+    "description": "An online psychology olympiad for secondary students in Years 9 to 12, in the UK and abroad. It has a multiple choice qualifier, an open question test, and a global round that is a psychology essay.",
+    "format": "online",
+    "age_min": 13,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "international",
+    "fee": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "prize": "Champion, second and third place, plus Gold, Silver and Bronze awards with digital certificates",
+    "official_url": "https://www.mindsunderground.com/british-psychology-olympiad",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Round 1 multiple choice qualifier (online)",
+        "date": "2027-02-07",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.mindsunderground.com/british-psychology-olympiad"
+      },
+      {
+        "label": "Round 2 open question test (online)",
+        "date": "2027-02-21",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.mindsunderground.com/british-psychology-olympiad"
+      },
+      {
+        "label": "Global round essay submission deadline",
+        "date": "2027-04-03",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.mindsunderground.com/minds-underground-competitions"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-04-10"
+  },
+  {
+    "id": "brain-bee-belgium",
+    "name": "Brain Bee Belgium",
+    "organizer": "Belgian Society for Neuroscience (BSN), hosted by the University of Antwerp",
+    "organizer_url": "https://brainbee.be/",
+    "category": "stem",
+    "subjects": [
+      "neuroscience",
+      "biology"
+    ],
+    "description": "A neuroscience knowledge competition for secondary school students enrolled in Belgium. A written test on neuroanatomy, neural pathways, brain disorders and research is followed by a live oral quiz for the top five scorers. It is the Belgian branch of the International Brain Bee.",
+    "format": "in_person",
+    "age_min": 13,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "BE",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "National champion title; the Belgian winner can go on to the International Brain Bee",
+    "official_url": "https://brainbee.be/competition/2027/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "National Championship (venue to be announced; registration opens later, date not yet published)",
+        "date": "2027-03-24",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://brainbee.be/registration/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-03-31"
+  },
+  {
+    "id": "dutch-biology-olympiad",
+    "name": "Dutch Biology Olympiad (Nederlandse Biologie Olympiade and Biologie Olympiade Junior)",
+    "organizer": "Stichting Biologie Olympiade Nederland",
+    "organizer_url": "https://www.biologieolympiade.nl/",
+    "category": "stem",
+    "subjects": [
+      "biology"
+    ],
+    "description": "A national biology competition for Dutch secondary school pupils, with a junior track for lower years and a senior track for upper vwo. Pupils take a preliminary test at school, then a second round day and a final, and the top four senior finalists represent the Netherlands at the International Biology Olympiad.",
+    "format": "hybrid",
+    "age_min": 12,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "NL",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Certificates for the best pupils; four senior winners represent the Netherlands at the International Biology Olympiad",
+    "official_url": "https://www.biologieolympiade.nl/nbo/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Junior track school registration closes",
+        "date": "2027-01-08",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.biologieolympiade.nl/2026/inschrijvingen-voor-olympiadejaar-26-27-geopend/"
+      },
+      {
+        "label": "Junior preliminary round opens (at school)",
+        "date": "2027-01-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.biologieolympiade.nl/agenda/"
+      },
+      {
+        "label": "Junior second round",
+        "date": "2027-04-08",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.biologieolympiade.nl/agenda/"
+      },
+      {
+        "label": "Senior final week starts, Wageningen University",
+        "date": "2027-06-02",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.biologieolympiade.nl/agenda/"
+      },
+      {
+        "label": "Junior final starts, Aeres Hogeschool Almere",
+        "date": "2027-06-23",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.biologieolympiade.nl/agenda/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
   }
 ]
