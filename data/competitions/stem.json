@@ -5470,5 +5470,351 @@
       "on": "2026-11-26"
     },
     "valid_till": "2027-04-09"
+  },
+  {
+    "id": "bpho-intermediate-senior-physics-challenges",
+    "name": "BPhO Intermediate and Senior Physics Challenges",
+    "organizer": "British Physics Olympiad (BPhO)",
+    "organizer_url": "https://www.bpho.org.uk/",
+    "category": "stem",
+    "subjects": [
+      "physics",
+      "problem solving"
+    ],
+    "description": "One hour physics problem papers for UK Year 11 (Intermediate Physics Challenge) and Year 12 (Senior Physics Challenge) students, sat in school under teacher supervision. Each level has an online quiz in January and a paper based challenge in late February or early March. A small number of top students are invited to the Royal Society awards in April.",
+    "format": "in_person",
+    "age_min": 15,
+    "age_max": 17,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 20,
+      "currency": "GBP"
+    },
+    "prize": "Certificates; a small number of top students are invited with a teacher to the Royal Society awards",
+    "official_url": "https://www.bpho.org.uk/bpho/IPC.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Senior Physics Challenge online quiz window opens",
+        "date": "2027-01-18",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/as-challenge.html"
+      },
+      {
+        "label": "Intermediate Physics Challenge online quiz window opens",
+        "date": "2027-01-25",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/IPC.html"
+      },
+      {
+        "label": "Intermediate Physics Challenge paper (Year 11)",
+        "date": "2027-02-26",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/IPC.html"
+      },
+      {
+        "label": "Senior Physics Challenge paper (Year 12)",
+        "date": "2027-03-05",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/as-challenge.html"
+      },
+      {
+        "label": "Deadline to upload Gold Award scripts to the BPhO",
+        "date": "2027-03-26",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/bpho/IPC.html"
+      },
+      {
+        "label": "Royal Society awards (by invitation)",
+        "date": "2027-04-29",
+        "type": "ceremony",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/Competitions/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-04-29"
+  },
+  {
+    "id": "british-astronomy-and-astrophysics-olympiad",
+    "name": "British Astronomy and Astrophysics Olympiad (BAAO)",
+    "organizer": "British Physics Olympiad (BPhO)",
+    "organizer_url": "https://www.bpho.org.uk/",
+    "category": "stem",
+    "subjects": [
+      "astronomy",
+      "astrophysics",
+      "physics"
+    ],
+    "description": "A series of astronomy and astrophysics problem papers for UK school students, aimed mainly at Years 12 and 13: an autumn Astro Challenge, a November Round 1 and an invitation only Round 2 in January. The strongest students attend an Oxford training and selection camp in April, from which the UK team for the International Olympiad on Astronomy and Astrophysics is chosen. Round 1 costs GBP 15 per student, while the Astro Challenge and Round 2 are free.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "GB",
+    "fee": {
+      "amount": 15,
+      "currency": "GBP"
+    },
+    "prize": "Certificates and book prizes where possible; top students are selected for the UK team for the International Olympiad on Astronomy and Astrophysics",
+    "official_url": "https://www.bpho.org.uk/baao/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Astro Round 1 scripts upload deadline",
+        "date": "2026-11-27",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/baao/round-1/"
+      },
+      {
+        "label": "Astro Challenge closing date for distinction certificates",
+        "date": "2026-12-12",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/baao/astro-challenge/"
+      },
+      {
+        "label": "Astro Round 2 (by invitation)",
+        "date": "2027-01-26",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/baao/round-2/"
+      },
+      {
+        "label": "Astro Round 2 scripts upload deadline",
+        "date": "2027-01-29",
+        "type": "deadline",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.bpho.org.uk/baao/round-2/"
+      },
+      {
+        "label": "Oxford Training and Selection Camp starts (provisional dates)",
+        "date": "2027-04-05",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.bpho.org.uk/Competitions/"
+      },
+      {
+        "label": "Oxford Training and Selection Camp ends (provisional dates)",
+        "date": "2027-04-10",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": true,
+        "source_url": "https://www.bpho.org.uk/Competitions/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-04-10"
+  },
+  {
+    "id": "aapt-f-ma-exam-and-usapho",
+    "name": "F=ma Exam and USA Physics Olympiad (USAPhO)",
+    "organizer": "American Association of Physics Teachers (AAPT) and the American Institute of Physics (AIP)",
+    "organizer_url": "https://www.aapt.org/physicsteam/PT-landing.cfm",
+    "category": "stem",
+    "subjects": [
+      "physics",
+      "problem solving"
+    ],
+    "description": "The two proctored exams that select the U.S. Physics Team: the online F=ma multiple choice exam in February, then the in person USAPhO exam in March for top scorers. Students must be located in the United States and meet the citizenship or school rules for each exam. Top performers are invited to the U.S. Physics Team training camp, where the team for the International Physics Olympiad is chosen.",
+    "format": "hybrid",
+    "age_min": 14,
+    "age_max": 20,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 16,
+      "currency": "USD"
+    },
+    "prize": "Invitation to the U.S. Physics Team training camp and a chance to represent the United States at the International Physics Olympiad",
+    "official_url": "https://www.aapt.org/physicsteam/2027/registration.cfm",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "F=ma exam registration deadline",
+        "date": "2027-01-14",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.aapt.org/physicsteam/2027/importantdates.cfm"
+      },
+      {
+        "label": "F=ma exam (online)",
+        "date": "2027-02-09",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": false,
+        "source_url": "https://www.aapt.org/physicsteam/2027/importantdates.cfm"
+      },
+      {
+        "label": "USAPhO exam (in person)",
+        "date": "2027-03-14",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://www.aapt.org/physicsteam/2027/importantdates.cfm"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-03-14"
+  },
+  {
+    "id": "usa-astronomy-and-astrophysics-olympiad",
+    "name": "USA Astronomy and Astrophysics Olympiad (USAAAO)",
+    "organizer": "USA Astronomy and Astrophysics Organization (USAAAO)",
+    "organizer_url": "https://usaaao.org/",
+    "category": "stem",
+    "subjects": [
+      "astronomy",
+      "astrophysics",
+      "physics"
+    ],
+    "description": "A three round series of proctored astronomy and astrophysics exams: a roughly 75 minute multiple choice First Round, the National Astronomy Competition, and a Third Round for the top candidates. Anyone can sit the First Round, but only high school students with US citizenship or permanent residency can join the team for the International Olympiad on Astronomy and Astrophysics. The 2027 dates and fee are estimated from the 2026 cycle.",
+    "format": "in_person",
+    "age_min": 14,
+    "age_max": 18,
+    "participation": "individual",
+    "region": "US",
+    "fee": {
+      "amount": 30,
+      "currency": "USD"
+    },
+    "prize": "Selection for free online training and a place on the US team for the International Olympiad on Astronomy and Astrophysics",
+    "official_url": "https://usaaao.org/registration/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "First Round registration opens (estimated from the 2026 cycle)",
+        "date": "2027-01-01",
+        "type": "registration_open",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://usaaao.org/registration/"
+      },
+      {
+        "label": "First Round registration closes (estimated from the 2026 cycle)",
+        "date": "2027-01-31",
+        "type": "registration_close",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://usaaao.org/registration/"
+      },
+      {
+        "label": "First Round exam (estimated from the 2026 cycle)",
+        "date": "2027-02-08",
+        "type": "round",
+        "timezone": "UTC-5",
+        "estimated": true,
+        "source_url": "https://usaaao.org/about/selection-process/"
+      },
+      {
+        "label": "National Astronomy Competition (estimated from the 2026 cycle)",
+        "date": "2027-04-12",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://usaaao.org/"
+      },
+      {
+        "label": "Third Round exam (estimated from the 2026 cycle)",
+        "date": "2027-06-21",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": true,
+        "source_url": "https://usaaao.org/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-20"
+  },
+  {
+    "id": "chemistry-race-uk",
+    "name": "Chemistry Race UK",
+    "organizer": "Chemistry Race UK, run with the Yusuf Hamied Department of Chemistry, University of Cambridge",
+    "organizer_url": "https://www.chemistryrace.com/uk/",
+    "category": "stem",
+    "subjects": [
+      "chemistry",
+      "problem solving"
+    ],
+    "description": "A two hour team chemistry race for sixth form students, where teams of three to five from one school exchange approved answers for new problems, from quick riddles to puzzles beyond A level. Books and notes are allowed, and places are drawn at random after a registration window of about a week. The 2027 race is on 6 February.",
+    "format": "in_person",
+    "age_min": 16,
+    "age_max": 18,
+    "participation": "team",
+    "region": "GB",
+    "fee": {
+      "amount": 0,
+      "currency": "GBP"
+    },
+    "prize": "Chemistry themed prizes, including beaker mugs, for the top three teams",
+    "official_url": "https://www.chemistryrace.com/uk/this-year/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Team registration opens (estimated, window lasts about a week)",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.chemistryrace.com/"
+      },
+      {
+        "label": "Team registration closes (estimated, window lasts about a week)",
+        "date": "2026-12-08",
+        "type": "registration_close",
+        "timezone": "UTC+0",
+        "estimated": true,
+        "source_url": "https://www.chemistryrace.com/uk/rules/"
+      },
+      {
+        "label": "Chemistry Race 2027",
+        "date": "2027-02-06",
+        "type": "round",
+        "timezone": "UTC+0",
+        "estimated": false,
+        "source_url": "https://www.chemistryrace.com/uk/this-year/"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-02-06"
   }
 ]
