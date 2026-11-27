@@ -2646,5 +2646,294 @@
       "on": "2026-11-26"
     },
     "valid_till": "2027-03-27"
+  },
+  {
+    "id": "komal-points-contest",
+    "name": "KöMaL Points Contest (mathematics)",
+    "organizer": "KöMaL editorial board, MATFUND Foundation",
+    "organizer_url": "https://www.komal.hu/",
+    "category": "mathematics",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A monthly problem-solving contest run by the Hungarian KöMaL journal from September to early June. Students submit written solutions online to K, C, B and A level problems, alone or in teams, and the rules and problems are available in English.",
+    "format": "online",
+    "age_min": 10,
+    "age_max": 19,
+    "participation": "individual_or_team",
+    "region": "HU",
+    "fee": {
+      "amount": 0,
+      "currency": "HUF"
+    },
+    "prize": "Certificates and prizes for the best contestants, presented at the KöMaL Youth Conference",
+    "official_url": "https://www.komal.hu/oldal?lap=contestrules2026",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "November 2026 problems, solution deadline",
+        "date": "2026-12-10",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.komal.hu/feladat?a=honap&h=202611&t=mat&l=en"
+      },
+      {
+        "label": "March 2027 problems, solution deadline (estimated from the 2026 pattern)",
+        "date": "2027-04-10",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.komal.hu/feladat?a=honap&h=202603&t=mat&l=en"
+      },
+      {
+        "label": "Final (May 2027) problems, solution deadline (estimated from the 2026 pattern)",
+        "date": "2027-06-10",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": true,
+        "source_url": "https://www.komal.hu/feladat?a=honap&h=202605&t=mat&l=en"
+      }
+    ],
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    },
+    "valid_till": "2027-05-27"
+  },
+  {
+    "id": "cemc-team-up-challenge",
+    "name": "CEMC Team Up Challenge",
+    "organizer": "Centre for Education in Mathematics and Computing, University of Waterloo",
+    "organizer_url": "https://cemc.uwaterloo.ca/",
+    "subjects": [
+      "mathematics",
+      "problem solving",
+      "teamwork"
+    ],
+    "description": "A free set of four team activities (a team paper, a crossnumber puzzle, a logic puzzle and a relay) for teams of four students in Grades 6 to 8. Teachers run and mark it in school on or after 1 June 2027, and the CEMC does not collect results.",
+    "format": "in_person",
+    "age_min": 11,
+    "age_max": 14,
+    "participation": "team",
+    "region": "CA",
+    "fee": {
+      "amount": 0,
+      "currency": "CAD"
+    },
+    "prize": "No ranked prizes; the focus is participation and collaboration",
+    "official_url": "https://cemc.uwaterloo.ca/contests/team-up-challenge",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Ordering deadline",
+        "date": "2027-05-27",
+        "type": "deadline",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests/team-up-challenge"
+      },
+      {
+        "label": "Earliest contest date (materials released 9:00 a.m. EDT)",
+        "date": "2027-06-01",
+        "type": "round",
+        "timezone": "UTC-4",
+        "estimated": false,
+        "source_url": "https://cemc.uwaterloo.ca/contests"
+      }
+    ],
+    "valid_till": "2027-05-27",
+    "category": "mathematics",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    }
+  },
+  {
+    "id": "kaenguru-der-mathematik-germany",
+    "name": "Känguru der Mathematik (Germany)",
+    "organizer": "Mathematikwettbewerb Känguru e.V., Humboldt-Universität zu Berlin",
+    "organizer_url": "https://www.mathe-kaenguru.de/",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A 75-minute multiple-choice mathematics contest for school pupils from Klassenstufe 3 to 13, run in schools across Germany as part of the international Kangaroo contest. Every participant receives a prize, and in 2027 the contest day moves to April because of early Easter holidays.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "DE",
+    "fee": {
+      "amount": 2.5,
+      "currency": "EUR"
+    },
+    "prize": "Prizes for all participants",
+    "official_url": "https://www.mathe-kaenguru.de/wettbewerb/index.html",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Online registration opens",
+        "date": "2026-12-01",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.mathe-kaenguru.de/wettbewerb/index.html"
+      },
+      {
+        "label": "Registration deadline",
+        "date": "2027-01-31",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.mathe-kaenguru.de/wettbewerb/anmeldung/index.html"
+      },
+      {
+        "label": "Contest day",
+        "date": "2027-04-08",
+        "type": "round",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.mathe-kaenguru.de/wettbewerb/index.html"
+      }
+    ],
+    "valid_till": "2027-04-30",
+    "category": "mathematics",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    }
+  },
+  {
+    "id": "kaenguru-der-mathematik-austria",
+    "name": "Känguru der Mathematik (Austria)",
+    "organizer": "Känguru der Mathematik Österreich",
+    "organizer_url": "https://www.kaenguru.at/",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A multiple-choice mathematics contest held in Austrian schools on the third Thursday of March for pupils from Schulstufe 1 to 13, with no participation fee. Teachers register their school, and results are published online after answer entry closes.",
+    "format": "in_person",
+    "age_min": 6,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "AT",
+    "fee": {
+      "amount": 0,
+      "currency": "EUR"
+    },
+    "prize": "Top-placed pupils in each Schulstufe are invited to federal and provincial award ceremonies",
+    "official_url": "https://www.kaenguru.at/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration opens (after the autumn holidays)",
+        "date": "2026-10-31",
+        "type": "registration_open",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru.at/"
+      },
+      {
+        "label": "Registration closes",
+        "date": "2027-03-17",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru.at/"
+      },
+      {
+        "label": "Contest day",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru.at/aufgaben.html"
+      },
+      {
+        "label": "Answer entry ends",
+        "date": "2027-04-02",
+        "type": "deadline",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.kaenguru.at/"
+      },
+      {
+        "label": "Results published (evening)",
+        "date": "2027-04-18",
+        "type": "results",
+        "timezone": "UTC+2",
+        "estimated": false,
+        "source_url": "https://www.kaenguru.at/ergebnisse.html"
+      }
+    ],
+    "valid_till": "2027-05-01",
+    "category": "mathematics",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    }
+  },
+  {
+    "id": "kaenguru-der-mathematik-switzerland",
+    "name": "Känguru der Mathematik (Switzerland)",
+    "organizer": "Verein Känguru Schweiz",
+    "organizer_url": "https://www.kaenguru-schweiz.ch/",
+    "subjects": [
+      "mathematics",
+      "problem solving"
+    ],
+    "description": "A multiple-choice mathematics contest for pupils from Klasse 3 to 13, written at school on the third Thursday of March in five age groups. It can be taken on paper or online, and every participant receives a diploma and a small prize.",
+    "format": "in_person",
+    "age_min": 8,
+    "age_max": 19,
+    "participation": "individual",
+    "region": "CH",
+    "fee": {
+      "amount": 3,
+      "currency": "CHF"
+    },
+    "prize": "Diploma and a small prize for every participant",
+    "official_url": "https://www.kaenguru-schweiz.ch/wettbewerb/",
+    "cycle_year": 2027,
+    "dates": [
+      {
+        "label": "Registration deadline for participants",
+        "date": "2027-03-11",
+        "type": "registration_close",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru-schweiz.ch/anleitung-koordinator/"
+      },
+      {
+        "label": "Kangaroo day (third Thursday of March)",
+        "date": "2027-03-18",
+        "type": "round",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru-schweiz.ch/anleitung-koordinator/"
+      },
+      {
+        "label": "Deadline to upload scanned answer sheets",
+        "date": "2027-03-25",
+        "type": "deadline",
+        "timezone": "UTC+1",
+        "estimated": false,
+        "source_url": "https://www.kaenguru-schweiz.ch/anleitung-koordinator/"
+      }
+    ],
+    "valid_till": "2027-04-15",
+    "category": "mathematics",
+    "added_by": "yakew7",
+    "verified": {
+      "by": "yakew7",
+      "on": "2026-11-27"
+    }
   }
 ]
