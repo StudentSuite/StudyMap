@@ -236,4 +236,22 @@ describe("Stats page, Visitors view", () => {
 
     fireEvent.blur(month);
   });
+
+  it("lists the higher series first in the tooltip, like the lines on the chart", () => {
+    openVisitors();
+
+    const month = screen.getByRole("img", { name: /November 2026: 1,743 visitors/ });
+    fireEvent.focus(month);
+    const chart = screen.getByRole("group", {
+      name: "Visitors and page views per month",
+    });
+    const tooltip = chart.querySelector('[aria-hidden="true"].bg-popover');
+    expect(tooltip).not.toBeNull();
+    const text = tooltip!.textContent ?? "";
+    // Page views are always at least visitors, so they come first and visitors sit below.
+    expect(text.indexOf("Page views")).toBeGreaterThan(-1);
+    expect(text.indexOf("Page views")).toBeLessThan(text.indexOf("Visitors"));
+
+    fireEvent.blur(month);
+  });
 });
