@@ -242,7 +242,9 @@ describe("Stats page, Visitors view", () => {
 
     const month = screen.getByRole("img", { name: /November 2026: 1,743 visitors/ });
     fireEvent.focus(month);
-    const chart = screen.getByRole("group", { name: "Visitors and page views per month" });
+    const chart = screen.getByRole("group", {
+      name: "Visitors and page views per month",
+    });
     const tooltip = chart.querySelector('[aria-hidden="true"].bg-popover');
     expect(tooltip).not.toBeNull();
     const text = tooltip!.textContent ?? "";

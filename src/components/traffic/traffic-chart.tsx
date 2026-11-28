@@ -399,18 +399,20 @@ export function TrafficChart({ rows, metrics, kind, valueLabel }: TrafficChartPr
             </p>
             <div className="mt-1.5 flex flex-col gap-1">
               {/* Highest value first, so the rows sit in the same order as the lines on the chart. */}
-              {[...series].sort((a, b) => activeRow[b.key] - activeRow[a.key]).map((s) => (
-                <div key={s.key} className="flex items-center gap-2">
-                  <span
-                    className="inline-block h-0.5 w-3 rounded-full"
-                    style={{ background: SERIES_COLOR[s.key] }}
-                  />
-                  <span className="font-semibold tabular-nums text-foreground">
-                    {formatCount(activeRow[s.key])}
-                  </span>
-                  <span className="text-muted-foreground">{s.label}</span>
-                </div>
-              ))}
+              {[...series]
+                .sort((a, b) => activeRow[b.key] - activeRow[a.key])
+                .map((s) => (
+                  <div key={s.key} className="flex items-center gap-2">
+                    <span
+                      className="inline-block h-0.5 w-3 rounded-full"
+                      style={{ background: SERIES_COLOR[s.key] }}
+                    />
+                    <span className="font-semibold tabular-nums text-foreground">
+                      {formatCount(activeRow[s.key])}
+                    </span>
+                    <span className="text-muted-foreground">{s.label}</span>
+                  </div>
+                ))}
             </div>
           </div>
         )}
